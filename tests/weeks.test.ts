@@ -22,9 +22,9 @@ test("week manifest reflects additions, edits and deletions and sorts numericall
     syncWeeks(directory, output);
     assert.equal(syncWeeks(directory, output), false);
     assert.deepEqual(readFixture(root).map(doc => [doc.week, doc.order]), [[2, 1], [10, 1], [10, 2]]);
-    assert.equal(readFixture(root)[0].title, "Week 02 강의노트");
+    assert.equal(readFixture(root)[0].title, "Lecture 02");
     assert.equal(readFixture(root)[2].path, "/lectures/week-10-02");
-    assert.equal(readFixture(root)[2].title, "Week 10 · Lecture 02");
+    assert.equal(readFixture(root)[2].title, "Lecture 10-02");
     assert.equal(readWeeks([{ name: "week-3-2.md", source: "# 두 번째 강의" }], { "week-03-02": "별도 두 번째 제목" })[0].title, "별도 두 번째 제목");
     assert.equal(readWeeks([{ name: "week-3.md", source: "# 본문 제목" }], { "week-03": "별도 강의 제목" })[0].title, "별도 강의 제목");
     fs.writeFileSync(path.join(directory, "week-10.md"), "# 변경된 제목\n\n수정한 본문");

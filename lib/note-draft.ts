@@ -1,8 +1,8 @@
-export const NOTE_STORAGE_PREFIX = "handsome-cpp-note-v2:";
-export const NOTE_UPDATE_EVENT = "handsome-cpp-note-update";
-export const NOTE_TITLE_EVENT = "handsome-cpp-title-update";
-export const PRACTICE_METADATA_EVENT = "handsome-cpp-practice-metadata-update";
-export const NOTE_FILE_STATUS_EVENT = "handsome-cpp-note-file-status";
+export const NOTE_STORAGE_PREFIX = "hyu-hjs-note-v1:";
+export const NOTE_UPDATE_EVENT = "hyu-hjs-note-update";
+export const NOTE_TITLE_EVENT = "hyu-hjs-title-update";
+export const PRACTICE_METADATA_EVENT = "hyu-hjs-exam-metadata-update";
+export const NOTE_FILE_STATUS_EVENT = "hyu-hjs-note-file-status";
 export type NoteFileStatus = "saving" | "saved" | "error";
 
 const saveTimers = new Map<string, ReturnType<typeof setTimeout>>();
@@ -12,16 +12,17 @@ function announceFileStatus(path: string, status: NoteFileStatus) {
 }
 
 function queueFileSave(path: string, payload: { content: string } | { title: string } | { title: string; description: string }, timerKey = path) {
-  const [kind, week] = path.split("/").filter(Boolean);
-  const validDocumentId = kind === "lectures" ? /^week-\d+(?:-\d+)?$/ : /^week-\d+$/;
-  if (!week || !["lectures", "practice"].includes(kind) || !validDocumentId.test(week)) { announceFileStatus(path, "error"); return; }
+  const [kind, ...slug] = path.split("/").filter(Boolean);
+  const validLecture = kind === "lectures" && slug.length === 4 && slug.every(part => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(part));
+  const validPractice = kind === "practice" && slug.length === 4 && slug.every(part => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(part));
+  if (!validLecture && !validPractice) { announceFileStatus(path, "error"); return; }
   const previous = saveTimers.get(timerKey);
   if (previous) clearTimeout(previous);
   announceFileStatus(path, "saving");
   saveTimers.set(timerKey, setTimeout(async () => {
     saveTimers.delete(timerKey);
     try {
-      const response = await fetch(`/api/admin/notes/${encodeURIComponent(week)}`, {
+      const response = await fetch(`/api/admin/notes/${slug.map(encodeURIComponent).join("/")}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ kind, ...payload }),

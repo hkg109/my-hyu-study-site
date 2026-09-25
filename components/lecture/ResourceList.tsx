@@ -16,9 +16,9 @@ function PracticeRow({ doc }: { doc: LectureMeta }) {
     window.addEventListener(PRACTICE_METADATA_EVENT, syncMetadata);
     return () => window.removeEventListener(PRACTICE_METADATA_EVENT, syncMetadata);
   }, [doc.path]);
-  return <Link href={doc.path} className="resource-row"><span className="eyebrow">WEEK {String(doc.week).padStart(2, "0")}</span><div><h2>{metadata.title}</h2>{metadata.description && <p>{metadata.description}</p>}{doc.due && <span className="meta">제출 기한 · {doc.due}</span>}</div><ArrowUpRight size={22} /></Link>;
+  return <Link href={doc.path} className="resource-row"><span className="eyebrow">NOTE {String(doc.order).padStart(2, "0")}</span><div><h2>{metadata.title}</h2>{metadata.description && <p>{metadata.description}</p>}{doc.due && <span className="meta">제출 기한 · {doc.due}</span>}</div><ArrowUpRight size={22} /></Link>;
 }
 
 export function ResourceList({ docs, practice }: { docs: LectureMeta[]; practice: boolean }) {
-  return <div className="resource-list">{docs.map(doc => practice ? <PracticeRow key={doc.path} doc={doc} /> : <Link href={doc.path} key={doc.path} className="resource-row"><span className="eyebrow">WEEK {String(doc.week).padStart(2, "0")}</span><div><h2>{doc.title}</h2><p>{doc.description}</p>{doc.due && <span className="meta">제출 기한 · {doc.due}</span>}</div><ArrowUpRight size={22} /></Link>)}{!docs.length && <div className="empty-state">새로운 {practice ? "실습을" : "과제를"} 준비하고 있습니다.</div>}</div>;
+  return <div className="resource-list">{docs.map(doc => practice ? <PracticeRow key={doc.path} doc={doc} /> : <Link href={doc.path} key={doc.path} className="resource-row"><span className="eyebrow">NOTE {String(doc.order).padStart(2, "0")}</span><div><h2>{doc.title}</h2><p>{doc.description}</p>{doc.due && <span className="meta">제출 기한 · {doc.due}</span>}</div><ArrowUpRight size={22} /></Link>)}{!docs.length && <div className="empty-state">새로운 {practice ? "족보를" : "과제를"} 준비하고 있습니다.</div>}</div>;
 }

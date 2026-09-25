@@ -3,7 +3,7 @@ import { getAllLectures, getLectureBySlug } from "@/lib/lectures";
 import { DocumentPage } from "@/components/lecture/DocumentPage";
 
 interface Props { params: Promise<{ slug: string[] }> }
-export const dynamicParams = false;
+export const dynamicParams = true;
 export const generateStaticParams = () => getAllLectures().map(lecture => ({ slug: lecture.slug }));
 export async function generateMetadata({ params }: Props) {
   const lecture = getLectureBySlug((await params).slug);

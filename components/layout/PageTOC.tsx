@@ -43,5 +43,5 @@ export function PageTOC({ headings, documentPath, format = "mdx" }: { headings: 
     if (top < container.scrollTop + 42) container.scrollTo({ top: Math.max(0, top - 42) });
     else if (bottom > container.scrollTop + container.clientHeight - 24) container.scrollTo({ top: bottom - container.clientHeight + 24 });
   }, [active]);
-  return <aside ref={tocRef} className="page-toc"><nav aria-label="이 페이지의 목차"><p className="nav-label">ON THIS PAGE</p>{liveHeadings.map(heading => <a key={heading.id} href={`#${heading.id}`} data-heading-id={heading.id} className={`${heading.level >= 3 ? "nested" : ""} level-${heading.level} ${heading.id === active ? "active" : ""}`} aria-current={heading.id === active ? "location" : undefined}>{heading.text}</a>)}</nav><div className="toc-bottom"><span>C++ STUDY NOTES</span><p>조금씩, 확실하게.</p></div></aside>;
+  return <aside ref={tocRef} className="page-toc"><nav aria-label="이 페이지의 목차"><p className="nav-label">ON THIS PAGE</p>{liveHeadings.map(heading => <a key={heading.id} href={`#${heading.id}`} data-heading-id={heading.id} className={`${heading.level >= 3 ? "nested" : ""} level-${heading.level} ${heading.id === active ? "active" : ""}`} aria-current={heading.id === active ? "location" : undefined}>{heading.text}</a>)}</nav><div className="toc-bottom"><span>STUDY NOTES</span><p>조금씩, 확실하게.</p></div></aside>;
 }

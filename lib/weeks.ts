@@ -6,6 +6,7 @@ import { parseMarkdown } from "./markdown";
 import type { ContentDocument } from "@/types/content";
 
 export function loadWeekTitles(file = path.resolve(process.cwd(), "content", "weeks", "titles.json")): Record<string, string> {
+  if (!fs.existsSync(file)) return {};
   const parsed: unknown = JSON.parse(fs.readFileSync(file, "utf8"));
   if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
     throw new Error(`${file}: 강의 제목 파일은 JSON 객체여야 합니다.`);
@@ -34,10 +35,10 @@ export function readWeeks(files: { name: string; source: string }[] = generated,
     const title = resolvedTitles[key]?.trim()
       || (order === 1 ? resolvedTitles[weekKey]?.trim() : undefined)
       || (hasExplicitOrder
-        ? `Week ${String(week).padStart(2, "0")} · Lecture ${String(order).padStart(2, "0")}`
-        : `Week ${String(week).padStart(2, "0")} 강의노트`);
+        ? `Lecture ${String(week).padStart(2, "0")}-${String(order).padStart(2, "0")}`
+        : `Lecture ${String(week).padStart(2, "0")}`);
     const paragraph = tree.children.find(node => node.type === "paragraph");
-    const description = paragraph ? toString(paragraph).replace(/\s+/g, " ").slice(0, 140) : `${week}주차 ${order}번 C++ 강의노트입니다.`;
+    const description = paragraph ? toString(paragraph).replace(/\s+/g, " ").slice(0, 140) : `${order}번 강의 노트입니다.`;
     return { title, description, week, order, published: true, slug: [key], path: `/lectures/${key}`, kind: "lectures" as const, content: source, format };
   }).sort((a, b) => a.week - b.week || a.order - b.order);
 }

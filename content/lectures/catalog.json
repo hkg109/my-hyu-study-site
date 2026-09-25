@@ -1,0 +1,51 @@
+{
+  "grades": [
+    {
+      "id": "grade-01",
+      "name": "1학년",
+      "order": 1,
+      "semesters": [
+        {
+          "id": "semester-01",
+          "name": "1학기",
+          "order": 1,
+          "subjects": [
+            {
+              "id": "subject-muhei133",
+              "name": "정보시스템개론",
+              "order": 2
+            },
+            {
+              "id": "subject-muheizm5",
+              "name": "과학의탈국가화",
+              "order": 3
+            },
+            {
+              "id": "subject-muhej833",
+              "name": "AI R-PY",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "semester-muheifg4",
+          "name": "2학기",
+          "order": 2,
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "id": "grade-muhelhb3",
+      "name": "2학년",
+      "order": 2,
+      "semesters": []
+    },
+    {
+      "id": "grade-muheljaa",
+      "name": "3학년",
+      "order": 3,
+      "semesters": []
+    }
+  ]
+}

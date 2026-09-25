@@ -39,9 +39,9 @@ export function LectureHeader({ lecture, hideDescription = false }: { lecture: C
   };
 
   return <header className="lecture-header">
-    <div className="eyebrow">WEEK {String(lecture.week).padStart(2, "0")} <span className="muted">/</span> {lecture.kind === "lectures" ? `LECTURE ${String(lecture.order).padStart(2, "0")}` : lecture.kind.toUpperCase()}</div>
-    {isAdmin && (lecture.kind === "lectures" || lecture.kind === "practice") ? <input className="admin-title-input" value={title} onChange={event => updateTitle(event.target.value)} aria-label={`${lecture.kind === "practice" ? "실습" : "강의"} 제목 수정`} /> : <h1>{title}</h1>}
-    {!hideDescription && (isAdmin && lecture.kind === "practice" ? <textarea className="admin-description-input" rows={2} value={description} onChange={event => updateDescription(event.target.value)} aria-label="실습 설명 수정" /> : <p className="lead">{description}</p>)}
+    <div className="eyebrow">{lecture.kind === "lectures" ? `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / LECTURE ${String(lecture.order).padStart(2, "0")}` : lecture.kind === "practice" ? `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / EXAM ${String(lecture.order).padStart(2, "0")}` : lecture.kind.toUpperCase()}</div>
+    {isAdmin && (lecture.kind === "lectures" || lecture.kind === "practice") ? <input className="admin-title-input" value={title} onChange={event => updateTitle(event.target.value)} aria-label={`${lecture.kind === "practice" ? "족보" : "강의"} 제목 수정`} /> : <h1>{title}</h1>}
+    {!hideDescription && (isAdmin && lecture.kind === "practice" ? <textarea className="admin-description-input" rows={2} value={description} onChange={event => updateDescription(event.target.value)} aria-label="족보 설명 수정" /> : <p className="lead">{description}</p>)}
     {lecture.kind !== "practice" && <div className="lecture-metadata">{lecture.duration && <span>{lecture.duration} MIN</span>}{lecture.difficulty && <span>{lecture.difficulty.toUpperCase()}</span>}{lecture.tags?.map(tag => <span key={tag}>#{tag}</span>)}</div>}
   </header>;
 }

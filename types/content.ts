@@ -13,6 +13,12 @@ export interface LectureFrontmatter {
   published: boolean;
   due?: string;
   submissionUrl?: string;
+  gradeId?: string;
+  gradeName?: string;
+  semesterId?: string;
+  semesterName?: string;
+  subjectId?: string;
+  subjectName?: string;
 }
 
 export interface LectureMeta extends LectureFrontmatter {
@@ -35,4 +41,10 @@ export interface SearchEntry {
   path: string;
   week: number;
   kind: ContentKind;
+  location?: string;
 }
+
+export interface CatalogSubject { id: string; name: string; order: number; legacySource?: "weeks" }
+export interface CatalogSemester { id: string; name: string; order: number; subjects: CatalogSubject[] }
+export interface CatalogGrade { id: string; name: string; order: number; semesters: CatalogSemester[] }
+export interface AcademicCatalog { grades: CatalogGrade[] }

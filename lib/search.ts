@@ -7,6 +7,7 @@ export function getSearchIndex(): SearchEntry[] {
     readCollection(kind).map(doc => ({
       title: doc.title, description: doc.description, tags: doc.tags ?? [],
       body: markdownText(doc.content, doc.format), path: doc.path, week: doc.week, kind,
+      location: kind === "lectures" ? [doc.gradeName, doc.semesterName, doc.subjectName].filter(Boolean).join(" · ") : "족보",
     })),
   );
 }

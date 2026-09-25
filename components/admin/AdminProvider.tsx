@@ -34,7 +34,7 @@ export function AdminProvider({ children, expectedPassword }: { children: React.
           <div className="admin-dialog-icon">{isAdmin ? <ShieldCheck size={22} /> : <LockKeyhole size={22} />}</div>
           <Dialog.Title>{isAdmin ? "관리자 모드가 켜져 있습니다" : "관리자 모드"}</Dialog.Title>
           <Dialog.Description id="admin-description">
-            {isAdmin ? "강의노트 본문을 눌러 바로 수정할 수 있습니다." : "강의노트를 수정하려면 비밀번호를 입력하세요."}
+            {isAdmin ? "분류와 강의 노트, 족보를 추가하거나 수정할 수 있습니다." : "학습 자료를 수정하려면 비밀번호를 입력하세요."}
           </Dialog.Description>
           {isAdmin ? <div className="admin-dialog-actions">
             <button className="button" onClick={() => { setIsAdmin(false); close(false); }}>관리자 모드 종료</button>

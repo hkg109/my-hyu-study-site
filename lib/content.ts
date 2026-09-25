@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
-import { readWeeks } from "./weeks";
+import { readAcademicLectures } from "./academic-lectures";
+import { readAcademicPractice } from "./academic-practice";
 import type { ContentDocument, ContentKind, LectureFrontmatter } from "@/types/content";
 
 const positiveInteger = (value: unknown) => Number.isInteger(value) && Number(value) > 0;
@@ -48,10 +49,11 @@ function walk(directory: string, filePattern: RegExp): string[] {
 }
 
 export function readCollection(kind: ContentKind): ContentDocument[] {
-  if (kind === "lectures") return readWeeks();
+  if (kind === "lectures") return readAcademicLectures();
+  if (kind === "practice") return readAcademicPractice();
   const root = path.join(process.cwd(), "content");
   const directory = path.join(process.cwd(), "content", kind);
-  const documents = walk(directory, kind === "practice" ? /\.md$/ : /\.mdx?$/).map(file => {
+  const documents = walk(directory, /\.mdx?$/).map(file => {
     const { data, content } = matter(fs.readFileSync(file, "utf8"));
     const metadata = validateFrontmatter(data, path.relative(root, file));
     const slug = path.relative(directory, file).replace(/\.mdx?$/, "").split(path.sep);
@@ -60,8 +62,7 @@ export function readCollection(kind: ContentKind): ContentDocument[] {
     if (slug.length !== 1 || slug[0] !== expectedWeek) {
       throw new Error(`${file}: 파일 경로와 frontmatter의 week/order가 일치하지 않습니다.`);
     }
-    // Practice files keep the .md extension but may use the trusted <Answer> toggle component.
-    const format = kind === "practice" ? "mdx" as const : path.extname(file) === ".md" ? "md" as const : "mdx" as const;
+    const format = path.extname(file) === ".mdx" || /<[A-Z][A-Za-z]*(?:\s|>)/.test(content) ? "mdx" as const : "md" as const;
     return { ...metadata, slug, path: `/${kind}/${slug.join("/")}`, kind, content, format };
   });
   const paths = new Set<string>();

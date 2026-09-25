@@ -28,7 +28,7 @@ export function PrintLectureButton({ title }: { title: string }) {
 
     for (const answer of answers) answer.open = true;
     document.documentElement.classList.add("printing-document", `print-theme-${theme}`);
-    document.title = `${title.replace(/[\\/:*?"<>|]/g, "-")} - Handsome C++`;
+    document.title = `${title.replace(/[\\/:*?"<>|]/g, "-")} - HJS STUDY`;
   }, [theme, title]);
 
   const restorePage = useCallback(() => {
@@ -71,7 +71,7 @@ export function PrintLectureButton({ title }: { title: string }) {
       <option value="light">기본 PDF</option>
       <option value="dark">다크 PDF</option>
     </select>
-    <button type="button" className="document-print-button" onClick={print} aria-label="선택한 테마로 강의노트를 PDF로 저장">
+    <button type="button" className="document-print-button" onClick={print} aria-label="선택한 테마로 강의 노트를 PDF로 저장">
       <FileDown size={15} />
       PDF로 저장
     </button>
