@@ -11,19 +11,14 @@
           "order": 1,
           "subjects": [
             {
-              "id": "subject-muhei133",
-              "name": "정보시스템개론",
+              "id": "subject-muhy8vqy",
+              "name": "전산학개론",
+              "order": 1
+            },
+            {
+              "id": "subject-muhy93e5",
+              "name": "C프로그래밍",
               "order": 2
-            },
-            {
-              "id": "subject-muheizm5",
-              "name": "과학의탈국가화",
-              "order": 3
-            },
-            {
-              "id": "subject-muhej833",
-              "name": "AI R-PY",
-              "order": 4
             }
           ]
         },
@@ -31,7 +26,23 @@
           "id": "semester-muheifg4",
           "name": "2학기",
           "order": 2,
-          "subjects": []
+          "subjects": [
+            {
+              "id": "subject-muhy9cpw",
+              "name": "정시개-영어",
+              "order": 1
+            },
+            {
+              "id": "subject-muhz2xir",
+              "name": "정시개-한국어",
+              "order": 3
+            },
+            {
+              "id": "subject-muhz3nd1",
+              "name": "AI-R-PY",
+              "order": 4
+            }
+          ]
         }
       ]
     },

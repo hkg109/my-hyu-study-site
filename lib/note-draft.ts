@@ -67,3 +67,12 @@ export function removeNoteDraft(path: string, source: string) {
   window.dispatchEvent(new CustomEvent(NOTE_UPDATE_EVENT, { detail: { path, value: source } }));
   queueFileSave(path, { content: source });
 }
+
+export function forgetNoteDraft(path: string) {
+  for (const timerKey of [path, `title:${path}`, `metadata:${path}`]) {
+    const timer = saveTimers.get(timerKey);
+    if (timer) clearTimeout(timer);
+    saveTimers.delete(timerKey);
+  }
+  try { localStorage.removeItem(NOTE_STORAGE_PREFIX + path); } catch { /* The file was deleted even if local recovery storage is unavailable. */ }
+}

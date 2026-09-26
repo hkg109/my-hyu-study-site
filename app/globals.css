@@ -57,6 +57,10 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
 .side-link.active { background:var(--surface-active); color:var(--foreground); font-weight:600; }
 .side-order { font-family:"JetBrains Mono",monospace; font-size:11px; width:18px; flex-shrink:0; color:var(--subtle); }
 .side-link.active .side-order { color:var(--muted); }
+.side-document-row { position:relative; display:flex; align-items:center; }
+.side-document-row .side-link { flex:1; min-width:0; }
+.side-document-row .side-link>span:nth-child(2) { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.side-document-delete { flex-shrink:0; margin-left:2px; }
 .trailing { margin-left:auto; flex-shrink:0; }
 .week-nav { margin-bottom:22px; }
 .week-nav summary { display:flex; justify-content:space-between; align-items:center; cursor:pointer; list-style:none; padding:0 11px 7px; font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.08em; color:var(--muted); }

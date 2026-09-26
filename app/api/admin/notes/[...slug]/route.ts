@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
@@ -71,5 +71,28 @@ export async function POST(request: Request, { params }: { params: Promise<{ slu
   } catch (error) {
     console.error("Failed to save lecture note:", error);
     return Response.json({ error: "강의 노트를 저장하지 못했습니다." }, { status: 500 });
+  }
+}
+
+export async function DELETE(request: Request, { params }: { params: Promise<{ slug: string[] }> }) {
+  if (!localRequest(request)) return Response.json({ error: "로컬 개발 환경에서만 삭제할 수 있습니다." }, { status: process.env.NODE_ENV === "development" ? 403 : 404 });
+  const { slug } = await params;
+  let body: { kind?: unknown };
+  try { body = await request.json(); }
+  catch { return Response.json({ error: "요청 내용을 읽을 수 없습니다." }, { status: 400 }); }
+  if (body.kind !== "lectures" && body.kind !== "practice") return Response.json({ error: "삭제할 수 없는 문서 종류입니다." }, { status: 400 });
+
+  const source = body.kind === "practice" ? resolvePracticeSource(slug) : resolveLectureSource(slug)?.file;
+  if (!source) return Response.json({ error: body.kind === "practice" ? "삭제할 족보를 찾을 수 없습니다." : "삭제할 강의 노트를 찾을 수 없습니다." }, { status: 404 });
+
+  try {
+    await unlink(source);
+    const documentPath = `/${body.kind === "practice" ? "practice" : "lectures"}/${slug.join("/")}`;
+    revalidatePath(documentPath);
+    revalidatePath("/", "layout");
+    return Response.json({ deleted: true, file: path.relative(process.cwd(), source) });
+  } catch (error) {
+    console.error("Failed to delete note:", error);
+    return Response.json({ error: body.kind === "practice" ? "족보를 삭제하지 못했습니다." : "강의 노트를 삭제하지 못했습니다." }, { status: 500 });
   }
 }

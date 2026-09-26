@@ -7,7 +7,7 @@ import type { AcademicCatalog, LectureMeta } from "@/types/content";
 import { useProgress } from "@/components/lecture/ProgressProvider";
 import { useAdmin } from "@/components/admin/AdminContext";
 import { useEffect, useState } from "react";
-import { NOTE_TITLE_EVENT } from "@/lib/note-draft";
+import { forgetNoteDraft, NOTE_TITLE_EVENT } from "@/lib/note-draft";
 
 type Level = "grade" | "semester" | "subject";
 
@@ -66,6 +66,29 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
     } finally { setPending(false); }
   };
 
+  const deleteDocument = async (document: LectureMeta) => {
+    const documentType = practiceMode ? "족보" : "강의 노트";
+    if (!window.confirm(`'${editedTitles[document.path] ?? document.title}' ${documentType}를 삭제할까요?\n삭제한 파일은 복구할 수 없습니다.`)) return;
+    setPending(true);
+    try {
+      const response = await fetch(`/api/admin/notes/${document.slug.map(encodeURIComponent).join("/")}`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ kind: practiceMode ? "practice" : "lectures" }),
+      });
+      const result = await response.json() as { error?: string };
+      if (!response.ok) { window.alert(result.error ?? `${documentType}를 삭제하지 못했습니다.`); return; }
+      forgetNoteDraft(document.path);
+      setEditedTitles(current => {
+        const next = { ...current };
+        delete next[document.path];
+        return next;
+      });
+      if (pathname === document.path) router.push(practiceMode ? "/practice" : "/");
+      router.refresh();
+    } finally { setPending(false); }
+  };
+
   const editButton = (label: string, onClick: () => void) => isAdmin && <button type="button" className="catalog-icon-button" disabled={pending} aria-label={`${label} 이름 수정`} onClick={event => { event.preventDefault(); event.stopPropagation(); onClick(); }}><Pencil size={12} /></button>;
   const addButton = (label: string, onClick: () => void) => isAdmin && <button type="button" className="catalog-icon-button" disabled={pending} aria-label={`${label} 추가`} onClick={event => { event.preventDefault(); event.stopPropagation(); onClick(); }}><Plus size={13} /></button>;
   const deleteButton = (label: string, onClick: () => void) => isAdmin && <button type="button" className="catalog-icon-button catalog-delete-button" disabled={pending} aria-label={`${label} 삭제`} onClick={event => { event.preventDefault(); event.stopPropagation(); onClick(); }}><Trash2 size={12} /></button>;
@@ -79,7 +102,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
         {[...semester.subjects].sort((a, b) => a.order - b.order).map(subject => {
           const subjectDocuments = documents.filter(document => document.gradeId === grade.id && document.semesterId === semester.id && document.subjectId === subject.id);
           return <details open className="catalog-subject" key={subject.id}><summary><span>{subject.name}</span><span className="catalog-actions">{editButton(subject.name, () => catalogAction("rename", "subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{deleteButton(subject.name, () => deleteCategory("subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{addButton(practiceMode ? "족보" : "노트", () => addDocument(grade.id, semester.id, subject.id))}<ChevronDown size={12} /></span></summary>
-            <div>{subjectDocuments.map(document => <Link key={document.path} href={document.path} onClick={onNavigate} className={`side-link ${pathname === document.path ? "active" : ""}`} aria-current={pathname === document.path ? "page" : undefined}><span className="side-order">{String(document.order).padStart(2, "0")}</span><span>{editedTitles[document.path] ?? document.title}</span>{!practiceMode && progress[document.slug.join("/")] && <Check size={14} aria-label="학습 완료" className="trailing" />}</Link>)}</div>
+            <div>{subjectDocuments.map(document => <div className="side-document-row" key={document.path}><Link href={document.path} onClick={onNavigate} className={`side-link ${pathname === document.path ? "active" : ""}`} aria-current={pathname === document.path ? "page" : undefined}><span className="side-order">{String(document.order).padStart(2, "0")}</span><span>{editedTitles[document.path] ?? document.title}</span>{!practiceMode && progress[document.slug.join("/")] && <Check size={14} aria-label="학습 완료" className="trailing" />}</Link>{isAdmin && <button type="button" className="catalog-icon-button catalog-delete-button side-document-delete" disabled={pending} aria-label={`${editedTitles[document.path] ?? document.title} 삭제`} onClick={() => deleteDocument(document)}><Trash2 size={12} /></button>}</div>)}</div>
           </details>;
         })}
       </details>)}
