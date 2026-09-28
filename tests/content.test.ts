@@ -14,7 +14,12 @@ import { loadWeekFiles } from "../scripts/sync-weeks.mjs";
 
 test("published manifest hides drafts from routes, navigation and search", () => {
   const lectures = getAllLectures();
-  assert.deepEqual(lectures.map(doc => [doc.week, doc.order]), lectures.map(doc => [doc.week, doc.order]).sort((a, b) => a[0] - b[0] || a[1] - b[1]));
+  const subjectOrders = new Map<string, number[]>();
+  for (const lecture of lectures) {
+    const subject = [lecture.gradeId, lecture.semesterId, lecture.subjectId].join("/");
+    subjectOrders.set(subject, [...(subjectOrders.get(subject) ?? []), lecture.order]);
+  }
+  for (const orders of subjectOrders.values()) assert.deepEqual(orders, [...orders].sort((a, b) => a - b));
   assert.ok(lectures.every(doc => doc.order >= 1));
   assert.ok(lectures.every(doc => doc.published));
   assert.equal(getDocument("lectures", ["week-02", "02-loop"]), undefined);

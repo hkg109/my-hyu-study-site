@@ -57,6 +57,25 @@
       "name": "3학년",
       "order": 3,
       "semesters": []
+    },
+    {
+      "id": "grade-mukhnzii",
+      "name": "과외",
+      "order": 4,
+      "semesters": [
+        {
+          "id": "semester-mukhoay4",
+          "name": "성수중1-방준희",
+          "order": 1,
+          "subjects": [
+            {
+              "id": "subject-mukhs13h",
+              "name": "1-2 과학",
+              "order": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
