@@ -1,6 +1,6 @@
 ---
 title: "Chapter 2: Global E-Business and Collaboration"
-description: ""
+description: "Business processes, management-level systems, enterprise applications, collaboration, and knowledge management."
 order: 2
 published: true
 ---
@@ -9,11 +9,15 @@ published: true
 
 ## Source
 
+*pp. 1-2*
+
 - Original file: `ch02_17ed.pdf`
 - Format: 61-slide lecture deck
 - Scope: Chapter 2 material on business processes, enterprise systems, and collaboration, followed by an extended knowledge-management section and a discussion of the information systems function.
 
 ## Learning Objectives
+
+*p. 2*
 
 1. Explain how business processes relate to information systems.
 2. Describe how different information systems support different management groups.
@@ -24,15 +28,21 @@ published: true
 
 ## Chapter Overview
 
+*pp. 3-4*
+
 Organizations are collections of business processes that move materials, information, and knowledge. Information systems improve these processes by automating routine steps, integrating work across functions, supporting decisions, and enabling new ways of operating. Different management levels require different types of systems, but those systems must exchange reliable information rather than operate as isolated silos.
 
 Enterprise applications provide cross-functional integration. Collaboration systems help people work together across time and location. Knowledge-management systems capture, store, distribute, and apply organizational knowledge. The information systems department provides the governance, expertise, and infrastructure needed to coordinate these capabilities.
 
 ## 1. Opening Case: Sharp Corporation
 
+*pp. 3-4*
+
 Sharp faced hierarchical, top-down processes, weak knowledge sharing, and growing competitive pressure. It adopted enterprise social networking to redesign collaboration and knowledge dissemination. The case demonstrates that collaboration technology can support innovation and growth only when business processes and organizational culture also change.
 
 ## 2. Business Processes and Information Systems
+
+*pp. 5-8*
 
 ### Business Processes
 
@@ -64,6 +74,8 @@ Information technology can:
 
 ## 3. Systems for Different Management Groups
 
+*pp. 9-18*
+
 | System | Primary users | Decision or work supported | Typical output or use |
 |---|---|---|---|
 | Transaction Processing System (TPS) | Operational managers and staff | Routine daily transactions | Sales orders, payroll, shipping, receipts |
@@ -88,6 +100,8 @@ DSS support nonroutine decisions by combining data with analytical models. A voy
 ESS present high-level internal and external information in a simple form. They help senior leaders exercise judgment about strategic issues. ESS rely on trustworthy information from MIS and DSS, so separation among these systems can create organizational dysfunction.
 
 ## 4. Enterprise Applications
+
+*pp. 19-24*
 
 Enterprise applications integrate processes and information across functions, management levels, and sometimes organizational boundaries.
 
@@ -119,6 +133,8 @@ The architecture connects enterprise systems, SCM, CRM, and KMS across core func
 
 ## 5. Intranets, Extranets, and Digital Business
 
+*pp. 25-26*
+
 - **Intranet:** an internal network using Internet standards and restricted to employees.
 - **Extranet:** a controlled network area accessible to authorized external partners such as suppliers or vendors.
 - **E-business:** use of digital technology and the Internet to run major business processes.
@@ -126,6 +142,8 @@ The architecture connects enterprise systems, SCM, CRM, and KMS across core func
 - **E-government:** use of Internet technology to provide public information and services.
 
 ## 6. Collaboration and Social Business
+
+*pp. 27-35*
 
 ### Collaboration
 
@@ -182,6 +200,8 @@ The time-space matrix classifies collaboration by whether participants work:
 
 ## 7. Knowledge Management in Business
 
+*pp. 36-41*
+
 Knowledge and other intangible assets contribute substantially to organizational value. Knowledge-management systems are designed to make this resource reusable rather than leaving it fragmented across documents, systems, and individual employees.
 
 ### Data, Information, Knowledge, and Wisdom
@@ -204,6 +224,8 @@ Knowledge and other intangible assets contribute substantially to organizational
 Organizations learn by collecting data, measuring results, experimenting, receiving feedback, and changing behavior. Learning may lead to new processes or different patterns of managerial decision-making.
 
 ## 8. The Knowledge-Management Value Chain
+
+*pp. 42-45*
 
 Knowledge management consists of processes for creating, storing, transferring, and applying knowledge.
 
@@ -235,9 +257,13 @@ Knowledge management consists of processes for creating, storing, transferring, 
 
 ## 9. Organizational and Management Capital for Knowledge
 
+*p. 46*
+
 Knowledge systems need supporting roles and communities. Examples include chief knowledge officers, knowledge managers, and communities of practice. Communities of practice are informal professional networks that share expertise, educate members, and help develop common methods.
 
 ## 10. Major Types of Knowledge-Management Systems
+
+*pp. 47-58*
 
 ### Enterprise-Wide Knowledge-Management Systems
 
@@ -261,6 +287,8 @@ Intelligent techniques extend the organizational knowledge base. Examples includ
 
 ## 11. Enterprise Content and Learning Systems
 
+*pp. 49-58*
+
 ### Enterprise Content Management
 
 Content-management systems capture, classify, store, retrieve, distribute, and preserve documents and semistructured information. They require metadata, taxonomies, access controls, and rules that distinguish authoritative content from obsolete or duplicate material.
@@ -275,6 +303,8 @@ LMS support the administration, delivery, tracking, and assessment of employee e
 
 ## 12. The Information Systems Function
 
+*pp. 59-60*
+
 The information systems department is the formal organizational unit responsible for technology services. It may include leadership roles such as:
 
 - Chief Information Officer
@@ -286,6 +316,8 @@ The information systems department is the formal organizational unit responsible
 End users increasingly participate in system design and development. IT governance defines decision rights, accountability, standards, priorities, and policies for technology use.
 
 ## 13. Key Figures
+
+*pp. 7, 10, 13-16, 20, 30, 35, 43, 48, 51, 56*
 
 - **Figure 2.1:** Cross-functional order fulfillment.
 - **Figure 2.2:** Payroll transaction processing.
@@ -302,8 +334,32 @@ End users increasingly participate in system design and development. IT governan
 
 ## 14. Career Relevance
 
+*p. 61*
+
 The chapter connects business systems knowledge to roles such as sales support, business analysis, operations, enterprise applications, and information systems management. Useful skills include understanding cross-functional processes, interpreting system-generated information, coordinating with users and technical teams, and evaluating whether a proposed system fits organizational goals.
 
 ## Core Takeaway
 
+*pp. 1-61*
+
 Business performance depends on connected processes and connected information. Transaction, management, decision, executive, enterprise, collaboration, and knowledge systems create the most value when they operate as an integrated organizational system supported by appropriate culture, governance, and management.
+
+## One-Minute Review
+
+*pp. 1-61*
+
+- Routine operational transactions are recorded by {{TPS}}.
+- Structured middle-management reports are provided by {{MIS}}.
+- Models and what-if analysis are associated with {{DSS}}.
+- Strategic executive information is provided by {{ESS}}.
+- The knowledge value chain is acquisition, storage, {{dissemination}}, and application.
+
+> [!FLASHCARD]
+> Q: How do ERP and SCM differ?
+> A: ERP integrates internal functions and common data; SCM coordinates supply, production, logistics, and distribution across organizations.
+
+> [!QUIZ]
+> Which system first records sales transactions, and which system turns them into a monthly report for middle management?
+
+> [!ANSWER]
+> TPS records the transactions, and MIS summarizes TPS data into the recurring management report.
