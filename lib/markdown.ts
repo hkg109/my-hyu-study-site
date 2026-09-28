@@ -76,6 +76,36 @@ function transformCallouts(tree: Root) {
   });
 }
 
+function removeBlockMarker(node: Blockquote, type: "QUIZ" | "ANSWER") {
+  const first = node.children[0];
+  if (first?.type !== "paragraph") return false;
+  const marker = first.children[0];
+  if (marker?.type !== "text") return false;
+  const match = new RegExp(`^\\[!${type}\\]\\s*`).exec(marker.value);
+  if (!match) return false;
+  marker.value = marker.value.slice(match[0].length);
+  if (!marker.value && first.children.length === 1) node.children.shift();
+  return true;
+}
+
+function transformQuizzes(tree: Root) {
+  for (let index = 0; index < tree.children.length; index += 1) {
+    const quiz = tree.children[index];
+    if (quiz.type !== "blockquote" || !removeBlockMarker(quiz, "QUIZ")) continue;
+    const quizId = `quiz-${stableHash(toString(quiz))}`;
+    setProperties(quiz, { className: ["study-quiz"], "data-quiz-id": quizId, "data-callout-label": "확인 문제" }, "section");
+    const answer = tree.children[index + 1];
+    if (answer?.type !== "blockquote" || !removeBlockMarker(answer, "ANSWER")) continue;
+    const summary = { type: "paragraph", children: [{ type: "text", value: "정답 확인" }], data: { hName: "summary", hProperties: { className: ["study-answer-summary"] } } } as RootContent;
+    const controls = { type: "paragraph", children: ([
+      ["correct", "맞음"], ["unsure", "헷갈림"], ["wrong", "틀림"],
+    ] as const).map(([result, label]) => ({ type: "emphasis", children: [{ type: "text", value: label }], data: { hName: "button", hProperties: { type: "button", "data-quiz-id": quizId, "data-quiz-result": result } } })), data: { hName: "div", hProperties: { className: ["study-quiz-results"] } } } as RootContent;
+    answer.children.unshift(summary as never);
+    answer.children.push(controls as never);
+    setProperties(answer, { className: ["study-answer"], "data-quiz-id": quizId }, "details");
+  }
+}
+
 function assignBlockIds(tree: Root) {
   const occurrences = new Map<string, number>();
   visit(tree, node => {
@@ -92,6 +122,7 @@ function assignBlockIds(tree: Root) {
 export function remarkStudySyntax() {
   return (tree: Root) => {
     transformHighlights(tree);
+    transformQuizzes(tree);
     transformCallouts(tree);
     assignBlockIds(tree);
   };
