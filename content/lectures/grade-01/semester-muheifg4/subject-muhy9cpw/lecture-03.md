@@ -1,6 +1,6 @@
 ---
 title: "Chapter 2: Global E-Business, Collaboration, and Knowledge Management - Final Updated Deck"
-description: ""
+description: "Cloud ERP, generative AI, human-agent collaboration, sustainable infrastructure, and responsible governance."
 order: 3
 published: true
 ---
@@ -9,11 +9,15 @@ published: true
 
 ## Source
 
+*pp. 1-2*
+
 - Original file: `ch02_17ed_final.pdf`
 - Format: 73-slide lecture deck
 - Scope: the Chapter 2 material in `ch02_17ed.pdf`, expanded with current updates on AI-enabled processes, cloud ERP, human-agent collaboration, sustainability, generative AI, responsible AI, modern information systems governance, and career trends.
 
 ## Learning Objectives
+
+*p. 2*
 
 1. Explain the relationship between business processes and information systems.
 2. Distinguish systems used by operational, middle, and senior management.
@@ -25,11 +29,15 @@ published: true
 
 ## Executive Summary
 
+*pp. 3-9*
+
 The updated deck presents information systems as an integrated operating environment for processes, decisions, collaboration, and knowledge. Traditional systems such as TPS, MIS, DSS, ESS, ERP, SCM, CRM, and KMS remain central, but cloud platforms, machine learning, generative AI, and software agents change how work is designed and governed.
 
 The main shift is from systems that merely record or report activity toward systems that recommend, automate, and sometimes execute multi-step work. This increases potential speed and scale, while also increasing the need for permissions, monitoring, data quality, human review, escalation paths, security, sustainability, and clear accountability.
 
 ## 1. Business Processes and Information Systems
+
+*pp. 5-9*
 
 A business process is a coordinated set of activities that produces a specific result. Processes move materials, information, and knowledge across functional boundaries. Order fulfillment, for example, connects sales, accounting, manufacturing, inventory, and delivery.
 
@@ -56,6 +64,8 @@ The design question is therefore not simply whether AI is used, but what level o
 
 ## 2. Systems for Different Management Groups
 
+*pp. 10-19*
+
 | System | Main audience | Purpose |
 |---|---|---|
 | TPS | Operational managers and staff | Record routine daily transactions such as orders, payroll, and shipping |
@@ -66,6 +76,8 @@ The design question is therefore not simply whether AI is used, but what level o
 These systems should form an information chain. TPS supply reliable operational data; MIS organize the data for routine management; DSS provide analysis; and ESS give senior leaders a concise strategic view. Isolated systems weaken consistency and decision quality.
 
 ## 3. Enterprise Applications
+
+*pp. 20-27*
 
 Enterprise applications connect data and processes across functions and organizational levels.
 
@@ -116,6 +128,8 @@ KMS capture and distribute expertise about products, services, processes, and de
 
 ## 4. Intranets, Extranets, and Digital Business
 
+*pp. 28-29*
+
 - **Intranet:** a private internal network based on Internet standards.
 - **Extranet:** a restricted network that provides selected access to suppliers, vendors, or other partners.
 - **E-business:** digital execution of major business processes.
@@ -123,6 +137,8 @@ KMS capture and distribute expertise about products, services, processes, and de
 - **E-government:** use of Internet technology to deliver government information and services.
 
 ## 5. Collaboration and Social Business
+
+*pp. 30-41*
 
 Collaboration may be formal or informal, short-term or long-term, co-located or distributed. It has become more important as organizations rely on knowledge work, distributed teams, and cross-functional problem solving.
 
@@ -177,6 +193,8 @@ The time-space matrix remains a useful method for matching tools to when and whe
 
 ## 6. Environmental Impact of Digital Infrastructure
 
+*p. 35*
+
 AI and cloud services increase demand for data-center computing, electricity, cooling, water, and specialized hardware. Efficiency gains can reduce the impact per unit of computing, but total demand may continue to grow.
 
 The management implication is that infrastructure decisions should consider:
@@ -189,6 +207,8 @@ The management implication is that infrastructure decisions should consider:
 - The business value produced per unit of resource consumption
 
 ## 7. Knowledge as an Organizational Asset
+
+*pp. 42-47*
 
 Knowledge is a major intangible asset. It differs from raw data and information because it includes patterns, rules, context, experience, and judgment.
 
@@ -205,6 +225,8 @@ Knowledge is a major intangible asset. It differs from raw data and information 
 Organizations learn through data collection, measurement, experimentation, feedback, and behavioral change. Learning becomes visible when the organization redesigns processes or changes how decisions are made.
 
 ## 8. Knowledge-Management Value Chain
+
+*pp. 48-53*
 
 The knowledge-management value chain has four stages:
 
@@ -227,6 +249,8 @@ Management and organizational activities support every stage. Feedback from appl
 Generative AI does not remove the need for knowledge governance. It makes trusted content, metadata, access control, and source traceability more important.
 
 ## 9. Enterprise Knowledge Systems
+
+*pp. 54-66*
 
 ### Enterprise Content Management
 
@@ -262,6 +286,8 @@ Intelligent techniques include expert systems, case-based reasoning, fuzzy logic
 
 ## 10. Responsible Use of Generative AI
 
+*p. 67*
+
 The deck organizes responsible AI around a practical governance cycle:
 
 - **Govern:** define ownership, approved and prohibited uses, risk tolerance, and accountability.
@@ -272,6 +298,8 @@ The deck organizes responsible AI around a practical governance cycle:
 Responsible use also requires data protection, access control, traceable sources, clear human authority, and a process for escalating uncertain or high-impact outputs.
 
 ## 11. The Information Systems Function
+
+*pp. 68-70*
 
 The information systems department provides technology services and is commonly led by a Chief Information Officer. Other leadership roles may include the Chief Information Security Officer, Chief Knowledge Officer, Chief Privacy Officer, and Chief Data Officer.
 
@@ -301,6 +329,8 @@ IT governance specifies decision rights, standards, policies, and accountability
 
 ## 12. Figures and Models
 
+*pp. 7, 11, 14-17, 21, 34, 41, 50, 55, 59, 64*
+
 - **Figure 2.1:** Order fulfillment as a cross-functional process.
 - **Figure 2.2:** Payroll transaction processing.
 - **Figure 2.3:** TPS data feeding MIS reports.
@@ -316,6 +346,8 @@ IT governance specifies decision rights, standards, policies, and accountability
 
 ## 13. Career Context
 
+*pp. 71-72*
+
 The deck identifies roles such as:
 
 - Business systems analyst
@@ -327,6 +359,8 @@ The deck identifies roles such as:
 Growing demand for AI, machine learning, data, and software skills does not eliminate the need for business understanding. Professionals must be able to define outcomes, redesign processes, evaluate evidence, govern data and AI, communicate across functions, and keep humans accountable for consequential work.
 
 ## 14. Learning Check
+
+*p. 73*
 
 ### How does an AI-enabled process differ from simple task automation?
 
@@ -346,4 +380,24 @@ Content should be authoritative, current, deduplicated, well classified, permiss
 
 ## Core Takeaway
 
+*pp. 1-73*
+
 Modern information systems do more than integrate transactions and reports. They increasingly assist, automate, and execute knowledge-intensive work. Their value depends on process design, trusted enterprise data, collaboration, governance, sustainability, and explicit human accountability.
+
+## One-Minute Review
+
+*pp. 1-73*
+
+- AI-enabled processes can provide {{assistance}}, {{automation}}, or agentic execution.
+- The knowledge value chain covers {{acquisition}}, {{storage}}, {{dissemination}}, and {{application}}.
+- Responsible-AI operations cycle through govern, map, {{measure}}, and manage.
+
+> [!FLASHCARD]
+> Q: Why does generative AI make knowledge governance more important?
+> A: AI can quickly amplify outdated, duplicate, or unauthorized content, so official versions, ownership, permissions, metadata, and provenance become critical.
+
+> [!QUIZ]
+> A purchasing agent compares suppliers and automatically places orders below a threshold. Which controls should be defined first?
+
+> [!ANSWER]
+> Purchase limits, least-privilege access, approved suppliers and data sources, action logs, human approval for exceptions, and a clear escalation path.

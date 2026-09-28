@@ -1,6 +1,6 @@
 ---
 title: "Chapter 1: Information Systems in Global Business Today"
-description: ""
+description: "A readable guide to information systems, strategic objectives, organizational dimensions, and complementary assets."
 order: 1
 published: true
 ---
@@ -9,11 +9,15 @@ published: true
 
 ## Source
 
+*pp. 1-3*
+
 - Original file: `ch01_17ed.pdf`
 - Format: 50-slide lecture deck
 - Main focus: why information systems matter, how they work, and why business value depends on the joint design of technology, management, and organization.
 
 ## Learning Objectives
+
+*p. 3*
 
 1. Explain how information systems are transforming business and why they are essential for running and managing organizations.
 2. Define an information system and describe its management, organization, and technology dimensions.
@@ -23,11 +27,15 @@ published: true
 
 ## Chapter Overview
 
+*pp. 2-5*
+
 Information systems have become part of the basic infrastructure of modern business. Organizations use them to coordinate global operations, digitize relationships with customers and suppliers, improve decisions, create new products and services, and redesign work. Technology alone, however, does not guarantee better performance. Value emerges when technology is combined with suitable business processes, skilled people, supportive management, and an organizational culture that can use the new capabilities effectively.
 
 The chapter therefore treats an information system as a sociotechnical system. Hardware, software, data, and networks form the technical side, while people, structure, processes, culture, leadership, and strategy form the social and organizational side.
 
 ## 1. How Information Systems Are Transforming Business
+
+*pp. 6-15*
 
 Major developments include:
 
@@ -55,6 +63,8 @@ In a digital firm:
 - Time shifting and space shifting make work less dependent on a fixed schedule or location.
 
 ## 2. Strategic Business Objectives of Information Systems
+
+*pp. 16-24*
 
 Firms invest in information systems to pursue six major objectives.
 
@@ -84,6 +94,8 @@ Some systems are required simply to remain in business. Competitive pressure, in
 
 ## 3. What Is an Information System?
 
+*pp. 25-29*
+
 ### Information Technology and Information Systems
 
 - **Information technology (IT):** the hardware and software a business uses to achieve its objectives.
@@ -108,6 +120,8 @@ For example, individual supermarket checkout records are data. Aggregating them 
 The organization operates within an environment that includes customers, suppliers, competitors, regulators, shareholders, and other external actors.
 
 ## 4. The Three Dimensions of Information Systems
+
+*pp. 30-37*
 
 ### 4.1 Organization
 
@@ -140,6 +154,8 @@ Together, these technologies form the organization's IT infrastructure, which pr
 
 ## 5. A Business Perspective on Information Systems
 
+*pp. 38-42*
+
 An information system is an organizational and managerial solution built with information technology to address a challenge in the environment. From this perspective, an information system is an instrument for creating value rather than merely a technical installation.
 
 ### The Business Information Value Chain
@@ -156,6 +172,8 @@ Raw data moves through value-adding activities:
 The value of an information system depends partly on whether the organization can use its outputs to improve decisions, processes, and performance.
 
 ## 6. Complementary Assets
+
+*pp. 43-44*
 
 Technology investment does not automatically produce high returns. Firms receive greater value when they also invest in complementary assets.
 
@@ -185,6 +203,8 @@ Technology investment does not automatically produce high returns. Firms receive
 
 ## 7. Approaches to Information Systems
 
+*pp. 45-49*
+
 ### Technical Approach
 
 The technical approach emphasizes formal models and quantitative methods. It draws from computer science, management science, and operations research.
@@ -198,6 +218,8 @@ The behavioral approach examines issues such as implementation, organizational c
 The sociotechnical perspective combines technical and behavioral insights. It argues that strong performance comes from jointly optimizing the social system and the technical system. Changing only the technology often produces a suboptimal result because the surrounding jobs, processes, incentives, structure, and culture remain unchanged.
 
 ## 8. Cases and Applications
+
+*pp. 4-5, 12, 37*
 
 ### Walmart's AI-Enabled Supply Chain
 
@@ -213,6 +235,8 @@ The healthcare case demonstrates how technologies such as mobile tools and RFID 
 
 ## 9. Key Figures
 
+*pp. 8, 17, 26, 29, 31, 33, 40, 42, 45, 49*
+
 - **Figure 1.1:** Growth in information technology capital investment.
 - **Figure 1.2:** Increasing interdependence between organizations and information systems.
 - **Figure 1.3:** The transformation of raw data into meaningful information.
@@ -225,6 +249,8 @@ The healthcare case demonstrates how technologies such as mobile tools and RFID 
 - **Figure 1.10:** Joint optimization of social and technical systems.
 
 ## 10. Key Terms
+
+*pp. 1-50*
 
 - Business model
 - Business process
@@ -245,8 +271,30 @@ The healthcare case demonstrates how technologies such as mobile tools and RFID 
 
 ## 11. Career Relevance
 
+*p. 50*
+
 Information systems knowledge helps professionals understand how data, technology, processes, and people interact. It supports careers in analytics, operations, finance, sales, consulting, product management, and technology-enabled service. Employers value candidates who can translate business needs into system requirements, communicate with technical and nontechnical colleagues, and recognize that successful systems require organizational change as well as technical competence.
 
 ## Core Takeaway
 
+*pp. 1-50*
+
 Information systems create business value when organizations align technology with strategy, management, processes, people, and culture. The central lesson is not simply to acquire better technology, but to design a better sociotechnical system around it.
+
+## One-Minute Review
+
+*pp. 1-50*
+
+- The four information-system activities are {{input}}, {{processing}}, {{output}}, and {{feedback}}.
+- The three dimensions are {{organization}}, {{management}}, and {{technology}}.
+- Technology investments require organizational, managerial, and social {{complementary assets}}.
+
+> [!FLASHCARD]
+> Q: What is the key difference between IT and an information system?
+> A: IT mainly refers to hardware and software; an information system also includes people, processes, organizational relationships, and managerial purposes.
+
+> [!QUIZ]
+> A firm installs a modern ERP system but keeps the old workflows and incentives. Which concepts best explain the weak result?
+
+> [!ANSWER]
+> Complementary assets and the sociotechnical perspective. Processes, incentives, culture, training, and technology must change together.
