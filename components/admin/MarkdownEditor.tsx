@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { expandSlashShortcut } from "@/lib/admin-markdown";
-import { remarkDocumentHeadings } from "@/lib/markdown";
+import { remarkDocumentHeadings, remarkStudySyntax } from "@/lib/markdown";
 import { loadNoteDraft, NOTE_FILE_STATUS_EVENT, NOTE_UPDATE_EVENT, removeNoteDraft, saveNoteDraft, type NoteFileStatus } from "@/lib/note-draft";
 import { useAdmin } from "./AdminContext";
 
@@ -69,8 +69,8 @@ export function MarkdownEditor({ path, filename, source, children }: { path: str
       <button onClick={() => setEditing(false)} aria-label="편집기 닫기"><X size={16} />닫기</button>
     </div></div>
     <div className="editor-grid">
-      <div className="editor-input-pane"><div className="editor-pane-label">MARKDOWN</div><textarea value={value} spellCheck={false} onChange={onChange} aria-label="마크다운 노트 내용" /></div>
-      <div className="editor-preview-pane"><div className="editor-pane-label">실시간 미리보기</div><div className="prose"><ReactMarkdown remarkPlugins={[remarkGfm, remarkDocumentHeadings]} components={{ table: ({ children: tableChildren }) => <div className="table-scroll"><table>{tableChildren}</table></div> }}>{value}</ReactMarkdown></div></div>
+      <div className="editor-input-pane"><div className="editor-pane-label">MARKDOWN</div><details className="editor-syntax-help"><summary>학습 문법</summary><div><code>==중요 내용==</code><code>==red:주의 내용==</code><code>&gt; [!DEFINITION]</code><code>&gt; [!EXAM]</code><code>&gt; [!CAUTION]</code><code>&gt; [!EXAMPLE]</code><code>&gt; [!ADVANCED]</code></div></details><textarea value={value} spellCheck={false} onChange={onChange} aria-label="마크다운 노트 내용" /></div>
+      <div className="editor-preview-pane"><div className="editor-pane-label">실시간 미리보기</div><div className="prose"><ReactMarkdown remarkPlugins={[remarkGfm, remarkStudySyntax, remarkDocumentHeadings]} components={{ table: ({ children: tableChildren }) => <div className="table-scroll"><table>{tableChildren}</table></div> }}>{value}</ReactMarkdown></div></div>
     </div>
   </section>;
 }

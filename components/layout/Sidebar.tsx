@@ -49,7 +49,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
     setPending(true);
     try {
       const response = await fetch(practiceMode ? "/api/admin/practice" : "/api/admin/lectures", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gradeId, semesterId, subjectId, title }) });
-      const result = await response.json() as { error?: string; path?: string };
+      const result = await response.json().catch(() => ({})) as { error?: string; path?: string };
       if (!response.ok || !result.path) { window.alert(result.error ?? "노트를 만들지 못했습니다."); return; }
       router.refresh(); router.push(result.path); onNavigate?.();
     } finally { setPending(false); }

@@ -4,7 +4,8 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { loadWeekTitles, readWeeks } from "../lib/weeks";
-import { getHeadings } from "../lib/markdown";
+import { getHeadings, markdownText, parseMarkdown } from "../lib/markdown";
+import { visit } from "unist-util-visit";
 import { syncWeeks, watchWeeks, loadWeekFiles } from "../scripts/sync-weeks.mjs";
 
 const readFixture = (root: string) => readWeeks(loadWeekFiles(path.join(root, "weeks")));
@@ -41,6 +42,33 @@ test("week manifest reflects additions, edits and deletions and sorts numericall
 test("plain Markdown keeps every body heading and ignores fenced headings", () => {
   const source = '# 강의 제목\n\n## 소개\n\n# 함수\n\n## 함수 호출\n\n```cpp\n# 가짜 제목\n```\n\n# 재귀\n\n## 기저 조건';
   assert.deepEqual(getHeadings(source, "md").map(h => [h.text, h.level]), [["강의 제목", 2], ["소개", 3], ["함수", 2], ["함수 호출", 3], ["재귀", 2], ["기저 조건", 3]]);
+});
+
+test("study syntax creates stable block ids, callouts and colored highlights", () => {
+  const source = "## 핵심 개념\n\n일반 문단과 ==중요 내용==, ==red:주의 내용==입니다.\n\n> [!DEFINITION]\n> 확산은 입자가 퍼지는 현상입니다.\n\n- 첫 항목\n- 둘째 항목";
+  const first = parseMarkdown(source, "md");
+  const second = parseMarkdown(source, "md");
+  const blockIds = (tree: ReturnType<typeof parseMarkdown>) => {
+    const ids: string[] = [];
+    visit(tree, node => {
+      const id = node.data?.hProperties?.["data-block-id"];
+      if (typeof id === "string") ids.push(id);
+    });
+    return ids;
+  };
+  assert.deepEqual(blockIds(first), blockIds(second));
+  assert.equal(new Set(blockIds(first)).size, blockIds(first).length);
+
+  let calloutFound = false;
+  const colors: string[] = [];
+  visit(first, node => {
+    if (node.data?.hProperties?.["data-study-callout"] === "definition") calloutFound = true;
+    const color = node.data?.hProperties?.["data-highlight-color"];
+    if (typeof color === "string") colors.push(color);
+  });
+  assert.equal(calloutFound, true);
+  assert.deepEqual(colors, ["yellow", "red"]);
+  assert.equal(markdownText(source, "md"), "핵심 개념 일반 문단과 중요 내용 , 주의 내용 입니다. 확산은 입자가 퍼지는 현상입니다. 첫 항목 둘째 항목");
 });
 
 test("lecture Markdown with an Answer toggle is rendered as trusted MDX", () => {
