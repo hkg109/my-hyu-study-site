@@ -24,6 +24,8 @@ export function StudyWorkspace({ documentPath, children }: { documentPath: strin
   const rootRef = useRef<HTMLDivElement>(null);
   const [records, setRecords] = useState<StudyRecord[]>([]);
   const [selection, setSelection] = useState<SelectionInfo>();
+  const [memoSelection, setMemoSelection] = useState<SelectionInfo>();
+  const [memoText, setMemoText] = useState("");
   const [panelOpen, setPanelOpen] = useState(false);
   const [activeBlockId, setActiveBlockId] = useState("");
 
@@ -97,13 +99,31 @@ export function StudyWorkspace({ documentPath, children }: { documentPath: strin
     setActiveBlockId(block.dataset.blockId!);
   };
 
-  const addSelectionRecord = async (type: "highlight" | "memo", color?: StudyColor) => {
+  const addHighlight = async (color: StudyColor) => {
     if (!selection?.text) return;
-    const memo = type === "memo" ? window.prompt("선택한 문장에 남길 메모를 입력하세요.", "")?.trim() : undefined;
-    if (type === "memo" && !memo) return;
     const now = new Date().toISOString();
-    await saveStudyRecord({ id: crypto.randomUUID(), documentPath, blockId: selection.blockId, type, selectedText: selection.text, startOffset: selection.startOffset, endOffset: selection.endOffset, color, memo, createdAt: now, updatedAt: now });
+    await saveStudyRecord({ id: crypto.randomUUID(), documentPath, blockId: selection.blockId, type: "highlight", selectedText: selection.text, startOffset: selection.startOffset, endOffset: selection.endOffset, color, createdAt: now, updatedAt: now });
     window.getSelection()?.removeAllRanges(); setSelection(undefined); await reload(); setPanelOpen(true);
+  };
+
+  const openMemoDialog = () => {
+    if (!selection?.text) return;
+    setMemoSelection(selection);
+    setMemoText("");
+    setSelection(undefined);
+    window.getSelection()?.removeAllRanges();
+  };
+
+  const closeMemoDialog = () => { setMemoSelection(undefined); setMemoText(""); };
+
+  const saveMemo = async () => {
+    const memo = memoText.trim();
+    if (!memoSelection || !memo) return;
+    const now = new Date().toISOString();
+    await saveStudyRecord({ id: crypto.randomUUID(), documentPath, blockId: memoSelection.blockId, type: "memo", selectedText: memoSelection.text, startOffset: memoSelection.startOffset, endOffset: memoSelection.endOffset, memo, createdAt: now, updatedAt: now });
+    closeMemoDialog();
+    await reload();
+    setPanelOpen(true);
   };
 
   const addBookmark = async () => {
@@ -148,7 +168,15 @@ export function StudyWorkspace({ documentPath, children }: { documentPath: strin
   return <div ref={rootRef} className="study-workspace" onMouseUp={captureSelection} onTouchEnd={() => setTimeout(captureSelection, 0)} onClick={handleClick}>
     <div data-study-content>{children}</div>
     <div className="study-floating-actions"><button type="button" onClick={() => setPanelOpen(true)}><BookOpenText size={16} />학습 도구{records.length > 0 && <span>{records.length}</span>}</button><button type="button" disabled={!activeBlockId} onClick={addBookmark} title="마지막으로 선택한 문단 북마크"><Bookmark size={16} />북마크</button></div>
-    {selection && <div className="selection-toolbar" style={{ left: selection.x, top: selection.y }} role="toolbar" aria-label="선택 영역 학습 도구">{colors.map(color => <button key={color} className={`selection-color ${color}`} aria-label={`${color} 형광펜`} onClick={() => void addSelectionRecord("highlight", color)} />)}<button aria-label="메모 추가" onClick={() => void addSelectionRecord("memo")}><MessageSquareText size={15} /></button><button aria-label="선택 메뉴 닫기" onClick={() => setSelection(undefined)}><X size={15} /></button></div>}
+    {selection && <div className="selection-toolbar" style={{ left: selection.x, top: selection.y }} role="toolbar" aria-label="선택 영역 학습 도구">{colors.map(color => <button key={color} className={`selection-color ${color}`} aria-label={`${color} 형광펜`} onClick={() => void addHighlight(color)} />)}<button aria-label="메모 추가" onClick={openMemoDialog}><MessageSquareText size={15} /></button><button aria-label="선택 메뉴 닫기" onClick={() => setSelection(undefined)}><X size={15} /></button></div>}
+    {memoSelection && <><button type="button" className="memo-dialog-overlay" onClick={closeMemoDialog} aria-label="메모 작성 취소" /><section className="memo-dialog" role="dialog" aria-modal="true" aria-labelledby="memo-dialog-title" aria-describedby="memo-dialog-description" onKeyDown={event => { if (event.key === "Escape") closeMemoDialog(); if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) { event.preventDefault(); void saveMemo(); } }}>
+      <header><div className="memo-dialog-icon"><MessageSquareText size={18} /></div><div><span>STUDY MEMO</span><h2 id="memo-dialog-title">메모 남기기</h2></div><button type="button" onClick={closeMemoDialog} aria-label="메모 작성 창 닫기"><X size={18} /></button></header>
+      <p id="memo-dialog-description">선택한 문장에 생각, 질문 또는 암기할 내용을 기록하세요.</p>
+      <blockquote>{memoSelection.text}</blockquote>
+      <label htmlFor="study-memo">메모 내용</label>
+      <textarea id="study-memo" autoFocus maxLength={500} value={memoText} onChange={event => setMemoText(event.target.value)} placeholder="예: 시험 전에 상태 변화 방향을 다시 확인하기" />
+      <div className="memo-dialog-footer"><span>{memoText.length} / 500 · Ctrl(⌘) + Enter로 저장</span><div><button type="button" className="memo-cancel" onClick={closeMemoDialog}>취소</button><button type="button" className="memo-save" disabled={!memoText.trim()} onClick={() => void saveMemo()}>메모 저장</button></div></div>
+    </section></>}
     <aside className={`study-panel${panelOpen ? " open" : ""}`} aria-hidden={!panelOpen}><header><div><strong>학습 도구</strong><span>이 브라우저에 자동 저장됩니다.</span></div><button onClick={() => setPanelOpen(false)} aria-label="학습 패널 닫기"><X size={18} /></button></header><div className="study-panel-content">
       {records.length === 0 ? <p className="study-empty"><Highlighter size={20} />문장을 드래그해 형광펜이나 메모를 남기고, 문단을 선택해 북마크하세요.</p> : records.map(record => <article key={record.id} className={`study-record ${record.type}`}><button className="study-record-main" onClick={() => jump(record)}><span>{record.type === "highlight" ? `${record.color} 형광펜` : record.type === "memo" ? "메모" : record.type === "bookmark" ? "북마크" : `${record.type === "flashcard" ? "카드" : "문제"}: ${record.quizResult === "correct" ? "맞음" : record.quizResult === "unsure" ? "헷갈림" : "틀림"}`}</span>{record.selectedText && <q>{record.selectedText}</q>}{record.memo && <p>{record.memo}</p>}</button><button className="study-record-delete" onClick={() => void remove(record.id)} aria-label="학습 기록 삭제"><Trash2 size={14} /></button></article>)}
     </div></aside><button className={`study-panel-overlay${panelOpen ? " open" : ""}`} onClick={() => setPanelOpen(false)} aria-label="학습 패널 닫기" />
