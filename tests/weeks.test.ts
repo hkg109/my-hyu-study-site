@@ -71,6 +71,25 @@ test("study syntax creates stable block ids, callouts and colored highlights", (
   assert.equal(markdownText(source, "md"), "핵심 개념 일반 문단과 중요 내용 , 주의 내용 입니다. 확산은 입자가 퍼지는 현상입니다. 첫 항목 둘째 항목");
 });
 
+test("study syntax creates revealable blanks and reviewable flashcards", () => {
+  const source = "액체가 기체로 변하는 현상은 {{기화}}이다.\n\n> [!FLASHCARD]\n> Q: 응고란 무엇인가?\n> A: 액체가 고체로 변하는 상태 변화이다.";
+  const tree = parseMarkdown(source, "md");
+  let blankAnswer = "";
+  let cardId = "";
+  const results: string[] = [];
+
+  visit(tree, node => {
+    const properties = node.data?.hProperties;
+    if (properties?.["data-blank-answer"]) blankAnswer = String(properties["data-blank-answer"]);
+    if (properties?.["data-card-id"] && properties.className?.includes("study-flashcard")) cardId = String(properties["data-card-id"]);
+    if (properties?.["data-card-result"]) results.push(String(properties["data-card-result"]));
+  });
+
+  assert.equal(blankAnswer, "기화");
+  assert.match(cardId, /^card-/);
+  assert.deepEqual(results, ["wrong", "unsure", "correct"]);
+});
+
 test("lecture Markdown with an Answer toggle is rendered as trusted MDX", () => {
   const source = "## 문제\n\n<Answer>\n\n~~~cpp\nint main() {}\n~~~\n\n</Answer>";
   const [lecture] = readWeeks([{ name: "week-0-2.md", source }]);

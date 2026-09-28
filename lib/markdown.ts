@@ -56,6 +56,26 @@ function transformHighlights(tree: Root) {
   });
 }
 
+function transformBlanks(tree: Root) {
+  visit(tree, "text", (node: Text, index, parent: Parent | undefined) => {
+    if (index === undefined || !parent || parent.type === "inlineCode" || parent.type === "code") return;
+    const expression = /\{\{([^{}\n]+)\}\}/g;
+    if (!expression.test(node.value)) return;
+    expression.lastIndex = 0;
+    const children: PhrasingContent[] = [];
+    let cursor = 0;
+    for (const match of node.value.matchAll(expression)) {
+      const offset = match.index ?? 0;
+      if (offset > cursor) children.push({ type: "text", value: node.value.slice(cursor, offset) });
+      children.push({ type: "emphasis", children: [{ type: "text", value: match[1] }], data: { hName: "button", hProperties: { type: "button", className: ["study-blank"], "data-blank-answer": match[1], "aria-label": "빈칸 정답 확인", "aria-expanded": "false" } } });
+      cursor = offset + match[0].length;
+    }
+    if (cursor < node.value.length) children.push({ type: "text", value: node.value.slice(cursor) });
+    parent.children.splice(index, 1, ...children as RootContent[]);
+    return index + children.length;
+  });
+}
+
 function transformCallouts(tree: Root) {
   visit(tree, "blockquote", (node: Blockquote) => {
     const first = node.children[0];
@@ -106,6 +126,22 @@ function transformQuizzes(tree: Root) {
   }
 }
 
+function transformFlashcards(tree: Root) {
+  for (const node of tree.children) {
+    if (node.type !== "blockquote") continue;
+    const raw = toString(node);
+    const match = /^\[!FLASHCARD\]\s*Q:\s*(.+?)\s+A:\s*([\s\S]+)$/i.exec(raw);
+    if (!match) continue;
+    const cardId = `card-${stableHash(`${match[1]}:${match[2]}`)}`;
+    node.children = [
+      { type: "paragraph", children: [{ type: "text", value: match[1].trim() }], data: { hName: "summary", hProperties: { className: ["study-flashcard-question"] } } },
+      { type: "paragraph", children: [{ type: "text", value: match[2].trim() }], data: { hProperties: { className: ["study-flashcard-answer"] } } },
+      { type: "paragraph", children: (["wrong", "unsure", "correct"] as const).map(result => ({ type: "emphasis", children: [{ type: "text", value: result === "wrong" ? "모름" : result === "unsure" ? "헷갈림" : "알고 있음" }], data: { hName: "button", hProperties: { type: "button", "data-card-id": cardId, "data-card-result": result } } })), data: { hName: "div", hProperties: { className: ["study-card-results"] } } },
+    ] as never;
+    setProperties(node, { className: ["study-flashcard"], "data-card-id": cardId }, "details");
+  }
+}
+
 function assignBlockIds(tree: Root) {
   const occurrences = new Map<string, number>();
   visit(tree, node => {
@@ -122,7 +158,9 @@ function assignBlockIds(tree: Root) {
 export function remarkStudySyntax() {
   return (tree: Root) => {
     transformHighlights(tree);
+    transformBlanks(tree);
     transformQuizzes(tree);
+    transformFlashcards(tree);
     transformCallouts(tree);
     assignBlockIds(tree);
   };

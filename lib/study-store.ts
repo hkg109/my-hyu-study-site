@@ -5,7 +5,7 @@ export interface StudyRecord {
   id: string;
   documentPath: string;
   blockId: string;
-  type: "highlight" | "memo" | "bookmark" | "quiz";
+  type: "highlight" | "memo" | "bookmark" | "quiz" | "flashcard";
   selectedText?: string;
   startOffset?: number;
   endOffset?: number;
@@ -40,6 +40,18 @@ export async function listStudyRecords(documentPath: string): Promise<StudyRecor
   return new Promise((resolve, reject) => {
     const transaction = database.transaction(STORE_NAME, "readonly");
     const request = transaction.objectStore(STORE_NAME).index("documentPath").getAll(documentPath);
+    request.onsuccess = () => resolve(request.result as StudyRecord[]);
+    request.onerror = () => reject(request.error);
+    transaction.oncomplete = () => database.close();
+  });
+}
+
+export async function listAllStudyRecords(): Promise<StudyRecord[]> {
+  if (typeof indexedDB === "undefined") return [];
+  const database = await openDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction(STORE_NAME, "readonly");
+    const request = transaction.objectStore(STORE_NAME).getAll();
     request.onsuccess = () => resolve(request.result as StudyRecord[]);
     request.onerror = () => reject(request.error);
     transaction.oncomplete = () => database.close();
