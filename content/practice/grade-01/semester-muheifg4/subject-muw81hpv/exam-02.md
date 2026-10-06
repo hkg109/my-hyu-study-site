@@ -1,57 +1,65 @@
 ---
 title: C++ 기말고사 족보
-description: 클래스·상속·다형성·예외 처리·템플릿 문제와 변형 유형을 코드·비교표·접이식 해설·자가 채점으로 복습합니다.
+description: 19개 문항으로 구성한 C++ 기말고사 연습 문제와 정답·해설입니다.
 week: 0
 order: 2
 published: true
 ---
 
-> [!EXAM]
-> **학습 순서:** 문제 풀기 → 정답·해설 확인 → 자가 채점 → 헷갈린 문제 복습. 코드와 출력은 구분해서 읽고, 표는 답을 보기 전에 직접 채워 보세요.
+**응시 안내**
 
-> **범위:** 클래스부터 그 이후 내용 전체
-> 
-> 여러 족보에서 완전히 같거나 구조가 거의 같은 문제는 중복 제거했습니다. 값이나 호출 순서만 달라지는 문제는 같은 문항 안의 **변형 문제**로 묶었고, 정답·코드·해설은 아래의 **정답 확인**에서 펼쳐 볼 수 있습니다.
+- 각 문항의 조건에 따라 출력값, 코드 또는 이유를 작성하시오.
+- 별도 언급이 없으면 각 프로그램은 독립적으로 실행하며, 정수 계산 결과는 자료형 범위 안에 있다고 가정한다.
+- 답안을 작성한 뒤 정답을 펼쳐 확인하고, 맞음·헷갈림·틀림을 기록할 수 있다.
+- 제공된 족보를 연습 시험 형식으로 재구성한 자료이며, 실제 시험의 문항 순서나 배점과는 다를 수 있다.
 
----
+출처 표기는 제공된 Markdown의 기록을 기준으로 하며, 원본 시험지와 별도로 대조하지 않았습니다.
 
+## 문제 1
 
-## F1. 상속과 접근 지정자 O/X 표
-
-> 이 유형은 여러 족보에 반복 등장합니다. **동일한 표는 중복 제거**하고, 실제로 구조가 다른 3개 변형만 남겼습니다.
-
-### F1-A. `private y` + `protected z` + `C* objCref`
-
-```cpp
-class A {
-public:
-    int x;
-    A *objAref;
-private:
-    int y;
-};
-
-class B : public A {
-public:
-    A objA;
-protected:
-    int z;
-};
-
-class C : public B {
-public:
-    C *objCref;
-};
-```
-
-각 표현을 `class A`, `class B`, `class C` 내부에서 사용할 수 있는지 O/X로 표시하시오.
+**참고 자료:** 2023 기말고사 및 cpp족보1번.pdf를 통합한 접근 지정자 문제. 이 코드별 연도는 제공 자료에 구분되어 있지 않음.
 
 > [!QUIZ]
-> **F1. 상속과 접근 지정자 O/X 표 · 확인 1** — 정답표 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 클래스 선언을 기준으로 표를 완성하시오. 각 클래스의 일반 멤버 함수 내부에서 해당 표현을 사용할 수 있으면 O, 없으면 X를 쓰시오. 객체나 포인터의 초기화 여부가 아닌 이름 검색과 접근 권한만 판단하시오.
+>
+> ```cpp
+> class A {
+> public:
+>     int x;
+>     A *objAref;
+> private:
+>     int y;
+> };
+>
+> class B : public A {
+> public:
+>     A objA;
+> protected:
+>     int z;
+> };
+>
+> class C : public B {
+> public:
+>     C *objCref;
+> };
+> ```
+>
+> | 표현 | in class A | in class B | in class C |
+> |---|:---:|:---:|:---:|
+> | `x` | □ | □ | □ |
+> | `y` | □ | □ | □ |
+> | `z` | □ | □ | □ |
+> | `objA.x` | □ | □ | □ |
+> | `objA.y` | □ | □ | □ |
+> | `objA.z` | □ | □ | □ |
+> | `objAref->x` | □ | □ | □ |
+> | `objAref->y` | □ | □ | □ |
+> | `objAref->z` | □ | □ | □ |
+> | `objCref->x` | □ | □ | □ |
+> | `objCref->y` | □ | □ | □ |
+> | `objCref->z` | □ | □ | □ |
 
 > [!ANSWER]
-> **정답표 보기**
->
 > | 표현 | in class A | in class B | in class C |
 > |---|:---:|:---:|:---:|
 > | `x` | O | O | O |
@@ -67,36 +75,51 @@ public:
 > | `objCref->y` | X | X | X |
 > | `objCref->z` | X | X | O |
 
-### F1-B. `B objB`가 있는 경우
+## 문제 2
 
-```cpp
-class A {
-public:
-    int x;
-    A *objAref;
-private:
-    int y;
-};
-
-class B : public A {
-public:
-    A objA;
-protected:
-    int z;
-};
-
-class C : public B {
-public:
-    B objB;
-};
-```
+**참고 자료:** 2023 기말고사 및 cpp족보1번.pdf를 통합한 접근 지정자 문제. 이 코드별 연도는 제공 자료에 구분되어 있지 않음.
 
 > [!QUIZ]
-> **F1. 상속과 접근 지정자 O/X 표 · 확인 2** — 정답표 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 클래스 선언을 기준으로 표를 완성하시오. 각 클래스의 일반 멤버 함수 내부에서 해당 표현을 사용할 수 있으면 O, 없으면 X를 쓰시오. 객체나 포인터의 초기화 여부가 아닌 이름 검색과 접근 권한만 판단하시오.
+>
+> ```cpp
+> class A {
+> public:
+>     int x;
+>     A *objAref;
+> private:
+>     int y;
+> };
+>
+> class B : public A {
+> public:
+>     A objA;
+> protected:
+>     int z;
+> };
+>
+> class C : public B {
+> public:
+>     B objB;
+> };
+> ```
+>
+> | 표현 | in class A | in class B | in class C |
+> |---|:---:|:---:|:---:|
+> | `x` | □ | □ | □ |
+> | `y` | □ | □ | □ |
+> | `z` | □ | □ | □ |
+> | `objA.x` | □ | □ | □ |
+> | `objA.y` | □ | □ | □ |
+> | `objA.z` | □ | □ | □ |
+> | `objAref->x` | □ | □ | □ |
+> | `objAref->y` | □ | □ | □ |
+> | `objAref->z` | □ | □ | □ |
+> | `objB.x` | □ | □ | □ |
+> | `objB.y` | □ | □ | □ |
+> | `objB.z` | □ | □ | □ |
 
 > [!ANSWER]
-> **정답표 보기**
->
 > | 표현 | in class A | in class B | in class C |
 > |---|:---:|:---:|:---:|
 > | `x` | O | O | O |
@@ -111,49 +134,64 @@ public:
 > | `objB.x` | X | X | O |
 > | `objB.y` | X | X | X |
 > | `objB.z` | X | X | X |
-> 
+>
 > ### 핵심 함정
-> 
+>
 > `class C`가 `B`를 상속하더라도
-> 
+>
 > ```cpp
 > objB.z
 > ```
-> 
+>
 > 처럼 **`B` 타입 객체를 통해 `protected` 멤버에 접근하는 것은 불가**합니다.
 
-### F1-C. `A::z`가 protected이고 `C`는 상속하지 않는 경우
+## 문제 3
 
-```cpp
-class A {
-public:
-    int x;
-    A *objAref;
-private:
-    int y;
-protected:
-    int z;
-};
-
-class B : public A {
-public:
-    A objA;
-};
-
-class C {
-public:
-    A objA;
-    A *objAref;
-    B objB;
-};
-```
+**참고 자료:** 2023 기말고사 및 cpp족보1번.pdf를 통합한 접근 지정자 문제. 이 코드별 연도는 제공 자료에 구분되어 있지 않음.
 
 > [!QUIZ]
-> **F1. 상속과 접근 지정자 O/X 표 · 확인 3** — 정답표 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 클래스 선언을 기준으로 표를 완성하시오. 각 클래스의 일반 멤버 함수 내부에서 해당 표현을 사용할 수 있으면 O, 없으면 X를 쓰시오. 객체나 포인터의 초기화 여부가 아닌 이름 검색과 접근 권한만 판단하시오.
+>
+> ```cpp
+> class A {
+> public:
+>     int x;
+>     A *objAref;
+> private:
+>     int y;
+> protected:
+>     int z;
+> };
+>
+> class B : public A {
+> public:
+>     A objA;
+> };
+>
+> class C {
+> public:
+>     A objA;
+>     A *objAref;
+>     B objB;
+> };
+> ```
+>
+> | 표현 | in class A | in class B | in class C |
+> |---|:---:|:---:|:---:|
+> | `x` | □ | □ | □ |
+> | `y` | □ | □ | □ |
+> | `z` | □ | □ | □ |
+> | `objA.x` | □ | □ | □ |
+> | `objA.y` | □ | □ | □ |
+> | `objA.z` | □ | □ | □ |
+> | `objAref->x` | □ | □ | □ |
+> | `objAref->y` | □ | □ | □ |
+> | `objAref->z` | □ | □ | □ |
+> | `objB.x` | □ | □ | □ |
+> | `objB.y` | □ | □ | □ |
+> | `objB.z` | □ | □ | □ |
 
 > [!ANSWER]
-> **정답표 보기**
->
 > | 표현 | in class A | in class B | in class C |
 > |---|:---:|:---:|:---:|
 > | `x` | O | O | X |
@@ -169,189 +207,171 @@ public:
 > | `objB.y` | X | X | X |
 > | `objB.z` | X | X | X |
 
-### 접근 지정자 한 줄 정리
+## 문제 4
 
-- `public` → 외부에서도 접근 가능
-- `private` → **선언한 클래스 내부에서만** 접근 가능
-- `protected` → 선언 클래스 + 파생 클래스에서 접근 가능
-- 단, 파생 클래스의 `protected` 접근은 **객체의 정적 타입** 때문에 함정이 자주 생김
-
----
-
-## F2. Student 클래스 + 기본 생성자
-
-### 문제
-다음 조건을 만족하는 `Student` 클래스를 작성하시오.
-
-1. `number`와 `name[20]` 멤버를 가진다.
-2. 두 값을 출력하는 `print()`를 만든다.
-3. 기본 생성자에서
-   - `number = 0`
-   - `name`을 빈 문자열로 초기화한다.
-4. `main()`에서 학생 번호와 이름을 입력받아 출력한다.
+**참고 자료:** 2023 기말고사.
 
 > [!QUIZ]
-> **F2. Student 클래스 + 기본 생성자 · 확인 4** — 정답 코드 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 조건을 만족하는 `Student` 클래스를 작성하시오.
+>
+> 1. `number`와 `name[20]` 멤버를 가진다.
+> 2. 두 값을 출력하는 `print()`를 만든다.
+> 3. 기본 생성자에서
+>    - `number = 0`
+>    - `name`을 빈 문자열로 초기화한다.
+> 4. `main()`에서 학생 번호와 이름을 입력받아 출력한다.
+>
+> 이름은 공백 없이 최대 19글자로 입력한다고 가정한다.
 
 > [!ANSWER]
-> **정답 코드 보기**
->
 > ```cpp
 > #include <iostream>
 > using namespace std;
-> 
+>
 > class Student {
 > public:
 >     int number;
 >     char name[20];
-> 
+>
 >     Student()
 >     {
 >         number = 0;
 >         name[0] = '\0';
 >     }
-> 
+>
 >     void print()
 >     {
 >         cout << "Number : " << number << endl;
 >         cout << "Name : " << name << endl;
 >     }
 > };
-> 
+>
 > int main()
 > {
 >     Student s;
-> 
+>
 >     cout << "Enter student's number : ";
 >     cin >> s.number;
-> 
+>
 >     cout << "Enter student's name : ";
 >     cin >> s.name;
-> 
+>
 >     s.print();
 >     return 0;
 > }
 > ```
-> 
+>
 > ### 빈 문자열 초기화 핵심
-> 
+>
 > ```cpp
 > name[0] = '\0';
 > ```
 
----
+## 문제 5
 
-## F3. Book 클래스 + 캡슐화
-
-### 문제
-다음 조건을 만족하는 `Book` 클래스를 작성하시오.
-
-1. `public`인 `char title[50]`
-2. `private`인 `float price`
-3. `price`의 getter `get_price()`와 setter `set_price()`
-4. 기본 생성자에서
-   - `price = 0`
-   - `title`을 빈 문자열로 초기화
-5. `title`, `price`를 출력하는 멤버함수
-6. `main()`에서 `Book` 객체를 만들고 `price = 10.0`으로 설정한 뒤 출력
+**참고 자료:** C기말_조민성.docx. 연도 미상.
 
 > [!QUIZ]
-> **F3. Book 클래스 + 캡슐화 · 확인 5** — 정답 코드 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 조건을 만족하는 `Book` 클래스를 작성하시오.
+>
+> 1. `public`인 `char title[50]`
+> 2. `private`인 `float price`
+> 3. `price`의 getter `get_price()`와 setter `set_price()`
+> 4. 기본 생성자에서
+>    - `price = 0`
+>    - `title`을 빈 문자열로 초기화
+> 5. `title`, `price`를 출력하는 멤버함수
+> 6. `main()`에서 `Book` 객체를 만들고 `price = 10.0`으로 설정한 뒤 출력
 
 > [!ANSWER]
-> **정답 코드 보기**
->
 > ```cpp
 > #include <iostream>
 > using namespace std;
-> 
+>
 > class Book
 > {
 > private:
 >     float price;
-> 
+>
 > public:
 >     char title[50];
-> 
+>
 >     float get_price()
 >     {
 >         return price;
 >     }
-> 
+>
 >     void set_price(float x)
 >     {
 >         price = x;
 >     }
-> 
+>
 >     Book()
 >     {
 >         price = 0.0f;
 >         title[0] = '\0';
 >     }
-> 
+>
 >     void display()
 >     {
 >         cout << "Title: " << title << endl;
 >         cout << "Price: " << price << endl;
 >     }
 > };
-> 
+>
 > int main()
 > {
 >     Book b;
 >     b.set_price(10.0f);
 >     b.display();
-> 
+>
 >     return 0;
 > }
 > ```
 
----
+## 문제 6
 
-## F4. Animal → Mouse 상속
-
-### 문제
-다음 조건을 만족하도록 클래스를 작성하시오.
-
-1. `Animal` 클래스의 `id`는 `protected`
-2. `getId()`, `setId()` 작성
-3. 기본 생성자와 소멸자 작성
-4. `Mouse`는 `Animal`을 `public` 상속
-5. `Mouse::print()`에서 `id` 출력
+**참고 자료:** 2023 기말고사.
 
 > [!QUIZ]
-> **F4. Animal → Mouse 상속 · 확인 6** — 정답 코드 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 조건을 만족하도록 클래스를 작성하시오.
+>
+> 1. `Animal` 클래스의 `id`는 `protected`
+> 2. `getId()`, `setId()` 작성
+> 3. 기본 생성자와 소멸자 작성
+> 4. `Mouse`는 `Animal`을 `public` 상속
+> 5. `Mouse::print()`에서 `id` 출력
+>
+> main에서 정수 하나를 입력받아 id로 설정한 뒤 출력하시오.
 
 > [!ANSWER]
-> **정답 코드 보기**
->
 > ```cpp
 > #include <iostream>
 > using namespace std;
-> 
+>
 > class Animal {
 > protected:
 >     int id;
-> 
+>
 > public:
 >     void setId(int _id)
 >     {
 >         id = _id;
 >     }
-> 
+>
 >     int getId()
 >     {
 >         return id;
 >     }
-> 
+>
 >     Animal()
 >     {
 >         id = 0;
 >     }
-> 
+>
 >     ~Animal() {}
 > };
-> 
+>
 > class Mouse : public Animal {
 > public:
 >     void print()
@@ -359,84 +379,78 @@ public:
 >         cout << "ID : " << id;
 >     }
 > };
-> 
+>
 > int main()
 > {
 >     Mouse m;
 >     int num;
-> 
+>
 >     cin >> num;
 >     m.setId(num);
 >     m.print();
-> 
+>
 >     return 0;
 > }
 > ```
-> 
+>
 > 예시 입력이 `131`이면
-> 
+>
 > ```text
 > ID : 131
 > ```
 
----
+## 문제 7
 
-## F5. `virtual` 함수와 동적 바인딩
-
-### F5-A. 가장 자주 나온 대표 유형
-
-```cpp
-#include <iostream>
-
-class C1 {
-public:
-    void funA()
-    {
-        std::cout << "C1 fun A" << std::endl;
-    }
-
-    virtual void funB()
-    {
-        std::cout << "C1 fun B" << std::endl;
-    }
-};
-
-class C2 : public C1 {
-public:
-    void funA()
-    {
-        std::cout << "C2 fun A" << std::endl;
-    }
-
-    virtual void funB()
-    {
-        std::cout << "C2 fun B" << std::endl;
-    }
-};
-
-int main()
-{
-    C1 *o1 = new C1();
-    C1 *o2 = new C2();
-    C2 *o3 = new C2();
-
-    o1->funA();
-    o1->funB();
-    o2->funA();
-    o2->funB();
-    o3->funA();
-    o3->funB();
-}
-```
-
-출력을 쓰시오.
+**참고 자료:** 2023 기말고사 및 cpp족보3번.pdf·CPP족보3번-2.pdf. 개별 PDF의 연도는 미상.
 
 > [!QUIZ]
-> **F5. `virtual` 함수와 동적 바인딩 · 확인 7** — 정답 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 출력을 호출 순서대로 쓰시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> class C1 {
+> public:
+>     void funA()
+>     {
+>         std::cout << "C1 fun A" << std::endl;
+>     }
+>
+>     virtual void funB()
+>     {
+>         std::cout << "C1 fun B" << std::endl;
+>     }
+> };
+>
+> class C2 : public C1 {
+> public:
+>     void funA()
+>     {
+>         std::cout << "C2 fun A" << std::endl;
+>     }
+>
+>     virtual void funB()
+>     {
+>         std::cout << "C2 fun B" << std::endl;
+>     }
+> };
+>
+> int main()
+> {
+>     C1 *o1 = new C1();
+>     C1 *o2 = new C2();
+>     C2 *o3 = new C2();
+>
+>     o1->funA();
+>     o1->funB();
+>     o2->funA();
+>     o2->funB();
+>     o3->funA();
+>     o3->funB();
+> }
+> ```
 
 > [!ANSWER]
-> **정답 보기**
->
 > ```text
 > C1 fun A
 > C1 fun B
@@ -445,12 +459,12 @@ int main()
 > C2 fun A
 > C2 fun B
 > ```
-> 
+>
 > ### 핵심
-> 
+>
 > - `funA()`는 base에서 `virtual`이 아님 → **포인터 타입 기준**
 > - `funB()`는 base에서 `virtual` → **실제 객체 타입 기준**
-> 
+>
 > | 호출 | 결과 |
 > |---|---|
 > | `o1->funA()` | C1 |
@@ -460,25 +474,58 @@ int main()
 > | `o3->funA()` | C2 |
 > | `o3->funB()` | C2 |
 
-### F5-B. 호출 순서만 바꾼 변형
+## 문제 8
 
-다른 족보에서는 호출 순서가 다음과 같이 나옵니다.
-
-```cpp
-o1->funcA();
-o1->funcB();
-o3->funcA();
-o3->funcB();
-o2->funcA();
-o2->funcB();
-```
+**참고 자료:** C기말_조민성.docx. 연도 미상. 생략되어 있던 클래스와 출력문을 독립 실행 가능한 코드로 재구성.
 
 > [!QUIZ]
-> **F5. `virtual` 함수와 동적 바인딩 · 확인 8** — 정답 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 전체 출력을 쓰시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> class C1 {
+> public:
+>     void funcA()
+>     {
+>         std::cout << "funcA in C1" << std::endl;
+>     }
+>
+>     virtual void funcB()
+>     {
+>         std::cout << "funcB in C1" << std::endl;
+>     }
+> };
+>
+> class C2 : public C1 {
+> public:
+>     void funcA()
+>     {
+>         std::cout << "funcA in C2" << std::endl;
+>     }
+>
+>     virtual void funcB()
+>     {
+>         std::cout << "funcB in C2" << std::endl;
+>     }
+> };
+>
+> int main()
+> {
+>     C1 *o1 = new C1();
+>     C1 *o2 = new C2();
+>     C2 *o3 = new C2();
+>
+>     o1->funcA();
+>     o1->funcB();
+>     o3->funcA();
+>     o3->funcB();
+>     o2->funcA();
+>     o2->funcB();
+> }
+> ```
 
 > [!ANSWER]
-> **정답 보기**
->
 > ```text
 > funcA in C1
 > funcB in C1
@@ -487,137 +534,179 @@ o2->funcB();
 > funcA in C1
 > funcB in C2
 > ```
-> 
-> > 원본 정답에는 첫 줄이 `funA in C1`로 적혀 있지만, 문제 코드의 출력 문자열은 `funcA in C1`입니다. 위 답은 **문제 코드 기준**으로 정리했습니다.
-> 
-> > 개념은 F5-A와 같아서 전체 코드는 중복 제거했습니다.
+>
 
-### F5-C. 파생 클래스에서만 `virtual`을 붙인 경우
+## 문제 9
 
-```cpp
-class car {
-public:
-    void showa() { std::cout << "기본 A" << std::endl; }
-    void showb() { std::cout << "기본 B" << std::endl; }
-};
-
-class rcar : public car {
-public:
-    virtual void showa() { std::cout << "파생 A" << std::endl; }
-    virtual void showb() { std::cout << "파생 B" << std::endl; }
-};
-
-int main()
-{
-    car *ptrObjCar = new rcar;
-    ptrObjCar->showa();
-    ptrObjCar->showb();
-}
-```
+**참고 자료:** 제공된 기말 족보의 파생 클래스 virtual 항목. 정확한 출제 연도와 개별 출처는 명시되지 않음.
 
 > [!QUIZ]
-> **F5. `virtual` 함수와 동적 바인딩 · 확인 9** — 정답 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 출력을 쓰고 그 이유를 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> class car {
+> public:
+>     void showa() { std::cout << "기본 A" << std::endl; }
+>     void showb() { std::cout << "기본 B" << std::endl; }
+> };
+>
+> class rcar : public car {
+> public:
+>     virtual void showa() { std::cout << "파생 A" << std::endl; }
+>     virtual void showb() { std::cout << "파생 B" << std::endl; }
+> };
+>
+> int main()
+> {
+>     car *ptrObjCar = new rcar;
+>     ptrObjCar->showa();
+>     ptrObjCar->showb();
+> }
+> ```
 
 > [!ANSWER]
-> **정답 보기**
->
 > ```text
 > 기본 A
 > 기본 B
 > ```
-> 
+>
 > `virtual`은 **기본 클래스의 함수 선언에서** 붙어 있어야 기본 클래스 포인터를 통한 동적 바인딩이 일어납니다.
 
----
+## 문제 10
 
-## F6. `try-catch` 출력 추적
-
-> 같은 구조에서 `throw`의 자료형만 바꾸는 문제가 여러 번 반복되어 **한 문제로 통합**했습니다.
-
-### 기본 코드 — `double`을 던지는 경우
-
-```cpp
-#include <iostream>
-
-void fun()
-{
-    try
-    {
-        std::cout << "FA\n";
-        throw (double)5.0;
-        std::cout << "BA\n";
-    }
-    catch (int i)
-    {
-        std::cout << "FCA " << i << "\n";
-    }
-    catch (char c)
-    {
-        std::cout << "FCB " << c << "\n";
-        throw;
-    }
-
-    std::cout << "BC\n";
-}
-
-int main()
-{
-    try
-    {
-        std::cout << "A\n";
-        fun();
-        std::cout << "B\n";
-    }
-    catch (int i)
-    {
-        std::cout << "C " << i << "\n";
-    }
-    catch (double d)
-    {
-        std::cout << "D " << d << "\n";
-    }
-    catch (...)
-    {
-        std::cout << "E\n";
-    }
-
-    std::cout << "F\n";
-}
-```
+**참고 자료:** 2023 기말고사 및 CPP족보4번.pdf. 개별 PDF의 연도는 미상.
 
 > [!QUIZ]
-> **F6. `try-catch` 출력 추적 · 확인 10** — 정답 — double 5.0. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 전체 출력을 쓰시오. 예외를 처리하는 catch와 처리 후 실행되는 문장을 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> void fun()
+> {
+>     try
+>     {
+>         std::cout << "FA\n";
+>         throw (double)5.0;
+>         std::cout << "BA\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "FCA " << i << "\n";
+>     }
+>     catch (char c)
+>     {
+>         std::cout << "FCB " << c << "\n";
+>         throw;
+>     }
+>
+>     std::cout << "BC\n";
+> }
+>
+> int main()
+> {
+>     try
+>     {
+>         std::cout << "A\n";
+>         fun();
+>         std::cout << "B\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "C " << i << "\n";
+>     }
+>     catch (double d)
+>     {
+>         std::cout << "D " << d << "\n";
+>     }
+>     catch (...)
+>     {
+>         std::cout << "E\n";
+>     }
+>
+>     std::cout << "F\n";
+> }
+> ```
 
 > [!ANSWER]
-> **정답 — double 5.0**
->
 > ```text
 > A
 > FA
 > D 5
 > F
 > ```
-> 
+>
 > `double`은 `fun()` 안의 `int`, `char` catch에 잡히지 않으므로 바로 `main()`의 `catch(double)`로 이동합니다.
-> 
+>
 > 따라서 다음은 실행되지 않습니다.
-> 
+>
 > ```cpp
 > std::cout << "BA\n";
 > std::cout << "BC\n";
 > std::cout << "B\n";
 > ```
 
-### 자료형 변형 모음
+## 문제 11
+
+**참고 자료:** 제공된 기말 족보의 throw 3 항목. 정확한 출제 연도는 미상.
 
 > [!QUIZ]
-> **F6. `try-catch` 출력 추적 · 확인 11** — ① `throw 3;`. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 전체 출력을 쓰시오. 예외를 처리하는 catch와 처리 후 실행되는 문장을 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> void fun()
+> {
+>     try
+>     {
+>         std::cout << "FA\n";
+>         throw 3;
+>         std::cout << "BA\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "FCA " << i << "\n";
+>     }
+>     catch (char c)
+>     {
+>         std::cout << "FCB " << c << "\n";
+>         throw;
+>     }
+>
+>     std::cout << "BC\n";
+> }
+>
+> int main()
+> {
+>     try
+>     {
+>         std::cout << "A\n";
+>         fun();
+>         std::cout << "B\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "C " << i << "\n";
+>     }
+>     catch (double d)
+>     {
+>         std::cout << "D " << d << "\n";
+>     }
+>     catch (...)
+>     {
+>         std::cout << "E\n";
+>     }
+>
+>     std::cout << "F\n";
+> }
+> ```
 
 > [!ANSWER]
-> **① `throw 3;`**
->
 > `int`가 `fun()` 내부에서 잡히며 재던지지 않습니다.
-> 
+>
 > ```text
 > A
 > FA
@@ -627,14 +716,65 @@ int main()
 > F
 > ```
 
+## 문제 12
+
+**참고 자료:** 제공된 기말 족보의 throw char 항목. 정확한 출제 연도는 미상.
+
 > [!QUIZ]
-> **F6. `try-catch` 출력 추적 · 확인 12** — ② `throw 'c';`. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 전체 출력을 쓰시오. 예외를 처리하는 catch와 처리 후 실행되는 문장을 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> void fun()
+> {
+>     try
+>     {
+>         std::cout << "FA\n";
+>         throw 'c';
+>         std::cout << "BA\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "FCA " << i << "\n";
+>     }
+>     catch (char c)
+>     {
+>         std::cout << "FCB " << c << "\n";
+>         throw;
+>     }
+>
+>     std::cout << "BC\n";
+> }
+>
+> int main()
+> {
+>     try
+>     {
+>         std::cout << "A\n";
+>         fun();
+>         std::cout << "B\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "C " << i << "\n";
+>     }
+>     catch (double d)
+>     {
+>         std::cout << "D " << d << "\n";
+>     }
+>     catch (...)
+>     {
+>         std::cout << "E\n";
+>     }
+>
+>     std::cout << "F\n";
+> }
+> ```
 
 > [!ANSWER]
-> **② `throw 'c';`**
->
 > `char`가 `fun()` 안의 `catch(char)`에 잡힌 뒤 `throw;`로 다시 던져집니다.
-> 
+>
 > ```text
 > A
 > FA
@@ -643,14 +783,65 @@ int main()
 > F
 > ```
 
+## 문제 13
+
+**참고 자료:** 제공된 기말 족보의 throw bool 항목. 정확한 출제 연도는 미상.
+
 > [!QUIZ]
-> **F6. `try-catch` 출력 추적 · 확인 13** — ③ `throw true;`. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 전체 출력을 쓰시오. 예외를 처리하는 catch와 처리 후 실행되는 문장을 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> void fun()
+> {
+>     try
+>     {
+>         std::cout << "FA\n";
+>         throw true;
+>         std::cout << "BA\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "FCA " << i << "\n";
+>     }
+>     catch (char c)
+>     {
+>         std::cout << "FCB " << c << "\n";
+>         throw;
+>     }
+>
+>     std::cout << "BC\n";
+> }
+>
+> int main()
+> {
+>     try
+>     {
+>         std::cout << "A\n";
+>         fun();
+>         std::cout << "B\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "C " << i << "\n";
+>     }
+>     catch (double d)
+>     {
+>         std::cout << "D " << d << "\n";
+>     }
+>     catch (...)
+>     {
+>         std::cout << "E\n";
+>     }
+>
+>     std::cout << "F\n";
+> }
+> ```
 
 > [!ANSWER]
-> **③ `throw true;`**
->
 > `bool`은 여기의 `int`, `char`, `double` catch와 정확히 일치하지 않으므로 `catch(...)`로 갑니다.
-> 
+>
 > ```text
 > A
 > FA
@@ -658,14 +849,65 @@ int main()
 > F
 > ```
 
+## 문제 14
+
+**참고 자료:** CPP족보4번-2.pdf. 연도 미상.
+
 > [!QUIZ]
-> **F6. `try-catch` 출력 추적 · 확인 14** — ④ `throw "K";`. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 전체 출력을 쓰시오. 예외를 처리하는 catch와 처리 후 실행되는 문장을 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> void fun()
+> {
+>     try
+>     {
+>         std::cout << "FA\n";
+>         throw "K";
+>         std::cout << "BA\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "FCA " << i << "\n";
+>     }
+>     catch (char c)
+>     {
+>         std::cout << "FCB " << c << "\n";
+>         throw;
+>     }
+>
+>     std::cout << "BC\n";
+> }
+>
+> int main()
+> {
+>     try
+>     {
+>         std::cout << "A\n";
+>         fun();
+>         std::cout << "B\n";
+>     }
+>     catch (int i)
+>     {
+>         std::cout << "C " << i << "\n";
+>     }
+>     catch (double d)
+>     {
+>         std::cout << "D " << d << "\n";
+>     }
+>     catch (...)
+>     {
+>         std::cout << "E\n";
+>     }
+>
+>     std::cout << "F\n";
+> }
+> ```
 
 > [!ANSWER]
-> **④ `throw "K";`**
->
 > `"K"`는 문자 하나인 `char`가 아니라 문자열 리터럴이며 예외로 던질 때 `const char*` 타입으로 취급됩니다.
-> 
+>
 > ```text
 > A
 > FA
@@ -673,70 +915,58 @@ int main()
 > F
 > ```
 
-### 시험에서 자주 틀리는 규칙
+## 문제 15
 
-1. `throw`가 실행되면 같은 `try` 블록의 그 아래 문장은 실행되지 않음
-2. 현재 함수의 적절한 `catch`가 없으면 호출한 함수 쪽으로 예외가 전달됨
-3. `throw;`는 **현재 잡은 예외를 그대로 다시 던짐**
-4. `catch(...)`는 앞에서 잡히지 않은 나머지 예외를 처리
-
----
-
-## F7. `rethrow`가 있는 중첩 예외처리
-
-### 문제
-다음 프로그램의 출력을 쓰시오.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-void fun()
-{
-    try
-    {
-        cout << "fun pos A\n";
-        throw (int)4;
-        cout << "fun pos B\n";
-    }
-    catch (int i)
-    {
-        cout << "in catch CA with i:" << i << "\n";
-        throw;
-    }
-
-    cout << "fun pos C\n";
-}
-
-int main()
-{
-    try
-    {
-        cout << "main pos A\n";
-        fun();
-        throw (double)2.0;
-        cout << "main pos B\n";
-    }
-    catch (double j)
-    {
-        cout << "in catch CB with j:" << j << "\n";
-    }
-    catch (...)
-    {
-        cout << "in catch CC\n";
-    }
-
-    cout << "main pos C\n";
-    return 0;
-}
-```
+**참고 자료:** C기말_조민성.docx. 연도 미상.
 
 > [!QUIZ]
-> **F7. `rethrow`가 있는 중첩 예외처리 · 확인 15** — 정답 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 전체 출력을 쓰고, throw; 이후 예외가 전달되는 경로를 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+> using namespace std;
+>
+> void fun()
+> {
+>     try
+>     {
+>         cout << "fun pos A\n";
+>         throw (int)4;
+>         cout << "fun pos B\n";
+>     }
+>     catch (int i)
+>     {
+>         cout << "in catch CA with i:" << i << "\n";
+>         throw;
+>     }
+>
+>     cout << "fun pos C\n";
+> }
+>
+> int main()
+> {
+>     try
+>     {
+>         cout << "main pos A\n";
+>         fun();
+>         throw (double)2.0;
+>         cout << "main pos B\n";
+>     }
+>     catch (double j)
+>     {
+>         cout << "in catch CB with j:" << j << "\n";
+>     }
+>     catch (...)
+>     {
+>         cout << "in catch CC\n";
+>     }
+>
+>     cout << "main pos C\n";
+>     return 0;
+> }
+> ```
 
 > [!ANSWER]
-> **정답 보기**
->
 > ```text
 > main pos A
 > fun pos A
@@ -744,9 +974,9 @@ int main()
 > in catch CC
 > main pos C
 > ```
-> 
+>
 > ### 흐름
-> 
+>
 > ```text
 > throw int 4
 > → fun의 catch(int)
@@ -754,113 +984,98 @@ int main()
 > → main의 catch(double)은 불일치
 > → catch(...) 실행
 > ```
-> 
+>
 > 따라서 아래 코드는 도달하지 않습니다.
-> 
+>
 > ```cpp
 > throw (double)2.0;
 > cout << "main pos B\n";
 > ```
 
----
+## 문제 16
 
-## F8. `try`와 `catch` 사이 문장 T/F
-
-### 문제
-다음 문장은 참인가 거짓인가?
-
-> A catch-block must immediately follow its corresponding try-block. No statements are allowed between these blocks.
+**참고 자료:** C기말_조민성.docx. 연도 미상.
 
 > [!QUIZ]
-> **F8. `try`와 `catch` 사이 문장 T/F · 확인 16** — 정답 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 문장의 참·거짓을 판단하고 이유를 설명하시오.
+>
+> “try 블록과 바로 뒤의 catch 블록 사이에는 일반 실행문을 삽입할 수 없다.”
 
 > [!ANSWER]
-> **정답 보기**
->
 > **T (True)**
-> 
+>
 > 다음처럼 `try`와 `catch` 사이에 일반 문장을 넣을 수 없습니다.
-> 
+>
 > ```cpp
 > try {
 >     // ...
 > }
-> 
+>
 > std::cout << "중간 문장";   // 불가
-> 
+>
 > catch (...) {
 >     // ...
 > }
 > ```
 
----
+## 문제 17
 
-## F9. 사용자 정의 `Exception` 클래스
-
-### 문제
-다음 프로그램의 출력을 쓰시오.
-
-```cpp
-#include <iostream>
-
-class Exception
-{
-public:
-    int code;
-
-    Exception(int i)
-    {
-        code = i;
-    }
-};
-
-void foo()
-{
-    try
-    {
-        throw Exception(1);
-    }
-    catch (Exception e)
-    {
-        std::cout << e.code;
-    }
-}
-
-int main()
-{
-    foo();
-}
-```
+**참고 자료:** 2023 기말고사 및 CPP족보 5번.pdf. 개별 PDF의 연도는 미상.
 
 > [!QUIZ]
-> **F9. 사용자 정의 `Exception` 클래스 · 확인 17** — 정답 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
-
-> [!ANSWER]
-> **정답 보기**
->
-> ```text
-> 1
-> ```
-> 
-> `Exception(1)` 객체가 생성되고, `catch(Exception e)`가 이를 받아 `e.code`를 출력합니다.
-
----
-
-## F10. 함수 템플릿 `swap`
-
-### 문제
-정수뿐 아니라 여러 자료형에서 사용할 수 있도록 두 값을 바꾸는 함수를 **template 함수**로 작성하시오.
-
-> [!QUIZ]
-> **F10. 함수 템플릿 `swap` · 확인 18** — 정답 코드 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
-
-> [!ANSWER]
-> **정답 코드 보기**
+> 다음 프로그램의 출력을 쓰시오.
 >
 > ```cpp
 > #include <iostream>
+>
+> class Exception
+> {
+> public:
+>     int code;
+>
+>     Exception(int i)
+>     {
+>         code = i;
+>     }
+> };
+>
+> void foo()
+> {
+>     try
+>     {
+>         throw Exception(1);
+>     }
+>     catch (Exception e)
+>     {
+>         std::cout << e.code;
+>     }
+> }
+>
+> int main()
+> {
+>     foo();
+> }
+> ```
+
+> [!ANSWER]
+> ```text
+> 1
+> ```
+>
+> `Exception(1)` 객체가 생성되고, `catch(Exception e)`가 이를 받아 `e.code`를 출력합니다.
+
+## 문제 18
+
+**참고 자료:** 2023 기말고사.
+
+> [!QUIZ]
+> 같은 자료형의 두 변수 값을 서로 바꾸는 함수 템플릿 change를 작성하시오. 원본 값이 변경되도록 매개변수를 선언하시오. main에서 정수 a = 2, b = 3으로 호출한 뒤 두 값을 출력하는 프로그램과 예상 출력도 쓰시오.
+
+> [!ANSWER]
+> ```cpp
+> #include <iostream>
 > using namespace std;
-> 
+>
 > template <class T>
 > void change(T &a, T &b)
 > {
@@ -868,84 +1083,79 @@ int main()
 >     a = b;
 >     b = temp;
 > }
-> 
+>
 > int main()
 > {
 >     int a = 2;
 >     int b = 3;
-> 
+>
 >     change(a, b);
-> 
+>
 >     cout << a << ' ' << b << endl;
 >     return 0;
 > }
 > ```
-> 
+>
 > ### 출력
-> 
+>
 > ```text
 > 3 2
 > ```
-> 
+>
 > ### 핵심 형태
-> 
+>
 > ```cpp
 > template <class T>
 > void 함수이름(T &a, T &b)
 > ```
 
----
+## 문제 19
 
-## F11. 클래스 템플릿 `Factorial`
-
-### 문제
-다음 코드의 출력을 쓰시오.
-
-```cpp
-#include <iostream>
-
-template <long N>
-class Factorial
-{
-public:
-    long Value(void)
-    {
-        return N * fn_1.Value();
-    }
-
-private:
-    Factorial<N - 1> fn_1;
-};
-
-template <>
-class Factorial<0>
-{
-public:
-    long Value(void)
-    {
-        return 1;
-    }
-};
-
-int main()
-{
-    Factorial<5> f;
-    std::cout << f.Value() << std::endl;
-}
-```
+**참고 자료:** 2023 기말고사 및 CPP족보7번.pdf. 개별 PDF의 연도는 미상.
 
 > [!QUIZ]
-> **F11. 클래스 템플릿 `Factorial` · 확인 19** — 정답 보기. 답을 먼저 적거나 코드를 작성한 뒤 해설과 비교하세요.
+> 다음 프로그램의 출력값을 구하고, `Factorial<0>`의 역할을 설명하시오.
+>
+> ```cpp
+> #include <iostream>
+>
+> template <long N>
+> class Factorial
+> {
+> public:
+>     long Value(void)
+>     {
+>         return N * fn_1.Value();
+>     }
+>
+> private:
+>     Factorial<N - 1> fn_1;
+> };
+>
+> template <>
+> class Factorial<0>
+> {
+> public:
+>     long Value(void)
+>     {
+>         return 1;
+>     }
+> };
+>
+> int main()
+> {
+>     Factorial<5> f;
+>     std::cout << f.Value() << std::endl;
+> }
+> ```
 
 > [!ANSWER]
-> **정답 보기**
->
 > ```text
 > 120
 > ```
-> 
+>
 > 전개하면
-> 
+>
 > ```text
 > Factorial<5>
 > = 5 × Factorial<4>
@@ -954,67 +1164,10 @@ int main()
 > = 5 × 4 × 3 × 2 × 1
 > = 120
 > ```
-> 
+>
 > 종료 조건은 명시적 특수화입니다.
-> 
+>
 > ```cpp
 > template <>
 > class Factorial<0>
 > ```
-
----
-
-## F12. 자료에 언급만 된 추가 출제 포인트
-
-아래 항목들은 총정리 자료에서 **출제 가능성이 있다고 언급**되었지만, 업로드된 자료 안에 완전한 문제+정답 형태가 없어 새 문제를 임의로 만들지는 않았습니다.
-
-- `operator +` 손코딩
-- `friend`
-- `public / protected / private` 심화
-- 포인터 / 더블 포인터를 섞은 접근 가능 여부
-- 짧은 생성자 코드 작성
-- 간단한 클래스 작성
-
-> 특히 총정리 자료에는 **접근 지정자 표, 생성자, 다형성, template, try-catch를 중요하게 본다**는 메모가 반복해서 나옵니다.
-
----
-
-## 시험 직전 체크리스트
-
-- [ ] `public / protected / private` 접근 가능 여부를 표로 판단할 수 있다.
-- [ ] 기본 생성자에서 `char[]`를 `name[0] = '\0';`로 초기화할 수 있다.
-- [ ] 상속 클래스 코드를 직접 작성할 수 있다.
-- [ ] base의 `virtual` 유무에 따라 출력 결과를 판단할 수 있다.
-- [ ] `throw` 이후 같은 `try`의 아래 코드는 실행되지 않는다는 것을 안다.
-- [ ] `throw` 자료형에 맞는 `catch`를 찾을 수 있다.
-- [ ] `throw;`가 rethrow라는 것을 안다.
-- [ ] 함수 template을 직접 작성할 수 있다.
-- [ ] 클래스 template 특수화 구조를 읽을 수 있다.
-
----
-
-## 중복 제거 기록
-
-| 원본 파일 | 통합된 위치 |
-|---|---|
-| `cpp족보1번.pdf` | F1 접근 지정자 문제 |
-| `cpp족보3번.pdf` | F5 virtual C1/C2 |
-| `CPP족보3번-2.pdf` | F5 virtual 문제와 동일 개념 |
-| `CPP족보4번.pdf` | F6 `throw double` |
-| `CPP족보4번-2.pdf` | F6 `throw "K"` |
-| `CPP족보 5번.pdf` | F9 사용자 정의 Exception |
-| `CPP족보7번.pdf` | F11 Factorial template |
-| `C+++기말고사+총정리+by+박세은.hwp.pdf` | 기말 각 파트의 중복 문제 + 출제 메모 |
-
----
-
-## 반영 자료
-
-아래 출처와 중복 제거 내역은 제공된 Markdown의 기록입니다. 원본 PDF·문서와의 대조 검증은 이번 편집에 포함되지 않았습니다.
-
-- `C++ 2023 기말고사.pdf` → F1, F2, F4, F5-A, F6, F9, F10, F11
-- `C기말_조민성.docx` → F3, F5-B, F7, F8
-- `C+++기말고사+총정리+by+박세은.hwp.pdf` → 변형 문제 및 출제 포인트 검증
-- 나머지 `CPP족보*.pdf` → 중복 여부 확인 및 교차검증
-
-**추천 사용법:** 먼저 풀고 **정답 확인**을 펼친 뒤, **맞음·헷갈림·틀림**으로 기록하세요. 헷갈리거나 틀린 문제는 복습 화면에서 다시 확인하세요.
