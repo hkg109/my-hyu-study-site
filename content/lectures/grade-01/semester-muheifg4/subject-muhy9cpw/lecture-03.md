@@ -1,403 +1,189 @@
 ---
-title: "Chapter 2: Global E-Business, Collaboration, and Knowledge Management - Final Updated Deck"
-description: "Cloud ERP, generative AI, human-agent collaboration, sustainable infrastructure, and responsible governance."
+title: "Chapter 2B · Turn collaboration into organizational knowledge"
+description: "Shared goals → tool fit → reusable knowledge → governance. The second half of Chapter 2, including the 18th edition's expanded knowledge-management coverage."
 order: 3
 published: true
+duration: 60
+tags: [MIS, Chapter 2, Collaboration, Knowledge management, Governance]
+objectives:
+  - Select collaboration tools using time, place, costs, and organizational conditions.
+  - Distinguish tacit/explicit knowledge and enterprise KMS/KWS/intelligent techniques.
+  - Explain the responsibilities of the IS function and IT governance.
 ---
 
-# Chapter 2: Global E-Business, Collaboration, and Knowledge Management - Final Updated Deck
+## Reading route · From connected records to shared understanding
 
-## Source
+[한국어](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [Previous: Chapter 2A](/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/lecture-02) · [Next: Chapter 3](/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/lecture-04)
 
-*pp. 1-2*
+Chapter 2A connected transactions and processes. But a shared database cannot, by itself, make employees share experience or work toward the same goal. This half asks how an organization turns interaction into coordinated action and reusable knowledge.
 
-- Original file: `ch02_17ed_final.pdf`
-- Format: 73-slide lecture deck
-- Scope: the Chapter 2 material in `ch02_17ed.pdf`, expanded with current updates on AI-enabled processes, cloud ERP, human-agent collaboration, sustainability, generative AI, responsible AI, modern information systems governance, and career trends.
+| Stop | 18th book / PDF | 17th book / PDF | What to look for |
+| --- | --- | --- | --- |
+| §§2.4–2.6: collaboration and tools | 47–55 / 76–84 | 86–94 / 87–95 | Purpose, culture, and tool capabilities |
+| §2.7: evaluating tools | 55–56 / 84–85 | 94–96 / 95–97 | Time/space matrix and selection steps |
+| §2.8: knowledge management | 57–60 / 86–89 | Brief KMS introduction, 83–84 / 84–85 | Expanded coverage in the 18th edition |
+| §2.9: IS function | 61–62 / 90–91 | 96–98 / 97–99 | Roles, decision rights, accountability |
+| Career, closing case, review | 62–68 / 91–97 | 98–105 / 99–106 | Apply the whole chapter |
 
-## Learning Objectives
+**Source convention:** the supplied *Management Information Systems*, 18th edition and 17th Global Edition. Book = printed page; PDF = viewer counter. These are study explanations and original exercises. The supplied 17th-edition file does not include its later knowledge-management chapter; do not use its table of contents as evidence that those pages are present.
 
-*p. 2*
+## 1. A conversation is not yet collaboration
 
-1. Explain the relationship between business processes and information systems.
-2. Distinguish systems used by operational, middle, and senior management.
-3. Explain how enterprise applications integrate the firm and improve performance.
-4. Describe the organizational and technological requirements for collaboration and social business.
-5. Explain how knowledge is acquired, stored, disseminated, and applied.
-6. Evaluate the role of generative AI and agents in processes, collaboration, knowledge management, and enterprise systems.
-7. Explain how information systems responsibilities are divided between central technology functions and business teams.
+Our invented café chain has a group chat. Staff send many messages, but branches keep repeating the same ordering mistakes. The missing element may be a shared goal, a way of making decisions, or a place to preserve useful conclusions.
 
-## Executive Summary
+> [!DEFINITION]
+> **Collaboration** means working together toward shared, explicit goals. **Social business** uses internal and external social networking platforms to engage employees, customers, or suppliers in business activity.
 
-*pp. 3-9*
+A chat channel can support collaboration, but message volume is not its purpose. Social business can help people locate expertise, receive feedback, or solve customer problems; merely maintaining a public social-media account does not demonstrate effective collaboration.
 
-The updated deck presents information systems as an integrated operating environment for processes, decisions, collaboration, and knowledge. Traditional systems such as TPS, MIS, DSS, ESS, ERP, SCM, CRM, and KMS remain central, but cloud platforms, machine learning, generative AI, and software agents change how work is designed and governed.
+The textbook connects growing collaboration needs to changing work, more interaction-based jobs, decentralized decisions, geographically dispersed operations, innovation, and expectations about work. Tasks increasingly require knowledge that no single worker possesses.
 
-The main shift is from systems that merely record or report activity toward systems that recommend, automate, and sometimes execute multi-step work. This increases potential speed and scale, while also increasing the need for permissions, monitoring, data quality, human review, escalation paths, security, sustainability, and clear accountability.
+| Intended benefit | Mechanism | More useful evidence than activity counts |
+| --- | --- | --- |
+| Productivity | Avoid duplicated work and repeated searching | Time to resolve a recurring task |
+| Quality | Bring relevant expertise into a decision | Fewer repeat errors |
+| Innovation | Combine different perspectives | Useful ideas tested and adopted |
+| Customer service | Share context across employees | Resolution time and repeat complaints |
 
-## 1. Business Processes and Information Systems
-
-*pp. 5-9*
-
-A business process is a coordinated set of activities that produces a specific result. Processes move materials, information, and knowledge across functional boundaries. Order fulfillment, for example, connects sales, accounting, manufacturing, inventory, and delivery.
-
-Information technology can improve a process by:
-
-- Automating manual tasks
-- Increasing efficiency and consistency
-- Changing information flows
-- Allowing parallel rather than sequential work
-- Reducing decision delays
-- Supporting new products, services, and business models
-
-### AI and Process Design
-
-The updated deck distinguishes three patterns:
-
-| Pattern | Human role | System role | Main control need |
-|---|---|---|---|
-| Assist | The person performs the process | AI retrieves, summarizes, drafts, or recommends | Verification of content and decisions |
-| Automate | People supervise and handle exceptions | Rules and models execute repeatable tasks | Exception handling and performance monitoring |
-| Agent | People define authority and remain accountable | Agents perform a defined workflow by calling tools and systems | Permissions, traceability, review, and escalation |
-
-The design question is therefore not simply whether AI is used, but what level of authority it receives and how responsibility remains visible.
-
-## 2. Systems for Different Management Groups
-
-*pp. 10-19*
-
-| System | Main audience | Purpose |
-|---|---|---|
-| TPS | Operational managers and staff | Record routine daily transactions such as orders, payroll, and shipping |
-| MIS | Middle management | Convert transaction data into routine summaries and performance reports |
-| DSS | Middle management and analysts | Support nonroutine decisions with data, models, and what-if analysis |
-| ESS | Senior management | Present integrated internal and external information for strategic judgment |
-
-These systems should form an information chain. TPS supply reliable operational data; MIS organize the data for routine management; DSS provide analysis; and ESS give senior leaders a concise strategic view. Isolated systems weaken consistency and decision quality.
-
-## 3. Enterprise Applications
-
-*pp. 20-27*
-
-Enterprise applications connect data and processes across functions and organizational levels.
-
-### Enterprise Systems and Cloud ERP
-
-Enterprise systems use a shared repository and standardized processes to integrate sales, manufacturing, finance, accounting, and human resources. Cloud ERP extends this model through subscription services, APIs, analytics, and continuously updated platforms.
-
-Benefits include:
-
-- Shared data and common process definitions
-- Faster communication
-- More accurate order fulfillment
-- Greater operational visibility
-- Better coordination across functions
-
-Management concerns include:
-
-- Subscription and migration costs
-- Configuration complexity
-- Integration with other systems
-- Skills and change management
-- Vendor dependence
-- Data governance and security
-- Oversight of embedded copilots and agents
-
-### Supply Chain Management
-
-SCM systems share information among suppliers, purchasing organizations, distributors, and logistics providers. They coordinate orders, production, inventory, transportation, and delivery so that the correct products reach the correct location quickly and economically.
-
-### Walmart's AI-Enabled Supply Chain
-
-The updated Walmart case describes a cycle of sensing, predicting, acting, and learning:
-
-1. **Sense:** combine demand, inventory, transport, and operating signals.
-2. **Predict:** use machine learning to anticipate stock, routing, and fulfillment problems.
-3. **Act:** redirect inventory before local imbalances become shortages or waste.
-4. **Learn:** reuse technology components and incorporate feedback from local operations.
-
-The case demonstrates that AI creates value when it is connected to shared data, physical operations, supplier coordination, and accountable human decisions.
-
-### Customer Relationship Management
-
-CRM systems integrate customer information across sales, marketing, and service. They seek to improve satisfaction, retention, responsiveness, and revenue.
-
-### Knowledge Management Systems
-
-KMS capture and distribute expertise about products, services, processes, and decisions. They connect internal experience with external knowledge and help make organizational know-how reusable.
-
-## 4. Intranets, Extranets, and Digital Business
-
-*pp. 28-29*
-
-- **Intranet:** a private internal network based on Internet standards.
-- **Extranet:** a restricted network that provides selected access to suppliers, vendors, or other partners.
-- **E-business:** digital execution of major business processes.
-- **E-commerce:** online buying and selling within the broader category of e-business.
-- **E-government:** use of Internet technology to deliver government information and services.
-
-## 5. Collaboration and Social Business
-
-*pp. 30-41*
-
-Collaboration may be formal or informal, short-term or long-term, co-located or distributed. It has become more important as organizations rely on knowledge work, distributed teams, and cross-functional problem solving.
-
-Social business uses networking platforms to engage employees, customers, and suppliers. It aims to improve communication, deepen relationships, and increase the speed and transparency of information sharing.
-
-### Benefits
-
-- Higher productivity
-- Faster problem resolution
-- Better quality
-- More innovation
-- Faster customer service
-- Improved financial performance
-
-### Human-Agent Teams
-
-The deck extends collaboration beyond human teams. AI agents can perform defined parts of a workflow, but effective teams document:
-
-- Agent tasks and limits
-- Human handoffs
-- Quality standards
-- Review criteria
-- Escalation paths
-- Lessons from errors and successful use
-
-The current evidence cited in the slides suggests that effective AI-using teams share practices and mistakes and discuss quality standards more often than less mature teams.
-
-### Culture and Process
-
-Collaboration requires a culture that values teamwork, participation, information sharing, and distributed expertise. A command-and-control culture can undermine even sophisticated platforms if employees lack authority, incentives, or trust.
-
-### Tools
-
-- Email and messaging
-- Wikis
-- Virtual meeting and telepresence systems
-- Shared cloud documents and workspaces
-- Enterprise social networks
-- Profiles, feeds, groups, tagging, search, permissions, notifications, and workflow integration
-
-### Selecting a Collaboration Platform
-
-Selection should consider:
-
-- Fit with synchronous, asynchronous, remote, co-located, and cross-company work
-- Integration with identity, calendars, documents, workflows, enterprise applications, and APIs
-- Ownership, permissions, retention, e-discovery, data location, and external sharing
-- Grounding, citations, access-aware retrieval, monitoring, and human review for AI features
-- Accessibility, adoption, training, total cost, and vendor stability
-
-The time-space matrix remains a useful method for matching tools to when and where collaboration occurs.
-
-## 6. Environmental Impact of Digital Infrastructure
-
-*p. 35*
-
-AI and cloud services increase demand for data-center computing, electricity, cooling, water, and specialized hardware. Efficiency gains can reduce the impact per unit of computing, but total demand may continue to grow.
-
-The management implication is that infrastructure decisions should consider:
-
-- Energy efficiency
-- Clean-energy sourcing
-- Hardware life cycle and utilization
-- Water and cooling requirements
-- Vendor sustainability claims and measurement methods
-- The business value produced per unit of resource consumption
-
-## 7. Knowledge as an Organizational Asset
-
-*pp. 42-47*
-
-Knowledge is a major intangible asset. It differs from raw data and information because it includes patterns, rules, context, experience, and judgment.
-
-### Forms and Characteristics
-
-- **Explicit knowledge:** documented and easier to store or transmit.
-- **Tacit knowledge:** held in experience, skill, and judgment.
-- Knowledge may be individual or social.
-- It is often situated in a specific process or culture and can be difficult to transfer.
-- Its value can increase when it is shared and improved by a network of users.
-
-### Organizational Learning
-
-Organizations learn through data collection, measurement, experimentation, feedback, and behavioral change. Learning becomes visible when the organization redesigns processes or changes how decisions are made.
-
-## 8. Knowledge-Management Value Chain
-
-*pp. 48-53*
-
-The knowledge-management value chain has four stages:
-
-1. Acquisition
-2. Storage
-3. Dissemination
-4. Application
-
-Management and organizational activities support every stage. Feedback from application generates new questions, data, and knowledge.
-
-### Generative AI Across the Value Chain
-
-| Stage | Generative AI contribution | Required safeguard |
-|---|---|---|
-| Acquire | Transcribe, extract, summarize, and classify meetings, documents, and service interactions | Validate source quality and preserve provenance |
-| Store | Organize content using metadata and knowledge-base structures | Define ownership, permissions, retention, quality, and authoritative versions |
-| Disseminate | Use enterprise search and retrieval-augmented generation to answer questions with context | Restrict retrieval by access rights and show supporting sources |
-| Apply | Support a decision or action, including agent-assisted execution | Require human review for important outputs and define authority, monitoring, and escalation |
-
-Generative AI does not remove the need for knowledge governance. It makes trusted content, metadata, access control, and source traceability more important.
-
-## 9. Enterprise Knowledge Systems
-
-*pp. 54-66*
-
-### Enterprise Content Management
-
-Content-management systems handle structured and semistructured knowledge such as reports, presentations, policies, email, and multimedia. AI-ready content management requires:
-
-- Deduplication
-- Identification of authoritative versions
-- Named owners
-- Correction or removal of obsolete content
-- Useful metadata and categories
-- Sensitivity labels and permissions
-- Retention and provenance information
-
-Without these controls, search and generative AI may retrieve outdated, conflicting, or unauthorized material.
-
-### Expertise Location
-
-Directories, search, tagging, and social tools connect employees to internal experts and external knowledge networks.
-
-### Learning Management Systems
-
-LMS administer, deliver, track, and assess employee learning through online courses, forums, assignments, and measurement of learning outcomes.
-
-### Knowledge Work Systems
-
-Knowledge workers such as researchers, architects, scientists, designers, engineers, and analysts create new knowledge. Their systems need specialized hardware and software, strong analytical or graphical capabilities, document and communication tools, external information sources, and task-appropriate interfaces.
-
-Examples include CAD, 3D printing, virtual reality, augmented reality, and specialized analytical workstations.
-
-### Intelligent Techniques
-
-Intelligent techniques include expert systems, case-based reasoning, fuzzy logic, neural networks, data mining, and genetic algorithms. These methods capture expertise, discover patterns, or generate solutions to complex problems.
-
-## 10. Responsible Use of Generative AI
-
-*p. 67*
-
-The deck organizes responsible AI around a practical governance cycle:
-
-- **Govern:** define ownership, approved and prohibited uses, risk tolerance, and accountability.
-- **Map:** identify users, affected people, data sources, dependencies, context, and foreseeable misuse.
-- **Measure:** test quality, bias, privacy, security, reliability, robustness, and environmental impact.
-- **Manage:** apply controls, monitor performance, respond to incidents, and improve the system over time.
-
-Responsible use also requires data protection, access control, traceable sources, clear human authority, and a process for escalating uncertain or high-impact outputs.
-
-## 11. The Information Systems Function
-
-*pp. 68-70*
-
-The information systems department provides technology services and is commonly led by a Chief Information Officer. Other leadership roles may include the Chief Information Security Officer, Chief Knowledge Officer, Chief Privacy Officer, and Chief Data Officer.
-
-### Modern Operating Model
-
-Responsibilities are increasingly divided between central and distributed teams.
-
-**Central responsibilities:**
-
-- Enterprise architecture
-- Cybersecurity
-- Shared platforms
-- Data standards
-- Vendor management
-- Service reliability
-- Organization-wide governance
-
-**Distributed responsibilities:**
-
-- Defining business outcomes
-- Prioritizing product and process improvements
-- Managing adoption
-- Maintaining domain data quality
-- Sharing accountability for value and risk
-
-IT governance specifies decision rights, standards, policies, and accountability so that decentralized innovation does not fragment the organization.
-
-## 12. Figures and Models
-
-*pp. 7, 11, 14-17, 21, 34, 41, 50, 55, 59, 64*
-
-- **Figure 2.1:** Order fulfillment as a cross-functional process.
-- **Figure 2.2:** Payroll transaction processing.
-- **Figure 2.3:** TPS data feeding MIS reports.
-- **Figure 2.4:** Example of a structured MIS report.
-- **Figure 2.5:** Voyage-estimating DSS.
-- **Figure 2.6:** Enterprise application architecture linking functions, management systems, suppliers, and customers.
-- **Figure 2.7:** Organizational and technological conditions for successful collaboration.
-- **Figure 2.8:** Collaboration tools classified by time and place.
-- **Figure 11.1:** Acquisition, storage, dissemination, and application in the knowledge-management value chain.
-- **Figure 11.2:** Enterprise-wide systems, knowledge work systems, and intelligent techniques.
-- **Figure 11.8:** Enterprise content management.
-- **Figure 11.9:** Specialized requirements of knowledge work systems.
-
-## 13. Career Context
-
-*pp. 71-72*
-
-The deck identifies roles such as:
-
-- Business systems analyst
-- Product manager or product owner
-- Data and business intelligence analyst
-- Cybersecurity and privacy specialist
-- Enterprise applications or cloud consultant
-
-Growing demand for AI, machine learning, data, and software skills does not eliminate the need for business understanding. Professionals must be able to define outcomes, redesign processes, evaluate evidence, govern data and AI, communicate across functions, and keep humans accountable for consequential work.
-
-## 14. Learning Check
-
-*p. 73*
-
-### How does an AI-enabled process differ from simple task automation?
-
-Simple automation executes predefined repeatable steps. An AI-enabled process may interpret unstructured information, generate recommendations, or adapt a workflow. Agentic systems may also call tools and execute multi-step work, which requires stronger controls and accountability.
-
-### What risks increase when ERP and analytics move to cloud platforms?
-
-Important risks include vendor dependence, migration failure, integration complexity, data-location concerns, misconfigured access, uncontrolled customization, subscription cost growth, and inadequate oversight of embedded AI.
-
-### Which controls help human-agent teams produce reliable work?
-
-Useful controls include defined authority, least-privilege access, trusted data sources, logged actions, quality criteria, human review, exception handling, monitoring, and clear escalation.
-
-### What makes enterprise content suitable for retrieval-augmented generation?
-
-Content should be authoritative, current, deduplicated, well classified, permission-aware, traceable to its source, and managed under explicit ownership and retention rules.
-
-## Core Takeaway
-
-*pp. 1-73*
-
-Modern information systems do more than integrate transactions and reports. They increasingly assist, automate, and execute knowledge-intensive work. Their value depends on process design, trusted enterprise data, collaboration, governance, sustainability, and explicit human accountability.
-
-## One-Minute Review
-
-*pp. 1-73*
-
-- AI-enabled processes can provide {{assistance}}, {{automation}}, or agentic execution.
-- The knowledge value chain covers {{acquisition}}, {{storage}}, {{dissemination}}, and {{application}}.
-- Responsible-AI operations cycle through govern, map, {{measure}}, and manage.
-
-> [!FLASHCARD]
-> Q: Why does generative AI make knowledge governance more important?
-> A: AI can quickly amplify outdated, duplicate, or unauthorized content, so official versions, ownership, permissions, metadata, and provenance become critical.
+**Culture connects the tool to the result.** Managers must support knowledge sharing, give people time to contribute, and avoid incentives that reward hoarding information. This is Chapter 1's complementary-assets argument in a specific setting.
 
 > [!QUIZ]
-> A purchasing agent compares suppliers and automatically places orders below a threshold. Which controls should be defined first?
+> 2B Q1. A manager buys a collaboration platform but rewards only individual output and discourages asking colleagues for help. Why might adoption fail?
 
 > [!ANSWER]
-> Purchase limits, least-privilege access, approved suppliers and data sources, action logs, human approval for exceptions, and a clear escalation path.
+> The technology supports interaction while the incentive system discourages it. Employees have little reason to contribute or ask questions. Shared goals, managerial support, time, and appropriate rewards are complementary assets; installing software does not supply them automatically.
+
+## 2. Choose tools by time and place
+
+Read **Figure 2.8, the time/space matrix**, 18th book p.56 / PDF 85. Recreate the two axes before memorizing any examples.
+
+| | Same place | Different places |
+| --- | --- | --- |
+| Same time · synchronous | Face-to-face discussion with a shared display | Video meeting, live shared editing |
+| Different times · asynchronous | A shift-handoff workspace used at different times | Wiki, discussion thread, versioned document |
+
+The café's morning and evening shifts can be **same place, different time**. A Seoul branch and a Busan branch in a live call are **different place, same time**. Physical distance and simultaneous participation are independent dimensions. One platform may support several cells.
+
+### Read the tool categories as capabilities
+
+- **Email and messaging:** exchange requests and updates; decide which channel carries an authoritative decision.
+- **Meeting and collaboration platforms:** combine conversation, shared files, and team workspaces; define ownership and access.
+- **Enterprise social networks:** profiles, feeds, groups, content sharing, permissions, and tagging make expertise discoverable.
+- **Virtual worlds and metaverse tools:** avatars and shared environments can support interaction; evaluate whether immersion helps the task.
+- **AI assistance:** meeting summaries, translation, retrieval, and drafting may reduce routine effort; important outputs need checking against their sources.
+
+Product examples in the textbook illustrate categories at the time of writing. Learn the capabilities and conditions, not a vendor popularity ranking.
+
+### A six-step selection route
+
+The sequence below paraphrases the book's evaluation process (18th book p.56).
+
+1. Locate actual collaboration problems in the time/space matrix.
+2. Identify candidate solutions for the relevant situations.
+3. Compare benefits with costs, including training and IS support.
+4. Assess security, provider dependence, vendor stability, and switching risks.
+5. Involve prospective users to discover adoption and training issues.
+6. Shortlist candidates and examine vendor demonstrations against the requirements.
+
+> [!QUIZ]
+> 2B Q2. Branches in different time zones need to maintain a shared procedure. Would requiring a daily live meeting solve the main problem? Propose a better tool mix.
+
+> [!ANSWER]
+> A mandatory live meeting creates a timing problem and may leave no reusable record. An asynchronous, versioned procedure with discussion and an owner is a better foundation; occasional live meetings can resolve disagreement. Choose tools for the work and preserve decisions after discussion.
+
+## 3. Make knowledge available after the conversation ends
+
+Read §2.8. The café's experienced employee can recognize an equipment problem from a sound. Another employee has written a troubleshooting checklist. Both involve knowledge, but they need different management approaches.
+
+| Distinction | Meaning | How to support it |
+| --- | --- | --- |
+| Tacit knowledge | Experience or expertise not formally documented | Expert directories, mentoring, joint work |
+| Explicit knowledge | Knowledge that has been documented | Searchable, maintained procedures and reports |
+| Structured / semi-structured / unstructured content | How content is organized | Suitable classification, metadata, and retrieval |
+
+> [!CAUTION]
+> **Tacit/explicit and structured/unstructured are different distinctions.** A recorded expert interview is explicit because it has been documented, even if its video content is unstructured. Not all expertise can be fully captured in a checklist.
+
+A useful learning flow is **create/acquire → store and organize → share → apply → review**. This paraphrases the activities of knowledge management; do not mistake it for a separate figure reproduced from this chapter. A repository creates value when someone can find, trust, and apply its contents.
+
+## 4. Separate the three knowledge-system families
+
+Inspect **Figure 2.9** (18th book p.58 / PDF 87), then Figures **2.10–2.11** (pp.59–60 / PDF 88–89).
+
+| Family | Main job | Examples in this chapter |
+| --- | --- | --- |
+| Enterprise-wide KMS | Collect, organize, share, and use knowledge across the firm | ECM, collaboration/social tools, LMS |
+| Knowledge Work Systems · KWS | Support specialists creating new knowledge | CAD and specialized modeling/visualization workstations |
+| Intelligent techniques | Discover patterns, capture expertise, or apply knowledge | Data mining, machine learning, expert systems and other AI methods |
+
+An **enterprise content management system (ECM)** organizes documents and other content in a usable repository. A **taxonomy** defines categories; **tags** attach classification to items. The point is retrieval and interpretation. A folder containing thousands of unnamed files is not a strong knowledge system.
+
+Expert directories help locate the person who knows, while an **LMS** manages learning delivery, tracking, and assessment. They solve different parts of the knowledge problem. An LMS completion record does not necessarily prove that a worker can apply the skill.
+
+A **KWS** helps engineers, scientists, designers, and similar workers produce new knowledge. It may need powerful computation, graphics, simulation, external knowledge access, and a usable interface. General office tools help these workers too, but their presence alone does not make a system a specialized KWS.
+
+> [!EXAMPLE]
+> **Café extension, invented:** an ECM stores approved recipes; an expert directory identifies a roasting specialist; an LMS delivers hygiene training; a specialist uses modeling tools to develop a new production method. Classify each by the knowledge activity it supports, not by whether a computer is involved.
+
+> [!QUIZ]
+> 2B Q3. An AI assistant retrieves an old procedure and confidently presents it as current. Which knowledge-management problems remain even if its answer is fluent?
+
+> [!ANSWER]
+> Version control, ownership, review dates, access rules, source quality, and validation still matter. Retrieval and generated wording do not establish that a procedure is current or applicable. The knowledge lifecycle needs review and correction, not just storage and search.
+
+## 5. Who takes responsibility for the system?
+
+Read §2.9. **Programmers** implement software. **Systems analysts** translate business requirements into information and system requirements and connect business users with technical teams. **IS managers** coordinate teams and operations. **End users** contribute the business knowledge necessary to design useful systems.
+
+| Leadership role | Main responsibility in the textbook |
+| --- | --- |
+| CIO · Chief Information Officer | Overall IS/IT direction and alignment with business strategy |
+| CSO / CISO | Information security policy and protection |
+| CPO · Chief Privacy Officer | Personal-data privacy obligations |
+| CKO · Chief Knowledge Officer | Organizational knowledge-management program |
+| CDO · Chief Data Officer | Governance and effective use of enterprise data |
+| CAIO · Chief AI Officer | AI strategy, acquisition, implementation, and monitoring; emphasized in the 18th edition |
+
+**IT governance** specifies decision rights, policies, and accountability: who chooses investments, who sets data rules, who approves access, and how results are reviewed. It also addresses centralization versus local discretion. A job-title list does not answer these governance questions by itself.
+
+**Transition to Chapter 3:** changing information access changes authority, incentives, and power. This is why a technically workable system can encounter resistance.
+
+## 6. Case-reading workshop
+
+| Textbook case | Where to read | Task |
+| --- | --- | --- |
+| Toyota Motor North America | 18th book pp.36–38 | Link communication and AI capabilities to a specific workflow |
+| AI in drug discovery | 18th book p.53 | Separate generating possibilities from validating them |
+| Virtual meetings | 18th book pp.64–65 | Compare coordination benefits with distraction, meeting load, and monitoring concerns |
+| Sharp | 17th book pp.71–73 | Explain why finding colleagues and knowledge can change innovation |
+| Ahlia University | 17th book p.92 | Identify time/place constraints and learning requirements |
+| Social business closing case | 17th book pp.104–105 | Judge outcomes using work improvements rather than usage alone |
+
+Use these as **reading questions**, not claims that every case proves the same conclusion. For the career scenario (18th book p.63, Princess Cruises), connect analysis and customer understanding to the systems introduced in both halves of Chapter 2.
+
+## 7. Retrieve and connect
+
+- Shared explicit goals distinguish {{collaboration}} from mere conversation.
+- Different-time work is {{asynchronous}}.
+- Undocumented expertise is {{tacit knowledge}}.
+- The framework of IT decision rights and accountability is {{IT governance}}.
+
+> [!FLASHCARD]
+> Q: Chapter 2B — Why is a wiki not a complete knowledge-management solution?
+> A: It provides a place to document and share, but knowledge still needs ownership, classification, review, participation, and application.
+
+> [!FLASHCARD]
+> Q: Chapter 2B — How does KWS differ from enterprise-wide KMS?
+> A: KWS supports specialists creating new knowledge; enterprise-wide KMS makes knowledge and content available across the firm.
+
+> [!FLASHCARD]
+> Q: Chapter 2B — What does the time/space matrix prevent?
+> A: Choosing tools by popularity without checking whether participants must work at the same time or in the same place.
+
+> [!QUIZ]
+> 2B Q4. Design a learning loop for branches that repeat the same equipment failure. Include people, tools, governance, and an outcome measure.
+
+> [!ANSWER]
+> Staff record the failure and consult an expert; the expert and branch team validate a procedure; a named owner publishes and versions it in the ECM; the LMS or a short demonstration supports training; later incidents trigger review. Governance defines approval and access. Measure repeat failures and resolution time, not only document views.
+
+**Chapter 2 exit check:** explain how a transaction becomes a report, how a report prompts collaboration, and how a useful solution becomes maintained knowledge. Continue to [Chapter 3 · Organizations and strategy](/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/lecture-04).

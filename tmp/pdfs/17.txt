@@ -1,0 +1,2591 @@
+=== PDF PAGE 1 ===
+
+=== PDF PAGE 2 ===
+
+=== PDF PAGE 3 ===
+Microsoft and/or its respective suppliers make no representations about the suitability of the information contained in 
+the documents and related graphics published as part of the services for any purpose. All such documents and related 
+graphics are provided ‘‘as is’’ without warranty of any kind. Microsoft and/or its respective suppliers hereby disclaim all 
+warranties and conditions with regard to this information, including all warranties and conditions of merchantability, 
+whether express, implied or statutory, fitness for a particular purpose, title and non-infringement. In no event shall 
+Microsoft and/or its respective suppliers be liable for any special, indirect or consequential damages or any damages 
+whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other tortious 
+action, arising out of or in connection with the use or performance of information available from the services. 
+ 
+The documents and related graphics contained herein could include technical inaccuracies or typographical errors. 
+Changes are periodically added to the information herein. Microsoft and/or its respective suppliers may make 
+improvements and/or changes in the product(s) and/or the program(s) described herein at any time. Partial screen 
+shots may be viewed in full within the software version specified. 
+ 
+Microsoft® and Windows® are registered trademarks of the Microsoft Corporation in the U.S.A. and other countries. 
+This book is not sponsored or endorsed by or affiliated with the Microsoft Corporation. 
+ 
+Pearson Education Limited 
+KAO Two 
+KAO Park 
+Hockham Way 
+Harlow 
+Essex 
+CM17 9SR 
+United Kingdom 
+ 
+and Associated Companies throughout the world 
+ 
+Visit us on the World Wide Web at:
+ www.pearsonglobaleditions.com 
+ 
+© Pearson Education Limited, 2022 
+ 
+The rights of by Kenneth C. Laudon and Jane P. Laudon to be identified as the authors of this work have been asserted 
+by them in accordance with the Copyright, Designs and Patents Act 1988.  
+ 
+Authorized adaptation from the United States edition, entitled Management Information Systems: Managing the Digital 
+Firm, 17th Edition, ISBN 978-0-13-697127-6 by Kenneth C. Laudon and Jane P. Laudon, published by Pearson Education 
+© 2022.   
+ 
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any 
+form or by any means, electronic, mechanical, photocopying, recording or otherwise, without either the prior written 
+permission of the publisher or a license permitting restricted copying in the United Kingdom issued by the Copyright 
+Licensing Agency Ltd, Saffron House, 6---10 Kirby Street, London EC1N 8TS. This publication is protected by copyright, 
+and permission should be obtained from the publisher prior to any prohibited reproduction, storage in a retrieval 
+system, or transmission in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise. 
+For information regarding permissions, request forms, and the appropriate contacts within the Pearson Education 
+Global Rights and Permissions department, please visit www.pearsoned.com/permissions/. 
+ 
+All trademarks used herein are the property of their respective owners. The use of any trademark in this text does not 
+vest in the author or publisher any trademark ownership rights in such trademarks, nor does the use of such 
+trademarks imply any affiliation with or endorsement of this book by such owners. 
+ 
+This eBook is a standalone product and may or may not include all assets that were part of the print version. It also 
+does not provide access to other Pearson digital products like MyLab and Mastering. The publisher reserves the right to 
+remove any material in this eBook at any time. 
+ 
+British Library Cataloguing-in-Publication Data 
+A catalogue record for this book is available from the British Library 
+ 
+ISBN 10:  1-292-40328-4 
+ISBN 13:  978-1-292-40328-1 
+eBook ISBN 13: 978-1-292-40357-1 
+ 
+Cover Photo: MyCreative/Shutterstock 
+Typeset in Veljovic Std by Azimuth Interactive, Inc. 
+eBook formatted by B2R Technologies Pvt. Ltd. 
+ 
+=== PDF PAGE 4 ===
+  3
+ABOUT THE AUTHORS
+Kenneth C. Laudon has been a Professor of Information Systems at New York University’s 
+Stern School of Business. He holds a B.A. in Economics from Stanford and a Ph.D. from 
+Columbia University. He has authored 12 books dealing with electronic commerce, infor-
+mation systems, organizations, and society. Professor Laudon has also written more than  
+40 articles concerned with the social, organizational, and management impacts of informa-
+tion systems, privacy, ethics, and multimedia technology.
+Professor Laudon’s research has focused on the planning and management of large-scale 
+information systems and multimedia information technology. He has received grants from 
+the National Science Foundation to study the evolution of national information systems at 
+the Social Security Administration, the IRS, and the FBI. Ken’s research focuses on enter-
+prise system implementation, computer-related organizational and occupational changes in 
+large organizations, changes in management ideology, changes in public policy, and under-
+standing productivity change in the knowledge sector.
+Ken Laudon has testified as an expert before the United States Congress. He has been a re-
+searcher and consultant to the Office of T echnology Assessment (United States Congress), the 
+Department of Homeland Security, and 
+the Office of the President, several execu-
+tive branch agencies, and Congressional 
+Committees. Professor Laudon has also 
+acted as an in-house educator for several 
+consulting firms and as a consultant on 
+systems planning and strategy to several 
+Fortune 500 firms.
+At NYU’s Stern School of Business, Ken 
+Laudon has taught courses on Managing 
+the Digital Firm, Information T echnology 
+and Corporate Strategy, Professional 
+Responsibility (Ethics), and Electronic 
+Commerce and Digital Markets. Ken 
+Laudon’s hobby is sailing.
+Jane Price Laudon  is a management 
+consultant in the information systems area and the author of seven books. Her special in-
+terests include systems analysis, data management, MIS auditing, software evaluation, and 
+teaching business professionals how to design and use information systems.
+Jane received her Ph.D. from Columbia University, her M.A. from Harvard University, 
+and her B.A. from Barnard College. She has taught at Columbia University and the New York 
+University Stern School of Business. She maintains a lifelong interest in the languages and 
+civilizations of East Asia.
+The Laudons have two daughters, Erica and Elisabeth, to whom this book is dedicated.
+              
+=== PDF PAGE 5 ===
+4 
+BRIEF CONTENTS
+PART ONE Organizations, Management, and the Networked 
+Enterprise 33
+Chapter 1 Information Systems in Global Business Today 34
+Chapter 2 Global E-business and Collaboration 70
+Chapter 3 Information Systems, Organizations, and Strategy 108
+Chapter 4 Ethical and Social Issues in Information Systems 150
+PART TWO Information Technology Infrastructure 193
+Chapter 5 IT Infrastructure and Emerging Technologies 194
+Chapter 6 Foundations of Business Intelligence: Databases and Information 
+Management 242
+Chapter 7 Telecommunications, the Internet, and Wir eless Technology 280
+Chapter 8 Securing Information Systems 324
+PART THREE Key System Applications for the Digital Age 367
+Chapter 9 Achieving Operational Excellence and Customer Intimacy:  
+Enterprise Applications
+ 368
+Chapter 10 E-commerce: Digital Markets, Digital Goods 402
+Chapter 11 Managing Knowledge and Artificial Intelligence 448
+Chapter 12 Enhancing Decision Making 486
+PART FOUR Building and Managing Systems 519
+Chapter 13 Building Information Systems 520
+Chapter 14 Making the Business Case for Information Systems and Managing Projects 558
+Chapter 15 Managing Global Systems 590
+Glossary 622
+Indexes 634
+              
+=== PDF PAGE 6 ===
+  5
+COMPLETE CONTENTS
+PART ONE Organizations, Management, and the Networked 
+Enterprise 33
+Chapter 1 Information Systems in Global Business Today 34
+Opening Case: Smart Stores Reinvent the Retail Space 35
+1-1 How are information systems transforming business, and why ar e they so 
+essential for running and managing a business today? 37
+What’s New in Management Information Systems? 37 • Globalizat ion  
+Challenges and Opportunities: A Flattened World 39
+Interactive Session | Organizations Will the Coronavirus Pandemic Make  
+Working from Home the New Normal? 40
+The Emerging Digital Firm 42 • Strategic Business Objectives of Informat ion 
+Systems 43
+1-2 What is an information system? How does it work? What are its  
+management, or
+ganization, and technology components? Why are  
+complementary assets essential for ensuring that information systems 
+provide genuine value for organizations?
+ 46
+What Is an Information System? 46 • Dimensions of Information  
+Systems 48
+Interactive Session | Technology Digital Transformation of Healthcare at Singa-
+pore’s Jurong Health Services  53
+It Isn’t Just Technology: A Business Perspective on Information  
+Systems 54 • Complementary Assets: Or
+ganizational Capital and the  
+Right Business Model  55
+1-3 What academic disciplines are used to study information systems,  
+and how does each contribute to an understanding of information  
+systems?
+ 58
+Technical Approach 58 • Behavioral Approach 58 • Approach of This T ext: 
+Sociotechnical Systems 59
+1-4 How will MIS help my career? 60
+The Company 60 • Posit ion Description 60 • Job Requirements 61 •  
+Interview Quest
+ions 61 • Author T
+ips 61
+Review Summary 62 • Key Terms 63 • Review Questions 63 •  
+Discussion Questions 64
+Hands-On MIS Projects 64
+Collaboration and Teamwork Pr
+oject 65
+Case Study: Changes in the Financial Industry: Adyen and Fintech  66
+References: 69
+              
+=== PDF PAGE 7 ===
+6 Contents
+Chapter 2 Global E-business and Collaboration 70
+Opening Case: Enterprise Social Networking Transforms Sharp Corporation  
+into a More Innovative Connected Organization 71
+2-1 What are business pr ocesses? How are they related to information  
+systems? 73
+Business Processes 73 • How Information T echnology Improves Business  
+Processes  75
+2-2 How do systems serve the differ ent management groups in a business, 
+and how do systems that link the enterprise improve organizational  
+performance? 76
+Systems for Different Management Groups 76 • Systems for Linking the  
+Enterprise 81 • E-business, E-commerce, and E-government 84
+Interactive Session | Organizations The City of Mississauga Goes Digital 85
+2-3 Why are systems for collaboration and social business so important,  
+and what technologies do they use?
+ 86
+What Is Collaboration? 86 • What Is Social Business? 88 • Business  
+Benefits of Col
+laboration and Social Business 89 • Building a Col
+laborative 
+Culture and Business Processes 89 • Tools and T
+echnologies for  
+Collaboration and Social Business 90
+Interactive Session | Technology Higher Education Redefined: Virtual Educa-
+tion at Ahlia University  92
+2-4 What is the role of the information systems function in a business? 96
+The Information Systems Department 96 • Organizing t he Information  
+Systems Function 97
+2-5 How will MIS help my career? 98
+The Company 98 • Posit ion Description 98 • Job Requirements 99 •  
+Interview Questions 99 • Author T
+ips 99
+Review Summary 100 • Key Terms 101 • Review Questions 101 •  
+Discussion Questions 102
+Hands-On MIS Projects 102
+Collaboration and Teamwork Pr
+oject 103
+Case Study: Is Social Business Good Business? 104
+References: 106
+Chapter 3 Information Systems, Organizations, and Strategy 108
+Opening Case: N26: A Bank Without Branches 109
+3-1 Which features of or ganizations do managers need to know about to 
+build and use information systems successfully? 111
+What Is an Organization? 111 • Features of Or ganizations 114
+3-2 What is the impact of information systems on organizations? 118
+Economic Impacts 118 • Organizat ional and Behavioral Impacts 120 •  
+The Internet and Organizat
+ions 122 • Implicat
+ions for the Design and  
+Understanding of Information Systems 122
+              
+=== PDF PAGE 8 ===
+ Contents 7
+3-3 How do Porter’s competitive for ces model, the value chain 
+model, synergies, core competencies, and network economics 
+help companies develop competitive strategies using information 
+systems?
+ 123
+Porter’s Competitive Forces Model 123 • Information System Strategies for 
+Deal
+ing with Competitive Forces 125
+Interactive Session | Organizations Shipping Wars 126
+The Internet’s Impact on Competitive Advantage 129 • The Business Value 
+Chain Model 130 
+Interactive Session | Technology Singapore as a Smart Nation  131
+Synergies, Core Competencies, and Network-Based  
+Strategies 135
+3-4 What are the challenges posed by strategic information systems, and 
+how should they be addr
+essed? 138
+Sustaining Competitive Advantage 138 • Aligning IT wit h Business  
+Objectives 138
+3-5 How will MIS help my career? 139
+The Company 139 • Posit ion Description 140 • Job Requirements 140 •  
+Interview Questions 140 • Author T
+ips 140
+Review Summary 141 • Key Terms 142 • Review Questions 142 •  
+Discussion Questions 143
+Hands-On MIS Projects 143
+Collaboration and Teamwork Pr
+oject 144
+Case Study: Offline, Online, and Back: The Evolution of the UK Grocery 
+Market 145
+Refer
+ences: 148
+Chapter 4 Ethical and Social Issues in Information Systems 150
+Opening Case: Your Smartphone: Big Brother’s Best Friend 151
+4-1 What ethical, social, and political issues are raised by information  
+systems?
+ 153
+A Model for Thinking about Ethical, Social, and Political Issues 154 • Five 
+Moral Dimensions of the Informat
+ion Age 156 • Key Technology T
+rends that 
+Raise Ethical Issues 156
+4-2 What specific principles for conduct can be used to guide ethical  
+decisions?
+ 159
+Basic Concepts: Responsibility, Accountability, and Liability 159 •  
+Ethical Analysis 159 • Candidate Et
+hical Principles 160 •  
+Professional Codes of Conduct 161 • Some Real-World  
+Et
+hical Dilemmas 161
+4-3 Why do contemporary information systems technology and the Internet 
+pose challenges to the protection of individual privacy and intellectual 
+pr
+operty? 161
+              
+=== PDF PAGE 9 ===
+8 Contents
+Information Rights: Privacy and Freedom in the Internet Age 162 • Property 
+Rights: Intel
+lectual Property 168
+4-4 How have information systems affected laws for establishing  
+accountability and liability and the quality of everyday life? 171
+Computer-Related Liability Problems 172
+Interactive Session | Management The Boeing 737 Max Crashes: What 
+Happened and Why? 173
+System Quality: Data Quality and System Errors 175 • Quality of Life:  
+Equity, Access, and Boundaries 175 • Healt
+h Risks: RSI, CVS, and  
+Cognitive Decline 180
+Interactive Session | Technology Do Smartphones Harm Children? Maybe, 
+Maybe Not 181
+4-5 How will MIS help my career? 182
+The Company 182 • Posit ion Description 183 • Job Requirements 183 •  
+Interview Quest
+ions 183 • Author T
+ips 183
+Review Summary 184 • Key Terms 184 • Review Questions 185 •  
+Discussion Questions 185
+Hands-On MIS Projects 186
+Collaboration and Teamwork Pr
+oject 187
+Case Study: Facebook Privacy: Your Life for Sale 188
+References: 191
+PART TWO Information Technology Infrastructur e 193
+Chapter 5  IT Infrastructure and Emerging Technologies 194
+Opening Case: Southeast Asia’s Grab Leverages Information Technology to En-
+hance Its Services 195
+5-1 What is IT infrastructure, and what ar e the stages and drivers of IT  
+infrastructure evolution? 197
+Defining IT Infrastructure 197 • Evolution of IT Infrastructur e 199
+Technology Drivers of Infrastructur
+e Evolution 203
+5-2 What are the components of IT infrastructur e? 207
+Computer Hardware Platforms 208 • Operating System Plat forms 210 •  
+Enterprise Software Appl
+ications 210 • Data Management and 
+Storage 211 • Networking/T
+elecommunications Platforms 211 • Internet 
+Plat
+forms 211 • Consult
+ing and System Integration Services 212
+5-3 What are the curr ent trends in computer hardware platforms? 212
+The Mobile Digital Platform 212 • Consumerization of IT and BYOD 212  • 
+Quantum Computing 213 • V irtualization 213 • Cloud Computing 214
+Interactive Session | Organizations  Glory Finds Solutions in the Cloud  216
+Edge Computing 219 • Green Comput ing 219  • High-Performance and 
+Power-Saving Pr
+ocessors 220
+5-4 What are the curr ent computer software platforms and trends? 220
+              
+=== PDF PAGE 10 ===
+ Contents 9
+Linux and Open Source Softwar
+e 220 • Software for t
+he Web:  
+Java, JavaScript, HTML, and HTML5 221 
+Interactive Session | Technology Open Source Innovation: The New 
+Competitive Advantage 222
+Web Services and Service-Oriented Architecture 224 • Software Outsour cing 
+and Cloud Services 225
+5-5 What are the challenges of managing IT infrastructur e and management 
+solutions? 228
+Dealing with Platform and Infrastructure Change 228 • Management and 
+Governance 229 • Making Wise Infrastructur
+e Investments 229
+5-6 How will MIS help my career? 232
+The Company 232 • Posit ion Description 232 • Job 
+Requir
+ements 232 • Interview 
+Questions 233 • Aut
+hor Tips 233
+Review Summary 234 • Key Terms 235 • Review Questions 235 •  
+Discussion Questions 236 • Hands-On MIS Projects 236
+Collaboration and Teamwork Pr
+oject 237
+Case Study: Project JEDI: A Cloud of Controversy 238
+References: 240
+Chapter 6 Foundations of Business Intelligence: Databases and 
+Information Management 242
+Opening Case: Astro: Leveraging Data for Customer-Driven Service 243
+6-1 What are the pr oblems of managing data resources in a traditional file 
+environment? 245
+File Organization Terms and Concepts 245 • Problems W ith the Traditional 
+File Environment 246
+6-2 What are the major capabilities of database management systems 
+(DBMS), and why is a r
+elational DBMS so powerful? 248
+Database Management Systems 249 • Capabilit ies of Database Management 
+Systems 251 • Designing 
+Databases 254 • Nonr
+elational Databases, Cloud 
+Databases, and Blockchain 256
+Interactive Session | Technology New Cloud Database Tools Help Vodafone Fiji 
+Make Better Decisions  258
+6-3 What are the principal tools and technologies for accessing information  
+from databases to improve business performance and decision 
+making?
+ 260
+The Challenge of Big Data 260
+Interactive Session | Management Big Data Baseball 261
+Business Intelligence Infrastructure 262 • Analytical T ools: Relationships,  
+Patterns, Trends 265 • Databases and the W
+eb 268
+6-4 Why are data governance and data quality assurance essential for  
+managing the firm’
+s data resources? 269
+Assuring Data Quality 270
+6-5 How will MIS help my career? 271
+The Company 271 • Posit ion Description 271 • Job Requirements 271 •  
+Interview Questions 272 • Author T
+ips 272
+              
+=== PDF PAGE 11 ===
+10 Contents
+Review Summary 273 • Key Terms 274 • Review Questions 274 •  
+Discussion Questions 275
+Hands-On MIS Projects 275
+Collaboration and Teamwork Pr
+oject 276
+Case Study: Big Data in the Asia-Pacific Takes On the COVID-19 Pandemic 277
+References: 279
+Chapter 7 Telecommunications, the Internet, and Wireless 
+Technology 280
+Opening Case: Alibaba: Redefining Traditional Retailing 281
+7-1 What are the principal components of telecommunications networks  
+and key networking technologies? 283
+Networking and Communication Trends 283 • What Is a Computer  
+Network? 284 • Key Digital Networking Technologies 286
+7-2 What are the dif ferent types of networks? 288
+Signals: Digital Versus Analog 288 • Types of Networks 289 • 
+Transmission Med
+ia and Transmission Speed 290
+7-3 How do the Internet and Internet technology work, and how do they 
+support communication and e-business?
+ 291
+What Is the Internet? 291 • Internet Addressing and Ar chitecture 292 •  
+Internet Services and Communication T
+ools 295
+Interactive Session | Management Monitoring Employees on Networks: 
+Unethical or Good Business?  298
+The Web 299
+Interactive Session | Technology Talking Cars Make for Better Road 
+Safety  307
+7-4 What are the principal technologies and standar ds for wireless  
+networking, communication, and Internet access? 308
+Cellular Systems 308 • Wir eless Computer Networks and Internet  
+Access 309 • RFID and Wir
+eless Sensor Networks 312
+7-5 How will MIS help my career? 314
+The Company 314 • Posit ion Description 314 • Job Requirements 315 •  
+Interview Questions 315 • Author T
+ips 315
+Review Summary 316 • Key Terms 317 • Review Questions 317 •  
+Discussion Questions 318
+Hands-On MIS Projects 318
+Collaboration and Teamwork Pr
+oject 319
+Case Study: Google, Apple, and Facebook Battle for Your Internet 
+Experience 320
+Refer
+ences: 323
+Chapter 8 Securing Information Systems 324
+Opening Case: Cyberattacks in the Asia-Pacific Target the Weakest Link: 
+People 325
+              
+=== PDF PAGE 12 ===
+ Contents 11
+8-1 Why are information systems vulnerable to destruction, err or, and 
+abuse? 327
+Why Systems are Vulnerable 327 • Malicious Softwar e: Viruses, Worms, Trojan 
+Horses, and Spyware 330 • Hackers and Computer Crime 332 • Internal 
+Threats: Employees 336
+Interactive Session | Technology Capital One: A Big Bank Heist from the 
+Cloud 337
+Software Vulnerability 338
+8-2 What is the business value of security and control? 339
+Legal and Regulatory Requirements for Electronic Records  
+Management 340 • Electronic Evidence and Computer For
+ensics 341
+8-3 What are the components of an or ganizational framework for security 
+and control? 341
+Information Systems Controls 342 • Risk Assessment 343 • Security  
+Pol
+icy 343 • Disaster Recovery Planning and Business Continuity  
+Planning 345 • The Role of Audit
+ing 345
+8-4 What are the most important tools and technologies for safeguar ding 
+information resources? 346
+Identity Management and Authentication 346 • Firewal ls, Intrusion  
+Detection Systems, and Anti-malware Software 348 • Securing Wir
+eless  
+Networks 350 • Encryption and Publ
+ic Key Infrastructure 350 •  
+Securing Transact
+ions with Blockchain 352 • Ensuring System  
+A
+vailability 352 • Achieving Digital Resiliency 353
+Interactive Session | Management PayPal Ups Its Digital Resiliency 354
+Security Issues for Cloud Computing and the Mobile Digital Platform 355 •  
+Ensuring Software Qual
+ity 357
+8-5 How will MIS help my career? 357
+The Company 357 • Posit ion Description 358 • Job Requirements 358 •  
+Interview Questions 358 • Author T
+ips 358
+Review Summary 359 • Key Terms 359 • Review Questions 360 •  
+Discussion Questions 361
+Hands-On MIS Projects 361
+Collaboration and Teamwork Pr
+oject 362
+Case Study: Bulgaria: A Whole Nation Hacked 363
+References: 365
+PART THREE Key System Applications for the Digital Age 367
+Chapter 9 Achieving Operational Excellence and Customer Intimacy: 
+Enterprise Applications 368
+Opening Case: Lenzing Sustainably Balances Supply and Demand 369
+9-1 How do enterprise systems help businesses achieve operational  
+excellence? 371
+              
+=== PDF PAGE 13 ===
+12 Contents
+What Are Enterprise Systems? 371 • Enterprise Software 372 • Business 
+Value of Enterprise Systems 373
+9-2 How do supply chain management systems coordinate planning,  
+pr
+oduction, and logistics with suppliers? 374
+The Supply Chain 374 • Information Systems and Supply Chain  
+Management 376 • Supply 
+Chain Management Software 377 • Global 
+Supply Chains and t
+he Internet 378 • Business Value of Supply Chain  
+Management Systems 380
+9-3 How do customer relationship management systems help firms achieve 
+customer intimacy?
+ 381
+What Is Customer Relationship Management? 381 • Customer 
+Relationship Management Softwar
+e 382 • Operational and Analyt
+ical 
+CRM 385 • Business Value of Customer Relat
+ionship Management 
+Systems 386
+Interactive Session | Organizations CRM Helps Adidas Know Its Customers 
+One Shoe Buyer at a Time 387
+9-4 What are the challenges that enterprise applications pose, and how ar e 
+enterprise applications taking advantage of new technologies? 388
+Enterprise Application Challenges 388 • Next-Generation Enterprise  
+Appl
+ications 389
+Interactive Session | Technology Versum’s ERP Transformation 391
+9-5 How will MIS help my career? 392
+The Company 392 • Posit ion Description 393 • Job Requirements 393 •  
+Interview Questions 393 • Author T
+ips 393
+Review Summary 394 • Key Terms 395 • Review Questions 395 •  
+Discussion Questions 395
+Hands-On MIS Projects 396
+Collaboration and Teamwork Pr
+oject 397
+Case Study: The Coronavirus Pandemic Disrupts Supply Chains Around the  
+World 398
+Refer
+ences: 400
+Chapter 10 E-commerce: Digital Markets, Digital Goods 402
+Opening Case: E-commerce Comes to the Dashboard: The Battle for the “Fourth 
+Screen” 403
+10-1 What are the unique featur es of e-commerce, digital markets, and digital 
+goods? 405
+E-commerce Today 405 • The New E-commerce: Social, Mobile,  
+Local 406 • Why E-commerce is Dif
+ferent 409 • Key Concepts in  
+E-commer
+ce: Digital Markets and Digital Goods in a Global Marketplace 411
+10-2 What are the principal e-commer ce business and revenue  
+models? 414
+Types of E-commerce 415 • E-commerce Business Models 415 •  
+E-commerce Revenue Models 418
+Interactive Session | Technology Deliveroo: Global Food Delivery App 419
+10-3 How has e-commerce transformed marketing? 422
+              
+=== PDF PAGE 14 ===
+ Contents 13
+Behavioral Tar
+geting 422 • Social E-commerce and Social Network  
+Market
+ing 426
+Interactive Session | Management Engaging “Socially” with Customers 428
+10-4 How has e-commerce af fected business-to-business transactions? 429
+Electronic Data Interchange (EDI) 430 • New Ways of B2B Buying and  
+Sel
+ling 431
+10-5 What is the role of m-commer ce in business, and what are the most  
+important m-commerce applications? 433
+Location-Based Services and Applications 434 • Other Mobile Commer ce 
+Services 434 • Mobile App Payment Systems 435
+10-6 What issues must be addressed when building an e-commer ce  
+presence? 436
+Develop an E-commerce Presence Map 436 • Develop a Timel ine:  
+Milestones 437
+10-7 How will MIS help my career? 438
+The Company 438 • Job Description 438 • Job Requirements 438 •  
+Interview Quest
+ions 438 • Author T
+ips 439
+Review Summary 440 • Key Terms 441 • Review Questions 441 •  
+Discussion Questions 442
+Hands-On MIS Projects 442
+Collaboration and Teamwork Pr
+oject 443
+Case Study: An iDEAL Solution to the Single Online EU Market  444
+References: 447
+Chapter 11 Managing Knowledge and Artificial Intelligence 448
+Opening Case: Artificial Intelligence Beats Radiologists in Reading 
+Mammograms 449
+11-1 What is the role of knowledge management systems in business? 451
+Important Dimensions of Knowledge 451 • The Knowledge Management 
+Value Chain 453 • Types of Knowledge Management Systems 455
+11-2 What are artificial intelligence (AI) and machine learning? How do  
+businesses use AI? 456
+Evolution of AI 457 • Major Types of AI 457 • Expert Systems 458 •  
+Machine Learning 459 • Neural Networks 461
+Interactive Session | Technology Do You Know Who Is Using Your Face? 463
+Genetic Algorithms 466 • Natural Language Processing, Computer V ision 
+Systems, and Robotics 467 • Intell
+igent Agents 468
+Interactive Session | Organizations Will AI Kill Jobs?  469
+11-3 What types of systems are used for enterprise-wide knowledge  
+management, and how do they pr
+ovide value for businesses? 471
+Enterprise Content Management Systems 472 • Locating and Sharing  
+Expert
+ise 473 • Learning Management Systems 473
+11-4 What are the major types of knowledge work systems, and how do they 
+pr
+ovide value for firms? 474
+Knowledge Workers and Knowledge Work 474 • Requirements of Knowledge 
+W
+ork Systems 474 • Examples of Knowledge Work Systems 474
+              
+=== PDF PAGE 15 ===
+14 Contents
+11-5 How will MIS help my career? 476
+The Company 476 • Posit ion Description 476 • Job Requirements 477 •  
+Interview Questions 477 • Author T
+ips 477
+Review Summary 478 • Key Terms 479 • Review Questions 479 •  
+Discussion Questions 480
+Hands-On MIS Projects 480
+Collaboration and Teamwork Pr
+oject 481
+Case Study: Are Self-Driving Cars Ready for the Road? 482
+References: 485
+Chapter 12 Enhancing Decision Making 486
+Opening Case: Eastspring: Targeted Enterprise System Building  487
+12-1 What are the dif ferent types of decisions, and how does the  
+decision-making process work? 489
+Business Value of Improved Decision Making 489 • Types of  
+Decisions 490 • The Decision-Making Process 491
+12-2 How do information systems support the activities of managers and 
+management decision making? 492
+Managerial Roles 493 • Real-W orld Decision Making 494 • High-V elocity 
+Automated Decision Making 495
+12-3 How do business intelligence and business analytics support decision 
+making?
+ 496
+What Is Business Intelligence? 496 • The Business Intell igence  
+Environment 496 • Business Intell
+igence and Analytics Capabilities 498
+Interactive Session | Organizations Predictive Maintenance in the Oil and Gas 
+Industry 501
+Interactive Session | Management GIS Help Land O’Lakes Manage Assets 
+Strategically 504
+12-4 How do differ ent decision-making constituencies in an organization use 
+business intelligence? 505
+Decision Support for Operational and Middle Management 505 • Decision 
+Support for Senior Management: Balanced Scorecar
+d and Enterprise  
+Performance Management Methods 508
+12-5 How will MIS help my career? 510
+The Company 510 • Posit ion Description 510 • Job Requirements 510 •  
+Interview Questions 510 • Author T
+ips 511
+Review Summary 512 • Key Terms 512 • Review Questions 513 •  
+Discussion Questions 513
+Hands-On MIS Projects 513
+Collaboration and Teamwork Pr
+oject 514
+Case Study:  Should an Algorithm Make Our Decisions? 515
+References: 517
+              
+=== PDF PAGE 16 ===
+ Contents 15
+PART FOUR Building and Managing Systems 519
+Chapter 13 Building Information Systems 520
+Opening Case: Vinci Energies Builds a New Mobile Employee Time Sheet App 521
+13-1 How does building new systems produce or ganizational change? 523
+Systems Development and Organizational Change 523
+Interactive Session | Organizations Business Process Redesign at DP 
+World 525
+Business Process Redesign 526
+13-2 What are the cor e activities in the systems development process? 529
+Systems Analysis 530 • Systems Design 531 • Completing t he Systems De-
+velopment Process 532
+13-3 What are the principal methodologies for modeling and designing  
+systems? 535
+Structured Methodologies 535 • Object-Oriented Development 537
+13-4 What are alternative methods for building information systems? 538
+Traditional Systems Life Cycle 539 • Pr ototyping 540 • Appl ication  
+Software Packages, Software Services, and Outsourcing 541
+13-5 What are new appr oaches for system building in the digital  
+firm era? 544
+Rapid Application Development (RAD), Agile Development, Automated Software 
+Testing, and DevOps 544
+Interactive Session | Technology McAfee Turns to Automated Software 
+Testing 546
+Mobile Application Development: Designing for a Multiscreen World 547
+13-6 How will MIS help my career? 548
+The Company 548 • Posit ion Description 548 • Job Requirements 549 •  
+Interview Quest
+ions 549 • Author T
+ips 549
+Review Summary 550 • Key Terms 551 • Review Questions 551 •  
+Discussion Questions 552
+Hands-On MIS Projects 552
+Collaboration and Teamwork Pr
+oject 554
+Case Study: Pick n Pay’s Cloud Migration to Enhance Business Intelligence  555
+References: 557
+Chapter 14 Making the Business Case for Information Systems and 
+Managing Projects 558
+Opening Case: Al-Asasyah Implements a Modern ERP Solution  559
+14-1 How should managers build a business case for the acquisition and 
+development of new information systems? 561
+The Information Systems Plan 562 • Portfol io Analysis 564 • Scoring  
+Models 565 • Determining Solution Costs and Benefits 566
+14-2 What are the objectives of pr oject management, and why is it so 
+essential in developing information systems? 568
+              
+=== PDF PAGE 17 ===
+16 Contents
+Runaway Projects and System Failure 568 • Project Management  
+Object
+ives 569
+14-3 What are the principal risk factors in information systems  
+pr
+ojects? 570
+Dimensions of Project Risk 570 • Change Management and the Concept of 
+Implementat
+ion 571
+14-4 How can project risks be managed? 573
+Managing Technical Complexity 574 • Formal Planning and Control 
+T
+ools 574 • Increasing User Involvement and Over
+coming User  
+Resistance 576 • Designing for the Or
+ganization 577
+Interactive Session | Management Sauder Woodworking Gets ERP  
+Implementation Right 578
+Project Management Software Tools 579
+Interactive Session | Technology Arup Moves Project Management to the 
+Cloud 580
+14-5 How will MIS help my career? 581
+The Company 581 • Posit ion Description 581 • Job  
+Requir
+ements 582 • Interview 
+Questions 582 • Aut
+hor Tips 582
+Review Summary 583 • Key Terms 583 • Review Questions 584 •  
+Discussion Questions 584
+Hands-On MIS Projects 584
+Collaboration and Teamwork Pr
+oject 585
+Case Study: Pennsylvania’s Unemployment Compensation Modernization  
+System: Unfinished Business 586
+References: 588
+Chapter 15 Managing Global Systems 590
+Opening Case: The Bel Group: Laughing All the Way to Success 591
+15-1 What major factors are driving the internationalization of  
+business?
+ 593
+Developing an International Information Systems Architecture 594 • The 
+Global Environment: Business Drivers and Chal
+lenges 595
+Interactive Session | Management Rethinking Global Supply Chains 597
+State of the Art 599
+15-2 What are the alternative strategies for developing global businesses? 600
+Global Strategies and Business Organization 600 • Global Systems to  
+Fit t
+he Strategy 601 • Reorganizing t
+he Business 602
+15-3 What are the challenges posed by global information systems and  
+management solutions for these challenges?
+ 603
+A Typical Scenario: Disorganization on a Global Scale 603 • Global Systems 
+Strategy 604 • The Management Solution: Implementat
+ion  606
+15-4 What are the issues and technical alternatives to be consider ed when 
+developing international information systems? 607
+Computing Platforms and Systems Integration 608 • Connectivity 608
+              
+=== PDF PAGE 18 ===
+ Contents 17
+Interactive Session | Organizations Digital Nationalism  610
+Software Localization 611
+15-5 How will MIS help my career? 612
+The Company 612 • Posit ion Description 612 • Job Requirements 612 •  
+Interview Questions 613 • Author T
+ips 613
+Review Summary 614 • Key Terms 614 • Review Questions 615 •  
+Discussion Questions 615
+Hands-On MIS Projects 615
+Collaboration and Teamwork Pr
+oject 616
+Case Study: Souq.com: Amazon’s Entry into the Middle East 617
+References: 619
+Glossary 622
+Indexes 634
+              
+=== PDF PAGE 19 ===
+
+=== PDF PAGE 20 ===
+
+=== PDF PAGE 21 ===
+20 
+PREFACE
+New to This Edition
+Management Information Systems, 17th Global Edition has been thoroughly 
+updated to cover the latest industry and technology changes that impact the 
+course.
+MyLab MIS
+The goal of Management Information Systems is to provide students and instruc-
+tors with an authoritative,up-to-date, interactive, and engaging introduction to 
+the MIS field. MyLab MIS for Management Information Systems is an extension 
+of this goal in an interactive digital environment.
+MyLab is the teaching and learning platform that empowers you to reach 
+every student. By combining trusted author content with digital tools and a flex-
+ible platform, MyLab personalizes the learning experience and improves re-
+sults for each student.
+MyLab MIS features videos, animations, interactive quizzes to foster student 
+comprehension of concepts, theories, and issues. The MyLab MIS environment 
+reflects the new learning styles of students, which are more social, 
+ interactive, 
+and usable on digital devices such as smartphones and tablets
+.
+What’s Included
+• Pearson eText – Enhances learning both in and out of the classroom. 
+Students can highlight, take notes, and review k
+ey vocabulary all in one 
+place, even when offline. Seamlessly integrated interactivities and Con-
+ceptual Animations bring concepts to life via MyLab or the app.
+•
+ New Conceptual Animations – Have author Ken Laudon w
+alk students 
+through three of the most important concepts in each chapter (45 total) using 
+a contemporary animation platform. Available not only in the Pearson eT ext 
+that lives in MyLab MIS but can also be purchased as a standalone eT ext.
+•
+ New Video Cases – Collections of video cases (two or more per chapter)
+ 
+and 6 additional instructional videos cover key concepts and experiences in 
+the MIS world. The video cases illustrate how real-world 
+ corporations and 
+managers are using information technology and systems
+. Each case is paired 
+with a brief quiz. Video cases are listed at the beginning of each chapter.
+• MIS Decision Simulations – Foster critical decision making skills with 
+these interactive ex
+ercises that allow students to play the role of a man-
+ager and make business decisions.
+• Chapter Warm Ups, Chapter Quizzes – These objective-based quizz
+es 
+evaluate comprehension.
+• Discussion Questions – Threaded discussion topics taken fr
+om the end 
+of chapter encourage critical thinking.
+• Excel & Access Grader Projects – Liv
+e in the application auto-graded 
+Grader projects provided inside MyLab MIS to support classes covering Office 
+tools. In addition, Hands-On MIS Projects from the book are also available.
+              
+=== PDF PAGE 22 ===
+ Preface 21
+• Running Case on Dirt Bikes USA provides additional hands-on projects 
+for each chapter.
+• Dynamic Study Modules help students study chapter topics and the 
+language of MIS on their own by continuously assessing their knowledge 
+application and performance in real time. These ar
+e available as graded 
+assignments prior to class, and are accessible on smartphones, tablets, 
+and computers.
+•
+ Learning CatalyticsTM is a student response tool that helps you gener-
+ate class discussion, customize your lecture, and promote peer-to-peer 
+learning based on real-time analytics. Learning Catalytics uses students’ 
+devices to engage them in more interactive tasks.
+•
+ Learning Tracks: 38 Learning Tracks in MyLab MIS pr
+ovide addi-
+tional coverage of selected topics. (See pages 28−29 for list of Learning 
+Tracks available.)
+ENHANCED STAND-ALONE PEARSON ETEXT
+Management Information Systems is also available as a stand-alone eT ext, which 
+extends the learning experience, anytime and anywhere: The mobile app lets 
+students use their eT ext whenever they have a moment in their day, on Android 
+and iPhone mobile phones and tablets. Offline access ensures students never 
+miss a chance to learn. The eT ext engages students with compelling media: 
+Videos and animations written and produced by the authors bring key concepts 
+to life, helping students place what they are reading into context. Other fea-
+tures include highlights that allow educators to share information directly with 
+students within their eT ext, and analytics that let educators gain insight into 
+how students use their eT ext, and plan more effective instruction.
+Both the MyLab MIS and eT ext platforms provide an affordable, simple-to-use 
+mobile-optimized reading experience that lets instructors and students extend 
+learning beyond class time.
+New and Updated Topics
+The 17th Global Edition features all new or updated opening, closing, and 
+Interactive Session cases. The text, figures, tables, and cases have been updated 
+through July 2020 with the latest sources from industry and MIS research. New 
+topics and coverage include:
+•
+ Updated and expanded coverage of artificial intelligence (AI): 
+Chapter 11 has been r
+ewritten to include new expanded coverage of  
+machine learning, “deep learning,” natural language systems, computer 
+vision systems, and robotics, reflecting the surging interest in business 
+uses of AI and “intelligent” techniques.
+•
+ Making the business case for systems: Chapter 14 has been r
+ewritten 
+to provide expanded coverage of techniques and decision-making crite-
+ria for developing a business case for the acquisition and deployment of 
+information systems and related technologies. The chapter shows how 
+to evaluate and select systems projects and technologies that will deliver 
+the greatest value to the firm.
+•
+ System impacts of the coronavirus pandemic: Up-to-date cov
+erage of 
+the impact of the coronavirus pandemic on business uses of information 
+systems. Three Interactive Sessions and two chapter-ending case stud-
+ies cover topics such as working remotely, supply chain disruptions, and 
+rethinking global supply chains.
+              
+=== PDF PAGE 23 ===
+22 Preface
+• Big Data and the Internet of Things: In-depth coverage of big data, big 
+dat
+a analytics, and the Internet of Things (IoT) in Chapters 1, 6, 7, and 12. 
+Includes big data analytics, analyzing IoT data streams, Hadoop, in-memory 
+computing, nonrelational databases, data lakes, and analytic platforms.
+• Cloud Computing: Updated and expanded coverage of cloud computing 
+in Chapter 5 (IT infrastructur
+e) with more detail on types of cloud ser-
+vices, private and public clouds, hybrid clouds, managing cloud services, 
+and a new Interactive Session on using cloud services. Cloud computing 
+is also covered in Chapter 6 (databases in the cloud), Chapter 8 (cloud se-
+curity), Chapter 9 (cloud-based CRM and ERP), Chapter 10 (e-commerce), 
+and Chapter 13 (cloud-based systems development).
+•
+ Digital resiliency
+• Expanded coverage on privacy and intellectual property laws and r
+egu-
+lations in the EU and other countries
+• Low-code and no-code development and automated testing
+• Software for the web: Javascript, Jav
+a, HTML, and HTML5
+• Data governance
+• Dark web
+The Laudon text, MyLab MIS, and eT ext provide the most up-t
+o-date and com-
+prehensive overview of information systems used by business firms today. 
+After reading this book, we expect students will be able to participate in, and 
+even lead, management discussions of information systems for their firms and 
+understand how to use information technology in their jobs to achieve bottom-
+line business results.Regardless of whether students are accounting, finance, 
+management, operations management, marketing, or information systems ma-
+jors, the knowledge and information in this book will be valuable throughout 
+their business careers.
+Solving Teaching and Learning Challenges
+MyLab MIS is the teaching and learning platform that empowers you to reach 
+every student. By combining trusted authors’ content with digital tools and a 
+flexible platform, MyLab MIS personalizes the learning experience and im-
+proves results for each student. And with MIS Decision-Making Sims and auto-
+graded Excel and Access Projects, students understand how MIS concepts will 
+help them succeed in their future careers.
+MyLab MIS and Pearson eT ext offer unique digital interactive features that 
+hold student attention spans longer and make learning more effective, includ-
+ing 45 conceptual animations that walk students through key concepts in each 
+chapter, a collection of online video cases, and interactive quizzes. All of this is 
+available anytime, anywhere, on any digital device. The result is a comprehen-
+sive learning environment that will heighten student engagement and learning 
+in the MIS course.
+The Laudon learning package is more current, real-world, and authoritative 
+than competitors. Laudon Management Information Systems 17th Global Edition, 
+MyLab MIS, and Pearson eT ext help students understand MIS concepts and is-
+sues through extensive use of real-world company examples, a wide variety of 
+text and video cases based on real-world organizations, and numerous line art 
+illustrations, interactive animations, and hands-on software projects.
+              
+=== PDF PAGE 24 ===
+
+=== PDF PAGE 25 ===
+24 Preface
+• A diagram analyzing the opening case in terms of the management,  
+organization, and technology model used throughout the text
+• T wo Interactive Sessions with Case Study Questions
+• A Career Opportunities section showing students how to use the text for 
+job hunting and career pr
+eparation
+• A Review Summary keyed to the Student Learning Objectives
+• A list of Key T erms that students can use to review concepts
+• Review questions for students to test their comprehension of chapter 
+material
+•
+ Discussion questions raised by the broader themes of the chapter
+• A series of Hands-on MIS Projects consisting of two Management  
+Decision Problems, a hands-on application softwar
+e project, and a project 
+to develop Internet skills
+• A Collaboration and T eamwork Project to dev
+elop teamwork and  
+presentation skills with options for using open source collaboration tools
+• A chapter-ending case study for students to apply chapter concepts
+• Chapter references
+Student Learning-Focused
+Student Learning Objectives are organized around a set of study questions to 
+focus student attention. Each chapter concludes with a Review Summary and 
+Review Questions organized around these study questions, and each major 
+chapter section is based on a Learning Objective.
+Key Features
+We have enhanced the text to make it more interactive, leading edge, and ap-
+pealing to both students and instructors. The features and learning tools are 
+described in the following sections.
+Business-Driven with Real-World Business Cases  
+and Examples
+The text helps students see the direct connection between information systems 
+and business performance. It describes the main business objectives driving the 
+use of information systems and technologies in corporations all over the world: 
+operational excellence, new products and services, customer and supplier inti-
+macy, improved decision making, competitive advantage, and survival. In-text 
+examples and case studies show students how specific companies use informa-
+tion systems to achieve these objectives. We use current (2020) examples from 
+business and public organizations throughout the text to illustrate the impor-
+tant concepts in each chapter. Most of the case studies describe companies or 
+organizations that are familiar to students, such as Facebook, Google, Amazon, 
+PayPal, the Bel Group, and Deliveroo.
+Hands-On Text Activities
+Real-world business scenarios and data to learn firsthand what MIS is all about.
+These projects heighten student involvement in this exciting subject.
+•
+ Interactive Sessions. T w
+o short cases in each chapter have been re-
+designed as Interactive Sessions that can be used to stimulate student 
+              
+=== PDF PAGE 26 ===
+
+=== PDF PAGE 27 ===
+26 Preface
+Developing Career Skills
+For students to succeed in a rapidly changing job market, they should be aware 
+of their career options and how to go about developing a variety of skills. With 
+MyLab MIS and Management Information Systems 17th Global Edition, we focus 
+on these skills in the following ways.
+Career Opportunities and Resources
+Every student who reads this text wants to know: How will this book help my 
+career? The Career Opportunities feature shows how to use this text, MyLab MIS, 
+and eT ext as tools for job-hunting and career-building. Job interviewers will typi-
+cally ask about why you want the job, along with your ability to communicate, 
+multitask, work in a team, show leadership, solve problems, and meet goals. These 
+are general skills and behaviors you’ll need to succeed in any job, and you should 
+be prepared to provide examples from your course work and job experiences that 
+demonstrate these skills. But there are also business knowledge and professional 
+skills that employers will ask you about. Career Opportunities will show you how 
+to use what you have learned in this text to demonstrate these skills.
+The Career Opportunities section, identified by this icon 
+ is the last major 
+section of each chapter under the heading “How will MIS help my career?” . 
+There you will find a description of an entry-level job for a recent college grad-
+uate based on a real-world job description from major online job sites related to 
+the topics covered in that chapter. The name of the company offering the job 
+and its location have been changed. Each chapter’s job posting describes the 
+ Students practice using 
+software in real-world settings  
+for achieving operational 
+excellence and enhancing 
+decision making.
+Improving Decision Making: Using Web Tools to Configure and Price an Automobile
+Software skills: Internet-based software
+Business skills: Researching product information and pricing
+3-11 In this exercise, you will use software at car websites to find product information about a car of your 
+choice and use that information to make an important purchase decision. You will also evaluate two of 
+these sites as selling tools.
+ Each chapter features a 
+project to develop Internet 
+skills for accessing informa-
+tion, conducting research, 
+and performing online 
+ calculations and analysis.
+              
+=== PDF PAGE 28 ===
+
+=== PDF PAGE 29 ===
+28 Preface
+Instructor Teaching Resources
+SUPPLEMENTS AVAILABLE 
+TO INSTRUCTORS AT WWW.
+PEARSONGLOBALEDITIONS.COM FEATURES OF THE SUPPLEMENT
+Instructor’s Manual • Chapter-by-chapter summaries
+• Examples and activities not in the main book
+• Teaching outlines
+• Teaching tips
+• Solutions to all questions and problems in the book
+T
+est Bank
+authored by Professor Kenneth Laudon, New 
+York University
+The authors have worked closely with skilled test item writers to ensure that 
+higher-level cognitive skills are tested. Test bank multiple-choice questions 
+include questions on content but also include many questions that require 
+analysis, synthesis, and evaluation skills.
+AACSB Assessment Guidelines
+As a part of its accreditation activities, the AACSB has developed an 
+Assurance of Learning Program designed to ensure that schools do in fact 
+teach students what they promise. Schools are required to state a clear 
+mission, develop a coherent business program, identify student learning 
+objectives, and then prove that students do in fact achieve the objectives.
+We have attempted in this book to support AACSB efforts to encourage 
+assessment-based education. The end papers of this edition identify student 
+learning objectives and anticipated outcomes for our Hands-On MIS projects.
+The authors will provide custom advice on how to use this text in colleges with 
+different missions and assessment needs. Please email the authors or contact 
+your local Pearson representative for contact information.
+Computerized TestGen TestGen allows instructors to:
+•
+ Customize, save, and generate classroom tests
+• Edit, add, or delete questions from the Test Item Files
+• Analyze test results
+• Organize a database of tests and student results
+PowerPoints
+authored by Pr
+ofessor Kenneth Laudon, New 
+York University
+The authors have prepared a comprehensive collection of 50 PowerPoint 
+slides for each chapter to be used in your lectures. Many of these slides are 
+the same as used by Ken Laudon in his MIS classes and executive education 
+presentations. Each of the slides is annotated with teaching suggestions 
+for asking students questions, developing in-class lists that illustrate key 
+concepts, and recommending other firms as examples in addition to those 
+provided in the text. The annotations are like an Instructor’s Manual built into 
+the slides and make it easier to teach the course effectively.
+PowerPoints meet accessibility standards for students with disabilities. 
+Features include but are not limited to:
+•
+ Keyboard and Screen Reader access
+• Alternative text for images
+• High color contrast between background and foreground colors
+Learning Tracks
+There are 38 Learning Tracks in MyLab MIS available to instructors and 
+students. This supplementary content takes students deeper into MIS topics, 
+concepts, and debates and reviews basic technology concepts in hardware, 
+software, database design, and other areas.
+              
+=== PDF PAGE 30 ===
+
+=== PDF PAGE 31 ===
+
+=== PDF PAGE 32 ===
+
+=== PDF PAGE 33 ===
+32 Preface
+Mahmoud Elhussini, Montclair State University
+Anne Formalarie, Plymouth State University
+Sue Furnas, Collin College
+Scott Hamerink, Oakland University
+T erry Howard, University of Detroit Mercy
+Dae Youp Kang, University of Memphis
+Rajkumar Kempaiah, College of Mount Saint Vincent
+Channa J. Kumarage, Saint Cloud State University
+Weiqi Li, University of Michigan-Flint
+Liu Liu, Old Dominion University
+Susan Mahon, Collin College
+Robert Morphew, T exas Woman’s University
+John Newman, Coppin State University
+Jose Ng, Montclair State University
+Richard Peterson, Montclair State University
+Robin Poston, University of Memphis
+Dr. Michael Raisinghani, T exas Woman’s University
+Patricia Ryan, Southeast Missouri State University
+Ethné Swartz, Montclair State University
+Amir T alaei-Khoei, University of Nevada Reno
+Paulus Van Vliet, University of Nebraska at Omaha
+Global Edition Acknowledgments
+Contributors
+Muhammad Shakaib Akram, King Saud University
+Saadat Alhashmi, University of Sharjah
+Subhashini Bhaskaran, Ahlia University
+Bernard Bouwman
+Joyce Chan, City University of Hong Kong
+June Clarke, Sheffield Hallam University
+Paul Griffin, Singapore Management University
+Imran Medi, Asia Pacific University of T echnology and Innovation
+Chandra Reka Ramachandiran, Asia Pacific University of T echnology and Innovation
+Yasser Mohamed Ibrahim Sabri, Cairo University
+Bernd Schenk, University of Liechtenstein
+Neerja Sethi, Nanyang T echnological University
+Vijay Sethi, Nanyang T echnological University
+Jon and Diane Sutherland
+Carolien van den Berg, University of the Western Cape
+Reviewers
+Zach Lee, Durham University
+Nash Milic, American University of Sharjah
+Petter T erenius, Lancaster University and University of Borås
+Yuen Yee Yen, Multimedia University
+              
+=== PDF PAGE 34 ===
+
+=== PDF PAGE 35 ===
+
+=== PDF PAGE 36 ===
+
+=== PDF PAGE 37 ===
+36 Part One Organizations, Management, and the Networked Enterprise
+In March 2020 AWM opened a low-contact cashierless micromarket called 
+QuickEats at a luxury apartment community owned by Greenwood & McKenzie 
+in Santa Ana California. QuickEats utilizes AWM Frictionless and features grab-
+and-go products such as sodas, water, juice drinks, sandwiches, cheese plates, 
+fruit, and household cleaning items.
+AWM Smart Shelf is able to personalize shoppers’ experiences when they are 
+in stores based on the items they pick up, even if they don’t purchase them. For 
+example, if a customer picks up a box of cookies and then puts it back, the re-
+tailer can use the system to offer a discount on the shelf beneath that item the 
+next time the shopper encounters it in the store. Cofounder Kurtis Van Horn 
+believes that Smart Shelf can provide the same level of customization and per-
+sonalization as found in online shopping to brick-and-mortar stores.
+AWM also offers an anonymous consumer behavior tracking application that 
+can direct customers to other parts of a store using digital signage, enabling 
+up-to-the-minute advertising and pricing. AWM solutions can be implemented 
+in a wide range of store sizes and formats, from micromarkets, to convenience 
+stores, to larger-format retailers. T echnology is redefining the role of the shelf 
+in retail marketing.
+Sources: www.smartshelf.com, accessed April 29, 2020; AWM SmartShelf Launches Southern 
+California’s First Autonomous Micromarket in Santa Ana’s Nineteen01 Community,” 
+Businesswire, March 24, 2020; Jared Council, “Retailers Hope In-Store T ech Will Keep 
+Shoppers in Stores,” Wall Street Journal, January 15, 2020.
+T
+he companies and technologies described here show how essential in-
+formation systems are today. T oday, retail stores are struggling to stay 
+alive and relevant as more shoppers gravitate to online shopping and the 
+Internet. One solution is to use leading-edge innovative information tech-
+nology to provide new ways of drawing buyers into physical stores and mak-
+ing the in-store buying experience more efficient, safe, and pleasant. The 
+information flows that drive these reimagined retail businesses have be-
+come much more digital, making use of mobile tools and object-recognition 
+technology.
+The chapter-opening diagram calls attention to important points raised by 
+this case and this chapter. T o compete more effectively against online retailers 
+and take advantage of new technology solutions, brick-and-mortar retail stores 
+are using innovative systems based on object-recognition technology, sensors, 
+and smartphones. The use of leading-edge digital technologies to drive business 
+operations and management decisions is a key topic today in the MIS world and 
+will be discussed throughout this text.
+It is also important to note that deploying information technology has 
+changed the way customers of Acrelec and AWM Smart Shelf run their busi-
+nesses. T o effectively use new digital tools, these companies had to redesign 
+jobs and procedures for gathering, inputting, and accessing information. These 
+changes had to be carefully planned to make sure they enhanced efficiency, 
+service, and profitability.
+Here are some questions to think about: How do Acrelec’s and AWM’s 
+ systems 
+change retail operations? How do they improve the cust
+omer experience?
+              
+=== PDF PAGE 38 ===
+
+=== PDF PAGE 39 ===
+38 Part One Organizations, Management, and the Networked Enterprise
+IT Innovations A continuing stream of information technology innovations is 
+transforming the tr
+aditional business world. Examples include the emergence 
+of cloud computing, the growth of a mobile digital business platform based on 
+smartphones and tablet computers, big data and the Internet of Things (IoT), 
+business analytics, machine learning systems, and the use of social networks 
+by managers to achieve business objectives. Most of these changes have oc-
+curred in the past few years. These innovations are enabling entrepreneurs 
+and innovative traditional firms to create new products and services, develop 
+new business models, and transform the day-to-day conduct of business. In the 
+process, some old businesses, even industries, are being destroyed while new 
+businesses are springing up.
+New Business Models
+ For instance, the emergence of online video services 
+for str
+eaming or downloading, such as Netflix, Apple TV Channels, and Ama-
+zon, has forever changed how premium video is distributed and even cre-
+ated. Netflix by early 2020 had attracted more than 167 million subscribers 
+worldwide to what it calls the “Internet TV revolution.” Netflix has moved into 
+premium TV show production with nearly 1,200 original shows in 2019, such 
+as American Vandal, Suburra, The Crown, Friends From College, House of Cards, 
+and Orange Is the New Black, challenging cable and broadcast producers of TV 
+shows, and potentially disrupting cable network dominance of TV show pro-
+duction. Apple has struck deals with major Hollywood studios for recent mov-
+ies and TV shows. A growing trickle of viewers are unplugging from cable and 
+using only the Internet for entertainment.
+E-commerce Expansion
+ E-commerce sales worldwide amounted to nearly $3.6 
+trillion in 2019 and ar
+e expected to approach $5 trillion by 2021 (Lipsman, 2019). 
+E-commerce is changing how firms design, produce, and deliver their products 
+and services. E-commerce has reinvented itself again, disrupting the traditional 
+marketing and advertising industry and putting major media and content firms 
+IT EQUIPMENT, SOFTWARE, and R&D SPENDING IN NOMINAL GDP
+(as a percent of total capital spending in nominal GDP) 
+46.8%
+5
+10
+15
+20
+25
+30
+35Percent
+40
+50
+45
+55
+60
+65
+70
+75
+80
+85
+90
+100
+95
+19991998 20002001200220032004200520062007200820092010201120122013201420152016201720182019
+IT Equipment, Software, & R&D
+FIGURE 1.1  INFORMATION TECHNOLOGY CAPITAL INVESTMENT
+Information technology capital investment, defined as IT equipment, software and  
+research and development (R&D) spending, amounted to over 40 percent of total US 
+capital spending (in nominal GDP) between 1999 and 2019. A similar pattern has oc-
+curred globally.
+Source: US Bureau of Economic Analysis.
+              
+=== PDF PAGE 40 ===
+ Chapter 1 Information Systems in Global Business Today 39
+in jeopardy. Facebook and other social networking sites such as YouT ube
+, T wit-
+ter, and T umblr, along with Netflix, Apple Music, and many other media firms, 
+exemplify the new face of e-commerce in the twenty-first century. They sell 
+services. When we think of e-commerce, we tend to think of selling physical prod-
+ucts. While this iconic vision of e-commerce is still very powerful and the fastest-
+growing form of retail worldwide, growing up alongside is a whole new value 
+stream based on selling services, not goods. It’s a services model of e-commerce. 
+Growth in social commerce is spurred by powerful growth of the mobile platform: 
+98 percent of Facebook’s users access the service from mobile phones and tablets. 
+Information systems and technologies are the foundation of this new services-
+based e-commerce. Mobile retail e-commerce worldwide approached $2.55 billion 
+in 2020 (and is growing at almost 20 percent a year) (eMarketer, 2020).
+Management Changes
+ The management of business firms has changed: With 
+new mobile smartphones, high-speed wireless Wi-Fi networks, and tablets
+, re-
+mote salespeople on the road are only seconds away from their managers’ ques-
+tions and oversight. Management is going mobile. Managers on the move are 
+in direct, continuous contact with their employees. The growth of enterprise-
+wide information systems with extraordinarily rich data means that managers 
+no longer operate in a fog of confusion but instead have online, nearly instant 
+access to the really important information they need for accurate and timely 
+decisions. In addition to their public uses on the web, social networking tools, 
+wikis, and blogs are becoming important corporate tools for communication, 
+collaboration, and information sharing.
+Changes in Firms and Organizations
+ Compared to industrial organizations of 
+the pr
+evious century, new fast-growing twenty-first-century business firms put less 
+emphasis on hierarchy and structure and more emphasis on employees taking on 
+multiple roles and tasks and collaborating with others on a team. They put greater 
+emphasis on competency and skills rather than position in the hierarchy. They em-
+phasize higher-speed and more-accurate decision making based on data and analy-
+sis. They are more aware of changes in technology, consumer attitudes, and culture. 
+They use social media to enter into conversations with consumers and demonstrate 
+a greater willingness to listen to consumers, in part because they have no choice. 
+They show better understanding of the importance of information technology in 
+creating and managing business firms and other organizations. T o the extent organi-
+zations and business firms demonstrate these characteristics, they are twenty-first-
+century digital firms.
+You can see some of these trends at work in the Interactive Session on 
+Organizations, which examines the impact on work and management as many 
+companies had their employees work remotely during the coronavirus pan-
+demic of 2020.
+Globalization Challenges and Opportunities: A 
+Flattened World
+Prior to AD 1500, there was no truly global economic system of trade that con-
+nected all the continents on earth although there were active regional trade 
+markets. After the sixteenth century, a global trading system began to emerge 
+based on advances in navigation and ship technology. The world trade that 
+ensued after these developments has brought the peoples and cultures of the 
+world much closer together. The Industrial Revolution was really a worldwide 
+phenomenon energized by expansion of trade among nations, making na-
+tions both competitors and collaborators in business. The Internet has greatly 
+heightened the competitive tensions among nations as global trade expands 
+              
+=== PDF PAGE 41 ===
+
+=== PDF PAGE 42 ===
+
+=== PDF PAGE 43 ===
+42 Part One Organizations, Management, and the Networked Enterprise
+It’s not just goods that move across borders. So too do jobs, some of them high-
+level jobs that pay well and require a college degree. For instance, since 2000, 
+the United States has lost an estimated 5 million manufacturing jobs to offshore, 
+low-wage producers, so manufacturing is now a small part of US employment 
+(less than 9 percent). In a normal year, about 300,000 service jobs move off-
+shore to lower-wage countries, many of them in less-skilled information system 
+occupations but also in tradable service jobs in architecture, financial services, 
+customer call centers, consulting, engineering, and even radiology.
+On the plus side, the US economy created 2.6 million new jobs in 2018. 
+Employment in information systems and the other service occupations listed 
+previously has rapidly expanded in sheer numbers, wages, productivity, and 
+quality of work. Outsourcing has actually accelerated the development of new 
+systems in the United States and worldwide by reducing the cost of building 
+and maintaining them. In 2019 job openings in information systems and tech-
+nologies far exceeded the supply of applicants.
+The challenge for you as a business student is to develop high-level skills 
+through education and on-the-job experience that cannot be outsourced. The 
+challenge for your business is to avoid markets for goods and services that can 
+be produced offshore much less expensively. The opportunities are equally im-
+mense. Throughout this book you will find examples of companies and indi-
+viduals who either failed or succeeded in using information systems to adapt to 
+this new global environment.
+What does globalization have to do with management information systems? 
+That’s simple: everything. The emergence of the Internet into a full-blown 
+international communications system has drastically reduced the costs of 
+operating and transacting on a global scale. Communication between a fac-
+tory floor in Shanghai and a distribution center in Rapid City, South Dakota, 
+is now instant and virtually free. Customers can now shop in a worldwide 
+marketplace, obtaining price and quality information reliably 24 hours a day. 
+Firms producing goods and services on a global scale achieve extraordinary 
+cost reductions by finding low-cost suppliers and managing production facili-
+ties in other countries. Internet service firms, such as Google and eBay, are 
+able to replicate their business models and services in multiple countries 
+without having to redesign their expensive fixed-cost information systems 
+infrastructure. Briefly, information systems enable globalization.
+The Emerging Digital Firm
+All of the changes we have just described, coupled with equally significant or-
+ganizational redesign, have created the conditions for a fully digital firm. A 
+digital firm can be defined along several dimensions. A digital firm is one in 
+which nearly all of the organization’s significant business relationships with cus-
+tomers, suppliers, and employees are digitally enabled and mediated. Core busi-
+ness processes are accomplished through digital networks spanning the entire 
+organization or linking multiple organizations.
+Business processes refer to the set of logically related tasks and behaviors 
+that organizations develop over time to produce specific business results and 
+the unique manner in which these activities are organized and coordinated. 
+Developing a new product, generating and fulfilling an order, creating a mar-
+keting plan, and hiring an employee are examples of business processes, and 
+the ways organizations accomplish their business processes can be a source of 
+competitive strength. (A detailed discussion of business processes can be found 
+in Chapter 2.)
+              
+=== PDF PAGE 44 ===
+ Chapter 1 Information Systems in Global Business Today 43
+Key corporate assets—intellectual property, core competencies, and financial 
+and human assets—are managed through digital means. In a digital firm, any 
+piece of information required to support key business decisions is available at 
+any time and anywhere in the firm.
+Digital firms sense and respond to their environments far more rapidly than 
+traditional firms, giving them more flexibility to survive in turbulent times. Digital 
+firms offer extraordinary opportunities for more-flexible global organization and 
+management. In digital firms, both time shifting and space shifting are the norm. 
+Time shifting refers to business being conducted continuously, 24/7, rather than 
+in narrow “work day” time bands of 9 a.m. to 5 p.m. Space shifting means that 
+work takes place in a global workshop as well as within national boundaries. 
+Work is accomplished physically wherever in the world it is best accomplished.
+Many firms, such as Cisco Systems, 3M, and GE, are close to becoming digi-
+tal firms, using the Internet to drive every aspect of their business. Most other 
+companies are not fully digital, but they are moving toward close digital inte-
+gration with suppliers, customers, and employees.
+Strategic Business Objectives of Information Systems
+What makes information systems so essential today? Why are businesses in-
+vesting so much in information systems and technologies? In the United States, 
+more than 25 million business and financial managers, and 36 million profes-
+sional workers in the labor force rely on information systems to conduct busi-
+ness. Information systems are essential for conducting day-to-day business in 
+most advanced countries as well as achieving strategic business objectives.
+Entire sectors of the economy are nearly inconceivable without substan-
+tial investments in information systems. E-commerce firms such as Amazon, 
+eBay, Google, and E*Trade simply would not exist. T oday’s service industries—
+finance, insurance, and real estate as well as personal services such as travel, 
+medicine, and education—could not operate without information systems. 
+Similarly, retail firms such as Walmart and T esco and manufacturing firms such 
+as General Motors and Siemens require information systems to survive and 
+prosper. Just as offices, telephones, filing cabinets, and efficient tall buildings 
+with elevators were once the foundations of business in the twentieth century, 
+information technology is a foundation for business in the twenty-first century.
+There is a growing interdependence between a firm’s ability to use informa-
+tion technology and its ability to implement corporate strategies and achieve 
+corporate goals (see Figure 1.2). What a business would like to do in five years 
+often depends on what its systems will be able to do. Increasing market share, 
+becoming the high-quality or low-cost producer, developing new products, and 
+increasing employee productivity depend more and more on the kinds and 
+quality of information systems in the organization. The more you understand 
+about this relationship, the more valuable you will be as a manager.
+Specifically, business firms invest heavily in information systems to achieve 
+six strategic business objectives: operational excellence; new products, services, 
+and business models; customer and supplier intimacy; improved decision mak-
+ing; competitive advantage; and survival.
+Operational Excellence
+Businesses continuously seek to improve the efficiency of their operations in 
+order to achieve higher profitability. Information systems and technologies are 
+some of the most important tools available to managers for achieving higher 
+              
+=== PDF PAGE 45 ===
+
+=== PDF PAGE 46 ===
+ Chapter 1 Information Systems in Global Business Today 45
+systems and technologies to achieve customer intimacy. These hotels use com-
+puters to keep track of guests’ preferences, such as their preferred room tem-
+perature, check-in time, frequently dialed telephone numbers, and television 
+programs, and store these data in a large data repository. Individual rooms in 
+the hotels are networked to a central network server computer so that they can 
+be remotely monitored and controlled. When a customer arrives at one of these 
+hotels, the system automatically changes the room conditions, such as dim-
+ming the lights, setting the room temperature, or selecting appropriate music, 
+based on the customer’s digital profile. The hotels also analyze their customer 
+data to identify their best customers and to develop individualized marketing 
+campaigns based on customers’ preferences.
+Charles T yrwhitt, a UK retailer specializing in dress shirts, and JCPenney, 
+a US department store chain, exemplify the use of information systems to en-
+able supplier and customer intimacy. Every time a dress shirt is bought one of 
+their stores, the record of the sale appears immediately on computers in Hong 
+Kong at their supplier. TAL Apparel, a contract manufacturer that produces one 
+in six dress shirts sold in the United States. TAL runs the numbers through a 
+computer model it developed and then decides how many replacement shirts 
+to make and in what styles, colors, and sizes. TAL then sends the shirts to each 
+store, bypassing the retailer’s warehouses. These systems reduce inventory 
+costs and ensure that what customers want are actually on the shelves.
+Improved Decision Making
+Many business managers operate in an information fog bank, never really 
+having the right information at the right time to make an informed decision. 
+Instead, managers rely on forecasts, best guesses, and luck. The result is over- 
+or underproduction of goods and services, misallocation of resources, and poor 
+response times. These poor outcomes raise costs and lose customers. In the 
+past decade, information systems and technologies have made it possible for 
+managers to use real-time data from the marketplace when making decisions.
+For instance, Privi Organics Ltd., a leading Indian company that manufac-
+tures, supplies, and exports aroma chemical products worldwide, uses the 
+Oracle Human Capital Management system for real-time insight into individual 
+employee  information—including performance rating and compensation his-
+tory.  The system helps managers make faster human resource decisions, such 
+as promotions or transfers, by integrating all employee records across the orga-
+nization.  Managers are able to quickly review employee performance ratings 
+for the previous three years and drill down into more details.  A digital dash-
+board helps management view and monitor hiring status in multiple locations, 
+such as the number of open positions and the time taken to fill these positions.
+Competitive Advantage
+When firms achieve one or more of these business objectives—operational ex-
+cellence; new products, services, and business models; customer/supplier inti-
+macy; and improved decision making—chances are they have already achieved 
+a competitive advantage. Doing things better than your competitors, charging 
+less for superior products, and responding to customers and suppliers in real 
+time all add up to higher sales and higher profits that your competitors cannot 
+match. Apple Inc., Walmart, and UPS, described later in this chapter, are indus-
+try leaders because they know how to use information systems for this purpose.
+              
+=== PDF PAGE 47 ===
+
+=== PDF PAGE 48 ===
+
+=== PDF PAGE 49 ===
+
+=== PDF PAGE 50 ===
+
+=== PDF PAGE 51 ===
+
+=== PDF PAGE 52 ===
+ Chapter 1 Information Systems in Global Business Today 51
+Different levels and specialties in an organization create different inter-
+ests and points of view. These views often conflict over how the company 
+should be run and how resources and rewards should be distributed. Conflict 
+is the basis for organizational politics. Information systems come out of this 
+cauldron of differing perspectives, conflicts, compromises, and agreements 
+that are a natural part of all organizations. In Chapter 3, we examine these 
+features of organizations and their role in the development of information 
+systems in greater detail.
+Management
+Management’s job is to make sense out of the many situations faced by organiza-
+tions, make decisions, and formulate action plans to solve organizational problems. 
+Managers perceive business challenges in the environment, they set the organiza-
+tional strategy for responding to those challenges, and they allocate the human and 
+financial resources to coordinate the work and achieve success. Throughout, they 
+must exercise responsible leadership. The business information systems described 
+in this book reflect the hopes, dreams, and realities of real-world managers.
+But managers must do more than manage what already exists. They must 
+also create new products and services and even re-create the organization from 
+time to time. A substantial part of management responsibility is creative work 
+driven by new knowledge and information. Information technology can play 
+a powerful role in helping managers design and deliver new products and ser-
+vices and redirecting and redesigning their organizations. Chapter 12 treats 
+management decision making in detail.
+Information Technology
+Information technology is one of many tools managers use to cope with change. 
+Computer hardware is the physical equipment used for input, processing, and 
+output activities in an information system. It consists of the following: comput-
+ers of various sizes and shapes (including mobile handheld devices); various 
+input, output, and storage devices; and telecommunications devices that link 
+computers together.
+Computer software consists of the detailed, preprogrammed instructions 
+that control and coordinate the computer hardware components in an infor-
+mation system. Chapter 5 describes the contemporary software and hardware 
+platforms used by firms today in greater detail.
+Data management technology consists of the software governing the orga-
+nization of data on physical storage media. More detail on data organization and 
+access methods can be found in Chapter 6.
+Networking and telecommunications technology, consisting of both 
+physical devices and software, links the various pieces of hardware and trans-
+fers data from one physical location to another. Computers and communica-
+tions equipment can be connected in networks for sharing voice, data, images, 
+sound, and video. A network links two or more computers to share data or 
+resources, such as a printer.
+The world’s largest and most widely used network is the Internet. The 
+Internet is a global “network of networks” that uses universal standards (de-
+scribed in Chapter 7) to connect millions of networks in more than 230 coun-
+tries around the world.
+The Internet has created a new “universal” technology platform on which to 
+build new products, services, strategies, and business models. This same technol-
+ogy platform has internal uses, providing the connectivity to link different sys-
+tems and networks within the firm. Internal corporate networks based on Internet 
+              
+=== PDF PAGE 53 ===
+52 Part One Organizations, Management, and the Networked Enterprise
+technology are called intranets. Private intranets extended to authorized users 
+outside the organization are called extranets, and firms use such networks to co-
+ordinate their activities with other firms for making purchases, collaborating on 
+design, and other interorganizational work. For most business firms today, using 
+Internet technology is both a business necessity and a competitive advantage.
+The World Wide Web is a service provided by the Internet that uses uni-
+versally accepted standards for storing, retrieving, formatting, and displaying in-
+formation in a page format on the Internet. Web pages contain text, graphics, 
+animations, sound, and video and are linked to other web pages. By clicking on 
+highlighted words or buttons on a web page, you can link to related pages to 
+find additional information and links to other locations on the web. The web can 
+serve as the foundation for new kinds of information systems such as UPS’s web-
+based package tracking system described below.
+All of these technologies, along with the people required to run and man-
+age them, represent resources that can be shared throughout the organization 
+and constitute the firm’s information technology (IT) infrastructure. The 
+IT infrastructure provides the foundation, or platform, on which the firm can 
+build its specific information systems. Each organization must carefully design 
+and manage its IT infrastructure so that it has the set of technology services it 
+needs for the work it wants to accomplish with information systems. Chapters 
+5 through 8 of this book examine each major technology component of infor-
+mation technology infrastructure and show how they all work together to cre-
+ate the technology platform for the organization. The Interactive Session on 
+T echnology describes some examples of the technologies used in computer-based 
+information systems today.
+UPS’s global delivery system provides another example. UPS invests heavily 
+in information systems technology to make its business more efficient and cus-
+tomer oriented. It uses an array of information technologies, including bar code 
+scanning systems, wireless networks, large mainframe computers, handheld 
+computers, the Internet, and many different pieces of software for tracking pack-
+ages, calculating fees, maintaining customer accounts, and managing logistics.
+Let’s identify the organization, management, and technology elements in the 
+UPS package tracking system. The organization element anchors the package 
+tracking system in UPS’s sales and production functions (the main product of 
+UPS is a service—package delivery). It specifies the required procedures for 
+identifying packages with both sender and recipient information, taking inven-
+tory, tracking the packages en route, and providing package status reports for 
+UPS customers and customer service representatives.
+The system must also provide information to satisfy the needs of managers 
+and workers. UPS drivers need to be trained in both package pickup and deliv-
+ery procedures and in how to use the package tracking system so that they can 
+work efficiently and effectively. UPS customers may need some training to use 
+UPS in-house package tracking software or the UPS website.
+UPS’s management is responsible for monitoring service levels and costs and 
+for promoting the company’s strategy of combining low cost and superior ser-
+vice. Management decided to use computer systems to increase the ease of 
+sending a package using UPS and of checking its delivery status, thereby reduc-
+ing delivery costs and increasing sales revenues.
+The technology supporting this system consists of handheld computers, bar 
+code scanners, desktop computers, wired and wireless communications net-
+works, UPS’s data center, storage technology for the package delivery data, UPS 
+in-house package tracking software, and software to access the web. The result 
+is an information system solution to the business challenge of providing a high 
+level of service with low prices in the face of mounting competition.
+              
+=== PDF PAGE 54 ===
+
+=== PDF PAGE 55 ===
+
+=== PDF PAGE 56 ===
+
+=== PDF PAGE 57 ===
+
+=== PDF PAGE 58 ===
+ Chapter 1 Information Systems in Global Business Today 57
+others invest little and receive little (quadrant 3). This suggests that investing 
+in information technology does not by itself guarantee good returns. What ac-
+counts for this variation among firms?
+The answer lies in the concept of complementary assets. Information tech-
+nology investments alone cannot make organizations and managers more 
+ effective unless they are accompanied by supportive values, structur
+es, and be-
+havior patterns in the organization and other complementary assets. Business 
+firms need to change how they do business before they can really reap the ad-
+vantages of new information technologies.
+Complementary assets are those assets required to derive value from a pri-
+mary investment (T eece, 1998). For instance, to realize value from automobiles 
+requires substantial complementary investments in highways, roads, gasoline 
+stations, repair facilities, and a legal regulatory structure to set standards and 
+control drivers.
+Research indicates that firms that support their technology investments 
+with investments in complementary assets, such as new business models, new 
+business processes, management behavior, organizational culture, or training, 
+ receive superior returns, whereas those firms f
+ailing to make these comple-
+mentary investments receive less or no returns on their information technol-
+ogy investments (Brynjolfsson, 2005; Brynjolfsson and Hitt, 2000; Laudon, 
+1974). These investments in organization and management are also known as 
+organizational and management capital.
+T able 1.2 lists the major complementary investments that firms need to 
+make to realize value from their information technology investments. Some 
+of this investment involves tangible assets, such as buildings, machinery, 
+and tools. However, the value of investments in information technology de-
+pends to a large extent on complementary investments in management and 
+organization.
+Key organizational complementary investments are a supportive busi-
+ness culture that values efficiency and effectiveness, an appropriate business 
+model, efficient business processes, decentralization of authority, highly dis-
+tributed decision rights, and a strong information system (IS) development 
+team.
+Important managerial complementary assets are strong senior man-
+agement support for change, incentive systems that monitor and reward 
+individual innovation, an emphasis on teamwork and collaboration, training 
+programs, and a management culture that values flexibility and knowledge.
+Important social investments (not made by the firm but by the society at 
+large, other firms, governments, and other key market actors) are the Internet 
+and the supporting Internet culture, educational systems, network and com-
+puting standards, regulations and laws, and the presence of technology and 
+service firms.
+Throughout the book, we emphasize a framework of analysis that considers 
+technology, management, and organizational assets and their interactions. 
+Perhaps the single most important theme in the book, reflected in case stud-
+ies and exercises, is that managers need to consider the broader organization 
+and management dimensions of information systems to understand current 
+problems as well as to derive substantial above-average returns from their in-
+formation technology investments. As you will see throughout the text, firms 
+that can address these related dimensions of the IT investment are, on aver-
+age, richly rewarded.
+              
+=== PDF PAGE 59 ===
+
+=== PDF PAGE 60 ===
+ Chapter 1 Information Systems in Global Business Today 59
+utilization, and management cannot be explored usefully with the models used 
+in the technical approach. Other behavioral disciplines contribute important 
+concepts and methods.
+For instance, sociologists study information systems with an eye toward how 
+groups and organizations shape the development of systems and also how systems 
+affect individuals, groups, and organizations. Psychologists study information sys-
+tems with an interest in how human decision makers perceive and use formal 
+ information. Economists study information systems with an interest in under-
+standing the pr
+oduction of digital goods, the dynamics of digital markets, and how 
+new information systems change the control and cost structures within the firm.
+The behavioral approach does not ignore technology. Indeed, information 
+systems technology is often the stimulus for a behavioral problem or issue. But 
+the focus of this approach is generally not on technical solutions. Instead, it 
+concentrates on changes in attitudes, management and organizational policy, 
+and behavior.
+Approach of This Text: Sociotechnical Systems
+Throughout this book, you will find a rich story with four main actors: suppliers 
+of hardware and software (the technologists); business firms making invest-
+ments and seeking to obtain value from the technology; managers and employ-
+ees seeking to achieve business value (and other goals); and the contemporary 
+legal, social, and cultural context (the firm’s environment). T ogether these ac-
+tors produce what we call management information systems.
+The study of management information systems (MIS) arose to focus on the 
+use of computer-based information systems in business firms and government 
+agencies. MIS combines the work of computer science, management science, 
+and operations research with a practical orientation toward developing system 
+solutions to real-world problems and managing information technology re-
+sources. It is also concerned with behavioral issues surrounding the develop-
+ment, use, and impact of information systems, which are typically discussed in 
+the fields of sociology, economics, and psychology.
+Our experience as academics and practitioners leads us to believe that no single 
+approach effectively captures the reality of information systems. The successes 
+and failures of information systems are rarely all technical or all behavioral. Our 
+best advice to students is to understand the perspectives of many disciplines. 
+Indeed, the challenge and excitement of the information systems field are that it 
+requires an appreciation and tolerance of many different approaches.
+The view we adopt in this book is best characterized as the sociotechnical 
+view of systems. In this view, optimal organizational performance is achieved 
+by jointly optimizing both the social and technical systems used in production.
+Adopting a sociotechnical systems perspective helps to avoid a purely techno-
+logical approach to information systems. For instance, the fact that information 
+technology is rapidly declining in cost and growing in power does not necessarily 
+or easily translate into productivity enhancement or bottom-line profits. The fact 
+that a firm has recently installed an enterprise-wide financial reporting system 
+does not necessarily mean that it will be used, or used effectively. Likewise, the 
+fact that a firm has recently introduced new business procedures and processes 
+does not necessarily mean employees will be more productive in the absence of 
+investments in new information systems to enable those processes.
+In this book, we stress the need to optimize the firm’s performance as a 
+whole. Both the technical and behavioral components need attention. This 
+means that technology must be changed and designed in such a way as to fit 
+              
+=== PDF PAGE 61 ===
+
+=== PDF PAGE 62 ===
+ Chapter 1 Information Systems in Global Business Today 61
+company provides on-the-job training in its software and consulting methods. 
+Job responsibilities include:
+• Supporting Financial Analytics Data Services applications.
+• Helping the team create custom models and screens.
+• Training clients in their offices and at seminars.
+• Providing expert consultation to clients by telephone and on-site.
+Job Requirements
+• Recent college graduate or investment professional with one to two years 
+of experience. Applicants with backgrounds in finance, MIS, economics
+, ac-
+counting, business administration, and mathematics are preferred
+• Knowledge of or interest in learning about financial markets
+• Sound working knowledge of spreadsheets
+• Very strong communication and interpersonal skills
+• Strong desire to learn in rapidly changing environment
+Interview Questions
+1. What is your background in finance? What courses did you take? Have you 
+ev
+er worked in the financial industry? What did you do there?
+2. What is your proficiency level with spreadsheet software? What w
+ork have 
+you done with Excel spreadsheets? Can you show examples of your work?
+3. Are you able to discuss current trends in the financial industry and how they 
+impact Pow
+er Financial’s business model and client base?
+4. Did you ever work with clients? Can you give examples of how you pr
+ovided 
+client service or support?
+5. Can you give us an example of a finance-related problem or other business 
+pr
+oblem that you helped solve? Did you do any writing and analysis? Can 
+you provide examples?
+Author Tips
+1. Use the web to learn about financial markets and the financial industry.
+2. Use the web to research the company, its financial pr
+oducts, and the tools 
+and services it offers customers. Learn what you can about its consulting 
+services. Additionally, examine the company’s social medial channels, such 
+as LinkedIn and Facebook, for trends and themes.
+3.
+ Inquire exactly how you would be using spreadsheets f
+or this job. Pro-
+vide examples of how you used spreadsheets to solve problems in the 
+classroom or for a job assignment. Show the spreadsheet work you did in 
+finance.
+4.
+ Bring examples of your writing (including some from your Digital Port
+-
+folio described in MyLab MIS) demonstrating your analytical skills and 
+project experience. Be prepared to discuss how you helped customers 
+solve a business problem or the business problem solving you did for your 
+courses.
+              
+=== PDF PAGE 63 ===
+
+=== PDF PAGE 64 ===
+
+=== PDF PAGE 65 ===
+64 Part One Organizations, Management, and the Networked Enterprise
+Hands-On MIS Projects
+The projects in this section give you hands-on experience in analyzing financial reporting and inventory man-
+agement problems, using data management software to improve management decision making about increasing 
+sales, and using Internet software for researching job requirements. Visit MyLab MIS to access this chapter’s 
+Hands-On MIS Projects.
+Management Decision Problems
+1-7 Magical T oys is a South African toy store chain. The toys ar e sold in their five stores and from their own 
+web shop. Each T uesday, management needs sales reports from last week’s activities. Work at the stores is 
+hectic, so usually at least one store fails to deliver the report, making it impossible to sum up the previous 
+week’s sales. The reports, sent by email as spreadsheets, sometimes have inconclusive or erroneous 
+data, and following up means that employees are unable to give their full focus to the customers. Some 
+errors in the spreadsheets may also cause the purchasing manager to place unnecessary purchase orders. 
+What are the main issues that Magical T oys faces in the absence of an information system? How could an 
+information system be of help, and what issues can an information system not solve?
+1-8
+ Diskonto operates deep-discount stores in Est
+onia offering housewares, cleaning supplies, clothing, health 
+and beauty aids, and packaged food, with most items selling for a very low price. Its business model 
+calls for keeping costs as low as possible. The company has no automated method for keeping track of 
+inventory at each store. Managers know approximately how many cases of a particular product the store 
+is supposed to receive when a delivery truck arrives, but the stores lack technology for scanning the 
+cases or verifying the item count inside the cases. Merchandise losses from theft or other mishaps have 
+been rising and now represent more than 3 percent of total sales. What decisions have to be made before 
+investing in an information system solution?
+Improving Decision Making: Using Databases to Analyze Sales Trends
+Software skills: Database querying and reporting
+Business skills: Sales trend analysis
+1-9 In this project, you will start out with raw transactional sales data and use Micr osoft Access database 
+software to develop queries and reports that help managers make better decisions about product pricing, 
+sales promotions, and inventory replenishment. In MyLab MIS, you can find a Store and Regional 
+Sales Database developed in Microsoft Access. The database contains raw data on weekly store sales 
+of computer equipment in various sales regions. The database includes fields for store identification 
+number, sales region, item number, item description, unit price, units sold, and the weekly sales period 
+when the sales were made. Use Access to develop some reports and queries to make this information 
+more useful for running the business. Sales and production managers want answers to the following 
+questions:
+•
+ Which products should be restocked?
+• Which stores and sales regions would benefit from a pr
+omotional campaign and additional marketing?
+• When (what time of year) should products be offered at full price, and when should discounts be used?
+You can easily modify the database t
+able to find and report your answers. Print your reports and results of 
+queries.
+Discussion Questions
+1-4 Information systems are too important to be 
+left to computer specialists. Do you agree? 
+Why or why not?
+1-5
+ If you were setting up the website 
+for a pr
+ofessional football team, what 
+management, organization, and technology 
+issues might you encounter?
+MyLab MIS
+MyLab MIS
+1-6 What are some of the organizational, 
+managerial, and social complementary 
+assets that help make UPS’
+s information 
+systems so successful?
+MyLab MIS
+              
+=== PDF PAGE 66 ===
+ Chapter 1 Information Systems in Global Business Today 65
+Improving Decision Making: Using the Internet to Locate Jobs Requiring Information 
+Systems Knowledge
+Software skills: Internet-based software
+Business skills: Job searching
+1-10 Visit a job-posting website such as EURES, the European Job Mobility Portal run by the European Com -
+mission. Spend some time at the site examining jobs for accounting, finance, sales, marketing, and human 
+resources. Find two or three descriptions of jobs that require some information systems knowledge. What in-
+formation systems knowledge do these jobs require? What do you need to do to prepare for these jobs? Write 
+a one- to two-page report summarizing your findings.
+Collaboration and Teamwork Project
+Selecting Team Collaboration Tools
+1-11 Form a team with three or four classmates and review the capabilities of Google Drive and Google Sites 
+for your team collaboration work. Compare the capabilities of these tw
+o tools for storing team documents, 
+project announcements, source materials, work assignments, illustrations, electronic presentations, and web 
+pages of interest. Learn how each works with Google Docs. Explain why Google Drive or Google Sites is more 
+appropriate for your team. If possible, use Google Docs to brainstorm and develop a presentation of your 
+findings for the class. Organize and store your presentation using the Google tool you have selected.
+              
+=== PDF PAGE 67 ===
+
+=== PDF PAGE 68 ===
+
+=== PDF PAGE 69 ===
+
+=== PDF PAGE 70 ===
+ Chapter 1 Information Systems in Global Business Today 69
+Chapter 1 References
+Baldwin, Richard. The Great Convergence: Information T echnology 
+and the New Globalization. Cambridge, MA: Harvard Univer-
+sity Press (2016).
+Brynjolfsson, Erik. “VII Pillars of IT Productivity.” Optimize (May 
+2005).
+Brynjolffson, Erik, and Avinash Collis. “How Should We Measure 
+the Digital Economy?” Harvard Business Review (November–
+December 2019).
+Brynjolfsson, Erik, and Lorin M. Hitt. “Beyond Computation: Informa-
+tion T echnology, Organizational Transformation, and Business 
+Performance.” Journal of Economic Perspectives 14, No. 4 (2000).
+Bureau of Economic Analysis. National Income and Product Ac-
+counts. www.bea.gov, accessed April 19, 2020.
+Chae, Ho-Chang, Chang E. Koh, and Victor Prybutok. “Information 
+T echnology Capability and Firm Performance: Contradictory 
+Findings and Their Possible Causes.” MIS Quarterly 38, No. 1 
+(March 2014).
+Dedrick, Jason, Vijay Gurbaxani, and Kenneth L. Kraemer. “Infor-
+mation T echnology and Economic Performance: A Critical 
+Review of the Empirical Evidence.” Center for Research on 
+Information T echnology and Organizations, University of 
+California, Irvine (December 2001).
+eMarketer. “Retail Mcommerce Sales, by Country” (September 
+2020).
+Friedman, Thomas. The World Is Flat. New York: Picador (2007).
+Gartner Inc. “Gartner Says Global IT Spending to Reach $3.8 Tril-
+lion in 2019.” (January 28, 2019).
+Hjartar, Klemens, Krish Krishnakanthan, Pablo Prieto-Muñoz, Gay-
+atri Shenai. “The CEO’s New T echnology Agenda.” McKinsey 
+Digital (November 2019).
+Hughes, Alan, and Michael S. Scott Morton. “The Transforming 
+Power of Complementary Assets.” MIT Sloan Management 
+Review 47, No. 4 (Summer 2006).
+Lamb, Roberta, Steve Sawyer, and Rob Kling. “A Social Informatics 
+Perspective of Socio-T echnical Networks.” http://lamb.cba.
+hawaii.edu/pubs (2004).
+Laudon, Kenneth C. Computers and Bureaucratic Reform. New York: 
+Wiley (1974).
+Lev, Baruch. “Intangibles: Management, Measurement, and Re-
+porting.” The Brookings Institution Press (2001).
+Lipsman, Andrew. “Global E-Commerce 2019.” eMarketer (June 
+27, 2019).
+Mithas, Sunil, and Roland T. Rust. “How Information T echnology 
+Strategy and Investments Influence Firm Performance: Con-
+jecture and Empirical Evidence.” MIS Quarterly (March 2016).
+Nevo, Saggi, and Michael R. Wade. “The Formation and Value of IT -
+Enabled Resources: Antecedents and Consequences of Syner-
+gistic Relationships.” MIS Quarterly 34, No. 1 (March 2010).
+Ross, Jeanne W., and Peter Weill. “Four Questions Every CEO 
+Should Ask About IT.” Wall Street Journal (April 25, 2011).
+Sabherwal, Rajiv, and Anand Jeyaraj. “Information T echnology 
+Impacts on Firm Performance: An Extension of Kohli and 
+Devaraj (2003).” MIS Quarterly (December 2015).
+Saunders, Adam, and Erik Brynjolfsson. “Valuing Information 
+T echnology Related Intangible Assets.” MIS Quarterly (March 
+2016).
+Statista Research Department. “Size of the Global Management 
+Consulting Market, from 2011 to 2020.” Statista (April 9, 
+2020).
+T eece, David. Economic Performance and Theory of the Firm: The 
+Selected Papers of David T eece. London: Edward Elgar Publish-
+ing (1998).
+US Bureau of Labor Statistics. Occupational Outlook Handbook. 
+(April 10, 2020)
+              
+=== PDF PAGE 71 ===
+
+=== PDF PAGE 72 ===
+
+=== PDF PAGE 73 ===
+72 Part One Organizations, Management, and the Networked Enterprise
+company. A People Directory provides a searchable database of contact infor-
+mation, skills, and expertise. Yammer can be accessed through the web, desk-
+top, and mobile devices and can be integrated with other Microsoft tools such as 
+SharePoint and Office 365 to make other applications more “social.” (SharePoint 
+is Microsoft’s platform for collaboration, document sharing, and document 
+management. Office 365 is Microsoft’s online service for its desktop productiv-
+ity applications such as word processing, spreadsheet, electronic presentations, 
+and data management.)
+Sharp created a pilot Yammer program in February 2013, with employee 
+adoption voluntary and employees allowed to write about hobbies and interests 
+as well as work-related topics. Within months there were 6,000 adopters, and the 
+number of Yammer users within the company has passed 10,000. Sharp wants to 
+deploy Yammer to all domestic employees in Japan and eventually to overseas 
+offices.
+Yammer has improved the flow of information between senior management 
+and rank-and-file employees. Communication among employees themselves 
+has increased appreciably, with some conversations occurring among differ-
+ent departments and different regions. For example, smartphone developers 
+are able to share opinions about functions and user-friendliness throughout the 
+company and also learn about activities in other departments that they would 
+not normally hear about by reading Yammer postings.
+Some department leaders use Yammer to solicit ideas from their staff on 
+how to use the latest technology in the business. Sharp is able to incorporate 
+such feedback into product development and company policies. This ability to 
+collect dispersed information from all over the company and have managers 
+freely exchange ideas and learn from employees represents a major cultural 
+change for the company.
+Sources: “Sharp: A Culture Reborn Through Enterprise Social,” www.microsoft.com, ac-
+cessed February 12, 2020; www.globalsharp.com, accessed January 21, 2020; and Sharp 
+Corporation, “Sharp Is Back With Big Screens,” Hexus, February 5, 2019.
+S
+harp’s experience illustrates how much organizations today rely on infor-
+mation systems to improve their performance and remain competitive. It 
+also shows how much systems supporting collaboration and teamwork make 
+a difference in an organization’s ability to innovate, execute, grow profits, and 
+remain competitive.
+The chapter-opening diagram calls attention to important points raised by 
+this case and this chapter. Sharp Corporation is a knowledge-intensive technol-
+ogy company that depends on innovation, but it was hampered by hierarchi-
+cal top-down processes and a culture that prevented employees and managers 
+from freely sharing information and innovating. This impacted the company’s 
+ability to create and deliver new leading-edge products, maintain high profit 
+margins, and fend off increasing competition from other companies.
+Sharp management found that the best solution was to deploy new technol-
+ogy to help the company move from a hierarchical corporate knowledge and 
+work environment to one that was more democratized. Enterprise social net-
+working actively engaged employees and enabled them to obtain more knowl-
+edge from colleagues and managers. The company took advantage of Microsoft 
+              
+=== PDF PAGE 74 ===
+
+=== PDF PAGE 75 ===
+
+=== PDF PAGE 76 ===
+
+=== PDF PAGE 77 ===
+
+=== PDF PAGE 78 ===
+
+=== PDF PAGE 79 ===
+
+=== PDF PAGE 80 ===
+
+=== PDF PAGE 81 ===
+
+=== PDF PAGE 82 ===
+
+=== PDF PAGE 83 ===
+
+=== PDF PAGE 84 ===
+ Chapter 2 Global E-business and Collaboration 83
+Supply Chain Management Systems Firms use supply chain management 
+(SCM) systems to help manage r
+elationships with their suppliers. These systems 
+help suppliers, purchasing firms, distributors, and logistics companies share infor-
+mation about orders, production, inventory levels, and delivery of products and 
+services so they can source, produce, and deliver goods and services efficiently. 
+The ultimate objective is to get the right amount of their products from their 
+source to their point of consumption in the least amount of time and at the low-
+est cost. These systems increase firm profitability by lowering the costs of moving 
+and making products and by enabling managers to make better decisions about 
+how to organize and schedule sourcing, production, and distribution.
+Supply chain management systems are one type of interorganizational sys-
+tem because they automate the flow of information across organizational bound-
+aries. You will find examples of other types of interorganizational information sys-
+tems throughout this text because such systems make it possible for firms to link 
+digitally to customers and to outsource their work to other companies.
+Customer Relationship Management Systems
+ Firms use customer relation-
+ship management (CRM) sy
+stems to help manage their relationships with 
+their customers. CRM systems provide information to coordinate all of the busi-
+ness processes that deal with customers in sales, marketing, and service to opti-
+mize revenue, customer satisfaction, and customer retention. This information 
+helps firms identify, attract, and retain the most profitable customers; provide bet-
+ter service to existing customers; and increase sales.
+Knowledge Management Systems
+ Some firms perform better than others 
+be-
+cause they have better knowledge about how to create, produce, and deliver prod-
+ucts and services. This firm knowledge is unique, is difficult to imitate, and can be 
+leveraged into long-term strategic benefits. Knowledge management systems 
+(KMS) enable organizations to better manage processes for capturing and apply-
+ing knowledge and expertise. These systems collect all relevant knowledge and 
+experience in the firm and make it available wherever and whenever it is needed 
+to improve business processes and management decisions. They also link the firm 
+to external sources of knowledge. We examine enterprise systems and systems 
+for supply chain management and customer relationship management in greater 
+ detail in Chapter 9. We discuss collaboration systems that support knowledge 
+management in this chapter and cover other types of knowledge management
+ 
+applications in Chapter 11.
+Intranets and Extranets
+Enterprise applications create deep-seated changes in the way the firm con-
+ducts its business, offering many opportunities to integrate important business 
+data into a single system. They are often costly and difficult to implement. 
+Intranets and extranets deserve mention here as alternative tools for increas-
+ing integration and expediting the flow of information within the firm and with 
+customers and suppliers.
+Intranets are simply internal company websites that are accessible only by 
+employees. The term intranet refers to an internal network, in contrast to the 
+Internet, which is a public network linking organizations and other external 
+networks. Intranets use the same technologies and techniques as the larger 
+Internet, and they often are simply a private access area in a larger company 
+website. Likewise with extranets, which are company websites that are acces-
+sible to authorized vendors and suppliers and are often used to coordinate the 
+movement of supplies to the firm’s production apparatus.
+For example, Six Flags, which operates 18 theme parks throughout North 
+America, maintains an intranet for its 1,900 full-time employees that provides 
+company-related news and information on each park’s day-to-day operations, 
+              
+=== PDF PAGE 85 ===
+84 Part One Organizations, Management, and the Networked Enterprise
+including weather forecasts, performance schedules, and details about groups 
+and celebrities visiting the parks. The company also uses an extranet to broad-
+cast information about schedule changes and park events to its 30,000 seasonal 
+employees. We describe the technology for intranets and extranets in more de-
+tail in Chapter 7.
+E-business, E-commerce, and E-government
+The systems and technologies we have just described are transforming firms’ 
+relationships with customers, employees, suppliers, and logistic partners into 
+digital relationships using networks and the Internet. So much business is now 
+enabled by or based upon digital networks that we use the terms electronic busi-
+ness and electronic commerce frequently throughout this text.
+Electronic business, or e-business, refers to the use of digital technology 
+and the Internet to execute the major business processes in the enterprise. 
+E-business includes activities for the internal management of the firm and 
+for coordination with suppliers and other business partners. It also includes 
+ electronic commerce, or e-commerce.
+E-commer
+ce is the part of e-business that deals with the buying and selling of 
+goods and services over the Internet. It also encompasses activities supporting 
+those market transactions, such as advertising, marketing, customer support, 
+security, delivery, and payment.
+The technologies associated with e-business have also brought about simi-
+lar changes in the public sector. Governments on all levels are using Internet 
+technology to deliver information and services to citizens, employees, and busi-
+nesses with which they work. E-government refers to the application of the 
+Internet and networking technologies to digitally enable government and pub-
+lic sector agencies’ relationships with citizens, businesses, and other arms of 
+government.
+In addition to improving delivery of government services, e-government 
+makes government operations more efficient and also empowers citizens by 
+giving them easier access to information and the ability to network electroni-
+cally with other citizens. For example, citizens in some states can renew their 
+driver’s licenses or apply for unemployment benefits online, and the Internet 
+has become a powerful tool for instantly mobilizing interest groups for political 
+action and fundraising. The Interactive Session on Organizations describes the 
+Canadian City of Mississauga’s e-government program.
+              
+=== PDF PAGE 86 ===
+
+=== PDF PAGE 87 ===
+
+=== PDF PAGE 88 ===
+ Chapter 2 Global E-business and Collaboration 87
+Employees may collaborate in informal groups that are not a formal part 
+of the business firm’s organizational structure, or they may be organized into 
+formal teams. Teams have a specific mission that someone in the business as-
+signed to them. T eam members need to collaborate on the accomplishment 
+of specific tasks and collectively achieve the team mission. The team mission 
+might be to “win the game” or “increase online sales by 10 percent.” T eams are 
+often short-lived, depending on the problems they tackle and the length of time 
+needed to find a solution and accomplish the mission.
+Collaboration and teamwork are more important today than ever for a vari-
+ety of reasons.
+• Changing nature of work. The nature of work has changed fr om factory manu-
+facturing and precomputer office work where each stage in the production 
+process occurred independently of one another and was coordinated by 
+supervisors. Work was organized into silos. Within a silo, work passed from 
+one machine tool station to another, from one desktop to another, until the 
+finished product was completed. T oday, jobs require much closer coordina-
+tion and interaction among the parties involved in producing the service 
+or product. For instance, a report from the consulting firm McKinsey & 
+Company estimated that 41 percent of the U.S. labor force is now composed 
+of jobs where interaction (talking, emailing, presenting, and persuading) is 
+the primary value-adding activity (McKinsey Global Institute, 2012). Even in 
+factories, workers today often work in production groups, or pods.
+•
+ Growth of professional work. “Interaction” jobs tend t
+o be professional jobs 
+in the service sector that require close coordination and collaboration. 
+Professional jobs require substantial education and the sharing of informa-
+tion and opinions to get work done. Each actor on the job brings specialized 
+expertise to the problem, and all the actors need to take one another into 
+account in order to accomplish the job.
+•
+ Changing organization of the firm. For most of the industrial age, manager
+s 
+organized work in a hierarchical fashion. Orders came down the hierarchy, 
+and responses moved back up the hierarchy. T oday, work is organized into 
+groups and teams, and the members are expected to develop their own meth-
+ods for accomplishing the task. Senior managers observe and measure results 
+but are much less likely to issue detailed orders or operating procedures. In 
+part, this is because expertise and decision-making power have been pushed 
+down in organizations.
+•
+ Changing scope of the firm. The work of the firm has changed from a single 
+location to multiple locations—offices or f
+actories throughout a region, a 
+nation, or even around the globe. For instance, Henry Ford developed the 
+first mass-production automobile plant at a single Dearborn, Michigan fac-
+tory. In 2020, Ford employed 199,000 people at 61 plants worldwide. With 
+this kind of global presence, the need for close coordination of design, 
+production, marketing, distribution, and service obviously takes on new 
+importance and scale. Large global companies need to have teams working 
+on a global basis.
+•
+ Emphasis on innovation. Although we tend to attribute innovations in busi
+-
+ness and science to great individuals, these great individuals are most likely 
+working with a team of brilliant colleagues. Think of Bill Gates and Steve Jobs 
+(founders of Microsoft and Apple), both of whom are highly regarded innova-
+tors and both of whom built strong collaborative teams to nurture and support 
+innovation in their firms. Their initial innovations derived from close collabo-
+ration with colleagues and partners. Innovation, in other words, is a group and 
+social process, and most innovations derive from collaboration among individ-
+uals in a lab, a business, or government agencies. Strong collaborative practices 
+and technologies are believed to increase the rate and quality of innovation.
+              
+=== PDF PAGE 89 ===
+
+=== PDF PAGE 90 ===
+
+=== PDF PAGE 91 ===
+
+=== PDF PAGE 92 ===
+ Chapter 2 Global E-business and Collaboration 91
+on computers, mobile phones, tablets, and other wireless devices and includes 
+features for sharing files as well as transmitting messages. Many instant mes-
+saging systems allow users to engage in real-time conversations with multiple 
+participants simultaneously. In recent years, email use has declined, with mes-
+saging and social media becoming preferred channels of communication.
+Wikis
+Wikis are a type of website that makes it easy for users to contribute and edit 
+text content and graphics without any knowledge of web page development or 
+programming techniques. The most well-known wiki is Wikipedia, the largest 
+collaboratively edited reference project in the world. It relies on volunteers, 
+makes no money, and accepts no advertising.
+Wikis are very useful tools for storing and sharing corporate knowledge and 
+insights. Enterprise software vendor SAP AG has a wiki that acts as a base of 
+information for people outside the company, such as customers and software 
+developers who build programs that interact with SAP software. In the past, 
+those people asked and sometimes answered questions in an informal way on 
+SAP online forums, but that was an inefficient system, with people asking and 
+answering the same questions over and over.
+Virtual Worlds
+Virtual worlds, such as Second Life, are online 3D environments populated by 
+“residents” who have built graphical representations of themselves known as ava-
+tars. Companies like IBM, Cisco, and Intel Corporation have used the online world 
+for meetings, interviews, guest speaker events, and employee training. Real-
+world people represented by avatars meet, interact, and exchange ideas at these 
+virtual locations using gestures, chat conversations, and voice communication.
+Collaboration and Social Business Platforms
+There are now software suites providing multifunction platforms for collabo-
+ration and social business among teams of employees who work together 
+from different locations. The most widely used are Internet-based audio con-
+ferencing and videoconferencing systems, cloud collaboration services such 
+as Google’s online services and tools, corporate collaboration systems such as 
+Microsoft SharePoint and IBM Notes, and enterprise social networking tools 
+such as Salesforce Chatter, Microsoft Yammer, Facebook Workplace, and IBM 
+Connections. Some of these are now being used by educational institutions to 
+deal with the impact of COVID-19 (see the Interactive Session on T echnology).
+Virtual Meeting Systems
+ In an effort to reduce travel e
+xpenses and enable peo-
+ple in different locations to meet and collaborate, many companies, both large and 
+small, are adopting videoconferencing and web conferencing technologies. More 
+companies are using these systems to enable their employees to work remotely as 
+well as in the office.
+A videoconference allows individuals at two or more locations to communi-
+cate simultaneously through two-way video and audio transmissions. High-end 
+videoconferencing systems feature telepresence technology, an integrated 
+audio and visual environment that allows a person to give the appearance of 
+being present at a location other than his or her true physical location. Free 
+or low-cost Internet-based systems such as Microsoft T eams, Google Meet, and 
+Amazon Chime are lower quality but improving, and they are very useful for 
+smaller companies. Apple’s FaceTime is useful for one-to-one or small group 
+videoconferencing. Zoom has emerged as a powerful videoconferencing tool 
+with many features of high-end systems but is much less expensive and easier 
+to use Some of these tools are available on mobile devices.
+              
+=== PDF PAGE 93 ===
+
+=== PDF PAGE 94 ===
+
+=== PDF PAGE 95 ===
+
+=== PDF PAGE 96 ===
+
+=== PDF PAGE 97 ===
+
+=== PDF PAGE 98 ===
+ Chapter 2 Global E-business and Collaboration 97
+positions for a chief security officer, chief knowledge officer, chief data officer, 
+and chief privacy officer, all of whom work closely with the CIO.
+The chief security officer (CSO) is in charge of information systems secu-
+rity for the firm and is responsible for enforcing the firm’s information security 
+policy (see Chapter 8). (Sometimes this position is called the chief information 
+security officer [CISO] where information systems security is separated from 
+physical security.) The CSO is responsible for educating and training users and 
+information systems specialists about security, keeping management aware of 
+security threats and breakdowns, and maintaining the tools and policies chosen 
+to implement security.
+Information systems security and the need to safeguard personal data have 
+become so important that corporations collecting vast quantities of personal 
+data have established positions for a chief privacy officer (CPO). The CPO is 
+responsible for ensuring that the company complies with existing data privacy 
+laws.
+The chief knowledge officer (CKO) is responsible for the firm’s knowl-
+edge management program. The CKO helps design programs and systems to 
+find new sources of knowledge or to make better use of existing knowledge in 
+organizational and management processes.
+The chief data officer (CDO) is responsible for enterprise-wide governance 
+and utilization of information to maximize the value the organization can real-
+ize from its data. The CDO ensures that the firm is collecting the appropriate 
+data to serve its needs, deploying appropriate technologies for analyzing the 
+data, and using the results to support business decisions. This position arose to 
+deal with the very large amounts of data organizations are now generating and 
+collecting (see Chapter 6).
+End users are representatives of departments outside the information sys-
+tems group for whom applications are developed. These users are playing an 
+increasingly large role in the design and development of information systems.
+In the early years of computing, the information systems group was com-
+posed mostly of programmers who performed highly specialized but limited 
+technical functions. T oday, a growing proportion of staff members are systems 
+analysts and network specialists, with the information systems department act-
+ing as a powerful change agent in the organization. The information systems 
+department suggests new business strategies and new information-based prod-
+ucts and services and coordinates both the development of the technology and 
+the planned changes in the organization.
+Information technology occupations in the United States were projected 
+to grow 12 percent from 2018 through 2028, adding 546,200 new jobs (U.S. 
+Bureau of Labor Statistics, 2020). Although all IT/IS occupations show above-
+average growth, jobs for information security analysts, data scientists, net-
+work analysts, machine learning engineers, cloud engineers, application de-
+velopers, web developers, and business intelligence analysts are especially 
+in demand. Demand for computer programmers has been declining, in part 
+because the process of creating computer programs is becoming increasingly 
+efficient with the growth of online software services, cloud computing, and 
+outsourcing of coding to low-wage countries.
+Organizing the Information Systems Function
+There are many types of business firms, and there are many ways in which 
+the IT function is organized within the firm. A very small company will not 
+have a formal information systems group. It might have one employee who 
+              
+=== PDF PAGE 99 ===
+
+=== PDF PAGE 100 ===
+ Chapter 2 Global E-business and Collaboration 99
+Job Requirements
+• Strong Excel skills plus some knowledge of data management
+• Strong customer service skills
+• Strong analytical, critical thinking, and communication skills
+• Ability to multitask in a fast-paced environment
+• College degree or two years of equivalent experience
+Interview Questions
+1. What do you know about customer relationship management? Have you ever 
+work
+ed with Salesforce.com? If so, what have you used the system for?
+2. What do you know about data management? Have you ever worked with 
+dat
+a management software? If so, what exactly have you done with it?
+3. T ell us what you can do with Excel. What kinds of problems have you used 
+Excel t
+o solve? Did you take courses in Excel?
+4. Have you ever worked in customer service? What e
+xactly did you do? What 
+do you think is required to take on a successful client-oriented role for this 
+company’s agents and customers?
+5.
+ Can you give an example of a client service challenge you had to face? How 
+did you appr
+oach this challenge?
+Author Tips
+1. Review the section of this chapter on enterprise applications, the Chapter 
+9 discussion of customer relationship management, and Chapter 6 on data 
+management.
+2.
+ Use the web and the professional networking site LinkedIn t
+o find out more 
+about the company, its insurance products and services, and the way it oper-
+ates. Think about what it needs to do to support its agents and its customers 
+and why customer relationship management and data management are so 
+important. You might inquire about your responsibilities for data manage-
+ment in this job position.
+3.
+ Learn what you can about Salesforce.com, especially how to set up user 
+profiles and r
+oles and how to validate data. Indicate you want to learn more 
+about Salesforce and work with this tool.
+4. Inquire how you would be using Excel; for ex
+ample, calculating agent com-
+missions. If you’ve never done that before, show some of the Excel work you 
+have done (and perhaps bring examples with you to the interview). Show 
+that you would be eager to learn what you don’t know in Excel to fulfill your 
+job assignments.
+              
+=== PDF PAGE 101 ===
+
+=== PDF PAGE 102 ===
+
+=== PDF PAGE 103 ===
+102 Part One Organizations, Management, and the Networked Enterprise
+Discussion Questions
+2-5 How could information systems be used 
+to support the order fulfillment process 
+illustrated in Figur
+e 2.1? What are the most 
+important pieces of information these 
+systems should capture? Explain your 
+answer.
+2-6
+ Identify the steps that are performed in 
+the process of selecting and checking 
+out a book fr
+om your college library and 
+MyLab MIS
+MyLab MIS
+the information that flows among these 
+activities. Diagram the process. Are there 
+any ways this process could be changed to 
+improve the performance of your library or 
+your school? Diagram the improved process.
+2-7
+ Use the time/space collaboration and social 
+tool matrix to classify the collaboration 
+and social technologies used by the Sharp 
+Corpor
+ation.
+MyLab MIS
+Hands-On MIS Projects
+The projects in this section give you hands-on experience analyzing opportunities to improve business processes 
+with new information system applications, using a spreadsheet to improve decision making about suppliers, and 
+using Internet software to plan efficient transportation routes. Visit MyLab MIS to access this chapter’s Hands-On 
+MIS Projects.
+Management Decision Problems
+2-8 Heli is a manager at MoiMoiPixel, a Finnish startup developing free, f ast-paced casual games for mobile 
+platforms. MoiMoiPixel has been a success, gathering over 10 million returning players within a very 
+short time. Nevertheless, the company is bleeding due to associated costs of hosting the game for all these 
+players and paying salaries to the current staff of 40. Heli realizes the company doesn’t know the players 
+at all—when they play, why they play, where they live, and so on. Further, there is no communication 
+at all with the players, and simply meeting at the coffee machine and sending emails is not enough to 
+communicate efficiently with the growing staff. Help Heli by providing three suggestions for improving 
+revenue and communication using information systems.
+2-9
+ PetFence is based in Birmingham, in the United Kingdom, and makes custom-made fences to pr
+otect 
+cats and dogs in household gardens. The company takes orders via email, designs the fence together 
+with the client, and builds it in the client’s garden. Finally, an invoice is sent to the client. PetFence 
+depends on having just the right amount of necessary parts—too few and the work is delayed; too many 
+and the storage fills up quickly. As business transactions are agreed on over the phone or by email, they 
+sometimes forget to charge clients and pay suppliers. Moreover, email requests from prospective clients 
+are often lost in the email flood, leading to missed sales opportunities and credibility issues. In what ways 
+could information systems help PetFence? What issues can information systems not help them with?
+Improving Decision Making: Using a Spreadsheet to Select Suppliers
+Software skills: Spreadsheet date functions, data filtering, DAVERAGE function
+Business skills: Analyzing supplier performance and pricing
+2-10 In this exercise, you will learn how to use spr eadsheet software to improve management decisions about se-
+lecting suppliers. You will filter transactional data on suppliers based on several different criteria to select the 
+best suppliers for your company.
+You run a company that manufactures aircraft components. You have many competitors who are trying to 
+offer lower prices and better service to customers, and you are trying to determine whether you can benefit 
+from better supply chain management. In MyLab MIS, you will find a spreadsheet file that contains a list 
+of all of the items that your firm has ordered from its suppliers during the past three months. The fields in 
+the spreadsheet file include vendor name, vendor identification number, purchaser’s order number, item 
+identification number and item description (for each item ordered from the vendor), cost per item, number 
+of units of the item ordered (quantity), total cost of each order, vendor’s accounts payable terms, order date, 
+and actual arrival date for each order.
+Prepare a recommendation of how you can use the data in this spreadsheet database to improve your 
+decisions about selecting suppliers. Some criteria to consider for identifying preferred suppliers include 
+the supplier’s track record for on-time deliveries, suppliers offering the best accounts payable terms, and 
+              
+=== PDF PAGE 104 ===
+suppliers offering lower pricing when the same item can be provided by multiple suppliers. Use your 
+spreadsheet software to prepare reports to support your recommendations.
+Achieving Operational Excellence: Using Internet Software to Plan Efficient Transportation 
+Routes
+Software skills: Internet-based software
+Business skills: Transportation planning
+2-11 In this exercise, you will use Google Maps to map out tr ansportation routes for a business and select the most 
+efficient route.
+You have just started working as a dispatcher for Kräiz Land Transport, a new trucking and delivery service 
+based in Luxembourg. Your first assignment is to plan a delivery of office equipment and furniture from Esch-
+sur-Alzette to Niederanven. T o guide your trucker, you need to know the most efficient route between the two 
+cities. Use Google Maps to find the route that is the shortest distance between the two cities. Use Google Maps 
+again to find the route that takes the least time. Compare the results. Which route should Cross-Country use?
+Collaboration and Teamwork Project
+Identifying Management Decisions and Systems
+2-12 With a team of three or four other students, find a description of a manager in a corporation in The Financial  
+Times, Forbes, Fortune, the The Economist, or another business publication, or do your research on the web. 
+Gather information about what the manager does and the role he or she plays in the company. Identify the 
+organizational level and business function where this manager works. Make a list of the kinds of decisions this 
+manager has to make and the kind of information the manager would need for those decisions. Suggest how in-
+formation systems could supply this information. If possible, use Google Docs and Google Drive or Google Sites 
+to brainstorm, organize, and develop a presentation of your findings for the class.
+ Chapter 2 Global E-business and Collaboration 103
+              
+=== PDF PAGE 105 ===
+
+=== PDF PAGE 106 ===
+
+=== PDF PAGE 107 ===
+
+=== PDF PAGE 108 ===
+ Chapter 2 Global E-business and Collaboration 107
+Li, Charlene. “Making the Business Case for Enterprise Social 
+Networks.” Altimeter Group (February 22, 2012).
+Maruping, Likoebe M., and Massimo Magni. “Motivating 
+Employees to Explore Collaboration T echnology in T eam 
+Contexts.” MIS Quarterly 39, No. 1 (March 2015).
+McKinsey & Company. “Transforming the Business Through 
+Social T ools.” (2015).
+McKinsey Global Institute. “The Social Economy: Unlocking Value 
+and Productivity Through Social T echnologies.” McKinsey & 
+Company (July 2012).
+Mortensen, Mark. “T echnology Alone Won’t Solve Our Collaboration 
+Problems.” Harvard Business Review (March 26, 2015).
+Ross, Jeanne. “Architect Your Company for Agility.” MIT Sloan 
+Management Review (January 10, 2018).
+Srivastava, Shirish, and Shalini Chandra. “Social Presence in 
+Virtual World Collaboration: An Uncertainty Reduction 
+Perspective Using a Mixed Methods Approach.” MIS Quarterly 
+42, No. 3 (September 2018).
+Stackpole, Beth. “The New CIO Charter.” CIO (Spring 2020).
+U.S. Bureau of Labor Statistics. “Computer and Information 
+T echnology Occupations.” Occupational Outlook Handbook. 
+bls.gov, accessed February 12, 2020.
+Weill, Peter, and Jeanne W. Ross. IT Governance. Boston: Harvard 
+Business School Press (2004).
+              
