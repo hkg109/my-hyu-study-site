@@ -38,6 +38,11 @@
               "order": 3
             },
             {
+              "id": "subject-mis-translation",
+              "name": "정시개 통번역",
+              "order": 2
+            },
+            {
               "id": "subject-muhz3nd1",
               "name": "AI-R-PY",
               "order": 4

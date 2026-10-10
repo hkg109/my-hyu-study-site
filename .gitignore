@@ -10,3 +10,4 @@ out/
 coverage/
 test-results/
 .DS_Store
+tmp/pdfs/translation/
