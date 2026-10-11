@@ -38,7 +38,7 @@ objectives:
 > [!EXAM]
 > **Chapter 3 in one line:** read structure, culture, politics, and environment → explain how IT changes cost, authority, and boundaries → diagnose competitive pressure → locate a value-chain intervention → align a defensible strategy.
 
-### Note board · default strategy-answer sequence
+### A complete strategic-analysis sequence
 
 `Organization diagnosis → industry pressure (five forces) → internal activity (value chain) → IS capability → organizational complement → metric → imitation/sustainability test`
 
@@ -74,15 +74,43 @@ objectives:
 > [!EXAMPLE]
 > Doritos Silent matters as `gamer distraction → 5,000+ crunch samples → AI/ML software → segment experience → brand/sales`, not as “PepsiCo used AI.”
 
-#### Explanation
+#### Technical and behavioral features of organizations
 
-The video cases point to GE's industrial Internet and the NBA's Akamai streaming delivery. Nine objectives move from technical/behavioral views and organizational features through IS impacts, competitive forces, value chain, synergies/core competencies/network economics, AI strategy, strategic-system challenges, and careers. The opening PepsiCo case begins with a narrow customer problem: gamers were distracted by other people's Doritos crunching, while consumers liked the product's crunch. Developers analyzed more than 5,000 crunch sounds with AI/ML to create Doritos Silent software, aiming to preserve appeal in the gaming segment and support sales. The strategic value comes from linking a technology to a segment and product experience, not from AI alone.
+| Case | Problem before technology | Strategic connection |
+| --- | --- | --- |
+| GE industrial Internet | Observe equipment condition, failure, and operation | Sensor data and service operations |
+| NBA/Akamai | Deliver large-scale streaming reliably | Digital experience and delivery infrastructure |
+| Doritos Silent | Crunch noise disrupts gamers | 5,000+ sound samples → segment-specific experience |
 
-Figures 3.1–3.3 establish two complementary views. Technically, an organization is a formal social structure transforming environmental capital and labor into products and services, with outputs and feedback. Behaviorally, it is a historically balanced collection of rights, privileges, duties, relationships, hierarchy, contracts, rules, and conflict resolution. IT and the organization influence each other through structure, process, politics, culture, environment, and managerial choices; prediction is difficult because people and institutions make the organization less mechanically adjustable.
+Doritos matters through `specific friction → data and analysis → changed customer experience → brand/sales effect`, not through the AI label alone.
 
-Organizations share hierarchy, authority, accountability, efficiency, routines, processes, politics, culture, environment, and structure. **Routines/SOPs** handle expected situations; collections of routines become processes; collections of processes form the firm. Figure 3.4 therefore implies that a new system must change routines and processes to produce higher performance. Politics arises from divergent interests and can resist or improve a change. Culture defines taken-for-granted answers about what the organization makes, how, where, and for whom; it unifies but can restrain technological change.
+| View | What an organization is | Explains well | Tends to miss |
+| --- | --- | --- | --- |
+| Technical | A formal structure converting capital and labor into outputs | Input–transformation–output–feedback and efficiency | Power, culture, conflict |
+| Behavioral | A negotiated balance of rights, duties, relationships, and rules | Politics, resistance, informal practice | Quantitative process analysis |
 
-Organizations depend on and influence their environments. IS can scan the environment like a lens, but a badly designed lens can hide threats. Disruptive technologies create sweeping market change through substitute performance; first movers invent, while fast followers may have more resources to commercialize. Mintzberg's five structures are entrepreneurial, machine bureaucracy, divisionalized bureaucracy, professional bureaucracy, and adhocracy; the system often reflects the structure. Goals, constituencies, leadership style, routine/nonroutine tasks, and environment also differ, so prisons, businesses, colleges, hospitals, and consultancies should not receive identical designs.
+> [!EXAM]
+> Use both views: the technical view explains **what changes**; the behavioral view explains **why people respond differently**.
+
+`individual routine/SOP → connected routines form a business process → connected processes form the organization`
+
+| Organizational feature | Meaning | System-design question |
+| --- | --- | --- |
+| Hierarchy and authority | Who directs, approves, and answers | Where should information and decision rights sit? |
+| Politics | Conflict over interests and scarce resources | Who gains or loses information, budget, or status? |
+| Culture | Taken-for-granted values and assumptions | Does the new method conflict with existing beliefs? |
+| Environment | Customers, rivals, regulation, technology | Which signals are collected and interpreted? |
+| Structure | Role, specialization, and coordination pattern | What balance of centralization and distribution fits? |
+
+| Mintzberg structure | Main coordination | Especially useful system support |
+| --- | --- | --- |
+| Entrepreneurial | Direct executive control | Fast visibility and decision support |
+| Machine bureaucracy | Standard procedure | High-volume transactions and control |
+| Divisionalized bureaucracy | Divisional performance | Common metrics and comparison |
+| Professional bureaucracy | Expert skill | Cases, knowledge, and autonomy |
+| Adhocracy | Project and innovation teams | Flexible collaboration and knowledge combination |
+
+IS is an environmental **lens**: accurate measures reveal change, but poor indicators can hide it. First movers invent; fast followers may commercialize more effectively through resources, distribution, and business-model fit.
 
 ### Slides 19–27 · trace costs, authority, and resistance
 
@@ -102,13 +130,24 @@ Organizations depend on and influence their environments. IS can scan the enviro
 > [!CAUTION]
 > Do not write only “employees dislike change.” Identify who loses information, expertise, budget, approval authority, or job identity; then distinguish training, participation, incentive, role redesign, and phased transition responses.
 
-#### Explanation
+#### Why IT changes firm size and decision structure
 
-IT changes the relative cost of capital, labor, and information. **Transaction cost theory** explains why firms internalize work when searching, contracting, monitoring, and buying through markets is expensive. Networks lower some market transaction costs, making outsourcing and smaller firm boundaries more attractive. **Agency theory** treats the firm as contracts among self-interested agents who require management and supervision; information can lower agency costs and allow wider span without adding the same number of managers.
+| Explanatory path | Cost IT can reduce | Possible change | Not automatically guaranteed |
+| --- | --- | --- | --- |
+| Transaction cost | External search, contract, purchase, monitoring | Outsourcing and a smaller boundary | Partner quality and dependency control |
+| Agency cost | Internal performance visibility and supervision | Wider span and fewer layers | Genuine delegation and trust |
+| Information cost | Collection, copying, distribution, retrieval | Faster judgment and broader access | Correct interpretation and agreement |
 
-Behaviorally, faster information and wider span can flatten the hierarchy, move decisions downward, reduce management layers, and give knowledge/competence more authority than formal position. Figure 3.6 shows faster paths and fewer layers, but empowerment is an organizational choice, not an automatic property of a network.
+Figure 3.6 shows a possibility: `fewer information handoffs → wider managerial span → more lower-level judgment`. Delegating authority remains a management choice.
 
-Systems redistribute access to information and therefore affect politics, tasks, structure, culture, and people. Political and organizational resistance is a leading reason large projects fail. Figure 3.7 says the innovation, structure, culture, and affected tasks must be changed together. The Internet expands access, storage, and distribution and can lower transaction, agency, and manual distribution costs, but still does not erase organizational conditions. Before design, inspect environment; hierarchy, specialization, routines, and processes; culture and politics; organizational type and leadership; affected interest groups and user attitudes; and the tasks/decisions/processes the system will support.
+| Resistance source | Observable response | Matching response |
+| --- | --- | --- |
+| Loss of information or approval power | Workarounds and missing data | Redesign decision rights and accountability |
+| Threat to job identity or expertise | Quality objections and delay | Role transition, training, expert participation |
+| Added work | Incomplete or ceremonial use | Simplify process and adjust workload |
+| Cultural conflict | “This is not how we work” | Phased adoption, leader behavior, aligned incentives |
+
+Before design, inspect environment; hierarchy and specialization; routines and processes; culture and politics; structure and leadership; stakeholder attitudes; and the task, decision, or process to support.
 
 ### Slides 28–36 · diagnose the competitive pressure before choosing a response
 
@@ -129,13 +168,20 @@ Systems redistribute access to information and therefore affect politics, tasks,
 
 **Smart product/IoT margin:** connected sensors may differentiate, raise switching costs, or deter entry, but standards can enable rivals and connection adds security/data responsibility.
 
-#### Explanation
+#### Connect each competitive force to a response
 
-Porter's model examines traditional competitors, new entrants, substitutes, customers, and suppliers. Existing rivals continuously improve offerings and efficiency; entrants may have new equipment and staff but weak brands or face high barriers; substitutes become attractive when price/value shifts; powerful customers can switch or force price competition; powerful suppliers can raise input costs faster than the firm can raise prices. Figure 3.8 places direct rivals in the same industry while the other four forces apply pressure around it.
+| Competitive pressure | Signal of strong pressure | Likely response | IS role example |
+| --- | --- | --- | --- |
+| Rivalry | Intense price, quality, or speed competition | Low cost or differentiation | Replenishment, quality analytics, personalization |
+| Entrants | Standardization and low startup cost | Data/relationship barrier | Platform, learning data, switching cost |
+| Substitutes | A different method meets the same need | Bundling and differentiation | Product plus information service |
+| Customers | Easy comparison and switching | Intimacy or niche focus | CRM, segmentation, loyalty |
+| Suppliers | Few alternatives and price pressure | Intimacy and diversification | SCM, joint forecast, visibility |
 
-Four IS-enabled responses are: **low-cost leadership** (Walmart's continuous replenishment/efficient response); **product differentiation** and mass customization (Google, Nike, Apple); **focus on a market niche** using detailed data (Hilton OnQ); and **customer/supplier intimacy** that creates loyalty and switching cost (Toyota, Amazon, Starbucks). Do not name a strategy without connecting it to the diagnosed force.
+**Representative links:** Walmart–low cost; Google/Nike/Apple–differentiation; Hilton OnQ–niche focus; Toyota/Amazon/Starbucks–customer or supplier intimacy.
 
-The Internet transforms some industries and intensifies rivalry through universal standards and lower entry, while also enabling brand and loyalty building. IoT turns connected sensor-equipped products such as fitness equipment and health trackers into information-rich services. Smart products can differentiate, raise switching costs, discourage entrants, or reduce supplier power, while also provoking stronger rivalry.
+> [!CAUTION]
+> Internet and IoT effects are not one-directional. Standards may lower entry and search cost, while connected products and data may create differentiation and switching costs. State **which force changes through which mechanism**.
 
 ### Slides 37–47 · locate value inside and beyond the firm
 
@@ -156,15 +202,25 @@ The Internet transforms some industries and intensifies rivalry through universa
 > [!DEFINITION]
 > A **value web** emphasizes synchronized value chains, often within an industry. A **business ecosystem** extends to cross-industry platform participants and their broader interdependence.
 
-#### Explanation
+#### Expand the analysis from value chain to ecosystem
 
-The **value chain** treats a firm as primary and support activities that add value and reveals where IS can improve efficiency or stakeholder intimacy. Benchmarking and best practices help set a reference. Unlike the five-forces diagnosis, the value chain gives a more specific place to intervene. Figure 3.9 includes both the firm's activities and value partners.
+| Scope | Unit of analysis | Central question | Figure |
+| --- | --- | --- | --- |
+| Value chain | Activities inside one firm | Where can cost, quality, or speed change? | 3.9 |
+| Value web | Linked suppliers, distributors, and customers | How do firms synchronize to demand and supply? | 3.10 |
+| Ecosystem | Cross-industry platform participants | Who sets rules and distributes value and risk? | 3.11 |
 
-A firm's chain links to suppliers, distributors, and customers. A **value web** is a flexible, customer-driven network of independent firms using synchronized IT to coordinate their chains and respond to changing supply and demand. Figure 3.10 emphasizes many-to-many coordination rather than a single linear chain.
+**Value-chain sequence:** `find bottleneck → benchmark → explain IS intervention → measure cost/speed/quality/intimacy`.
 
-**Synergy** occurs when one unit's output becomes another's input or units combine markets and expertise, lowering cost or increasing profit; IS can make separate business units operate as a whole. A **core competency** is a world-class, difficult-to-copy activity grounded in shared knowledge and experience; expert directories and intranets can spread it across units.
+| Strategic concept | Source of value | IS contribution |
+| --- | --- | --- |
+| Synergy | Combine unit outputs, markets, and expertise | Connect separated units and processes |
+| Core competence | Spread difficult-to-copy knowledge | Expert directories and intranets |
+| Network economics | Participation raises value for other participants | Connect users, complements, and community |
+| Virtual company | Coordinate partner assets without owning all of them | Integrate production and distribution networks |
+| Ecosystem | Keystone and niche firms become interdependent | Platform rules, interfaces, and data sharing |
 
-Network-based strategies include network economics, virtual companies, and ecosystems. Under **network economics**, adding a participant can cost almost nothing while increasing value for all, unlike ordinary diminishing returns; installed user bases and communities therefore matter. A **virtual company** uses networks to coordinate other firms' production and distribution without owning all factories or locations—Li & Fung is the deck's example. A **business ecosystem** is a loosely coupled, interdependent set of industries and firms. Keystone firms such as major platform owners supply the platform; niche firms depend on it and seek profitable roles. Ecosystems cross industry boundaries, whereas a value web is usually framed around linked value chains in an industry. Figure 3.11 shows competition among ecosystems and dense IT-enabled interactions.
+Li & Fung is the virtual-company example. Ecosystems cross industries; a value web is usually framed around synchronized chains in one industry.
 
 ### Slides 48–50 · AI must fit a defensible strategy
 
@@ -185,11 +241,19 @@ Network-based strategies include network economics, virtual companies, and ecosy
 > [!ANSWER]
 > Identify the force, the changed activity for customers/couriers/restaurants, required data and process, metrics, bias/accountability controls, and the difficult-to-copy data, relationship, or learning effect.
 
-#### Explanation
+#### Strategic alignment and durability of advantage
 
-The deck asks students to apply AI to both the value chain and Porter's forces: identify the activity or force, show the changed cost/experience/information/relationship, and test whether the result is hard to copy. Strategic systems attract retaliation and imitation, so an advantage may become merely a survival requirement. Alignment requires strategic analysis of industry structure, the firm's and industry's value chains, capabilities, and management choices—not a technology shopping list.
+An AI application becomes a strategy explanation only when all four statements are complete:
 
-The closing career case places these skills in a Crayola business-development role: describe the business opportunity, the information and IT knowledge needed, and a plausible career path. The final chapter case, AI redesigning fashion, should be analyzed with the same organization–strategy–alignment sequence.
+1. **Industry:** which Porter force changes?
+2. **Activity:** which cost, experience, information flow, or relationship changes?
+3. **Defense:** which data, process, relationship, or learning effect is difficult to copy?
+4. **Alignment:** do structure, culture, skill, accountability, and metrics fit?
+
+Imitation and standardization can turn an advantage into a survival requirement. Evaluate strategic systems through **continuing learning and complementary assets**, not launch-time performance alone.
+
+- **Crayola career case:** `business opportunity → needed information → IT/business knowledge → execution role`.
+- **Fashion AI case:** `organizational readiness → competitive pressure → value activity → alignment and risk`.
 
 ## 1. Organizations and systems shape each other
 

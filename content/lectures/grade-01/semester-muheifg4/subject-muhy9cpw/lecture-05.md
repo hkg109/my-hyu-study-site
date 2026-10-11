@@ -31,13 +31,29 @@ Chapter 3 asked whether an IS creates competitive advantage. Chapter 4 adds anot
 | §4.7: quality of life | 133–137 / 162–166 | How are work, opportunity, power, and health affected? |
 | Career, closing case, review | 137–143 / 166–172 | Apply the framework to a complete case |
 
-## 1. Start with a tension, not a slogan
+## 1. Map the competing values first
 
-Our **invented café case** now adds a loyalty app. Location data help predict arrivals and reduce queues. The same data could reveal routines or be reused for unrelated advertising. The benefit does not erase the risk, and the risk does not by itself identify the best design.
+Use the **invented café loyalty app** to unfold a value conflict instead of reducing it to yes/no.
 
-The textbook's opening case, **Apps That Track: A Double-Edged Sword**, puts this tension in a broader setting. While reading, distinguish data collection, later sharing, and inferences drawn from combined records. A user can understand the first without understanding the other two.
+| Design element | Expected benefit | Accompanying risk | Less intrusive option |
+| --- | --- | --- | --- |
+| Continuous location collection | Predict arrivals and shorten queues | Exposes routines; enables unrelated reuse | Optional check-in or arrival window |
+| Long retention | Supports long-term demand analysis | Accumulates breach and inference risk | Purpose-specific short retention |
+| Sharing with advertisers | Adds revenue and personalization | Violates expectations through secondary use | Separate consent or no-sharing option |
 
-**Ethical issues** concern choices about what ought to be done. **Social issues** concern shared expectations and institutions. **Political issues** concern rules, rights, and enforcement. New technology can change what is possible faster than norms and laws adapt—the chapter's ripple model explains their interaction.
+Read **Apps That Track: A Double-Edged Sword** as a three-stage data flow:
+
+`initial collection → later sharing → new inferences from combined records`
+
+A person may understand collection without understanding the later two stages.
+
+| Layer | Central question | Example |
+| --- | --- | --- |
+| Ethical | What ought we to do? | How much collection is justified by convenience? |
+| Social | What expectations and institutions should develop? | Should tracking become a normal service condition? |
+| Political | What rules, rights, and enforcement are needed? | Who investigates and provides redress? |
+
+The ripple model connects these layers: technical possibility creates ethical choices, which place pressure on social norms and political or legal institutions.
 
 > [!DEFINITION]
 > The five moral dimensions are **information rights and obligations; property rights and obligations; system quality; accountability and control; quality of life**. They are lenses for analysis, not five mutually exclusive boxes.
@@ -52,7 +68,13 @@ The textbook's opening case, **Apps That Track: A Double-Edged Sword**, puts thi
 
 ### Why technology makes these questions more urgent
 
-More computing power increases dependence on systems. Cheap storage enables extensive histories. Data analysis combines fragments into profiles. Networks spread information rapidly. Mobile devices add persistent location signals. AI can infer, generate, or recommend at scale while making the basis of a decision difficult to inspect.
+| Technical change | New capability | Expanded risk |
+| --- | --- | --- |
+| More computing power | Delegate more decisions to systems | Greater dependence on failures and errors |
+| Cheap storage | Retain extensive histories | Continued exposure after the original purpose ends |
+| Analytics and AI | Profile, infer, generate, and recommend | Hidden discrimination and weak explainability |
+| Networks | Share and copy immediately | Breach and secondary spread |
+| Mobile devices and sensors | Observe location and behavior continuously | Persistent surveillance of everyday life |
 
 **Profiling** combines information into a picture of a person. **NORA (nonobvious relationship awareness)** looks for connections across datasets that are not obvious within one source. A set of individually mundane facts can become sensitive when combined. Study the chapter's NORA discussion and diagram around book pp.114–115, rather than assuming that removing a name always prevents identification.
 
@@ -150,11 +172,17 @@ AI-related questions appear on both the **input** and **output** sides: what mat
 
 ## 6. Quality and accountability must be designed together
 
-Read §§4.5–4.6. The chapter identifies three major sources of poor system performance: **software errors, hardware/facility failures, and poor input data**. Perfect code would not correct an inaccurate customer record.
+| Failure source | Example | Design control |
+| --- | --- | --- |
+| Software error | Defective calculation or classification | Testing, review, and rollback |
+| Hardware/facility failure | Server, power, or network outage | Redundancy and recovery procedures |
+| Poor input data | Outdated or inaccurate customer record | Validation, correction, and provenance |
 
-System quality raises the question of acceptable reliability given costs and consequences. An error in a café recommendation and an error in a safety-critical decision have different stakes. The textbook's point is to analyze foreseeable harm and feasible quality, not to declare every remaining error acceptable.
+Required quality depends on **the cost and consequence of error**. A café recommendation and a safety-critical decision cannot use the same acceptance threshold.
 
-Accountability asks what happens when something goes wrong. Software and platform examples, including the **Section 230 case** on book pp.130–131, show that responsibility for content and actions can be contested. AI can make causal explanation harder through opacity and multiple participating organizations.
+`error → preserve evidence → trace cause → owner review → correction/redress → recurrence monitoring`
+
+The **Section 230 case** (book pp.130–131) illustrates contested responsibility for platform content and actions. With AI, model providers, data suppliers, deploying organizations, and operators may all participate, so the traceability path must be designed in advance.
 
 > [!EXAMPLE]
 > **Original control example:** if an automated loyalty decision wrongly excludes a customer, retain the relevant record, identify an owner, offer human review, correct the record, and check for repeated errors. These steps connect quality to accountability; they do not determine legal liability by themselves.

@@ -40,7 +40,7 @@ This guide follows *Management Information Systems: Managing the Digital Firm*, 
 > [!EXAM]
 > **Chapter 1 in one line:** environmental change creates six business objectives → an IS turns data into actionable information → management, organization, technology, and complementary assets must fit → measurable business value follows.
 
-### Note board · memorize the connection first
+### Chapter 1 concept map
 
 `Business change → six objectives → input/process/output/feedback → management/organization/technology → complementary assets → sociotechnical fit → performance`
 
@@ -62,7 +62,7 @@ This guide follows *Management Information Systems: Managing the Digital Firm*, 
 
 ### Slides 1–5 · route, edition change, and the Walmart case
 
-#### Note skeleton
+#### Read the Walmart case through management, organization, and technology
 
 - **Problem:** match local demand, stock, waste, stores, fulfillment, and online channels.
 - **Technology:** unified inventory + predictive AI + automation + agentic tools.
@@ -73,7 +73,7 @@ This guide follows *Management Information Systems: Managing the Digital Firm*, 
 > [!CAUTION]
 > “The company adopted AI” is not a complete answer. State **which data changes which decision and who owns exceptions and outcomes**.
 
-#### Explanation
+#### Edition changes and learning questions
 
 The deck opens with video cases on Facebook/eBay data centers, UPS's DIAD and Worldport, and IBM's Raleigh data center. Its four questions are: why IS transforms business; what an IS is and how management, organization, technology, and complementary assets create value; which academic disciplines study IS; and how MIS helps a career. The 18th-edition update makes IoT, big data, cloud, AI, machine learning, and generative AI more explicit and broadens the link to work, skills, globalization, and careers, while retaining sociotechnical thinking.
 
@@ -81,7 +81,7 @@ Walmart's current case starts with a business problem, not an AI label. Local de
 
 ### Slides 6–15 · transformation, globalization, and the digital firm
 
-#### Note skeleton
+#### Why the digital firm emerged
 
 - **Evidence of change:** online transactions, mobile/social channels, retention rules, IT investment, AI use.
 - **Interpretation:** historical numbers are period evidence; the stable conclusion is `investment ≠ value`.
@@ -92,7 +92,7 @@ Walmart's current case starts with a business problem, not an AI label. Local de
 > [!EXAM]
 > Digitizing a document is not necessarily digital transformation. Explain how the **process, decision, role, or value proposition** changes.
 
-#### Explanation
+#### Evidence of business transformation
 
 The deck's historical indicators show why IS became a managerial issue: worldwide websites and online purchasing expanded, social and mobile channels grew, regulation increased data retention, and IT/IT-service spending reached a very large scale. It also gives newer workforce indicators: in 2024, 78% of surveyed organizations reported AI use in at least one function, 71% reported regular generative-AI use, and 39% of workers' core skills were expected to change by 2030. Treat the older market figures as the deck's period evidence, not timeless current statistics. The conclusion is stable: investment creates value only with organizational, managerial, and cultural change.
 
@@ -116,7 +116,7 @@ Global networks lower cross-border operating and transaction costs while increas
 > [!EXAM]
 > Use the answer chain `technology → changed process/decision → measurable result → primary objective`. A case may support several objectives; identify the primary one.
 
-#### Explanation
+#### Business capability and system capability shape each other
 
 Figure 1.2 makes the relationship two-way: strategy, rules, and processes demand changes in hardware, software, databases, and telecommunications, while system capability constrains what the firm can do. The six objectives then appear in a fixed order.
 
@@ -129,31 +129,90 @@ Figure 1.2 makes the relationship two-way: strategy, rules, and processes demand
 
 ### Slides 25–37 · how an information system works
 
-#### Note skeleton · one record becomes action
+#### IT and IS differ in scope
 
-`Real event → input → processing (classify/arrange/calculate) → output → action → feedback → revised input/process`
-
-| Stage | Checkout example | Check |
+| | Information technology · IT | Information system · IS |
 | --- | --- | --- |
-| Input | Item, price, time, store | Was the real event captured accurately? |
-| Processing | Aggregate by item, period, region | Does the structure fit the decision? |
-| Output | Sales and stock report | Does it reach the actor in time? |
-| Feedback | Correct errors or ordering rules | Does later system behavior change? |
+| Meaning | Technical tools used to process information | The complete arrangement that uses information to perform organizational goals |
+| Includes | Hardware, software, storage, networks | IT + data + people + rules + roles + business processes |
+| Main question | Which technology is used? | Who uses which information to make which decision and change which work? |
+| Success test | Does the tool function? | Do decisions, coordination, control, and performance improve? |
 
-**Three-dimension prompt:** organization asks who works under which rules; management asks which goal, decision, and change is chosen; technology asks how data is collected, processed, stored, and communicated.
+> [!EXAMPLE]
+> Buying a tablet and an inventory app is an **IT investment**. Staff recording sales, managers revising orders from reports, and the organization checking later waste form an **information system**.
+
+The deck's house analogy makes the boundary memorable: computers and programs are the lumber, bricks, and tools. A usable house also needs design, work sequence, assigned roles, and a purpose.
+
+#### Data becomes information through purpose and context
+
+| Data | Information |
+| --- | --- |
+| Raw recorded observations | Data classified, calculated, and summarized for a purpose |
+| `item 1042`, `$4.50`, `12:03`, `store A` | `48 sandwiches sold before noon at store A` |
+| Limited meaning without context | Supports comparison, judgment, and action |
+
+Figure 1.3 shows the transformation:
+
+1. Capture item number, description, price, quantity, time, and sales location.
+2. Group records by product, period, or territory.
+3. Calculate units sold, accumulated revenue, and location results.
+4. Use the result in inventory, promotion, or purchasing decisions.
+
+==yellow:More data does not automatically mean more information. A decision purpose and valid processing rule give the data meaning.==
+
+#### Four activities form a loop
+
+`Real event → input → processing → output → action → feedback → revised input/process`
+
+| Activity | Function | Checkout example | Design failure |
+| --- | --- | --- | --- |
+| Input | Capture raw events inside or outside the firm | Barcode, quantity, price, time, store | Missing, duplicate, or incorrect records |
+| Processing | Classify, arrange, calculate, summarize | Sales by hour, item, location | A misleading group or average |
+| Output | Deliver processed information to a user or activity | Stock alert, report, dashboard | Too late or too complex to use |
+| Feedback | Use results to evaluate and correct the system | Correct a transaction or ordering rule | The same error and decision repeat |
+
+> [!CAUTION]
+> Output is not feedback. Printing the report again is more output. Using it to correct missing transactions or revise a forecast is feedback.
+
+#### The system crosses the organizational boundary
+
+- **Customers** supply orders, preferences, and complaints and experience the result.
+- **Suppliers** exchange price, inventory, and delivery information.
+- **Competitors** change the reference point for product, price, and service decisions.
+- **Stockholders** demand performance and risk information.
+- **Regulators** define reporting and retention requirements and consume submitted information.
+
+#### Three dimensions explain why the same technology produces different results
+
+##### Organization
+
+Organization supplies the work structure and social setting: senior/middle/operational levels; knowledge, data, and production/service workers; sales/marketing, manufacturing/production, finance/accounting, and HR functions; routines, culture, and politics.
+
+##### Management
+
+Management interprets problems and opportunities, sets objectives, allocates resources, creates offerings and business models, changes authority and performance measures, and assigns accountability for exceptions and outcomes.
+
+##### Technology
+
+Technology supplies hardware, software, data management, networks and telecommunications, and the shared IT infrastructure. The Internet is the network foundation; the Web is one service using it. An intranet limits access to employees, while an extranet extends selected access to authorized partners.
+
+> [!DEFINITION]
+> **Information-systems literacy** means understanding how technology, organization, and management interact to produce success or failure—not merely knowing how to operate a computer.
+
+#### Apply the model to JurongHealth
+
+1. Identify the operational or patient-care problem.
+2. Name the RFID, mobile, network, or data technology used.
+3. Trace input, processing, and output for one system.
+4. Explain the changed role, handoff, or clinical workflow.
+5. Evaluate waiting time, safety, equipment use, error, and workload.
 
 > [!EXAM]
-> Include all four system activities and show where an environmental actor—customer, supplier, competitor, investor, or regulator—provides input or receives an effect.
-
-#### Explanation
-
-IT is the hardware and software used to pursue objectives; an IS is a set of interrelated components that manages information for decisions, coordination, control, analysis, visualization, and product creation. Data are raw facts; information is data arranged so someone can understand and act. Figure 1.3 converts checkout item, price, and location records into unit and sales summaries. Figures 1.4–1.5 add the complete loop: input captures events, processing classifies/arranges/calculates, output reaches users, and feedback returns output to evaluate or correct the system. Customers, suppliers, competitors, stockholders, and regulators are part of its environment. Computers are building materials, not the completed house.
-
-Information-systems literacy joins three dimensions. **Organization** includes hierarchy, functions, people, processes, politics, and culture: senior, middle, and operational managers; knowledge, data, and production/service workers; and sales, HR, finance/accounting, and manufacturing/production. **Management** sets strategy, allocates resources, creates offerings, and sometimes redesigns the organization. **Technology** includes hardware, software, data management, networking/telecommunications, Internet, intranets, extranets, the Web, and the shared IT infrastructure. The JurongHealth case asks students to identify technologies, explain their purposes, model one system's input-processing-output, and justify its organizational value.
+> Write `technology → input → processing → output → user action → organizational result`. “RFID improves efficiency” skips the information flow and work change that create the result.
 
 ### Slides 38–50 · value, complementary assets, and sociotechnical fit
 
-#### Note skeleton
+#### Conditions that turn an IT investment into value
 
 `Raw data → value-added information → better decision/process → organizational performance`
 
@@ -167,7 +226,7 @@ Information-systems literacy joins three dimensions. **Organization** includes h
 > [!EXAM]
 > Diagnose `missing technical capability` separately from `missing complementary asset`. Good software without authority or training is unused; good culture without needed functionality cannot produce the result.
 
-#### Explanation
+#### Information value chain and complementary assets
 
 Figures 1.7–1.8 treat IS as a business information value chain: acquire data, transform and distribute information, improve decisions and processes, and seek better performance, profitability, strategic position, or required reporting. Returns vary widely. The technology purchase alone does not select the right model, process, incentives, skills, or standards.
 

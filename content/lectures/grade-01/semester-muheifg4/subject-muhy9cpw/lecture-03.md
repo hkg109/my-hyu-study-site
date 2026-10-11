@@ -34,7 +34,7 @@ Chapter 2A connected transactions and processes. But a shared database cannot, b
 > [!EXAM]
 > **Chapter 2B in one line:** collaboration is a capability, not a tool → conversation and experience must enter a knowledge value chain → the correct KMS and governance turn knowledge into action.
 
-### Note board · from conversation to organizational action
+### From collaboration to organizational learning
 
 `Collaboration → acquire → store → disseminate → apply → feedback and organizational learning`
 
@@ -62,21 +62,39 @@ Chapter 2A connected transactions and processes. But a shared database cannot, b
 > [!CAUTION]
 > More messages do not prove better collaboration. Overload, politics, and unclear responsibility can increase conversation while lowering decision quality.
 
-#### Sustainability margin note
+#### Add sustainability to the investment test
 
 Write `electricity, carbon, water, cooling, hardware, supply chain` beside cloud/AI benefits. Unit efficiency and total consumption must be evaluated together.
 
-#### Explanation
+#### How culture, tools, and outcomes connect
 
-Collaboration can be temporary or long-lived, informal or organized as a team. It grows in importance as work becomes more professional and interaction-heavy, firms and their scope change, innovation matters, and work culture shifts. **Social business** uses internal and external social platforms to engage employees, customers, and suppliers, deepen interaction, and speed transparent information exchange. Its intended outcomes include operational efficiency, innovation, and faster decisions.
+| Concept | Center of attention | Intended result | Common mistake |
+| --- | --- | --- | --- |
+| Collaboration | Coordinating toward a shared goal | Productivity, quality, innovation, service | Treating message volume as success |
+| Social business | Engaging employees, customers, and suppliers through social platforms | Faster decisions and transparent exchange | Assuming a platform creates an open culture |
 
-Final slide 32 extends the unit to human-agent teams. The deck cites a 2026 Microsoft study in which more effective AI-using workers shared AI practices and mistakes and discussed quality standards more often. The exam point is operational: document the agent workflow, human handoffs, review criteria, and authority to change the process. Collaboration now coordinates people, data, applications, and agents—not just messages.
+`shared goal → supportive structure and culture → suitable tools → participation and knowledge sharing → measurable work outcome`
 
-Potential benefits are productivity, quality, innovation, customer service, and financial performance, but Figure 2.7 makes them conditional. Strong collaboration needs both an organizational structure/culture capable of working together and suitable technology. Politics can make a formally assembled team low quality. Command-and-control cultures do not become collaborative by purchasing a chat tool; leaders must use teams, reward participation, and redesign policies and work.
+- **Structure:** permit cross-boundary teams and give them decision rights.
+- **Culture:** make it safe to share mistakes and know-how.
+- **Leadership:** use team input and reward useful participation.
+- **Technology:** match channel and workspace capabilities to time, place, and task.
 
-The sustainability update adds an investment criterion. AI and cloud services consume data-center computing, electricity, cooling, water, and specialized hardware. The deck uses Google's reported emissions, clean-energy contracts, and TPU efficiency to show that both total demand and efficiency matter. Managers should evaluate business value beside energy, carbon, water, hardware, and supply-chain effects.
+> [!CAUTION]
+> Figure 2.7 presents benefits as conditional. In a politically conflicted or command-and-control setting, a new platform may only transmit existing problems faster.
 
-Tools include email/IM, wikis, virtual worlds, telepresence and meetings, shared cloud documents, Teams/SharePoint, Slack, Zoom, Google Workspace, Notion, embedded generative-AI assistants, and agents. Enterprise social platforms add profiles, feeds, groups/workspaces, content sharing, tags/bookmarks, permissions, and privacy. Evaluate them in six steps: identify the collaboration problem; survey solution types; compare costs and benefits; assess security; consult users about implementation/training; and evaluate vendors. Figure 2.8 classifies work by same/different time and same/different place. Current criteria add identity and app integration, governance/retention/data location, access-aware and cited AI answers, human review, adoption, search success, cycle time, quality, employee experience, and business outcomes.
+| Human-agent control question | What to document |
+| --- | --- |
+| What may the agent execute? | Permitted data, tools, and actions |
+| When does it hand off? | Risk, uncertainty, value, and stop thresholds |
+| Who reviews the result? | Reviewer, quality test, and approval record |
+| Who may change the workflow? | Change authority, testing, release, and rollback |
+
+Final slide 32 expands collaboration to ==coordination among people, data, applications, and agents==. Effective users share failures and quality standards, not just successful prompts.
+
+**Tool-selection sequence:** `problem → time/place pattern → solution types → cost/benefit → security and governance → user implementation → vendor and outcome evaluation`.
+
+Prefer active use, search success, cycle time, quality, employee experience, and business outcomes over login counts. For AI/cloud services, also examine energy, carbon, water, cooling, hardware, and supply-chain effects—both efficiency per unit and total use.
 
 ### Slides 42–53 · turn data and experience into usable knowledge
 
@@ -94,22 +112,39 @@ Tools include email/IM, wikis, virtual worlds, telepresence and meetings, shared
 - **Stickiness:** difficulty moving knowledge away from its people, culture, and setting.
 - **Situational character:** the same procedure works differently across conditions.
 
-#### Value-chain note
+#### How knowledge becomes valuable
 
 `Acquire/capture → store with owner/metadata/access → disseminate/search/train → apply → feedback`
 
 > [!EXAM]
 > Generative AI accelerates stages but does not create trust. Source, version, ownership, permission, retention, quality, and human review prevent a fast answer from becoming a fast-spreading error.
 
-#### Explanation
+#### Each stage of the knowledge value chain
 
-Knowledge and information work represents a large share of labor, GDP, and firms' intangible value. The deck separates **data**, **information**, **knowledge**, and **wisdom**, and contrasts **explicit** documented knowledge with **tacit** know-how in people. Knowledge is an intangible firm asset created through organizational effort; sharing can produce network effects. It can be individual and social, sticky and embedded in culture, contextual, and conditional on knowing when a procedure or tool applies. Knowledge-based core competencies are difficult-to-copy ways of working. Wisdom is experience about where, when, and how to apply knowledge.
+Knowledge is not merely a file; it is a **contextual judgment resource** the organization can reuse.
 
-**Organizational learning** collects data, measurement, trial-and-error, and feedback, then changes behavior, decisions, products, services, and processes. Knowledge management is the set of business processes used to create/acquire, store, disseminate, and apply knowledge. Each stage of the value chain adds usefulness; Figure 11.1 also shows management and organizational activities and a feedback loop, not an IT-only pipeline.
+| Property | Meaning | Management implication |
+| --- | --- | --- |
+| Intangible | Hard to observe directly | Measure use and outcomes |
+| Social | Formed through language and relationships | Support mentoring and communities of practice |
+| Sticky | Bound to people, place, and culture | Transfer context, not only documents |
+| Conditional | Effect changes by situation | Record exceptions and conditions of use |
+| Network effect | Sharing and validation can increase value | Combine access with quality control |
 
-Acquisition documents tacit and explicit know-how, stores documents and messages, builds expert networks, creates knowledge, and uses TPS/external data. Storage needs databases/document systems plus schemas, ownership, incentives, and maintenance. Dissemination uses portals, wikis, messaging, search, collaboration, training, and informal networks while managing information overload. Application must embed knowledge in decisions and work so it can produce new practices, offerings, and markets.
+`observe and measure → experiment and receive feedback → organize knowledge → change action → measure again`
 
-Generative AI can transcribe/classify acquisition, search governed stores, retrieve approved sources with context, and support actions. It does not remove governance: metadata, provenance, ownership, permissions, retention, quality, review, authority, monitoring, and escalation determine trust. Chief knowledge officers, knowledge managers, supportive office design, and **communities of practice**—informal professional networks that educate and share—supply organizational and managerial capital and shorten learning curves.
+| Stage | Main work | Necessary control | Generative-AI support |
+| --- | --- | --- | --- |
+| Acquire | Capture documents, tacit know-how, TPS/external data | Purpose, consent, provenance | Transcription and classification |
+| Store | Manage repositories, schemas, versions, owners | Access, retention, freshness | Duplicate detection and metadata suggestions |
+| Disseminate | Search, portals, wikis, training, expert links | Overload and confidentiality | Contextual retrieval from approved sources |
+| Apply | Embed knowledge in decisions and work | Human approval and exception paths | Drafting, recommendation, workflow assistance |
+| Learn | Feed use and errors back into the system | Monitoring and escalation | Pattern summaries |
+
+> [!EXAM]
+> The chain ends with **application and feedback**, not storage. Faster retrieval without changed behavior is not completed organizational learning.
+
+CKOs and knowledge managers supply ownership and quality management. **Communities of practice** transfer experience informally and shorten learning curves; incentives and work time make contribution sustainable.
 
 ### Slides 54–67 · choose the correct knowledge-system family
 
@@ -134,15 +169,32 @@ Generative AI can transcribe/classify acquisition, search governed stores, retri
 
 **Responsible-AI chain:** `govern → map → measure → manage`.
 
-#### Explanation
+#### Roles of content, knowledge workers, and intelligent techniques
 
-The three families serve different purposes. **Enterprise-wide KMS** collects, stores, distributes, and applies firm-wide content. **Knowledge work systems (KWS)** give researchers, designers, engineers, and other knowledge workers specialized tools to create new knowledge. **Intelligent techniques** discover patterns, preserve expertise, find solutions, or automate tasks.
+| Target | Problem solved | Representative capability |
+| --- | --- | --- |
+| Enterprise content | Make distributed material findable and reusable | CMS/ECM, digital assets, expert directories, LMS |
+| Knowledge workers | Produce new designs, models, and expertise | CAD, 3D printing, VR/AR/MR, investment workstations |
+| Repeated judgment and patterns | Preserve expertise, classify, predict, search, automate | Expert systems, ML, RAG, agents |
 
-Enterprise content can be structured (reports, rules), semistructured (email, video), or unstructured/tacit. The deck notes that the often-cited 80% share of semistructured/unstructured content varies by firm and should be measured rather than assumed. Content-management systems capture, classify, preserve, retrieve, and distribute internal and external content; taxonomies and tags make knowledge objects findable, while digital-asset systems specialize in images, audio, and video. AI-ready content removes duplicates, names authoritative versions and owners, records metadata/sensitivity/retention, enforces source permissions, preserves provenance/version links, and tests retrieval, accuracy, confidentiality, bias, and performance on real work. Figure 11.8 shows users both supplying and retrieving governed content.
+| Content form | Examples | Management need |
+| --- | --- | --- |
+| Structured | Rules, formal reports, database records | Schema and validation |
+| Semistructured | Email, slides, video | Metadata, tags, taxonomy |
+| Unstructured or tacit | Free text, experience, know-how | Search, interview, expert links, context |
 
-Expertise directories locate people; social tools save, tag, and share outside knowledge. LMS platforms administer, deliver, track, and assess classes, forums, and MOOCs. Knowledge workers keep the firm current, consult internally, and act as change agents. Their systems need strong computing and graphics/analysis, communications and document management, external databases, an accessible interface, and task-specific design. Examples are CAD/3D printing, VR, AR/MR, 3D medical modeling, and investment workstations combining internal and external data.
+The often-cited 80% semistructured/unstructured share is not universal; measure actual holdings and use. Figure 11.8 shows users supplying, governing, and retrieving content.
 
-Classic intelligent techniques include expert systems, case-based reasoning, fuzzy logic, neural networks, data mining, genetic algorithms, and intelligent agents. The update adds ML, NLP, generative AI, retrieval-augmented generation, knowledge graphs, and policy-controlled agents. Responsible use follows **govern, map, measure, manage**: assign ownership and permitted/prohibited uses; identify people, data, dependencies, and misuse; evaluate accuracy, security, privacy, bias, transparency, robustness, and oversight; then apply controls, monitor, handle incidents, update, and retire unsafe uses. An AI output is a claim requiring verification, not authoritative organizational knowledge.
+**Knowledge-worker division of labor**
+
+- The worker maintains expertise, creates new knowledge, advises the firm, and judges validity.
+- The KWS supplies computation, graphics, simulation, external sources, documents, communication, and task-specific interfaces.
+- The tool does not inherit the professional's accountability for applying the result.
+
+**Technique progression:** `expert systems → case-based reasoning and fuzzy logic → neural networks, data mining, genetic algorithms → ML, NLP, generative AI, RAG, knowledge graphs, policy-controlled agents`.
+
+> [!CAUTION]
+> Newer is not automatically more suitable. Match the method to problem structure, explainability, data quality, error cost, and human oversight. **AI output is a claim to verify, not authoritative organizational knowledge.**
 
 ### Slides 68–73 · ownership, governance, and the learning check
 
@@ -171,7 +223,7 @@ Classic intelligent techniques include expert systems, case-based reasoning, fuz
 > [!ANSWER]
 > Examples: **defined authority and accountability**, **quality/security/access control**, and **monitoring, human review, and exception handling**.
 
-#### Explanation
+#### How the IS function and business teams share responsibility
 
 The IS department is the formal technology-service unit, commonly led by a CIO and joined by CISO/CSO, CKO, CPO, CDO, and increasingly CAIO or responsible-AI leadership. Programmers build code; systems analysts translate business problems into information requirements and system specifications; IS managers coordinate people and services. Size and structure vary by organization.
 
