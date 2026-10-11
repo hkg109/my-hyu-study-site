@@ -31,6 +31,61 @@ objectives:
 | §§3.7–3.8: AI and strategic challenges | 95–99 / 124–128 | Can the advantage last? |
 | Career, closing case, review | 99–106 / 128–135 | Can you defend a strategic recommendation? |
 
+## Exam PDF · complete slide sequence (slides 1–50)
+
+[Open the Chapter 3 exam deck](/materials/mis-exam-slides/ch03_18ed.pdf) · Every slide is included below in sequence, grouped by argument rather than broken into isolated page summaries. The existing sections after this companion add one connected strategy example and retrieval practice.
+
+| Slides | What the deck covers in order |
+| --- | --- |
+| 1–3 | Video cases, nine objectives, and PepsiCo's Doritos Silent opening case |
+| 4–18 | Two-way IT–organization relationship → definitions → routines, politics, culture, environment, disruption, structure, other features |
+| 19–27 | Economic, transaction-cost, agency, and behavioral effects → flattening → resistance → Internet → design checklist |
+| 28–36 | Porter's five forces → four IS strategies → Internet impact → smart products/IoT |
+| 37–47 | Value chain and value web → synergy and core competence → network economics → virtual company → ecosystems/platforms |
+| 48–50 | AI in competitive strategy → strategic-system challenges → Crayola career case |
+
+### Slides 1–18 · understand the organization before prescribing technology
+
+The video cases point to GE's industrial Internet and the NBA's Akamai streaming delivery. Nine objectives move from technical/behavioral views and organizational features through IS impacts, competitive forces, value chain, synergies/core competencies/network economics, AI strategy, strategic-system challenges, and careers. The opening PepsiCo case begins with a narrow customer problem: gamers were distracted by other people's Doritos crunching, while consumers liked the product's crunch. Developers analyzed more than 5,000 crunch sounds with AI/ML to create Doritos Silent software, aiming to preserve appeal in the gaming segment and support sales. The strategic value comes from linking a technology to a segment and product experience, not from AI alone.
+
+Figures 3.1–3.3 establish two complementary views. Technically, an organization is a formal social structure transforming environmental capital and labor into products and services, with outputs and feedback. Behaviorally, it is a historically balanced collection of rights, privileges, duties, relationships, hierarchy, contracts, rules, and conflict resolution. IT and the organization influence each other through structure, process, politics, culture, environment, and managerial choices; prediction is difficult because people and institutions make the organization less mechanically adjustable.
+
+Organizations share hierarchy, authority, accountability, efficiency, routines, processes, politics, culture, environment, and structure. **Routines/SOPs** handle expected situations; collections of routines become processes; collections of processes form the firm. Figure 3.4 therefore implies that a new system must change routines and processes to produce higher performance. Politics arises from divergent interests and can resist or improve a change. Culture defines taken-for-granted answers about what the organization makes, how, where, and for whom; it unifies but can restrain technological change.
+
+Organizations depend on and influence their environments. IS can scan the environment like a lens, but a badly designed lens can hide threats. Disruptive technologies create sweeping market change through substitute performance; first movers invent, while fast followers may have more resources to commercialize. Mintzberg's five structures are entrepreneurial, machine bureaucracy, divisionalized bureaucracy, professional bureaucracy, and adhocracy; the system often reflects the structure. Goals, constituencies, leadership style, routine/nonroutine tasks, and environment also differ, so prisons, businesses, colleges, hospitals, and consultancies should not receive identical designs.
+
+### Slides 19–27 · trace costs, authority, and resistance
+
+IT changes the relative cost of capital, labor, and information. **Transaction cost theory** explains why firms internalize work when searching, contracting, monitoring, and buying through markets is expensive. Networks lower some market transaction costs, making outsourcing and smaller firm boundaries more attractive. **Agency theory** treats the firm as contracts among self-interested agents who require management and supervision; information can lower agency costs and allow wider span without adding the same number of managers.
+
+Behaviorally, faster information and wider span can flatten the hierarchy, move decisions downward, reduce management layers, and give knowledge/competence more authority than formal position. Figure 3.6 shows faster paths and fewer layers, but empowerment is an organizational choice, not an automatic property of a network.
+
+Systems redistribute access to information and therefore affect politics, tasks, structure, culture, and people. Political and organizational resistance is a leading reason large projects fail. Figure 3.7 says the innovation, structure, culture, and affected tasks must be changed together. The Internet expands access, storage, and distribution and can lower transaction, agency, and manual distribution costs, but still does not erase organizational conditions. Before design, inspect environment; hierarchy, specialization, routines, and processes; culture and politics; organizational type and leadership; affected interest groups and user attitudes; and the tasks/decisions/processes the system will support.
+
+### Slides 28–36 · diagnose the competitive pressure before choosing a response
+
+Porter's model examines traditional competitors, new entrants, substitutes, customers, and suppliers. Existing rivals continuously improve offerings and efficiency; entrants may have new equipment and staff but weak brands or face high barriers; substitutes become attractive when price/value shifts; powerful customers can switch or force price competition; powerful suppliers can raise input costs faster than the firm can raise prices. Figure 3.8 places direct rivals in the same industry while the other four forces apply pressure around it.
+
+Four IS-enabled responses are: **low-cost leadership** (Walmart's continuous replenishment/efficient response); **product differentiation** and mass customization (Google, Nike, Apple); **focus on a market niche** using detailed data (Hilton OnQ); and **customer/supplier intimacy** that creates loyalty and switching cost (Toyota, Amazon, Starbucks). Do not name a strategy without connecting it to the diagnosed force.
+
+The Internet transforms some industries and intensifies rivalry through universal standards and lower entry, while also enabling brand and loyalty building. IoT turns connected sensor-equipped products such as fitness equipment and health trackers into information-rich services. Smart products can differentiate, raise switching costs, discourage entrants, or reduce supplier power, while also provoking stronger rivalry.
+
+### Slides 37–47 · locate value inside and beyond the firm
+
+The **value chain** treats a firm as primary and support activities that add value and reveals where IS can improve efficiency or stakeholder intimacy. Benchmarking and best practices help set a reference. Unlike the five-forces diagnosis, the value chain gives a more specific place to intervene. Figure 3.9 includes both the firm's activities and value partners.
+
+A firm's chain links to suppliers, distributors, and customers. A **value web** is a flexible, customer-driven network of independent firms using synchronized IT to coordinate their chains and respond to changing supply and demand. Figure 3.10 emphasizes many-to-many coordination rather than a single linear chain.
+
+**Synergy** occurs when one unit's output becomes another's input or units combine markets and expertise, lowering cost or increasing profit; IS can make separate business units operate as a whole. A **core competency** is a world-class, difficult-to-copy activity grounded in shared knowledge and experience; expert directories and intranets can spread it across units.
+
+Network-based strategies include network economics, virtual companies, and ecosystems. Under **network economics**, adding a participant can cost almost nothing while increasing value for all, unlike ordinary diminishing returns; installed user bases and communities therefore matter. A **virtual company** uses networks to coordinate other firms' production and distribution without owning all factories or locations—Li & Fung is the deck's example. A **business ecosystem** is a loosely coupled, interdependent set of industries and firms. Keystone firms such as major platform owners supply the platform; niche firms depend on it and seek profitable roles. Ecosystems cross industry boundaries, whereas a value web is usually framed around linked value chains in an industry. Figure 3.11 shows competition among ecosystems and dense IT-enabled interactions.
+
+### Slides 48–50 · AI must fit a defensible strategy
+
+The deck asks students to apply AI to both the value chain and Porter's forces: identify the activity or force, show the changed cost/experience/information/relationship, and test whether the result is hard to copy. Strategic systems attract retaliation and imitation, so an advantage may become merely a survival requirement. Alignment requires strategic analysis of industry structure, the firm's and industry's value chains, capabilities, and management choices—not a technology shopping list.
+
+The closing career case places these skills in a Crayola business-development role: describe the business opportunity, the information and IT knowledge needed, and a plausible career path. The final chapter case, AI redesigning fashion, should be analyzed with the same organization–strategy–alignment sequence.
+
 ## 1. Organizations and systems shape each other
 
 Our invented café chain wants every branch to use a demand forecast. The software works, but branch managers ignore it because they lose autonomy over ordering. This is not just a training problem: the system changes who controls a decision.

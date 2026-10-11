@@ -27,6 +27,57 @@ Chapter 2A connected transactions and processes. But a shared database cannot, b
 
 **Source convention:** the supplied *Management Information Systems*, 18th edition and 17th Global Edition. Book = printed page; PDF = viewer counter. These are study explanations and original exercises. The supplied 17th-edition file does not include its later knowledge-management chapter; do not use its table of contents as evidence that those pages are present.
 
+## Exam PDFs · Chapter 2 sequence, part B (final slides 30–73)
+
+[Open the original 61-slide deck](/materials/mis-exam-slides/ch02_17ed.pdf) · [Open the expanded 73-slide final deck](/materials/mis-exam-slides/ch02_17ed_final.pdf) · Part A explains the exact original-to-final page mapping.
+
+| Final slides | What appears in order |
+| --- | --- |
+| 30–41 | Collaboration and social business → human-agent teams → benefits and requirements → environmental footprint → culture → tools and evaluation matrix |
+| 42–53 | Why knowledge matters → dimensions of knowledge → organizational learning → knowledge value chain → generative AI → communities of practice |
+| 54–67 | Three KMS families → enterprise content and AI readiness → expertise/LMS → knowledge workers and workstations → intelligent techniques → responsible AI |
+| 68–73 | IS department and governance → modern operating model → careers/current context → cumulative learning check |
+
+### Slides 30–41 · collaboration is an organizational capability
+
+Collaboration can be temporary or long-lived, informal or organized as a team. It grows in importance as work becomes more professional and interaction-heavy, firms and their scope change, innovation matters, and work culture shifts. **Social business** uses internal and external social platforms to engage employees, customers, and suppliers, deepen interaction, and speed transparent information exchange. Its intended outcomes include operational efficiency, innovation, and faster decisions.
+
+Final slide 32 extends the unit to human-agent teams. The deck cites a 2026 Microsoft study in which more effective AI-using workers shared AI practices and mistakes and discussed quality standards more often. The exam point is operational: document the agent workflow, human handoffs, review criteria, and authority to change the process. Collaboration now coordinates people, data, applications, and agents—not just messages.
+
+Potential benefits are productivity, quality, innovation, customer service, and financial performance, but Figure 2.7 makes them conditional. Strong collaboration needs both an organizational structure/culture capable of working together and suitable technology. Politics can make a formally assembled team low quality. Command-and-control cultures do not become collaborative by purchasing a chat tool; leaders must use teams, reward participation, and redesign policies and work.
+
+The sustainability update adds an investment criterion. AI and cloud services consume data-center computing, electricity, cooling, water, and specialized hardware. The deck uses Google's reported emissions, clean-energy contracts, and TPU efficiency to show that both total demand and efficiency matter. Managers should evaluate business value beside energy, carbon, water, hardware, and supply-chain effects.
+
+Tools include email/IM, wikis, virtual worlds, telepresence and meetings, shared cloud documents, Teams/SharePoint, Slack, Zoom, Google Workspace, Notion, embedded generative-AI assistants, and agents. Enterprise social platforms add profiles, feeds, groups/workspaces, content sharing, tags/bookmarks, permissions, and privacy. Evaluate them in six steps: identify the collaboration problem; survey solution types; compare costs and benefits; assess security; consult users about implementation/training; and evaluate vendors. Figure 2.8 classifies work by same/different time and same/different place. Current criteria add identity and app integration, governance/retention/data location, access-aware and cited AI answers, human review, adoption, search success, cycle time, quality, employee experience, and business outcomes.
+
+### Slides 42–53 · turn data and experience into usable knowledge
+
+Knowledge and information work represents a large share of labor, GDP, and firms' intangible value. The deck separates **data**, **information**, **knowledge**, and **wisdom**, and contrasts **explicit** documented knowledge with **tacit** know-how in people. Knowledge is an intangible firm asset created through organizational effort; sharing can produce network effects. It can be individual and social, sticky and embedded in culture, contextual, and conditional on knowing when a procedure or tool applies. Knowledge-based core competencies are difficult-to-copy ways of working. Wisdom is experience about where, when, and how to apply knowledge.
+
+**Organizational learning** collects data, measurement, trial-and-error, and feedback, then changes behavior, decisions, products, services, and processes. Knowledge management is the set of business processes used to create/acquire, store, disseminate, and apply knowledge. Each stage of the value chain adds usefulness; Figure 11.1 also shows management and organizational activities and a feedback loop, not an IT-only pipeline.
+
+Acquisition documents tacit and explicit know-how, stores documents and messages, builds expert networks, creates knowledge, and uses TPS/external data. Storage needs databases/document systems plus schemas, ownership, incentives, and maintenance. Dissemination uses portals, wikis, messaging, search, collaboration, training, and informal networks while managing information overload. Application must embed knowledge in decisions and work so it can produce new practices, offerings, and markets.
+
+Generative AI can transcribe/classify acquisition, search governed stores, retrieve approved sources with context, and support actions. It does not remove governance: metadata, provenance, ownership, permissions, retention, quality, review, authority, monitoring, and escalation determine trust. Chief knowledge officers, knowledge managers, supportive office design, and **communities of practice**—informal professional networks that educate and share—supply organizational and managerial capital and shorten learning curves.
+
+### Slides 54–67 · choose the correct knowledge-system family
+
+The three families serve different purposes. **Enterprise-wide KMS** collects, stores, distributes, and applies firm-wide content. **Knowledge work systems (KWS)** give researchers, designers, engineers, and other knowledge workers specialized tools to create new knowledge. **Intelligent techniques** discover patterns, preserve expertise, find solutions, or automate tasks.
+
+Enterprise content can be structured (reports, rules), semistructured (email, video), or unstructured/tacit. The deck notes that the often-cited 80% share of semistructured/unstructured content varies by firm and should be measured rather than assumed. Content-management systems capture, classify, preserve, retrieve, and distribute internal and external content; taxonomies and tags make knowledge objects findable, while digital-asset systems specialize in images, audio, and video. AI-ready content removes duplicates, names authoritative versions and owners, records metadata/sensitivity/retention, enforces source permissions, preserves provenance/version links, and tests retrieval, accuracy, confidentiality, bias, and performance on real work. Figure 11.8 shows users both supplying and retrieving governed content.
+
+Expertise directories locate people; social tools save, tag, and share outside knowledge. LMS platforms administer, deliver, track, and assess classes, forums, and MOOCs. Knowledge workers keep the firm current, consult internally, and act as change agents. Their systems need strong computing and graphics/analysis, communications and document management, external databases, an accessible interface, and task-specific design. Examples are CAD/3D printing, VR, AR/MR, 3D medical modeling, and investment workstations combining internal and external data.
+
+Classic intelligent techniques include expert systems, case-based reasoning, fuzzy logic, neural networks, data mining, genetic algorithms, and intelligent agents. The update adds ML, NLP, generative AI, retrieval-augmented generation, knowledge graphs, and policy-controlled agents. Responsible use follows **govern, map, measure, manage**: assign ownership and permitted/prohibited uses; identify people, data, dependencies, and misuse; evaluate accuracy, security, privacy, bias, transparency, robustness, and oversight; then apply controls, monitor, handle incidents, update, and retire unsafe uses. An AI output is a claim requiring verification, not authoritative organizational knowledge.
+
+### Slides 68–73 · ownership, governance, and the learning check
+
+The IS department is the formal technology-service unit, commonly led by a CIO and joined by CISO/CSO, CKO, CPO, CDO, and increasingly CAIO or responsible-AI leadership. Programmers build code; systems analysts translate business problems into information requirements and system specifications; IS managers coordinate people and services. Size and structure vary by organization.
+
+End users are business-department participants for whom applications are built and whose role in design has grown. **IT governance** defines strategy, policy, decision rights, and accountability so technology supports organizational goals. A modern operating model keeps enterprise architecture, cybersecurity, shared platforms, data standards, vendors, reliability, and organization-wide governance central, while product teams distributed through the business define outcomes, prioritize work, improve processes, drive adoption, and share responsibility for data and AI.
+
+Career paths include business systems analysis, product ownership, BI/data analysis, security/privacy, enterprise/cloud consulting, AI process analysis, and information/knowledge management. The deck's current context expects humans and technology to share changing task mixes; the transferable advantage is process redesign, evidence evaluation, stakeholder communication, data literacy, and responsible AI use. The final learning check asks students to distinguish AI-enabled redesign from simple automation, identify cloud-ERP risks, specify human-agent controls, prepare content for RAG, and include environmental measures in an IS investment decision.
+
 ## 1. A conversation is not yet collaboration
 
 Our invented café chain has a group chat. Staff send many messages, but branches keep repeating the same ordering mistakes. The missing element may be a shared goal, a way of making decisions, or a place to preserve useful conclusions.

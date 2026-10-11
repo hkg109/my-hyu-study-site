@@ -33,6 +33,58 @@ This guide follows *Management Information Systems: Managing the Digital Firm*, 
 
 **Study loop:** read one stop in the book → explain the relationship in your own words → answer the nearby question before opening its answer. Click the concealed blanks and flashcards during a second pass. Record uncertain answers with the site's **헷갈림** button and revisit them in Review.
 
+## Exam PDF · complete slide sequence (slides 1–50)
+
+[Open the Chapter 1 exam deck](/materials/mis-exam-slides/ch01_17ed.pdf) · The sequence below accounts for every slide. Adjacent slides are combined into coherent topics; the numbered sections that follow explain the same ideas with the café example.
+
+| Slides | What the deck covers in order |
+| --- | --- |
+| 1–5 | Chapter/video-case index → 18th-edition update → objectives → Walmart AI supply-chain case → management/organization/technology analysis |
+| 6–15 | Digital-business evidence → IT investment → new technologies, models, and management → remote work → globalization → digital firm |
+| 16–24 | Interdependence of business and systems → six strategic business objectives and examples |
+| 25–37 | IT versus IS → data/information → input-processing-output-feedback → three dimensions → levels, functions, infrastructure → JurongHealth case |
+| 38–44 | Business information value chain → unequal IT returns → complementary organizational, managerial, and social assets |
+| 45–50 | Technical and behavioral approaches → sociotechnical fit → career case |
+
+### Slides 1–5 · route, edition change, and the Walmart case
+
+The deck opens with video cases on Facebook/eBay data centers, UPS's DIAD and Worldport, and IBM's Raleigh data center. Its four questions are: why IS transforms business; what an IS is and how management, organization, technology, and complementary assets create value; which academic disciplines study IS; and how MIS helps a career. The 18th-edition update makes IoT, big data, cloud, AI, machine learning, and generative AI more explicit and broadens the link to work, skills, globalization, and careers, while retaining sociotechnical thinking.
+
+Walmart's current case starts with a business problem, not an AI label. Local demand, waste, stores, fulfillment centers, and online channels must be coordinated. A unified inventory view, predictive AI, automation, and agentic tools recommend actions. Management decides what to standardize, what AI may support, and who remains accountable; the organization redesigns replenishment, trains associates, shares data, and aligns suppliers; the technology integrates data, models, mobile tools, and a common stack. The expected value is better availability, faster decisions, simpler work, and supplier coordination. The exam question is which of these three dimensions can become the limiting constraint.
+
+### Slides 6–15 · transformation, globalization, and the digital firm
+
+The deck's historical indicators show why IS became a managerial issue: worldwide websites and online purchasing expanded, social and mobile channels grew, regulation increased data retention, and IT/IT-service spending reached a very large scale. It also gives newer workforce indicators: in 2024, 78% of surveyed organizations reported AI use in at least one function, 71% reported regular generative-AI use, and 39% of workers' core skills were expected to change by 2030. Treat the older market figures as the deck's period evidence, not timeless current statistics. The conclusion is stable: investment creates value only with organizational, managerial, and cultural change.
+
+Figure 1.1 shows IT capital—hardware, software, and communications equipment—rising from about 21% of invested US business capital in 1999 to about 33% in 2017, despite fluctuations in total investment. The next slides connect cloud, big data, IoT, mobile platforms, AI/ML, and social networks to streaming and on-demand business models, mobile/social commerce, BI, virtual meetings, data-based decisions, flatter collaboration, and more direct customer interaction. The remote-work case asks for a management-organization-technology diagnosis, the technologies used, evidence of success, and a reasoned view of remote work and learning.
+
+Global networks lower cross-border operating and transaction costs while increasing competition for jobs, markets, resources, and ideas. They create both dependence and opportunity and require knowledge of different skills and markets. A digital firm digitally enables major stakeholder relationships, performs core processes through digital networks, and manages key assets digitally. Time shifting and space shifting make continuous, distributed global work possible.
+
+### Slides 16–24 · six reasons firms invest
+
+Figure 1.2 makes the relationship two-way: strategy, rules, and processes demand changes in hardware, software, databases, and telecommunications, while system capability constrains what the firm can do. The six objectives then appear in a fixed order.
+
+1. **Operational excellence:** efficiency and productivity can raise profits. Walmart's Retail Link joins stores and suppliers to replenish efficiently.
+2. **New products, services, and business models:** a business model explains how value is produced, delivered, sold, and monetized. Apple's iTunes and devices changed music distribution and consumption.
+3. **Customer and supplier intimacy:** remembered guest preferences can strengthen hotel relationships; JCPenney and TAL Apparel illustrate supplier coordination that bypasses warehouses and reduces inventory.
+4. **Improved decision making:** inaccurate or late information causes over/underproduction, misallocated resources, delay, cost, and lost customers. Verizon's dashboard illustrates timely operational visibility.
+5. **Competitive advantage:** lower cost, better products, or faster customer/supplier response can build on the previous four objectives; advantage is relative to rivals.
+6. **Survival:** ATMs became an industry necessity, while regulation such as Sarbanes-Oxley created record-retention requirements. A survival investment can be mandatory even when it is not unique.
+
+### Slides 25–37 · how an information system works
+
+IT is the hardware and software used to pursue objectives; an IS is a set of interrelated components that manages information for decisions, coordination, control, analysis, visualization, and product creation. Data are raw facts; information is data arranged so someone can understand and act. Figure 1.3 converts checkout item, price, and location records into unit and sales summaries. Figures 1.4–1.5 add the complete loop: input captures events, processing classifies/arranges/calculates, output reaches users, and feedback returns output to evaluate or correct the system. Customers, suppliers, competitors, stockholders, and regulators are part of its environment. Computers are building materials, not the completed house.
+
+Information-systems literacy joins three dimensions. **Organization** includes hierarchy, functions, people, processes, politics, and culture: senior, middle, and operational managers; knowledge, data, and production/service workers; and sales, HR, finance/accounting, and manufacturing/production. **Management** sets strategy, allocates resources, creates offerings, and sometimes redesigns the organization. **Technology** includes hardware, software, data management, networking/telecommunications, Internet, intranets, extranets, the Web, and the shared IT infrastructure. The JurongHealth case asks students to identify technologies, explain their purposes, model one system's input-processing-output, and justify its organizational value.
+
+### Slides 38–50 · value, complementary assets, and sociotechnical fit
+
+Figures 1.7–1.8 treat IS as a business information value chain: acquire data, transform and distribute information, improve decisions and processes, and seek better performance, profitability, strategic position, or required reporting. Returns vary widely. The technology purchase alone does not select the right model, process, incentives, skills, or standards.
+
+Complementary assets supply that missing capacity. Organizational assets include an appropriate business model and efficient processes; managerial assets include incentives for innovation, teamwork, and collaborative work; social assets include Internet/telecommunications infrastructure and technical standards supplied by society, markets, and government. The highway, fuel, and repair ecosystem that complements a car is the deck's analogy.
+
+The technical approach contributes computer science, management science, operations research, and formal models. The behavioral approach contributes psychology, economics, and sociology to questions such as implementation and strategic integration. MIS combines them with practical business concerns and four actors: technology suppliers, firms, managers/employees, and the legal-social-cultural environment. Figures 1.9–1.10 show the sociotechnical conclusion: jointly adjust organization and technology until a satisfactory performance fit is reached; an advanced tool is not automatically the best fit, and enterprise software may require substantial organizational change. The final career slide applies these ideas to a financial client-support and sales-assistant role at Power Financial Analytics Data Services.
+
 ## 1. Begin with a problem, not a device
 
 Imagine a campus café that sells out of sandwiches at noon while throwing away unsold salads. Buying a tablet is easy; deciding what should change is harder. The business needs to learn what sells, when demand changes, and how to adjust purchasing. We will use this **invented café example** throughout the notes.
