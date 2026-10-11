@@ -37,6 +37,20 @@ This guide follows *Management Information Systems: Managing the Digital Firm*, 
 
 [Open the Chapter 1 exam deck](/materials/mis-exam-slides/ch01_17ed.pdf) · The sequence below accounts for every slide. Adjacent slides are combined into coherent topics; the numbered sections that follow explain the same ideas with the café example.
 
+> [!EXAM]
+> **Chapter 1 in one line:** environmental change creates six business objectives → an IS turns data into actionable information → management, organization, technology, and complementary assets must fit → measurable business value follows.
+
+### Note board · memorize the connection first
+
+`Business change → six objectives → input/process/output/feedback → management/organization/technology → complementary assets → sociotechnical fit → performance`
+
+| Easily confused | Left side | Right side | Diagnostic question |
+| --- | --- | --- | --- |
+| Data / information | Unorganized observations | Data made meaningful for a purpose | What decision can this support? |
+| IT / IS | Hardware and software tools | Tools plus people, work, and information flows | Have roles and procedures been explained? |
+| Output / feedback | A processed result is delivered | The result changes later input or processing | Does the next system action change? |
+| Computer / IS literacy | Ability to use technology | Ability to explain technical-organizational-managerial fit | Can I explain unequal outcomes? |
+
 | Slides | What the deck covers in order |
 | --- | --- |
 | 1–5 | Chapter/video-case index → 18th-edition update → objectives → Walmart AI supply-chain case → management/organization/technology analysis |
@@ -48,11 +62,37 @@ This guide follows *Management Information Systems: Managing the Digital Firm*, 
 
 ### Slides 1–5 · route, edition change, and the Walmart case
 
+#### Note skeleton
+
+- **Problem:** match local demand, stock, waste, stores, fulfillment, and online channels.
+- **Technology:** unified inventory + predictive AI + automation + agentic tools.
+- **Organization:** redesign replenishment, train staff, share data, align suppliers.
+- **Management:** set standardization, AI authority, exception, and accountability rules.
+- **Outcome:** availability and decision speed ↑; waste and delay ↓.
+
+> [!CAUTION]
+> “The company adopted AI” is not a complete answer. State **which data changes which decision and who owns exceptions and outcomes**.
+
+#### Explanation
+
 The deck opens with video cases on Facebook/eBay data centers, UPS's DIAD and Worldport, and IBM's Raleigh data center. Its four questions are: why IS transforms business; what an IS is and how management, organization, technology, and complementary assets create value; which academic disciplines study IS; and how MIS helps a career. The 18th-edition update makes IoT, big data, cloud, AI, machine learning, and generative AI more explicit and broadens the link to work, skills, globalization, and careers, while retaining sociotechnical thinking.
 
 Walmart's current case starts with a business problem, not an AI label. Local demand, waste, stores, fulfillment centers, and online channels must be coordinated. A unified inventory view, predictive AI, automation, and agentic tools recommend actions. Management decides what to standardize, what AI may support, and who remains accountable; the organization redesigns replenishment, trains associates, shares data, and aligns suppliers; the technology integrates data, models, mobile tools, and a common stack. The expected value is better availability, faster decisions, simpler work, and supplier coordination. The exam question is which of these three dimensions can become the limiting constraint.
 
 ### Slides 6–15 · transformation, globalization, and the digital firm
+
+#### Note skeleton
+
+- **Evidence of change:** online transactions, mobile/social channels, retention rules, IT investment, AI use.
+- **Interpretation:** historical numbers are period evidence; the stable conclusion is `investment ≠ value`.
+- **Globalization:** communication/transaction cost ↓; access and competition ↑; interdependence ↑.
+- **Digital-firm test:** key relationships, processes, and assets are digitally enabled.
+- **Time/space shifting:** expands when and where work occurs while increasing coordination needs.
+
+> [!EXAM]
+> Digitizing a document is not necessarily digital transformation. Explain how the **process, decision, role, or value proposition** changes.
+
+#### Explanation
 
 The deck's historical indicators show why IS became a managerial issue: worldwide websites and online purchasing expanded, social and mobile channels grew, regulation increased data retention, and IT/IT-service spending reached a very large scale. It also gives newer workforce indicators: in 2024, 78% of surveyed organizations reported AI use in at least one function, 71% reported regular generative-AI use, and 39% of workers' core skills were expected to change by 2030. Treat the older market figures as the deck's period evidence, not timeless current statistics. The conclusion is stable: investment creates value only with organizational, managerial, and cultural change.
 
@@ -61,6 +101,22 @@ Figure 1.1 shows IT capital—hardware, software, and communications equipment�
 Global networks lower cross-border operating and transaction costs while increasing competition for jobs, markets, resources, and ideas. They create both dependence and opportunity and require knowledge of different skills and markets. A digital firm digitally enables major stakeholder relationships, performs core processes through digital networks, and manages key assets digitally. Time shifting and space shifting make continuous, distributed global work possible.
 
 ### Slides 16–24 · six reasons firms invest
+
+#### Six-objective memory table
+
+| Objective | Result to name | Deck example | Avoid this confusion |
+| --- | --- | --- | --- |
+| Operational excellence | Less cost, time, error | Walmart Retail Link | Efficiency alone is not competitive advantage |
+| New offerings/models | New value or revenue logic | Apple/iTunes | An app is technology; a model explains delivery and revenue |
+| Customer/supplier intimacy | Retention and coordination | Hotels, JCPenney–TAL | Separate customer and supplier effects |
+| Improved decisions | Timely evidence replaces guesses | Verizon dashboard | A report matters only when action changes |
+| Competitive advantage | Better relative performance | Apple, Walmart, UPS | Name the rival or comparison |
+| Survival | Industry or regulatory necessity | ATM, record retention | Mandatory need not be distinctive |
+
+> [!EXAM]
+> Use the answer chain `technology → changed process/decision → measurable result → primary objective`. A case may support several objectives; identify the primary one.
+
+#### Explanation
 
 Figure 1.2 makes the relationship two-way: strategy, rules, and processes demand changes in hardware, software, databases, and telecommunications, while system capability constrains what the firm can do. The six objectives then appear in a fixed order.
 
@@ -73,11 +129,45 @@ Figure 1.2 makes the relationship two-way: strategy, rules, and processes demand
 
 ### Slides 25–37 · how an information system works
 
+#### Note skeleton · one record becomes action
+
+`Real event → input → processing (classify/arrange/calculate) → output → action → feedback → revised input/process`
+
+| Stage | Checkout example | Check |
+| --- | --- | --- |
+| Input | Item, price, time, store | Was the real event captured accurately? |
+| Processing | Aggregate by item, period, region | Does the structure fit the decision? |
+| Output | Sales and stock report | Does it reach the actor in time? |
+| Feedback | Correct errors or ordering rules | Does later system behavior change? |
+
+**Three-dimension prompt:** organization asks who works under which rules; management asks which goal, decision, and change is chosen; technology asks how data is collected, processed, stored, and communicated.
+
+> [!EXAM]
+> Include all four system activities and show where an environmental actor—customer, supplier, competitor, investor, or regulator—provides input or receives an effect.
+
+#### Explanation
+
 IT is the hardware and software used to pursue objectives; an IS is a set of interrelated components that manages information for decisions, coordination, control, analysis, visualization, and product creation. Data are raw facts; information is data arranged so someone can understand and act. Figure 1.3 converts checkout item, price, and location records into unit and sales summaries. Figures 1.4–1.5 add the complete loop: input captures events, processing classifies/arranges/calculates, output reaches users, and feedback returns output to evaluate or correct the system. Customers, suppliers, competitors, stockholders, and regulators are part of its environment. Computers are building materials, not the completed house.
 
 Information-systems literacy joins three dimensions. **Organization** includes hierarchy, functions, people, processes, politics, and culture: senior, middle, and operational managers; knowledge, data, and production/service workers; and sales, HR, finance/accounting, and manufacturing/production. **Management** sets strategy, allocates resources, creates offerings, and sometimes redesigns the organization. **Technology** includes hardware, software, data management, networking/telecommunications, Internet, intranets, extranets, the Web, and the shared IT infrastructure. The JurongHealth case asks students to identify technologies, explain their purposes, model one system's input-processing-output, and justify its organizational value.
 
 ### Slides 38–50 · value, complementary assets, and sociotechnical fit
+
+#### Note skeleton
+
+`Raw data → value-added information → better decision/process → organizational performance`
+
+- **Organizational assets:** business model, efficient process, collaborative culture.
+- **Managerial assets:** leadership, training, incentives, authority, accountability, teamwork.
+- **Social assets:** infrastructure, standards, education, institutions, partner ecosystem.
+- **Technical approach:** models and efficiency from computer/management science and operations research.
+- **Behavioral approach:** people, implementation, and institutions from psychology, sociology, economics.
+- **Sociotechnical approach:** jointly adjust both sides; do not choose one and ignore the other.
+
+> [!EXAM]
+> Diagnose `missing technical capability` separately from `missing complementary asset`. Good software without authority or training is unused; good culture without needed functionality cannot produce the result.
+
+#### Explanation
 
 Figures 1.7–1.8 treat IS as a business information value chain: acquire data, transform and distribute information, improve decisions and processes, and seek better performance, profitability, strategic position, or required reporting. Returns vary widely. The technology purchase alone does not select the right model, process, incentives, skills, or standards.
 

@@ -31,6 +31,15 @@ Chapter 2A connected transactions and processes. But a shared database cannot, b
 
 [Open the original 61-slide deck](/materials/mis-exam-slides/ch02_17ed.pdf) · [Open the expanded 73-slide final deck](/materials/mis-exam-slides/ch02_17ed_final.pdf) · Part A explains the exact original-to-final page mapping.
 
+> [!EXAM]
+> **Chapter 2B in one line:** collaboration is a capability, not a tool → conversation and experience must enter a knowledge value chain → the correct KMS and governance turn knowledge into action.
+
+### Note board · from conversation to organizational action
+
+`Collaboration → acquire → store → disseminate → apply → feedback and organizational learning`
+
+==green:Stored content is not the end of knowledge management. Authorized people must find, understand, and apply it so a decision or behavior changes.==
+
 | Final slides | What appears in order |
 | --- | --- |
 | 30–41 | Collaboration and social business → human-agent teams → benefits and requirements → environmental footprint → culture → tools and evaluation matrix |
@@ -39,6 +48,25 @@ Chapter 2A connected transactions and processes. But a shared database cannot, b
 | 68–73 | IS department and governance → modern operating model → careers/current context → cumulative learning check |
 
 ### Slides 30–41 · collaboration is an organizational capability
+
+#### Collaboration performance model
+
+`Performance = culture/structure/reward × fit-for-work tools × clear roles and quality criteria`
+
+- **Human teamwork:** agree on goal, role, decision right, conflict resolution, and success measure.
+- **Human-agent teamwork:** document workflow, human handoff, review criteria, and change authority.
+- **Tool fit:** start from the same/different time × same/different place matrix.
+- **Governance:** identity, permission, retention, external sharing, data location, AI source, human review.
+- **Measurement:** favor search success, cycle time, quality, experience, and business outcome over login count.
+
+> [!CAUTION]
+> More messages do not prove better collaboration. Overload, politics, and unclear responsibility can increase conversation while lowering decision quality.
+
+#### Sustainability margin note
+
+Write `electricity, carbon, water, cooling, hardware, supply chain` beside cloud/AI benefits. Unit efficiency and total consumption must be evaluated together.
+
+#### Explanation
 
 Collaboration can be temporary or long-lived, informal or organized as a team. It grows in importance as work becomes more professional and interaction-heavy, firms and their scope change, innovation matters, and work culture shifts. **Social business** uses internal and external social platforms to engage employees, customers, and suppliers, deepen interaction, and speed transparent information exchange. Its intended outcomes include operational efficiency, innovation, and faster decisions.
 
@@ -52,6 +80,29 @@ Tools include email/IM, wikis, virtual worlds, telepresence and meetings, shared
 
 ### Slides 42–53 · turn data and experience into usable knowledge
 
+#### Concept ladder
+
+| Stage | Meaning | Example |
+| --- | --- | --- |
+| Data | Raw observation | 120 customer contacts |
+| Information | Organized for a purpose | 45% concern late delivery |
+| Knowledge | Cause, rule, and context understood | A regional stock-sync delay causes the pattern |
+| Wisdom | Judgment about when/how to act | Separate immediate repair from system redesign |
+
+- **Explicit knowledge:** expressed and stored in rules, reports, and documents.
+- **Tacit knowledge:** embodied know-how that cannot be fully written down.
+- **Stickiness:** difficulty moving knowledge away from its people, culture, and setting.
+- **Situational character:** the same procedure works differently across conditions.
+
+#### Value-chain note
+
+`Acquire/capture → store with owner/metadata/access → disseminate/search/train → apply → feedback`
+
+> [!EXAM]
+> Generative AI accelerates stages but does not create trust. Source, version, ownership, permission, retention, quality, and human review prevent a fast answer from becoming a fast-spreading error.
+
+#### Explanation
+
 Knowledge and information work represents a large share of labor, GDP, and firms' intangible value. The deck separates **data**, **information**, **knowledge**, and **wisdom**, and contrasts **explicit** documented knowledge with **tacit** know-how in people. Knowledge is an intangible firm asset created through organizational effort; sharing can produce network effects. It can be individual and social, sticky and embedded in culture, contextual, and conditional on knowing when a procedure or tool applies. Knowledge-based core competencies are difficult-to-copy ways of working. Wisdom is experience about where, when, and how to apply knowledge.
 
 **Organizational learning** collects data, measurement, trial-and-error, and feedback, then changes behavior, decisions, products, services, and processes. Knowledge management is the set of business processes used to create/acquire, store, disseminate, and apply knowledge. Each stage of the value chain adds usefulness; Figure 11.1 also shows management and organizational activities and a feedback loop, not an IT-only pipeline.
@@ -62,6 +113,29 @@ Generative AI can transcribe/classify acquisition, search governed stores, retri
 
 ### Slides 54–67 · choose the correct knowledge-system family
 
+#### Three-family comparison
+
+| Family | User | Purpose | Examples |
+| --- | --- | --- | --- |
+| Enterprise KMS | Whole organization | Collect, classify, retrieve, share, apply | CMS, expert directory, LMS |
+| KWS | Knowledge worker | Produce new design, analysis, knowledge | CAD, VR/AR, investment workstation |
+| Intelligent technique | Analyst, worker, system | Discover pattern, preserve expertise, solve, automate | Expert system, ML, RAG, agent |
+
+#### AI-ready content checklist · Q-M-A-P-E
+
+- **Quality:** deduplicate, retire stale content, name authoritative versions.
+- **Metadata:** category, date, sensitivity, context, retention.
+- **Access:** preserve source permissions and legal restrictions.
+- **Provenance:** source, authoring date, history, correction path.
+- **Evaluation:** retrieval coverage, accuracy, confidentiality, bias, real-work performance.
+
+> [!DEFINITION]
+> **RAG** retrieves approved enterprise sources to give a model relevant context. It is not safe when its source content or access control is unsafe.
+
+**Responsible-AI chain:** `govern → map → measure → manage`.
+
+#### Explanation
+
 The three families serve different purposes. **Enterprise-wide KMS** collects, stores, distributes, and applies firm-wide content. **Knowledge work systems (KWS)** give researchers, designers, engineers, and other knowledge workers specialized tools to create new knowledge. **Intelligent techniques** discover patterns, preserve expertise, find solutions, or automate tasks.
 
 Enterprise content can be structured (reports, rules), semistructured (email, video), or unstructured/tacit. The deck notes that the often-cited 80% share of semistructured/unstructured content varies by firm and should be measured rather than assumed. Content-management systems capture, classify, preserve, retrieve, and distribute internal and external content; taxonomies and tags make knowledge objects findable, while digital-asset systems specialize in images, audio, and video. AI-ready content removes duplicates, names authoritative versions and owners, records metadata/sensitivity/retention, enforces source permissions, preserves provenance/version links, and tests retrieval, accuracy, confidentiality, bias, and performance on real work. Figure 11.8 shows users both supplying and retrieving governed content.
@@ -71,6 +145,33 @@ Expertise directories locate people; social tools save, tag, and share outside k
 Classic intelligent techniques include expert systems, case-based reasoning, fuzzy logic, neural networks, data mining, genetic algorithms, and intelligent agents. The update adds ML, NLP, generative AI, retrieval-augmented generation, knowledge graphs, and policy-controlled agents. Responsible use follows **govern, map, measure, manage**: assign ownership and permitted/prohibited uses; identify people, data, dependencies, and misuse; evaluate accuracy, security, privacy, bias, transparency, robustness, and oversight; then apply controls, monitor, handle incidents, update, and retire unsafe uses. An AI output is a claim requiring verification, not authoritative organizational knowledge.
 
 ### Slides 68–73 · ownership, governance, and the learning check
+
+#### Role map
+
+| Role | Core responsibility |
+| --- | --- |
+| CIO | Technology direction and business value |
+| CISO/CSO | Security risk, controls, incident response |
+| CKO | Knowledge acquisition, sharing, application |
+| CPO | Privacy principles, rights, compliance |
+| CDO | Data quality, standard, ownership, use |
+| CAIO/responsible-AI lead | AI portfolio, risk, accountable use |
+| Systems analyst | Translate business problem into information/system requirements |
+| End user | Co-own work requirement, adoption, feedback, outcome |
+
+**Modern operating model:** central teams keep architecture, security, shared platforms, data standards, vendors, and reliability coherent; distributed product teams own outcomes, priorities, process improvement, and adoption close to the work.
+
+> [!FLASHCARD]
+> Q: Why is an AI output not automatically organizational knowledge?
+> A: Its source, context, accuracy, access, currency, and application conditions require verification and accountable approval.
+
+> [!QUIZ]
+> Name three controls shared by cloud ERP, human-agent teamwork, and RAG-based knowledge search.
+
+> [!ANSWER]
+> Examples: **defined authority and accountability**, **quality/security/access control**, and **monitoring, human review, and exception handling**.
+
+#### Explanation
 
 The IS department is the formal technology-service unit, commonly led by a CIO and joined by CISO/CSO, CKO, CPO, CDO, and increasingly CAIO or responsible-AI leadership. Programmers build code; systems analysts translate business problems into information requirements and system specifications; IS managers coordinate people and services. Size and structure vary by organization.
 

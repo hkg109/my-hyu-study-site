@@ -31,6 +31,22 @@ Chapter 1 explained **why information systems matter**. Now ask **where they wor
 
 [Open the original 61-slide deck](/materials/mis-exam-slides/ch02_17ed.pdf) · [Open the expanded 73-slide final deck](/materials/mis-exam-slides/ch02_17ed_final.pdf)
 
+> [!EXAM]
+> **Chapter 2A in one line:** map the process → match the system to management level and decision structure → use ERP, SCM, CRM, and KMS to cross functional and organizational boundaries.
+
+### Note board · two axes for choosing a system
+
+`Who decides (operational/middle/senior) × how repeatable is the decision (structured/nonroutine)`
+
+| System | Main user | Decision | Main input | Typical output |
+| --- | --- | --- | --- | --- |
+| TPS | Operations | Routine, structured | Daily transactions | Payroll, order, shipment record |
+| MIS | Middle management | Routine reporting | TPS summaries | Actual-versus-plan report |
+| DSS | Middle management | Analytical, nonroutine | Internal/external data + model | Scenario and alternative comparison |
+| ESS | Senior management | Strategic, nonroutine | MIS/DSS summaries + external events | KPI, trend, forecast dashboard |
+
+==blue:Moving upward, transaction detail is summarized while judgment, external information, and the time horizon increase.==
+
 The final deck preserves the original sequence and adds 12 current-update slides. Original slides 1–8 map to final 1–8; 9–21 to 10–22; 22 to 24; 23–28 to 26–31; 29–30 to 33–34; 31–34 to 36–39; 35–42 to 41–48; 43–50 to 50–57; 51–58 to 59–66; 59–60 to 68–69; and 61 to 71. Final slides 9, 23, 25, 32, 35, 40, 49, 58, 67, 70, 72, and 73 are the added updates. Thus both supplied Chapter 2 PDFs are covered without repeating the unchanged slides.
 
 | Final slides | What appears in order |
@@ -42,6 +58,21 @@ The final deck preserves the original sequence and adds 12 current-update slides
 
 ### Slides 1–9 · from a business process to an AI-enabled process
 
+#### Note skeleton
+
+`Customer need → connected tasks across functions → material/information/knowledge flow → result → performance measure`
+
+- **Automation:** keep the process shape and let a system perform a repeatable manual step.
+- **Redesign:** change information flow, sequence, authority, or the business model.
+- **Assist:** a person owns the process; AI retrieves, summarizes, drafts, or recommends.
+- **Automate:** rules/models complete routine work; people handle exceptions.
+- **Agent:** AI calls tools within defined permission, monitoring, review, and escalation boundaries.
+
+> [!CAUTION]
+> Tool-calling does not justify unlimited autonomy. Specify permitted scope, stop conditions, human handoff, logs, and outcome accountability.
+
+#### Explanation
+
 The deck begins with Walmart Retail Link, Cemex social business, and US Foodservice CRM video cases, then states ten objectives spanning processes, management systems, enterprise applications, collaboration/social business, tool evaluation, knowledge management, the IS function, and careers. Sharp Corporation supplies the opening problem: hierarchical top-down work, new competitors, and weak idea sharing. Its response combines a knowledge-sharing strategy, redesigned collaboration processes, cultural change, and Yammer. The point is not that software alone caused innovation; teamwork, culture, process, and technology worked together.
 
 A business process is a logically related set of tasks carrying material, information, and knowledge. It can stay inside a function or cross functions and can be an asset or a liability when outdated work slows response. Manufacturing/production assembles and checks quality; sales/marketing identifies and sells to customers; finance/accounting prepares statements and pays creditors; HR hires and evaluates staff. Figure 2.1 shows order fulfillment crossing sales, accounting, and manufacturing, so local speed is insufficient if handoffs fail.
@@ -49,6 +80,24 @@ A business process is a logically related set of tasks carrying material, inform
 IT can automate an existing manual step or enable a different process by changing information flow, running formerly sequential steps in parallel, removing decision delay, and supporting a new business model. Final slide 9 adds three AI roles: **assist**, where a person performs the process and AI retrieves, summarizes, drafts, or recommends; **automate**, where rules/models complete repeatable steps and people handle exceptions; and **agent**, where AI executes a defined workflow through tools under permissions, monitoring, review, and escalation.
 
 ### Slides 10–19 · match the system to the management question
+
+#### Reverse-map the question
+
+- “Was today's payroll completed?” → {{TPS}}
+- “How did quarterly product sales compare with plan?” → {{MIS}}
+- “What happens to production if demand doubles?” → {{DSS}}
+- “How may the business and its KPIs change in five years?” → {{ESS}}
+
+> [!DEFINITION]
+> **BI** is the broad data-and-analysis capability. MIS, DSS, and ESS apply it to different management questions. Also distinguish the academic field called MIS from the specific reporting-system category called MIS.
+
+#### Figure notes
+
+- **Figure 2.2:** time card → payroll processing → employee, management, and external outputs.
+- **Figures 2.3–2.4:** several TPS → period summary → MIS report; actual/plan `> 1` exceeds plan and `< 1` misses it.
+- **Figure 2.5:** vessel, port, fuel, charter, and expense data + analytical model → bid, vessel, loading, and speed alternatives.
+
+#### Explanation
 
 **TPS** serves operational staff and managers by performing and recording routine daily transactions such as order entry, payroll, and shipping. It answers predefined, structured questions and exposes operational status and external relationships. Figure 2.2 follows a time card into payroll processing, paychecks, management reports, and legally relevant outputs; accuracy matters beyond the firm.
 
@@ -60,6 +109,24 @@ IT can automate an existing manual step or enable a different process by changin
 
 ### Slides 20–27 · connect functions and organizations
 
+#### Enterprise-application map
+
+| System | Boundary connected | Central question | Failure risk |
+| --- | --- | --- | --- |
+| ERP | Internal functions and levels | Can operations share data and process? | Bad standardization, migration error, resistance |
+| SCM | Supplier, purchasing, production, logistics | Can the right quantity move quickly and cheaply? | Partner data/process mismatch |
+| CRM | Sales, marketing, service, customer | Can the complete relationship improve retention and revenue? | Fragmented touchpoints, bad customer data |
+| KMS | Employees, experts, external knowledge | Can know-how be captured and applied where needed? | Isolated, lost, or stale knowledge |
+
+**Cloud ERP pair:** standardized process/shared data/API/continuous update/embedded AI **versus** subscription, migration, integration, skills, and vendor-dependence risk.
+
+**Walmart SCM loop:** `sense → predict → act → learn → control`. Without control, faster automation can spread an error faster.
+
+> [!EXAM]
+> ERP is not the name for SCM, CRM, and KMS together. **Enterprise applications** is the umbrella; ERP/enterprise systems are one type centered on shared internal data and processes.
+
+#### Explanation
+
 Enterprise applications span functions, processes, management levels, and sometimes organizational boundaries. Figure 2.6 places ERP/enterprise systems, SCM, CRM, and KMS around sales, manufacturing, finance, HR, customers, and suppliers. The purpose is shared information and cross-functional execution, not merely a larger database.
 
 An **enterprise system/ERP** collects functional data in a central repository, resolves fragmentation, coordinates daily activity, improves order response and accuracy, and gives managers an organization-wide operating and planning view. Final slide 23 updates the architecture to cloud ERP: standardized processes, shared data, APIs, analytics, continuous service updates, and embedded copilots/agents. Subscription cost, configuration, migration, integration, skills, and vendor dependence still require governance.
@@ -69,6 +136,18 @@ An **enterprise system/ERP** collects functional data in a central repository, r
 **CRM** integrates sales, marketing, and service interactions to optimize revenue, satisfaction, retention, profitable relationships, and sales. **KMS** captures and applies internal expertise, makes it available where work and decisions need it, and links to external knowledge. Without it, know-how can remain in individual minds or disappear. The next note returns to knowledge management in depth.
 
 ### Slides 28–29 · name the digital boundary correctly
+
+#### Scope note
+
+`Intranet (employees) → extranet (authorized partners) → e-business (all major digital processes) ⊃ e-commerce (online buying/selling)`
+
+> [!QUIZ]
+> A company gives suppliers restricted access to inventory and gives customers online purchasing. Name each activity.
+
+> [!ANSWER]
+> Supplier-only access is an **extranet**; online buying and selling is **e-commerce**. Both may sit inside the broader **e-business** use of digital technology across processes.
+
+#### Explanation
 
 An **intranet** is an employee-only network or site using Internet standards; an **extranet** exposes authorized areas to vendors or suppliers, often for supply-chain coordination. The labels are less common now, but the access boundary remains useful. **E-business** is the broad use of digital and Internet technologies across major business processes; **e-commerce** is the buying/selling subset; **e-government** applies Internet technology to public information and services for citizens, employees, and businesses.
 

@@ -35,6 +35,15 @@ objectives:
 
 [Open the Chapter 3 exam deck](/materials/mis-exam-slides/ch03_18ed.pdf) · Every slide is included below in sequence, grouped by argument rather than broken into isolated page summaries. The existing sections after this companion add one connected strategy example and retrieval practice.
 
+> [!EXAM]
+> **Chapter 3 in one line:** read structure, culture, politics, and environment → explain how IT changes cost, authority, and boundaries → diagnose competitive pressure → locate a value-chain intervention → align a defensible strategy.
+
+### Note board · default strategy-answer sequence
+
+`Organization diagnosis → industry pressure (five forces) → internal activity (value chain) → IS capability → organizational complement → metric → imitation/sustainability test`
+
+==yellow:“Use AI” is not a strategy. Name the force, activity, changed cost/quality/speed/experience, and the reason competitors cannot easily copy the result.==
+
 | Slides | What the deck covers in order |
 | --- | --- |
 | 1–3 | Video cases, nine objectives, and PepsiCo's Doritos Silent opening case |
@@ -46,6 +55,27 @@ objectives:
 
 ### Slides 1–18 · understand the organization before prescribing technology
 
+#### Technical versus behavioral view
+
+| View | Organization as | Strength | Easy to miss |
+| --- | --- | --- | --- |
+| Technical | Formal structure transforming capital/labor into outputs | Input/output and efficiency | Conflict, rights, culture, resistance |
+| Behavioral | Social balance of rights, duties, relationships, hierarchy, conflict | Real change and politics | Quantifiable production relation |
+
+#### Six-part organization diagnosis
+
+- **Structure:** entrepreneurial, machine, divisional, professional, adhocracy.
+- **Routine/process:** individual SOPs combine into processes; processes combine into the firm.
+- **Politics:** interests clash when information, budget, and authority move.
+- **Culture:** taken-for-granted beliefs about what, how, where, and for whom work is done.
+- **Environment:** the firm senses and influences customer, regulation, technology, and economy.
+- **Management choice:** standardization, authority, reward, and pace change the outcome of the same tool.
+
+> [!EXAMPLE]
+> Doritos Silent matters as `gamer distraction → 5,000+ crunch samples → AI/ML software → segment experience → brand/sales`, not as “PepsiCo used AI.”
+
+#### Explanation
+
 The video cases point to GE's industrial Internet and the NBA's Akamai streaming delivery. Nine objectives move from technical/behavioral views and organizational features through IS impacts, competitive forces, value chain, synergies/core competencies/network economics, AI strategy, strategic-system challenges, and careers. The opening PepsiCo case begins with a narrow customer problem: gamers were distracted by other people's Doritos crunching, while consumers liked the product's crunch. Developers analyzed more than 5,000 crunch sounds with AI/ML to create Doritos Silent software, aiming to preserve appeal in the gaming segment and support sales. The strategic value comes from linking a technology to a segment and product experience, not from AI alone.
 
 Figures 3.1–3.3 establish two complementary views. Technically, an organization is a formal social structure transforming environmental capital and labor into products and services, with outputs and feedback. Behaviorally, it is a historically balanced collection of rights, privileges, duties, relationships, hierarchy, contracts, rules, and conflict resolution. IT and the organization influence each other through structure, process, politics, culture, environment, and managerial choices; prediction is difficult because people and institutions make the organization less mechanically adjustable.
@@ -56,6 +86,24 @@ Organizations depend on and influence their environments. IS can scan the enviro
 
 ### Slides 19–27 · trace costs, authority, and resistance
 
+#### Two economic theories
+
+| Theory | Cost reduced | IT contribution | Possible organization change |
+| --- | --- | --- | --- |
+| Transaction cost | Search, contract, purchase, market monitoring | Cheaper partner discovery and coordination | More outsourcing, smaller boundary |
+| Agency theory | Internal supervision and coordination | Wider, faster performance information | Wider span, fewer layers |
+
+**Flattening chain:** `wider information access → more lower-level judgment → fewer decision layers → wider managerial span`. Data does not automatically delegate authority.
+
+#### Resistance map
+
+`Innovation ↔ task ↔ structure ↔ people/culture/politics`
+
+> [!CAUTION]
+> Do not write only “employees dislike change.” Identify who loses information, expertise, budget, approval authority, or job identity; then distinguish training, participation, incentive, role redesign, and phased transition responses.
+
+#### Explanation
+
 IT changes the relative cost of capital, labor, and information. **Transaction cost theory** explains why firms internalize work when searching, contracting, monitoring, and buying through markets is expensive. Networks lower some market transaction costs, making outsourcing and smaller firm boundaries more attractive. **Agency theory** treats the firm as contracts among self-interested agents who require management and supervision; information can lower agency costs and allow wider span without adding the same number of managers.
 
 Behaviorally, faster information and wider span can flatten the hierarchy, move decisions downward, reduce management layers, and give knowledge/competence more authority than formal position. Figure 3.6 shows faster paths and fewer layers, but empowerment is an organizational choice, not an automatic property of a network.
@@ -64,6 +112,25 @@ Systems redistribute access to information and therefore affect politics, tasks,
 
 ### Slides 28–36 · diagnose the competitive pressure before choosing a response
 
+#### Five-forces question table
+
+| Force | Diagnostic question | What IS may change |
+| --- | --- | --- |
+| Rivalry | How intense is price, quality, speed competition? | Cost, quality, experience, response time |
+| Entrants | Which barriers, brands, or scale advantages exist? | Data, platform, network, switching cost |
+| Substitutes | Can another method satisfy the same need? | Bundling, differentiation, convenience |
+| Customers | Can buyers compare, switch, and pressure price? | Personalization, loyalty, CRM, switching cost |
+| Suppliers | Are alternatives available and bargaining positions balanced? | Visibility, diversification, joint planning |
+
+**Four responses:** `low-cost leadership / differentiation / niche focus / customer-supplier intimacy`.
+
+> [!EXAM]
+> Answer formula: `one force → one response → required information/process → metric → imitation risk`. Listing strategy names is not analysis.
+
+**Smart product/IoT margin:** connected sensors may differentiate, raise switching costs, or deter entry, but standards can enable rivals and connection adds security/data responsibility.
+
+#### Explanation
+
 Porter's model examines traditional competitors, new entrants, substitutes, customers, and suppliers. Existing rivals continuously improve offerings and efficiency; entrants may have new equipment and staff but weak brands or face high barriers; substitutes become attractive when price/value shifts; powerful customers can switch or force price competition; powerful suppliers can raise input costs faster than the firm can raise prices. Figure 3.8 places direct rivals in the same industry while the other four forces apply pressure around it.
 
 Four IS-enabled responses are: **low-cost leadership** (Walmart's continuous replenishment/efficient response); **product differentiation** and mass customization (Google, Nike, Apple); **focus on a market niche** using detailed data (Hilton OnQ); and **customer/supplier intimacy** that creates loyalty and switching cost (Toyota, Amazon, Starbucks). Do not name a strategy without connecting it to the diagnosed force.
@@ -71,6 +138,25 @@ Four IS-enabled responses are: **low-cost leadership** (Walmart's continuous rep
 The Internet transforms some industries and intensifies rivalry through universal standards and lower entry, while also enabling brand and loyalty building. IoT turns connected sensor-equipped products such as fitness equipment and health trackers into information-rich services. Smart products can differentiate, raise switching costs, discourage entrants, or reduce supplier power, while also provoking stronger rivalry.
 
 ### Slides 37–47 · locate value inside and beyond the firm
+
+#### Expanding scope
+
+`Internal value chain → linked partner chains → value web → cross-industry business ecosystem`
+
+| Concept | Core idea | Exam question |
+| --- | --- | --- |
+| Value chain | Primary/support activities add value | Which activity should IS improve? |
+| Value web | Independent firms synchronize chains | How do partners respond to demand/supply? |
+| Synergy | Units combine output, market, expertise | Where is the whole greater than parts? |
+| Core competence | Difficult-to-copy world-class knowledge/activity | How is it shared across units? |
+| Network economics | More participants can raise value for all | Why do scale and installed base matter? |
+| Virtual company | Partners coordinate without owning every asset | How does the network cross boundaries? |
+| Ecosystem/platform | Keystone and niche firms are interdependent | Who sets rules, depends, and captures value? |
+
+> [!DEFINITION]
+> A **value web** emphasizes synchronized value chains, often within an industry. A **business ecosystem** extends to cross-industry platform participants and their broader interdependence.
+
+#### Explanation
 
 The **value chain** treats a firm as primary and support activities that add value and reveals where IS can improve efficiency or stakeholder intimacy. Benchmarking and best practices help set a reference. Unlike the five-forces diagnosis, the value chain gives a more specific place to intervene. Figure 3.9 includes both the firm's activities and value partners.
 
@@ -81,6 +167,25 @@ A firm's chain links to suppliers, distributors, and customers. A **value web** 
 Network-based strategies include network economics, virtual companies, and ecosystems. Under **network economics**, adding a participant can cost almost nothing while increasing value for all, unlike ordinary diminishing returns; installed user bases and communities therefore matter. A **virtual company** uses networks to coordinate other firms' production and distribution without owning all factories or locations—Li & Fung is the deck's example. A **business ecosystem** is a loosely coupled, interdependent set of industries and firms. Keystone firms such as major platform owners supply the platform; niche firms depend on it and seek profitable roles. Ecosystems cross industry boundaries, whereas a value web is usually framed around linked value chains in an industry. Figure 3.11 shows competition among ecosystems and dense IT-enabled interactions.
 
 ### Slides 48–50 · AI must fit a defensible strategy
+
+#### AI strategy checklist · F-V-D-A
+
+- **Force:** which competitive pressure changes?
+- **Value activity:** which primary/support activity changes?
+- **Defensibility:** why are the data, process, relationship, or learning effect hard to copy?
+- **Alignment:** does it fit structure, culture, skill, accountability, and metric?
+
+> [!FLASHCARD]
+> Q: Why may strategic-system advantage fail to last?
+> A: Rivals imitate or retaliate, technology becomes an industry requirement, and weak complementary assets or alignment erase differentiation.
+
+> [!QUIZ]
+> A delivery platform adds AI recommendations. What else is required before this becomes a strategy explanation?
+
+> [!ANSWER]
+> Identify the force, the changed activity for customers/couriers/restaurants, required data and process, metrics, bias/accountability controls, and the difficult-to-copy data, relationship, or learning effect.
+
+#### Explanation
 
 The deck asks students to apply AI to both the value chain and Porter's forces: identify the activity or force, show the changed cost/experience/information/relationship, and test whether the result is hard to copy. Strategic systems attract retaliation and imitation, so an advantage may become merely a survival requirement. Alignment requires strategic analysis of industry structure, the firm's and industry's value chains, capabilities, and management choices—not a technology shopping list.
 
