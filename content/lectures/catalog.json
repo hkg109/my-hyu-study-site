@@ -28,14 +28,9 @@
           "order": 2,
           "subjects": [
             {
-              "id": "subject-muhy9cpw",
-              "name": "정시개-영어",
-              "order": 1
-            },
-            {
               "id": "subject-muhz2xir",
-              "name": "정시개-한국어",
-              "order": 3
+              "name": "정시개 · 경영정보시스템",
+              "order": 1
             },
             {
               "id": "subject-mis-translation",

@@ -4,7 +4,7 @@ description: "조직 적합성 → 비용 변화 → 5대 경쟁요인 → 가�
 order: 4
 published: true
 duration: 75
-tags: [정시개, 3장, 경쟁요인, 가치사슬, 전략]
+tags: [정시개, MIS, 3장, 경쟁요인, 가치사슬, 전략]
 objectives:
   - 조직과 정보시스템이 서로 영향을 주는 과정을 설명한다.
   - 거래비용과 대리인비용을 구분한다.
@@ -14,9 +14,13 @@ objectives:
 
 ## 읽기 지도 · 유용한 시스템에서 전략적 선택으로
 
-[English](/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/lecture-04) · [이전: 2장 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [다음: 4장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
+[이전: 2장 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [다음: 4장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-**이 장의 질문:** 경쟁사도 비슷한 기술을 살 수 있는데 무엇이 전략적 가치를 만드는가? 먼저 시스템을 사용할 조직을 이해하고, 그다음 경쟁 환경에서의 선택을 살핀다.
+**핵심 질문:** 경쟁사도 비슷한 기술을 살 수 있는데 무엇이 전략적 가치를 만드는가?
+
+**선수 개념:** 1장의 사회기술적 관점과 2장의 프로세스·지식·거버넌스를 사용해 조직의 실행 조건을 분석한다.
+
+먼저 시스템을 사용할 조직을 이해하고, 그다음 경쟁 환경에서의 선택을 살핀다.
 
 **출처:** 제공된 *Management Information Systems* 18판 3장. 제공된 17판 PDF는 2장까지이며, 3장은 목차에만 나오고 본문은 없다. 이 노트의 참조는 모두 18판 기준이다. **책 = 인쇄 번호, PDF = 책 + 29.**
 
@@ -47,7 +51,7 @@ objectives:
 | 슬라이드 | PDF의 진행 순서 |
 | --- | --- |
 | 1–3 | 영상 사례·아홉 학습목표·PepsiCo Doritos Silent 사례 |
-| 4–18 | IT-조직 양방향 관계 → 정의 → 루틴·정치·문화·환경·파괴적 기술·구조·기타 특성 |
+| 4–18 | IT-조직 양방향 관계 → 정의 → 루틴·정치·문화·환경·파괴적 기술(disruptive technology)·구조·기타 특성 |
 | 19–27 | 경제·거래비용·대리인·행동 영향 → 조직 평탄화 → 저항 → 인터넷 → 설계 점검표 |
 | 28–36 | 포터 5대 경쟁요인 → 네 IS 전략 → 인터넷 영향 → 스마트 제품·IoT |
 | 37–47 | 가치사슬·가치웹 → 시너지·핵심역량 → 네트워크 경제 → 가상기업 → 생태계·플랫폼 |

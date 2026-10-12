@@ -4,6 +4,20 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   devIndicators: false,
+  async redirects() {
+    return [
+      {
+        source: "/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/:document",
+        destination: "/lectures/grade-01/semester-muheifg4/subject-muhz2xir/:document",
+        permanent: true,
+      },
+      {
+        source: "/practice/grade-01/semester-muheifg4/subject-muhy9cpw/:document",
+        destination: "/practice/grade-01/semester-muheifg4/subject-muhz2xir/:document",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [{
       source: "/(.*)",

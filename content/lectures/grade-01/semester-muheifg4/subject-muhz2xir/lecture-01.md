@@ -4,7 +4,7 @@ description: "변화의 압력 → 기업의 목표 → 정보의 흐름 → 조
 order: 1
 published: true
 duration: 65
-tags: [정시개, 1장, 디지털 기업, 보완 자산]
+tags: [정시개, MIS, 1장, 디지털 기업, 보완 자산]
 objectives:
   - 경영·조직·기술을 연결하여 정보시스템의 가치를 설명한다.
   - 입력·처리·출력·피드백을 실제 업무에 대응시킨다.
@@ -15,7 +15,11 @@ objectives:
 
 **전체 흐름:** **1장 가치** → 2장 A 업무와 시스템 → 2장 B 협업과 지식 → 3장 전략 → 4장 윤리.
 
-[같은 단원 영어로 읽기](/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/lecture-01) · [다음: 2장 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
+[다음: 2장 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
+
+**핵심 질문:** 기업은 왜 정보시스템에 투자하며, 같은 기술을 도입하고도 성과가 달라지는 이유는 무엇인가?
+
+**선수 개념:** 특별한 선수 지식은 필요하지 않다. 데이터가 목적에 맞게 처리되면 의사결정에 쓸 수 있는 정보가 된다는 흐름부터 시작한다.
 
 기준은 *Management Information Systems: Managing the Digital Firm* **18판 1장**이다. 제공된 **17판 Global Edition 1장**의 대응 부분도 연결한다. 아래 설명과 연습 사례는 교과서를 공부하기 위해 새로 작성한 해설이며, 본문을 그대로 옮긴 것이 아니다.
 

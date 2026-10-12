@@ -4,7 +4,7 @@ description: "주문 처리 → TPS·MIS·DSS·ESS → ERP·SCM·CRM·KMS. 17·1
 order: 2
 published: true
 duration: 55
-tags: [정시개, 2장, 비즈니스 프로세스, TPS, ERP]
+tags: [정시개, MIS, 2장, 비즈니스 프로세스, TPS, ERP]
 objectives:
   - 부서 간 프로세스를 추적하고 자동화와 재설계를 구분한다.
   - 의사결정 질문에 맞춰 TPS·MIS·DSS·ESS를 선택한다.
@@ -13,7 +13,11 @@ objectives:
 
 ## 읽기 지도 · 2장의 앞부분
 
-[English](/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/lecture-02) · [이전: 1장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [다음: 2장 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
+[이전: 1장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [다음: 2장 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
+
+**핵심 질문:** 하나의 주문이 여러 부서를 지나갈 때 어떤 정보시스템이 어떤 결정과 연결을 맡아야 하는가?
+
+**선수 개념:** 1장의 데이터·정보 구분과 입력–처리–출력–피드백 흐름을 알고 있어야 한다.
 
 1장에서 **왜 정보시스템이 필요한지** 배웠다. 이제 **어떤 업무에서 어떻게 쓰이는지** 살펴본다. 이 노트는 두 판본의 공통 기반을 다루고, 2장 B는 협업·지식관리·IS 조직으로 이어진다. 판본별로 같은 내용을 반복하는 대신 두 노트가 합쳐서 2장 전체를 설명한다.
 

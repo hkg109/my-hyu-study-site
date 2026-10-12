@@ -4,7 +4,7 @@ description: "공동 목표 → 도구 선택 → 재사용할 지식 → 거버
 order: 3
 published: true
 duration: 60
-tags: [정시개, 2장, 협업, 지식관리, 거버넌스]
+tags: [정시개, MIS, 2장, 협업, 지식관리, 거버넌스]
 objectives:
   - 시간·장소·비용·조직 조건으로 협업 도구를 평가한다.
   - 암묵지·명시지와 전사 KMS·KWS·지능적 기법을 구분한다.
@@ -13,7 +13,11 @@ objectives:
 
 ## 읽기 지도 · 기록 연결에서 이해 공유로
 
-[English](/lectures/grade-01/semester-muheifg4/subject-muhy9cpw/lecture-03) · [이전: 2장 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [다음: 3장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
+[이전: 2장 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [다음: 3장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
+
+**핵심 질문:** 대화와 문서를 어떻게 공동 행동과 다시 사용할 수 있는 조직 지식으로 바꿀 수 있는가?
+
+**선수 개념:** 2장 A의 비즈니스 프로세스, 전사 애플리케이션, 관리 수준별 시스템 구분을 사용한다.
 
 2장 A에서는 거래와 프로세스를 연결했다. 그러나 데이터베이스를 공유한다고 직원이 경험을 나누거나 같은 목표를 향해 일하는 것은 아니다. 이제 상호작용을 **공동 행동과 재사용할 지식**으로 바꾸는 방법을 배운다.
 
