@@ -1,0 +1,7 @@
+[project]
+name = "my-hyu-study-site"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "docling>=2.137.0",
+]
