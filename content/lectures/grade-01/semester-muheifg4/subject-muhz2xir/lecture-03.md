@@ -1,431 +1,854 @@
 ---
-title: "2장 B · 협업을 조직의 지식으로 바꾸기"
-description: "공동 목표 → 도구 선택 → 재사용할 지식 → 거버넌스. 18판에서 확장된 지식관리까지 연결하는 2장 후반부."
+title: "2장 B · 협업에서 조직 지식과 IS 기능까지"
+description: "협업과 소셜 비즈니스에서 지식관리 가치사슬·KMS·책임 있는 AI·IT 거버넌스까지 이어지는 Chapter 2 후반부 필기."
 order: 3
 published: true
-duration: 60
-tags: [정시개, MIS, 2장, 협업, 지식관리, 거버넌스]
+duration: 85
+tags: [정시개, MIS, 2장, 협업, 지식관리, IT 거버넌스]
 objectives:
-  - 시간·장소·비용·조직 조건으로 협업 도구를 평가한다.
-  - 암묵지·명시지와 전사 KMS·KWS·지능적 기법을 구분한다.
-  - IS 부서의 역할과 IT 거버넌스를 설명한다.
+  - 협업 성과를 만드는 문화·프로세스·도구의 조건을 설명한다.
+  - 지식관리 가치사슬과 주요 KMS 유형을 구분한다.
+  - IS 부서·IT 거버넌스·책임 있는 AI의 역할을 연결한다.
 ---
 
-## 읽기 지도 · 기록 연결에서 이해 공유로
+## 학습 경로
 
 [이전: 2장 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [다음: 3장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-**핵심 질문:** 대화와 문서를 어떻게 공동 행동과 다시 사용할 수 있는 조직 지식으로 바꿀 수 있는가?
+**범위:** Chapter 2 슬라이드 30–73 · Collaboration → Knowledge → IS Function
 
-**선수 개념:** 2장 A의 비즈니스 프로세스, 전사 애플리케이션, 관리 수준별 시스템 구분을 사용한다.
+[Chapter 2 원본 PDF](/materials/mis-exam-slides/ch02_17ed.pdf) · [Chapter 2 확장 PDF](/materials/mis-exam-slides/ch02_17ed_final.pdf)
 
-2장 A에서는 거래와 프로세스를 연결했다. 그러나 데이터베이스를 공유한다고 직원이 경험을 나누거나 같은 목표를 향해 일하는 것은 아니다. 이제 상호작용을 **공동 행동과 재사용할 지식**으로 바꾸는 방법을 배운다.
+## Slide 30 — What Is Collaboration?
 
-| 읽을 곳 | 18판 책 / PDF | 17판 책 / PDF | 찾을 내용 |
-| --- | --- | --- | --- |
-| §§2.4–2.6 협업과 도구 | 47–55 / 76–84 | 86–94 / 87–95 | 목적·문화·도구의 기능 |
-| §2.7 도구 평가 | 55–56 / 84–85 | 94–96 / 95–97 | 시간·공간 행렬과 선택 절차 |
-| §2.8 지식관리 | 57–60 / 86–89 | KMS 개요 83–84 / 84–85 | 18판에서 확장된 부분 |
-| §2.9 IS 기능 | 61–62 / 90–91 | 96–98 / 97–99 | 역할·결정권·책임 |
-| 진로·마지막 사례·복습 | 62–68 / 91–97 | 98–105 / 99–106 | 2장 전체 적용 |
+- collaboration은
+  - short-term / long-term
+  - informal / formal(team)
 
-**출처 기준:** 제공된 *Management Information Systems* 18판과 17판 Global Edition. 책은 인쇄 번호, PDF는 뷰어 번호다. 아래는 학습 해설과 직접 구성한 연습 문제다. 제공된 17판 파일에는 뒤쪽 지식관리 장의 본문이 없으므로 목차에 나온다는 이유로 그 내용까지 읽었다고 가정하지 않는다.
+### Importance가 커진 이유
+- changing nature of work
+- professional **interaction jobs** 증가
+- firm organization 변화
+- firm scope 변화
+- innovation 강조
+- work culture 변화
 
-## 시험 PDF · 2장 전체 흐름 B (final 30–73쪽)
+> **현대 업무는 개인 작업보다 interaction과 collaboration 비중이 커짐**
 
-[기존 61장 PDF 열기](/materials/mis-exam-slides/ch02_17ed.pdf) · [확장된 73장 final PDF 열기](/materials/mis-exam-slides/ch02_17ed_final.pdf) · 앞 강의에 기존본과 final의 정확한 페이지 대응을 적어 두었다.
+---
 
-> [!EXAM]
-> **2장 B 한 줄 논리:** 협업은 도구가 아니라 공동 성과를 만드는 능력이고 → 대화·경험을 지식 가치사슬로 남겨야 하며 → 목적에 맞는 KMS와 거버넌스가 지식을 실제 행동으로 바꾼다.
+## Slide 31 — What Is Social Business?
 
-### 협업에서 조직학습까지 이어지는 흐름
+- internal / external **social networking platforms** 활용
+- employees / customers / suppliers engagement
+- interaction 심화 + information sharing 가속
+- customer와의 conversation 강화
+- **information transparency** 필요
 
-`협업 → 지식 획득 → 저장 → 전파 → 적용 → 피드백·조직학습`
+### Expected Benefits
+- operational efficiency
+- innovation
+- faster decision making
 
-==green:저장만 된 자료는 지식관리의 완성이 아니다. 승인된 사람이 찾고, 이해하고, 결정·업무에 적용해 행동이 달라져야 가치가 생긴다.==
+> **Social Business = social platform을 business interaction과 information sharing에 활용**
 
-| final 슬라이드 | PDF의 진행 순서 |
-| --- | --- |
-| 30–41 | 협업·소셜 비즈니스 → 인간-에이전트 팀 → 편익·요건 → 환경 영향 → 문화 → 도구와 평가 행렬 |
-| 42–53 | 지식의 가치 → 지식 차원 → 조직학습 → 지식 가치사슬 → 생성형 AI → 실천공동체 |
-| 54–67 | 세 KMS 계열 → 전사 콘텐츠·AI 준비 → 전문가·LMS → 지식근로자·워크스테이션 → 지능기법 → 책임 있는 AI |
-| 68–73 | IS 부서·거버넌스 → 현대 운영모형 → 진로·현재 환경 → 전체 학습점검 |
+---
 
-### 30–41쪽 · 협업은 조직 능력이다
+## Slide 32 — Collaboration Is Expanding to Human-Agent Teams
 
-#### 협업 성과식
+- collaboration 범위가 **people + AI agents**로 확대
+- effective teams는 AI 사용법 / mistakes / quality standards를 공유
+- agent workflow를 문서화
+  - human handoff
+  - review criteria
+  - authority
 
-`협업 성과 = 문화·구조·보상 × 알맞은 도구 × 명확한 역할·품질 기준`
+### Management
+- people
+- data
+- applications
+- AI agents
+를 함께 coordinate
 
-- **사람 협업:** 목표·역할·의사결정권·갈등해결·성과 기준을 합의한다.
-- **인간-에이전트 협업:** 워크플로, 사람에게 넘기는 지점, 검토 기준, 변경 권한을 문서화한다.
-- **도구 선택:** 같은/다른 시간 × 같은/다른 장소의 2×2 행렬로 필요한 상호작용부터 정한다.
-- **거버넌스:** 신원, 권한, 보존, 외부공유, 데이터 위치, 검색·AI 출처, 사람 검토를 본다.
-- **성과 측정:** 접속자 수보다 검색 성공률·처리시간·품질·직원경험·사업결과를 본다.
+> **Human-Agent Team의 핵심 = workflow + handoff + review + authority를 명확히 정의**
 
-> [!CAUTION]
-> 채팅 메시지가 많다고 협업이 좋은 것은 아니다. 정보 과부하·정치적 갈등·불명확한 책임 때문에 대화량이 늘면서 결정 품질은 오히려 떨어질 수 있다.
+---
 
-#### 지속가능성까지 포함한 투자 판단
+## Slide 33 — Business Benefits of Collaboration and Teamwork
 
-AI·클라우드의 편익 옆에 `전력·탄소·물·냉각·하드웨어·공급망`을 같이 적는다. 효율이 좋아져도 총사용량이 더 빨리 늘면 전체 환경 부담은 증가할 수 있으므로 **단위당 효율과 총량을 함께** 본다.
+| Benefit | 효과 |
+|---|---|
+| **Productivity** | knowledge sharing / faster problem solving |
+| **Quality** | quality issue 신속 해결 |
+| **Innovation** | product / service ideas 증가 |
+| **Customer Service** | complaints 빠르게 처리 |
+| **Financial Performance** | 위 개선이 재무성과로 연결 |
 
-#### 문화·도구·성과가 연결되는 방식
+> **Collaboration은 productivity / quality / innovation / service를 통해 firm performance에 영향**
 
-| 구분 | 협업 | 소셜 비즈니스 |
-| --- | --- | --- |
-| 중심 | 공동 목표를 달성하기 위한 조정 | 소셜 플랫폼을 이용한 참여와 정보교환 |
-| 참여자 | 개인·팀·부서 | 직원·고객·공급업체까지 확장 |
-| 기대 결과 | 생산성·품질·혁신·고객서비스 | 운영 효율·빠른 의사결정·관계 강화 |
-| 주의점 | 메시지 양이 많다고 협업이 좋은 것은 아님 | 플랫폼 설치가 투명한 문화까지 만들지는 않음 |
+---
 
-**성과가 생기는 연결고리**
+## Slide 34 — Figure 2.7 Requirements for Collaboration
 
-`공동 목표 → 협업을 허용하는 구조·문화 → 적합한 도구 → 참여와 지식공유 → 측정 가능한 업무성과`
+### Collaboration Capability
+- open culture
+- decentralized structure
+- breadth of collaboration
 
-- **구조:** 부서 경계를 넘는 팀과 의사결정권을 마련한다.
-- **문화:** 실수와 지식을 공유해도 불이익을 받지 않게 한다.
-- **리더십:** 관리자가 팀을 실제 의사결정에 참여시키고 기여에 보상한다.
-- **기술:** 시간·장소·업무 유형에 맞는 채널과 공동작업 기능을 제공한다.
+### Collaboration Technology
+- implementation / operations 지원
+- strategic planning 지원
 
-> [!CAUTION]
-> 그림 2.7의 편익은 자동 결과가 아니다. 정치적 갈등과 명령·통제 문화가 그대로라면 새 협업 도구는 기존 문제를 더 빠르게 전달할 뿐이다.
+↓
 
-**인간-에이전트 팀에서 추가할 통제**
+**Collaboration Quality**
 
-| 통제 질문 | 문서화할 내용 |
-| --- | --- |
-| 에이전트는 어디까지 실행하는가? | 허용된 데이터·도구·행동 범위 |
-| 언제 사람에게 넘기는가? | 금액·위험·불확실성 기준과 중단 조건 |
-| 누가 결과를 검토하는가? | 검토자, 품질 기준, 승인 기록 |
-| 누가 절차를 바꿀 수 있는가? | 변경권한, 시험, 배포·롤백 책임 |
+↓
 
-final 32쪽의 핵심은 협업의 대상이 사람만이 아니라 ==사람·데이터·애플리케이션·에이전트의 조정==으로 넓어졌다는 점이다. 효과적인 AI 사용자는 활용법뿐 아니라 실패와 품질 기준도 팀에 공유한다.
+**Firm Performance**
 
-**도구 선택은 제품명이 아니라 여섯 질문으로 한다.**
+> **좋은 collaboration = 적절한 organizational culture/structure + technology**
 
-1. 해결할 협업 문제는 무엇인가?
-2. 동시·비동기, 같은 장소·다른 장소 중 어떤 조건인가?
-3. 편익이 비용보다 큰가?
-4. 신원·권한·보존·외부 공유·데이터 위치 위험은 통제되는가?
-5. 사용자가 구현·교육·업무변화에 참여하는가?
-6. 공급업체와 실제 성과를 어떻게 평가할 것인가?
+---
 
-측정치는 로그인 수보다 **실제 사용률·검색 성공률·처리시간·품질·직원경험·사업성과**에 가깝게 잡는다. AI·클라우드라면 여기에 에너지·탄소·물·냉각·하드웨어·공급망을 더하고, 단위당 효율과 총사용량을 함께 본다.
+## Slide 35 — Digital Infrastructure Has an Environmental Footprint
 
-### 42–53쪽 · 데이터와 경험을 쓸 수 있는 지식으로 만들기
+### Business Issue
+- AI / cloud → data-center computing, electricity, cooling, water, hardware 수요 증가
 
-#### 개념 사다리
+### Evaluation Point
+- energy
+- carbon
+- water
+- hardware
+- supply-chain impacts
 
-| 단계 | 의미 | 예시 |
-| --- | --- | --- |
-| 데이터 | 가공 전 관찰 | 고객 문의 120건 |
-| 정보 | 목적에 맞게 정리 | 배송 지연 문의가 45% |
-| 지식 | 원인·규칙·맥락을 이해 | 특정 지역의 재고 동기화 지연이 원인 |
-| 지혜 | 언제·어떻게 적용할지 판단 | 즉시 수정과 장기 시스템 개선을 구분 |
+### Efficiency
+- cleaner energy + more efficient hardware 중요
 
-- **명시지:** 문서·규칙·보고서처럼 표현·저장 가능한 지식.
-- **암묵지:** 숙련자의 감각·노하우처럼 말로 모두 옮기기 어려운 지식.
-- **끈적함:** 지식이 사람·문화·상황에 묶여 이동하기 어려운 성질.
-- **상황성:** 같은 절차도 언제·어디서 쓰는지에 따라 효과가 달라지는 성질.
+> **Digital investment는 service value뿐 아니라 environmental cost도 함께 평가**
 
-#### 지식이 가치가 되는 흐름
+---
 
-`획득(포착·분류) → 저장(소유자·메타데이터·권한) → 전파(검색·포털·교육) → 적용(결정·행동) → 피드백`
+## Slide 36 — Building a Collaborative Culture and Business Processes
 
-> [!EXAM]
-> 생성형 AI는 각 단계를 빠르게 할 수 있지만 신뢰를 자동으로 만들지 않는다. **출처·판본·소유자·권한·보존·품질·사람 검토**가 없으면 빠르게 찾은 답이 빠르게 퍼지는 오류가 될 수 있다.
+### 과거: Command and Control
+- teamwork / lower-level participation 가치 낮음
 
-#### 지식 가치사슬의 각 단계
+### Collaborative Business Culture
+- senior managers가 teams 활용
+- policies / products / designs / processes / systems를 team 기반으로 운영
+- manager의 역할 = **build teams**
 
-지식은 파일 하나가 아니라 조직이 반복해서 사용할 수 있는 **맥락 있는 판단 자원**이다.
+### Key
+- collaboration technology만 도입해도 collaboration이 자동으로 생기지는 않음
+- culture / reward / process가 필요
 
-| 지식의 성질 | 뜻 | 관리상 의미 |
-| --- | --- | --- |
-| 무형성 | 물리적 형태가 없어 직접 측정하기 어려움 | 사용·성과 지표로 가치를 확인 |
-| 사회성 | 사람 사이의 관계와 언어 속에서 형성 | 대화·멘토링·실천공동체 필요 |
-| 끈적함 | 사람·장소·문화에 묶여 이동이 어려움 | 문서만 옮기지 말고 맥락도 전달 |
-| 조건성 | 상황이 달라지면 같은 지식의 효과가 달라짐 | 적용 조건·예외·판본 기록 |
-| 네트워크 효과 | 공유·검증될수록 활용가치가 커질 수 있음 | 접근성과 품질관리를 함께 설계 |
+> **Collaboration은 technology보다 culture와 management design이 선행되어야 함**
 
-**조직학습의 순환**
+---
 
-`관찰·측정 → 시행착오와 피드백 → 지식으로 정리 → 행동·결정 변경 → 새 결과 측정`
+## Slide 37 — Tools and Technologies for Collaboration
 
-| 가치사슬 단계 | 핵심 활동 | 필요한 통제 | 생성형 AI의 보조 역할 |
-| --- | --- | --- | --- |
-| 획득 | 명시지 수집, 암묵지 인터뷰, TPS·외부자료 포착 | 수집 목적·출처·동의 | 회의 전사·문서 분류 |
-| 저장 | 저장소·스키마·판본·소유자 관리 | 권한·보존·최신성 | 중복 탐지·메타데이터 제안 |
-| 전파 | 검색·포털·위키·교육·전문가 연결 | 정보 과부하·기밀성 | 승인 자료 기반 문맥 검색 |
-| 적용 | 결정·업무·제품·서비스에 반영 | 사람 승인·예외·실행권한 | 초안·추천·업무 지원 |
-| 피드백 | 사용 결과와 오류를 다시 반영 | 모니터링·상향 보고 | 오류 패턴 요약 |
+- E-mail / IM
+- Wikis
+- Virtual worlds
+- Virtual meeting systems / telepresence
+- Cloud collaboration
+  - Google Drive / Docs
+- Microsoft Teams / SharePoint
+- Slack / Zoom
+- Google Workspace
+- Notion
+- embedded **Generative AI assistants**
+- human direction 아래 task 수행하는 **AI agents**
 
-> [!EXAM]
-> 지식관리의 끝은 ‘저장’이 아니라 **적용 후 피드백**이다. 검색이 빨라도 업무가 바뀌지 않으면 조직학습이 완성되지 않는다.
+> **Collaboration tools는 messaging → shared workspace → cloud → AI-assisted workflow로 확장**
 
-**조직·경영 자본**도 함께 필요하다.
+---
 
-- **CKO·지식관리자:** 지식의 소유권·품질·공유 체계를 책임진다.
-- **실천공동체(CoP):** 공통 전문분야의 사람들이 비공식적으로 경험을 교환하고 신입의 학습곡선을 줄인다.
-- **보상·업무시간:** 지식 공유를 부가 업무로 방치하지 않고 평가와 일정에 반영한다.
+## Slide 38 — Enterprise Social Networking Software
 
-### 54–67쪽 · 지식시스템 세 계열 구분하기
+### Capabilities
+- Profiles
+- Content sharing
+- Feeds / notifications
+- Groups / team workspaces
+- Tagging / social bookmarking
+- Permissions / privacy
 
-#### 세 계열 비교
+### Modern Platform 평가 요소
+- identity
+- information governance
+- data location
+- integration
+- accessibility
+- search quality
+- AI-generated answer quality
 
-| 계열 | 누구를 돕나 | 무엇을 하나 | 대표 예 |
-| --- | --- | --- | --- |
-| 전사 KMS | 조직 전체 | 콘텐츠 수집·분류·검색·공유·적용 | CMS, 전문가 디렉터리, LMS |
-| KWS | 지식근로자 | 새 지식·설계·분석을 생산 | CAD, VR/AR, 투자 워크스테이션 |
-| 지능기법 | 분석가·현업·시스템 | 패턴 발견·전문성 보존·해법·자동화 | 전문가시스템, ML, RAG, 에이전트 |
+> **Enterprise social platform = communication + content + workflow + governance + AI**
 
-#### AI 준비 콘텐츠 점검표 · Q-M-A-P-E
+---
 
-- **Q · Quality:** 중복·오래된 자료를 제거하고 권위 있는 판본을 정한다.
-- **M · Metadata:** 분류·날짜·민감도·업무맥락·보존정보를 기록한다.
-- **A · Access:** 원문과 같은 권한·법적 제한을 검색·AI에도 적용한다.
-- **P · Provenance:** 출처·작성일·버전이력·오류신고 경로를 남긴다.
-- **E · Evaluation:** 검색범위·정확성·기밀성·편향·업무성능을 실제 질문으로 시험한다.
+## Slide 39 — Evaluating Collaboration Tools
 
-> [!DEFINITION]
-> **RAG**는 질문과 승인된 기업 자료를 검색으로 연결해 답변 근거를 제공하는 방식이다. 검색된 자료가 부정확하거나 권한 통제가 깨지면 RAG도 안전하지 않다.
+### Two Dimensions
 
-#### 책임 있는 AI · Govern–Map–Measure–Manage
+| Dimension | 구분 |
+|---|---|
+| **Space** | remote / co-located |
+| **Time** | synchronous / asynchronous |
 
-`소유자·허용범위 결정 → 사람·데이터·오용 지도화 → 정확성·보안·편향 측정 → 통제·모니터링·사고·폐기 관리`
+### Six Steps
 
-#### 콘텐츠·지식근로자·지능기법의 역할
+| Step | 평가 내용 |
+|---|---|
+| 1 | collaboration challenges identify |
+| 2 | available solutions identify |
+| 3 | cost / benefit analyze |
+| 4 | security risks evaluate |
+| 5 | users에게 implementation / training issue 확인 |
+| 6 | vendors evaluate |
 
-| 대상 | 시스템이 해결할 문제 | 대표 기능·도구 |
-| --- | --- | --- |
-| 전사 콘텐츠 | 흩어진 자료를 조직 전체가 찾고 재사용 | CMS/ECM, 디지털자산관리, 전문가 디렉터리, LMS |
-| 지식근로자 | 새 설계·모형·전문지식 생산 | CAD, 3D 프린팅, VR·AR/MR, 투자 워크스테이션 |
-| 반복 판단·패턴 | 전문성 보존, 분류·예측·탐색·자동화 | 전문가시스템, 사례기반추론, ML, RAG, 에이전트 |
+> **Tool 선택은 기능보다 work context + cost + security + users + vendor를 함께 봐야 함**
 
-**콘텐츠 형태에 따라 관리법이 달라진다.**
+---
 
-| 형태 | 예 | 필요한 관리 |
-| --- | --- | --- |
-| 구조화 | 규칙·정형 보고서·데이터베이스 | 필드·스키마·유효성 검사 |
-| 반구조화 | 이메일·프레젠테이션·영상 | 메타데이터·태그·분류체계 |
-| 비구조화·암묵지 | 자유문서·경험·노하우 | 검색, 인터뷰, 전문가 연결, 맥락 기록 |
+## Slide 40 — Current Criteria for Collaboration Platforms
 
-반구조화·비구조화 자료가 80%라는 수치는 보편 법칙이 아니다. 조직별 자료량과 사용률을 직접 측정한다. 그림 11.8은 사용자가 관리된 콘텐츠를 등록하고 분류·검색·재사용하는 전체 구조를 보여 준다.
+| Criteria | 확인할 내용 |
+|---|---|
+| **Work Fit** | synchronous / asynchronous / remote / co-located / cross-company |
+| **Integration** | identity / calendar / documents / enterprise apps / workflow / APIs |
+| **Governance** | ownership / permissions / retention / e-discovery / data location / external sharing |
+| **AI Quality** | grounding / citations / access-aware retrieval / monitoring / human review |
+| **Adoption** | active use / search success / cycle time / quality / employee experience / outcomes |
 
-**지식근로자와 시스템의 역할 분담**
+> **Collaboration platform 평가는 Work Fit + Integration + Governance + AI Quality + Adoption**
 
-- 지식근로자는 최신 전문지식을 유지하고, 새 지식을 만들며, 내부 자문과 변화 촉진을 맡는다.
-- KWS는 강한 연산·그래픽·시뮬레이션, 외부 데이터 접근, 문서·통신, 과업별 인터페이스를 제공한다.
-- 전문가는 결과의 타당성과 적용 맥락을 판단한다. 도구가 전문적 책임을 대신하지 않는다.
+---
 
-**지능기법의 흐름**
+## Slide 41 — Figure 2.8 Time/Space Collaboration Matrix
 
-`규칙 기반 전문가시스템 → 사례기반추론·퍼지논리 → 신경망·데이터마이닝·유전알고리즘 → ML·NLP·생성형 AI·RAG·지식그래프·정책 통제 에이전트`
+| | Same Time | Different Time |
+|---|---|---|
+| **Same Place** | Face-to-face interactions | Continuous task |
+| **Different Place** | Remote interactions | Communication + coordination |
 
-> [!CAUTION]
-> 최신 기법이라고 자동으로 더 적합한 것은 아니다. 문제의 구조, 설명 가능성, 데이터 품질, 오류 비용, 사람 감독을 먼저 본다. **AI 출력은 검증할 주장이지 승인된 조직 지식이 아니다.**
+### Examples
+- Same place + same time: meeting / decision room
+- Different place + same time: video conference / IM
+- Different place + different time: e-mail / blogs / group calendars / workflow / version control
 
-### 68–73쪽 · 소유권, 거버넌스, 학습점검
+> **Collaboration technology는 Time × Space 기준으로 분류 가능**
 
-#### 역할 지도
+---
 
-| 역할 | 핵심 책임 |
-| --- | --- |
-| CIO | 기업의 정보기술·디지털 방향과 가치 |
-| CISO/CSO | 보안 위험·통제·사고 대응 |
-| CKO | 지식 획득·공유·적용 체계 |
-| CPO | 개인정보 원칙·권리·준수 |
-| CDO | 데이터 품질·표준·소유권·활용 |
-| CAIO/책임 AI 리더 | AI 포트폴리오·위험·책임 있는 사용 |
-| 시스템 분석가 | 비즈니스 문제를 정보 요구·시스템 명세로 번역 |
-| 최종사용자 | 실제 업무요구·도입·피드백·성과 공동책임 |
+## Slide 42 — Role of KMS in Business
 
-**현대 운영모형:** 아키텍처·보안·공유플랫폼·데이터표준·공급업체·신뢰성은 중앙에서 일관성을 만들고, 현업 제품팀은 성과·우선순위·프로세스·도입을 가까이에서 책임진다.
+- KMS는 software investment의 빠르게 성장하는 영역
+- knowledge / information workers 비중 큼
+- firm value의 상당 부분이 **intangible assets**와 연결
+  - knowledge
+  - brands
+  - reputation
+  - unique business processes
+- well-executed knowledge project → 높은 ROI 가능
 
-> [!FLASHCARD]
-> Q: AI 출력이 곧 조직 지식이 아닌 이유는?
-> A: 출처·맥락·정확성·권한·최신성·적용조건을 검증하고 조직이 책임 있게 승인해야 하기 때문이다.
+> **현대 기업의 핵심 자산 중 상당 부분은 physical asset이 아니라 knowledge**
 
-> [!QUIZ]
-> 클라우드 ERP, 인간-에이전트 팀, RAG 지식검색에 공통으로 필요한 관리 요소 세 가지를 적어 보자.
+---
 
-> [!ANSWER]
-> 예: **명확한 권한과 책임**, **품질·보안·접근 통제**, **모니터링·사람 검토·예외 처리**. 기술은 달라도 누가 무엇을 할 수 있고 결과를 어떻게 검증·수정하는지가 공통이다.
+## Slide 43 — Important Dimensions of Knowledge (1/5)
 
-#### IS 조직과 현업이 책임을 나누는 방식
+### Core Concepts
+- Data / Knowledge / Wisdom
+- **Tacit Knowledge / Explicit Knowledge**
 
-**IT 거버넌스**는 기술이 조직 목표를 지원하도록 전략·정책·의사결정권·책임·성과검토 방식을 정하는 체계다.
+### Four Dimensions
+- Knowledge is a **firm asset**
+- Knowledge has **different forms**
+- Knowledge has a **location**
+- Knowledge is **situational**
 
-| 중앙 IS·플랫폼 조직 | 현업 제품·프로세스 팀 | 공동 책임 |
-| --- | --- | --- |
-| 아키텍처·사이버보안·공유 플랫폼 | 성과 정의·우선순위·현장 도입 | 데이터·AI 품질과 책임 |
-| 데이터 표준·공급업체·신뢰성 | 프로세스 개선·사용자 경험 | 투자효과·위험·예외 검토 |
-| 전사 정책·공통 통제 | 실제 업무요구·피드백 | 변경관리·교육·사고 대응 |
+> **Knowledge는 단순 정보가 아니라 조직 안에서 형태·위치·상황을 갖는 asset**
 
-- **프로그래머:** 명세를 작동하는 소프트웨어로 구현한다.
-- **시스템 분석가:** 비즈니스 문제를 정보 요구와 시스템 명세로 번역한다.
-- **IS 관리자:** 사람·서비스·예산·공급업체를 조정한다.
-- **최종사용자:** 실제 업무요구, 설계 검증, 도입, 성과에 공동책임을 진다.
+---
 
-진로는 시스템 분석·제품책임·BI/데이터·보안/프라이버시·클라우드 컨설팅·AI 프로세스·지식관리로 나뉠 수 있다. 공통 역량은 **프로세스 재설계, 근거 평가, 이해관계자 소통, 데이터 문해력, 책임 있는 AI**다.
+## Slide 44 — Important Dimensions of Knowledge (2/5)
 
-## 1. 대화가 많다고 협업이 잘되는 것은 아니다
+### Knowledge Is a Firm Asset
+- intangible
+- data / information → knowledge 변환에 organizational resources 필요
+- 공유될수록 **network effects** 발생
 
-가상의 카페 체인에 단체 채팅방이 있다. 메시지는 많은데 지점들은 같은 발주 실수를 반복한다. 부족한 것은 공동 목표일 수도, 의사결정 방식일 수도, 유용한 결론을 남기는 장소일 수도 있다.
+### Explicit vs Tacit Knowledge
 
-> [!DEFINITION]
-> **협업** (collaboration)은 명시적으로 공유된 목표를 달성하기 위해 함께 일하는 것이다. **소셜 비즈니스** (social business)는 내부·외부 소셜 네트워크를 활용해 직원·고객·공급업체를 비즈니스 활동에 참여시키는 것이다.
+| | Explicit Knowledge | Tacit Knowledge |
+|---|---|---|
+| 형태 | documented | 사람의 mind / experience에 존재 |
+| 예 | procedure / manual / report | know-how / craft / skill |
+| 전달 | 비교적 쉬움 | 문서화·이전이 어려움 |
 
-채팅은 협업을 지원할 수 있지만 메시지 수가 목적은 아니다. 소셜 비즈니스는 전문가 찾기, 피드백 수집, 고객 문제 해결에 쓰일 수 있다. 공개 SNS 계정이 있다는 것만으로 효과적인 협업을 설명할 수는 없다.
+> **Explicit = 문서화 가능 / Tacit = 경험과 사람에게 내재된 know-how**
 
-교과서는 업무 변화, 상호작용 중심 직무, 분권화, 지리적 분산, 혁신, 업무 문화의 변화와 협업 필요성을 연결한다. 혼자 가진 지식으로 해결하기 어려운 일이 많아졌기 때문이다.
+---
 
-| 기대 효과 | 작동 원리 | 단순 활동량보다 나은 지표 |
-| --- | --- | --- |
-| 생산성 | 중복 작업과 반복 검색 감소 | 반복 업무 해결시간 |
-| 품질 | 관련 전문가가 판단에 참여 | 같은 오류의 재발 감소 |
-| 혁신 | 다른 관점과 지식의 결합 | 검증·채택된 유용한 아이디어 |
-| 고객서비스 | 담당자 사이의 맥락 공유 | 해결시간과 반복 불만 |
+## Slide 45 — Important Dimensions of Knowledge (3/5)
 
-도구와 성과를 연결하는 것은 **문화**다. 경영진이 지식 공유를 지원하고 참여 시간을 주며 정보를 독점하는 행동만 보상하지 않아야 한다. 이는 1장의 보완 자산을 협업에 적용한 설명이다.
+### Knowledge Has a Location
+- cognitive event
+- individual + social
+- **sticky**: 이동하기 어려움
+- **situated**: firm culture에 얽혀 있음
+- **contextual**: 특정 context에서만 작동 가능
 
-> [!QUIZ]
-> 2장 B Q1. 협업 플랫폼을 설치했지만 개인 실적만 보상하고 동료에게 도움을 요청하면 무능하다고 평가한다. 왜 도입이 실패할 수 있는가?
+### Knowledge Is Situational
+- **Conditional**: 언제 procedure를 적용할지 앎
+- **Contextual**: 어떤 상황에서 tool을 쓸지 앎
 
-> [!ANSWER]
-> 기술은 협력을 지원하지만 인센티브는 협력을 막는다. 공동 목표·경영진 지원·참여 시간·적절한 보상이 함께 필요하다. 소프트웨어 설치만으로 이런 보완 자산이 생기지는 않는다.
+> **Knowledge는 context에서 분리하면 그대로 이전되지 않는 경우가 많음**
 
-## 2. 도구는 시간과 장소에 맞춰 고르자
+---
 
-18판 **그림 2.8 시간·공간 행렬**(책 p.56 / PDF 85)을 펼친다. 예시를 외우기 전에 두 축부터 그려 보자.
+## Slide 46 — Important Dimensions of Knowledge (4/5)
 
-| | 같은 장소 | 다른 장소 |
-| --- | --- | --- |
-| 같은 시간 · 동기적 | 공유 화면을 보며 대면 토론 | 화상회의, 실시간 공동 편집 |
-| 다른 시간 · 비동기적 | 교대 근무자가 차례로 쓰는 인수인계 공간 | 위키, 토론 스레드, 버전 관리 문서 |
+- information → knowledge 변환에는
+  - patterns
+  - rules
+  - context
+  발견이 필요
 
-같은 카페의 오전·저녁 교대조는 **같은 장소·다른 시간**일 수 있다. 서울·부산 지점이 실시간 통화하면 **다른 장소·같은 시간**이다. 거리와 동시 참여 여부는 별개의 축이다. 플랫폼 하나가 여러 칸을 지원할 수도 있다.
+### Wisdom
+- knowledge를 실제 문제에 적용한 collective / individual experience
+- where / when / how to apply knowledge
 
-### 제품명보다 기능을 읽자
+### Knowledge-Based Core Competencies
+- competitors가 쉽게 duplicate하지 못하는 know-how
+- profit / competitive advantage의 원천
 
-- **이메일·메신저:** 요청과 진행 상황을 교환한다. 최종 결정이 어디에 남는지 정해야 한다.
-- **회의·협업 플랫폼:** 대화·공유 파일·팀 작업을 연결한다. 담당자와 접근 범위가 필요하다.
-- **기업용 소셜 네트워크:** 프로필·피드·그룹·권한·태그로 사람과 지식을 찾게 한다.
-- **가상세계·메타버스:** 아바타와 공동 공간으로 상호작용을 돕는다. 몰입이 해당 업무에 유용한지 평가한다.
-- **AI 지원:** 요약·번역·검색·초안 작성을 도울 수 있다. 중요한 결과는 원자료와 대조해야 한다.
+> **Information + context/pattern → Knowledge → 경험을 통한 적용 = Wisdom**
 
-교과서 제품 예시는 집필 시점의 기능을 보여 주는 사례다. 인기 순위보다 어떤 상황에서 어떤 기능이 필요한지를 공부하자.
+---
 
-### 여섯 단계로 도구 평가하기
+## Slide 47 — Important Dimensions of Knowledge (5/5)
 
-아래는 18판 책 p.56의 절차를 풀어 쓴 것이다.
+### Organizational Learning
+1. data collection / measurement / trial and error / feedback로 experience 획득
+2. experience에 맞게 behavior 조정
+3. 결과
+   - new business processes
+   - changed management decision patterns
 
-1. 실제 협업 문제를 시간·공간 행렬에 배치한다.
-2. 필요한 상황에 대응할 후보 도구를 찾는다.
-3. 효과와 비용을 비교하되 교육·IS 지원 비용도 넣는다.
-4. 보안·외부 업체 의존·업체 지속성·전환 비용을 검토한다.
-5. 실제 사용자를 참여시켜 사용·교육의 어려움을 찾는다.
-6. 후보를 추려 요구사항에 맞춰 시연을 평가한다.
+> **Organizational Learning = 경험을 수집하고 행동과 process를 실제로 바꾸는 과정**
 
-> [!QUIZ]
-> 2장 B Q2. 시차가 큰 지점들이 공통 절차를 유지해야 한다. 매일 실시간 회의를 의무화하면 충분한가? 더 적합한 조합을 제안하라.
+---
 
-> [!ANSWER]
-> 실시간 회의는 시간 제약을 만들고 재사용할 기록을 남기지 못할 수도 있다. 담당자·버전이 있는 비동기 문서와 토론 공간을 기본으로 두고, 의견 충돌을 해결할 때 실시간 회의를 보완적으로 사용한다. 대화 후 결정이 남아야 한다.
+## Slide 48 — Knowledge Management Value Chain (1/3)
 
-## 3. 대화가 끝난 뒤에도 쓸 수 있는 지식 만들기
+### Knowledge Management
+- knowledge를 **create / store / transfer / apply**하기 위한 business processes
 
-§2.8을 읽자. 숙련 직원은 기계 소리만 듣고 문제를 알아차린다. 다른 직원은 점검표를 작성했다. 둘 다 지식이지만 관리 방식은 다르다.
+### Value Chain
 
-| 구분 | 의미 | 지원 방법 |
-| --- | --- | --- |
-| 암묵지 · Tacit knowledge | 문서화되지 않은 경험·전문성 | 전문가 탐색, 멘토링, 함께 작업하기 |
-| 명시지 · Explicit knowledge | 기록으로 표현된 지식 | 검색·갱신 가능한 절차와 보고서 |
-| 정형·반정형·비정형 콘텐츠 | 콘텐츠가 구성된 방식 | 적절한 분류·메타데이터·검색 |
+| Stage | 의미 |
+|---|---|
+| **1. Acquisition** | knowledge를 획득·생성 |
+| **2. Storage** | knowledge를 저장·관리 |
+| **3. Dissemination** | 필요한 사람에게 전달 |
+| **4. Application** | decision / process에 실제 적용 |
 
-> [!CAUTION]
-> **암묵지·명시지와 정형·비정형은 다른 구분이다.** 전문가 인터뷰를 녹화했다면 문서화된 명시지지만 영상 콘텐츠는 비정형일 수 있다. 모든 숙련을 점검표 하나로 완전히 옮길 수 있는 것도 아니다.
+- 각 stage가 raw data / information에 value 추가
 
-**생성·획득 → 저장·정리 → 공유 → 적용 → 검토**의 흐름으로 이해하자. 이는 지식관리 활동을 설명하기 위한 학습용 정리이며, 이 장에 있는 별도 그림을 그대로 복제한 것은 아니다. 저장소의 가치는 필요한 사람이 내용을 찾아 믿고 적용할 수 있을 때 생긴다.
+> **KM Value Chain = Acquire → Store → Disseminate → Apply**
 
-## 4. 지식시스템의 세 갈래 구분하기
+---
 
-18판 **그림 2.9**(책 p.58 / PDF 87), **그림 2.10–2.11**(책 pp.59–60 / PDF 88–89)을 연결해서 보자.
+## Slide 49 — Generative AI in the KM Value Chain
 
-| 갈래 | 주된 역할 | 이 장의 예시 |
-| --- | --- | --- |
-| 전사 지식관리시스템 | 조직 전체의 지식 수집·정리·공유·활용 | ECM, 협업·소셜 도구, LMS |
-| 지식작업시스템 · KWS | 전문가의 새로운 지식 생성 | CAD, 전문 모델링·시각화 워크스테이션 |
-| 지능적 기법 · Intelligent techniques | 패턴 발견·전문성 포착·지식 적용 | 데이터마이닝, 머신러닝, 전문가시스템 등 |
+| Stage | GenAI 활용 | 관리 포인트 |
+|---|---|---|
+| **Acquire** | transcription / extraction / classification | meetings / documents를 searchable knowledge로 변환 |
+| **Store** | knowledge base 관리 | metadata / ownership / permissions / retention / provenance |
+| **Disseminate** | enterprise search / **RAG** | approved source와 question 연결 |
+| **Apply** | decision / action 지원 | human review / authority / monitoring / escalation |
 
-**ECM** (전사 콘텐츠 관리)은 문서와 다양한 콘텐츠를 사용할 수 있는 저장소로 만든다. **택소노미** (taxonomy)는 분류체계, **태그** (tag)는 항목에 붙이는 분류 정보다. 목적은 찾고 해석하는 것이다. 이름 없는 파일 수천 개를 모았다고 좋은 지식시스템이 되지는 않는다.
+> **GenAI도 KM Value Chain 안에서 Acquire → Store → Retrieve → Apply 구조로 관리**
 
-전문가 디렉터리는 ‘누가 아는가’를 찾는다. **LMS** (학습관리시스템)는 교육 제공·추적·평가를 관리한다. 서로 지식 문제의 다른 부분을 해결한다. 교육 수료 기록만으로 실제 업무 적용 능력이 증명되는 것은 아니다.
+---
 
-**KWS**는 연구자·과학자·엔지니어·설계자 등이 새로운 지식을 만드는 전문 작업을 지원한다. 강력한 연산, 그래픽, 시뮬레이션, 외부 지식 접근, 편리한 인터페이스가 필요할 수 있다. 이들이 일반 사무 도구를 사용한다고 그 도구가 모두 전문 KWS가 되는 것은 아니다.
+## Slide 50 — Figure 11.1 Knowledge Management Value Chain
 
-> [!EXAMPLE]
-> **가상 카페의 확장:** ECM에 승인된 레시피를 보관하고, 디렉터리로 로스팅 전문가를 찾고, LMS로 위생교육을 제공한다. 전문가는 모델링 도구로 새 생산 방법을 개발한다. ‘컴퓨터를 쓴다’가 아니라 어떤 지식 활동을 지원하는지로 분류하자.
+### Data & Information Acquisition
+- collection / storing / disseminating
 
-> [!QUIZ]
-> 2장 B Q3. AI가 오래된 절차를 검색해 최신인 것처럼 자연스럽게 설명했다. 문장이 매끄러워도 어떤 문제가 남는가?
+### Information System Activities
+- **Acquire**: business analytics / data mining / ML / expert networks
+- **Store**: content management / knowledge databases / expert systems
+- **Disseminate**: portals / search / collaboration tools
+- **Apply**: DSS / enterprise apps / robotics
 
-> [!ANSWER]
-> 버전 관리, 담당자, 검토일, 접근권한, 원자료의 신뢰성, 결과 검증이 필요하다. 검색과 문장 생성은 최신성·적용 가능성을 보장하지 않는다. 지식관리는 저장·검색에서 끝나지 않고 검토와 수정까지 이어져야 한다.
+### Management & Organizational Activities
+- knowledge culture
+- communities of practice
+- organizational routines / culture
+- training / collaboration
+- new process / products / services / markets
 
-## 5. 누가 시스템을 책임지는가?
+### Feedback
+- application 결과가 다시 data / knowledge acquisition으로 연결
 
-§2.9에서 **프로그래머**는 소프트웨어를 구현하고, **시스템 분석가**는 비즈니스 요구를 정보·시스템 요구로 바꾸며 사용자와 기술 부서를 연결한다. **IS 관리자**는 팀과 운영을 조정한다. **최종 사용자**도 업무 지식을 제공하므로 설계에 중요한 참여자다.
+> **KM은 IT activity만이 아니라 management / organization activity가 함께 있어야 완성**
 
-| 역할 | 교과서에서 강조하는 책임 |
-| --- | --- |
-| CIO · 최고정보책임자 | IS·IT 방향과 비즈니스 전략의 정렬 |
-| CSO / CISO | 정보보안 정책과 보호 |
-| CPO · 개인정보보호책임자 | 개인 데이터와 프라이버시 관련 의무 |
-| CKO · 최고지식책임자 | 조직의 지식관리 프로그램 |
-| CDO · 최고데이터책임자 | 전사 데이터의 거버넌스와 가치 있는 활용 |
-| CAIO · 최고AI책임자 | AI 전략·도입·구현·모니터링; 18판에서 강조 |
+---
 
-**IT 거버넌스**는 결정권·정책·책임 구조다. 누가 투자를 선택하고, 데이터 규칙을 정하고, 접근을 승인하고, 성과를 검토하는가? 중앙 통제와 현장 재량을 어떻게 나눌 것인가? 직함 목록만으로 이 질문에 답할 수는 없다.
+## Slide 51 — Knowledge Management Value Chain (2/3)
 
-**3장으로 연결:** 정보 접근권이 바뀌면 권한·인센티브·권력도 달라진다. 기술적으로 작동하는 시스템에도 조직적 저항이 생기는 이유다.
+### Knowledge Acquisition
+- tacit / explicit knowledge document화
+- reports / presentations / best practices 저장
+- e-mails 같은 unstructured documents 저장
+- expert networks 구축
+- new knowledge creation
+- TPS / external sources data tracking
 
-## 6. 교과서 사례 읽기 워크숍
+### Knowledge Storage
+- databases
+- document management systems
 
-| 사례 | 읽을 곳 | 적용 질문 |
-| --- | --- | --- |
-| Toyota Motor North America | 18판 책 pp.36–38 | 소통·AI 역량이 어떤 업무를 바꾸는가? |
-| AI와 신약 발견 | 18판 책 p.53 | 가능성 생성과 결과 검증은 어떻게 다른가? |
-| 가상회의 | 18판 책 pp.64–65 | 협업 효과와 주의 분산·회의 부담·모니터링 문제를 함께 보자 |
-| Sharp | 17판 책 pp.71–73 | 동료와 지식을 찾기 쉬워지면 혁신이 어떻게 달라질까? |
-| Ahlia University | 17판 책 p.92 | 시간·장소 제약과 학습 요구는 무엇인가? |
-| 소셜 비즈니스 마지막 사례 | 17판 책 pp.104–105 | 사용량 대신 실제 업무 개선으로 판단하자 |
+### Management Role
+- planned storage system 지원
+- corporate-wide schema / indexing 설계
+- employees가 문서를 update / store하도록 incentive 제공
 
-이는 **읽기 질문**이지 모든 사례가 같은 결론을 입증한다는 뜻은 아니다. 18판 Princess Cruises 진로 사례(책 p.63)는 분석과 고객 이해를 2장 A·B의 시스템에 연결해서 읽는다.
+> **Acquire는 지식을 모으는 단계 / Store는 구조화·관리 가능한 형태로 보존하는 단계**
 
-## 7. 기억을 꺼내 연결하기
+---
 
-- 단순한 대화와 {{협업}}을 구분하는 기준은 공유된 명시적 목표다.
-- 다른 시간에 참여하는 작업은 {{비동기적}}이다.
-- 문서화되지 않은 전문성은 {{암묵지}}이다.
-- IT의 결정권과 책임 구조는 {{IT 거버넌스}}이다.
+## Slide 52 — Knowledge Management Value Chain (3/3)
 
-> [!FLASHCARD]
-> Q: 2장 B — 위키 하나가 완전한 지식관리 해결책이 아닌 이유는?
-> A: 기록 공간 외에도 담당자·분류·검토·참여·업무 적용이 필요하기 때문이다.
+### Knowledge Dissemination
+- portals / wikis
+- e-mail / IM
+- search engines
+- collaboration tools
 
-> [!FLASHCARD]
-> Q: 2장 B — KWS와 전사 KMS의 차이는?
-> A: KWS는 전문가의 새 지식 생성을, 전사 KMS는 조직 전체의 지식과 콘텐츠 활용을 지원한다.
+### Information Overload 대응
+- training
+- informal networks
+- shared management experience
 
-> [!FLASHCARD]
-> Q: 2장 B — 시간·공간 행렬을 쓰는 이유는?
-> A: 동시에 일해야 하는지, 같은 장소인지 확인하여 인기보다 실제 협업 조건에 맞는 도구를 고르기 위해서다.
+### Knowledge Application
+- ROI를 내려면 knowledge가 실제 decision making에 들어가야 함
+- DSS / management process에 embed
+- 결과
+  - new business practices
+  - new products / services
+  - new markets
 
-> [!QUIZ]
-> 2장 B Q4. 여러 지점에서 같은 장비 고장이 반복된다. 사람·도구·거버넌스·성과 지표를 포함한 학습 순환을 설계하라.
+> **Knowledge는 전달만 해서는 가치가 없고 실제 decision / process에 적용되어야 함**
 
-> [!ANSWER]
-> 직원이 고장을 기록하고 전문가와 함께 절차를 검증한다. 담당자가 ECM에 승인·버전 관리된 절차를 게시하고 LMS나 시연으로 교육한다. 이후 사고는 절차 재검토로 연결한다. 거버넌스는 승인자와 접근권을 정한다. 조회 수보다 재발률과 해결시간을 측정한다.
+---
 
-**2장 마무리 기준:** 거래가 보고서가 되고, 보고서가 협업을 촉발하고, 유용한 해결책이 관리되는 지식이 되는 과정을 설명할 수 있다. [3장 · 조직과 경쟁전략](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)로 이어가자.
+## Slide 53 — Collaboration, Communities of Practice, Office Environments
+
+### New Organizational Roles
+- **CKO (Chief Knowledge Officer)**
+- knowledge managers / dedicated staff
+
+### Communities of Practice (COPs)
+- professionals / employees의 informal social networks
+- education
+- newsletters
+- knowledge sharing
+- new employee learning curve 감소
+
+> **COP = 같은 전문영역 사람들이 경험과 know-how를 지속적으로 공유하는 network**
+
+---
+
+## Slide 54 — Three Major Types of KMS
+
+| Type | 대상 / 목적 |
+|---|---|
+| **Enterprise-Wide KMS** | firm-wide knowledge의 collection / storage / distribution / application |
+| **Knowledge Work Systems (KWS)** | engineers / scientists 등 knowledge workers의 new knowledge 생성 |
+| **Intelligent Techniques** | data mining 등으로 knowledge discovery / optimal solution 탐색 |
+
+> **KMS 3종류 = Enterprise-wide KMS / KWS / Intelligent Techniques**
+
+---
+
+## Slide 55 — Figure 11.2 Major Types of KMS
+
+### Enterprise-Wide KMS
+- enterprise content management
+- collaboration / social tools
+- learning management systems
+
+### Knowledge Work Systems
+- CAD
+- virtual reality
+
+### Intelligent Techniques
+- data mining
+- neural networks
+- expert systems
+- machine learning
+- NLP
+- computer vision
+- robotics
+- genetic algorithms
+- intelligent agents
+
+> **KMS는 조직 전체 지식관리 / 지식 생성 작업 / AI 기반 지식기술로 나뉨**
+
+---
+
+## Slide 56 — Enterprise-Wide Knowledge Types
+
+| Type | 예시 | 특징 |
+|---|---|---|
+| **Structured** | reports / presentations / formal rules | 형식과 구조가 명확 |
+| **Semistructured** | e-mails / videos | 일부 구조는 있으나 완전히 정형화되지 않음 |
+| **Unstructured / Tacit** | experience / know-how | 사람과 상황에 내재 |
+
+- informal / unstructured knowledge도 business에서 중요
+- 비율은 organization마다 다름
+
+> **기업 지식은 structured + semistructured + tacit/unstructured 모두 관리해야 함**
+
+---
+
+## Slide 57 — Enterprise Content Management Systems (CMS)
+
+### Purpose
+- documents / semistructured knowledge를
+  - capture
+  - store
+  - retrieve
+  - distribute
+  - preserve
+
+### External Sources
+- news feeds / research
+
+### Collaboration
+- blogs / wikis
+
+### Key Problem: Taxonomy
+- knowledge object를 category로 **tagging**해야 retrieval 가능
+
+### Digital Asset Management
+- photos / graphics / video / audio 등 unstructured digital assets 관리
+
+> **CMS의 핵심 = content 저장보다 classification / taxonomy / retrieval**
+
+---
+
+## Slide 58 — AI-Ready Content Management
+
+| Criteria | 핵심 |
+|---|---|
+| **Quality** | duplicates 제거 / authoritative version 식별 / obsolete info 수정 |
+| **Metadata** | category / date / sensitivity / business context / retention |
+| **Access** | source와 동일한 permissions / legal restrictions |
+| **Provenance** | source link / creation date / version history / correction path |
+| **Evaluation** | retrieval coverage / accuracy / confidentiality / bias / real-work performance |
+
+> **AI-ready content = clean + well-labeled + access-controlled + traceable + evaluated**
+
+---
+
+## Slide 59 — Figure 11.8 Enterprise Content Management System
+
+### User Actions
+- Create / Capture
+- Tag
+- Store / Retrieve
+- Manage / Review
+- Distribute / Publish
+
+↓
+
+### Unified Repository
+- reports / presentations
+- best practices
+- memos
+- e-mail
+- graphics / video
+- news feeds
+- wikis / blogs
+- employee profiles
+
+> **ECM = 다양한 enterprise content를 unified repository에서 분류·관리·배포**
+
+---
+
+## Slide 60 — Locating and Sharing Expertise
+
+- well-defined knowledge domain별 **corporate expert directory** 제공
+- search tools로 적절한 expert 찾기
+- social networking / social business tools로 external knowledge 탐색
+- saving / tagging / sharing web pages
+
+> **모든 knowledge를 문서화할 수 없으므로 ‘누가 알고 있는지’를 찾는 기능도 중요**
+
+---
+
+## Slide 61 — Learning Management Systems (LMS)
+
+- employee learning / training의
+  - management
+  - delivery
+  - tracking
+  - assessment
+- web-based classes / online forums 등 multiple modes 지원
+- course selection / administration 자동화
+- learning content 제공
+- learning effectiveness 측정
+- **MOOCs** 지원 가능
+
+> **LMS = organizational learning을 체계적으로 운영·추적하는 system**
+
+---
+
+## Slide 62 — Knowledge Workers and Knowledge Work
+
+### Knowledge Workers
+- researchers / designers / architects / scientists / engineers
+- organization을 위한 new knowledge 생성
+
+### Three Roles
+- organization의 knowledge를 current하게 유지
+- internal consultant 역할
+- **change agent** 역할
+
+### Knowledge Work Systems
+- knowledge workers가 new knowledge를 만들고 business에 integrate하도록 지원
+
+> **Knowledge Worker = 지식을 사용하는 사람을 넘어 새로운 organizational knowledge를 만드는 사람**
+
+---
+
+## Slide 63 — Requirements of Knowledge Work Systems
+
+- high computing power
+- powerful graphics / analytical tools
+- communications / document management
+- external databases access
+- user-friendly interfaces
+- specific task에 optimized
+  - design engineering
+  - financial analysis
+
+> **KWS는 일반 office system보다 specialized hardware/software와 external knowledge access가 중요**
+
+---
+
+## Slide 64 — Figure 11.9 Requirements of KWS
+
+### External Knowledge Base
+↓
+
+### Software
+- Graphics → Visualization
+- Modeling → Simulation
+- Document Management
+- Communications
+
+↕
+
+### User Interface
+
+↑
+
+### Hardware Platform
+- Knowledge Workstation
+
+> **KWS = External Knowledge + Specialized Software + Strong Hardware + Usable Interface**
+
+---
+
+## Slide 65 — Examples of Knowledge Work Systems
+
+### CAD
+- engineering / architectural design
+- 3D printing
+
+### Virtual Reality
+- real-life environment simulation
+- 3D medical modeling
+
+### Augmented Reality
+- physical environment 위에 digital data / image overlay
+
+### Investment Workstations
+- internal + external financial data 통합
+- brokers / traders / portfolio managers 지원
+
+> **KWS는 전문직이 복잡한 knowledge creation task를 수행하도록 설계된 specialized system**
+
+---
+
+## Slide 66 — Intelligent Techniques for Knowledge Management
+
+### Traditional Intelligent Techniques
+
+| 목적 | Technique |
+|---|---|
+| **Tacit knowledge capture** | expert systems / case-based reasoning / fuzzy logic |
+| **Knowledge discovery** | neural networks / data mining |
+| **Complex problem solution** | genetic algorithms |
+| **Task automation** | intelligent agents |
+
+### Modern Techniques
+
+| Technique | 역할 |
+|---|---|
+| **Machine Learning** | patterns identify / outcomes predict |
+| **NLP** | documents / conversations의 meaning extract |
+| **Generative AI** | drafts / summaries / code / explanations 생성 |
+| **RAG** | approved enterprise source에 grounded answer 생성 |
+| **Knowledge Graphs** | people / concepts / records / relationships 연결 |
+| **AI Agents** | policy와 human oversight 아래 defined task 실행 |
+
+> **Intelligent Techniques = knowledge를 capture / discover / generate / apply / automate하는 AI 기반 방법**
+
+---
+
+## Slide 67 — Responsible Use of Generative AI
+
+- **Govern**: ownership / approved use / prohibited use / risk tolerance / accountability
+- **Map**: users / affected people / data / dependencies / misuse identify
+- **Measure**: accuracy / security / privacy / bias / transparency / robustness / human oversight
+- **Manage**: controls / monitoring / incidents / updates / retirement
+- **Knowledge**: AI output을 authoritative knowledge가 아니라 **verification이 필요한 claim**으로 취급
+
+> **Responsible AI = Govern → Map → Measure → Manage + Verify**
+
+---
+
+## Slide 68 — Information Systems Department
+
+- IT services를 책임지는 formal organizational unit
+- 보통 **CIO**가 이끎
+
+### Senior Roles
+
+| Role | 핵심 영역 |
+|---|---|
+| **CIO** | information systems / IT leadership |
+| **CSO / CISO** | security |
+| **CKO** | knowledge |
+| **CPO** | privacy |
+| **CDO** | data |
+| **CAIO** | AI / responsible AI leadership |
+
+### Members
+- programmers
+- systems analysts
+- information systems managers
+
+### Systems Analyst
+- business problems / requirements → information requirements / systems로 translate
+
+> **IS Department = business need와 technology를 연결하고 IT services를 운영하는 조직**
+
+---
+
+## Slide 69 — Organizing the Information Systems Function
+
+### End Users
+- applications를 사용하는 other departments의 representatives
+- system design / development 참여 증가
+
+### IT Governance
+- organization에서 IT를 사용하는 strategies / policies
+- decision rights + accountability framework
+- IT가 business strategy / objectives를 지원하도록 보장
+
+### Organization
+- centralized / decentralized 등 가능
+
+> **IT Governance = 누가 IT 결정을 내리고 누가 책임지는지 정의하는 framework**
+
+---
+
+## Slide 70 — Modern Information Systems Operating Model
+
+| Central Responsibilities | Distributed Responsibilities |
+|---|---|
+| enterprise architecture | business outcomes 정의 |
+| cybersecurity | work prioritization |
+| shared platforms | process improvement |
+| data standards | adoption management |
+| vendor management | business product team 실행 |
+| service reliability | data accountability 공유 |
+| organization-wide governance | responsible AI accountability 공유 |
+
+> **Modern IS = 핵심 standards/governance는 중앙화하고 business execution은 분산 협업**
+
+---
+
+## Slide 71 — Career Relevance
+
+### Related Careers
+- Business Systems Analyst
+- Product Manager / Product Owner
+- Data / BI Analyst
+- Cybersecurity / Privacy Specialist
+- Enterprise Applications / Cloud Consultant
+- AI Business Process Analyst
+- Information / Knowledge Manager
+
+### Career Advantage
+- business process knowledge
+- data literacy
+- collaboration
+- responsible AI use
+
+> **강점 = Business + Data + Technology + Collaboration + Responsible AI를 연결하는 능력**
+
+---
+
+## Slide 72 — Current Career Context
+
+### Workforce Change
+- macrotrends로 job creation / displacement 동시 발생
+
+### Growing Roles
+- big data specialists
+- AI / ML specialists
+- software developers
+
+### Important Business Roles
+- operations managers
+- project managers
+- security specialists
+- BI professionals
+
+### Task Design
+- human work + technology + human-machine collaboration의 혼합 증가
+
+### Student Focus
+- redesign processes
+- evaluate evidence
+- communicate with stakeholders
+- use AI responsibly
+
+> **미래 경쟁력은 AI 자체보다 process redesign + evidence + stakeholder communication 능력에서 나옴**
+
+---
+
+## Slide 73 — Learning Check
+
+| Topic | Learning Check |
+|---|---|
+| **Process** | AI-enabled process는 simple task automation과 어떻게 다른가? |
+| **Enterprise Systems** | ERP / analytics가 cloud로 이동할 때 어떤 management risks가 증가하는가? |
+| **Collaboration** | human-agent team의 reliable work를 위해 어떤 controls가 필요한가? |
+| **Knowledge** | enterprise content가 RAG에 적합하려면 무엇이 필요한가? |
+| **Sustainability** | IS investment decision에 어떤 environmental measures를 포함해야 하는가? |
+
+> **시험 체크: AI process / Cloud ERP risk / Human-Agent control / RAG-ready knowledge / Sustainability**

@@ -1,314 +1,547 @@
 ---
-title: "2장 A · 업무 흐름을 따라 시스템 구분하기"
-description: "주문 처리 → TPS·MIS·DSS·ESS → ERP·SCM·CRM·KMS. 17·18판 공통 기반을 하나의 업무 흐름으로 이해한다."
+title: "2장 A · 프로세스에서 전사 시스템까지"
+description: "비즈니스 프로세스에서 TPS·MIS·DSS·ESS와 ERP·SCM·CRM·KMS까지, 슬라이드 흐름을 따라 연결하는 Chapter 2 전반부 필기."
 order: 2
 published: true
-duration: 55
+duration: 65
 tags: [정시개, MIS, 2장, 비즈니스 프로세스, TPS, ERP]
 objectives:
-  - 부서 간 프로세스를 추적하고 자동화와 재설계를 구분한다.
-  - 의사결정 질문에 맞춰 TPS·MIS·DSS·ESS를 선택한다.
-  - 전사 애플리케이션이 연결하는 업무와 관계를 설명한다.
+  - 비즈니스 프로세스와 정보시스템의 관계를 설명한다.
+  - TPS·MIS·DSS·ESS를 관리 수준과 의사결정 유형에 따라 구분한다.
+  - ERP·SCM·CRM·KMS가 조직의 어떤 경계를 연결하는지 비교한다.
 ---
 
-## 읽기 지도 · 2장의 앞부분
+## 학습 경로
 
 [이전: 1장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [다음: 2장 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-**핵심 질문:** 하나의 주문이 여러 부서를 지나갈 때 어떤 정보시스템이 어떤 결정과 연결을 맡아야 하는가?
+**범위:** Chapter 2 슬라이드 2–29 · Process → Management Systems → Enterprise Integration
 
-**선수 개념:** 1장의 데이터·정보 구분과 입력–처리–출력–피드백 흐름을 알고 있어야 한다.
+[Chapter 2 원본 PDF](/materials/mis-exam-slides/ch02_17ed.pdf) · [Chapter 2 확장 PDF](/materials/mis-exam-slides/ch02_17ed_final.pdf)
 
-1장에서 **왜 정보시스템이 필요한지** 배웠다. 이제 **어떤 업무에서 어떻게 쓰이는지** 살펴본다. 이 노트는 두 판본의 공통 기반을 다루고, 2장 B는 협업·지식관리·IS 조직으로 이어진다. 판본별로 같은 내용을 반복하는 대신 두 노트가 합쳐서 2장 전체를 설명한다.
+## Chapter 2 개요
 
-| 읽을 곳 | 18판 책 / PDF | 17판 책 / PDF | 읽기 과제 |
-| --- | --- | --- | --- |
-| 도입 사례 | 36–38 / 65–67 | 71–73 / 72–74 | 어떤 조정 문제가 있었는가? |
-| §2.1 프로세스 | 38–40 / 67–69 | 73–76 / 74–77 | 그림 2.1의 부서 경계를 따라가기 |
-| §2.2 관리 계층 | 40–45 / 69–74 | 76–81 / 77–82 | 질문과 시스템을 연결하기 |
-| §2.3 전사 애플리케이션 | 45–47 / 74–76 | 81–84 / 82–85 | 무엇과 무엇을 연결하는가? |
-| e-비즈니스 용어 | 전사 업무 맥락과 연결 | 84–85 / 85–86 | 디지털 업무와 온라인 판매를 구분하기 |
+- Chapter 2 주제: **business processes, management systems, enterprise applications, collaboration, knowledge management**
 
-**출처:** 제공된 *Management Information Systems* 18판 및 17판 Global Edition. 본문의 쪽수는 이 파일 기준이다. 18판 PDF = 책 + 29, 17판 PDF = 책 + 1. 카페 사례와 확인 문제는 학습용으로 새로 구성했다.
+> **기업의 업무 흐름과 의사결정을 information systems가 어떻게 지원하는지 보는 장**
 
-## 시험 PDF · 2장 전체 흐름 A (final 1–29쪽)
+---
 
-[기존 61장 PDF 열기](/materials/mis-exam-slides/ch02_17ed.pdf) · [확장된 73장 final PDF 열기](/materials/mis-exam-slides/ch02_17ed_final.pdf)
+## Slide 2 — Learning Objectives
 
-> [!EXAM]
-> **2장 A 한 줄 논리:** 프로세스를 먼저 그리고 → 결정의 구조·관리 수준에 맞는 시스템을 고른 뒤 → ERP·SCM·CRM·KMS로 기능과 조직 경계를 연결한다.
+- **Business Processes ↔ Information Systems** 관계
+- management level별 system: **TPS / MIS / DSS / ESS**
+- enterprise-wide applications: **ERP / SCM / CRM / KMS**
+- **Collaboration / Social Business**의 필요성과 도구
+- **Knowledge Management Systems**
+- **Information Systems Function / Career**
 
-### 관리 수준과 결정 구조에 따른 시스템 선택
+> **핵심 흐름: Process → Systems → Enterprise Integration → Collaboration → Knowledge → IS Function**
 
-`누가 결정하는가(운영·중간·최고) × 결정이 얼마나 반복 가능한가(정형·비정형)`
+---
 
-| 시스템 | 주 사용자 | 결정 성격 | 주요 입력 | 대표 출력 |
-| --- | --- | --- | --- | --- |
-| TPS | 운영 직원·관리자 | 반복적·정형 | 일상 거래 | 급여·주문·배송 기록 |
-| MIS | 중간관리자 | 반복 보고·정형 | TPS 요약 | 계획 대비 실적 보고 |
-| DSS | 중간관리자 | 분석적·비정형 | 내부·외부 데이터 + 모형 | 시나리오·대안 비교 |
-| ESS | 최고관리자 | 전략적·비정형 | MIS·DSS 요약 + 외부 사건 | KPI·추세·예측 대시보드 |
+## Slide 3 — Sharp Corporation Case (1/2)
 
-==blue:아래에서 위로 갈수록 거래의 세부정보는 요약되고, 판단·외부정보·장기 시야의 비중은 커진다.==
+### Problem
+- hierarchical **top-down processes**
+- new competitors
+- 부족한 **collaboration / idea sharing**
 
-final은 기존 순서를 그대로 유지하면서 최신 보충 12장을 끼워 넣은 자료다. 기존 1–8쪽은 final 1–8, 9–21은 10–22, 22는 24, 23–28은 26–31, 29–30은 33–34, 31–34는 36–39, 35–42는 41–48, 43–50은 50–57, 51–58은 59–66, 59–60은 68–69, 61은 71에 대응한다. final 9·23·25·32·35·40·49·58·67·70·72·73쪽이 추가분이다. 따라서 final 순서로 공부하면 제공된 두 2장 PDF의 내용을 중복 없이 모두 보게 된다.
+### Solution
+- knowledge-sharing strategy와 goal 설정
+- knowledge-sharing / collaboration process 재설계
+- organizational culture 변화
+- **Microsoft Yammer** 도입
 
-| final 슬라이드 | PDF의 진행 순서 |
-| --- | --- |
-| 1–9 | 영상 사례·목표 → Sharp 사내 SNS → 프로세스·주문이행 → 자동화와 재설계 → AI 프로세스 역할 |
-| 10–19 | TPS → 급여 → BI → MIS와 TPS 입력·보고서 → DSS → 항해모형 → ESS와 MIS/DSS 관계 |
-| 20–27 | 전사 애플리케이션 구조 → ERP·클라우드 ERP → SCM·Walmart → CRM → KMS |
-| 28–29 | 인트라넷·엑스트라넷 → e-비즈니스·e-커머스·e-정부 |
+> **문제는 단순히 software 부족이 아니라 process + culture + collaboration의 문제**
 
-### 1–9쪽 · 비즈니스 프로세스에서 AI 프로세스까지
+---
 
-#### 프로세스 자동화와 재설계의 차이
+## Slide 4 — Sharp Corporation Case (2/2)
 
-`고객 요구 → 여러 기능의 연결된 과업 → 정보·물자·지식 이동 → 결과 → 성과 측정`
+- new information systems를 사용해 performance / competitiveness 개선
+- **teamwork + collaboration** → innovation / profit growth
+- knowledge dissemination에는 **organizational culture + business processes**가 중요
 
-- **자동화:** 현재 단계는 유지하고 사람이 하던 반복 작업을 시스템이 수행한다.
-- **프로세스 재설계:** 정보 흐름·단계 순서·의사결정권·사업모형 자체를 바꾼다.
-- **AI 지원:** 사람이 주체, AI는 검색·요약·초안·추천을 제공한다.
-- **AI 자동화:** 규칙·모형이 반복 업무를 끝내고 사람은 예외를 처리한다.
-- **AI 에이전트:** 정해진 권한으로 여러 도구를 호출하되 모니터링·검토·상향 보고가 필요하다.
+> **Information system의 효과는 technology만이 아니라 organization과 process에 달려 있음**
 
-> [!CAUTION]
-> AI가 도구를 여러 번 호출한다고 곧바로 자율성이 정당화되는 것은 아니다. **허용 범위, 중단 조건, 사람에게 넘길 예외, 로그, 결과 책임**을 함께 적는다.
+---
 
-#### Sharp 사례와 교차기능 프로세스
+## Slide 5 — Business Processes (1/2)
 
-| Sharp의 상황 | 구체적 내용 | 필요한 변화 |
-| --- | --- | --- |
-| 문제 | 위계적 하향식 의사소통, 신규 경쟁자, 약한 아이디어 공유 | 부서·직급을 넘는 지식 흐름 |
-| 경영 대응 | 지식공유 목표와 책임을 정함 | 참여·공유를 평가하고 지원 |
-| 조직 대응 | 협업 프로세스와 문화를 재설계 | 팀워크, 공개 토론, 지식 재사용 |
-| 기술 대응 | Yammer 기반 사내 소셜 네트워크 | 프로필, 대화, 그룹, 검색, 공유공간 |
-| 기대 결과 | 아이디어 확산과 혁신 속도 향상 | 실제 제품·업무 개선으로 연결 |
+- **Business Process**
+  - material / information / knowledge의 flow
+  - 특정 business task를 수행하는 **logically related set of tasks**
+  - 한 functional area 내부 또는 **cross-functional** 가능
+- business = 여러 business processes의 집합으로 볼 수 있음
+- business process는 **asset 또는 liability**가 될 수 있음
+  - outdated process → responsiveness / efficiency 저하
 
-> [!DEFINITION]
-> **비즈니스 프로세스**는 하나의 결과를 만들기 위해 물자·정보·지식이 이동하는 논리적으로 연결된 과업의 집합이다. 프로세스가 오래된 규칙과 불필요한 승인에 묶이면 자산이 아니라 부채가 된다.
+> **Business Process = 업무를 수행하는 연결된 task들의 흐름**
 
-| 기능 | 대표 과업 | 주문이행에서 넘겨야 할 정보 |
-| --- | --- | --- |
-| 판매·마케팅 | 고객 확인, 주문 접수, 판매 | 상품·수량·약속일·고객 요구 |
-| 재무·회계 | 신용·결제 확인, 청구·기록 | 승인 여부·가격·지급 상태 |
-| 제조·생산 | 생산·조립·품질검사 | 재고·생산 가능일·완료 상태 |
-| 인사 | 채용·교육·성과평가 | 필요한 인력·역량·근무 일정 |
+---
 
-그림 2.1의 핵심은 부서 목록이 아니라 **인수인계의 의존성**이다. 판매가 주문을 빨리 받아도 회계의 결제 확인과 생산의 재고·일정 정보가 늦으면 고객 주문은 완료되지 않는다.
+## Slide 6 — Business Processes (2/2)
 
-### 10–19쪽 · 관리 질문에 맞는 시스템 고르기
+### Functional Business Processes
 
-#### 질문에서 시스템을 역으로 찾기
+| Functional Area | 주요 Business Process |
+|---|---|
+| **Manufacturing & Production** | assembling product / quality checking |
+| **Sales & Marketing** | identifying customers / selling product |
+| **Finance & Accounting** | financial statements / paying creditors |
+| **Human Resources** | hiring employees / evaluating job performance |
 
-- “오늘 급여 처리가 끝났나?” → {{TPS}}
-- “이번 분기 제품별 실적은 계획 대비 어떤가?” → {{MIS}}
-- “수요가 두 배가 되면 생산계획은 어떻게 바뀌나?” → {{DSS}}
-- “5년 뒤 사업구조와 핵심 KPI는 어떻게 변할까?” → {{ESS}}
+> **각 functional area마다 고유한 business process가 존재**
 
-> [!DEFINITION]
-> **BI**는 데이터를 정리·분석하는 넓은 능력·도구 범주다. MIS·DSS·ESS는 그 능력을 서로 다른 관리 질문에 사용하는 시스템이다. 과목명 MIS와 특정 보고시스템 MIS도 문맥으로 구분한다.
+---
 
-#### 그림으로 읽는 데이터 흐름
+## Slide 7 — Figure 2.1 Order Fulfillment Process
 
-- **그림 2.2:** 근무기록 → 급여 처리 → 급여명세·관리 보고·외부 보고. TPS 정확성은 규제기관까지 영향을 준다.
-- **그림 2.3:** 여러 TPS → 기간말 요약 → MIS 보고. MIS는 원천 거래 없이 독립적으로 존재하지 않는다.
-- **그림 2.4:** 실제/계획 비율 `> 1`은 초과, `< 1`은 미달. 숫자의 의미와 비교 기준을 함께 읽는다.
-- **그림 2.5:** 선박·항만·연료·용선·비용 + 분석모형 → 입찰·배선·적재·속도 대안. DSS는 답을 대신 결정하기보다 구조화된 비교를 돕는다.
+### Flow
 
-#### TPS·MIS·DSS·ESS가 연결되는 방식
+**Sales**
+- Generate order → Submit order
 
-| 시스템 | 처리하는 질문 | 데이터와 분석 | 사용자가 하는 일 |
-| --- | --- | --- | --- |
-| TPS | “거래가 정확히 처리됐는가?” | 상세 거래를 규칙대로 기록 | 오류·예외를 처리하고 운영 상태 확인 |
-| MIS | “계획 대비 현재 성과는?” | TPS를 기간·제품·지역별로 요약 | 반복 보고를 보고 통제·조정 |
-| DSS | “조건이 바뀌면 결과는?” | 내부·외부 데이터에 모형·시나리오 적용 | 대안을 비교하고 비정형 판단 |
-| ESS | “장기 추세와 전략적 위험은?” | MIS·DSS 요약 + 경쟁·법·경제 정보 | 방향·우선순위·자원배분 결정 |
+↓
 
-`거래 기록(TPS) → 성과 요약(MIS) → 대안 분석(DSS) → 전략적 종합(ESS)`
+**Accounting**
+- Check credit → Approve credit → Generate invoice
 
-- TPS가 부정확하면 그 위의 보고·분석·대시보드도 부정확해진다.
-- MIS는 미리 정한 질문에 강하지만 새로운 가정을 자유롭게 시험하는 도구는 아니다.
-- DSS는 모형이 결정을 대신하는 시스템이 아니라, 대안의 결과를 비교해 판단을 보조하는 시스템이다.
-- ESS는 상세 거래를 모두 보여 주기보다 핵심 KPI·추세·예외를 빠르게 파악하게 해야 한다.
+↓
 
-### 20–27쪽 · 기능과 조직을 연결하기
+**Manufacturing & Production**
+- Assemble product → Ship product
 
-#### 전사 애플리케이션 지도
+### Key
+- 하나의 customer order가 여러 functional areas를 통과
+- 중요한 business process는 보통 **cross-functional**
 
-| 시스템 | 연결 대상 | 중심 질문 | 실패 위험 |
-| --- | --- | --- | --- |
-| ERP | 기업 내부 기능·관리수준 | 하나의 데이터·프로세스로 운영할 수 있는가? | 잘못된 표준화, 이관 오류, 현업 저항 |
-| SCM | 공급업체·구매·생산·물류 | 필요한 제품을 얼마나 빠르고 낮은 비용으로 옮기는가? | 파트너 데이터·프로세스 불일치 |
-| CRM | 판매·마케팅·서비스·고객 | 고객 관계 전체를 보고 유지·수익을 높이는가? | 단절된 접점, 부정확한 고객 정보 |
-| KMS | 직원·전문가·외부지식 | 노하우를 포착해 필요한 곳에 적용하는가? | 지식 고립·유실·낡은 자료 재사용 |
+> **Order fulfillment = Sales + Accounting + Manufacturing의 coordination**
 
-**클라우드 ERP의 양면:** 표준화·공유데이터·API·지속 업데이트·내장 AI라는 이점과, 구독비·마이그레이션·통합·역량·공급업체 종속이라는 관리 위험을 한 쌍으로 이해한다.
+---
 
-**Walmart SCM 흐름:** `감지 → 예측 → 행동 → 학습 → 통제`. 마지막 통제가 빠지면 빠른 자동화가 빠른 오류 확산이 될 수 있다.
+## Slide 8 — How IT Improves Business Processes
 
-> [!EXAM]
-> ERP는 SCM·CRM·KMS 전체를 부르는 말이 아니다. **enterprise applications가 상위 묶음**이고, ERP/전사시스템은 그중 공통 데이터·내부 프로세스를 통합하는 한 유형이다.
+### 1. Existing Process 효율화
+- manual steps를 **automation**
 
-#### ERP·SCM·CRM·KMS가 실제로 하는 일
+### 2. Entirely New Process 가능
+- information flow 변경
+- sequential steps → **parallel steps**
+- decision-making delay 제거
+- new business models 지원
 
-그림 2.6의 핵심은 데이터베이스 크기가 아니라 **경계를 넘는 프로세스 실행**이다.
+### Example
+- digital music download
+- e-book purchase / one-click purchase
 
-- **ERP:** 주문·생산·재고·회계가 같은 고객·상품·거래 기준을 사용한다. 한 부서의 입력이 다른 부서의 업무를 바로 시작할 수 있다.
-- **클라우드 ERP:** 공통 프로세스·API·분석·지속 업데이트를 얻지만, 데이터 이관·설정·통합·구독비·공급업체 종속을 관리해야 한다.
-- **SCM:** 공급업체에서 고객까지 주문·생산·재고·운송 신호를 공유한다. 한 기업의 최적화보다 전체 흐름의 재고·속도·비용 균형이 중요하다.
-- **CRM:** 영업·마케팅·서비스 기록을 한 고객 관계로 묶는다. 고객 생애가치·만족·유지율을 높이되, 부정확한 프로필과 과도한 접촉을 피해야 한다.
-- **KMS:** 문서와 사람의 전문성을 포착·검색·공유·적용한다. 최신성·소유자·맥락이 없으면 낡은 지식을 더 빠르게 퍼뜨릴 수 있다.
+> **IT는 기존 process를 빠르게 만들 뿐 아니라 새로운 process 자체를 가능하게 함**
 
-> [!EXAMPLE]
-> Walmart SCM은 `운영 신호 감지 → 수요·문제 예측 → 재고 재배치 → 현지 결과 학습 → 품질·권한·예외 통제`로 읽는다. 예측 정확도만이 아니라 재고부족·폐기·배송비·예외처리 성과를 함께 측정해야 한다.
+---
 
-### 28–29쪽 · 디지털 경계를 정확히 부르기
+## Slide 9 — AI Changes the Design of Business Processes
 
-#### 접근 범위가 넓어지는 순서
+| Role | Human / AI 관계 | 핵심 |
+|---|---|---|
+| **Assist** | Human이 process 수행 | AI가 retrieve / summarize / draft / recommend |
+| **Automate** | System이 routine steps 수행 | rules / models가 repeatable work 수행 |
+| **Agent** | AI가 defined workflow 수행 | tools / systems 호출, permissions / monitoring / escalation 필요 |
 
-`인트라넷(직원 내부) → 엑스트라넷(승인된 파트너까지) → e-비즈니스(프로세스 전반) ⊃ e-커머스(온라인 구매·판매)`
+> **AI 활용 수준: Assist → Automate → Agent**
 
-> [!QUIZ]
-> 회사가 공급업체에 재고 화면을 제한적으로 공개하고, 고객에게는 온라인 판매를 제공한다. 각각 무엇인가?
+---
 
-> [!ANSWER]
-> 공급업체 전용 접근은 **엑스트라넷**, 온라인 구매·판매는 **e-커머스**다. 둘 다 더 넓게는 디지털 기술로 주요 업무를 수행하는 **e-비즈니스**에 포함될 수 있다.
+## Slide 10 — TPS (Transaction Processing Systems)
 
-#### e-비즈니스·e-커머스·e-정부의 범위
+- **Target**: operational managers & staff
+- **Function**: perform + record **daily routine transactions**
+  - sales order entry / payroll / shipping
+- **Purpose**: operations status와 external environment monitor
+- **Decision**: **predefined + structured**
+- routine questions에 답하기 위한 필수 system
 
-**인트라넷**은 인터넷 표준을 쓰는 직원 전용 네트워크·사이트이고, **엑스트라넷**은 공급업체 등 승인된 외부자에게 일부를 열어 공급망을 조정한다. 용어 사용은 줄어도 접근 경계 개념은 남는다. **e-비즈니스**는 주요 프로세스 전반에 디지털·인터넷 기술을 쓰는 넓은 개념, **e-커머스**는 인터넷을 통한 구매·판매라는 하위 개념, **e-정부**는 시민·직원·기업에게 공공 정보·서비스를 제공하는 이용이다.
+> **TPS = operational level의 반복적이고 structured한 transaction을 처리·기록**
 
-## 1. 고객 주문 한 건을 따라가 보자
+---
 
-카페가 선결제 점심 주문을 받았다고 하자. 주문을 기록하고, 결제를 확인하고, 음식을 만들고, 픽업 담당자가 전달한다. 고객에게는 한 번의 주문이지만 내부에서는 여러 책임과 업무가 연결된다.
+## Slide 11 — Figure 2.2 Payroll TPS
 
-> [!DEFINITION]
-> **비즈니스 프로세스** (business process)는 특정 비즈니스 결과를 만들기 위해 조직된 관련 활동의 집합이다. 활동 목록뿐 아니라 정보·재료·지식의 흐름과 참여자들의 조정 방식까지 포함한다.
+### Input
+- Employee Data
+- Employee/File Database
+  - pay rate / gross pay / tax / net pay 등
 
-**주문 접수 → 결제·신용 확인 → 제품 준비 → 배송 → 청구·고객 후속 지원**
+### Processing
+- **Payroll System**
+- employee payment transaction 처리
 
-이것은 이해를 위한 단순화다. 교과서 **그림 2.1 주문 이행 프로세스**와 비교하자. 18판 책 p.39 / PDF 68, 17판 책 p.75 / PDF 76이다. 화살표마다 ‘다음 사람이 알아야 할 것은 무엇인가? 누가 전달하는가? 어디서 기다리는가?’를 묻는다. 그림의 목적은 부서 이름 암기보다 **업무 의존관계 파악**이다.
+### Output
+- employee paychecks
+- management reports
+- General Ledger
+- government agencies
+- online queries
 
-| 기능 영역 | 대표 업무 | 다른 기능과의 연결 |
-| --- | --- | --- |
-| 영업·마케팅 | 고객 발굴, 주문 생성 | 회계에 결제·고객 정보 전달 |
-| 제조·생산 | 조립, 품질 검사 | 영업에 재고와 완료 상태 전달 |
-| 재무·회계 | 현금 관리, 대금 지급, 재무보고 | 구매에 지출 제약 제공 |
-| 인적자원 | 채용, 평가 | 운영에 필요한 인력 확보 |
+> **Employee Data → Payroll Processing → Paychecks / Reports / Ledger / Government**
 
-**부서 간** (cross-functional) 프로세스는 내부 기능을 넘는다. **조직 간** (interorganizational) 프로세스는 배송업체 등 기업 밖의 참여자까지 연결한다. 하나의 프로세스가 두 특성을 모두 가질 수 있다.
+---
 
-### 한 단계를 빠르게 할까, 흐름 자체를 바꿀까?
+## Slide 12 — Business Intelligence (BI)
 
-**자동화** (automation)는 기존 활동을 더 빠르고 정확하게 수행한다. 청구 금액 자동 계산이 예다. **재설계** (redesign)는 정보 공유로 중복 입력을 없애거나 독립적인 작업을 병렬로 수행하는 등 업무 연결을 바꾼다. 잘못 설계된 업무를 더 빨리 실행한다고 근본 문제가 없어지지는 않는다.
+- **Definition**: data + software tools for **organizing & analyzing data**
+- **Purpose**: support **better decision making**
 
-> [!QUIZ]
-> 2장 A Q1. 수기 청구서를 자동 계산되는 PDF로 바꿨지만 직원은 여전히 주문을 세 시스템에 다시 입력한다. 무엇이 개선되었고 무엇이 남았는가?
+### Related Systems
 
-> [!ANSWER]
-> 청구 계산은 자동화되었지만 중복 입력과 정보 단절은 남았다. 공유 주문 기록과 부서 간 전달 방식의 재설계가 필요할 수 있다. 성과는 파일 형식보다 오류율과 처리시간으로 평가한다.
+| System | 역할 |
+|---|---|
+| **MIS** | routine report / current performance 제공 |
+| **DSS** | non-routine decision 분석 지원 |
+| **ESS** | senior management의 strategic decision 지원 |
 
-## 2. 의사결정이 다르면 필요한 정보도 다르다
+> **BI = data를 organize/analyze해서 decision making을 지원하는 tools**
 
-교과서 §2.2에서는 시스템 이름보다 **질문**을 먼저 보자. 같은 판매 데이터도 쓰는 목적에 따라 가공 방식이 달라진다.
+---
 
-| 시스템 | 목적·주요 사용자 | 카페에서 묻는 질문 | 입력과 출력 |
-| --- | --- | --- | --- |
-| TPS · 거래처리시스템 | 운영 직원·관리자의 일상 거래 | 104번 주문이 결제되었나? | 개별 거래 → 기록 갱신·영수증 |
-| MIS · 경영정보시스템 | 중간관리자의 정형적 성과 보고 | 주간 매출이 계획 대비 어떠한가? | TPS 집계 → 정기·예외 보고서 |
-| DSS · 의사결정지원시스템 | 관리자·분석자의 비정형적 분석 | 재료비가 오르고 수요가 줄면 어떻게 되나? | 데이터·모형·가정 → 대안 비교 |
-| ESS · 중역지원시스템 | 최고경영층의 장기 전략 판단 | 다른 지역으로 확장할 것인가? | 내부 요약·외부 추세 → 전략적 정보 |
+## Slide 13 — Management Information Systems (MIS)
 
-> [!CAUTION]
-> **MIS에는 두 뜻이 있다.** 이 과목의 학문 분야와 특정 보고 시스템의 이름이다. TPS·MIS·DSS·ESS를 비교할 때는 좁은 의미를 쓴다. **BI** (비즈니스 인텔리전스)는 여러 계층의 분석과 판단을 지원하는 넓은 역량이며 MIS나 ESS 하나와 동일하지 않다.
+- **Target**: middle management
+- **Input**: data from **TPS**
+- **Output**: firm의 **current performance report**
+- routine questions + **predefined procedures**
+- analytic capability가 적고 flexible하지 않음
 
-### 데이터가 이동하는 모습을 보자
+### 주의
+- 학문 분야로서의 MIS와 **system 종류로서 MIS**는 의미가 다름
 
-**TPS의 거래 기록 → MIS의 요약 → 관리자의 점검**으로 연결된다. DSS는 내부 데이터에 외부 정보와 분석 모형을 결합할 수 있고, ESS는 MIS·DSS 요약과 외부 환경을 함께 본다. 모든 데이터가 반드시 네 단계를 일렬로 통과한다는 뜻은 아니다.
+> **MIS = TPS data를 요약해 middle managers에게 정기 report 제공**
 
-18판 **그림 2.3**(책 p.42 / PDF 71)에서 주문·생산·회계 기록이 보고용 데이터로 바뀌는 과정을 추적하자. 같은 페이지의 **그림 2.4 MIS 보고서**는 거래 목록이 계획 대비 성과로 변환된 결과다.
+---
 
-DSS는 ‘무슨 일이 있었나’에서 ‘이 가정이라면 어떻게 달라질까’로 질문을 확장한다. 결과는 **가정에 따른 조건부 결과**다. ESS도 전략적 판단을 지원할 뿐 판단을 자동으로 대신하지 않는다. 대시보드는 여러 계층이 사용할 수 있으므로 화면 모양만으로 분류하지 말자.
+## Slide 14 — Figure 2.3 TPS → MIS
 
-> [!EXAMPLE]
-> **직접 계산하는 학습 예시:** 점심 100개를 개당 8,000원에 팔고 변동비가 5,000원이면 고정비 차감 전 공헌이익은 300,000원이다. 가격을 10% 내리고 판매량이 같다면 220,000원으로 줄어든다. 기존 300,000원을 유지하려면 개당 공헌이익 2,200원 기준 약 137개를 팔아야 한다. DSS는 이런 대안을 비교한다. 실제 수요가 137개로 증가한다는 예측과는 다르다.
+### TPS
+- Order processing system
+- Materials resource planning system
+- General ledger system
 
-> [!QUIZ]
-> 2장 A Q2. 다음을 분류하고 이유를 쓰자. (가) 환불 거래 기록 (나) 지점별 주간 환불 보고 (다) 환불정책 변경 시나리오 분석 (라) 향후 5년 구독시장 진출 판단.
+↓ **summarized transaction data**
 
-> [!ANSWER]
-> (가) TPS: 일상 거래를 처리한다. (나) MIS: 정해진 성과를 집계한다. (다) DSS: 가정에 따라 대안을 비교한다. (라) ESS: 내부·외부 정보를 사용해 장기 방향을 판단한다. 실제 제품 하나가 여러 기능을 제공할 수도 있다.
+### MIS Files
+- Sales data
+- Unit product cost data
+- Product change data
+- Expense data
 
-## 3. 부서의 성과를 기업의 성과로 연결하기
+↓
 
-각 부서에 좋은 시스템이 있어도 회사 전체는 혼란스러울 수 있다. 영업은 이미 배정된 재고를 고객에게 약속하고, 회계의 고객코드는 서비스 부서에서 찾을 수 없다고 하자. §2.3의 **전사 애플리케이션** (enterprise applications)은 이런 기능·계층·사업부 간 단절을 줄인다.
+### MIS
 
-| 애플리케이션 | 중심 관심사 | 연결하는 정보 | 카페 체인 예시 |
-| --- | --- | --- | --- |
-| ERP · 전사적 자원관리 | 내부 업무의 통합 | 주문·재고·회계·생산·인사 | 판매가 재고와 회계에 일관되게 반영됨 |
-| SCM · 공급사슬관리 | 공급·생산·유통의 흐름 | 수요·조달·생산·배송 | 보충 수량과 납품 일정 공유 |
-| CRM · 고객관계관리 | 고객과의 접점 전체 | 영업·마케팅·서비스 기록 | 상담원이 이전 구매·불만을 함께 확인 |
-| KMS · 지식관리시스템 | 지식의 생성·공유·활용 | 문서·경험·전문가 지식 | 지점들이 검증된 폐기 감소 방법을 재사용 |
+↓
 
-==blue:TPS·MIS·DSS·ESS는 의사결정 요구를, ERP·SCM·CRM·KMS는 연결하는 업무·관계를 중심으로 구분한다.== 두 표는 분류 축이 다르다. ERP에 거래 처리와 보고 기능이 함께 있고, CRM에 일상 기록과 분석 기능이 함께 있어도 모순이 아니다.
+### Output
+- Reports
+- Online Displays / Dashboards
 
-ERP는 통합 소프트웨어와 공유 데이터를 통해 단절을 줄인다. 이를 위해 부서가 데이터 정의와 업무 규칙에 합의해야 한다. 같은 프로그램을 설치해도 ‘주문 완료’의 뜻이 부서마다 다르면 혼란은 남는다.
+↓
 
-SCM은 단순히 가장 싼 재료를 사는 일이 아니다. 저렴해도 제때 오지 않으면 손실이 커진다. CRM은 단순 주소록이 아니라 고객을 일관되게 이해하는 체계다. KMS도 파일을 많이 쌓는 것보다 실제 쓸 수 있는 지식을 관리하는 데 초점이 있다. KMS는 2장 B에서 더 자세히 다룬다.
+### Users
+- Managers
 
-> [!QUIZ]
-> 2장 A Q3. 고객이 세 번 불만을 접수했지만 담당자는 매번 처음부터 설명하라고 한다. 무조건 ERP가 정답인가? 무엇부터 조사해야 하는가?
+> **TPS → summarized data → MIS → Reports / Dashboards → Managers**
 
-> [!ANSWER]
-> 우선 고객 접점이 단절되었으므로 CRM의 필요성을 검토한다. 고객 식별자, 이전 상담 접근권한, 후속 처리 책임, 주문 정보와의 연결을 조사한다. ERP 연계도 필요할 수 있지만 업무 진단 없이 제품명부터 고르면 안 된다.
+---
 
-## 4. 연결의 경계와 비즈니스 범위 구분하기
+## Slide 15 — Figure 2.4 Sample MIS Report
 
-**인트라넷**은 인터넷 기술을 활용한 내부 접근을, **엑스트라넷**은 허가받은 외부 파트너에 대한 선택적 접근을 지원한다. 둘 다 누구나 공개 접근한다는 뜻이 아니다. 이런 망은 전사 시스템의 기반이 될 수 있지만 ERP나 SCM과 같은 뜻은 아니다.
+- MIS가 만든 **summarized annual sales report**
+- 핵심 비교: **Actual Sales ↔ Planned Sales**
 
-17판 책 pp.84–85에 명시적으로 설명된 용어도 함께 정리하자.
+### Actual Versus Planned
 
-| 용어 | 범위 | 예시 |
-| --- | --- | --- |
-| e-비즈니스 | 주요 비즈니스 프로세스에 디지털 기술 활용 | 공급업체 조정·내부 근무 편성·온라인 판매 |
-| e-커머스 | 디지털 네트워크를 통한 구매·판매 | 온라인 주문과 결제 |
-| e-정부 | 정부 정보·서비스의 디지털 제공 | 온라인 행정서비스 |
+| 값 | 의미 |
+|---|---|
+| `> 1.00` | Actual Sales > Planned Sales |
+| `= 1.00` | 실제 = 계획 |
+| `< 1.00` | Actual Sales < Planned Sales |
 
-**e-커머스는 e-비즈니스의 일부**다. 온라인으로 물건을 팔지 않아도 내부 디지털 업무를 운영할 수 있다. 정부의 디지털 서비스 역시 결제 여부만으로 정의하지 않는다.
+### Example
 
-## 5. 도입 사례를 프로세스 관점으로 다시 읽기
+| 값 | 해석 |
+|---|---|
+| `1.19` | 계획의 **119% 판매** |
+| `0.85` | 계획의 **85% 판매** |
 
-**18판 Toyota Motor North America**(책 pp.36–38)는 Teams와 AI를 활용하는 협업 맥락이다. **17판 Sharp**(pp.71–73)는 기업용 소셜 네트워킹 사례다. 먼저 조정·지식 공유의 문제를 찾고, 이후 정보 흐름이 어떻게 달라졌는지 확인하자. 2장 B에서는 실제 참여를 가능하게 하는 조직 조건을 살핀다.
+> **MIS report는 manager가 performance를 비교·monitor하기 쉽게 요약한 정보**
 
-**17판 Mississauga**(책 p.85)는 서비스를 받는 사람, 서비스 프로세스, 필요한 정보를 찾아 읽는다. 디지털 화면이 생겨서 좋아졌는지, 내부 처리까지 바뀌었는지, 둘 다인지 본문의 근거로 설명해 보자.
+---
 
-> [!EXAM]
-> 시스템 선택 답안은 **업무 질문 → 시스템 유형 → 필요한 정보 → 기대 효과** 순서로 쓰면 명확하다. ‘ERP는 통합되어서 좋다’보다 어떤 부서의 어떤 기록 불일치를 해결하는지 설명하는 것이 중요하다.
+## Slide 16 — Decision Support Systems (DSS)
 
-## 6. 인출 연습
+- **Target**: middle management
+- **Purpose**: **non-routine decision making** 지원
+  - ex) December sales가 2배라면 production schedule 영향?
+- **Data**
+  - internal: TPS / MIS data
+  - external information 가능
 
-- 영업과 회계를 가로지르는 업무는 {{부서 간 프로세스}}이다.
-- 일상 결제 기록은 주로 {{TPS}}가 처리한다.
-- 가정을 바꿔 대안을 비교하는 것은 전형적인 {{DSS}} 활용이다.
-- 온라인 구매·판매는 {{e-커머스}}이며 e-비즈니스보다 범위가 좁다.
+### Types
+- **Model-driven DSS**: analytical model 중심
+- **Data-driven DSS**: large data에서 useful information 추출
 
-> [!FLASHCARD]
-> Q: 2장 A — MIS와 DSS를 구분하는 핵심은?
-> A: MIS는 정해진 반복 질문에 대한 보고에, DSS는 모형이나 유연한 분석을 이용한 덜 정형적인 의사결정에 초점을 둔다.
+> **DSS = analytical model / data를 이용해 non-routine decision 지원**
 
-> [!FLASHCARD]
-> Q: 2장 A — ERP가 TPS 기능을 가져도 되는 이유는?
-> A: ERP는 통합하는 업무 범위, TPS는 거래 처리 목적에 따른 분류이므로 서로 양립한다.
+---
 
-> [!FLASHCARD]
-> Q: 2장 A — 인트라넷과 엑스트라넷의 경계 차이는?
-> A: 인트라넷은 내부 접근을, 엑스트라넷은 허가받은 외부인의 일부 접근을 지원한다.
+## Slide 17 — Figure 2.5 Voyage-Estimating DSS
 
-> [!QUIZ]
-> 2장 A Q4. 카페 체인에 정확한 매출 기록이 있지만 품절이 잦다. 세 가지 이상의 시스템 유형으로 데이터에서 행동까지 연결하고 조직적 조건 하나를 쓰자.
+### Data
+- ship speed / capacity
+- port distance / restrictions
+- fuel consumption cost
+- charter hire history cost
+- port expense
 
-> [!ANSWER]
-> TPS로 판매·재고 이동을 기록하고, MIS로 품절과 수요 패턴을 보고하며, DSS로 보충 대안을 비교한 뒤 SCM으로 공급업체와 일정을 공유할 수 있다. 직원의 일관된 재고 기록과 분석 결과를 실행할 담당자의 권한이 필요하다. 매출 데이터가 정확하다는 것만으로 보충 업무 전체가 신뢰할 만해지는 것은 아니다.
+↓
 
-**다음으로 갈 기준:** 주문 흐름을 다시 그릴 수 있고, 두 분류표의 축을 구분하며, 자동화와 재설계의 차이를 설명할 수 있다. [2장 B · 협업과 지식관리](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)로 이어가자.
+### Analytical Models Database
+
+↓
+
+### Decision Support
+- 어떤 vessel을 어느 destination에 보낼지
+- optimal loading pattern
+- optimal speed
+- profit maximization
+
+> **다양한 data + analytical model → shipping bid와 운항 의사결정 지원**
+
+---
+
+## Slide 18 — Executive Support Systems (ESS) (1/2)
+
+- **Target**: senior management
+- **Purpose**: **non-routine / strategic decisions** 지원
+- 요구되는 것
+  - judgment
+  - evaluation
+  - insight
+
+### Data
+- external events
+  - tax law / competitors
+- summarized internal information from **MIS + DSS**
+
+### Example
+- **Digital Dashboard**
+- real-time KPI / financial performance
+  - working capital / cash flow / inventory
+
+> **ESS = senior managers가 strategic decision을 빠르게 내리도록 핵심 정보를 제공**
+
+---
+
+## Slide 19 — ESS + MIS + DSS Connection
+
+- **ESS relies on MIS + DSS inputs**
+- systems는 서로 isolated되면 안 됨
+- accurate MIS / DSS data가 ESS 품질을 결정
+- modern ESS: **Digital Dashboard / ease of use / simple display / quick access**
+
+### Management System 비교
+
+| System | Main User | Decision | 핵심 역할 |
+|---|---|---|---|
+| **TPS** | operational managers & staff | routine / structured | daily transaction 처리·기록 |
+| **MIS** | middle management | routine / predefined | TPS data 요약·report |
+| **DSS** | middle management | non-routine / analytical | model / data 기반 분석 |
+| **ESS** | senior management | non-routine / strategic | 핵심 KPI와 strategic information 제공 |
+
+> **TPS → MIS / DSS → ESS → Senior Management**
+
+---
+
+## Slide 20 — Enterprise Applications
+
+- enterprise 전체를 **linking**하는 systems
+- 여러 functional areas를 span
+- firm-wide business processes 실행
+- 모든 management levels 포함
+
+### Four Major Applications
+
+| Application | 주요 대상 / 역할 |
+|---|---|
+| **ERP / Enterprise Systems** | 내부 functional areas와 data 통합 |
+| **SCM** | suppliers / logistics / supply chain 관리 |
+| **CRM** | customers / sales / marketing / service 관리 |
+| **KMS** | organizational knowledge 수집·공유·활용 |
+
+> **Enterprise Applications = 여러 부서와 management level을 연결하는 firm-wide systems**
+
+---
+
+## Slide 21 — Figure 2.6 Enterprise Application Architecture
+
+### Internal Functional Areas
+- Sales & Marketing
+- Manufacturing & Production
+- Finance & Accounting
+- Human Resources
+
+### Major Systems
+- **Enterprise Systems** → 내부 기능 통합
+- **SCM** → suppliers / business partners 연결
+- **CRM** → customers / distributors 연결
+- **KMS** → organization-wide knowledge 연결
+
+### Purpose
+- cross-functional process 자동화
+- information sharing
+- accurate decision information 제공
+
+> **Enterprise Applications는 내부 부서뿐 아니라 suppliers / customers까지 연결**
+
+---
+
+## Slide 22 — Enterprise Systems (ES / ERP)
+
+- **aka ERP (Enterprise Resource Planning)**
+- 여러 functional areas의 data 수집
+- **single central data repository**에 저장
+- **fragmented data problem** 해결
+
+### Benefits
+- information flow 통합
+- daily activities coordination
+- customer orders에 빠르게 대응
+- overall view of operations 제공
+- daily operation + long-term planning 지원
+
+### 구분
+- **Enterprise Applications** = ERP / SCM / CRM / KMS 전체
+- **Enterprise Systems** = 그중 ERP를 의미
+
+> **ERP = 여러 부서의 data를 하나의 central repository로 통합**
+
+---
+
+## Slide 23 — Enterprise Systems Are Moving to Cloud Platforms
+
+| 관점 | 핵심 내용 |
+|---|---|
+| **Market** | Cloud ERP 확산 / SAP Cloud ERP Suite revenue 증가 |
+| **Architecture** | standardized processes / shared data / APIs / analytics / continuous updates |
+| **Management** | subscription cost / configuration / data migration / integration / skills / vendor dependence |
+| **AI** | ERP에 **copilots / agents** embedded → decision support / task execution |
+
+> **ERP trend = on-premise → Cloud ERP + embedded AI**
+
+---
+
+## Slide 24 — Supply Chain Management (SCM) Systems
+
+- 관계 관리 대상
+  - suppliers
+  - purchasing firms
+  - distributors
+  - logistics companies
+- shared information
+  - orders
+  - production
+  - inventory levels
+
+### Goal
+- correct amount of product
+- source → point of consumption
+- as quickly as possible
+- at lowest cost
+
+### Type
+- **inter-organizational system**
+- organizational boundaries를 넘어 information flow 자동화
+
+> **SCM = supply chain 전체의 product / information flow를 최적화**
+
+---
+
+## Slide 25 — Walmart’s AI-Enabled Supply Chain
+
+| 단계 | 역할 |
+|---|---|
+| **Sense** | demand / inventory / transportation / operational signals 수집 |
+| **Predict** | ML로 demand / stock / fulfillment / routing problems 예측 |
+| **Act** | 필요한 location으로 inventory redirect |
+| **Learn** | operating feedback으로 개선 |
+| **Control** | data quality / access / exception / performance / accountability 관리 |
+
+> **AI-enabled SCM = Sense → Predict → Act → Learn + Control**
+
+---
+
+## Slide 26 — Customer Relationship Management (CRM) Systems
+
+- **Purpose**: customers와의 relationship 관리
+- sales / marketing / customer service의 customer-related processes 통합
+
+### Goals
+- optimize revenue
+- improve customer satisfaction
+- increase customer retention
+- identify & retain profitable customers
+- increase sales
+
+> **CRM = customer data와 customer-facing processes를 통합해 관계와 sales를 개선**
+
+---
+
+## Slide 27 — Knowledge Management Systems (KMS)
+
+- knowledge / expertise를 **capture + apply**
+- relevant knowledge를 collect하고 필요한 곳에서 사용 가능하게 함
+- business processes / management decisions 개선
+- external knowledge sources와 연결
+
+### Example
+- product creation know-how
+- problem solving method
+- best practices
+
+> **KMS = organizational knowledge를 수집·공유·활용하는 system**
+
+---
+
+## Slide 28 — Intranets and Extranets
+
+### Intranet
+- internal network
+- Internet standards 기반
+- employees only
+
+### Extranet
+- authorized vendors / suppliers / partners에게 제한적 접근 허용
+- supply chain coordination
+- collaboration 지원
+
+| | Intranet | Extranet |
+|---|---|---|
+| 대상 | Employees | Authorized external partners |
+| 범위 | Internal | Internal + selected external |
+| 목적 | 내부 정보 공유 | 외부 partner와 collaboration |
+
+> **Intranet = 내부용 / Extranet = 제한된 외부 partner까지 확장**
+
+---
+
+## Slide 29 — E-Business, E-Commerce, E-Government
+
+| 개념 | 정의 | 범위 |
+|---|---|---|
+| **E-business** | digital technology / Internet으로 major business processes 수행 | 가장 넓음 |
+| **E-commerce** | Internet을 통한 buying / selling | **E-business의 subset** |
+| **E-government** | Internet으로 citizens / employees / businesses에 public information / services 제공 | public sector |
+
+> **E-commerce ⊂ E-business / E-government는 공공부문의 Internet 활용**
+
+---
