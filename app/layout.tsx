@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { connection } from "next/server";
 import "pretendard/dist/web/static/pretendard.css";
 import "@fontsource/jetbrains-mono/400.css";
@@ -17,6 +17,13 @@ import { readCollection, withoutBody } from "@/lib/content";
 export const metadata: Metadata = {
   title: { default: "HJS STUDY", template: "%s | HJS STUDY" },
   description: "학년, 학기, 과목별 학습 내용과 족보를 정리하는 한양대학교 개인 학습 노트입니다.",
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f7f6f2" },
+    { media: "(prefers-color-scheme: dark)", color: "#161614" },
+  ],
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
