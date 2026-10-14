@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-05-ethical-ripple-title mis-05-ethical-ripple-desc" id="mis-05-ethical-ripple-root">
+  <title id="mis-05-ethical-ripple-title">정보기술이 만드는 윤리적 파장</title>
+  <desc id="mis-05-ethical-ripple-desc">새로운 정보기술이 개인의 윤리 문제에서 사회와 정치의 쟁점으로 확장되는 구조</desc>
+  <defs>
+      <style>#mis-05-ethical-ripple-root .diagram-container { width:100%;overflow-x:auto }
+      #mis-05-ethical-ripple-root .bg { fill:#f7f6f2 }
+      #mis-05-ethical-ripple-root .rule { stroke:#b9b6ac;stroke-width:1;fill:none }
+      #mis-05-ethical-ripple-root .flow { stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-05-ethical-ripple-mis-05-ethical-ripple-arrow) }
+      #mis-05-ethical-ripple-root .flow-strong { stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-05-ethical-ripple-mis-05-ethical-ripple-arrow-strong) }
+      #mis-05-ethical-ripple-root .node { fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5 }
+      #mis-05-ethical-ripple-root .node-focal { fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5 }
+      #mis-05-ethical-ripple-root .zone { fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5 }
+      #mis-05-ethical-ripple-root .tag { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e }
+      #mis-05-ethical-ripple-root .title { font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
+      #mis-05-ethical-ripple-root .subtitle { font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
+      #mis-05-ethical-ripple-root .name { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
+      #mis-05-ethical-ripple-root .name-inverse { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
+      #mis-05-ethical-ripple-root .sub { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
+      #mis-05-ethical-ripple-root .sub-inverse { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
+      #mis-05-ethical-ripple-root .small { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em }
+      #mis-05-ethical-ripple-root .label-mask { fill:#f7f6f2 }</style>
+    <marker id="mis-05-ethical-ripple-mis-05-ethical-ripple-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
+    <marker id="mis-05-ethical-ripple-mis-05-ethical-ripple-arrow-strong" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker>
+  </defs>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-05-ethical-ripple-mis-05-ethical-ripple-arrow)}.flow-strong{stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-05-ethical-ripple-mis-05-ethical-ripple-arrow-strong)}
+    .node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.node-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.small{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em}.label-mask{fill:#f7f6f2}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 4 · NESTED RIPPLE</text>
+  <text class="title" x="64" y="92">정보기술이 만드는 윤리적 파장</text>
+  <text class="subtitle" x="64" y="122">새로운 정보기술이 개인의 윤리 문제에서 사회와 정치의 쟁점으로 확장되는 구조</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="64" y="184" width="720" height="432" rx="8"/>
+  <text class="small" x="88" y="216">POLITY · POLITICAL ISSUES</text>
+  <rect class="node" x="120" y="240" width="608" height="320" rx="8"/>
+  <text class="small" x="144" y="272">SOCIETY · SOCIAL ISSUES</text>
+  <rect class="zone" x="184" y="296" width="480" height="208" rx="8"/>
+  <text class="small" x="208" y="328">INDIVIDUAL · ETHICAL ISSUES</text>
+  <rect class="node-focal" x="280" y="356" width="288" height="96" rx="6"/>
+  <text class="name-inverse" x="424" y="398" text-anchor="middle">New IT capability</text>
+  <text class="sub-inverse" x="424" y="426" text-anchor="middle">rules보다 빠른 기술 변화</text>
+  <path class="flow" d="M568 404 H812"/>
+  <rect class="node" x="828" y="184" width="388" height="432" rx="8"/>
+  <text class="small" x="860" y="224">FIVE MORAL DIMENSIONS</text>
+  <line class="rule" x1="860" y1="244" x2="1184" y2="244"/>
+  <text class="name" x="860" y="288">01 · Information rights</text><text class="sub" x="860" y="314">privacy · consent · obligations</text>
+  <text class="name" x="860" y="360">02 · Property rights</text><text class="sub" x="860" y="386">ownership · intellectual property</text>
+  <text class="name" x="860" y="432">03 · Accountability</text><text class="sub" x="860" y="458">responsibility · liability · control</text>
+  <text class="name" x="860" y="504">04 · System quality</text><text class="sub" x="860" y="530">data quality · errors · standards</text>
+  <text class="name" x="860" y="576">05 · Quality of life</text><text class="sub" x="860" y="602">equity · access · social effects</text>
+  <text class="subtitle" x="64" y="660">기술 충격은 개인의 판단에서 시작해 사회 규범과 법·정책의 문제로 확장된다.</text>
+</svg>

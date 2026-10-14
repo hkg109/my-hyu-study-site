@@ -6,6 +6,7 @@ import os from "node:os";
 import { loadWeekTitles, readWeeks } from "../lib/weeks";
 import { getHeadings, markdownText, parseMarkdown } from "../lib/markdown";
 import { visit } from "unist-util-visit";
+import { toString } from "mdast-util-to-string";
 import { syncWeeks, watchWeeks, loadWeekFiles } from "../scripts/sync-weeks.mjs";
 
 const readFixture = (root: string) => readWeeks(loadWeekFiles(path.join(root, "weeks")));
@@ -88,6 +89,24 @@ test("study syntax creates revealable blanks and reviewable flashcards", () => {
   assert.equal(blankAnswer, "기화");
   assert.match(cardId, /^card-/);
   assert.deepEqual(results, ["wrong", "unsure", "correct"]);
+});
+
+test("study syntax keeps bilingual quiz translations behind separate controls", () => {
+  const source = "> [!QUIZ]\n> What is a business process?\n\n> [!TRANSLATION]\n> 비즈니스 프로세스란 무엇인가?\n\n> [!ANSWER]\n> A logically related set of activities.\n\n> [!ANSWER-TRANSLATION]\n> 논리적으로 연결된 활동의 집합이다.";
+  const tree = parseMarkdown(source, "md");
+  const details: Array<{ classes: unknown; label: string }> = [];
+  visit(tree, node => {
+    if (node.data?.hName !== "details") return;
+    details.push({ classes: node.data.hProperties?.className, label: toString(node) });
+  });
+  assert.equal(details.length, 3);
+  assert.deepEqual(details.map(item => item.classes), [
+    ["study-translation", "study-question-translation"],
+    ["study-answer"],
+    ["study-translation", "study-answer-translation"],
+  ]);
+  assert.match(details[0].label, /문제 한국어 번역 보기/);
+  assert.match(details[2].label, /정답 한국어 번역 보기/);
 });
 
 test("lecture Markdown with an Answer toggle is rendered as trusted MDX", () => {

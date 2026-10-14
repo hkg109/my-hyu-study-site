@@ -42,6 +42,17 @@ test("plain Markdown is discovered without frontmatter or a React edit", () => {
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
 
+test("MIS practice exams are English-first with complete Korean reveal translations", () => {
+  const exams = readCollection("practice").filter(doc => doc.subjectId === "subject-muhz2xir");
+  assert.equal(exams.length, 3);
+  for (const exam of exams) {
+    assert.equal((exam.content.match(/^> \[!QUIZ\]$/gm) ?? []).length, 26, exam.path);
+    assert.equal((exam.content.match(/^> \[!TRANSLATION\]$/gm) ?? []).length, 26, exam.path);
+    assert.equal((exam.content.match(/^> \[!ANSWER\]$/gm) ?? []).length, 26, exam.path);
+    assert.equal((exam.content.match(/^> \[!ANSWER-TRANSLATION\]$/gm) ?? []).length, 26, exam.path);
+  }
+});
+
 test("each practice Markdown file has five Korean levels and hidden example solutions", context => {
   const practices = readCollection("practice").filter(doc => doc.week <= 6);
   if (!practices.length) { context.skip("No practice content has been added yet"); return; }

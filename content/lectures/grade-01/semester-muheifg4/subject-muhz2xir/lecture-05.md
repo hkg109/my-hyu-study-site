@@ -128,6 +128,12 @@ objectives:
 
 > **New IT → ethical issue → social issue → political issue로 확장될 수 있음**
 
+### 개념도 · 기술 충격이 제도 문제로 확장되는 과정
+
+![새로운 정보기술이 개인의 윤리 문제에서 사회 규범과 정치·법률 문제로 확장되고 다섯 도덕적 차원에서 검토되는 구조](/materials/diagrams/mis-05-ethical-ripple.svg)
+
+**그림 읽기:** 새로운 기술은 먼저 개인의 선택과 권리 문제를 만들고, 반복되면 사회의 기대와 규범을 흔들며, 끝내 법·정책과 책임 배분의 문제가 된다. 오른쪽의 다섯 도덕적 차원은 서로 독립된 목록이 아니라 이 파장이 어떤 권리·책임·품질·삶의 문제를 만드는지 점검하는 분석 틀이다.
+
 ---
 
 ## Slide 9 — Five Moral Dimensions of the Information Age

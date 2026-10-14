@@ -100,6 +100,12 @@ objectives:
 
 > **Organization과 IT의 관계는 직접적이지 않고 여러 organizational factors가 매개**
 
+### 개념도 · 조직과 IT의 양방향 인과관계
+
+![조직의 전략과 프로세스가 매개 요인을 거쳐 IT 역량을 만들고 IT가 다시 업무와 의사결정을 바꾸는 순환](/materials/diagrams/mis-04-organization-it-loop.svg)
+
+**그림 읽기:** 조직은 전략·구조·프로세스를 통해 시스템 요구사항을 만들지만, 실제 설계는 문화·정치·환경·관리자의 판단 같은 매개 요인의 영향을 받는다. 도입된 IT는 다시 업무, 권한, 조정 방식과 의사결정을 바꾼다. 그러므로 성과나 저항을 기술의 기능만으로 설명하면 순환의 절반을 놓친다.
+
 ---
 
 ## Slide 6 — What Is an Organization?

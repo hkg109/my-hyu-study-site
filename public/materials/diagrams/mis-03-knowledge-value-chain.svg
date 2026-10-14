@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-03-knowledge-value-chain-title mis-03-knowledge-value-chain-desc" id="mis-03-knowledge-value-chain-root">
+  <title id="mis-03-knowledge-value-chain-title">지식관리 가치사슬</title>
+  <desc id="mis-03-knowledge-value-chain-desc">지식을 획득하고 보존·전달해 실제 업무에 적용하며 결과를 다시 학습하는 과정</desc>
+  <defs>
+      <style>#mis-03-knowledge-value-chain-root .diagram-container { width:100%;overflow-x:auto }
+      #mis-03-knowledge-value-chain-root .bg { fill:#f7f6f2 }
+      #mis-03-knowledge-value-chain-root .rule { stroke:#b9b6ac;stroke-width:1;fill:none }
+      #mis-03-knowledge-value-chain-root .flow { stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-03-knowledge-value-chain-mis-03-knowledge-value-chain-arrow) }
+      #mis-03-knowledge-value-chain-root .flow-strong { stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-03-knowledge-value-chain-mis-03-knowledge-value-chain-arrow-strong) }
+      #mis-03-knowledge-value-chain-root .node { fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5 }
+      #mis-03-knowledge-value-chain-root .node-focal { fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5 }
+      #mis-03-knowledge-value-chain-root .zone { fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5 }
+      #mis-03-knowledge-value-chain-root .tag { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e }
+      #mis-03-knowledge-value-chain-root .title { font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
+      #mis-03-knowledge-value-chain-root .subtitle { font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
+      #mis-03-knowledge-value-chain-root .name { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
+      #mis-03-knowledge-value-chain-root .name-inverse { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
+      #mis-03-knowledge-value-chain-root .sub { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
+      #mis-03-knowledge-value-chain-root .sub-inverse { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
+      #mis-03-knowledge-value-chain-root .small { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em }
+      #mis-03-knowledge-value-chain-root .label-mask { fill:#f7f6f2 }</style>
+    <marker id="mis-03-knowledge-value-chain-mis-03-knowledge-value-chain-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
+    <marker id="mis-03-knowledge-value-chain-mis-03-knowledge-value-chain-arrow-strong" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker>
+  </defs>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-03-knowledge-value-chain-mis-03-knowledge-value-chain-arrow)}.flow-strong{stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-03-knowledge-value-chain-mis-03-knowledge-value-chain-arrow-strong)}
+    .node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.node-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.small{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em}.label-mask{fill:#f7f6f2}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 2B · KNOWLEDGE MANAGEMENT</text>
+  <text class="title" x="64" y="92">지식관리 가치사슬</text>
+  <text class="subtitle" x="64" y="122">지식을 획득하고 보존·전달해 실제 업무에 적용하며 결과를 다시 학습하는 과정</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <line class="flow" x1="248" y1="320" x2="292" y2="320"/>
+  <line class="flow" x1="484" y1="320" x2="528" y2="320"/>
+  <line class="flow-strong" x1="720" y1="320" x2="764" y2="320"/>
+  <line class="flow" x1="956" y1="320" x2="1000" y2="320"/>
+  <path class="flow" d="M1096 384 V504 Q1096 512 1088 512 H160 Q152 512 152 504 V384"/><rect class="label-mask" x="548" y="496" width="184" height="32"/><text class="small" x="640" y="516" text-anchor="middle">ORGANIZATIONAL LEARNING</text>
+  <g><rect class="node" x="56" y="256" width="192" height="128" rx="6"/><text class="name" x="152" y="303" text-anchor="middle">Acquire</text><text class="sub" x="152" y="332" text-anchor="middle">경험 · 문서 · 데이터</text></g>
+  <g><rect class="node" x="292" y="256" width="192" height="128" rx="6"/><text class="name" x="388" y="303" text-anchor="middle">Store</text><text class="sub" x="388" y="332" text-anchor="middle">구조화 · 소유권 · 보존</text></g>
+  <g><rect class="node" x="528" y="256" width="192" height="128" rx="6"/><text class="name" x="624" y="303" text-anchor="middle">Disseminate</text><text class="sub" x="624" y="332" text-anchor="middle">검색 · 포털 · 협업</text></g>
+  <g><rect class="node-focal" x="764" y="256" width="192" height="128" rx="6"/><text class="name-inverse" x="860" y="303" text-anchor="middle">Apply</text><text class="sub-inverse" x="860" y="332" text-anchor="middle">결정 · 프로세스 내재화</text></g>
+  <g><rect class="node" x="1000" y="256" width="192" height="128" rx="6"/><text class="name" x="1096" y="303" text-anchor="middle">Outcome</text><text class="sub" x="1096" y="332" text-anchor="middle">새 업무 · 제품 · 시장</text></g>
+  <text class="small" x="64" y="636">READ LEFT → RIGHT · THE RETURN PATH CHANGES THE NEXT CYCLE</text>
+</svg>

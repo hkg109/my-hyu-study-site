@@ -400,6 +400,12 @@ objectives:
 
 > **KM은 IT activity만이 아니라 management / organization activity가 함께 있어야 완성**
 
+### 개념도 · 지식이 조직 성과가 되는 과정
+
+![지식을 획득하고 저장하고 전달해 업무에 적용한 뒤 결과를 다시 조직 학습으로 연결하는 지식관리 가치사슬](/materials/diagrams/mis-03-knowledge-value-chain.svg)
+
+**그림 읽기:** 지식을 많이 저장하는 것만으로는 가치가 생기지 않는다. 필요한 사람에게 전달된 지식이 의사결정과 프로세스에 **적용(Application)**되어야 새 업무·제품·시장이 만들어진다. 그 결과를 다시 획득 단계로 돌려 기준과 행동을 바꾸는 것이 **조직 학습(Organizational Learning)**이다.
+
 ---
 
 ## Slide 51 — Knowledge Management Value Chain (2/3)

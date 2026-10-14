@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "diagram-design": {
+      "source": "cathrynlavery/diagram-design",
+      "sourceType": "github",
+      "skillPath": "skills/diagram-design/SKILL.md",
+      "computedHash": "ddcbbd4f316f66c3c2074d130b78e8d78cd53bad245b161df75fd5a5eba7d4ca"
+    },
     "redesign-existing-projects": {
       "source": "leonxlnx/taste-skill",
       "sourceType": "github",

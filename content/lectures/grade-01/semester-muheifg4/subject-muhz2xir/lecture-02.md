@@ -360,6 +360,12 @@ objectives:
 
 > **TPS → MIS / DSS → ESS → Senior Management**
 
+### 개념도 · 관리 수준별 시스템 연결
+
+![운영 수준의 TPS가 MIS와 DSS를 거쳐 전략 수준의 ESS에 정보를 공급하고 전사 애플리케이션이 모든 수준을 연결하는 구조](/materials/diagrams/mis-02-management-systems.svg)
+
+**그림 읽기:** TPS는 일상 거래를 기록하는 기반이고, MIS는 이를 정기 보고서로 요약하며 DSS는 같은 내부 데이터와 외부 데이터를 분석한다. ESS는 MIS와 DSS의 핵심 정보를 받아 전략적 판단을 지원한다. 오른쪽의 ERP·SCM·CRM·KMS는 특정 계층에만 속하는 시스템이 아니라 부서와 관리 수준의 경계를 가로질러 연결한다.
+
 ---
 
 ## Slide 20 — Enterprise Applications

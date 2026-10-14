@@ -96,7 +96,17 @@ function transformCallouts(tree: Root) {
   });
 }
 
-function removeBlockMarker(node: Blockquote, type: "QUIZ" | "ANSWER") {
+type StudyBlockType = "QUIZ" | "ANSWER" | "TRANSLATION" | "ANSWER-TRANSLATION";
+
+function hasBlockMarker(node: RootContent | undefined, type: StudyBlockType) {
+  if (node?.type !== "blockquote") return false;
+  const first = node.children[0];
+  if (first?.type !== "paragraph") return false;
+  const marker = first.children[0];
+  return marker?.type === "text" && new RegExp(`^\\[!${type}\\]\\s*`).test(marker.value);
+}
+
+function removeBlockMarker(node: Blockquote, type: StudyBlockType) {
   const first = node.children[0];
   if (first?.type !== "paragraph") return false;
   const marker = first.children[0];
@@ -114,7 +124,8 @@ function transformQuizzes(tree: Root) {
     if (quiz.type !== "blockquote" || !removeBlockMarker(quiz, "QUIZ")) continue;
     const quizId = `quiz-${stableHash(toString(quiz))}`;
     setProperties(quiz, { className: ["study-quiz"], "data-quiz-id": quizId, "data-callout-label": "확인 문제" }, "section");
-    const answer = tree.children[index + 1];
+    const answerIndex = hasBlockMarker(tree.children[index + 1], "TRANSLATION") ? index + 2 : index + 1;
+    const answer = tree.children[answerIndex];
     if (answer?.type !== "blockquote" || !removeBlockMarker(answer, "ANSWER")) continue;
     const summary = { type: "paragraph", children: [{ type: "text", value: "정답 확인" }], data: { hName: "summary", hProperties: { className: ["study-answer-summary"] } } } as RootContent;
     const controls = { type: "paragraph", children: ([
@@ -124,6 +135,18 @@ function transformQuizzes(tree: Root) {
     answer.children.push(controls as never);
     setProperties(answer, { className: ["study-answer"], "data-quiz-id": quizId }, "details");
   }
+}
+
+function transformTranslations(tree: Root) {
+  visit(tree, "blockquote", (node: Blockquote) => {
+    const isAnswer = hasBlockMarker(node, "ANSWER-TRANSLATION");
+    const type: StudyBlockType = isAnswer ? "ANSWER-TRANSLATION" : "TRANSLATION";
+    if (!removeBlockMarker(node, type)) return;
+    const label = isAnswer ? "정답 한국어 번역 보기" : "문제 한국어 번역 보기";
+    const summary = { type: "paragraph", children: [{ type: "text", value: label }], data: { hName: "summary", hProperties: { className: ["study-translation-summary"] } } } as RootContent;
+    node.children.unshift(summary as never);
+    setProperties(node, { className: ["study-translation", isAnswer ? "study-answer-translation" : "study-question-translation"] }, "details");
+  });
 }
 
 function transformFlashcards(tree: Root) {
@@ -160,6 +183,7 @@ export function remarkStudySyntax() {
     transformHighlights(tree);
     transformBlanks(tree);
     transformQuizzes(tree);
+    transformTranslations(tree);
     transformFlashcards(tree);
     transformCallouts(tree);
     assignBlockIds(tree);
