@@ -37,6 +37,14 @@ test("static production HTML includes MDX features, one H1, real TOC ids and no 
   assert.match(printableLecture, /기본 PDF/);
   assert.match(printableLecture, /다크 PDF/);
   assert.match(printableLecture, /PDF로 저장/);
+  assert.match(printableLecture, /class="document-print-watermark"/);
+  assert.match(printableLecture, /26학번 한지석 제공/);
+  const practices = readCollection("practice");
+  const printablePractice = readFileSync(path.join(serverDir, `${practices[0].path.slice(1)}.html`), "utf8");
+  assert.match(printablePractice, /class="document-print-button"/);
+  assert.match(printablePractice, /aria-label="선택한 테마로 족보를 PDF로 저장"/);
+  assert.match(printablePractice, /class="document-print-watermark"/);
+  assert.match(printablePractice, /26학번 한지석 제공/);
   const manifest = JSON.parse(readFileSync(".next/prerender-manifest.json", "utf8"));
   for (const doc of readCollection("lectures")) assert.ok(manifest.routes[doc.path]);
   assert.ok(manifest.dynamicRoutes["/lectures/[...slug]"]);

@@ -143,6 +143,7 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
 .document-print-button { display:inline-flex; align-items:center; gap:7px; flex-shrink:0; min-height:34px; padding:0 11px; border:1px solid var(--border); border-radius:6px; color:var(--muted); background:var(--background); font-size:12px; }
 .document-print-controls .document-print-button { border-radius:0 6px 6px 0; }
 .document-print-button:hover { color:var(--foreground); border-color:var(--border-strong); background:var(--surface); }
+.document-print-watermark { display:none; }
 .lecture-header { padding-bottom:27px; border-bottom:1px solid var(--border); margin-bottom:28px; }.lecture-header .eyebrow { font-size:11px; }.lecture-header .eyebrow span { margin:0 8px; }.lecture-header h1 { font-size:36px; letter-spacing:-.045em; margin:15px 0 14px; }.lead { font-size:17px; color:var(--muted); line-height:1.8; }.lecture-metadata { display:flex; flex-wrap:wrap; gap:13px; margin-top:20px; font-size:11px; color:var(--muted); font-family:"JetBrains Mono",monospace; }
 .objectives { padding:21px 24px; border:1px solid var(--border); border-radius:7px; background:var(--surface); margin-bottom:32px; }.objectives h2 { font-size:14px; margin-bottom:12px; }.objectives ul { padding:0; list-style:none; margin:0; }.objectives li { display:flex; gap:10px; color:var(--muted); font-size:14px; line-height:1.8; margin:5px 0; }.objectives li>span { color:var(--subtle); }
 .page-toc { position:sticky; top:105px; align-self:start; max-height:calc(100dvh - 125px); overflow:auto; padding-top:18px; font-size:12px; scroll-behavior:smooth; }.page-toc .nav-label { margin:0 0 19px 14px; font-size:10px; }.page-toc a { display:block; padding:6px 12px; border-left:1px solid var(--border); color:var(--muted); line-height:1.6; }.page-toc a.nested { padding-left:24px; }.page-toc a.level-4 { padding-left:36px; font-size:11px; }.page-toc a.active { color:var(--foreground); border-left:2px solid var(--foreground); padding-left:11px; font-weight:600; }.page-toc a.nested.active { padding-left:23px; }.page-toc a.level-4.active { padding-left:35px; }.page-toc a:hover { color:var(--foreground); }.toc-bottom { margin:40px 0 0 13px; padding-top:17px; border-top:1px solid var(--border); color:var(--muted); }.toc-bottom span { font-family:"JetBrains Mono",monospace; font-size:9px; letter-spacing:.05em; }.toc-bottom p { margin-top:7px; font-size:12px; }
@@ -443,6 +444,7 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   html,body { width:auto; min-width:0; color:var(--foreground); background:var(--background); }
   html { scroll-behavior:auto; }
   body { font-size:9pt; line-height:1.48; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .document-print-watermark { position:fixed; z-index:20; right:5mm; bottom:3.5mm; display:block; color:var(--muted); font-size:7pt; font-weight:550; letter-spacing:.04em; opacity:.48; pointer-events:none; }
   .site-header,.desktop-sidebar,.skip-link,.page-toc,.document-toolbar,.completion-box,.prev-next,.site-footer,.copy-button,.code-feedback,.admin-edit-hint,.editor-toolbar { display:none!important; }
   .app-shell,#main-content,.document-grid,.document-main { display:block; width:auto; min-width:0; max-width:none; min-height:0; margin:0; padding:0; border:0; }
   .lecture-header { margin:0 0 5mm; padding:0 0 4mm; border-bottom:1px solid var(--border-strong); break-inside:avoid-page; page-break-inside:avoid; }
@@ -468,6 +470,8 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   .callout,.answer,figure[data-rehype-pretty-code-figure],.code-block { break-inside:avoid-page; page-break-inside:avoid; box-shadow:none; }
   .answer { margin:3mm 0; border-color:var(--border-strong); }
   .answer summary { display:none; }
+  .study-answer summary,.study-translation summary,.study-hint summary,.study-flashcard summary { display:none; }
+  .study-answer,.study-translation,.study-hint,.study-flashcard { break-inside:avoid-page; page-break-inside:avoid; box-shadow:none; }
   .answer>div { padding:2.5mm; border:0; }
   .answer>div::before { content:"정답 코드"; display:block; margin:0 0 2mm; font-size:8pt; font-weight:650; color:var(--muted); }
   .prose figure[data-rehype-pretty-code-figure],.code-block { margin:2.5mm 0; overflow:visible; }

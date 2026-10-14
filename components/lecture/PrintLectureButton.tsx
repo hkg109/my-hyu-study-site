@@ -8,10 +8,10 @@ type PrintTheme = "light" | "dark";
 
 interface PrintState {
   title: string;
-  answerStates: boolean[];
+  detailStates: boolean[];
 }
 
-export function PrintLectureButton({ title }: { title: string }) {
+export function PrintLectureButton({ title, kind = "lecture" }: { title: string; kind?: "lecture" | "practice" }) {
   const { resolvedTheme } = useTheme();
   const printState = useRef<PrintState | null>(null);
   const choseTheme = useRef(false);
@@ -23,10 +23,10 @@ export function PrintLectureButton({ title }: { title: string }) {
 
   const preparePrint = useCallback(() => {
     if (printState.current) return;
-    const answers = [...document.querySelectorAll<HTMLDetailsElement>("details.answer")];
-    printState.current = { title: document.title, answerStates: answers.map(answer => answer.open) };
+    const details = [...document.querySelectorAll<HTMLDetailsElement>("details.answer, details.study-answer, details.study-translation, details.study-hint, details.study-flashcard")];
+    printState.current = { title: document.title, detailStates: details.map(detail => detail.open) };
 
-    for (const answer of answers) answer.open = true;
+    for (const detail of details) detail.open = true;
     document.documentElement.classList.add("printing-document", `print-theme-${theme}`);
     document.title = `${title.replace(/[\\/:*?"<>|]/g, "-")} - HJS STUDY`;
   }, [theme, title]);
@@ -34,8 +34,8 @@ export function PrintLectureButton({ title }: { title: string }) {
   const restorePage = useCallback(() => {
     const state = printState.current;
     if (!state) return;
-    const answers = [...document.querySelectorAll<HTMLDetailsElement>("details.answer")];
-    answers.forEach((answer, index) => { answer.open = state.answerStates[index] ?? false; });
+    const details = [...document.querySelectorAll<HTMLDetailsElement>("details.answer, details.study-answer, details.study-translation, details.study-hint, details.study-flashcard")];
+    details.forEach((detail, index) => { detail.open = state.detailStates[index] ?? false; });
     document.title = state.title;
     document.documentElement.classList.remove("printing-document", "print-theme-light", "print-theme-dark");
     printState.current = null;
@@ -57,9 +57,9 @@ export function PrintLectureButton({ title }: { title: string }) {
   };
 
   return <div className="document-print-controls">
-    <label className="sr-only" htmlFor="lecture-print-theme">PDF 테마</label>
+    <label className="sr-only" htmlFor={`${kind}-print-theme`}>PDF 테마</label>
     <select
-      id="lecture-print-theme"
+      id={`${kind}-print-theme`}
       className="document-print-theme"
       value={theme}
       onChange={event => {
@@ -71,7 +71,7 @@ export function PrintLectureButton({ title }: { title: string }) {
       <option value="light">기본 PDF</option>
       <option value="dark">다크 PDF</option>
     </select>
-    <button type="button" className="document-print-button" onClick={print} aria-label="선택한 테마로 강의 노트를 PDF로 저장">
+    <button type="button" className="document-print-button" onClick={print} aria-label={`선택한 테마로 ${kind === "practice" ? "족보" : "강의 노트"}를 PDF로 저장`}>
       <FileDown size={15} />
       PDF로 저장
     </button>
