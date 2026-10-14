@@ -414,6 +414,12 @@ objectives:
 
 > **Cookie = browser에 저장된 identifier를 이용해 returning visitor를 인식**
 
+### 개념도 · 식별자가 profile이 되는 과정
+
+![브라우저 요청으로 저장된 cookie identifier가 재방문 때 전달되고 여러 활동 기록을 연결해 profile과 의사결정에 사용되는 흐름](/materials/diagrams/mis-05-cookie-profile-flow.svg)
+
+**그림 읽기:** cookie 자체는 identifier이지만, 반복 방문의 activity log와 결합되면 장기 profile을 만들 수 있다. privacy 쟁점은 저장 여부 하나가 아니라 consent, access, retention, purpose limitation을 전 과정에서 어떻게 통제하느냐에 있다.
+
 ---
 
 ## Slide 26 — Technical Solutions for Privacy
@@ -585,3 +591,36 @@ objectives:
 - responsible technology use
 
 > **Privacy / ethics / governance knowledge는 실제 business 경쟁력과 연결됨**
+
+---
+
+## 개념 회상과 오개념 점검
+
+> [!QUIZ]
+> 새로운 information technology의 영향이 ethical issue에서 social issue와 political issue로 확장되는 흐름을 설명하시오.
+
+> [!ANSWER]
+> 먼저 개인과 조직이 옳고 그름을 판단해야 하는 ethical issue가 생긴다. 영향이 누적되면 사회적 규범과 제도가 흔들리는 social issue가 되고, 이후 권리·책임·법률을 정하는 political issue로 확장된다.
+
+> [!QUIZ]
+> responsibility, accountability, liability, due process를 각각 한 문장으로 구분하시오.
+
+> [!ANSWER]
+> responsibility는 자신의 선택에 따른 의무를 받아들이는 것이고, accountability는 누가 행동했는지 추적·설명할 수 있는 상태이다. liability는 발생한 피해에 대한 법적 책임이며, due process는 규칙이 알려져 있고 공정한 절차로 적용·이의 제기되는 원칙이다.
+
+> [!QUIZ]
+> computer crime과 computer abuse의 경계는 무엇인가?
+
+> [!ANSWER]
+> computer crime은 computer를 이용하거나 대상으로 하는 illegal act이다. computer abuse는 해롭거나 unethical하지만 반드시 illegal인 것은 아니다.
+
+> [!QUIZ]
+> An automated decision causes harm, but the organization cannot identify who approved the model or changed its rules. Which concept is most directly missing?
+>
+> - A. Responsibility
+> - B. Accountability
+> - C. Liability
+> - D. Due process
+
+> [!ANSWER]
+> **정답은 B, accountability이다.** A는 행위자가 밝혀진 뒤 의무를 받아들이는 문제와 추적 가능성을 혼동한 선택이다. C는 피해의 법적 책임과 행위 추적을 혼동한 선택이다. D는 공정한 규칙·절차와 담당자 식별 가능성을 혼동한 선택이다.

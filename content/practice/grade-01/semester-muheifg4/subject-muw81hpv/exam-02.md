@@ -1,6 +1,6 @@
 ---
 title: C++ 기말고사 족보
-description: 19개 문항으로 구성한 C++ 기말고사 연습 문제와 정답·해설입니다.
+description: 20개 문항으로 구성한 C++ 기말고사 연습 문제와 정답·해설입니다.
 week: 0
 order: 2
 published: true
@@ -449,6 +449,15 @@ published: true
 >     o3->funB();
 > }
 > ```
+
+> [!HINT 1]
+> 각 호출마다 pointer의 declared type과 실제 object type을 따로 적어 보세요.
+
+> [!HINT 2]
+> base class에서 `virtual`이 아닌 `funA()`는 pointer type을, `virtual`인 `funB()`는 실제 object type을 기준으로 선택합니다.
+
+> [!HINT 3]
+> `o2`만 두 기준이 다르다. `o2`의 pointer type은 `C1*`, 실제 object type은 `C2`이다.
 
 > [!ANSWER]
 > ```text
@@ -1171,3 +1180,46 @@ published: true
 > template <>
 > class Factorial<0>
 > ```
+
+## 문제 20
+
+**참고 자료:** 문제 7의 non-virtual function과 virtual function dispatch를 오개념 진단형으로 재구성.
+
+> [!QUIZ]
+> 다음 프로그램의 출력으로 옳은 것은?
+>
+> ```cpp
+> #include <iostream>
+>
+> class Base {
+> public:
+>     void show() { std::cout << "Base show\n"; }
+>     virtual void draw() { std::cout << "Base draw\n"; }
+> };
+>
+> class Derived : public Base {
+> public:
+>     void show() { std::cout << "Derived show\n"; }
+>     void draw() override { std::cout << "Derived draw\n"; }
+> };
+>
+> int main()
+> {
+>     Derived object;
+>     Base* pointer = &object;
+>     pointer->show();
+>     pointer->draw();
+> }
+> ```
+>
+> - A. `Base show` / `Base draw`
+> - B. `Base show` / `Derived draw`
+> - C. `Derived show` / `Base draw`
+> - D. `Derived show` / `Derived draw`
+
+> [!ANSWER]
+> **정답은 B이다.** `show()`는 `virtual`이 아니므로 `Base*`라는 pointer type을 기준으로 `Base::show()`가 선택된다. `draw()`는 base에서 `virtual`이므로 실제 object type인 `Derived`의 override가 호출된다.
+>
+> - A: 실제 object type과 관계없이 항상 base 함수가 호출된다고 본 오개념
+> - C: virtual 여부의 적용 방향을 반대로 이해한 경우
+> - D: 모든 재정의 함수가 자동으로 dynamic binding된다고 본 오개념

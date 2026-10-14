@@ -1,0 +1,7 @@
+flowchart LR
+  Order[Customer order] --> Sales[Sales validation]
+  Sales --> Accounting[Credit and payment]
+  Accounting --> Inventory[Inventory check]
+  Inventory --> Fulfillment[Produce, ship, deliver]
+  Fulfillment --> Feedback[Status and exceptions]
+  Feedback --> Sales

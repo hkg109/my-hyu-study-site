@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-04-organization-it-loop-title mis-04-organization-it-loop-desc" id="mis-04-organization-it-loop-root">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-04-organization-it-loop-title mis-04-organization-it-loop-desc">
   <title id="mis-04-organization-it-loop-title">조직과 정보기술의 양방향 관계</title>
   <desc id="mis-04-organization-it-loop-desc">조직의 조건이 IT 설계를 만들고 IT가 다시 업무·권한·의사결정을 바꾸는 순환</desc>
   <defs>
-      <style>#mis-04-organization-it-loop-root .diagram-container { width:100%;overflow-x:auto }
-      #mis-04-organization-it-loop-root .bg { fill:#f7f6f2 }
-      #mis-04-organization-it-loop-root .rule { stroke:#b9b6ac;stroke-width:1;fill:none }
-      #mis-04-organization-it-loop-root .flow { stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-04-organization-it-loop-mis-04-organization-it-loop-arrow) }
-      #mis-04-organization-it-loop-root .flow-strong { stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-04-organization-it-loop-mis-04-organization-it-loop-arrow-strong) }
-      #mis-04-organization-it-loop-root .node { fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5 }
-      #mis-04-organization-it-loop-root .node-focal { fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5 }
-      #mis-04-organization-it-loop-root .zone { fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5 }
-      #mis-04-organization-it-loop-root .tag { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e }
-      #mis-04-organization-it-loop-root .title { font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
-      #mis-04-organization-it-loop-root .subtitle { font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
-      #mis-04-organization-it-loop-root .name { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
-      #mis-04-organization-it-loop-root .name-inverse { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
-      #mis-04-organization-it-loop-root .sub { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
-      #mis-04-organization-it-loop-root .sub-inverse { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
-      #mis-04-organization-it-loop-root .small { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em }
-      #mis-04-organization-it-loop-root .label-mask { fill:#f7f6f2 }</style>
-    <marker id="mis-04-organization-it-loop-mis-04-organization-it-loop-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
-    <marker id="mis-04-organization-it-loop-mis-04-organization-it-loop-arrow-strong" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker>
+    <marker id="mis-04-organization-it-loop-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
+    <marker id="mis-04-organization-it-loop-arrow-strong" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker>
   </defs>
   <style>
-    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-04-organization-it-loop-mis-04-organization-it-loop-arrow)}.flow-strong{stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-04-organization-it-loop-mis-04-organization-it-loop-arrow-strong)}
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-04-organization-it-loop-arrow)}.flow-strong{stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-04-organization-it-loop-arrow-strong)}
     .node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.node-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.small{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em}.label-mask{fill:#f7f6f2}
   </style>
   <rect class="bg" width="1280" height="720"/>

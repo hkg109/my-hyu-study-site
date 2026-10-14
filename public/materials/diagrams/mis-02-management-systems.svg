@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-02-management-systems-title mis-02-management-systems-desc" id="mis-02-management-systems-root">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-02-management-systems-title mis-02-management-systems-desc">
   <title id="mis-02-management-systems-title">관리 수준별 정보시스템</title>
   <desc id="mis-02-management-systems-desc">거래 데이터가 TPS에서 MIS와 DSS를 거쳐 ESS의 전략적 판단으로 올라가는 구조</desc>
   <defs>
-      <style>#mis-02-management-systems-root .diagram-container { width:100%;overflow-x:auto }
-      #mis-02-management-systems-root .bg { fill:#f7f6f2 }
-      #mis-02-management-systems-root .rule { stroke:#b9b6ac;stroke-width:1;fill:none }
-      #mis-02-management-systems-root .flow { stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-02-management-systems-mis-02-management-systems-arrow) }
-      #mis-02-management-systems-root .flow-strong { stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-02-management-systems-mis-02-management-systems-arrow-strong) }
-      #mis-02-management-systems-root .node { fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5 }
-      #mis-02-management-systems-root .node-focal { fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5 }
-      #mis-02-management-systems-root .zone { fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5 }
-      #mis-02-management-systems-root .tag { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e }
-      #mis-02-management-systems-root .title { font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
-      #mis-02-management-systems-root .subtitle { font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
-      #mis-02-management-systems-root .name { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a }
-      #mis-02-management-systems-root .name-inverse { font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
-      #mis-02-management-systems-root .sub { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e }
-      #mis-02-management-systems-root .sub-inverse { font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2 }
-      #mis-02-management-systems-root .small { font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em }
-      #mis-02-management-systems-root .label-mask { fill:#f7f6f2 }</style>
-    <marker id="mis-02-management-systems-mis-02-management-systems-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
-    <marker id="mis-02-management-systems-mis-02-management-systems-arrow-strong" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker>
+    <marker id="mis-02-management-systems-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
+    <marker id="mis-02-management-systems-arrow-strong" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker>
   </defs>
   <style>
-    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-02-management-systems-mis-02-management-systems-arrow)}.flow-strong{stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-02-management-systems-mis-02-management-systems-arrow-strong)}
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-02-management-systems-arrow)}.flow-strong{stroke:#1d1d1a;stroke-width:2.5;fill:none;marker-end:url(#mis-02-management-systems-arrow-strong)}
     .node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.node-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.small{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.04em}.label-mask{fill:#f7f6f2}
   </style>
   <rect class="bg" width="1280" height="720"/>

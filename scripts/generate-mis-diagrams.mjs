@@ -115,6 +115,42 @@ function ethicsNestedDiagram() {
   return frame(slug, "정보기술이 만드는 윤리적 파장", "새로운 정보기술이 개인의 윤리 문제에서 사회와 정치의 쟁점으로 확장되는 구조", "CHAPTER 4 · NESTED RIPPLE", body);
 }
 
+function enterpriseApplicationsDiagram() {
+  const slug = "mis-02-enterprise-applications";
+  const body = `<line class="flow-strong" x1="448" y1="314" x2="540" y2="314"/><line class="flow-strong" x1="740" y1="314" x2="832" y2="314"/><line class="flow" x1="640" y1="250" x2="640" y2="206"/><line class="flow" x1="640" y1="378" x2="640" y2="470"/>
+  ${node(540, 250, 200, 128, "ERP", "shared internal data", true)}
+  ${node(96, 250, 352, 128, "SCM", "suppliers · logistics · inventory")}
+  ${node(832, 250, 352, 128, "CRM", "sales · service · customers")}
+  ${node(480, 470, 320, 128, "KMS", "capture · share · apply knowledge")}
+  <rect class="zone" x="480" y="166" width="320" height="40" rx="6"/><text class="small" x="640" y="191" text-anchor="middle">ENTERPRISE-WIDE PROCESS INTEGRATION</text>
+  <text class="subtitle" x="640" y="652" text-anchor="middle">각 application의 목적은 다르지만 공통 data와 process 연결이 전체 성과를 만든다.</text>`;
+  return frame(slug, "Enterprise applications의 연결", "ERP를 중심으로 supplier, customer, organizational knowledge가 하나의 process로 이어지는 구조", "CHAPTER 2 · ENTERPRISE INTEGRATION", body);
+}
+
+function kmsTypesDiagram() {
+  const slug = "mis-03-kms-types";
+  const body = `<line class="flow-strong" x1="640" y1="294" x2="640" y2="350"/><path class="flow" d="M640 350 H256 V426"/><line class="flow" x1="640" y1="350" x2="640" y2="426"/><path class="flow" d="M640 350 H1024 V426"/>
+  ${node(448, 174, 384, 120, "Knowledge management systems", "organizational knowledge capability", true)}
+  ${node(72, 426, 368, 132, "Enterprise-wide KMS", "documents · taxonomy · expertise")}
+  ${node(456, 426, 368, 132, "Knowledge work systems", "CAD · VR · specialist work")}
+  ${node(840, 426, 368, 132, "Intelligent techniques", "rules · cases · machine learning")}
+  <text class="subtitle" x="640" y="640" text-anchor="middle">구분 기준은 같은 정보를 저장하느냐가 아니라 누구의 어떤 지식 활동을 지원하느냐이다.</text>`;
+  return frame(slug, "KMS의 세 가지 유형", "전사 지식 공유, 전문 지식 창출, 지능형 추론을 지원하는 시스템의 역할 구분", "CHAPTER 2B · KMS TYPES", body);
+}
+
+function strategyLensesDiagram() {
+  const slug = "mis-04-strategy-lenses";
+  const body = `<line class="flow" x1="256" y1="362" x2="256" y2="430"/><line class="flow" x1="640" y1="362" x2="640" y2="430"/><line class="flow" x1="1024" y1="362" x2="1024" y2="430"/>
+  ${node(72, 206, 368, 156, "Competitive forces", "industry · rivals · entrants · substitutes")}
+  ${node(456, 206, 368, 156, "Value chain", "firm activities · cost · differentiation", true)}
+  ${node(840, 206, 368, 156, "Business ecosystem", "platform · partners · multiple industries")}
+  ${node(72, 430, 368, 112, "Strategic position", "어떤 압력에 대응할까?")}
+  ${node(456, 430, 368, 112, "Activity redesign", "어디서 value를 만들까?")}
+  ${node(840, 430, 368, 112, "Network advantage", "누구와 함께 만들까?")}
+  <text class="subtitle" x="640" y="630" text-anchor="middle">세 model은 대체 관계가 아니라 industry → firm → network로 분석 수준을 바꾼다.</text>`;
+  return frame(slug, "Strategic IS를 보는 세 관점", "산업 압력, 기업 활동, 생태계 연결을 서로 다른 분석 수준에서 사용하는 구조", "CHAPTER 3 · STRATEGY LENSES", body);
+}
+
 const diagrams = [
   {
     slug: "mis-01-information-feedback",
@@ -135,6 +171,24 @@ const diagrams = [
   },
   { slug: "mis-02-management-systems", svg: systemsDiagram() },
   {
+    slug: "mis-02-order-fulfillment",
+    svg: processDiagram({
+      slug: "mis-02-order-fulfillment",
+      title: "Order fulfillment의 기능 간 흐름",
+      description: "고객 주문이 sales, accounting, inventory, production과 shipping을 가로질러 완료되는 business process",
+      eyebrow: "CHAPTER 2 · CROSS-FUNCTIONAL PROCESS",
+      feedbackLabel: "DELIVERY STATUS · EXCEPTIONS · CUSTOMER FEEDBACK",
+      steps: [
+        { title: "Order", sub: "customer request" },
+        { title: "Sales", sub: "order validation" },
+        { title: "Accounting", sub: "credit · payment" },
+        { title: "Inventory", sub: "availability check", focal: true },
+        { title: "Fulfillment", sub: "produce · ship · deliver" },
+      ],
+    }),
+  },
+  { slug: "mis-02-enterprise-applications", svg: enterpriseApplicationsDiagram() },
+  {
     slug: "mis-03-knowledge-value-chain",
     svg: processDiagram({
       slug: "mis-03-knowledge-value-chain",
@@ -151,8 +205,27 @@ const diagrams = [
       ],
     }),
   },
+  { slug: "mis-03-kms-types", svg: kmsTypesDiagram() },
   { slug: "mis-04-organization-it-loop", svg: organizationLoopDiagram() },
+  { slug: "mis-04-strategy-lenses", svg: strategyLensesDiagram() },
   { slug: "mis-05-ethical-ripple", svg: ethicsNestedDiagram() },
+  {
+    slug: "mis-05-cookie-profile-flow",
+    svg: processDiagram({
+      slug: "mis-05-cookie-profile-flow",
+      title: "Cookie에서 profile까지",
+      description: "브라우저 식별자가 반복 방문을 연결해 행동 기록과 profiling에 사용되는 과정",
+      eyebrow: "CHAPTER 4 · PRIVACY FLOW",
+      feedbackLabel: "CONSENT · ACCESS · RETENTION · PURPOSE LIMITS",
+      steps: [
+        { title: "Request", sub: "browser visits site" },
+        { title: "Identifier", sub: "server sets cookie" },
+        { title: "Return visit", sub: "browser sends ID" },
+        { title: "Activity log", sub: "events linked over time", focal: true },
+        { title: "Profile &amp; decision", sub: "ads · offers · risk" },
+      ],
+    }),
+  },
 ];
 
 for (const { slug, svg } of diagrams) {

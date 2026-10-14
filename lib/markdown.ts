@@ -118,13 +118,22 @@ function removeBlockMarker(node: Blockquote, type: StudyBlockType) {
   return true;
 }
 
+function hasHintMarker(node: RootContent | undefined) {
+  if (node?.type !== "blockquote") return false;
+  const first = node.children[0];
+  if (first?.type !== "paragraph") return false;
+  const marker = first.children[0];
+  return marker?.type === "text" && /^\[!(?:HINT(?: [1-3])?|SOLUTION)\]\s*/.test(marker.value);
+}
+
 function transformQuizzes(tree: Root) {
   for (let index = 0; index < tree.children.length; index += 1) {
     const quiz = tree.children[index];
     if (quiz.type !== "blockquote" || !removeBlockMarker(quiz, "QUIZ")) continue;
     const quizId = `quiz-${stableHash(toString(quiz))}`;
     setProperties(quiz, { className: ["study-quiz"], "data-quiz-id": quizId, "data-callout-label": "확인 문제" }, "section");
-    const answerIndex = hasBlockMarker(tree.children[index + 1], "TRANSLATION") ? index + 2 : index + 1;
+    let answerIndex = index + 1;
+    while (hasBlockMarker(tree.children[answerIndex], "TRANSLATION") || hasHintMarker(tree.children[answerIndex])) answerIndex += 1;
     const answer = tree.children[answerIndex];
     if (answer?.type !== "blockquote" || !removeBlockMarker(answer, "ANSWER")) continue;
     const summary = { type: "paragraph", children: [{ type: "text", value: "정답 확인" }], data: { hName: "summary", hProperties: { className: ["study-answer-summary"] } } } as RootContent;
@@ -146,6 +155,29 @@ function transformTranslations(tree: Root) {
     const summary = { type: "paragraph", children: [{ type: "text", value: label }], data: { hName: "summary", hProperties: { className: ["study-translation-summary"] } } } as RootContent;
     node.children.unshift(summary as never);
     setProperties(node, { className: ["study-translation", isAnswer ? "study-answer-translation" : "study-question-translation"] }, "details");
+  });
+}
+
+function transformHints(tree: Root) {
+  visit(tree, "blockquote", (node: Blockquote) => {
+    const first = node.children[0];
+    if (first?.type !== "paragraph") return;
+    const marker = first.children[0];
+    if (marker?.type !== "text") return;
+    const match = /^\[!(HINT(?: [1-3])?|SOLUTION)\]\s*/.exec(marker.value);
+    if (!match) return;
+
+    const isSolution = match[1] === "SOLUTION";
+    const hintNumber = isSolution ? "" : match[1].split(" ")[1] ?? "";
+    const label = isSolution ? "풀이 확인" : hintNumber ? `힌트 ${hintNumber} 보기` : "힌트 보기";
+    marker.value = marker.value.slice(match[0].length);
+    if (!marker.value && first.children.length === 1) node.children.shift();
+    const summary = { type: "paragraph", children: [{ type: "text", value: label }], data: { hName: "summary", hProperties: { className: ["study-hint-summary"] } } } as RootContent;
+    node.children.unshift(summary as never);
+    setProperties(node, {
+      className: ["study-hint", isSolution ? "study-hint-solution" : "study-hint-step"],
+      "data-hint-level": isSolution ? "solution" : hintNumber || "hint",
+    }, "details");
   });
 }
 
@@ -184,6 +216,7 @@ export function remarkStudySyntax() {
     transformBlanks(tree);
     transformQuizzes(tree);
     transformTranslations(tree);
+    transformHints(tree);
     transformFlashcards(tree);
     transformCallouts(tree);
     assignBlockIds(tree);

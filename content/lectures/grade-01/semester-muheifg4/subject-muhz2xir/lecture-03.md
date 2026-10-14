@@ -509,6 +509,12 @@ objectives:
 
 > **KMS는 조직 전체 지식관리 / 지식 생성 작업 / AI 기반 지식기술로 나뉨**
 
+### 개념도 · KMS 유형을 나누는 기준
+
+![Knowledge management systems가 enterprise-wide KMS, knowledge work systems, intelligent techniques의 세 유형으로 나뉘는 구조](/materials/diagrams/mis-03-kms-types.svg)
+
+**그림 읽기:** enterprise-wide KMS는 조직 전체의 지식 공유, KWS는 전문가의 새로운 지식 창출, intelligent techniques는 규칙·사례·data에서 pattern이나 해법을 찾는 데 초점이 있다. 사용 기술보다 지원하는 knowledge activity로 구분한다.
+
 ---
 
 ## Slide 56 — Enterprise-Wide Knowledge Types
@@ -858,3 +864,36 @@ objectives:
 | **Sustainability** | IS investment decision에 어떤 environmental measures를 포함해야 하는가? |
 
 > **시험 체크: AI process / Cloud ERP risk / Human-Agent control / RAG-ready knowledge / Sustainability**
+
+---
+
+## 개념 회상과 오개념 점검
+
+> [!QUIZ]
+> Knowledge Management Value Chain을 순서대로 쓰고, 마지막 단계가 빠지면 왜 business value가 생기기 어려운지 설명하시오.
+
+> [!ANSWER]
+> Acquisition → Storage → Dissemination → Application이다. 지식을 저장하고 공유해도 실제 decision이나 business process에 적용하지 않으면 성과 개선으로 연결되지 않는다.
+
+> [!QUIZ]
+> explicit knowledge와 tacit knowledge의 차이를 각각 하나의 조직 사례로 설명하시오.
+
+> [!ANSWER]
+> explicit knowledge는 매뉴얼·보고서처럼 기록하고 전달하기 쉬운 지식이다. tacit knowledge는 숙련자의 문제 해결 감각처럼 개인의 경험에 묻혀 있어 문서만으로 완전히 옮기기 어려운 지식이다.
+
+> [!QUIZ]
+> AI-ready content를 만들 때 taxonomy, metadata, access control이 함께 필요한 이유는 무엇인가?
+
+> [!ANSWER]
+> taxonomy와 metadata는 관련 지식을 정확히 찾고 맥락을 해석하게 하며, access control은 허가된 정보만 사용하게 한다. 셋 중 하나가 빠지면 검색 정확성이나 보안이 약해진다.
+
+> [!QUIZ]
+> A firm has stored thousands of project reports, but employees cannot find relevant lessons and no process uses them. Which KM stage is the clearest bottleneck?
+>
+> - A. Acquisition only
+> - B. Storage only
+> - C. Dissemination and application
+> - D. Hardware platform only
+
+> [!ANSWER]
+> **정답은 C이다.** A는 자료가 이미 수집되었다는 조건을 놓친 선택이다. B는 저장 자체를 가치 창출로 보는 오개념이다. D는 KM 문제를 hardware 문제로만 축소한 선택이다. 찾을 수 있게 전달하고 실제 업무에 적용해야 지식이 성과로 이어진다.

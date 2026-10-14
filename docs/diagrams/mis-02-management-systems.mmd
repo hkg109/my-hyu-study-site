@@ -1,0 +1,7 @@
+flowchart BT
+  TPS[TPS<br/>operational transactions] --> MIS[MIS<br/>routine summaries]
+  TPS --> DSS[DSS<br/>non-routine analysis]
+  MIS --> ESS[ESS<br/>strategic overview]
+  DSS --> ESS
+  External[External data] --> DSS
+  External --> ESS

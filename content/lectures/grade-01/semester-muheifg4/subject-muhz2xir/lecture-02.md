@@ -119,6 +119,12 @@ objectives:
 
 > **Order fulfillment = Sales + Accounting + Manufacturing의 coordination**
 
+### 개념도 · 한 주문이 부서를 가로지르는 과정
+
+![고객 주문이 영업, 회계, 재고 확인, 생산과 배송을 거쳐 완료되고 예외와 고객 피드백이 다시 영업으로 돌아오는 흐름](/materials/diagrams/mis-02-order-fulfillment.svg)
+
+**그림 읽기:** order fulfillment는 한 부서의 독립 작업이 아니라 여러 functional area가 같은 주문 정보를 넘겨받는 cross-functional process이다. 어느 한 단계의 지연이나 오류도 전체 delivery outcome에 영향을 준다.
+
 ---
 
 ## Slide 8 — How IT Improves Business Processes
@@ -409,6 +415,12 @@ objectives:
 
 > **Enterprise Applications는 내부 부서뿐 아니라 suppliers / customers까지 연결**
 
+### 개념도 · Enterprise applications의 역할 분담
+
+![ERP의 공통 내부 데이터를 중심으로 SCM은 공급자와 물류를, CRM은 고객 접점을, KMS는 조직 지식을 연결하는 구조](/materials/diagrams/mis-02-enterprise-applications.svg)
+
+**그림 읽기:** ERP는 내부 data와 process의 공통 기반이고, SCM과 CRM은 각각 supplier side와 customer side를 연결한다. KMS는 이 과정에서 생긴 know-how를 수집·공유·적용한다. 네 system은 대체 관계가 아니라 서로 다른 경계를 연결한다.
+
 ---
 
 ## Slide 22 — Enterprise Systems (ES / ERP)
@@ -551,3 +563,34 @@ objectives:
 > **E-commerce ⊂ E-business / E-government는 공공부문의 Internet 활용**
 
 ---
+
+## 개념 회상과 오개념 점검
+
+> [!QUIZ]
+> 정형화된 주간 실적 보고서를 만드는 MIS와, 운송 경로처럼 비정형 의사결정을 분석하는 DSS의 핵심 차이를 설명하시오.
+
+> [!ANSWER]
+> MIS는 주로 TPS의 내부 데이터를 정기 보고서로 요약해 routine decision을 지원한다. DSS는 내부·외부 데이터와 analytical model을 결합해 non-routine decision을 지원한다.
+
+> [!QUIZ]
+> 주문 접수, 월별 판매 요약, 신규 항로 수익성 분석, 전사 전략 지표 확인에 각각 가장 직접적으로 대응하는 system을 순서대로 쓰시오.
+
+> [!ANSWER]
+> TPS → MIS → DSS → ESS이다. 거래 기록에서 관리 보고, 분석, 최고경영진의 전략적 조망으로 의사결정 범위가 넓어진다.
+
+> [!QUIZ]
+> E-commerce가 E-business의 subset인 이유를 한 문장으로 설명하시오.
+
+> [!ANSWER]
+> E-commerce는 Internet을 통한 buying과 selling에 초점을 두지만, E-business는 이를 포함해 기업의 더 넓은 digital business process 전체를 다루기 때문이다.
+
+> [!QUIZ]
+> A middle manager must compare several shipping routes for a new, non-routine delivery decision. Which system is the best primary support?
+>
+> - A. TPS
+> - B. MIS
+> - C. DSS
+> - D. ESS
+
+> [!ANSWER]
+> **정답은 C, DSS이다.** A는 operational transaction 기록과 의사결정 분석을 혼동한 선택이다. B는 routine report와 non-routine analysis를 혼동한 선택이다. D는 middle management와 senior management의 전략적 조망을 혼동한 선택이다.

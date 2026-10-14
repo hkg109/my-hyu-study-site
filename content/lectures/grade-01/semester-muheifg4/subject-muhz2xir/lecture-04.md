@@ -913,6 +913,12 @@ feedback → 다시 capital / labor 제공
 
 > **이 슬라이드는 AI를 Value Chain과 Porter Model에 연결하는 관점을 제시**
 
+### 개념도 · 전략 분석의 세 가지 수준
+
+![Competitive Forces는 산업 수준의 전략적 위치를, Value Chain은 기업 활동 재설계를, Business Ecosystem은 파트너 네트워크의 우위를 분석하는 구조](/materials/diagrams/mis-04-strategy-lenses.svg)
+
+**그림 읽기:** Porter model은 industry pressure, Value Chain은 firm 내부 activity, Business Ecosystem은 여러 industry와 partner의 network를 본다. 셋은 경쟁하는 이론이 아니라 분석 수준이 다른 도구다.
+
 ---
 
 ## Slide 49 — Challenges of Strategic Information Systems
@@ -947,3 +953,36 @@ feedback → 다시 capital / labor 제공
 - market / organization analysis
 
 > **이 장의 핵심 역량 = Organization + IT + Strategy를 함께 보는 능력**
+
+---
+
+## 개념 회상과 오개념 점검
+
+> [!QUIZ]
+> 조직과 information technology의 관계가 양방향이라고 하는 이유를 한 가지씩 설명하시오.
+
+> [!ANSWER]
+> 조직의 structure, business process, culture, politics가 어떤 IT를 어떻게 도입할지 결정한다. 반대로 IT는 업무 방식, coordination, 의사결정 권한과 조직 구조를 바꿀 수 있다.
+
+> [!QUIZ]
+> transaction cost theory와 agency theory가 각각 IT의 조직 축소 효과를 어떻게 설명하는지 비교하시오.
+
+> [!ANSWER]
+> transaction cost theory는 시장 탐색·계약·조정 비용이 낮아져 외부 거래를 더 활용할 수 있다고 본다. agency theory는 정보 획득과 감시 비용이 낮아져 적은 관리자도 더 많은 구성원을 관리할 수 있다고 본다.
+
+> [!QUIZ]
+> Porter’s Competitive Forces Model과 Value Chain Model은 분석 질문이 어떻게 다른가?
+
+> [!ANSWER]
+> Porter model은 industry 수준에서 경쟁 압력과 전략적 위치를 본다. Value Chain은 firm 내부와 연결 활동 중 어디에서 value를 더하거나 cost를 줄일지 찾는다.
+
+> [!QUIZ]
+> A company uses a shared digital platform to reduce the cost of finding suppliers and coordinating contracts. Which explanation fits best?
+>
+> - A. Agency theory
+> - B. Transaction cost theory
+> - C. Organizational culture only
+> - D. Product differentiation only
+
+> [!ANSWER]
+> **정답은 B이다.** A는 내부의 monitoring cost와 외부 거래 비용을 혼동한 선택이다. C는 technology의 경제적 효과를 culture 하나로만 설명한 선택이다. D는 supplier search와 contract coordination 문제를 product uniqueness 문제로 바꾼 선택이다.

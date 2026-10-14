@@ -1,0 +1,6 @@
+flowchart LR
+  Request[Browser request] --> Identifier[Server sets cookie ID]
+  Identifier --> Return[Return visit sends ID]
+  Return --> Log[Activity linked over time]
+  Log --> Profile[Profile and decision]
+  Governance[Consent, access, retention, purpose limits] --> Log

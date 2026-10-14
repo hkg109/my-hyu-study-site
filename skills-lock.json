@@ -1,17 +1,41 @@
 {
   "version": 1,
   "skills": {
+    "adaptive-hint-sequence-designer": {
+      "source": "GarethManning/education-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ai-learning-science/adaptive-hint-sequence-designer/SKILL.md",
+      "computedHash": "c83b077653a717d2749720a2fa2d4c87e7a33923dac3fa4032a44a461eada35b"
+    },
     "diagram-design": {
       "source": "cathrynlavery/diagram-design",
       "sourceType": "github",
       "skillPath": "skills/diagram-design/SKILL.md",
       "computedHash": "ddcbbd4f316f66c3c2074d130b78e8d78cd53bad245b161df75fd5a5eba7d4ca"
     },
+    "hinge-question-designer": {
+      "source": "GarethManning/education-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/questioning-discussion/hinge-question-designer/SKILL.md",
+      "computedHash": "ffc24ce7aee6a887a6a5087056aa88500435905efe6c564c391b8115e5b07d2f"
+    },
+    "mermaid-diagram-builder": {
+      "source": "mermaid2img/mermaid-skills",
+      "sourceType": "github",
+      "skillPath": "skills/mermaid-diagram-builder/SKILL.md",
+      "computedHash": "f30aae280f7fa37a5704e00cfb8a448700aafe2233f9a16961a47263a59e7251"
+    },
     "redesign-existing-projects": {
       "source": "leonxlnx/taste-skill",
       "sourceType": "github",
       "skillPath": "skills/redesign-skill/SKILL.md",
       "computedHash": "47eced3e960a2c961d3cbee11fa1216264f589344b586a5cbd03967cd6b9c54b"
+    },
+    "retrieval-practice-generator": {
+      "source": "GarethManning/education-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/memory-learning-science/retrieval-practice-generator/SKILL.md",
+      "computedHash": "b694ab40985bb1159066fdad67b5db1fb08bb8a7ec4cd207900b606419e4e517"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",

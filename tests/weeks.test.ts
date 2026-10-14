@@ -109,6 +109,29 @@ test("study syntax keeps bilingual quiz translations behind separate controls", 
   assert.match(details[2].label, /정답 한국어 번역 보기/);
 });
 
+test("study syntax renders progressive hints and a solution as separate disclosures", () => {
+  const source = "> [!HINT 1]\n> 먼저 어떤 개념이 필요한지 떠올려 보세요.\n\n> [!HINT 2]\n> 식에 값을 대입해 보세요.\n\n> [!HINT 3]\n> 마지막 연산을 수행하세요.\n\n> [!SOLUTION]\n> 정답을 확인하고 풀이 이유를 설명하세요.";
+  const tree = parseMarkdown(source, "md");
+  const hints: Array<{ level: unknown; label: string }> = [];
+  visit(tree, node => {
+    if (node.data?.hName !== "details" || !node.data.hProperties?.className?.includes("study-hint")) return;
+    hints.push({ level: node.data.hProperties["data-hint-level"], label: toString(node) });
+  });
+  assert.deepEqual(hints.map(item => item.level), ["1", "2", "3", "solution"]);
+  assert.match(hints[0].label, /힌트 1 보기/);
+  assert.match(hints[3].label, /풀이 확인/);
+});
+
+test("quiz answers remain connected when progressive hints appear before the answer", () => {
+  const source = "> [!QUIZ]\n> 어려운 문제\n\n> [!HINT 1]\n> 방향만 확인하세요.\n\n> [!HINT 2]\n> 핵심 개념을 적용하세요.\n\n> [!ANSWER]\n> 정답과 해설";
+  const tree = parseMarkdown(source, "md");
+  let answerFound = false;
+  visit(tree, node => {
+    if (node.data?.hName === "details" && node.data.hProperties?.className?.includes("study-answer")) answerFound = true;
+  });
+  assert.equal(answerFound, true);
+});
+
 test("lecture Markdown with an Answer toggle is rendered as trusted MDX", () => {
   const source = "## 문제\n\n<Answer>\n\n~~~cpp\nint main() {}\n~~~\n\n</Answer>";
   const [lecture] = readWeeks([{ name: "week-0-2.md", source }]);
