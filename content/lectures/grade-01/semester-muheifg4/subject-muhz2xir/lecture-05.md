@@ -229,6 +229,8 @@ objectives:
 
 > **Ethical Analysis = Facts → Values → Stakeholders → Options → Consequences**
 
+분석 절차는 먼저 **무엇을 판단할지** 분명하게 만드는 과정이고, 다음 슬라이드의 윤리 원칙은 가능한 선택지를 **어떤 기준으로 비교할지** 알려 준다. 사실관계와 영향을 받는 사람을 확인하지 않은 채 원칙 이름만 붙이면, 같은 사례에서도 중요한 피해나 대안을 놓칠 수 있다.
+
 ---
 
 ## Slide 15 — Ethical Principles (1/2)
@@ -397,6 +399,8 @@ objectives:
 
 > **Opt-In이 Opt-Out보다 stronger informed consent**
 
+두 방식의 차이는 동의 화면의 모양보다 **아무 행동도 하지 않았을 때 데이터 사용이 허용되는가**에 있다. Opt-In에서는 명시적인 동의가 먼저 필요하고, Opt-Out에서는 거부하지 않으면 사용이 계속될 수 있다. 다음 cookie 사례를 볼 때도 추적 기술의 작동 방식과 이용자의 선택 방식은 별개의 질문으로 살펴보자.
+
 ---
 
 ## Slide 25 — Figure 4.3 How Cookies Identify Web Visitors
@@ -519,6 +523,8 @@ objectives:
 - business system failure의 가장 common source = **poor input data**
 
 > **Perfect system은 불가능하며 data quality가 system quality에 큰 영향**
+
+시스템이 예상대로 계산해도 입력이 부정확하면 결과 역시 잘못될 수 있다. 따라서 오류를 평가할 때는 프로그램의 결함인지, 장비 문제인지, 입력 데이터의 문제인지 먼저 구분해야 한다. 어느 원인인지에 따라 고쳐야 할 대상과 재발을 막는 방법이 달라진다.
 
 ---
 

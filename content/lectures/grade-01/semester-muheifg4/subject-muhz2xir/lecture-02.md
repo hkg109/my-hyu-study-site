@@ -144,6 +144,8 @@ objectives:
 
 > **IT는 기존 process를 빠르게 만들 뿐 아니라 새로운 process 자체를 가능하게 함**
 
+자동화와 프로세스 재설계의 차이는 **업무 순서가 바뀌었는가**로 확인할 수 있다. 기존 승인 절차를 그대로 두고 입력만 빨라졌다면 효율화이고, 같은 주문 정보를 여러 부서가 동시에 확인해 순차적인 전달·대기를 줄였다면 정보 흐름 자체를 바꾼 것이다.
+
 ---
 
 ## Slide 9 — AI Changes the Design of Business Processes
@@ -155,6 +157,8 @@ objectives:
 | **Agent** | AI가 defined workflow 수행 | tools / systems 호출, permissions / monitoring / escalation 필요 |
 
 > **AI 활용 수준: Assist → Automate → Agent**
+
+세 수준의 차이는 AI가 결과를 만드는 데서 끝나는지, 실제 업무 단계를 수행하는지에 있다. Assist에서는 사람이 제안을 검토해 행동하고, Automate에서는 정해진 반복 단계를 시스템이 처리한다. Agent가 여러 도구를 이용해 흐름을 이어 간다면 권한 범위와 사람이 넘겨받아야 할 예외를 먼저 정해야 한다.
 
 ---
 
@@ -297,6 +301,8 @@ objectives:
 - **Data-driven DSS**: large data에서 useful information 추출
 
 > **DSS = analytical model / data를 이용해 non-routine decision 지원**
+
+MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 middle manager가 같은 판매 기록을 보더라도, MIS는 ‘계획 대비 실적이 얼마인가’를 정해진 형식으로 보여 주고 DSS는 ‘수요가 달라지면 어떤 선택이 유리한가’를 분석한다. 핵심은 **정기적인 현황 확인인지, 조건을 바꿔 보는 판단인지**이다.
 
 ---
 
@@ -442,6 +448,8 @@ objectives:
 - **Enterprise Systems** = 그중 ERP를 의미
 
 > **ERP = 여러 부서의 data를 하나의 central repository로 통합**
+
+앞의 주문 이행 사례에 대입하면 ERP의 의미가 선명해진다. 영업이 입력한 주문을 회계와 생산이 각자 다시 입력하는 대신 같은 기록을 기준으로 업무를 이어 간다. 중앙 저장소의 목적은 데이터를 한곳에 모으는 것 자체보다 부서마다 다른 기록 때문에 생기는 조정 문제를 줄이는 데 있다.
 
 ---
 

@@ -413,6 +413,8 @@ feedback → 다시 capital / labor 제공
 
 > **IT ↓ Agency Cost → larger firm을 더 적은 management cost로 운영 가능**
 
+두 이론은 비용이 생기는 **조직의 경계**가 다르다. Transaction cost는 외부 공급업체를 찾고 계약·거래하는 비용이고, agency cost는 내부 구성원의 일을 조정·감독하는 비용이다. IT가 어느 비용을 낮추는지에 따라 외부와 협력하기 쉬워질 수도, 내부 조직을 더 넓게 관리하기 쉬워질 수도 있다.
+
 ---
 
 ## Slide 22 — Organizational and Behavioral Impacts
@@ -486,6 +488,8 @@ feedback → 다시 capital / labor 제공
 - successful change를 위해 네 요소를 **simultaneously** 조정
 
 > **IS change = Technology + People + Structure + Tasks의 동시 변화**
+
+새 시스템이 정보를 더 빨리 보여 주더라도 기존의 승인 권한이나 업무 분담을 그대로 두면 결정은 여전히 늦을 수 있다. 반대로 담당자의 일이 달라지는데 교육과 책임 범위가 정해지지 않으면 저항이 생긴다. 시스템 도입을 화면 교체가 아니라 업무 변화로 읽어야 하는 이유다.
 
 ---
 
@@ -697,6 +701,8 @@ feedback → 다시 capital / labor 제공
 
 > **Porter는 ‘어떤 힘과 경쟁하는가’, Value Chain은 ‘어디를 개선할 것인가’**
 
+두 모형은 연속해서 사용할 수 있다. 먼저 Competitive Forces로 고객·공급업체·대체재 등 어디에서 압력이 오는지 파악하고, 그 압력에 대응하려면 Value Chain의 어떤 활동을 바꿔야 할지 찾는다. 그러면 ‘IT가 경쟁에 도움이 된다’는 막연한 답 대신 **경쟁 압력 → 개선할 활동 → 기대 효과**를 설명할 수 있다.
+
 ---
 
 ## Slide 38 — Figure 3.9 Value Chain Model
@@ -877,6 +883,8 @@ feedback → 다시 capital / labor 제공
 - Business Ecosystem → **multiple industries**까지 확장 가능
 
 > **Ecosystem = platform을 중심으로 여러 firms와 industries가 함께 value를 제공**
+
+Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게 달라지는지를 설명한다. Value Web은 여러 기업의 가치사슬이 어떻게 연결되는지를, Business Ecosystem은 그 연결이 플랫폼을 중심으로 산업 경계까지 넓어지는지를 본다. 세 용어를 같은 뜻으로 외우기보다 각각 **가치의 증가·업무 연결·참여 범위** 중 무엇에 초점을 두는지 구분하자.
 
 ---
 

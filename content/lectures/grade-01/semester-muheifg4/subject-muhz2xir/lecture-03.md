@@ -109,6 +109,8 @@ objectives:
 
 > **좋은 collaboration = 적절한 organizational culture/structure + technology**
 
+협업 도구는 대화를 전달할 통로를 제공하지만, 누구의 의견을 받아들이고 어떤 정보를 공유할지는 팀의 일하는 방식이 결정한다. 따라서 협업 성과가 낮을 때는 도구의 기능 부족과 의견을 말하거나 활용하기 어려운 조직 조건을 나누어 살펴봐야 한다.
+
 ---
 
 ## Slide 35 — Digital Infrastructure Has an Environmental Footprint
@@ -309,6 +311,8 @@ objectives:
 
 > **Knowledge는 context에서 분리하면 그대로 이전되지 않는 경우가 많음**
 
+매뉴얼은 절차를 기록할 수 있어도 숙련자가 **언제 그 절차를 적용하거나 예외로 처리하는지**까지 모두 담기는 어렵다. 그래서 tacit knowledge를 다룰 때는 문서를 늘리는 것뿐 아니라 경험을 가진 사람과 연결하고 적용 상황을 함께 전달하는 방법이 필요하다.
+
 ---
 
 ## Slide 46 — Important Dimensions of Knowledge (4/5)
@@ -454,6 +458,8 @@ objectives:
 
 > **Knowledge는 전달만 해서는 가치가 없고 실제 decision / process에 적용되어야 함**
 
+네 단계는 각각 다른 질문에 답한다. ‘자료가 있는가’는 획득·저장, ‘필요한 사람이 찾을 수 있는가’는 전달, ‘찾은 내용을 실제 결정에 썼는가’는 적용의 문제다. 보고서가 많아도 업무가 바뀌지 않았다면 어느 단계에서 흐름이 끊겼는지 이 순서로 확인한다.
+
 ---
 
 ## Slide 53 — Collaboration, Communities of Practice, Office Environments
@@ -569,6 +575,8 @@ objectives:
 | **Evaluation** | retrieval coverage / accuracy / confidentiality / bias / real-work performance |
 
 > **AI-ready content = clean + well-labeled + access-controlled + traceable + evaluated**
+
+AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한을 건너뛸 수는 없다. 오래된 판본과 최신 판본을 구분하지 못하면 그럴듯한 답을 잘못된 근거로 만들 수 있고, 권한을 지키지 못하면 찾을 수 있다는 이유만으로 보여서는 안 되는 정보까지 노출될 수 있다.
 
 ---
 
