@@ -1,433 +1,943 @@
 ---
-title: "3장 · 조직 변화에서 경쟁전략까지 연결하기"
-description: "조직 적합성 → 비용 변화 → 5대 경쟁요인 → 가치사슬 → 네트워크와 AI. 각 모형이 어떤 질문에 답하는지 익힌다."
+title: "3장 · 조직과 전략"
+description: "조직과 정보기술의 양방향 관계부터 경쟁요인·가치사슬·네트워크 전략까지, 슬라이드 흐름을 따라 정리한 Chapter 3 필기."
 order: 4
 published: true
-duration: 75
-tags: [정시개, MIS, 3장, 경쟁요인, 가치사슬, 전략]
+duration: 95
+tags: [정시개, MIS, 3장, 조직, 경쟁전략, 가치사슬]
 objectives:
-  - 조직과 정보시스템이 서로 영향을 주는 과정을 설명한다.
-  - 거래비용과 대리인비용을 구분한다.
-  - 5대 경쟁요인·가치사슬·네트워크 전략을 사례에 적용한다.
-  - 정보시스템의 경쟁우위가 지속 가능한지 평가한다.
+  - 조직과 정보기술이 서로 영향을 주는 과정을 설명한다.
+  - 정보시스템이 거래비용·대리인비용·조직 구조에 미치는 영향을 구분한다.
+  - 경쟁요인 모형과 가치사슬 모형을 실제 전략 분석에 적용한다.
+  - 시너지·핵심역량·네트워크 경제와 AI 전략의 관계를 설명한다.
 ---
 
-## 읽기 지도 · 유용한 시스템에서 전략적 선택으로
+## 학습 경로
 
 [이전: 2장 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [다음: 4장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-**핵심 질문:** 경쟁사도 비슷한 기술을 살 수 있는데 무엇이 전략적 가치를 만드는가?
+**범위:** Chapter 3 슬라이드 1–50 · Organization → IT Impact → Competitive Forces → Value Chain → Network Strategy
 
-**선수 개념:** 1장의 사회기술적 관점과 2장의 프로세스·지식·거버넌스를 사용해 조직의 실행 조건을 분석한다.
+[Chapter 3 원본 PDF](/materials/mis-exam-slides/ch03_18ed.pdf)
 
-먼저 시스템을 사용할 조직을 이해하고, 그다음 경쟁 환경에서의 선택을 살핀다.
+## Chapter 3. Information Systems, Organizations, and Strategy
 
-**출처:** 제공된 *Management Information Systems* 18판 3장. 제공된 17판 PDF는 2장까지이며, 3장은 목차에만 나오고 본문은 없다. 이 노트의 참조는 모두 18판 기준이다. **책 = 인쇄 번호, PDF = 책 + 29.**
+## Slide 1 — Information Systems, Organizations, and Strategy
 
-| 읽을 곳 | 책 / PDF | 질문 |
-| --- | --- | --- |
-| 도입 사례 | 72–73 / 101–102 | 기술로 어떤 고객 문제를 해결하는가? |
-| §§3.1–3.2 조직 | 74–80 / 103–109 | 기존 조직이 시스템에 어떤 영향을 주는가? |
-| §3.3 IS의 영향 | 80–84 / 109–113 | 어떤 비용과 권력관계가 바뀌는가? |
-| §3.4 경쟁요인 | 84–89 / 113–118 | 경쟁 압력은 어디서 오는가? |
-| §3.5 가치사슬 | 89–91 / 118–120 | 구체적으로 어느 활동을 개선할까? |
-| §3.6 시너지·네트워크 | 91–94 / 120–123 | 연결이 어떤 추가 가치를 만드는가? |
-| §§3.7–3.8 AI·전략의 과제 | 95–99 / 124–128 | 우위가 지속될 수 있는가? |
-| 진로·마지막 사례·복습 | 99–106 / 128–135 | 전략 제안을 근거로 설명할 수 있는가? |
+- Chapter 3 주제: **Organizations / Information Technology / Strategy / Competitive Advantage**
+- 핵심 질문:
+  - organization은 information systems에 어떤 영향을 주는가?
+  - information systems는 organization을 어떻게 바꾸는가?
+  - IT를 competitive strategy에 어떻게 활용하는가?
 
-## 시험 PDF · 전체 슬라이드 흐름 (1–50쪽)
+> **핵심 흐름: Organization ↔ IT → Organizational Impact → Competitive Forces → Value Chain → Network Strategy**
 
-[3장 시험 PDF 열기](/materials/mis-exam-slides/ch03_18ed.pdf) · 모든 슬라이드를 순서대로 반영하되 고립된 페이지 요약이 되지 않도록 논지별로 묶었다. 뒤의 기존 강의는 하나의 전략 사례와 인출 연습으로 설명을 보완한다.
+---
 
-> [!EXAM]
-> **3장 한 줄 논리:** 조직의 구조·문화·정치·환경을 먼저 읽고 → IT가 비용·권한·경계를 어떻게 바꾸는지 설명한 뒤 → 경쟁압력을 진단하고 → 가치사슬의 개입 지점을 찾아 → 모방하기 어려운 전략으로 정렬한다.
+## Slide 2 — Learning Objectives
 
-### 전략 분석의 기본 순서
+- organization의 **technical / behavioral view**
+- information systems에 영향을 주는 organizational features
+- information systems가 organization에 미치는 impact
+- **Porter’s Competitive Forces Model**
+- **Value Chain Model**
+- **Synergy / Core Competency / Network Economics**
+- AI와 competitive strategy
+- strategic information systems의 challenges
 
-`조직 진단 → 산업 압력(5 Forces) → 내부 활동(Value Chain) → 선택한 IS 역량 → 보완적 조직 변화 → 성과지표 → 모방·지속가능성 검토`
+> **시험 핵심: Organization 이해 → IT impact → Competitive Strategy**
 
-==yellow:“AI를 쓴다”는 전략이 아니다. 누구의 어떤 힘을 바꾸고, 어느 활동의 비용·품질·속도·경험을 개선하며, 왜 경쟁사가 쉽게 복제하지 못하는지를 써야 한다.==
+---
 
-| 슬라이드 | PDF의 진행 순서 |
-| --- | --- |
-| 1–3 | 영상 사례·아홉 학습목표·PepsiCo Doritos Silent 사례 |
-| 4–18 | IT-조직 양방향 관계 → 정의 → 루틴·정치·문화·환경·파괴적 기술(disruptive technology)·구조·기타 특성 |
-| 19–27 | 경제·거래비용·대리인·행동 영향 → 조직 평탄화 → 저항 → 인터넷 → 설계 점검표 |
-| 28–36 | 포터 5대 경쟁요인 → 네 IS 전략 → 인터넷 영향 → 스마트 제품·IoT |
-| 37–47 | 가치사슬·가치웹 → 시너지·핵심역량 → 네트워크 경제 → 가상기업 → 생태계·플랫폼 |
-| 48–50 | 경쟁전략의 AI → 전략시스템 과제 → Crayola 진로 사례 |
+## Slide 3 — PepsiCo Tames the Doritos Crunch
 
-### 1–18쪽 · 기술을 처방하기 전에 조직 이해하기
+### Problem
+- 다른 사람의 Doritos crunch sound가 gamers에게 방해
+- 동시에 Doritos fans는 crunch sound를 선호
 
-#### 기술적 관점 vs 행동적 관점
+### Solution
+- **Doritos Silent** software tool 개발
+- AI / ML로 **5,000개 이상 crunch sounds** 분석
 
-| 관점 | 조직을 보는 방식 | 강점 | 놓치기 쉬운 것 |
-| --- | --- | --- | --- |
-| 기술적 | 자본·노동을 제품·서비스로 바꾸는 공식 구조 | 투입·산출·효율 분석 | 갈등·권리·문화·변화 저항 |
-| 행동적 | 권리·의무·관계·계층·갈등이 균형을 이룬 사회집단 | 실제 변화·정치·사람 이해 | 계량 가능한 생산관계 |
+### Result
+- gamer segment에서 Doritos popularity 유지
+- sales growth 지원
 
-#### 조직 진단 여섯 칸
+> **AI/ML을 product experience 개선에 적용한 사례**
 
-- **구조:** 기업가형 / 기계적 관료제 / 사업부제 / 전문직 관료제 / 애드호크라시.
-- **루틴·프로세스:** 개인 SOP → 프로세스 → 기업이라는 층을 이룬다.
-- **정치:** 정보·예산·권한 재배분을 둘러싼 이해관계 충돌.
-- **문화:** 무엇을 왜 누구에게 어떻게 만드는지에 관한 당연시된 가정.
-- **환경:** 고객·규제·기술·경제 변화를 감지하고 다시 영향을 주는 관계.
-- **경영 선택:** 같은 기술도 표준화·권한·보상·속도 선택에 따라 결과가 달라진다.
+---
 
-> [!EXAMPLE]
-> Doritos Silent는 ‘AI 사용’보다 **게이머의 방해 문제 → 5,000개가 넘는 소리 분석 → 특정 고객층 경험 개선 → 판매·브랜드 효과**라는 연결이 핵심이다.
+## Slide 4 — Relationship Between Organizations and IT
 
-#### 조직의 기술적·행동적 특성
+- **Information Technology ↔ Organizations**
+  - 서로 영향을 주는 **two-way relationship**
 
-| 사례 | 기술보다 먼저 볼 문제 | 전략적 연결 |
-| --- | --- | --- |
-| GE 산업 인터넷 | 산업 장비의 상태·고장·운영을 어떻게 파악할까? | 센서 데이터와 서비스 운영 |
-| NBA·Akamai | 대규모 스트리밍을 어떻게 안정적으로 전달할까? | 디지털 고객경험과 전달 인프라 |
-| Doritos Silent | 씹는 소리가 게이머 경험을 방해함 | 5,000개 이상 소리 분석 → 특정 고객층 경험 개선 |
+### Relationship을 결정하는 Factors
+- organizational **structure**
+- business processes
+- politics
+- culture
+- environment
+- management decisions
 
-Doritos 사례의 가치는 ‘AI 사용’ 자체가 아니라 `구체적 불편 → 데이터 수집·분석 → 고객경험 변화 → 브랜드·판매 효과`의 연결에 있다.
+> **IT 도입 효과는 technology 자체보다 organization의 structure / culture / process에 의해 달라짐**
 
-| 관점 | 조직을 보는 방식 | 잘 설명하는 것 | 놓치기 쉬운 것 |
-| --- | --- | --- | --- |
-| 기술적 | 자본·노동을 제품·서비스로 바꾸는 공식 구조 | 투입–변환–산출–피드백, 효율 | 권력·문화·갈등 |
-| 행동적 | 권리·의무·관계·규칙이 균형을 이룬 집합 | 정치·저항·비공식 관행 | 정량적 공정 분석 |
+---
 
-> [!EXAM]
-> 두 관점은 서로 배타적이지 않다. 기술적 관점으로 **무엇이 바뀌는지**, 행동적 관점으로 **왜 사람이 다르게 반응하는지** 설명한다.
+## Slide 5 — Figure 3.1 Two-Way Relationship
 
-`개별 루틴/SOP → 여러 루틴이 연결된 비즈니스 프로세스 → 여러 프로세스를 가진 조직`
+### Structure
 
-| 조직 요소 | 의미 | 시스템 설계 질문 |
-| --- | --- | --- |
-| 계층·권한 | 누가 지시·승인·책임지는가 | 정보와 결정권을 어디까지 내릴까? |
-| 정치 | 이해관계와 희소자원을 둘러싼 갈등 | 누가 정보·예산·지위를 얻거나 잃나? |
-| 문화 | 당연하다고 믿는 가치와 가정 | 새 방식이 기존 신념과 충돌하나? |
-| 환경 | 고객·경쟁자·규제·기술 변화 | 어떤 신호를 수집하고 누가 해석하나? |
-| 구조 | 역할·전문화·조정 방식 | 중앙화와 분산화 중 무엇이 맞나? |
+**Organizations** ↔ **Information Technology**
 
-| Mintzberg 구조 | 중심 조정 방식 | 시스템이 특히 지원할 것 |
-| --- | --- | --- |
-| 기업가형 | 최고경영자의 직접 통제 | 빠른 현황·결정 지원 |
-| 기계적 관료제 | 표준 절차 | 대량거래·규칙·통제 |
-| 사업부제 관료제 | 사업부 성과 | 공통 지표와 사업부 비교 |
-| 전문직 관료제 | 전문가 역량 | 전문지식·사례·자율성 |
-| 애드호크라시 | 프로젝트·혁신팀 | 유연한 협업·지식결합 |
+중간에 영향을 주는 **Mediating Factors**:
+- Environment
+- Culture
+- Structure
+- Business Processes
+- Politics
+- Management Decisions
 
-IS는 환경을 보는 **렌즈**다. 정확한 신호를 보여 줄 수도 있지만, 잘못된 지표와 분류는 위협을 숨긴다. 최초 발명자가 반드시 승리하지 않으며 빠른 추격자가 자원·유통·사업모형으로 상용화할 수도 있다.
+> **Organization과 IT의 관계는 직접적이지 않고 여러 organizational factors가 매개**
 
-### 19–27쪽 · 비용, 권한, 저항 따라가기
+---
 
-#### 두 경제이론 한눈에 보기
+## Slide 6 — What Is an Organization?
 
-| 이론 | 줄이려는 비용 | IT가 하는 일 | 가능한 조직 변화 |
-| --- | --- | --- | --- |
-| 거래비용이론 | 시장 탐색·계약·구매·감독 비용 | 파트너 탐색·정보교환·계약 모니터링을 저렴하게 | 외주 확대, 기업 경계 축소 |
-| 대리인이론 | 내부 관리·감독·조정 비용 | 성과·업무 정보를 더 빠르고 넓게 제공 | 통솔범위 확대, 관리층 감소 |
+| 관점 | 정의 |
+|---|---|
+| **Technical Definition** | environment에서 resources를 받아 production process를 통해 outputs를 만드는 formal social structure |
+| **Behavioral Definition** | rights / privileges / obligations / responsibilities가 conflict와 resolution을 통해 유지되는 social system |
 
-**평탄화 흐름:** `정보 접근 확대 → 하위직원 판단 가능 → 의사결정 단계 감소 → 관리자 통솔범위 확대`. 단, 데이터가 있다고 권한이 자동으로 내려오는 것은 아니다.
+### Key
+- Technical view와 Behavioral view는 **complementary**
+- 둘 중 하나만으로 organization을 완전히 설명할 수 없음
 
-#### 변화 저항 지도
+> **Technical = input → process → output / Behavioral = people + rights + conflict + relationships**
 
-`혁신의 성격 ↔ 과업 ↔ 구조 ↔ 사람·문화·정치`
+---
 
-> [!CAUTION]
-> 저항을 단순히 “직원이 변화를 싫어함”으로 쓰지 않는다. 누가 정보·전문성·예산·승인권·직무정체성을 잃는지 구체화해야 해결책도 교육, 보상, 참여, 역할 재설계, 단계적 전환으로 나눌 수 있다.
+## Slide 7 — Figure 3.2 Technical Microeconomic Definition
 
-#### IT가 기업 규모와 의사결정 구조를 바꾸는 이유
+### Flow
 
-| 설명 경로 | IT가 낮추는 비용 | 가능한 조직 변화 | 자동으로 보장되지 않는 것 |
-| --- | --- | --- | --- |
-| 거래비용 | 외부 탐색·계약·구매·감독 | 외주 확대, 기업 경계 축소 | 공급업체 품질·의존 위험 해결 |
-| 대리비용 | 내부 성과 파악·감독·조정 | 통솔범위 확대, 관리층 감소 | 실제 권한 위임과 신뢰 |
-| 정보비용 | 수집·복제·배포·검색 | 빠른 판단, 지식 접근 확대 | 올바른 해석과 조직 합의 |
+**Inputs from Environment**
+- capital
+- labor
 
-그림 3.6의 평탄화는 `정보 전달단계 감소 → 통솔범위 확대 → 하위 수준의 판단 가능`이라는 **가능성**을 보여 준다. 권한을 실제로 내릴지는 경영자가 선택한다.
+↓
 
-| 저항 원인 | 관찰되는 반응 | 필요한 대응 |
-| --- | --- | --- |
-| 정보·승인권 상실 | 우회 절차, 데이터 미입력 | 의사결정권·책임 재설계 |
-| 직무·전문성 위협 | 품질 비판, 도입 지연 | 역할 전환·재교육·전문가 참여 |
-| 추가 업무 | 기록 누락, 형식적 사용 | 프로세스 단순화·업무량 조정 |
-| 문화 충돌 | “우리 방식과 안 맞는다” | 단계 도입·리더 행동·보상 정렬 |
+**Organization**
+- production process
 
-설계 전에는 환경, 계층·전문화, 루틴·프로세스, 문화·정치, 조직유형·리더십, 이해관계자 태도, 지원할 과업·결정을 확인한다.
+↓
 
-### 28–36쪽 · 대응을 고르기 전에 경쟁압력 진단하기
+**Outputs to Environment**
+- products
+- services
 
-#### 포터 5대 경쟁요인 질문표
+↓
 
-| 힘 | 진단 질문 | IS로 바꿀 수 있는 것 |
-| --- | --- | --- |
-| 기존 경쟁자 | 가격·품질·속도 경쟁이 얼마나 센가? | 비용, 품질, 고객경험, 반응속도 |
-| 신규 진입자 | 진입장벽과 브랜드·규모 우위가 있는가? | 데이터·플랫폼·네트워크·전환비용 |
-| 대체재 | 고객이 다른 방식으로 같은 필요를 해결할 수 있는가? | 서비스 결합, 차별화, 편의성 |
-| 고객 | 쉽게 비교·전환하고 가격을 압박하는가? | 개인화, 충성도, CRM, 전환비용 |
-| 공급업체 | 대체 공급원과 협상력이 충분한가? | 공급망 가시성, 다변화, 공동계획 |
+feedback → 다시 capital / labor 제공
 
-#### 네 대응전략
+### 특징
+- organization을 **쉽게 재배열 가능한 system**으로 봄
+- human factor는 거의 고려하지 않음
 
-`저비용 리더십 / 제품·서비스 차별화 / 시장 틈새 집중 / 고객·공급업체 친밀성`
+> **Technical view = organization을 production machine처럼 보는 관점**
 
-> [!EXAM]
-> 답안 공식: `압력 1개 특정 → 대응전략 1개 선택 → 필요한 정보·프로세스 설명 → 성과지표 → 경쟁사의 모방 가능성`. 전략 이름만 나열하면 분석이 아니다.
+---
 
-**스마트 제품·IoT:** 센서 제품을 정보 서비스와 결합해 차별화·전환비용·진입장벽을 만들 수 있지만, 연결 표준이 경쟁자를 늘리고 보안·데이터 책임을 추가할 수도 있다.
+## Slide 8 — Figure 3.3 Behavioral View
 
-#### 경쟁요인과 대응전략의 연결
+### Formal Organization 구성
+- Structure
+- Hierarchy
+- Division of labor
+- Rules / procedures
+- Business processes
+- Culture
+- Rights / obligations
+- Privileges / responsibilities
+- Values
+- Norms
+- People
 
-| 경쟁압력 | 압력이 강하다는 신호 | 연결하기 쉬운 대응 | IS 역할 예 |
-| --- | --- | --- | --- |
-| 기존 경쟁자 | 가격·품질·속도 경쟁 심화 | 저비용 또는 차별화 | 지속 보충, 품질분석, 개인화 |
-| 신규 진입자 | 표준화·낮은 초기비용 | 데이터·관계 기반 장벽 | 플랫폼, 학습 데이터, 전환비용 |
-| 대체재 | 다른 방식이 같은 필요를 충족 | 서비스 결합·차별화 | 제품+정보서비스, 편의성 |
-| 고객 | 비교·전환이 쉽고 가격 압박 | 고객 친밀성·틈새 집중 | CRM, 세분화, 충성 프로그램 |
-| 공급업체 | 대체 공급원이 적고 가격 인상 | 공급업체 친밀성·다변화 | SCM, 공동예측, 가시성 |
+### 특징
+- organization 변화가 쉽지 않음
+- hierarchy / rules / contracts / culture 때문에 변화에 시간 필요
 
-**대표 연결:** Walmart–저비용, Google·Nike·Apple–차별화/대량맞춤, Hilton OnQ–틈새 집중, Toyota·Amazon·Starbucks–고객·공급업체 친밀성.
+> **Behavioral view = organization을 사람·관계·문화가 얽힌 social system으로 보는 관점**
 
-> [!CAUTION]
-> 인터넷과 IoT의 효과는 한 방향이 아니다. 공통 표준은 진입·검색 비용을 내려 경쟁을 높일 수 있지만, 연결 제품과 데이터는 차별화·전환비용을 만들 수도 있다. 답안에는 **어떤 힘이 어떤 경로로 변하는지**를 쓴다.
+---
 
-### 37–47쪽 · 기업 안팎에서 가치 위치 찾기
+## Slide 9 — Features of Organizations
 
-#### 범위가 넓어지는 순서
+- hierarchical structure 사용
+- accountability / authority
+- impartial decision making
+- efficiency 원칙 추구
+- routines / business processes
+- organizational politics
+- organizational culture
+- organizational environments
+- organizational structure
 
-`기업 내부 가치사슬 → 파트너 가치사슬 연결 → 가치웹 → 여러 산업의 비즈니스 생태계`
+> **대부분의 organization은 hierarchy + routines + rules + culture를 기반으로 운영**
 
-| 개념 | 핵심 | 시험에서 묻는 것 |
-| --- | --- | --- |
-| 가치사슬 | 본원·지원 활동이 가치를 더함 | 어느 활동을 IS로 개선할까? |
-| 가치웹 | 독립 기업들이 IT로 가치사슬을 동기화 | 수요·공급 변화에 어떻게 공동 대응할까? |
-| 시너지 | 사업부의 시장·전문성·산출을 결합 | 전체가 부분 합보다 커지는 연결은? |
-| 핵심역량 | 복제하기 어려운 세계수준의 지식·활동 | 조직 전체로 어떻게 확산할까? |
-| 네트워크 경제 | 참여자가 늘수록 전체 가치가 커짐 | 규모·설치기반·커뮤니티가 왜 장벽인가? |
-| 가상기업 | 자산을 모두 소유하지 않고 파트너를 조정 | 네트워크로 경계를 어떻게 넘는가? |
-| 생태계·플랫폼 | 키스톤과 틈새 기업이 상호의존 | 플랫폼 규칙·의존·가치 배분은? |
+---
 
-> [!DEFINITION]
-> **가치웹**은 보통 한 산업 안에서 연결된 가치사슬의 동기화에 초점을 두고, **비즈니스 생태계**는 여러 산업과 플랫폼 참여자의 더 넓은 상호의존까지 본다.
+## Slide 10 — Routines and Business Processes
 
-#### 가치사슬에서 생태계까지 범위 확장
+### Routines
+- **Standard Operating Procedures (SOPs)**
+- expected situations에 대응하기 위한 precise rules / procedures / practices
 
-| 범위 | 분석 단위 | 핵심 질문 | 관련 그림 |
-| --- | --- | --- | --- |
-| 가치사슬 | 한 기업의 활동 | 어느 활동에서 비용·품질·속도를 바꿀까? | 그림 3.9 |
-| 가치웹 | 공급업체·유통업체·고객 연결 | 여러 기업이 수요·공급에 어떻게 함께 대응할까? | 그림 3.10 |
-| 생태계 | 여러 산업·플랫폼 참여자 | 누가 규칙을 만들고 가치·위험을 나누나? | 그림 3.11 |
+### 관계
 
-**가치사슬 판단 순서:** `병목 활동 찾기 → 벤치마킹 → IS 개입 설명 → 비용·속도·품질·친밀성 측정`
+**Routines**
+↓
+**Business Processes**
+↓
+**Business Firm**
 
-| 전략 개념 | 가치가 생기는 방식 | IS가 돕는 방식 |
-| --- | --- | --- |
-| 시너지 | 사업부의 출력·시장·전문성을 결합 | 떨어진 사업부의 정보·과정 연결 |
-| 핵심역량 | 복제하기 어려운 지식·경험을 확산 | 전문가 디렉터리·인트라넷 |
-| 네트워크 경제 | 참여자가 늘수록 전체 효용 증가 | 사용자·보완재·커뮤니티 연결 |
-| 가상기업 | 자산을 모두 소유하지 않고 파트너 조정 | 생산·유통 네트워크 통합 |
-| 생태계 | 키스톤과 틈새 기업이 상호의존 | 플랫폼 규칙·인터페이스·데이터 공유 |
+- business process = routines의 collection
+- firm = business processes의 collection
 
-Li & Fung은 네트워크로 다른 기업의 생산·유통을 조정하는 가상기업 사례다. 생태계는 여러 산업을 가로지르지만 가치웹은 보통 한 산업의 연결된 가치사슬에 초점을 둔다.
+> **Routine → Business Process → Firm**
 
-### 48–50쪽 · AI를 방어 가능한 전략에 맞추기
+---
 
-#### AI 전략 점검표 · F-V-D-A
+## Slide 11 — Figure 3.4 Routines, Business Processes, and Firms
 
-- **F · Force:** 포터의 어떤 경쟁압력을 바꾸는가?
-- **V · Value activity:** 가치사슬의 어느 활동을 바꾸는가?
-- **D · Defensibility:** 데이터·프로세스·관계·학습효과가 왜 모방하기 어려운가?
-- **A · Alignment:** 조직 구조·문화·역량·책임·성과지표와 맞는가?
+### Structure
 
-> [!FLASHCARD]
-> Q: 전략적 정보시스템의 경쟁우위가 지속되지 않을 수 있는 이유는?
-> A: 경쟁사가 모방·보복하고 기술이 업계 표준이 되며, 보완 자산과 조직 정렬이 약하면 차별성이 사라지기 때문이다.
+**Individual Routines**
+→ 여러 routines가 모여
+→ **Business Process**
 
-> [!QUIZ]
-> 음식 배달 플랫폼이 AI 추천을 도입했다. 이것이 전략이라는 답을 완성하려면 무엇을 더 써야 하는가?
+여러 business processes
+→ **Business Firm**
 
-> [!ANSWER]
-> 어떤 경쟁압력에 대응하는지, 고객·배달원·식당의 어느 활동을 바꾸는지, 필요한 데이터와 프로세스, 성과지표, 편향·책임 통제, 그리고 경쟁사가 쉽게 복제할 수 없는 데이터·관계·학습효과가 무엇인지 써야 한다.
+### IT 도입 시
+- 새로운 information system이 효과를 내려면
+  - routines 변화
+  - business processes 변화
+  가 필요
 
-#### 전략적 정렬과 경쟁우위의 지속성
+> **새로운 IS 도입 = 기존 routine과 process까지 함께 바뀌어야 함**
 
-AI 적용은 네 문장을 모두 완성해야 전략이 된다.
+---
 
-1. **산업:** 포터의 어떤 경쟁압력이 달라지는가?
-2. **활동:** 가치사슬의 어느 비용·경험·정보·관계를 바꾸는가?
-3. **방어:** 데이터·프로세스·관계·학습효과 중 무엇이 모방을 어렵게 하는가?
-4. **정렬:** 구조·문화·역량·책임·성과지표가 기술과 맞는가?
+## Slide 12 — Organizational Politics
 
-경쟁사가 모방하고 기술이 업계 표준이 되면 우위는 생존요건으로 바뀔 수 있다. 따라서 전략시스템은 도입 시점의 성능뿐 아니라 **지속적 학습과 보완 자산**으로 평가한다.
+- organization 내부에는 서로 다른 viewpoints / interests 존재
+- 이 차이 → political struggle / competition / conflict
+- **political resistance**는 organizational change를 방해
 
-- **Crayola 진로 사례:** `사업 기회 → 필요한 정보 → IT·업무 지식 → 실행 역할`
-- **패션산업 AI 사례:** `조직 준비 → 경쟁압력 → 가치활동 → 정렬·위험`
+> **Information system 변화는 power와 information access를 바꾸므로 politics와 충돌하기 쉬움**
 
-## 1. 조직과 시스템은 서로를 바꾼다
+---
 
-가상의 카페 체인이 모든 지점에 수요 예측을 쓰게 하려 한다. 소프트웨어는 작동하지만 지점장들이 발주 자율권을 잃는다는 이유로 무시한다. 이는 교육 부족만의 문제가 아니다. **누가 결정권을 갖는지**가 달라졌기 때문이다.
+## Slide 13 — Organizational Culture
 
-> [!DEFINITION]
-> **기술적 관점**은 조직을 투입을 산출로 바꾸는 공식적 구조로 본다. **행동적 관점**은 사람들 사이의 권리·의무·특권·가치·관계와 타협을 강조한다.
+- organization 구성원들이 공유하는 **basic assumptions**
+- 다음을 정의:
+  - 무엇을 생산할 것인가
+  - 어떻게 / 어디서 생산할 것인가
+  - 누구를 위해 생산할 것인가
 
-기술적 관점은 자원과 생산을 설명하고, 행동적 관점은 효율적으로 보이는 변화에 왜 저항이 생기는지 설명한다. 새 승인 경로는 프로세스 그림으로, 그 때문에 영향력을 잃는 사람은 행동적 분석으로 이해할 수 있다.
+### Effect
+- organization을 통합하는 force
+- 동시에 change를 막는 restraint
+- 특히 **technological change**에 저항 가능
 
-**조직 → 시스템 설계 → 정보 접근·업무 변화 → 조직의 반응 → 설계 수정**으로 이어진다. 기술이 조직의 최종 형태를 일방적으로 결정하는 것은 아니다.
+> **Culture = organization이 당연하다고 믿는 기본 가정**
 
-### 시스템을 제안하기 전에 볼 조직 특성
+---
 
-| 특성 | 확인할 것 | 시스템과의 관계 |
-| --- | --- | --- |
-| 루틴·프로세스 | 반복 상황에 대한 기존 규칙 | 새 흐름이 익숙한 업무와 충돌할 수 있다 |
-| 정치 | 집단별 이해관계와 자원 | 정보 공개가 권력을 재분배할 수 있다 |
-| 문화 | 당연하다고 여기는 가정과 가치 | 시스템이 기존 업무관을 흔들 수 있다 |
-| 환경 | 고객·공급업체·규제·경쟁자 | 외부 변화가 압력과 불확실성을 만든다 |
-| 구조 | 계층·전문화·조정 방식 | 조직마다 필요한 지원이 다르다 |
-| 목표·리더십 | 우선순위·보상·통제 방식 | 같은 도구도 다르게 사용된다 |
+## Slide 14 — Organizational Environments
 
-교과서는 기업가적 구조, 기계적 관료제, 사업부제 관료제, 전문적 관료제, 애드호크라시 등을 구분한다. 사장 중심의 작은 카페, 표준화된 대형 체인, 전문가 중심 조직을 비교해 보자. 하나의 보고체계가 모든 조직에 적합하다고 가정하면 안 된다.
+- organization과 environment는 **reciprocal relationship**
+- organization은 social / physical environment에 의존
+- organization도 environment에 영향 가능
+- environment는 보통 organization보다 더 빠르게 변화
 
-## 2. 기술이 줄이는 비용을 따라가자
+### Information Systems
+- **environmental scanning** 지원
+- environment를 보는 **lens** 역할
 
-§3.3의 두 이론은 모두 조정과 관련되어 헷갈리기 쉽다.
+> **IS = 외부 변화를 감지하는 organization의 lens**
 
-| 이론 | 핵심 질문 | 해당 비용 | IS의 가능한 효과 |
-| --- | --- | --- | --- |
-| 거래비용이론 · Transaction cost theory | 외부 시장에서 구할까, 내부에서 할까? | 거래 상대 탐색·협상·소통·계약 이행 확인 | 외부 조정 비용 감소로 아웃소싱이 유리해질 수 있음 |
-| 대리인이론 · Agency theory | 주인의 목표대로 대리인이 일하도록 어떻게 관리할까? | 감독·조정·이해관계 차이 관리 | 정보 확보로 내부 감독 비용을 낮출 수 있음 |
+---
 
-공급업체를 비교하고 납품 약속을 확인하는 비용은 **거래비용**이다. 지역 관리자가 지점 기록으로 직원을 감독하는 비용은 **대리인비용**과 관련된다. 커피 원두 구입가격 자체를 거래비용 전체와 동일시하지 말자.
+## Slide 15 — Figure 3.5 Environments and Organizations
 
-IT는 현장 직원에게 정보를 제공하고 관리자가 더 많은 인원을 감독하게 하여 조직의 수평화를 지원할 수 있다. 그러나 반드시 일어나는 결과는 아니다. 결정권·통제·인센티브 설계가 필요하며, 비용 감소만으로 모든 조직이 축소·분권화된다고 단정할 수 없다.
+### Environment
+- Governments
+- Competitors
+- Customers
+- Financial Institutions
+- Culture
+- Knowledge
+- Technology
 
-> [!QUIZ]
-> 3장 Q1. 주로 줄이는 비용을 구분하라. (가) 공급업체 견적과 계약 이행을 비교하는 포털 (나) 관리자 한 명이 더 많은 지점을 감독하게 하는 대시보드. 왜 구분해야 하는가?
+↓
 
-> [!ANSWER]
-> (가)는 외부 시장을 이용하고 조정하는 **거래비용**, (나)는 내부 감독·조정의 **대리인비용**이 중심이다. 둘 다 운영비 절감이라고만 쓰면 비용이 줄어드는 인과관계를 설명하지 못한다.
+**Information Systems**
 
-### 저항은 조사해야 할 단서다
+↓
 
-새 시스템은 업무·구조·기술·사람을 함께 바꿀 수 있다. 관리자 재량이 줄고, 직원 기록 부담이 늘며, 숙련자의 지위가 약해질 수 있다. 어떤 업무와 보상이 바뀌어야 하는지 조사하고 영향을 받는 집단을 참여시켜야 한다. 모든 저항을 비합리성이나 학습 의지 부족으로 설명하지 말자.
+**Firm**
 
-## 3. 포터의 5대 경쟁요인으로 압력 진단하기
+### Key
+- IS가 외부 정보를 filter해서 firm에 전달
+- poorly designed system → 중요한 변화나 문제를 놓칠 수 있음
 
-§3.4의 모형은 직접 경쟁사뿐 아니라 **산업의 경쟁과 기업의 위치에 영향을 주는 요인**을 묻는다.
+> **Organization은 IS를 통해 environment를 인식하고 대응**
 
-| 경쟁요인 | 질문 | 가상 카페 적용 |
-| --- | --- | --- |
-| 기존 경쟁자 | 기존 기업 사이 경쟁은 얼마나 치열한가? | 주변 카페의 가격·속도·맛 경쟁 |
-| 신규 진입자 | 새 기업이 들어오기 쉬운가? | 배달 플랫폼으로 고객에 접근하는 새 판매자 |
-| 대체재 | 같은 필요를 다른 방식으로 충족하는가? | 도시락·편의점 식사가 카페 점심을 대체 |
-| 고객 | 비교·협상·전환이 쉬운가? | 가격 비교와 낮은 전환 부담 |
-| 공급업체 | 특정 공급원에 얼마나 의존하는가? | 소수 업체만 공급하는 특수 재료 |
+---
 
-**대체재**는 단순히 같은 제품의 다른 브랜드가 아니라 유사한 욕구를 다른 방식으로 충족하는 것이다. **전환비용** (switching costs)은 공급자를 바꿀 때 드는 돈·노력·손실이며, 제품 가격과 같은 개념이 아니다.
+## Slide 16 — Disruptive Technologies
 
-### 압력에 대응하는 전략을 연결하자
+### Disruptive Technology
+- 기존 제품과 비슷하거나 더 나은 substitute
+- business / industry / market에 **sweeping change** 발생
 
-| IS가 지원하는 대응 | 작동 방식 | 사례에서 설명할 것 |
-| --- | --- | --- |
-| 저원가 전략 | 운영 효율 향상 | 필요한 품질을 유지하며 어느 비용을 줄이는가? |
-| 제품 차별화 | 고객이 가치 있게 보는 기능·경험 제공 | 왜 이 상품을 선호할 것인가? |
-| 틈새시장 집중 | 특정 집단의 요구에 대응 | 어느 고객 집단의 어떤 필요인가? |
-| 고객·공급업체 친밀성 | 관계와 조정 강화 | 어떤 유용한 연결이 관계의 지속성을 높이는가? |
+### Examples
+- personal computers
+- smartphones
+- Big Data
+- artificial intelligence
+- Internet
 
-인터넷은 진입·검색 비용을 낮추고 가격 비교를 쉽게 하며 경쟁을 넓힐 수 있다. 동시에 새로운 시장·서비스도 만든다. **누구에게 어떤 요인이 어떤 원리로 달라지는지** 써야 한다. ‘인터넷 때문에 경쟁이 심해진다’만으로는 부족하다.
+### First Movers vs Fast Followers
 
-> [!QUIZ]
-> 3장 Q2. 점심시간이 짧은 학생에게 정확한 픽업시간을 약속한다. 어떤 전략이며 앱만으로 충분하지 않은 이유는 무엇인가?
+| 구분 | 의미 |
+|---|---|
+| **First Mover** | disruptive technology의 inventor |
+| **Fast Follower** | 규모와 resources를 활용해 technology를 빠르게 commercialize |
 
-> [!ANSWER]
-> 시간 신뢰성을 중시하는 집단에 대한 **틈새시장 집중**과 **차별화**를 결합할 수 있다. 정확한 처리 용량 정보, 조리 루틴, 인수인계가 뒷받침되어야 한다. 앱 화면을 복제하는 것만으로 같은 서비스를 제공할 수는 없다.
+> **기술을 처음 만든 기업이 항상 최종 승자는 아님**
 
-## 4. 가치사슬로 개입할 활동 찾기
+---
 
-5대 경쟁요인은 압력을 찾고, **가치사슬** (value chain)은 비용·고객가치를 개선할 구체적 활동을 찾는다. 둘 중 하나만 고르기보다 차례로 적용하자.
+## Slide 17 — Organizational Structure
 
-**그림 3.9**(책 p.90 / PDF 119)를 펼친다. 본원적 활동은 생산·전달에 직접 기여하고, 지원 활동은 그 수행을 가능하게 한다.
+### Five Basic Structures
 
-| 본원적 활동 | 카페 적용 | 가능한 시스템 |
-| --- | --- | --- |
-| 구매 물류 · Inbound logistics | 재료 입고·보관 | 입고·재고 기록 |
-| 운영 · Operations | 음식 준비 | 생산 일정·품질 추적 |
-| 판매 물류 · Outbound logistics | 픽업·배송 | 전달 일정 관리 |
-| 영업·마케팅 | 고객 유치·주문 | 주문·캠페인 시스템 |
-| 서비스 | 문의·불만 처리 | 고객서비스 기록 |
+| Structure | Example |
+|---|---|
+| **Entrepreneurial Structure** | small start-up |
+| **Machine Bureaucracy** | midsize manufacturing firm |
+| **Divisionalized Bureaucracy** | Fortune 500 firm |
+| **Professional Bureaucracy** | law firm / school / hospital |
+| **Adhocracy** | consulting firm |
 
-**지원 활동**은 일반관리, 인적자원, 조달, 기술개발이다. 조달(procurement)은 구매 의사결정을 지원하고, 구매 물류는 도착한 물품의 입고·보관을 다룬다. 연결되지만 동일한 활동은 아니다.
+- information system은 organization structure를 반영하는 경우가 많음
 
-**벤치마킹**은 기준이나 다른 조직과 성과를 비교하는 것이고, **최선의 관행** (best practices)은 경험적으로 효과적인 방법이다. 가져온 관행이 우리 조직의 맥락에 맞는지는 별도로 판단해야 한다.
+> **Organization structure가 다르면 필요한 IS도 달라짐**
 
-**가치웹** (value web)은 여러 파트너의 가치사슬을 연결하여 유연하게 조정하는 네트워크다. **그림 3.10**(책 p.92 / PDF 121)을 보자. 한 기업 안의 가치사슬을 길게 늘린 것과는 다르다.
+---
 
-> [!QUIZ]
-> 3장 Q3. 다음 질문에는 어느 모형으로 시작할까? (가) 공급업체의 협상 압력 (나) 창고 입고 지연 (다) 여러 기업의 가치 창출 활동 조정.
+## Slide 18 — Other Organizational Features
 
-> [!ANSWER]
-> (가)는 외부 경쟁 압력을 보는 **5대 경쟁요인**, (나)는 구체적 활동을 찾는 **가치사슬**, (다)는 파트너 활동의 연결을 보는 **가치웹**이다. 완성된 제안에서는 세 가지를 순서대로 사용할 수 있다.
+- **Goals**
+  - coercive
+  - utilitarian
+  - normative
+- Constituencies
+- Leadership styles
+  - democratic / authoritarian
+- Task types
+  - routine / non-routine
+- Environments
 
-## 5. 사업부 하나를 넘어 가치 만들기
+> **같은 IT라도 goal / leadership / task / environment가 다르면 효과도 달라짐**
 
-§3.6에서는 추가 가치가 어디서 나오는지 구분한다.
+---
 
-| 개념 | 작동 원리 | 구별 포인트 |
-| --- | --- | --- |
-| 시너지 · Synergy | 산출·투입·시장·전문성을 공유 | 운영의 결합에서 가치 발생 |
-| 핵심역량 · Core competency | 오랫동안 축적한 탁월한 활동 | 경험·연구·지식 공유에서 강점 발생 |
-| 네트워크 경제 | 참여자가 많아지며 유용한 연결 증가 | 생산량보다 연결이 가치의 원천 |
-| 가상기업 · Virtual company | 기업 경계를 넘어 역량을 조정 | 모든 자산을 직접 소유할 필요 없음 |
-| 비즈니스 생태계 | 플랫폼 주변의 여러 기업·산업이 공동 가치 제공 | 보완적 역할과 핵심 플랫폼 기업 |
+## Slide 19 — Economic Impacts of IS
 
-메신저에 사람이 늘어 대화할 상대가 많아지는 것은 네트워크 효과다. 원두를 대량 구매해 단가가 낮아지는 것은 규모의 경제이며, 자동으로 네트워크 효과가 되지는 않는다. 참여자 수가 늘어도 혼잡·부적절한 연결·유해한 상호작용 때문에 효과가 약해질 수 있다.
+- IT는 capital cost / information cost 변화시킴
+- IS technology도 capital / labor처럼 **factor of production**
+- IT는 information의 cost / quality에 영향
 
-2장 B와 연결하자. 지식 공유는 핵심역량을 강화하고, 파트너 조정에는 신뢰할 정보와 거버넌스가 필요하다.
+### 핵심 효과
+- **transaction costs 감소**
+- outsourcing 가능성 증가
+- firm이 smaller size로 운영 가능
 
-## 6. AI가 생겨도 전략이 필요한 이유
+> **IT는 information과 market participation cost를 낮춰 firm의 경제적 구조를 변화시킴**
 
-**표 3.6–3.7**(책 pp.95–96 / PDF 124–125)을 읽자. AI는 예측·품질검사·추천·서비스·물류·채용을 지원할 수 있다. 각 예시를 가치사슬의 활동과 비즈니스 결과에 연결한다.
+---
 
-AI는 경쟁요인을 서로 다른 방향으로 바꿀 수 있다. 데이터·전문성·연산 자원은 진입장벽을 높일 수 있고, 이용 가능한 플랫폼은 일부 장벽을 낮출 수 있다. 개선된 경험은 충성도를 높이지만 비교 도구는 구매자 힘을 강화할 수도 있다. 하나의 보편적 효과로 단정하지 말자.
+## Slide 20 — Transaction Cost Theory
 
-> [!ADVANCED]
-> AI 제안은 **업무 → 데이터 → 예측·생성 결과 → 사람·조직의 행동 → 성과**로 설명한다. 이어서 경쟁사가 무엇을 복제할 수 있고, 무엇이 고유한 데이터·지식·실행력에 의존하는지 묻는다. ‘AI를 쓴다’만으로 경쟁우위를 설명할 수 없다.
+### Transaction Cost
+- market에 참여할 때 발생하는 비용
+  - supplier 탐색
+  - contract 작성
+  - quality 확인
+  - monitoring 등
 
-### 지속 가능성과 전략 정렬
+### Traditional Response
+- transaction cost가 높으면
+  - vertical integration
+  - employees 증가
+  - suppliers / distributors 인수
 
-§3.8에서 전략적 시스템은 비싸고 구현이 어려우며 모방되기 쉽다는 점을 읽는다. **정렬** (alignment)은 IT 선택을 사업 목표와 필요한 조직 변화에 맞추는 것이다. 우위는 일회성 구매보다 지속적인 적응을 요구한다.
+### IT Effect
+- IT / Internet → transaction cost 감소
+- 외부 firm과 거래하는 것이 더 경제적
 
-답안에서는 **산업의 압력 → 가치 창출 활동 → 조직의 준비**를 확인하고 지표와 위험을 붙인다. 카페의 픽업 약속이라면 지연율·재방문을 보되 주방 과부하로 약속 자체가 불가능해지는 위험도 검토한다.
+> **IT ↓ Transaction Cost → market outsourcing ↑ → firm size 축소 가능**
 
-## 7. 교과서 사례 워크숍
+---
 
-- **PepsiCo·Doritos**, 책 pp.72–73: 과자 소음 문제를 게임 경험과 차별화에 연결한다. 기술적 해결과 마케팅 목표를 따로 설명해 보자.
-- **Spotify의 팟캐스트 전략**, pp.97–98: 그럴듯한 전략이나 큰 투자가 기대한 성과를 내지 못하는 이유를 실행·수익성의 근거로 설명한다.
-- **AI와 패션**, pp.101–102: 적용 사례 하나를 골라 가치사슬에 배치하고 가치와 실행 조건을 함께 쓴다.
-- **Crayola 진로 사례**, p.100: 사업개발 기회를 시스템 요구와 측정할 결과로 바꾸어 본다.
+## Slide 21 — Agency Theory
 
-교과서 집필 시점의 사례이므로 현재 시장 지위에 대한 실시간 정보로 읽기보다 분석 연습에 사용한다.
+### Agency Cost
+- employees / agents를 **manage + supervise**하는 비용
+- firm이 커질수록 agency cost 증가
 
-## 8. 인출과 전략 제안
+### IT Effect
+- monitoring / coordination 비용 감소
+- managers / employees를 크게 늘리지 않고도 firm 확장 가능
 
-- 외부 탐색·계약에 드는 비용은 {{거래비용}}이다.
-- 대리인에 대한 내부 감독은 {{대리인비용}}과 관련된다.
-- 산업 압력은 {{5대 경쟁요인}}, 기업 활동은 {{가치사슬}}로 분석한다.
-- 파트너 가치사슬을 연결한 네트워크는 {{가치웹}}이다.
+> **IT ↓ Agency Cost → larger firm을 더 적은 management cost로 운영 가능**
 
-> [!FLASHCARD]
-> Q: 3장 — 조직의 기술적·행동적 관점이 모두 필요한 이유는?
-> A: 하나는 생산과 공식 구조를, 다른 하나는 실행에 영향을 주는 이해관계·권리·관계를 설명한다.
+---
 
-> [!FLASHCARD]
-> Q: 3장 — 네트워크 효과와 규모의 경제는 어떻게 다른가?
-> A: 네트워크 효과는 참여와 연결에서 가치가 커지는 것이고, 규모의 경제는 생산·구매 규모가 커져 평균비용이 낮아지는 것이다.
+## Slide 22 — Organizational and Behavioral Impacts
 
-> [!FLASHCARD]
-> Q: 3장 — IS의 경쟁우위가 사라질 수 있는 이유는?
-> A: 모방, 고객 요구 변화, 구현 실패, 비용을 감당하지 못하는 사업모델 등이 원인일 수 있다.
+### IT Flattens Organizations
+- decision making이 lower level로 이동
+- fewer managers 필요
+- manager의 **span of control** 증가
 
-> [!QUIZ]
-> 3장 Q4. 카페 체인 전략을 여섯 단계로 제안하라. 경쟁요인, 대응, 활동, 시스템, 조직 조건, 지속성 위험을 연결하라.
+### Postindustrial Organization
+- authority가 formal position보다
+  - knowledge
+  - competence
+  에 기반
 
-> [!ANSWER]
-> 고객이 쉽게 이동한다는 압력에 대응해 정확한 짧은 시간대 픽업으로 차별화한다. 운영과 전달 활동을 개선하고 주문·처리 용량·조리 정보를 통합한다. 직원에게 용량 기준과 불가능한 주문을 막을 권한을 준다. 경쟁사가 화면을 모방할 수 있으므로 앱 자체보다 신뢰할 실행력을 계속 개선해야 한다.
+> **IT → hierarchy 감소 + lower-level empowerment 증가**
 
-**4장으로 넘어가기 전에:** 이 전략으로 누가 이익을 얻고 누가 비용을 부담하는가? 이 질문을 [4장 · 윤리와 사회적 쟁점](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)으로 이어가자.
+---
+
+## Slide 23 — Figure 3.6 Flattening Organizations
+
+### Traditional Hierarchy
+- management layers 많음
+- information 전달 단계 많음
+
+↓
+
+### Flattened Organization
+- management layers 감소
+- lower-level employees의 decision authority 증가
+
+### Benefits
+- faster information flow
+- fewer managers
+- lower agency costs
+- faster decisions
+
+> **IS는 hierarchy를 줄이고 organization을 flatter하게 만들 수 있음**
+
+---
+
+## Slide 24 — Organizational Resistance to Change
+
+### IS가 resistance를 만드는 이유
+- information access 변화
+- structure / culture / politics / work 변화
+
+### Project Failure 주요 원인
+- organizational / political resistance
+
+### Four Factors
+- nature of innovation
+- organizational structure
+- organizational culture
+- tasks affected
+
+> **Large IS project 실패는 technical problem보다 organizational resistance 때문인 경우가 많음**
+
+---
+
+## Slide 25 — Figure 3.7 Resistance to IS Innovations
+
+### Four Components
+- **People**
+- **Organizational Structure**
+- **Job Tasks**
+- **Information Technology**
+
+### Key
+- 하나만 바꾸면 안 됨
+- successful change를 위해 네 요소를 **simultaneously** 조정
+
+> **IS change = Technology + People + Structure + Tasks의 동시 변화**
+
+---
+
+## Slide 26 — The Internet and Organizations
+
+### Internet Effects
+- information / knowledge의
+  - accessibility 증가
+  - storage 확대
+  - distribution 개선
+- transaction costs 감소
+- agency costs 감소
+
+### Example
+- corporate website로 manuals 배포
+- distribution cost 절감
+
+> **Internet → information cost ↓ + transaction/agency cost ↓ + organization flattening**
+
+---
+
+## Slide 27 — Designing Information Systems
+
+### New System 설계 시 고려할 Organizational Factors
+- Environment
+- Structure
+  - hierarchy
+  - specialization
+  - routines
+  - business processes
+- Culture / Politics
+- Organization type / Leadership style
+- Interest groups / End-user attitudes
+- Tasks / Decisions / Business Processes
+
+> **좋은 IS 설계는 technical design보다 organizational fit이 중요**
+
+---
+
+## Slide 28 — Porter’s Competitive Forces Model (1/3)
+
+### Purpose
+- 어떤 firm이 industry leader가 되는지 설명
+- firm / competitors / environment를 함께 분석
+
+### Five Competitive Forces
+1. **Traditional Competitors**
+2. **New Market Entrants**
+3. **Substitute Products & Services**
+4. **Customers**
+5. **Suppliers**
+
+> **Competitive Advantage는 direct competitor뿐 아니라 5가지 industry forces로 결정**
+
+---
+
+## Slide 29 — Porter’s Model (2/3)
+
+### Traditional Competitors
+- 기존 competitors는 지속적으로
+  - new products
+  - services
+  - efficiencies
+  - switching costs
+  개선
+
+### New Market Entrants
+- industry마다 entry barrier가 다름
+- new entrant 특징
+  - new equipment
+  - younger workers
+  - low brand recognition
+
+> **기존 경쟁자 + 신규 진입자가 firm의 competitive pressure를 높임**
+
+---
+
+## Slide 30 — Porter’s Model (3/3)
+
+### Substitute Products & Services
+- 가격이 높아지면 customer가 선택할 대체재
+
+### Customers
+- competitor product로 쉽게 switch 가능한가?
+- price competition을 강요할 수 있는가?
+
+### Suppliers
+- supplier price 상승을 firm이 그대로 반영하기 어려우면 supplier power 증가
+
+> **Substitute / Customer / Supplier power가 높을수록 firm의 competitive pressure 증가**
+
+---
+
+## Slide 31 — Figure 3.8 Porter’s Competitive Forces Model
+
+| Force | 핵심 질문 |
+|---|---|
+| **Traditional Competitors** | 기존 경쟁 강도는 얼마나 큰가? |
+| **New Entrants** | 신규 기업이 쉽게 들어올 수 있는가? |
+| **Substitutes** | 대체 제품으로 쉽게 이동할 수 있는가? |
+| **Customers** | customer bargaining power가 큰가? |
+| **Suppliers** | supplier bargaining power가 큰가? |
+
+> **Firm strategy는 industry의 5 Forces에 대응하도록 설계**
+
+---
+
+## Slide 32 — IS Strategies for Competitive Forces
+
+### Four Generic Strategies
+1. **Low-Cost Leadership**
+2. **Product Differentiation**
+3. **Focus on Market Niche**
+4. **Customer & Supplier Intimacy**
+
+> **IT를 competitive advantage로 연결하는 4가지 기본 전략**
+
+---
+
+## Slide 33 — Low-Cost Leadership / Product Differentiation
+
+| Strategy | 의미 | Example |
+|---|---|---|
+| **Low-Cost Leadership** | competitor보다 낮은 cost로 product/service 제공 | Walmart |
+| **Product Differentiation** | 새로운 product/service 또는 superior experience 제공 | Google / Nike / Apple |
+
+### Product Differentiation 관련
+- **Mass Customization**
+  - mass production resources를 사용하면서 personalized product/service 제공
+- customer experience management
+
+> **Low Cost = efficiency / Differentiation = uniqueness & experience**
+
+---
+
+## Slide 34 — Market Niche / Customer & Supplier Intimacy
+
+### Focus on Market Niche
+- 특정 segment에 집중
+- IS로 detailed customer data 분석
+- CRM analytical capability 활용
+- Example: Hilton OnQ
+
+### Customer & Supplier Intimacy
+- customer / supplier와 강한 relationship 형성
+- loyalty 증가
+- **switching cost** 증가
+- Examples: Toyota / Amazon / Starbucks
+
+> **Niche = 좁은 target에 집중 / Intimacy = 관계 강화로 switching cost 증가**
+
+---
+
+## Slide 35 — Internet’s Impact on Competitive Advantage
+
+- 일부 industry를 transform 또는 threaten
+  - travel agency
+  - printed encyclopedia
+  - media
+- competitive forces는 여전히 존재
+- rivalry는 더 intense
+- universal standards → new entrants 증가
+- 동시에 brand / customer loyalty 구축 기회도 증가
+
+> **Internet은 경쟁을 없애지 않고 오히려 rivalry와 entry pressure를 강화**
+
+---
+
+## Slide 36 — Smart Products and IoT
+
+### Internet of Things (IoT)
+- product 내부의 Internet-connected sensors 증가
+
+### Smart Products
+- information-intensive services와 연결된 products
+- examples:
+  - fitness equipment
+  - health trackers
+
+### Competitive Impact
+- product differentiation 기회 증가
+- switching costs 증가
+- new entrants 억제 가능
+- supplier power 감소 가능
+- competitors 간 rivalry 증가 가능
+
+> **IoT는 product를 단순 물건에서 data-driven service platform으로 확장**
+
+---
+
+## Slide 37 — The Value Chain Model
+
+### Value Chain
+- firm을 **value를 추가하는 activities의 연속**으로 봄
+
+### Two Types
+- **Primary Activities**
+- **Support Activities**
+
+### 활용 목적
+- 어느 activity에 IS를 적용하면 competitive advantage가 큰지 찾음
+- operational efficiency 개선
+- customer / supplier intimacy 개선
+- benchmarking / best practices 활용
+
+### Porter Model과 차이
+- Porter = industry-level competitive pressure 분석
+- Value Chain = firm 내부에서 **구체적으로 어디를 개선할지** 분석
+
+> **Porter는 ‘어떤 힘과 경쟁하는가’, Value Chain은 ‘어디를 개선할 것인가’**
+
+---
+
+## Slide 38 — Figure 3.9 Value Chain Model
+
+### Support Activities
+- Administration & Management
+- Human Resources
+- Technology
+- Procurement
+
+### Primary Activities
+- Inbound Logistics
+- Operations
+- Sales & Marketing
+- Service
+- Outbound Logistics
+
+### IS Example
+- electronic scheduling
+- workforce planning
+- CAD
+- computerized ordering
+- automated warehousing
+- production control
+- shipment scheduling
+
+> **Primary + Support Activities 각각에 IS를 적용해 value / margin 증가**
+
+---
+
+## Slide 39 — Extending the Value Chain: Value Web
+
+### Value Chain Extension
+- firm value chain은
+  - suppliers
+  - distributors
+  - customers
+  의 value chains와 연결
+
+### Value Web
+- independent firms가 synchronized IT를 이용해 value chains 조정
+- collectively product / service 생산
+- traditional value chain보다
+  - less linear
+  - more customer-driven
+  - more flexible
+
+> **Value Web = 여러 독립 기업의 value chains를 IT로 연결한 network**
+
+---
+
+## Slide 40 — Figure 3.10 The Value Web
+
+### Central Firm 연결
+- Suppliers
+- Customers
+- Strategic Alliances / Partner Firms
+- Indirect Suppliers
+
+### Supporting Systems
+- ERP
+- Supply Chain Management Systems
+- Customer Relationship Management Systems
+- Supplier Extranets
+- Net Marketplaces
+
+> **Value Web는 networked partners를 연결해 supply / demand 변화에 빠르게 대응**
+
+---
+
+## Slide 41 — Synergies
+
+### Synergy
+- 한 business unit의 output이 다른 unit의 input으로 사용
+- 또는 두 organizations가 market / expertise 공유
+
+### Result
+- cost 감소
+- profit 증가
+- efficiency 향상
+
+### IT Role
+- 서로 다른 business units의 operations 연결
+
+> **Synergy = 1 + 1 > 2가 되도록 business units를 IT로 연결**
+
+---
+
+## Slide 42 — Core Competencies
+
+### Core Competency
+- firm이 **world-class leader**인 핵심 activity
+
+### 기반
+- knowledge
+- experience
+- business units 간 knowledge sharing
+
+### Examples
+- Google → search
+- Microsoft → office productivity software
+- Intel → processors
+- P&G → expert directory / intranet
+
+> **Core Competency = 경쟁사가 쉽게 따라하기 어려운 world-class capability**
+
+---
+
+## Slide 43 — Network-Based Strategies
+
+### Network-Based Strategy
+- firms가 서로 network할 수 있는 능력을 competitive advantage로 활용
+
+### Three Types
+1. **Network Economics**
+2. **Virtual Company Model**
+3. **Business Ecosystems**
+
+> **Network strategy = firm 내부 자원뿐 아니라 network 전체의 value를 활용**
+
+---
+
+## Slide 44 — Network Economics
+
+### 핵심
+- new participant 추가의 **marginal cost ≈ 0**
+- participant 증가에 따른 marginal gain은 큼
+- community size가 커질수록 value 증가
+- installed customer base가 커질수록 software value 증가
+
+### Traditional Economics와 비교
+
+| Traditional Economics | Network Economics |
+|---|---|
+| **Diminishing Returns** | network size 증가 시 value 증가 가능 |
+| input 증가 → marginal gain 감소 | participant 증가 → network value 증가 |
+
+> **Network Economics = 사용자가 많아질수록 network의 value가 커짐**
+
+---
+
+## Slide 45 — Virtual Company Model
+
+### Virtual Company
+- network를 통해 다른 companies와 alliance
+- traditional organizational boundary / physical location 제약 없이
+  - product creation
+  - distribution
+  수행
+
+### Example: Li & Fung
+- garment production / shipment 관리
+- 대부분의 work를 수천 suppliers에 outsourcing
+
+> **Virtual Company = 자산을 직접 소유하기보다 network coordination으로 business 수행**
+
+---
+
+## Slide 46 — Business Ecosystems and Platforms
+
+### Business Ecosystem
+- suppliers / distributors / outsourcing firms / transport / technology firms가 연결된 network
+
+### Roles
+
+| Role | 의미 |
+|---|---|
+| **Keystone Firm** | ecosystem을 dominate하고 platform 제공 |
+| **Niche Firm** | keystone firm의 platform을 활용해 특정 value 제공 |
+
+### Examples
+- Microsoft platform
+- Facebook
+- Walmart systems
+
+### Value Web와 차이
+- Value Web → 주로 같은 industry의 connected value chains
+- Business Ecosystem → **multiple industries**까지 확장 가능
+
+> **Ecosystem = platform을 중심으로 여러 firms와 industries가 함께 value를 제공**
+
+---
+
+## Slide 47 — Figure 3.11 Ecosystem Strategic Model
+
+### Ecosystem 내부
+- Industry 1
+- Industry 2
+- Industry 3
+- Industry 4
+
+### 외부 Competitive Forces
+- New Market Entrants
+- Substitute Products & Services
+- Suppliers
+- Customers
+
+### Key
+- digital firm에서는 industry boundaries가 더 dynamic
+- competition이 firm 대 firm보다 **ecosystem 대 ecosystem** 형태로 나타날 수 있음
+- IT가 dense interactions를 가능하게 함
+
+> **Digital era 경쟁 단위는 individual firm에서 ecosystem으로 확장**
+
+---
+
+## Slide 48 — AI in Competitive Strategy
+
+### AI and the Value Chain
+- **Table 3.6**에서 value chain 각 activity에 AI가 어떻게 사용되는지 다룸
+
+### AI and Porter’s Competitive Forces Model
+- **Table 3.7**에서 AI가 5 Forces 대응 전략에 어떻게 활용되는지 다룸
+
+> **이 슬라이드는 AI를 Value Chain과 Porter Model에 연결하는 관점을 제시**
+
+---
+
+## Slide 49 — Challenges of Strategic Information Systems
+
+### 1. Sustaining Competitive Advantage
+- competitors가 strategic system을 copy / retaliate 가능
+- competitive advantage는 항상 sustainable하지 않음
+- strategic system이 시간이 지나면 **survival tool**이 될 수도 있음
+
+### 2. Aligning IT with Business Objectives
+- IT strategy와 business strategy alignment 필요
+
+### Strategic Systems Analysis
+- industry structure 분석
+- firm value chain 분석
+- industry value chain 분석
+
+> **Strategic IS의 핵심 과제 = Advantage를 만들고, 유지하고, business strategy와 정렬하는 것**
+
+---
+
+## Slide 50 — Career Relevance
+
+### Example
+- Company: **Crayola**
+- Position: **Business Development Representative**
+
+### 관련 역량
+- business understanding
+- IT knowledge
+- strategy understanding
+- market / organization analysis
+
+> **이 장의 핵심 역량 = Organization + IT + Strategy를 함께 보는 능력**

@@ -1,254 +1,581 @@
 ---
-title: "4장 · 정보시스템의 권리·위험·책임 판단하기"
-description: "다섯 도덕적 차원과 윤리적 분석을 통해 프라이버시·지식재산·시스템 품질·책임·삶의 질을 연결한다."
+title: "4장 · 정보시스템의 윤리와 사회적 책임"
+description: "윤리적 판단에서 프라이버시·지식재산·시스템 품질·책임·삶의 질까지, 슬라이드 흐름을 따라 정리한 Chapter 4 필기."
 order: 5
 published: true
-duration: 80
-tags: [정시개, MIS, 4장, 윤리, 프라이버시, 지식재산, 책임]
+duration: 75
+tags: [정시개, MIS, 4장, 윤리, 프라이버시, 지식재산]
 objectives:
-  - 다섯 도덕적 차원으로 사례의 쟁점을 분류한다.
-  - 윤리적 분석의 다섯 단계와 여섯 원칙을 적용한다.
-  - 프라이버시·재산권·품질·책임 문제를 구분한다.
-  - 비즈니스 효과와 사회적 결과를 함께 평가한다.
+  - 정보시스템이 만드는 윤리적·사회적·정치적 쟁점을 설명한다.
+  - 윤리적 분석 절차와 주요 판단 원칙을 사례에 적용한다.
+  - 프라이버시·정보권리·지식재산 문제를 구분한다.
+  - 시스템 품질·책임·삶의 질에 미치는 영향을 평가한다.
 ---
 
-## 읽기 지도 · 가치 있는 시스템도 피해를 만들 수 있다
+## 학습 경로
 
 [이전: 3장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [1장으로 돌아가기](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-**핵심 질문:** 정보시스템의 편익과 위험이 서로 다른 사람에게 돌아갈 때 무엇을 기준으로 결정하고 책임져야 하는가?
+**범위:** Chapter 4 슬라이드 1–35 · Ethics → Privacy → Property → Quality → Accountability → Quality of Life
 
-**선수 개념:** 1장의 정보 흐름, 2장의 데이터·거버넌스, 3장의 이해관계와 전략적 효과를 연결한다.
+## Chapter 4. Ethical and Social Issues in Information Systems
 
-3장은 IS가 경쟁우위를 만드는지 물었다. 4장은 **그 가치를 만드는 과정에서 누구의 권리·기회·삶이 영향을 받는가**를 추가로 묻는다. 효율은 중요한 판단 기준이지만 윤리적 평가 전체는 아니다.
+## Slide 1 — Ethical and Social Issues in Information Systems
 
-**출처:** 제공된 *Management Information Systems* **18판 4장**. 제공된 17판 파일에는 4장 본문이 없다. **책 = 인쇄 번호, PDF = 책 + 29.** 아래 법률 사례는 교과서의 설명과 집필 맥락을 공부하기 위한 것이며 현재 법령·판례를 갱신한 자료는 아니다.
+- Chapter 4 주제: **Ethics / Privacy / Intellectual Property / System Quality / Accountability / Quality of Life**
 
-| 읽을 곳 | 책 / PDF | 읽기 질문 |
-| --- | --- | --- |
-| 추적 앱 도입 사례 | 109–110 / 138–139 | 어떤 편익과 프라이버시 비용이 함께 있는가? |
-| §4.1 쟁점과 다섯 차원 | 111–116 / 140–145 | 제도가 기술 변화 속도를 따라가기 어려운 이유는? |
-| §4.2 윤리적 분석·원칙 | 116–118 / 145–147 | 어떤 근거로 결정을 정당화할까? |
-| §4.3 정보권리·프라이버시 | 119–124 / 148–153 | 누가 개인 정보를 수집·결합·사용하는가? |
-| §4.4 지식재산(intellectual property) | 124–128 / 153–157 | 무엇이 보호되고 디지털 복제가 무엇을 바꾸는가? |
-| §§4.5–4.6 품질·책임 | 128–133 / 157–162 | 어느 수준의 품질이 필요하며 누가 피해에 답하는가? |
-| §4.7 삶의 질 | 133–137 / 162–166 | 노동·기회·권력·건강이 어떻게 달라지는가? |
-| 진로·마지막 사례·복습 | 137–143 / 166–172 | 실제 사례에 전체 틀을 적용할 수 있는가? |
+> **Information Systems가 만들어내는 ethical, social, political issues를 다루는 장**
 
-## 1. 충돌하는 가치를 먼저 지도화하기
+---
 
-**가상의 카페 멤버십 앱**을 한 줄의 찬반 문제가 아니라 가치 충돌로 펼쳐 보자.
+## Slide 2 — Learning Objectives
 
-| 설계 요소 | 기대 편익 | 함께 생기는 위험 | 덜 침해적인 대안 |
-| --- | --- | --- | --- |
-| 지속적 위치 수집 | 도착 예측·대기시간 감소 | 생활패턴 노출·목적 외 재사용 | 선택적 체크인·대략적 도착시간 |
-| 데이터 장기 보관 | 장기 수요 분석 | 유출·결합·추론 위험 누적 | 목적별 짧은 보관기간 |
-| 광고 파트너 공유 | 추가 수익·개인화 | 고객 기대를 벗어난 2차 이용 | 별도 동의·비공유 요금제 |
+- IT/IS 관련 **ethical / social / political issues**
+- ethical conduct의 principles
+- **information rights / privacy**
+- **intellectual property**
+- **system quality**
+- **accountability / control**
+- **quality of life**
+- career relevance
 
-교과서의 **Apps That Track: A Double-Edged Sword**는 데이터 흐름을 세 단계로 나눠 읽어야 한다.
+> **핵심 흐름: Ethics → Privacy → Property → Quality → Accountability → Quality of Life**
 
-`최초 수집 → 다른 주체와 공유 → 다른 자료와 결합해 새로운 사실 추론`
+---
 
-사용자가 첫 단계는 알아도 뒤의 두 단계까지 이해했다고 볼 수는 없다.
+## Slide 3 — Video Cases
 
-| 쟁점 층위 | 묻는 질문 | 예 |
-| --- | --- | --- |
-| 윤리적 | 무엇을 해야 옳은가? | 편의를 위해 어디까지 수집할까? |
-| 사회적 | 어떤 기대·관행·제도가 필요한가? | 위치 추적을 정상적인 서비스 조건으로 볼까? |
-| 정치적 | 어떤 규칙·권리·집행이 필요한가? | 위반을 누가 조사하고 구제할까? |
+- **Net Neutrality**
+- Facebook / Google과 **Privacy**
+- Data Mining for Terrorists and Innocents
+- **Right to Be Forgotten**
 
-교과서의 파문 모형은 기술 변화가 윤리적 선택을 만들고, 그 선택이 사회 규범과 정치·법 제도의 변화를 요구한다는 관계를 보여 준다.
+> **Chapter 4의 주요 사례는 privacy, regulation, data use에 집중**
 
-> [!DEFINITION]
-> 다섯 도덕적 차원은 **정보권리와 의무, 재산권과 의무, 시스템 품질, 책임성과 통제, 삶의 질**이다. 하나의 사건이 여러 차원에 걸칠 수 있으므로 서로 배타적인 다섯 칸으로 보지 말자.
+---
 
-| 차원 | 카페 앱에 물을 질문 |
-| --- | --- |
-| 정보권리 | 위치 수집이 필요한가? 고객이 이해할 수 있는가? |
-| 재산권 | 코드·이미지·학습자료의 소유·이용권한은 무엇인가? |
-| 시스템 품질 | 도착 예측이 틀리면 어떤 일이 생기는가? |
-| 책임성과 통제 | 누가 재사용을 승인하고 오류·불만을 처리하는가? |
-| 삶의 질 | 누가 배제·감시·압박·불이익을 받는가? |
+## Slide 4 — Central Bank Digital Currencies Case
 
-### 기술 발전이 왜 문제를 더 크게 만드는가?
+### Opening Case
+- **Currencies of the Future: Central Bank Digital Currencies**
+- digital currency가 만드는 ethical / social / political 문제를 다루는 사례
 
-| 기술 변화 | 가능해진 것 | 새로 커진 위험 |
-| --- | --- | --- |
-| 연산 능력 증가 | 더 많은 결정을 시스템에 맡김 | 장애·오류에 대한 의존 증가 |
-| 저장비용 하락 | 장기간 기록 축적 | 목적이 끝난 데이터의 계속된 노출 |
-| 분석·AI | 프로파일링·추론·추천 | 보이지 않는 차별·설명 곤란 |
-| 네트워크 | 즉시 공유·복제 | 유출과 2차 확산 |
-| 모바일·센서 | 지속적 위치·행동 관찰 | 일상 전체의 감시 가능성 |
+> **Digital technology는 convenience와 함께 새로운 ethical risk도 발생시킴**
 
-**프로파일링** (profiling)은 여러 정보를 모아 개인의 모습을 구성한다. **NORA** (비명백한 관계 인식)는 서로 다른 데이터에서 쉽게 드러나지 않는 연결을 찾는다. 각각은 평범한 기록이어도 결합하면 민감해질 수 있다. 책 pp.114–115의 설명과 그림을 보며 이름을 지웠다는 이유만으로 식별 가능성이 사라진다고 가정하지 말자.
+---
 
-> [!QUIZ]
-> 4장 Q1. 기업이 ‘대기시간이 줄어드니 지속적인 위치 수집은 윤리적이다’라고 주장한다. 무엇이 빠졌는가?
+## Slide 5 — IT/IS-Related Ethical Issues (1/2)
 
-> [!ANSWER]
-> 편익만 설명했을 뿐 필요성·비례성·충분한 이해와 선택·추가 이용·보관기간·보안·영향받는 집단·덜 침해적인 대안을 비교하지 않았다. 고객이 직접 도착을 알리는 방식으로도 일부 목적을 달성할 수 있다. 사실과 대안 비교가 필요하다.
+### Failed Ethical Judgment 사례
+- Volkswagen
+- Wells Fargo
+- FX
+- Robinhood
+- Madoff Ponzi scheme
 
-## 2. 책임과 관련된 네 개념을 구분하자
+### Ethics
+- **right / wrong의 principles**
+- individuals가 free moral agents로서 behavior를 결정할 때 사용하는 기준
 
-책 p.116을 자세히 읽자. 한국어로 비슷하게 번역되므로 원어와 질문을 함께 기억한다.
+> **Ethics = 개인이 무엇이 옳고 그른지 판단할 때 사용하는 principles**
 
-| 개념 | 이 장의 의미 | 설계에 적용한 가상 예시 |
-| --- | --- | --- |
-| Responsibility · 책임 | 자신의 선택에 따른 의무와 결과를 받아들임 | 도입 결정의 담당자가 책임을 맡음 |
-| Accountability · 책임성 | 누가 행동하고 책임지는지 식별하는 장치 | 결정 기록·담당자 지정 |
-| Liability · 법적 책임 | 피해 회복·배상을 가능하게 하는 법적 체계 | 법적으로 누구에게 배상 의무가 있는지 판단 |
-| Due process · 적법절차 | 알려진 규칙과 그 적용에 이의를 제기할 절차 | 불리한 결정에 대한 재검토 경로 |
+---
 
-로그는 책임성을 높일 수 있지만 법적 배상책임을 자동으로 결정하지 않는다. 이의신청 양식이 있어도 검토 권한을 가진 사람이 없으면 효과가 없다. ‘AI가 결정했다’는 말도 누가 시스템을 선택·승인·운영했는지 설명하지 못한다.
+## Slide 6 — IT/IS-Related Ethical Issues (2/2)
 
-## 3. 윤리적 분석을 실제로 해 보자
+### Information Systems가 만드는 새로운 문제
+- 기존 **power / money / rights / obligations** 분배 변화
+- intense social change
+- new opportunities for crime
+- new kinds of crimes
 
-교과서는 **다섯 단계**를 제시한다. 좋아하는 원칙 하나를 먼저 가져오기보다 사실과 대안부터 정리하자.
+### Privacy
+- 많은 online business model은 user personal information 수집에 의존
 
-1. **사실 확인:** 누가 누구에게 언제 무엇을 했는가? 확인된 사실과 추정을 구분한다.
-2. **딜레마와 가치 확인:** 편의·운영 효율과 프라이버시·자율성처럼 충돌하는 가치를 찾는다.
-3. **이해관계자 확인:** 고객·직원·관리자·협력업체와 간접 영향 집단도 포함한다.
-4. **실행 가능한 대안 확인:** 범위 축소, 설계 변경, 수동 대안, 평가를 위한 연기 등을 검토한다.
-5. **결과 검토:** 효과의 분포·심각성·가능성·반복했을 때의 결과를 비교한다.
+> **IS는 기존 사회 규칙으로 다루기 어려운 새로운 ethical questions를 만듦**
 
-카페의 선택지는 ‘모두 추적’과 ‘사업 포기’만이 아니다. 선택적 체크인, 대략적 도착시간, 짧은 보관기간 등이 가능하다. 이는 교과서를 적용한 **직접 구성한 설계 예시**다.
+---
 
-### 여섯 윤리 원칙 비교하기
+## Slide 7 — Model for Ethical, Social, and Political Issues
 
-| 원칙 | 판단 질문 | 카페 적용 |
-| --- | --- | --- |
-| 황금률 · Golden Rule | 상대의 처지에서도 받아들일 수 있는가? | 나도 고객으로서 같은 추적을 받아들일까? |
-| 칸트의 정언명령 | 모든 사람에게 적용할 규칙으로 받아들일 수 있는가? | 모든 기업이 이 규칙을 써도 성립할까? |
-| 미끄러운 경사길 원칙 | 반복하면 어떤 장기 결과가 생기는가? | 수집 범위를 계속 넓혀도 괜찮을까? |
-| 공리주의 원칙 | 전체적으로 더 큰 가치를 만드는가? | 모든 영향 집단의 이익·피해를 고려했나? |
-| 위험 회피 원칙 | 심각한 잠재적 피해를 줄이는가? | 작은 편의를 위해 큰 노출 위험을 감수할까? |
-| 윤리적 공짜 점심 없음 | 별도 표시가 없다면 창작물에 소유자가 있다고 보았는가? | 자료 재사용의 허락·라이선스는 무엇인가? |
+### Pond Model
+- Society = **calm pond**
+- IT = pond에 떨어진 **rock**
+- 새로운 technology → ripple 발생
 
-이 원칙들은 항상 하나의 답을 내는 계산식이 아니다. 좋은 답안은 가치판단을 드러내고, 반대 입장과 대안을 검토한 뒤 선택을 설명한다.
+### 결과
+- 기존 rules로 설명되지 않는 new situations 발생
+- social / political institutions는 즉시 대응하기 어려움
+- etiquette / expectations / laws 형성에 시간 필요
 
-전문직 윤리강령은 전문성에 따르는 의무를 정리한다. 조직의 **거버넌스 규정**은 이를 역할·정책·기술적 통제·모니터링으로 바꾼다. ‘프라이버시 존중’도 수집 범위·접근·검토·수정 담당자가 정해져야 실제 업무에 적용된다.
+> **Technology 변화 속도가 law / social rules 변화 속도보다 빠름**
 
-> [!QUIZ]
-> 4장 Q2. 정언명령과 미끄러운 경사길 원칙은 어떻게 다른가? 데이터 이용 범위를 한 번만 넓히는 예외에 적용하라.
+---
 
-> [!ANSWER]
-> 정언명령은 모두에게 적용할 수 있는 규칙인지 묻고, 경사길 원칙은 반복될 때의 결과를 묻는다. 한 번은 작아 보여도 예외가 반복되어 광범위한 이용을 정상화할 수 있다. ‘한 번뿐’이라는 주장만으로 두 검토를 통과하지는 못한다.
+## Slide 8 — Figure 4.1 Ethical, Social, and Political Issues
 
-## 4. 개인 정보가 경계를 넘는 과정을 따라가자
+### Levels
+- **Individual** → Ethical Issues
+- **Society** → Social Issues
+- **Polity** → Political Issues
 
-§4.3의 **프라이버시**는 원치 않는 침해로부터의 자유와 개인 정보가 취급되는 방식에 관한 이해를 포함한다. 보안과 겹치지만 동일하지 않다. 안전하게 보호된 데이터베이스도 부적절한 목적으로 사용할 수 있다.
+### Five Moral Dimensions
+1. Information Rights & Obligations
+2. Property Rights & Obligations
+3. Accountability & Control
+4. System Quality
+5. Quality of Life
 
-| 기술·개념 | 이해할 내용 |
-| --- | --- |
-| 쿠키 · Cookies | 브라우저에 저장되는 작은 데이터로 세션·설정·식별 등을 지원; 용도와 맥락이 중요 |
-| 웹 비콘 등 추적 장치 | 콘텐츠 열람 같은 상호작용을 기록하고 다른 정보와 연결 가능 |
-| 행동 타기팅 | 관찰·추론한 행동으로 광고를 맞춤화 |
-| 충분한 설명에 근거한 동의 | 버튼을 보는 것뿐 아니라 관련 이용 내용을 이해하는 것 |
-| 옵트인·옵트아웃 | 사전 적극적 선택인지, 거부 전까지 이용하는 기본값인지 구분 |
-| 데이터 결합 | 개별 기록을 넘어 새로운 민감한 사실을 추론할 수 있음 |
+> **New IT → ethical issue → social issue → political issue로 확장될 수 있음**
 
-책 pp.119–120의 **공정정보관행** (FIP)을 다섯 질문으로 읽는다. **고지·인지, 선택·동의, 접근·참여, 보안·무결성, 집행**이 실제 업무에서 무엇을 뜻하는가?
+---
 
-교과서는 미국의 분야별 보호와 유럽 GDPR의 포괄적 틀을 비교하고 AI의 프라이버시 문제를 다룬다. 제공된 판본의 원칙과 관할 맥락을 공부하되, 짧은 설명만으로 모든 법적 사례나 이후 변화까지 판단하지 않는다.
+## Slide 9 — Five Moral Dimensions of the Information Age
 
-추적 설정·권한·식별 통제 같은 **기술적 조치**는 도움이 되지만 목적·접근 결정까지 대신하지 않는다. AI에서는 추론, 학습데이터, 프롬프트에 입력한 정보의 재사용도 따로 살펴야 한다.
+| Moral Dimension | 핵심 질문 |
+|---|---|
+| **Information Rights & Obligations** | 개인 정보에 대해 누가 어떤 권리를 가지는가? |
+| **Property Rights & Obligations** | digital property의 ownership을 어떻게 보호할 것인가? |
+| **Accountability & Control** | 문제가 생겼을 때 누가 책임지는가? |
+| **System Quality** | 어느 수준의 system / data quality를 요구해야 하는가? |
+| **Quality of Life** | technology가 사회와 삶에 어떤 영향을 주는가? |
 
-> [!QUIZ]
-> 4장 Q3. 직원은 인증해야 고객 기록을 볼 수 있다. 그런데 기업이 알리지 않은 목적으로 그 기록을 재사용한다. 인증으로 프라이버시 문제까지 해결했는가?
+> **Chapter 4의 핵심 framework = Five Moral Dimensions**
 
-> [!ANSWER]
-> 아니다. 인증은 접근 통제로 보안을 지원한다. 프라이버시는 목적·기대·범위·이용 조건도 포함한다. 허가받은 접근도 부적절한 이용으로 이어질 수 있으므로 두 차원을 함께 분석한다.
+---
 
-## 5. 어떤 지식재산인지 먼저 구분하자
+## Slide 10 — Technology Trends Raising Ethical Issues
 
-§4.4에서 디지털 콘텐츠는 쉽게 복제·배포되고 원본과 사본의 구분이 어려워진다는 점을 읽는다. 이 장은 네 가지 보호 형태를 다룬다.
+| Trend | Ethical Impact |
+|---|---|
+| **Computing Power 증가** | critical operations의 computer dependence 증가 |
+| **Storage Cost 감소** | 개인에 대한 detailed database 유지 쉬움 |
+| **Data Analysis / Networking 발전** | personal data access / copying 쉬움 |
+| **Mobile Device Growth** | individual location / device tracking 증가 |
+| **AI** | privacy / intellectual property / ethical standards 문제 |
 
-| 형태 | 교과서가 다루는 중심 대상 | 혼동하지 말 것 |
-| --- | --- | --- |
-| 저작권 · Copyright | 창작적 표현 | 표현과 일반적인 아이디어는 다르다 |
-| 특허 · Patent | 관련 요건을 충족하는 발명 | 유용한 아이디어 모두에 자동으로 특허가 있는 것은 아니다 |
-| 상표 · Trademark | 출처를 식별하는 이름·표지·브랜드 | 출처 식별과 콘텐츠 표현은 다르다 |
-| 영업비밀 · Trade secret | 비밀로 유지되는 가치 있는 사업 정보 | 공개 정보와 비밀 유지 정보는 조건이 다르다 |
+> **Technology capability가 커질수록 data collection·analysis·tracking 능력도 커짐**
 
-교과서는 **DMCA**도 디지털 권리의 맥락에서 다룬다. 복제와 기술적 보호의 문제에 연결해 공부하되, 개념 목록을 특정 저작물 이용 허락으로 해석하지 말자.
+---
 
-AI는 **입력 측면**과 **출력 측면**에 모두 쟁점을 만든다. 학습자료가 무엇인지, 출력이 무엇을 재현하는지, 인간의 기여가 무엇인지, 브랜드 혼동이 있는지, 비밀 정보가 노출되는지 구분해야 한다. ‘AI 저작권’이라는 하나의 질문에 보편적인 한 답이 있다고 생각하면 안 된다.
+## Slide 11 — Advances in Data Analysis Techniques
 
-## 6. 품질과 책임성을 함께 설계하기
+### Profiling
+- multiple sources의 data 결합
+- individual에 대한 detailed dossier 생성
 
-| 실패 원인 | 예 | 설계 통제 |
-| --- | --- | --- |
-| 소프트웨어 오류 | 계산·분류 로직 결함 | 시험·검토·롤백 |
-| 하드웨어·시설 장애 | 서버·전력·통신 중단 | 이중화·복구 절차 |
-| 잘못된 입력 데이터 | 오래되거나 틀린 고객 기록 | 검증·정정·출처 관리 |
+### NORA
+- **Nonobvious Relationship Awareness**
+- multiple sources 결합
+- obscure / hidden relationships 발견
+- criminals / terrorists 식별 등에 사용
 
-필요한 품질 수준은 **오류의 비용과 결과**에 따라 달라진다. 카페 추천 오류와 안전에 직접 영향을 주는 결정 오류는 같은 허용기준을 쓸 수 없다.
+> **Profiling = 개인 특성 분석 / NORA = 숨겨진 관계 탐색**
 
-`오류 발생 → 기록 보존 → 원인 추적 → 담당자 검토 → 정정·구제 → 재발 모니터링`
+---
 
-**Section 230 사례**(책 pp.130–131)를 포함한 플랫폼 논의는 콘텐츠와 행위의 책임 배분이 논쟁적임을 보여 준다. AI에서는 모델·데이터 제공자·도입 조직·운영자가 연결되므로 원인과 책임의 추적 경로를 미리 설계해야 한다.
+## Slide 12 — Figure 4.2 NORA
 
-> [!EXAMPLE]
-> **직접 구성한 통제 예시:** 자동 멤버십 판단으로 고객이 부당하게 제외되었다면 관련 기록을 남기고, 담당자를 지정하고, 사람의 재검토를 제공하고, 데이터를 바로잡고, 같은 오류가 반복되는지 확인한다. 품질과 책임성을 연결하는 조치이며 이것만으로 법적 배상책임이 결정되는 것은 아니다.
+### Data Sources
+- Watch Lists
+- Incident and Arrest Systems
+- Customer Transaction Systems
+- Telephone Records
+- Human Resources Systems
 
-**컴퓨터 범죄** (computer crime)는 컴퓨터·시스템과 관련된 불법 행위, **컴퓨터 남용** (computer abuse)은 반드시 불법은 아니어도 비윤리적인 행위다. 스팸은 사회적 피해·업무 부담·법적 취급을 구별할 필요를 보여 준다. **합법과 윤리적이라는 판단은 관련되지만 동일하지 않다.**
+↓
 
-## 7. 개별 거래 밖의 삶도 보자
+### Processing
+- name standardization
+- match
+- merge
 
-§4.7에서 기업의 성과가 좋아져도 비용이 직원·고객·사회로 옮겨갈 수 있음을 읽는다.
+↓
 
-| 삶의 질 쟁점 | 인과관계 질문 | 가상 카페 확장 |
-| --- | --- | --- |
-| 권력 집중 | 데이터·기반·접근을 누가 통제하는가? | 작은 가게가 주문 플랫폼 하나에 의존 |
-| 디지털 격차 | 접근·역량·사용 가능한 설계가 부족한 사람은? | 앱 전용 주문으로 일부 고객 배제 |
-| 고용·자동화 | 어떤 업무가 바뀌며 누가 전환할 수 있는가? | 일정 소프트웨어가 직원 역할 변경 |
-| 변화 속도 | 사람과 조직이 적응할 시간이 있는가? | 계속 바뀌는 절차에 교육이 따라가지 못함 |
-| 일·생활 경계 | 연결이 상시 대기로 바뀌는가? | 퇴근 후에도 업무 요청 수신 |
-| 신체·정신·인지 영향 | 지속적 사용이 사람에게 어떤 영향을 주는가? | 반복 작업, 화면 피로, 주의 분산, 감시 부담 |
+### Output
+- **NORA Alerts**
 
-이는 설계와 효과 분배의 질문이다. 효율 증가가 모든 이해관계자에게 똑같이 이롭다고 가정하지 말자. 동시에 일반적 위험과 특정 사례에서 입증된 결과도 구별한다.
+> **NORA = 서로 다른 database를 결합해 hidden relationship을 찾아 alert 생성**
 
-## 8. 교과서 사례에 적용하기
+---
 
-**추적 앱 사례**(책 pp.109–110)는 참여자와 데이터 흐름을 그리고 유용한 기능과 2차 이용을 비교한다. **Meta's Many Ethical Challenges**(pp.139–140)는 다섯 차원 중 어떤 것이 관련되는지 본문 근거를 붙인다. 실제 사실과 연결되지 않은 일반적 비판 목록으로 끝내지 말자.
+## Slide 13 — Principles to Guide Ethical Decisions
 
-**프라이버시 분석가 진로 사례**(책 p.138)는 원칙이 조직 운영으로 바뀌는 모습을 읽는다. 일반 원칙 하나를 담당자·제한된 목적·검토 단계·사용 가능한 이의제기 절차로 바꿔 보자.
+| Concept | 의미 |
+|---|---|
+| **Responsibility** | decision의 costs / duties / obligations를 받아들이는 것 |
+| **Accountability** | 누가 어떤 action을 했고 누가 책임지는지 확인 가능해야 함 |
+| **Liability** | damage에 대해 법적으로 compensation을 요구할 수 있음 |
+| **Due Process** | laws가 알려져 있고 appeal을 통해 올바른 적용을 확인할 수 있음 |
 
-> [!QUIZ]
-> 4장 Q4. 카페 앱에 윤리적 분석 다섯 단계를 적용하라. 선택 가능한 설계 하나와 남는 상충관계를 제시하라.
+> **Ethical analysis에는 Responsibility → Accountability → Liability → Due Process가 중요**
 
-> [!ANSWER]
-> **사실:** 어떤 위치정보를 왜, 얼마나 오래, 누구와 공유하는지 확인한다. **가치:** 편의·효율과 프라이버시·자율성이 충돌한다. **이해관계자:** 고객·직원·관리자·서비스 업체다. **대안:** 지속 추적, 선택적 체크인, 수동 픽업을 비교한다. **결과:** 서비스·노출·배제·운영비를 평가한다. 선택적 체크인과 수동 대안, 제한된 보관, 담당자 지정을 선택할 수 있다. 예측 정밀도가 낮아질 수 있으므로 그 대가도 인정하고 측정한다. 다른 결론도 근거와 추론으로 설명해야 한다.
+---
 
-## 9. 인출과 1~4장 연결
+## Slide 14 — Ethical Analysis
 
-- 누가 행동했는지 식별할 수 있는 구조는 {{책임성}}이다.
-- 법적 피해 회복·배상은 {{liability}}와 관련된다.
-- 규칙 적용에 이의를 제기할 경로는 {{due process}}와 관련된다.
-- 문서화되지 않은 전문성은 2장의 지식 문제이고, 기록된 창작물의 무단 재사용은 4장의 {{재산권}} 문제다.
+### Five-Step Process
+1. facts를 명확히 identify / describe
+2. conflict / dilemma와 higher-order values 정의
+3. stakeholders identify
+4. reasonable options identify
+5. each option의 consequences identify
 
-> [!FLASHCARD]
-> Q: 4장 — 다섯 도덕적 차원은?
-> A: 정보권리와 의무, 재산권과 의무, 시스템 품질, 책임성과 통제, 삶의 질.
+> **Ethical Analysis = Facts → Values → Stakeholders → Options → Consequences**
 
-> [!FLASHCARD]
-> Q: 4장 — 윤리적 분석의 다섯 단계는?
-> A: 사실 확인, 딜레마와 가치 확인, 이해관계자 확인, 실행 가능한 대안 확인, 결과 검토.
+---
 
-> [!FLASHCARD]
-> Q: 4장 — 프라이버시가 보안과 같지 않은 이유는?
-> A: 보안은 접근과 시스템을 보호하고, 프라이버시는 개인 정보의 수집·결합·사용 자체가 적절한지도 묻는다.
+## Slide 15 — Ethical Principles (1/2)
 
-**하나의 제안에 전체 과정을 적용하자.**
+### Golden Rule
+- 남에게 대접받고 싶은 방식으로 남을 대하라
 
-| 장 | 카페 앱에 적용할 질문 |
-| --- | --- |
-| 1장 · 가치 | 어떤 목표를 달성하며 어떤 보완 자산이 필요한가? |
-| 2장 · 업무 | 어떤 프로세스·시스템·사람·지식을 연결해야 하는가? |
-| 3장 · 전략 | 어떤 경쟁 압력과 활동에 대응하며 모방 가능한가? |
-| 4장 · 윤리 | 누가 이익·위험을 부담하며 어떤 권리·책임을 보호해야 하는가? |
+### Kant’s Categorical Imperative
+- 모두가 해도 옳지 않은 행동이라면 누구에게도 옳지 않음
 
-> [!EXAM]
-> **최종 서술 과제:** 한 페이지로 앱 도입 여부와 방법을 제안한다. 비즈니스 문제, 시스템 구성, 조직 조건, 전략적 원리, 윤리적 상충관계, 성과 지표를 넣는다. 약어를 나열하기보다 문장 사이의 인과관계를 보여 주는 것이 목표다.
+### Slippery Slope Rule
+- 반복해서 할 수 없는 행동이라면 처음부터 하지 말아야 함
 
-표를 보지 않고 이 흐름을 설명할 수 있으면 2회독을 시작할 준비가 되었다. [복습 화면](/review)에서 **헷갈림·틀림** 항목을 확인하고, 해당 교과서 구간으로 돌아가자.
+### 차이
+- **Categorical Imperative**: 모든 사람에게 universalize 가능한가?
+- **Slippery Slope**: 같은 행동을 반복해도 acceptable한가?
+
+> **Kant = 모두가 해도 되는가 / Slippery Slope = 계속 반복해도 되는가**
+
+---
+
+## Slide 16 — Ethical Principles (2/2)
+
+| Principle | 기준 |
+|---|---|
+| **Utilitarian Principle** | greater value를 만드는 action 선택 |
+| **Risk Aversion Principle** | harm / potential cost가 가장 적은 action 선택 |
+| **No Free Lunch Rule** | 명시적 허용이 없다면 tangible / intangible object는 누군가의 property라고 가정 |
+
+> **Utilitarian = 최대 가치 / Risk Aversion = 최소 피해 / No Free Lunch = ownership 존중**
+
+---
+
+## Slide 17 — Professional Codes of Conduct
+
+### Professional Associations
+- AMA
+- ABA
+- ACM
+
+### Purpose
+- professions가 society의 general interest를 위해 self-regulation
+
+### Governance Codes
+- guidelines / policies 설정
+- technical guardrails 구현
+- ethical decision making 지원
+
+> **Professional Code = profession이 스스로 행동 기준을 정하는 mechanism**
+
+---
+
+## Slide 18 — Real-World Ethical Dilemmas
+
+### 특징
+- 한쪽의 interest와 다른 쪽의 interest가 충돌
+
+### Examples
+- **Employee Monitoring**
+  - company productivity
+  - employee privacy / personal use
+- **Facebook Data Use**
+  - business / advertising value
+  - user privacy
+- automation
+  - efficiency
+  - employment / job loss
+
+> **Ethical dilemma는 right vs wrong보다 competing values의 충돌인 경우가 많음**
+
+---
+
+## Slide 19 — Information Rights: Privacy
+
+### Privacy
+- surveillance / interference 없이 혼자 있을 권리
+- 자기 personal information을 control할 권리
+
+### U.S. Protection
+- First Amendment
+- Fourth Amendment
+- Fifth / 14th Amendment
+- Privacy Act of 1974 등
+
+> **Privacy = personal life와 personal information에 대한 control**
+
+---
+
+## Slide 20 — Fair Information Practices (FIP)
+
+### FIP
+- information collection / use를 규율하는 principles
+- U.S. / European privacy law의 기반
+- record holder와 individual 사이의 **mutuality of interest**
+
+### 관련 법률
+- COPPA
+- Gramm-Leach-Bliley Act
+- HIPAA
+
+> **FIP = personal data를 수집·사용할 때 따라야 하는 기본 privacy principles**
+
+---
+
+## Slide 21 — FTC FIP Principles
+
+| Principle | 의미 |
+|---|---|
+| **Notice / Awareness** | data collection 전에 practices 공개 |
+| **Choice / Consent** | secondary use에 대해 consumer가 선택 가능 |
+| **Access / Participation** | personal data를 확인하고 정확성에 이의 제기 가능 |
+| **Security** | personal data의 accuracy / security 보호 |
+| **Enforcement** | FIP principles를 실제 집행할 mechanism 필요 |
+
+> **FIP 핵심 = Notice + Choice + Access + Security + Enforcement**
+
+---
+
+## Slide 22 — EU GDPR
+
+### GDPR
+- explicit / informed consent 요구
+- EU citizens / residents의 data 처리 firm에 적용
+- EU 수준의 privacy protection이 없는 국가로 data transfer 제한
+- **Right to Be Forgotten** 강화
+- Privacy Shield agreements
+- heavy fines
+
+### 적용 범위
+- EU에서 operating하는 firm
+- 또는 EU citizen / resident data를 processing하는 firm
+
+> **GDPR = consent 중심의 강력한 personal data protection framework**
+
+---
+
+## Slide 23 — Internet Challenges to Privacy (1/2)
+
+| Technology | 역할 |
+|---|---|
+| **Cookies** | browser identify / site visit tracking |
+| **Super Cookies** | persistent tracking |
+| **Web Beacons** | e-mail / web page viewing 여부 추적 |
+| **Spyware** | 몰래 설치되어 activity / keystroke 등 수집 가능 |
+| **Behavioral Targeting** | browsing behavior 기반 광고 |
+
+> **Online privacy 문제의 핵심 = invisible tracking**
+
+---
+
+## Slide 24 — Internet Challenges to Privacy (2/2)
+
+### Consent Models
+
+| Model | 의미 |
+|---|---|
+| **Opt-Out** | 기본적으로 data use 허용, 사용자가 거부 |
+| **Opt-In** | 사용자가 명시적으로 동의해야 data use 가능 |
+
+### Issues
+- U.S.는 transaction information의 marketing use 허용
+- industry는 privacy legislation보다 self-regulation 선호
+- complex privacy statements
+- cookie banners
+- facial recognition data collection 문제
+
+> **Opt-In이 Opt-Out보다 stronger informed consent**
+
+---
+
+## Slide 25 — Figure 4.3 How Cookies Identify Web Visitors
+
+### Process
+1. Web server가 browser / OS / IP 등 확인
+2. server가 **cookie** 전달
+3. browser가 cookie 저장
+4. 재방문 시 server가 cookie request
+5. cookie ID로 visitor identify
+6. stored user data 호출
+
+### Result
+- personalized information 제공 가능
+
+> **Cookie = browser에 저장된 identifier를 이용해 returning visitor를 인식**
+
+---
+
+## Slide 26 — Technical Solutions for Privacy
+
+### Solutions
+- Email encryption
+- Anonymity tools
+- Anti-spyware tools
+- Private browsing
+- Do Not Track
+
+### Limitation
+- site-to-site tracking을 완전히 막는 데 실패
+- industry-wide Do Not Track agreement 부족
+- tracking 중단을 강제하는 legislation도 제한적
+
+> **Technical privacy tools는 존재하지만 cross-site tracking을 완전히 해결하지 못함**
+
+---
+
+## Slide 27 — Intellectual Property
+
+### Intellectual Property
+- individual / corporation이 만든 **tangible / intangible products of the mind**
+
+### Four Main Protections
+
+| Protection | 핵심 |
+|---|---|
+| **Copyright** | copying 방지, author life + 70 years |
+| **Patent** | invention idea에 대한 exclusive monopoly, 20 years |
+| **Trademark** | brand / identifying mark 보호 |
+| **Trade Secret** | public domain에 공개되지 않은 business intellectual work 보호 |
+
+> **Copyright / Patent / Trademark / Trade Secret은 보호 대상과 방식이 다름**
+
+---
+
+## Slide 28 — Challenges to Intellectual Property Rights
+
+### Digital Media 특징
+- replication 쉬움
+- transmission 쉬움
+- alteration 쉬움
+- software classification 어려움
+- compact해서 theft 쉬움
+- uniqueness 판단 어려움
+
+### DMCA
+- **Digital Millennium Copyright Act, 1998**
+- copyright protection technology 우회 illegal
+
+> **Digital information은 copy / transfer / modify가 쉬워 IP protection이 더 어려움**
+
+---
+
+## Slide 29 — Computer-Related Liability Problems
+
+### 핵심 질문
+- software failure가 발생하면 **누가 responsible한가?**
+
+### 가능 관점
+- machine 일부 → producer / operator liability 가능
+- book과 유사 → author / publisher 책임 인정 어려움
+- service와 유사 → transmitted content에 대한 책임 제한 가능
+
+### AI
+- AI도 동일한 liability question을 확대
+
+> **Software / AI liability는 product, information, service 중 어떻게 볼지에 따라 달라짐**
+
+---
+
+## Slide 30 — Section 230 Under Fire
+
+### Case Questions
+- platform의 user content에 대한 ethical / social / political issues
+- Section 230을 repeal / amend해야 하는가?
+- 새로운 digital technology를 규제하는 law를 만들기 어려운 이유는?
+
+> **Platform liability와 user-generated content regulation의 어려움을 다루는 사례**
+
+---
+
+## Slide 31 — System Quality: Data Quality and System Errors
+
+### 핵심 질문
+- economically feasible한 **acceptable system quality** 수준은 어디까지인가?
+- flawless software는 economically infeasible
+
+### Poor System Performance의 주요 원인
+1. software bugs / errors
+2. hardware / facility failures
+3. **poor input data quality**
+
+### Key
+- business system failure의 가장 common source = **poor input data**
+
+> **Perfect system은 불가능하며 data quality가 system quality에 큰 영향**
+
+---
+
+## Slide 32 — Quality of Life (1/3)
+
+### Negative Social Consequences
+- Big Tech의 economic / political power concentration
+- rapidity of change
+- work / family / leisure boundaries 약화
+- dependence / vulnerability 증가
+- computer crime / abuse
+
+### EU DMA
+- **Digital Markets Act**
+- gatekeeper platforms의 lock-in / rival suppression 방지 목적
+
+> **IS는 efficiency를 높이지만 power concentration과 boundary erosion도 발생시킴**
+
+---
+
+## Slide 33 — Quality of Life (2/3)
+
+### Computer Crime vs Computer Abuse
+
+| | 의미 |
+|---|---|
+| **Computer Crime** | computer를 이용하거나 computer system을 대상으로 한 illegal act |
+| **Computer Abuse** | illegal하지는 않지만 unethical한 act |
+
+### 기타 문제
+- Spam
+- bot networks
+- CAN-SPAM Act
+- Employment
+  - reengineering
+  - job loss
+
+> **Computer Crime = illegal / Computer Abuse = unethical but not necessarily illegal**
+
+---
+
+## Slide 34 — Quality of Life (3/3)
+
+### Equity and Access
+- **Digital Divide**
+  - income / demographic group에 따라 computer / Internet access 격차
+
+### Health Risks
+
+| Risk | 설명 |
+|---|---|
+| **RSI** | repetitive stress injury |
+| **CTS** | 가장 common한 computer-related RSI |
+| **CVS** | screen use로 인한 eyestrain / headaches |
+| **Technostress** | aggravation / impatience / fatigue |
+
+> **Digital inequality와 physical / mental health risk도 IS의 social cost**
+
+---
+
+## Slide 35 — Career Relevance
+
+### Real-World Scenario
+- **Cementos Argos Uses Privacy Analysts to Cement Competitive Advantage**
+
+### Chapter 4 Career Relevance
+- privacy
+- compliance
+- data governance
+- responsible technology use
+
+> **Privacy / ethics / governance knowledge는 실제 business 경쟁력과 연결됨**
