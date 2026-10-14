@@ -438,13 +438,28 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
 
 @page { size:A4; margin:10mm 11mm 12mm; }
 
+@page study-document {
+  size:A4;
+  margin:10mm 11mm 15mm;
+  @bottom-right {
+    content:"26학번 한지석 제공";
+    color:#666;
+    font:550 7pt sans-serif;
+    letter-spacing:.04em;
+  }
+}
+
 @media print {
+  .printable-document { page:study-document; }
   :root,.light,.dark { --background:#fff; --foreground:#111; --muted:#555; --subtle:#777; --border:#d8d8d8; --border-strong:#aaa; --surface:#f7f7f7; --surface-active:#eee; --code-background:#f6f6f6; color-scheme:light; }
   html.print-theme-dark { --background:#0a0a0b; --foreground:#f5f5f5; --muted:#b3b3b8; --subtle:#8a8a90; --border:#303034; --border-strong:#55555b; --surface:#141416; --surface-active:#202024; --code-background:#111114; color-scheme:dark; }
   html,body { width:auto; min-width:0; color:var(--foreground); background:var(--background); }
   html { scroll-behavior:auto; }
   body { font-size:9pt; line-height:1.48; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-  .document-print-watermark { position:fixed; z-index:20; right:5mm; bottom:3.5mm; display:block; color:var(--muted); font-size:7pt; font-weight:550; letter-spacing:.04em; opacity:.48; pointer-events:none; }
+  /* The page margin box prints on every page; iPad WebKit also gets an in-flow fallback. */
+  @supports (-webkit-touch-callout: none) {
+    .document-print-watermark { display:block; margin-top:5mm; text-align:right; color:var(--muted); font-size:7pt; font-weight:550; letter-spacing:.04em; break-inside:avoid; }
+  }
   .site-header,.desktop-sidebar,.skip-link,.page-toc,.document-toolbar,.completion-box,.prev-next,.site-footer,.copy-button,.code-feedback,.admin-edit-hint,.editor-toolbar { display:none!important; }
   .app-shell,#main-content,.document-grid,.document-main { display:block; width:auto; min-width:0; max-width:none; min-height:0; margin:0; padding:0; border:0; }
   .lecture-header { margin:0 0 5mm; padding:0 0 4mm; border-bottom:1px solid var(--border-strong); break-inside:avoid-page; page-break-inside:avoid; }
