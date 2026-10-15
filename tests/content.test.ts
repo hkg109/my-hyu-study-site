@@ -20,7 +20,7 @@ test("published manifest hides drafts from routes, navigation and search", () =>
     subjectOrders.set(subject, [...(subjectOrders.get(subject) ?? []), lecture.order]);
   }
   for (const orders of subjectOrders.values()) assert.deepEqual(orders, [...orders].sort((a, b) => a - b));
-  assert.ok(lectures.every(doc => doc.order >= 1));
+  assert.ok(lectures.every(doc => doc.order >= 0));
   assert.ok(lectures.every(doc => doc.published));
   assert.equal(getDocument("lectures", ["week-02", "02-loop"]), undefined);
   assert.equal(getDocument("lectures", ["..", "..", "package"]), undefined);

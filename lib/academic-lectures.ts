@@ -22,7 +22,7 @@ function readSubjectFiles(gradeId: string, semesterId: string, subjectId: string
     const parsed = matter(fs.readFileSync(file, "utf8"));
     const order = Number(parsed.data.order);
     if (typeof parsed.data.title !== "string" || !parsed.data.title.trim()) throw new Error(`${file}: title이 필요합니다.`);
-    if (!Number.isInteger(order) || order < 1) throw new Error(`${file}: order는 1 이상의 정수여야 합니다.`);
+    if (!Number.isInteger(order) || order < 0) throw new Error(`${file}: order는 0 이상의 정수여야 합니다.`);
     if (typeof parsed.data.published !== "boolean") throw new Error(`${file}: published는 boolean이어야 합니다.`);
     const id = entry.name.replace(/\.mdx?$/, "");
     const slug = [gradeId, semesterId, subjectId, id];
