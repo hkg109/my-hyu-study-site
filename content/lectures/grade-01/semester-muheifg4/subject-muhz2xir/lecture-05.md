@@ -347,6 +347,12 @@ objectives:
 
 > **FIP 핵심 = Notice + Choice + Access + Security + Enforcement**
 
+### 개념도 · Privacy에서 FIP 원칙까지의 위계
+
+![개인의 information rights와 privacy가 FIP framework를 거쳐 notice, choice, access, security, enforcement의 다섯 운영 원칙으로 구체화되는 구조](/materials/diagrams/mis-05-privacy-fip-hierarchy.svg)
+
+FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 중간 framework다. 다섯 원칙 중 하나만 지켜서는 수집부터 집행까지 이어지는 보호 체계가 완성되지 않는다.
+
 ---
 
 ## Slide 22 — EU GDPR
@@ -459,6 +465,12 @@ objectives:
 | **Trade Secret** | public domain에 공개되지 않은 business intellectual work 보호 |
 
 > **Copyright / Patent / Trademark / Trade Secret은 보호 대상과 방식이 다름**
+
+### 개념도 · Intellectual Property 보호 유형
+
+![Intellectual Property가 copyright, patent, trademark, trade secret의 네 보호 유형으로 나뉘고 각 유형이 서로 다른 대상을 보호하는 분류 구조](/materials/diagrams/mis-05-ip-protections.svg)
+
+네 유형은 강도가 다른 한 줄의 보호 단계가 아니라 **보호 대상이 다른 병렬 분류**다. 사례에서는 무엇을 만들었는지와 무엇을 지키려는지를 먼저 확인해야 한다.
 
 ---
 

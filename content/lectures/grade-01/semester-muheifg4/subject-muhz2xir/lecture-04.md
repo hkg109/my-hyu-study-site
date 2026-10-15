@@ -233,6 +233,12 @@ feedback → 다시 capital / labor 제공
 
 > **새로운 IS 도입 = 기존 routine과 process까지 함께 바뀌어야 함**
 
+### 개념도 · Routine에서 Firm까지의 포함 관계
+
+![개별 routine들이 business process를 이루고 여러 business process가 business firm의 운영을 구성하는 세 단계 포함 관계](/materials/diagrams/mis-04-routine-process-firm.svg)
+
+안쪽의 routine이 바뀌지 않으면 바깥쪽 process도 실제로 달라지기 어렵다. 이 포함 관계 때문에 IS 도입은 기술 설치와 업무 방식의 변화를 함께 다뤄야 한다.
+
 ---
 
 ## Slide 12 — Organizational Politics
@@ -730,6 +736,12 @@ feedback → 다시 capital / labor 제공
 - shipment scheduling
 
 > **Primary + Support Activities 각각에 IS를 적용해 value / margin 증가**
+
+### 개념도 · Value Chain 활동의 위계
+
+![Value Chain이 support activities와 primary activities로 나뉘며 두 활동군의 개선이 value와 margin으로 이어지는 분류 구조](/materials/diagrams/mis-04-value-chain-hierarchy.svg)
+
+Primary activities는 제품과 서비스를 직접 만들고 전달하며, support activities는 그 활동이 작동할 기반을 제공한다. 두 범주를 구분해야 IS의 적용 지점을 구체적으로 설명할 수 있다.
 
 ---
 

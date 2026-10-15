@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-05-privacy-fip-hierarchy-title mis-05-privacy-fip-hierarchy-desc">
+  <title id="mis-05-privacy-fip-hierarchy-title">Privacy에서 FIP 원칙까지의 위계</title>
+  <desc id="mis-05-privacy-fip-hierarchy-desc">정보 권리와 privacy를 실제 데이터 처리 규칙으로 옮기는 FIP framework가 notice, choice, access, security, enforcement의 다섯 원칙으로 구체화되는 구조</desc>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none}
+    .node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.node-soft{fill:#f0eee8;stroke:#65645e;stroke-width:1.5}.node-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}
+    .tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 13px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 4 · PRIVACY FRAMEWORK</text>
+  <text class="title" x="64" y="92">Privacy에서 FIP 원칙까지</text>
+  <text class="subtitle" x="64" y="122">추상적인 정보 권리를 실제 수집·이용·보호 규칙으로 내려보는 구조</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+
+  <path class="flow" d="M640 260 V304"/>
+  <path class="flow" d="M640 400 V452 M160 452 H1120 M160 452 V484 M400 452 V484 M640 452 V484 M880 452 V484 M1120 452 V484"/>
+
+  <rect class="node" x="448" y="180" width="384" height="80" rx="6"/>
+  <text class="name" x="640" y="214" text-anchor="middle">Information Rights &amp; Privacy</text>
+  <text class="sub" x="640" y="240" text-anchor="middle">personal information에 대한 control</text>
+
+  <rect class="node-focal" x="448" y="304" width="384" height="96" rx="6"/>
+  <text class="name-inverse" x="640" y="344" text-anchor="middle">Fair Information Practices</text>
+  <text class="sub-inverse" x="640" y="372" text-anchor="middle">collection · use를 규율하는 framework</text>
+
+  <rect class="node-soft" x="64" y="484" width="192" height="112" rx="6"/>
+  <text class="name" x="160" y="524" text-anchor="middle">Notice</text><text class="sub" x="160" y="552" text-anchor="middle">practices 공개</text>
+  <rect class="node" x="304" y="484" width="192" height="112" rx="6"/>
+  <text class="name" x="400" y="524" text-anchor="middle">Choice</text><text class="sub" x="400" y="552" text-anchor="middle">secondary use 선택</text>
+  <rect class="node" x="544" y="484" width="192" height="112" rx="6"/>
+  <text class="name" x="640" y="524" text-anchor="middle">Access</text><text class="sub" x="640" y="552" text-anchor="middle">확인 · 정정 참여</text>
+  <rect class="node" x="784" y="484" width="192" height="112" rx="6"/>
+  <text class="name" x="880" y="524" text-anchor="middle">Security</text><text class="sub" x="880" y="552" text-anchor="middle">accuracy · protection</text>
+  <rect class="node" x="1024" y="484" width="192" height="112" rx="6"/>
+  <text class="name" x="1120" y="524" text-anchor="middle">Enforcement</text><text class="sub" x="1120" y="552" text-anchor="middle">실행 mechanism</text>
+
+  <text class="subtitle" x="640" y="652" text-anchor="middle">Privacy 보호는 동의만이 아니라 고지·접근·보안·집행까지 함께 작동해야 한다.</text>
+</svg>

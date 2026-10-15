@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-04-routine-process-firm-title mis-04-routine-process-firm-desc">
+  <title id="mis-04-routine-process-firm-title">Routine에서 Business Firm까지의 포함 관계</title>
+  <desc id="mis-04-routine-process-firm-desc">개별 routine들이 business process를 이루고 여러 business process가 하나의 firm 운영을 구성하는 세 단계 포함 관계</desc>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.outer{fill:#f0eee8;stroke:#9a978e;stroke-width:1.5}.middle{fill:#f7f6f2;stroke:#65645e;stroke-width:1.5}.inner{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}
+    .tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.level{font:700 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.08em;fill:#65645e}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 3 · NESTED ORGANIZATION</text>
+  <text class="title" x="64" y="92">Routine → Business Process → Business Firm</text>
+  <text class="subtitle" x="64" y="122">작은 반복 단위가 모여 process가 되고, process의 집합이 firm의 운영을 만든다.</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+
+  <rect class="outer" x="96" y="184" width="1088" height="416" rx="8"/>
+  <text class="level" x="128" y="220">BUSINESS FIRM · 여러 BUSINESS PROCESSES의 집합</text>
+  <rect class="middle" x="176" y="252" width="928" height="280" rx="8"/>
+  <text class="level" x="208" y="288">BUSINESS PROCESS · 관련 ROUTINES의 집합</text>
+  <rect class="inner" x="304" y="332" width="672" height="128" rx="6"/>
+  <text class="name-inverse" x="640" y="380" text-anchor="middle">Individual Routines</text>
+  <text class="sub-inverse" x="640" y="412" text-anchor="middle">precise rules · procedures · practices</text>
+
+  <text class="subtitle" x="640" y="652" text-anchor="middle">새로운 IS가 효과를 내려면 화면뿐 아니라 안쪽 routine부터 바깥쪽 process까지 함께 맞춰져야 한다.</text>
+</svg>

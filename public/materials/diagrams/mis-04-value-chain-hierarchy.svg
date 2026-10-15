@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-04-value-chain-hierarchy-title mis-04-value-chain-hierarchy-desc">
+  <title id="mis-04-value-chain-hierarchy-title">Value Chain 활동의 위계</title>
+  <desc id="mis-04-value-chain-hierarchy-desc">기업의 value chain이 support activities와 primary activities로 나뉘고 두 활동군에 정보시스템을 적용해 value와 margin을 높이는 구조</desc>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none}.flow-strong{stroke:#1d1d1a;stroke-width:2.5;fill:none}
+    .node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.node-soft{fill:#f0eee8;stroke:#65645e;stroke-width:1.5}.node-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}
+    .tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 3 · VALUE CHAIN TAXONOMY</text>
+  <text class="title" x="64" y="92">Value Chain 활동의 위계</text>
+  <text class="subtitle" x="64" y="122">기업 활동을 두 범주로 나누면 IS를 어디에 적용할지 더 구체적으로 찾을 수 있다.</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+
+  <path class="flow" d="M640 276 V312 H352 V344 M640 312 H928 V344"/>
+  <path class="flow-strong" d="M352 504 V548 H640 M928 504 V548 H640 V572"/>
+
+  <rect class="node-focal" x="448" y="180" width="384" height="96" rx="6"/>
+  <text class="name-inverse" x="640" y="220" text-anchor="middle">Value Chain</text>
+  <text class="sub-inverse" x="640" y="248" text-anchor="middle">activities that add value</text>
+
+  <rect class="node-soft" x="120" y="344" width="464" height="160" rx="6"/>
+  <text class="name" x="352" y="384" text-anchor="middle">Support Activities</text>
+  <text class="sub" x="352" y="416" text-anchor="middle">administration · HR · technology · procurement</text>
+  <text class="sub" x="352" y="448" text-anchor="middle">primary activities가 작동할 기반을 제공</text>
+
+  <rect class="node" x="696" y="344" width="464" height="160" rx="6"/>
+  <text class="name" x="928" y="384" text-anchor="middle">Primary Activities</text>
+  <text class="sub" x="928" y="416" text-anchor="middle">inbound · operations · sales · service · outbound</text>
+  <text class="sub" x="928" y="448" text-anchor="middle">제품과 서비스를 직접 만들고 전달</text>
+
+  <rect class="node" x="448" y="572" width="384" height="80" rx="6"/>
+  <text class="name" x="640" y="606" text-anchor="middle">Value &amp; Margin</text>
+  <text class="sub" x="640" y="632" text-anchor="middle">IS로 cost · quality · coordination 개선</text>
+</svg>

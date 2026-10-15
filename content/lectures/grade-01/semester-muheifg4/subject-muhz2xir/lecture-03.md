@@ -333,6 +333,12 @@ objectives:
 
 > **Information + context/pattern → Knowledge → 경험을 통한 적용 = Wisdom**
 
+### 개념도 · Data에서 Wisdom까지의 위계
+
+![Data가 information으로 정리되고 patterns, rules, context가 더해져 knowledge가 되며 경험과 적용 판단을 거쳐 wisdom으로 올라가는 네 단계 위계](/materials/diagrams/mis-03-knowledge-hierarchy.svg)
+
+이 위계에서 위 단계는 아래 단계를 없애는 것이 아니라 **해석과 판단을 추가**한다. 따라서 data를 많이 모았다는 사실만으로 knowledge나 wisdom이 자동으로 생기지는 않는다.
+
 ---
 
 ## Slide 47 — Important Dimensions of Knowledge (5/5)
@@ -687,6 +693,12 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 - Knowledge Workstation
 
 > **KWS = External Knowledge + Specialized Software + Strong Hardware + Usable Interface**
+
+### 개념도 · Knowledge Work System의 구성 층위
+
+![Knowledge workstation을 기반으로 user interface, specialized software, external knowledge base가 층을 이루어 전문 지식 작업을 지원하는 구조](/materials/diagrams/mis-03-kws-stack.svg)
+
+KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **기반·접근 방식·도구·외부 지식**이 맞물린 전체 작업 환경이다.
 
 ---
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-05-ip-protections-title mis-05-ip-protections-desc">
+  <title id="mis-05-ip-protections-title">Intellectual Property 보호 유형</title>
+  <desc id="mis-05-ip-protections-desc">지적재산권을 copyright, patent, trademark, trade secret의 네 유형으로 나누고 각 보호 대상을 구분한 분류 구조</desc>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none}
+    .node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.node-soft{fill:#f0eee8;stroke:#65645e;stroke-width:1.5}.node-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}
+    .tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 4 · IP TAXONOMY</text>
+  <text class="title" x="64" y="92">Intellectual Property 보호 유형</text>
+  <text class="subtitle" x="64" y="122">무엇을 보호하는지에 따라 적용할 법적 장치가 달라진다.</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+
+  <path class="flow" d="M640 304 V384 M196 384 H1084 M196 384 V432 M492 384 V432 M788 384 V432 M1084 384 V432"/>
+
+  <rect class="node-focal" x="424" y="192" width="432" height="112" rx="6"/>
+  <text class="name-inverse" x="640" y="236" text-anchor="middle">Intellectual Property</text>
+  <text class="sub-inverse" x="640" y="266" text-anchor="middle">products of the mind</text>
+
+  <rect class="node-soft" x="64" y="432" width="264" height="144" rx="6"/>
+  <text class="name" x="196" y="476" text-anchor="middle">Copyright</text>
+  <text class="sub" x="196" y="508" text-anchor="middle">표현물의 copying 방지</text><text class="sub" x="196" y="536" text-anchor="middle">author life + 70 years</text>
+
+  <rect class="node" x="360" y="432" width="264" height="144" rx="6"/>
+  <text class="name" x="492" y="476" text-anchor="middle">Patent</text>
+  <text class="sub" x="492" y="508" text-anchor="middle">invention idea의 독점</text><text class="sub" x="492" y="536" text-anchor="middle">20 years</text>
+
+  <rect class="node" x="656" y="432" width="264" height="144" rx="6"/>
+  <text class="name" x="788" y="476" text-anchor="middle">Trademark</text>
+  <text class="sub" x="788" y="508" text-anchor="middle">brand · identifying mark</text><text class="sub" x="788" y="536" text-anchor="middle">출처 식별 보호</text>
+
+  <rect class="node" x="952" y="432" width="264" height="144" rx="6"/>
+  <text class="name" x="1084" y="476" text-anchor="middle">Trade Secret</text>
+  <text class="sub" x="1084" y="508" text-anchor="middle">비공개 business knowledge</text><text class="sub" x="1084" y="536" text-anchor="middle">secrecy가 보호의 전제</text>
+
+  <text class="subtitle" x="640" y="640" text-anchor="middle">네 유형은 서로 같은 보호 수단이 아니라 대상과 보호 방식이 다른 분류다.</text>
+</svg>

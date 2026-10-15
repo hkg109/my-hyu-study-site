@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-03-knowledge-hierarchy-title mis-03-knowledge-hierarchy-desc">
+  <title id="mis-03-knowledge-hierarchy-title">Data에서 Wisdom까지의 지식 위계</title>
+  <desc id="mis-03-knowledge-hierarchy-desc">측정된 data가 정리된 information이 되고, 맥락과 규칙을 통해 knowledge로 해석된 뒤 경험과 판단을 거쳐 wisdom으로 적용되는 네 단계</desc>
+  <defs>
+    <marker id="mis-03-knowledge-hierarchy-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
+  </defs>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.axis{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-03-knowledge-hierarchy-arrow)}
+    .layer{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.layer-soft{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.layer-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}
+    .tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.index{font:700 13px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.08em}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 11 · KNOWLEDGE HIERARCHY</text>
+  <text class="title" x="64" y="92">Data에서 Wisdom까지</text>
+  <text class="subtitle" x="64" y="122">위로 갈수록 사실에 context와 적용 판단이 더해진다.</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+
+  <line class="axis" x1="164" y1="568" x2="164" y2="208"/>
+  <text class="tag" x="132" y="396" text-anchor="middle" transform="rotate(-90 132 396)">CONTEXT · JUDGMENT</text>
+
+  <rect class="layer" x="240" y="496" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="530">01</text><text class="name" x="352" y="540">Data</text><text class="sub" x="1088" y="540" text-anchor="end">measurement · records · observations</text>
+
+  <rect class="layer-soft" x="240" y="396" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="430">02</text><text class="name" x="352" y="440">Information</text><text class="sub" x="1088" y="440" text-anchor="end">organized facts with meaning</text>
+
+  <rect class="layer" x="240" y="296" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="330">03</text><text class="name" x="352" y="340">Knowledge</text><text class="sub" x="1088" y="340" text-anchor="end">patterns · rules · context</text>
+
+  <rect class="layer-focal" x="240" y="196" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="230" style="fill:#f7f6f2">04</text><text class="name-inverse" x="352" y="240">Wisdom</text><text class="sub-inverse" x="1088" y="240" text-anchor="end">where · when · how to apply</text>
+
+  <text class="subtitle" x="680" y="640" text-anchor="middle">Information을 많이 보유하는 것과 올바른 상황에 적용할 수 있는 것은 다른 수준의 역량이다.</text>
+</svg>

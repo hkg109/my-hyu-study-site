@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-03-kws-stack-title mis-03-kws-stack-desc">
+  <title id="mis-03-kws-stack-title">Knowledge Work System의 구성 층위</title>
+  <desc id="mis-03-kws-stack-desc">전문 작업을 위한 hardware platform 위에 user interface와 specialized software가 놓이고 external knowledge base와 연결되는 네 층위</desc>
+  <defs>
+    <marker id="mis-03-kws-stack-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker>
+  </defs>
+  <style>
+    .bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.axis{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-03-kws-stack-arrow)}
+    .layer{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.layer-soft{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.layer-focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}
+    .tag{font:600 12px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;letter-spacing:.12em;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.subtitle{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.name{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#1d1d1a}.name-inverse{font:700 18px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.sub{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e}.sub-inverse{font:400 14px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#f7f6f2}.index{font:700 13px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;fill:#65645e;letter-spacing:.08em}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <text class="tag" x="64" y="52">CHAPTER 11 · KWS LAYER STACK</text>
+  <text class="title" x="64" y="92">Knowledge Work System의 구성 층위</text>
+  <text class="subtitle" x="64" y="122">각 층은 독립 기능이 아니라 전문 지식 창출을 함께 지원하는 stack이다.</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+
+  <line class="axis" x1="164" y1="568" x2="164" y2="208"/>
+  <text class="tag" x="132" y="396" text-anchor="middle" transform="rotate(-90 132 396)">KNOWLEDGE ACCESS</text>
+
+  <rect class="layer" x="240" y="496" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="530">FOUNDATION</text><text class="name" x="440" y="540">Hardware Platform</text><text class="sub" x="1088" y="540" text-anchor="end">knowledge workstation · computing power</text>
+
+  <rect class="layer-soft" x="240" y="396" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="430">ACCESS</text><text class="name" x="440" y="440">User Interface</text><text class="sub" x="1088" y="440" text-anchor="end">usable interaction for specialized tasks</text>
+
+  <rect class="layer-focal" x="240" y="296" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="330" style="fill:#f7f6f2">TOOLS</text><text class="name-inverse" x="440" y="340">Specialized Software</text><text class="sub-inverse" x="1088" y="340" text-anchor="end">visualization · simulation · documents · communication</text>
+
+  <rect class="layer" x="240" y="196" width="880" height="88" rx="6"/>
+  <text class="index" x="272" y="230">INPUT</text><text class="name" x="440" y="240">External Knowledge Base</text><text class="sub" x="1088" y="240" text-anchor="end">databases · research · domain information</text>
+
+  <text class="subtitle" x="680" y="640" text-anchor="middle">강력한 hardware만으로는 부족하며, 외부 지식과 전문 도구를 usable interface로 연결해야 한다.</text>
+</svg>
