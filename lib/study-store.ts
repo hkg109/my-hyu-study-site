@@ -12,6 +12,7 @@ export interface StudyRecord {
   color?: StudyColor;
   memo?: string;
   quizResult?: QuizResult;
+  quizChoice?: string;
   createdAt: string;
   updatedAt: string;
 }

@@ -5,7 +5,7 @@ import remarkGfm from "remark-gfm";
 import { visit } from "unist-util-visit";
 import { toString } from "mdast-util-to-string";
 import GithubSlugger from "github-slugger";
-import type { Blockquote, Parent, PhrasingContent, Root, RootContent, Text } from "mdast";
+import type { Blockquote, Paragraph, Parent, PhrasingContent, Root, RootContent, Text } from "mdast";
 import type { Properties } from "hast";
 import type { Heading } from "@/types/content";
 
@@ -126,23 +126,90 @@ function hasHintMarker(node: RootContent | undefined) {
   return marker?.type === "text" && /^\[!(?:HINT(?: [1-3])?|SOLUTION)\]\s*/.test(marker.value);
 }
 
+function choiceLetter(node: RootContent | undefined) {
+  if (node?.type !== "paragraph") return undefined;
+  const first = node.children[0];
+  if (first?.type !== "strong") return undefined;
+  return /^([A-Z])\.$/.exec(toString(first).trim())?.[1];
+}
+
+function transformChoiceParagraphs(block: Blockquote, quizId: string) {
+  const choices = block.children.flatMap(node => {
+    const letter = choiceLetter(node);
+    return letter ? [{ node: node as Paragraph, letter }] : [];
+  });
+  if (choices.length < 2) return [];
+  for (const { node, letter } of choices) {
+    setProperties(node, {
+      type: "button",
+      className: ["study-quiz-choice"],
+      "data-quiz-id": quizId,
+      "data-quiz-choice": letter,
+      "aria-pressed": "false",
+    }, "button");
+  }
+  return choices.map(choice => choice.letter);
+}
+
+function quizCheckControls(quizId: string) {
+  return {
+    type: "paragraph",
+    children: [
+      {
+        type: "emphasis",
+        children: [{ type: "text", value: "정답 확인" }],
+        data: { hName: "button", hProperties: { type: "button", className: ["study-quiz-confirm"], "data-quiz-id": quizId, "data-quiz-confirm": "", disabled: true } },
+      },
+      {
+        type: "emphasis",
+        children: [{ type: "text", value: "보기를 선택해 주세요." }],
+        data: { hName: "span", hProperties: { className: ["study-quiz-feedback"], "data-quiz-id": quizId, "data-quiz-feedback": "", role: "status", "aria-live": "polite" } },
+      },
+    ],
+    data: { hName: "div", hProperties: { className: ["study-quiz-check"] } },
+  } as RootContent;
+}
+
 function transformQuizzes(tree: Root) {
   for (let index = 0; index < tree.children.length; index += 1) {
     const quiz = tree.children[index];
     if (quiz.type !== "blockquote" || !removeBlockMarker(quiz, "QUIZ")) continue;
     const quizId = `quiz-${stableHash(toString(quiz))}`;
-    setProperties(quiz, { className: ["study-quiz"], "data-quiz-id": quizId, "data-callout-label": "확인 문제" }, "section");
+    const linkedTranslations: Blockquote[] = [];
     let answerIndex = index + 1;
-    while (hasBlockMarker(tree.children[answerIndex], "TRANSLATION") || hasHintMarker(tree.children[answerIndex])) answerIndex += 1;
+    while (hasBlockMarker(tree.children[answerIndex], "TRANSLATION") || hasHintMarker(tree.children[answerIndex])) {
+      const linked = tree.children[answerIndex];
+      if (linked?.type === "blockquote" && hasBlockMarker(linked, "TRANSLATION")) linkedTranslations.push(linked);
+      answerIndex += 1;
+    }
     const answer = tree.children[answerIndex];
-    if (answer?.type !== "blockquote" || !removeBlockMarker(answer, "ANSWER")) continue;
-    const summary = { type: "paragraph", children: [{ type: "text", value: "정답 확인" }], data: { hName: "summary", hProperties: { className: ["study-answer-summary"] } } } as RootContent;
+    if (answer?.type !== "blockquote" || !removeBlockMarker(answer, "ANSWER")) {
+      setProperties(quiz, { className: ["study-quiz"], "data-quiz-id": quizId, "data-callout-label": "확인 문제" }, "section");
+      continue;
+    }
+    const answerLetter = /^([A-Z])\./.exec(toString(answer).trim())?.[1];
+    const letters = transformChoiceParagraphs(quiz, quizId);
+    const isMultipleChoice = Boolean(answerLetter && letters.includes(answerLetter));
+    if (isMultipleChoice) {
+      for (const translation of linkedTranslations) {
+        transformChoiceParagraphs(translation, quizId);
+        setProperties(translation, { "data-quiz-id": quizId });
+      }
+      quiz.children.push(quizCheckControls(quizId) as never);
+    }
+    setProperties(quiz, {
+      className: ["study-quiz", ...(isMultipleChoice ? ["study-quiz-mcq"] : [])],
+      "data-quiz-id": quizId,
+      ...(isMultipleChoice ? { "data-quiz-answer": answerLetter } : {}),
+      "data-callout-label": isMultipleChoice ? "객관식 문제" : "확인 문제",
+    }, "section");
+    const summary = { type: "paragraph", children: [{ type: "text", value: isMultipleChoice ? "정답·해설 보기" : "정답 확인" }], data: { hName: "summary", hProperties: { className: ["study-answer-summary"] } } } as RootContent;
     const controls = { type: "paragraph", children: ([
       ["correct", "맞음"], ["unsure", "헷갈림"], ["wrong", "틀림"],
     ] as const).map(([result, label]) => ({ type: "emphasis", children: [{ type: "text", value: label }], data: { hName: "button", hProperties: { type: "button", "data-quiz-id": quizId, "data-quiz-result": result } } })), data: { hName: "div", hProperties: { className: ["study-quiz-results"] } } } as RootContent;
     answer.children.unshift(summary as never);
-    answer.children.push(controls as never);
-    setProperties(answer, { className: ["study-answer"], "data-quiz-id": quizId }, "details");
+    if (!isMultipleChoice) answer.children.push(controls as never);
+    setProperties(answer, { className: ["study-answer"], "data-quiz-id": quizId, ...(isMultipleChoice ? { "data-quiz-answer": answerLetter } : {}) }, "details");
   }
 }
 

@@ -7,6 +7,47 @@ import { listStudyRecords, removeStudyRecord, saveStudyRecord, type QuizResult, 
 type SelectionInfo = { blockId: string; text: string; startOffset: number; endOffset: number; x: number; y: number };
 const colors: StudyColor[] = ["yellow", "blue", "red", "green", "purple"];
 
+function quizElements(root: HTMLElement, quizId: string) {
+  const escaped = CSS.escape(quizId);
+  return {
+    quiz: root.querySelector<HTMLElement>(`.study-quiz-mcq[data-quiz-id="${escaped}"]`),
+    choices: [...root.querySelectorAll<HTMLButtonElement>(`[data-quiz-id="${escaped}"][data-quiz-choice]`)],
+    confirm: root.querySelector<HTMLButtonElement>(`[data-quiz-id="${escaped}"][data-quiz-confirm]`),
+    feedback: root.querySelector<HTMLElement>(`[data-quiz-id="${escaped}"][data-quiz-feedback]`),
+  };
+}
+
+function selectQuizChoice(root: HTMLElement, quizId: string, choice: string) {
+  const elements = quizElements(root, quizId);
+  for (const button of elements.choices) {
+    const selected = button.dataset.quizChoice === choice;
+    button.classList.toggle("selected", selected);
+    button.setAttribute("aria-pressed", String(selected));
+    button.classList.remove("correct", "wrong");
+  }
+  elements.quiz?.classList.remove("answered", "is-correct", "is-wrong");
+  if (elements.confirm) { elements.confirm.disabled = false; elements.confirm.textContent = "정답 확인"; }
+  if (elements.feedback) { elements.feedback.textContent = "선택을 확인해 보세요."; elements.feedback.className = "study-quiz-feedback"; }
+}
+
+function revealQuizResult(root: HTMLElement, quizId: string, choice: string) {
+  const elements = quizElements(root, quizId);
+  const answer = elements.quiz?.dataset.quizAnswer;
+  if (!answer) return undefined;
+  const correct = choice === answer;
+  for (const button of elements.choices) {
+    button.classList.toggle("correct", button.dataset.quizChoice === answer);
+    button.classList.toggle("wrong", button.dataset.quizChoice === choice && !correct);
+  }
+  elements.quiz?.classList.add("answered", correct ? "is-correct" : "is-wrong");
+  if (elements.confirm) elements.confirm.textContent = "다시 확인";
+  if (elements.feedback) {
+    elements.feedback.textContent = correct ? `정답입니다. ${answer}번` : `오답입니다. 정답은 ${answer}번입니다.`;
+    elements.feedback.className = `study-quiz-feedback ${correct ? "correct" : "wrong"}`;
+  }
+  return correct ? "correct" as const : "wrong" as const;
+}
+
 function textRange(block: Element, start: number, end: number) {
   const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
   const range = document.createRange();
@@ -65,12 +106,17 @@ export function StudyWorkspace({ documentPath, children }: { documentPath: strin
     if (!root) return;
     root.querySelectorAll(".has-study-memo,.has-study-bookmark").forEach(element => element.classList.remove("has-study-memo", "has-study-bookmark"));
     root.querySelectorAll<HTMLButtonElement>("[data-quiz-result]").forEach(button => { button.classList.remove("selected"); button.setAttribute("aria-pressed", "false"); });
+    root.querySelectorAll<HTMLButtonElement>("[data-quiz-choice]").forEach(button => { button.classList.remove("selected", "correct", "wrong"); button.setAttribute("aria-pressed", "false"); });
+    root.querySelectorAll<HTMLElement>(".study-quiz-mcq").forEach(quiz => quiz.classList.remove("answered", "is-correct", "is-wrong"));
+    root.querySelectorAll<HTMLButtonElement>("[data-quiz-confirm]").forEach(button => { button.disabled = true; button.textContent = "정답 확인"; });
+    root.querySelectorAll<HTMLElement>("[data-quiz-feedback]").forEach(feedback => { feedback.textContent = "보기를 선택해 주세요."; feedback.className = "study-quiz-feedback"; });
     root.querySelectorAll<HTMLButtonElement>("[data-card-result]").forEach(button => { button.classList.remove("selected"); button.setAttribute("aria-pressed", "false"); });
     for (const record of records) {
       if (record.type === "memo" || record.type === "bookmark") root.querySelector(`[data-block-id="${CSS.escape(record.blockId)}"]`)?.classList.add(`has-study-${record.type}`);
       if (record.type === "quiz" && record.quizResult) {
         const button = root.querySelector<HTMLButtonElement>(`[data-quiz-id="${CSS.escape(record.blockId)}"][data-quiz-result="${record.quizResult}"]`);
         button?.classList.add("selected"); button?.setAttribute("aria-pressed", "true");
+        if (record.quizChoice) { selectQuizChoice(root, record.blockId, record.quizChoice); revealQuizResult(root, record.blockId, record.quizChoice); }
       }
       if (record.type === "flashcard" && record.quizResult) {
         const button = root.querySelector<HTMLButtonElement>(`[data-card-id="${CSS.escape(record.blockId)}"][data-card-result="${record.quizResult}"]`);
@@ -134,11 +180,11 @@ export function StudyWorkspace({ documentPath, children }: { documentPath: strin
     await reload(); setPanelOpen(true);
   };
 
-  const setQuizResult = async (quizId: string, result: QuizResult) => {
+  const setQuizResult = async (quizId: string, result: QuizResult, quizChoice?: string) => {
     const id = `quiz:${documentPath}:${quizId}`;
     const previous = records.find(record => record.id === id);
     const now = new Date().toISOString();
-    await saveStudyRecord({ id, documentPath, blockId: quizId, type: "quiz", quizResult: result, createdAt: previous?.createdAt ?? now, updatedAt: now });
+    await saveStudyRecord({ id, documentPath, blockId: quizId, type: "quiz", quizResult: result, ...(quizChoice || previous?.quizChoice ? { quizChoice: quizChoice ?? previous?.quizChoice } : {}), createdAt: previous?.createdAt ?? now, updatedAt: now });
     await reload();
   };
 
@@ -152,6 +198,18 @@ export function StudyWorkspace({ documentPath, children }: { documentPath: strin
 
   const handleClick = (event: React.MouseEvent) => {
     const target = event.target as HTMLElement;
+    const choiceButton = target.closest<HTMLButtonElement>("[data-quiz-choice]");
+    if (choiceButton && rootRef.current) { selectQuizChoice(rootRef.current, choiceButton.dataset.quizId!, choiceButton.dataset.quizChoice!); return; }
+    const confirmButton = target.closest<HTMLButtonElement>("[data-quiz-confirm]");
+    if (confirmButton && rootRef.current) {
+      const quizId = confirmButton.dataset.quizId!;
+      const selected = rootRef.current.querySelector<HTMLButtonElement>(`[data-quiz-id="${CSS.escape(quizId)}"][data-quiz-choice].selected`);
+      if (!selected) return;
+      const choice = selected.dataset.quizChoice!;
+      const result = revealQuizResult(rootRef.current, quizId, choice);
+      if (result) void setQuizResult(quizId, result, choice);
+      return;
+    }
     const resultButton = target.closest<HTMLButtonElement>("[data-quiz-result]");
     if (resultButton) { void setQuizResult(resultButton.dataset.quizId!, resultButton.dataset.quizResult as QuizResult); return; }
     const cardButton = target.closest<HTMLButtonElement>("[data-card-result]");

@@ -16,7 +16,7 @@ import { readCollection, withoutBody } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: { default: "HJS STUDY", template: "%s | HJS STUDY" },
-  description: "학년, 학기, 과목별 학습 내용과 족보를 정리하는 한양대학교 개인 학습 노트입니다.",
+  description: "제가 공부한 자료들을 정리해놓은 사이트입니당",
 };
 
 export const viewport: Viewport = {

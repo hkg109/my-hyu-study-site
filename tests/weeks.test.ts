@@ -109,6 +109,29 @@ test("study syntax keeps bilingual quiz translations behind separate controls", 
   assert.match(details[2].label, /정답 한국어 번역 보기/);
 });
 
+test("multiple-choice quiz options become selectable answer controls", () => {
+  const source = "> [!QUIZ]\n> Which system handles transactions?\n>\n> **A.** DSS\n>\n> **B.** TPS\n>\n> **C.** ESS\n\n> [!TRANSLATION]\n> 거래를 처리하는 시스템은?\n>\n> **A.** DSS\n>\n> **B.** TPS\n>\n> **C.** ESS\n\n> [!ANSWER]\n> **B. TPS**\n>\n> Routine transactions are handled by TPS.";
+  const tree = parseMarkdown(source, "md");
+  const choices: string[] = [];
+  let answer = "";
+  let confirmFound = false;
+  let feedbackFound = false;
+  let manualResultFound = false;
+  visit(tree, node => {
+    const properties = node.data?.hProperties;
+    if (properties?.["data-quiz-choice"]) choices.push(String(properties["data-quiz-choice"]));
+    if (properties?.["data-quiz-answer"]) answer = String(properties["data-quiz-answer"]);
+    if (Object.hasOwn(properties ?? {}, "data-quiz-confirm")) confirmFound = true;
+    if (Object.hasOwn(properties ?? {}, "data-quiz-feedback")) feedbackFound = true;
+    if (Object.hasOwn(properties ?? {}, "data-quiz-result")) manualResultFound = true;
+  });
+  assert.deepEqual(choices, ["A", "B", "C", "A", "B", "C"]);
+  assert.equal(answer, "B");
+  assert.equal(confirmFound, true);
+  assert.equal(feedbackFound, true);
+  assert.equal(manualResultFound, false);
+});
+
 test("study syntax renders progressive hints and a solution as separate disclosures", () => {
   const source = "> [!HINT 1]\n> 먼저 어떤 개념이 필요한지 떠올려 보세요.\n\n> [!HINT 2]\n> 식에 값을 대입해 보세요.\n\n> [!HINT 3]\n> 마지막 연산을 수행하세요.\n\n> [!SOLUTION]\n> 정답을 확인하고 풀이 이유를 설명하세요.";
   const tree = parseMarkdown(source, "md");

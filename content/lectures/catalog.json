@@ -46,6 +46,11 @@
               "id": "subject-muw81hpv",
               "name": "C++",
               "order": 6
+            },
+            {
+              "id": "subject-cpp-exercise",
+              "name": "C++ Exercise",
+              "order": 7
             }
           ]
         }
