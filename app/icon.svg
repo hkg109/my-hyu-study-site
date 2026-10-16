@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1d1d1a"/><rect x="9" y="47" width="46" height="5" rx="1" fill="#fde047"/><g fill="none" stroke="#f7f6f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15v26M21 15v26M11 28h10"/><path d="M34 15v19.5c0 4.5-2.5 6.5-5.5 6.5"/><path d="M53 18.5c-1.5-2.3-3.7-3.5-6.3-3.5-3.6 0-6.2 2.3-6.2 5.6 0 7.9 12.5 5.6 12.5 13.4 0 4-2.9 7-6.8 7-2.9 0-5.1-1.3-6.4-3.6"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="surface" x1="8" y1="6" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1E28"/>
+      <stop offset="0.55" stop-color="#101219"/>
+      <stop offset="1" stop-color="#08090D"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="10" y1="5" x2="54" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="0.48" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="12" y1="21" x2="52" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.58" stop-color="#F3F5FA"/>
+      <stop offset="1" stop-color="#C9D1E4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(16 9) rotate(42) scale(52 38)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6F7FFF" stop-opacity="0.15"/>
+      <stop offset="0.72" stop-color="#6F7FFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="markShadow" x="8" y="17" width="48" height="31" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="64" height="64" rx="12" fill="url(#surface)"/>
+  <rect width="64" height="64" rx="12" fill="url(#glow)"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="11.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+
+  <g fill="none" stroke="url(#mark)" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" filter="url(#markShadow)">
+    <path d="M13 21.5V42.5M24 21.5V42.5M13 32H24"/>
+    <path d="M33 21.5V36.5C33 40.5 31.7 42.5 29 42.5"/>
+    <path d="M51 24.4C49.4 22.5 47.1 21.5 44.4 21.5C40.8 21.5 38.6 23.5 38.6 26.4C38.6 29.4 40.8 30.9 44.9 31.9C49.2 32.9 51.4 34.6 51.4 37.6C51.4 40.8 48.8 42.5 45.1 42.5C41.9 42.5 39.2 41.3 37.5 39.1"/>
+  </g>
+</svg>
