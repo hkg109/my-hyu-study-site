@@ -51,6 +51,11 @@
               "id": "subject-cpp-exercise",
               "name": "C++ Exercise",
               "order": 7
+            },
+            {
+              "id": "subject-cpp-homework",
+              "name": "C++ homework",
+              "order": 8
             }
           ]
         }
