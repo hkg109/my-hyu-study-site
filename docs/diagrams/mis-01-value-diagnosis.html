@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>정보시스템의 성과가 나지 않을 때</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f7f6f2; color: #1d1d1a; font-family: Pretendard, "Noto Sans KR", "Malgun Gothic", sans-serif; }
+    .diagram-scroll { overflow-x: auto; }
+    svg { display: block; width: 100%; min-width: 1280px; height: auto; }
+    svg text { font-family: Pretendard, "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #1d1d1a; }
+    .diagram-title { font-size: 30px; font-weight: 700; }
+    .diagram-subtitle { font-size: 19px; fill: #65645e; }
+    .node { fill: #f0eee8; stroke: #65645e; stroke-width: 2; }
+    .decision { fill: #f7f6f2; stroke: #65645e; stroke-width: 2; }
+    .label { font-size: 22px; font-weight: 600; text-anchor: middle; }
+    .detail { font-size: 18px; fill: #65645e; text-anchor: middle; }
+    .branch { font-size: 18px; fill: #65645e; }
+    .edge { fill: none; stroke: #65645e; stroke-width: 2; marker-end: url(#value-arrow); }
+    .mask { fill: #f7f6f2; }
+    @media print { .diagram-scroll { overflow: visible; } svg { min-width: 0; width: 100%; } }
+  </style>
+</head>
+<body>
+  <main class="diagram-scroll" aria-label="정보시스템 성과 진단 흐름도">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="value-title value-description">
+      <title id="value-title">시스템이 있어도 성과가 나지 않는 이유</title>
+      <desc id="value-description">먼저 정보가 정확하고 제때 오는지 확인한다. 아니면 입력, 처리, 전달을 점검한다. 그렇다면 정보를 활용할 권한, 역량, 절차가 있는지 확인한다. 없으면 교육, 권한, 프로세스를 보완한다. 있다면 업무 행동을 바꾸고 성과를 측정한다. 보완 후에는 다시 점검하며, 이것만으로 성과가 보장되지는 않는다.</desc>
+      <defs><marker id="value-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#65645e"/></marker></defs>
+      <rect width="1280" height="720" fill="#f7f6f2"/>
+      <text x="60" y="55" class="diagram-title">시스템은 있는데, 왜 성과가 없을까?</text>
+      <text x="60" y="88" class="diagram-subtitle">정보의 품질을 확인한 다음, 정보를 행동으로 옮길 조건을 살펴본다.</text>
+
+      <path d="M440 180 V230" class="edge"/>
+      <path d="M655 300 H750" class="edge"/>
+      <path d="M440 370 V410" class="edge"/>
+      <path d="M655 480 H750" class="edge"/>
+      <path d="M440 550 V605" class="edge"/>
+
+      <rect x="230" y="120" width="420" height="60" rx="30" class="node"/>
+      <text x="440" y="158" class="label">시스템 도입 후 성과가 없다</text>
+
+      <polygon points="440,230 655,300 440,370 225,300" class="decision"/>
+      <text x="440" y="294" class="label">정보가 정확하고</text>
+      <text x="440" y="323" class="label">제때 도착하는가?</text>
+      <rect x="680" y="267" width="58" height="25" class="mask"/>
+      <text x="685" y="286" class="branch">아니요</text>
+      <rect x="449" y="375" width="28" height="28" class="mask"/>
+      <text x="450" y="396" class="branch">예</text>
+      <rect x="750" y="250" width="420" height="100" rx="6" class="node"/>
+      <text x="960" y="292" class="label">입력·처리·전달 점검</text>
+      <text x="960" y="323" class="detail">누락된 주문 / 잘못된 집계 / 늦은 보고</text>
+
+      <polygon points="440,410 655,480 440,550 225,480" class="decision"/>
+      <text x="440" y="474" class="label">활용할 권한·역량·</text>
+      <text x="440" y="503" class="label">절차가 있는가?</text>
+      <rect x="680" y="447" width="58" height="25" class="mask"/>
+      <text x="685" y="466" class="branch">아니요</text>
+      <rect x="449" y="562" width="28" height="28" class="mask"/>
+      <text x="450" y="583" class="branch">예</text>
+      <rect x="750" y="430" width="420" height="100" rx="6" class="node"/>
+      <text x="960" y="472" class="label">보완 자산을 갖추기</text>
+      <text x="960" y="503" class="detail">교육 / 의사결정 권한 / 업무 절차 개선</text>
+
+      <rect x="225" y="605" width="430" height="70" rx="6" class="node"/>
+      <text x="440" y="634" class="label">업무 행동을 바꾸고 성과 측정</text>
+      <text x="440" y="660" class="detail">발주량 조정 → 품절·폐기량 비교</text>
+      <text x="750" y="609" class="diagram-subtitle">보완한 뒤에는 다시 점검한다.</text>
+      <text x="750" y="641" class="diagram-subtitle">이 흐름은 진단의 출발점이며,</text>
+      <text x="750" y="673" class="diagram-subtitle">성과를 자동으로 보장하지는 않는다.</text>
+    </svg>
+  </main>
+</body>
+</html>
