@@ -10,6 +10,8 @@ published: true
 
 [01 · Test-bank Practice Exam](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-01) · [02 · 2018 Recollection Practice Exam](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-02)
 
+**Chapter sets:** [Ch.1](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-04) · [Ch.2](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-05) · [Ch.3](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-06) · [Ch.4](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-07)
+
 ## Exam instructions
 
 | Item | Rule |
