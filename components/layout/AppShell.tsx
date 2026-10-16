@@ -23,9 +23,12 @@ export function AppShell({ sidebar, children }: { sidebar: React.ReactNode; chil
   };
   return <div className={`app-shell${collapsed ? " sidebar-collapsed" : ""}`}>
     <aside className="desktop-sidebar">{sidebar}</aside>
-    <button type="button" className="sidebar-toggle" onClick={toggle} aria-label={collapsed ? "왼쪽 학습 메뉴 펼치기" : "왼쪽 학습 메뉴 접기"} aria-expanded={!collapsed}>
-      {collapsed ? <PanelLeftOpen size={17} /> : <PanelLeftClose size={17} />}
-    </button>
+    {/* The rail spans the page height so the sticky button stays below the header while scrolling. */}
+    <div className="sidebar-toggle-rail">
+      <button type="button" className="sidebar-toggle" onClick={toggle} aria-label={collapsed ? "왼쪽 학습 메뉴 펼치기" : "왼쪽 학습 메뉴 접기"} aria-expanded={!collapsed}>
+        {collapsed ? <PanelLeftOpen size={17} /> : <PanelLeftClose size={17} />}
+      </button>
+    </div>
     <main id="main-content" tabIndex={-1}>{children}</main>
   </div>;
 }

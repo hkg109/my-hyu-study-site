@@ -94,7 +94,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
   const deleteButton = (label: string, onClick: () => void) => isAdmin && <button type="button" className="catalog-icon-button catalog-delete-button" disabled={pending} aria-label={`${label} 삭제`} onClick={event => { event.preventDefault(); event.stopPropagation(); onClick(); }}><Trash2 size={12} /></button>;
 
   return <nav className="sidebar-content" aria-label="강의 탐색">
-    <div className="sidebar-admin-heading"><span className="nav-label">{practiceMode ? "PAST EXAMS" : "COURSE NOTES"}</span>{addButton("학년", () => catalogAction("add", "grade"))}</div>
+    <div className="sidebar-admin-heading"><span className="nav-label">{practiceMode ? "족보 목록" : "강의 목록"}</span>{addButton("학년", () => catalogAction("add", "grade"))}</div>
     {[...catalog.grades].sort((a, b) => a.order - b.order).map(grade => <details open className="catalog-grade" key={grade.id}>
       <summary><span>{grade.name}</span><span className="catalog-actions">{editButton(grade.name, () => catalogAction("rename", "grade", grade.name, { gradeId: grade.id }))}{deleteButton(grade.name, () => deleteCategory("grade", grade.name, { gradeId: grade.id }))}{addButton("학기", () => catalogAction("add", "semester", undefined, { gradeId: grade.id }))}<ChevronDown size={14} /></span></summary>
       {[...grade.semesters].sort((a, b) => a.order - b.order).map(semester => <details open className="catalog-semester" key={semester.id}>
@@ -107,7 +107,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
         })}
       </details>)}
     </details>)}
-    <div className="sidebar-section resources"><span className="nav-label">ARCHIVE</span><Link href="/practice" onClick={onNavigate} className={`side-link ${pathname.startsWith("/practice") ? "active" : ""}`}><FileArchive size={16} />족보</Link></div>
-    <div className="sidebar-note"><span className="small-logo">HJS STUDY NOTE</span><p>학년·학기·과목별로<br />차곡차곡 기록합니다.</p><span>STUDY NOTES</span></div>
+    <div className="sidebar-section resources"><span className="nav-label">자료</span><Link href="/practice" onClick={onNavigate} className={`side-link ${pathname.startsWith("/practice") ? "active" : ""}`}><FileArchive size={16} />족보</Link></div>
+    <div className="sidebar-note"><span className="small-logo">HJS STUDY</span><p>학년·학기·과목별로<br />차곡차곡 기록합니다.</p></div>
   </nav>;
 }

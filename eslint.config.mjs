@@ -6,7 +6,7 @@ export default defineConfig([
   ...nextVitals,
   ...nextTypescript,
   globalIgnores([
-    ".agents/**",
+    ".claude/**",
     ".next/**",
     ".venv/**",
     "content/**",
