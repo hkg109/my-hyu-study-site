@@ -3,7 +3,7 @@ title: "3장 · 조직과 전략"
 description: "조직과 정보기술의 양방향 관계부터 경쟁요인·가치사슬·네트워크 전략까지, 슬라이드 흐름을 따라 정리한 Chapter 3 필기."
 order: 4
 published: true
-duration: 95
+duration: 115
 tags: [정시개, MIS, 3장, 조직, 경쟁전략, 가치사슬]
 objectives:
   - 조직과 정보기술이 서로 영향을 주는 과정을 설명한다.
@@ -65,6 +65,8 @@ objectives:
 
 > **AI/ML을 product experience 개선에 적용한 사례**
 
+**풀어 이해하기:** 게임 방송을 하며 과자를 먹으면 바삭 소리가 마이크로 들어가 방해가 된다. PepsiCo는 이 불편 때문에 게이머가 Doritos를 덜 먹을 수 있다고 보고, AI로 바삭 소리만 골라 지우는 도구를 만들었다. 3장의 관점으로 보면 IT가 제품 자체를 바꾼 것이 아니라 **고객 경험을 바꿔 특정 시장(gamer segment)에서의 경쟁력**을 지킨 사례다.
+
 ---
 
 ## Slide 4 — Relationship Between Organizations and IT
@@ -81,6 +83,8 @@ objectives:
 - management decisions
 
 > **IT 도입 효과는 technology 자체보다 organization의 structure / culture / process에 의해 달라짐**
+
+**풀어 이해하기:** 같은 POS 시스템을 두 카페가 도입해도 결과가 다르다. 사장이 모든 걸 직접 결정하는 매장과 점장에게 권한을 준 매장, 기록을 중시하는 문화와 감으로 일하는 문화에서 시스템이 쓰이는 방식이 달라지기 때문이다. 그리고 시스템이 들어오면 다시 일하는 방식과 권한이 바뀐다. 이것이 **two-way relationship**이다.
 
 ---
 
@@ -121,6 +125,8 @@ objectives:
 
 > **Technical = input → process → output / Behavioral = people + rights + conflict + relationships**
 
+**풀어 이해하기:** 카페를 technical 관점으로 보면 “원두·우유·직원(입력)을 음료(출력)로 바꾸는 생산 시설”이다. behavioral 관점으로 보면 “누가 마감을 맡고, 누가 휴가 우선권을 갖고, 점장과 직원이 의견 충돌을 어떻게 풀어 왔는지가 쌓인 사회 집단”이다. 시스템을 도입할 때 앞의 관점만 보면 기계 배치만 바꾸면 된다고 착각하고, 뒤의 관점까지 봐야 사람들이 왜 저항하는지 이해할 수 있다.
+
 ---
 
 ## Slide 7 — Figure 3.2 Technical Microeconomic Definition
@@ -152,6 +158,8 @@ feedback → 다시 capital / labor 제공
 
 > **Technical view = organization을 production machine처럼 보는 관점**
 
+**풀어 이해하기:** 이 그림은 경제학 교과서의 생산함수와 같다. 자본과 노동을 넣으면 제품과 서비스가 나오고, 판매 수익이 다시 자본과 노동을 사는 데 쓰인다. 이 관점에서는 기술을 바꾸면 입력과 출력의 조합만 바뀌므로 조직을 **쉽게 재배열할 수 있다**고 본다. 사람의 감정이나 관계는 거의 고려하지 않는다는 점이 한계다.
+
 ---
 
 ## Slide 8 — Figure 3.3 Behavioral View
@@ -175,6 +183,8 @@ feedback → 다시 capital / labor 제공
 
 > **Behavioral view = organization을 사람·관계·문화가 얽힌 social system으로 보는 관점**
 
+**풀어 이해하기:** behavioral view에서는 조직이 위계·규칙·문화·권리와 의무 같은 것들로 촘촘하게 묶여 있다. 새 시스템이 누군가의 승인 권한을 없애거나 정보 접근을 바꾸면, 그 사람의 권리와 지위가 흔들린다. 그래서 이 관점은 **조직 변화가 느리고 어렵다**는 결론으로 이어진다.
+
 ---
 
 ## Slide 9 — Features of Organizations
@@ -190,6 +200,8 @@ feedback → 다시 capital / labor 제공
 - organizational structure
 
 > **대부분의 organization은 hierarchy + routines + rules + culture를 기반으로 운영**
+
+**풀어 이해하기:** 목록은 다음 슬라이드들의 목차다. routine(10–11), politics(12), culture(13), environment(14–15), structure(17)를 차례로 다룬다. 공통 메시지는 하나다. 이 특징들이 조직마다 다르기 때문에 **같은 IT가 조직마다 다른 결과**를 낸다.
 
 ---
 
@@ -211,6 +223,8 @@ feedback → 다시 capital / labor 제공
 - firm = business processes의 collection
 
 > **Routine → Business Process → Firm**
+
+**풀어 이해하기:** “주문이 들어오면 컵에 이름을 쓰고, 샷을 뽑고, 우유를 데운다”는 정해진 순서가 routine(SOP)이다. 이런 routine이 모여 “음료 제조”라는 business process가 되고, 주문·제조·결제·재고 같은 process가 모여 하나의 카페(firm)가 된다. 이 포함 관계를 기억하면 다음 슬라이드의 “IT 도입 시 routine까지 바뀌어야 한다”는 말이 자연스럽게 이해된다.
 
 ---
 
@@ -249,6 +263,8 @@ feedback → 다시 capital / labor 제공
 
 > **Information system 변화는 power와 information access를 바꾸므로 politics와 충돌하기 쉬움**
 
+**풀어 이해하기:** 정보는 곧 권력이다. 지금까지 매출 자료를 점장만 볼 수 있었는데 새 시스템이 모든 직원에게 공개한다면, 점장은 영향력이 줄어든다고 느낄 수 있다. 이렇게 시스템이 **누가 무엇을 알고 결정하는지**를 바꾸면 이해관계가 부딪히고, 그 저항이 변화를 늦춘다.
+
 ---
 
 ## Slide 13 — Organizational Culture
@@ -266,6 +282,8 @@ feedback → 다시 capital / labor 제공
 
 > **Culture = organization이 당연하다고 믿는 기본 가정**
 
+**풀어 이해하기:** “우리는 손님 얼굴을 보고 주문받는 게 맞다”는 믿음이 강한 카페에 키오스크를 들이면, 기술이 좋아도 직원과 단골이 거부할 수 있다. 문화는 구성원을 하나로 묶는 힘이지만, 그 믿음과 맞지 않는 **기술 변화에는 강한 제약**이 된다.
+
 ---
 
 ## Slide 14 — Organizational Environments
@@ -280,6 +298,8 @@ feedback → 다시 capital / labor 제공
 - environment를 보는 **lens** 역할
 
 > **IS = 외부 변화를 감지하는 organization의 lens**
+
+**풀어 이해하기:** 카페는 주변 상권·경쟁 매장·원두 가격·규제에 영향을 받고, 반대로 지역 상권에 영향을 주기도 한다(reciprocal). 문제는 바깥이 조직보다 빨리 변한다는 것이다. IS는 판매 데이터나 리뷰를 통해 변화를 감지하는 **lens** 역할을 하지만, 렌즈가 잘못 설계되면 중요한 변화를 놓친다.
 
 ---
 
@@ -308,6 +328,8 @@ feedback → 다시 capital / labor 제공
 
 > **Organization은 IS를 통해 environment를 인식하고 대응**
 
+**풀어 이해하기:** 그림에서 IS는 환경과 기업 사이의 **필터**다. 정부·경쟁자·고객·금융기관 등에서 오는 수많은 신호 중 무엇을 걸러 보여 주느냐에 따라 경영진이 보는 세상이 달라진다. 예를 들어 매출만 보여 주는 시스템이라면 고객 불만이 쌓이는 신호를 놓칠 수 있다.
+
 ---
 
 ## Slide 16 — Disruptive Technologies
@@ -332,6 +354,11 @@ feedback → 다시 capital / labor 제공
 
 > **기술을 처음 만든 기업이 항상 최종 승자는 아님**
 
+**풀어 이해하기:** 스마트폰이 나오자 MP3 플레이어, 디지털카메라, 내비게이션 시장이 한꺼번에 흔들렸다. 이렇게 기존 제품을 대체해 산업 전체를 바꾸는 기술이 disruptive technology다. 흥미로운 점은 처음 만든 기업(**first mover**)이 아니라 자원과 규모로 빠르게 상업화한 기업(**fast follower**)이 시장을 차지하는 경우가 많다는 것이다.
+
+> [!EXAM]
+> “disruptive technology의 발명자가 항상 이익을 얻는다”는 보기는 틀린 문장이다. Fast follower가 승자가 될 수 있다.
+
 ---
 
 ## Slide 17 — Organizational Structure
@@ -350,6 +377,8 @@ feedback → 다시 capital / labor 제공
 
 > **Organization structure가 다르면 필요한 IS도 달라짐**
 
+**풀어 이해하기:** 구조마다 필요한 시스템이 다르다. 창업자가 모든 걸 결정하는 스타트업(entrepreneurial)은 간단한 도구로 충분하지만, 표준 절차로 돌아가는 제조업체(machine bureaucracy)는 생산을 통제하는 시스템이, 병원 같은 전문가 조직(professional bureaucracy)은 전문가의 판단을 돕는 시스템이 중요하다. 컨설팅사 같은 adhocracy는 프로젝트마다 팀을 빨리 꾸리는 협업 도구가 필요하다.
+
 ---
 
 ## Slide 18 — Other Organizational Features
@@ -367,6 +396,8 @@ feedback → 다시 capital / labor 제공
 
 > **같은 IT라도 goal / leadership / task / environment가 다르면 효과도 달라짐**
 
+**풀어 이해하기:** 조직 목표의 세 유형은 구성원을 움직이는 방식으로 구분한다. 강제로 따르게 하면 **coercive**(교도소), 보상으로 움직이면 **utilitarian**(기업), 가치와 신념으로 움직이면 **normative**(종교 단체, 대학)다. 리더십이 민주적인지 권위적인지, 업무가 반복적인지 아닌지에 따라서도 같은 IT의 효과가 달라진다.
+
 ---
 
 ## Slide 19 — Economic Impacts of IS
@@ -381,6 +412,8 @@ feedback → 다시 capital / labor 제공
 - firm이 smaller size로 운영 가능
 
 > **IT는 information과 market participation cost를 낮춰 firm의 경제적 구조를 변화시킴**
+
+**풀어 이해하기:** IT 가격이 계속 내려가면서 기업은 비싼 사람(노동)이나 자본 대신 IT를 더 쓴다. 이 장에서 중요한 효과는 **정보를 얻는 비용이 싸진다**는 점이다. 정보가 싸지면 거래 상대를 찾고 감독하는 비용이 내려가고, 그 결과 기업의 크기와 구조가 달라진다. 이 변화를 설명하는 두 이론이 다음 두 슬라이드다.
 
 ---
 
@@ -405,6 +438,8 @@ feedback → 다시 capital / labor 제공
 
 > **IT ↓ Transaction Cost → market outsourcing ↑ → firm size 축소 가능**
 
+**풀어 이해하기:** 카페가 원두를 직접 볶을지, 로스터리에서 사 올지를 고민한다고 하자. 좋은 로스터리를 찾고, 계약하고, 품질을 계속 확인하는 비용이 크면 직접 볶는 편(vertical integration)이 낫다. 그런데 온라인 플랫폼으로 공급업체 비교와 주문 관리가 쉬워지면 **사 오는 편이 더 싸지고**, 카페는 직접 할 일을 줄여 더 작게 운영할 수 있다.
+
 ---
 
 ## Slide 21 — Agency Theory
@@ -420,6 +455,10 @@ feedback → 다시 capital / labor 제공
 > **IT ↓ Agency Cost → larger firm을 더 적은 management cost로 운영 가능**
 
 두 이론은 비용이 생기는 **조직의 경계**가 다르다. Transaction cost는 외부 공급업체를 찾고 계약·거래하는 비용이고, agency cost는 내부 구성원의 일을 조정·감독하는 비용이다. IT가 어느 비용을 낮추는지에 따라 외부와 협력하기 쉬워질 수도, 내부 조직을 더 넓게 관리하기 쉬워질 수도 있다.
+
+![IT가 바깥 거래 비용과 안쪽 관리 비용을 함께 낮추는 두 이론의 비교](/materials/diagrams/mis-00-cost-theories.svg)
+
+**그림 읽기:** 왼쪽은 회사 **바깥**과 거래하는 비용, 오른쪽은 회사 **안쪽**의 직원을 관리하는 비용이다. IT는 두 비용을 모두 낮추지만 결과는 반대 방향일 수 있다. 바깥 거래가 싸지면 외부에 맡기며 작아지고, 안쪽 관리가 싸지면 관리자를 크게 늘리지 않고도 커질 수 있다.
 
 ---
 
@@ -437,6 +476,8 @@ feedback → 다시 capital / labor 제공
   에 기반
 
 > **IT → hierarchy 감소 + lower-level empowerment 증가**
+
+**풀어 이해하기:** 예전에는 매장 직원 → 점장 → 지역 관리자 → 본사 순으로 보고가 올라가야 결정이 났다. 이제 직원이 실시간 재고와 판매 데이터를 직접 보면 그 자리에서 발주를 결정할 수 있다. 중간 관리자의 “정보 전달” 역할이 줄어 계층이 납작해지고(**flattening**), 관리자 한 명이 더 많은 직원을 관리하게 된다(**span of control ↑**).
 
 ---
 
@@ -460,6 +501,8 @@ feedback → 다시 capital / labor 제공
 
 > **IS는 hierarchy를 줄이고 organization을 flatter하게 만들 수 있음**
 
+**풀어 이해하기:** 두 그림을 비교할 때는 **층의 수**를 본다. 층이 줄면 정보가 덜 왜곡되고 빨리 전달되며, 관리자 수와 agency cost도 줄어든다. 단, 아래 직원에게 권한이 실제로 넘어가야 효과가 있다. 데이터만 보여 주고 결정은 여전히 위에서 한다면 조직은 납작해지지 않는다.
+
 ---
 
 ## Slide 24 — Organizational Resistance to Change
@@ -479,6 +522,8 @@ feedback → 다시 capital / labor 제공
 
 > **Large IS project 실패는 technical problem보다 organizational resistance 때문인 경우가 많음**
 
+**풀어 이해하기:** 대형 시스템 프로젝트가 실패하는 이유는 버그보다 사람 쪽에 있는 경우가 많다. 새 시스템이 누가 정보를 보는지, 누가 결정하는지, 어떤 일을 하는지를 바꾸기 때문이다. 저항의 크기는 혁신의 성격, 조직 구조, 문화, 영향받는 업무라는 네 요인에 따라 달라진다.
+
 ---
 
 ## Slide 25 — Figure 3.7 Resistance to IS Innovations
@@ -496,6 +541,10 @@ feedback → 다시 capital / labor 제공
 > **IS change = Technology + People + Structure + Tasks의 동시 변화**
 
 새 시스템이 정보를 더 빨리 보여 주더라도 기존의 승인 권한이나 업무 분담을 그대로 두면 결정은 여전히 늦을 수 있다. 반대로 담당자의 일이 달라지는데 교육과 책임 범위가 정해지지 않으면 저항이 생긴다. 시스템 도입을 화면 교체가 아니라 업무 변화로 읽어야 하는 이유다.
+
+![기술 구조 업무 사람 네 요소를 동시에 조정해야 하는 변화 저항 모형](/materials/diagrams/mis-00-resistance-diamond.svg)
+
+**그림 읽기:** 네 요소는 서로 줄로 묶여 있다. 기술(IT)만 바꾸고 권한 구조, 업무 순서, 사람의 역량을 그대로 두면 나머지 셋이 기술을 원래 방식으로 끌어당긴다. 그래서 도입 계획에는 교육(people), 권한 재조정(structure), 업무 재설계(job tasks)가 함께 들어가야 한다.
 
 ---
 
@@ -515,6 +564,8 @@ feedback → 다시 capital / labor 제공
 
 > **Internet → information cost ↓ + transaction/agency cost ↓ + organization flattening**
 
+**풀어 이해하기:** 인터넷은 앞에서 본 효과를 한꺼번에 키운다. 정보를 모으고 저장하고 나누는 비용이 거의 0에 가까워지면서 거래 비용과 감독 비용이 함께 내려간다. 예를 들어 매장 운영 매뉴얼을 인쇄해 우편으로 보내던 일을 사내 웹사이트에 올리면 배포 비용이 사라지고, 수정본도 즉시 모든 매장에 반영된다.
+
 ---
 
 ## Slide 27 — Designing Information Systems
@@ -533,6 +584,8 @@ feedback → 다시 capital / labor 제공
 
 > **좋은 IS 설계는 technical design보다 organizational fit이 중요**
 
+**풀어 이해하기:** 이 슬라이드는 3장 앞부분의 요약이다. 시스템을 설계할 때는 기능 목록보다 먼저 이 조직의 환경·구조·문화·정치·리더십·사용자 태도·업무를 확인해야 한다. 기술적으로 완벽해도 조직과 맞지 않으면(**organizational fit** 부족) 쓰이지 않는다.
+
 ---
 
 ## Slide 28 — Porter’s Competitive Forces Model (1/3)
@@ -549,6 +602,8 @@ feedback → 다시 capital / labor 제공
 5. **Suppliers**
 
 > **Competitive Advantage는 direct competitor뿐 아니라 5가지 industry forces로 결정**
+
+**풀어 이해하기:** 카페 사장이 옆 카페만 경쟁자로 생각하면 시야가 좁다. 새로 들어올 프랜차이즈(new entrants), 편의점 커피 같은 대체재(substitutes), 쿠폰만 쫓는 손님(customers), 원두 값을 올리는 공급업체(suppliers)도 수익을 깎아 먹는다. Porter 모형은 이 **다섯 방향의 압력**을 한 번에 보게 해 준다.
 
 ---
 
@@ -571,6 +626,8 @@ feedback → 다시 capital / labor 제공
 
 > **기존 경쟁자 + 신규 진입자가 firm의 competitive pressure를 높임**
 
+**풀어 이해하기:** 기존 경쟁자는 신제품·서비스·효율 개선으로 계속 압박하고, 고객이 쉽게 떠나지 못하도록 **switching cost**를 높이려 한다. 신규 진입자는 브랜드 인지도는 낮지만 최신 설비와 젊은 인력이라는 장점이 있다. 진입 장벽이 낮은 업종일수록 이 압력이 크다.
+
 ---
 
 ## Slide 30 — Porter’s Model (3/3)
@@ -587,6 +644,8 @@ feedback → 다시 capital / labor 제공
 
 > **Substitute / Customer / Supplier power가 높을수록 firm의 competitive pressure 증가**
 
+**풀어 이해하기:** 세 힘은 모두 “누가 가격을 정하는가”의 문제다. 대체재가 많으면 가격을 올리는 순간 고객이 떠난다. 고객이 쉽게 다른 곳으로 옮길 수 있으면 고객이 가격을 깎는다. 공급업체가 적으면 공급업체가 원가를 올리고, 회사는 그 인상분을 판매가에 그대로 반영하기 어렵다.
+
 ---
 
 ## Slide 31 — Figure 3.8 Porter’s Competitive Forces Model
@@ -601,6 +660,10 @@ feedback → 다시 capital / labor 제공
 
 > **Firm strategy는 industry의 5 Forces에 대응하도록 설계**
 
+![기존 경쟁자를 중심으로 신규 진입자 대체재 공급자 고객의 다섯 경쟁 압력과 IT 대응 전략](/materials/diagrams/mis-00-five-forces.svg)
+
+**그림 읽기:** 가운데 기존 경쟁자를 네 힘이 둘러싸고 있다. 분석할 때는 각 화살표에 “이 힘은 강한가, 약한가?”를 묻고, 가장 강한 압력부터 대응 전략을 고른다. 아래 띠의 네 전략이 다음 슬라이드의 내용이다.
+
 ---
 
 ## Slide 32 — IS Strategies for Competitive Forces
@@ -612,6 +675,8 @@ feedback → 다시 capital / labor 제공
 4. **Customer & Supplier Intimacy**
 
 > **IT를 competitive advantage로 연결하는 4가지 기본 전략**
+
+**풀어 이해하기:** 네 전략은 다섯 압력에 대한 답이다. 가격 경쟁이 심하면 **low-cost leadership**, 대체재가 많으면 대체할 수 없게 만드는 **differentiation**, 큰 시장에서 이기기 어려우면 좁은 고객층에 집중하는 **niche**, 고객과 공급업체가 쉽게 떠나면 관계를 깊게 만드는 **intimacy**로 대응한다.
 
 ---
 
@@ -628,6 +693,8 @@ feedback → 다시 capital / labor 제공
 - customer experience management
 
 > **Low Cost = efficiency / Differentiation = uniqueness & experience**
+
+**풀어 이해하기:** Walmart는 판매 데이터를 공급업체와 실시간 공유해 재고와 물류 비용을 줄였다. 같은 물건을 더 싸게 파는 **low-cost** 전략이다. 반대로 Nike는 운동화를 직접 디자인하게 하는 맞춤 서비스로 다른 브랜드가 줄 수 없는 경험을 준다. 대량생산 설비로 개인 맞춤 제품을 만드는 이것이 **mass customization**이다.
 
 ---
 
@@ -647,6 +714,8 @@ feedback → 다시 capital / labor 제공
 
 > **Niche = 좁은 target에 집중 / Intimacy = 관계 강화로 switching cost 증가**
 
+**풀어 이해하기:** Hilton은 OnQ 시스템으로 고객 데이터를 분석해 수익성이 높은 고객층에 맞춘 서비스를 제공한다(**niche**). Amazon은 구매 기록으로 추천을 해 주고, 고객은 그 추천이 편해서 다른 쇼핑몰로 옮기기 어려워진다(**intimacy → switching cost ↑**). Toyota는 부품 공급업체와 생산 정보를 공유해 공급업체가 쉽게 떠나지 않게 한다.
+
 ---
 
 ## Slide 35 — Internet’s Impact on Competitive Advantage
@@ -661,6 +730,8 @@ feedback → 다시 capital / labor 제공
 - 동시에 brand / customer loyalty 구축 기회도 증가
 
 > **Internet은 경쟁을 없애지 않고 오히려 rivalry와 entry pressure를 강화**
+
+**풀어 이해하기:** 인터넷이 등장하자 여행사와 종이 백과사전 산업은 크게 무너졌다. 누구나 같은 기술 표준을 쓸 수 있어 신규 진입이 쉬워지고, 고객은 가격을 쉽게 비교해 경쟁이 더 치열해졌다. 하지만 동시에 브랜드를 알리고 충성 고객을 만들 새 기회도 생겼다. 인터넷은 **경쟁을 없애지 않고 더 세게 만든다**.
 
 ---
 
@@ -683,6 +754,8 @@ feedback → 다시 capital / labor 제공
 - competitors 간 rivalry 증가 가능
 
 > **IoT는 product를 단순 물건에서 data-driven service platform으로 확장**
+
+**풀어 이해하기:** 스마트 체중계는 몸무게만 재는 기계가 아니라, 기록을 앱으로 보내 건강 관리 서비스를 제공하는 **플랫폼**이 된다. 사용자는 몇 년치 기록이 쌓인 앱을 떠나기 어렵고(switching cost ↑), 다른 회사가 같은 서비스를 만들기도 어렵다(new entrants ↓). 다섯 힘 모두에 영향을 준다는 점이 시험 포인트다.
 
 ---
 
@@ -764,6 +837,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 
 > **Value Web = 여러 독립 기업의 value chains를 IT로 연결한 network**
 
+**풀어 이해하기:** 한 회사의 value chain은 공급업체와 고객의 value chain에 이어져 있다. 이 연결을 IT로 실시간 조정하면, 여러 독립 기업이 마치 한 회사처럼 제품을 함께 만들 수 있다. 그것이 **value web**이다. 일직선 사슬보다 덜 선형적이고, 고객 수요에 맞춰 파트너를 바꿔 끼울 수 있을 만큼 유연하다.
+
 ---
 
 ## Slide 40 — Figure 3.10 The Value Web
@@ -783,6 +858,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 
 > **Value Web는 networked partners를 연결해 supply / demand 변화에 빠르게 대응**
 
+**풀어 이해하기:** 그림 가운데의 회사는 ERP로 내부를, SCM과 공급업체 extranet으로 공급 측을, CRM으로 고객 측을, net marketplace로 새 거래 상대를 연결한다. 2장에서 배운 전사 시스템이 3장에서는 **경쟁 전략의 도구**로 다시 등장하는 셈이다.
+
 ---
 
 ## Slide 41 — Synergies
@@ -800,6 +877,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 - 서로 다른 business units의 operations 연결
 
 > **Synergy = 1 + 1 > 2가 되도록 business units를 IT로 연결**
+
+**풀어 이해하기:** 은행과 증권사가 합병하면 은행 고객에게 투자 상품을 팔 수 있다. 한쪽의 고객(output)이 다른 쪽의 영업 기반(input)이 되는 것이다. IT는 두 회사의 고객 데이터와 시스템을 연결해 이런 **synergy**를 실제로 만든다.
 
 ---
 
@@ -821,6 +900,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 
 > **Core Competency = 경쟁사가 쉽게 따라하기 어려운 world-class capability**
 
+**풀어 이해하기:** core competency는 회사가 **세계 최고 수준**인 활동이다. Google의 검색, Intel의 프로세서처럼 오랜 경험과 지식이 쌓여 경쟁사가 쉽게 따라 하기 어렵다. IT는 사업부 사이에서 이 지식을 공유하게 해 핵심 역량을 키운다. P&G가 사내 전문가 디렉터리와 인트라넷으로 연구 지식을 공유한 것이 예다.
+
 ---
 
 ## Slide 43 — Network-Based Strategies
@@ -834,6 +915,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 3. **Business Ecosystems**
 
 > **Network strategy = firm 내부 자원뿐 아니라 network 전체의 value를 활용**
+
+**풀어 이해하기:** 지금까지의 전략이 한 회사 안에서 무엇을 할지였다면, 네트워크 전략은 **다른 회사·사용자와 연결된 정도 자체**를 경쟁력으로 쓴다. 세 유형은 다음 세 슬라이드에서 하나씩 다룬다.
 
 ---
 
@@ -854,6 +937,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 
 > **Network Economics = 사용자가 많아질수록 network의 value가 커짐**
 
+**풀어 이해하기:** 전통 경제에서는 비료를 계속 더 뿌려도 수확은 점점 덜 늘어난다(**diminishing returns**). 하지만 메신저 앱은 친구가 한 명 더 가입할 때 드는 비용은 거의 0인데, 모든 사용자에게 연락할 사람이 한 명 늘어나 가치는 커진다. 그래서 사용자가 많은 플랫폼이 점점 더 유리해진다.
+
 ---
 
 ## Slide 45 — Virtual Company Model
@@ -870,6 +955,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 - 대부분의 work를 수천 suppliers에 outsourcing
 
 > **Virtual Company = 자산을 직접 소유하기보다 network coordination으로 business 수행**
+
+**풀어 이해하기:** Li & Fung은 공장을 거의 소유하지 않으면서 의류를 생산·배송한다. 수천 곳의 공급업체 네트워크를 조정하고, 주문마다 가장 알맞은 공장을 골라 맡긴다. 자산을 소유하는 대신 **연결과 조정 능력**으로 사업을 하는 것이 virtual company다.
 
 ---
 
@@ -921,6 +1008,8 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 
 > **Digital era 경쟁 단위는 individual firm에서 ecosystem으로 확장**
 
+**풀어 이해하기:** 스마트폰 시장에서 경쟁은 제조사 한 곳 대 한 곳이 아니라, 운영체제·앱 개발자·부품업체·통신사가 엮인 **생태계 대 생태계**다. 그림처럼 다섯 경쟁 요인은 그대로 있지만, 분석 단위가 개별 기업에서 여러 산업이 묶인 생태계로 넓어진다.
+
 ---
 
 ## Slide 48 — AI in Competitive Strategy
@@ -957,6 +1046,8 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 - industry value chain 분석
 
 > **Strategic IS의 핵심 과제 = Advantage를 만들고, 유지하고, business strategy와 정렬하는 것**
+
+**풀어 이해하기:** 처음 모바일 주문을 도입한 카페는 한동안 경쟁우위를 누렸지만, 모든 카페가 따라 하자 이제는 없으면 손님을 잃는 **survival** 도구가 됐다. 그래서 전략적 시스템은 만드는 것보다 **유지하는 것**이 어렵다. 또한 IT 계획이 사업 전략과 따로 놀면 돈만 쓰고 성과가 없으므로 둘을 맞추는 **alignment**가 필요하다.
 
 ---
 

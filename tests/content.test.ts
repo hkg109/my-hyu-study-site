@@ -54,7 +54,8 @@ test("MIS practice exams are English-first with complete Korean reveal translati
 });
 
 test("each practice Markdown file has five Korean levels and hidden example solutions", context => {
-  const practices = readCollection("practice").filter(doc => doc.week <= 6);
+  // Only legacy week-based C++ practice files use this format; subject-based exams are checked above.
+  const practices = readCollection("practice").filter(doc => !doc.subjectId && doc.week <= 6);
   if (!practices.length) { context.skip("No practice content has been added yet"); return; }
   const levels = ["중하", "중", "중상", "상", "최상"];
   assert.deepEqual(practices.map(doc => doc.week), [0, 1, 2, 3, 4, 5, 6]);

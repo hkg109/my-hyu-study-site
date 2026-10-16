@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" role="img" aria-labelledby="mis-00-cost-theories-title mis-00-cost-theories-desc">
+  <title id="mis-00-cost-theories-title">IT는 바깥 거래 비용과 안쪽 관리 비용을 함께 낮춘다</title>
+  <desc id="mis-00-cost-theories-desc">Transaction Cost Theory는 시장과의 거래를, Agency Theory는 조직 내부의 감독을 설명한다</desc>
+  <defs><marker id="mis-00-cost-theories-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.link{stroke:#65645e;stroke-width:2;fill:none}.flow{stroke:#65645e;stroke-width:2;fill:none;marker-end:url(#mis-00-cost-theories-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.step{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="700"/><text class="tag" x="64" y="52">3장 · IT의 경제적 영향</text><text class="title" x="64" y="92">IT는 바깥 거래 비용과 안쪽 관리 비용을 함께 낮춘다</text><text class="subtitle" x="64" y="122">Transaction Cost Theory는 시장과의 거래를, Agency Theory는 조직 내부의 감독을 설명한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <g><rect class="focal" x="528" y="168" width="224" height="76" rx="6"/><text class="name inverse" x="640" y="206" text-anchor="middle">IT · Internet</text><text class="sub inverse" x="640" y="232" text-anchor="middle">정보 비용 ↓</text></g>
+  <path class="flow" d="M600 244 V260 H336 V284"/><path class="flow" d="M680 244 V260 H944 V284"/>
+  <rect class="zone" x="64" y="288" width="544" height="380" rx="6"/><text class="step" x="88" y="318">바깥: 시장과 거래할 때</text><text class="name" x="88" y="346">Transaction Cost Theory</text>
+  <g><rect class="node" x="96" y="368" width="480" height="76" rx="6"/><text class="name" x="120" y="406">Transaction cost</text><text class="sub" x="120" y="432">공급자 탐색 · 계약 · 품질 확인 · 감시</text></g>
+  <g><rect class="node" x="96" y="472" width="480" height="76" rx="6"/><text class="name" x="120" y="510">IT가 비용을 낮춤</text><text class="sub" x="120" y="536">외부 기업과 거래하는 편이 더 싸진다</text></g>
+  <g><rect class="node" x="96" y="576" width="480" height="76" rx="6"/><text class="name" x="120" y="614">Outsourcing ↑</text><text class="sub" x="120" y="640">직접 다 하지 않아도 되므로 기업 규모 축소 가능</text></g>
+  <path class="flow" d="M336 444 V468"/><path class="flow" d="M336 548 V572"/>
+  <rect class="zone" x="672" y="288" width="544" height="380" rx="6"/><text class="step" x="696" y="318">안쪽: 구성원을 관리할 때</text><text class="name" x="696" y="346">Agency Theory</text>
+  <g><rect class="node" x="704" y="368" width="480" height="76" rx="6"/><text class="name" x="728" y="406">Agency cost</text><text class="sub" x="728" y="432">직원(agent)을 감독 · 조정하는 비용</text></g>
+  <g><rect class="node" x="704" y="472" width="480" height="76" rx="6"/><text class="name" x="728" y="510">IT가 비용을 낮춤</text><text class="sub" x="728" y="536">보고 · 모니터링이 쉬워진다</text></g>
+  <g><rect class="node" x="704" y="576" width="480" height="76" rx="6"/><text class="name" x="728" y="614">적은 관리자로 확장</text><text class="sub" x="728" y="640">관리 계층을 크게 늘리지 않고도 기업이 커진다</text></g>
+  <path class="flow" d="M944 444 V468"/><path class="flow" d="M944 548 V572"/>
+</svg>
