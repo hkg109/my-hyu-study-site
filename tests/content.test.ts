@@ -44,12 +44,15 @@ test("plain Markdown is discovered without frontmatter or a React edit", () => {
 
 test("MIS practice exams are English-first with complete Korean reveal translations", () => {
   const exams = readCollection("practice").filter(doc => doc.subjectId === "subject-muhz2xir");
-  assert.equal(exams.length, 3);
+  // Exams 1–3 are 26-item mock exams; exams 4–7 are 30-item chapter sets.
+  const expected = new Map([[1, 26], [2, 26], [3, 26], [4, 30], [5, 30], [6, 30], [7, 30]]);
+  assert.deepEqual(exams.map(exam => exam.order).sort((a, b) => a - b), [...expected.keys()]);
   for (const exam of exams) {
-    assert.equal((exam.content.match(/^> \[!QUIZ\]$/gm) ?? []).length, 26, exam.path);
-    assert.equal((exam.content.match(/^> \[!TRANSLATION\]$/gm) ?? []).length, 26, exam.path);
-    assert.equal((exam.content.match(/^> \[!ANSWER\]$/gm) ?? []).length, 26, exam.path);
-    assert.equal((exam.content.match(/^> \[!ANSWER-TRANSLATION\]$/gm) ?? []).length, 26, exam.path);
+    const count = expected.get(exam.order);
+    assert.equal((exam.content.match(/^> \[!QUIZ\]$/gm) ?? []).length, count, exam.path);
+    assert.equal((exam.content.match(/^> \[!TRANSLATION\]$/gm) ?? []).length, count, exam.path);
+    assert.equal((exam.content.match(/^> \[!ANSWER\]$/gm) ?? []).length, count, exam.path);
+    assert.equal((exam.content.match(/^> \[!ANSWER-TRANSLATION\]$/gm) ?? []).length, count, exam.path);
   }
 });
 
