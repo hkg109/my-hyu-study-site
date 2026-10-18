@@ -27,6 +27,22 @@ npm start
 
 자세한 작성법은 [콘텐츠 관리 안내](docs/content-guide.md)를 참고하세요.
 
+## 비밀번호 설정
+
+비밀번호는 `config/access.json` 한 파일에서 관리합니다.
+
+```json
+{
+  "practicePassword": "족보 비밀번호",
+  "adminPassword": "관리자 모드 비밀번호"
+}
+```
+
+- 강의 정리는 누구나 볼 수 있습니다.
+- 족보(`/practice`)는 `practicePassword`를 입력해야 열립니다. 한 번 입력하면 30일 동안 유지되고, 비밀번호를 바꾸면 기존 접속도 모두 다시 잠깁니다.
+- `adminPassword`는 로컬 개발 서버의 관리자 모드에 쓰입니다.
+- 이 저장소가 공개 상태라면 파일 내용과 족보 Markdown도 GitHub에서 누구나 볼 수 있습니다. 사이트 화면만 잠그는 장치로 생각해 주세요.
+
 ## 관리자 모드
 
 관리자 기능은 `npm run dev`로 실행한 로컬 사이트에서만 활성화됩니다.

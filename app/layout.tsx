@@ -13,6 +13,7 @@ import { getAllLectures } from "@/lib/lectures";
 import { getSearchIndex } from "@/lib/search";
 import { readCatalog } from "@/lib/catalog";
 import { readCollection, withoutBody } from "@/lib/content";
+import { adminPassword } from "@/lib/access";
 
 export const metadata: Metadata = {
   title: { default: "HJS STUDY", template: "%s | HJS STUDY" },
@@ -39,6 +40,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <AppShell sidebar={<Sidebar lectures={lectures} exams={exams} catalog={catalog} />}>{children}</AppShell>
   </>;
   return <html lang="ko" suppressHydrationWarning><body><Providers>
-    {process.env.NODE_ENV === "development" ? <AdminProvider expectedPassword="1009">{shell}</AdminProvider> : shell}
+    {process.env.NODE_ENV === "development" ? <AdminProvider expectedPassword={adminPassword()}>{shell}</AdminProvider> : shell}
   </Providers></body></html>;
 }

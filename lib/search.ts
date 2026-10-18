@@ -6,7 +6,8 @@ export function getSearchIndex(): SearchEntry[] {
   return (["lectures", "practice"] as const).flatMap(kind =>
     readCollection(kind).map(doc => ({
       title: doc.title, description: doc.description, tags: doc.tags ?? [],
-      body: markdownText(doc.content, doc.format), path: doc.path, week: doc.week, kind,
+      // The index ships with every page, so locked practice content is searchable by title only.
+      body: kind === "practice" ? "" : markdownText(doc.content, doc.format), path: doc.path, week: doc.week, kind,
       location: kind === "lectures" ? [doc.gradeName, doc.semesterName, doc.subjectName].filter(Boolean).join(" · ") : "족보",
     })),
   );

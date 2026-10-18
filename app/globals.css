@@ -505,3 +505,9 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   .prose a { color:var(--foreground); text-decoration:none; }
   img,svg { max-width:100%; }
 }
+
+/* Practice unlock page */
+.unlock-page { display:flex; justify-content:center; }
+.unlock-card { width:min(420px,100%); margin:64px 0 96px; padding:32px; border:1px solid var(--border); border-radius:8px; background:var(--background); }
+.unlock-card h1 { margin:18px 0 10px; font-size:24px; letter-spacing:-.03em; }
+.unlock-card > p { color:var(--muted); font-size:14px; line-height:1.7; }
