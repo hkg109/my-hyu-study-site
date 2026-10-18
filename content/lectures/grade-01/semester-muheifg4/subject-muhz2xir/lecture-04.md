@@ -1324,13 +1324,30 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 5. 고객이 다른 회사로 옮기기 어렵게 만드는 비용을 {{switching cost}}라 한다.
 6. 가치사슬의 조달(procurement)은 {{지원 활동(support activity)}}에 속한다.
 
-### 서술형 답안 틀
+### 단답형 연습 · Short Answer
 
-> [!BOARD]
-> **“IT가 기업 규모에 미치는 영향을 두 이론으로 설명하시오.”**
-> - ① Transaction cost theory: 시장 거래 비용 ↓ → 외부 위탁 ↑ → 규모 축소 가능
-> - ② Agency theory: 감독·조정 비용 ↓ → 관리자 증가 없이 확장 가능
-> - ③ 결론: 어떤 비용이 줄었는지에 따라 기업은 작아질 수도, 커질 수도 있다
+Write the term or a short answer in English. 답은 맨 끝 **정답과 해설**의 단답형 정답에서 확인한다.
+
+1. What do we call the precise rules, procedures, and practices an organization develops to cope with almost all expected situations?  
+   Answer: ______________________________
+2. Which theory says that firms seek to economize on the costs of participating in markets, such as finding suppliers and managing contracts?  
+   Answer: ______________________________
+3. What is the number of employees that a single manager supervises called?  
+   Answer: ______________________________
+4. Name the five basic kinds of organizational structure.  
+   Answer: ______________________________
+5. What term describes technologies that cause sweeping changes in businesses, industries, and markets?  
+   Answer: ______________________________
+6. What is the cost a customer incurs when changing from one product or supplier to a competing one?  
+   Answer: ______________________________
+7. What is the use of mass production resources to deliver products tailored to individual customers called?  
+   Answer: ______________________________
+8. What do we call a collection of independent firms that use IT to coordinate their value chains to produce a product or service collectively?  
+   Answer: ______________________________
+9. In a business ecosystem, what kind of firm dominates the ecosystem and creates the platform used by other firms?  
+   Answer: ______________________________
+10. Which economic concept holds that the marginal cost of adding another participant is about zero while the marginal gain is large?  
+   Answer: ______________________________
 
 > [!PAGEBREAK]
 
@@ -1369,7 +1386,9 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 
 ## 정답과 해설
 
-본문의 **확인 문제** 정답이다. 먼저 스스로 답을 쓴 뒤 확인한다.
+먼저 스스로 답을 쓴 뒤 확인한다.
+
+### 확인 문제 정답
 
 1. Technical definition은 조직을 자본·노동을 받아 제품을 만드는 **생산 구조**로, behavioral definition은 권리·의무·가치가 갈등을 거쳐 균형을 이룬 **사회 시스템**으로 본다.
 2. **Routine → Business process → Firm.** 루틴이 모여 프로세스, 프로세스가 모여 기업이 된다.
@@ -1383,3 +1402,16 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 10. **Administration and management, human resources, technology, procurement.**
 11. Value web은 주로 **한 산업 안**의 기업 가치사슬을 연결하고, business ecosystem은 플랫폼을 중심으로 **여러 산업**에 걸친 더 넓은 네트워크다.
 12. **거의 0.** 참여자를 더하는 비용은 거의 들지 않지만 네트워크 가치는 커진다.
+
+### 단답형 정답
+
+1. **Routines (standard operating procedures, SOPs)** — 예상되는 상황에 대응하도록 정해 둔 정확한 규칙·절차·관행
+2. **Transaction cost theory** — 시장 참여 비용을 줄이려는 관점. IT가 이 비용을 낮추면 외주가 늘어난다
+3. **Span of control** — 관리자 한 명이 관리하는 직원 수. IT로 넓어진다
+4. **Entrepreneurial structure, machine bureaucracy, divisionalized bureaucracy, professional bureaucracy, adhocracy** — 창업형, 기계적 관료제, 사업부형 관료제, 전문적 관료제, 애드호크라시
+5. **Disruptive technologies** — 산업과 시장을 크게 바꾸는 파괴적 기술
+6. **Switching cost** — 다른 제품·공급자로 바꿀 때 드는 전환 비용
+7. **Mass customization** — 대량생산 자원으로 개인 맞춤 제품을 제공하는 것. 제품 차별화의 한 방법
+8. **Value web** — IT로 가치사슬을 연결한 독립 기업들의 네트워크
+9. **Keystone firm** — 생태계를 지배하고 플랫폼을 제공하는 핵심 기업
+10. **Network economics** — 참여자가 늘수록 네트워크 가치가 커지는 네트워크 경제
