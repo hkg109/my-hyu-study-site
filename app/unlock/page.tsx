@@ -8,7 +8,7 @@ export default async function UnlockPage({ searchParams }: { searchParams: Promi
   return <div className="index-page unlock-page">
     <section className="unlock-card" aria-labelledby="unlock-title">
       <div className="admin-dialog-icon"><LockKeyhole size={22} /></div>
-      <h1 id="unlock-title">족보는 비밀번호가 필요합니다</h1>
+      <h1 id="unlock-title">비밀번호를 입력해주세요</h1>
       <p>강의 정리는 누구나 볼 수 있고, 족보는 비밀번호를 아는 사람만 열 수 있어요.</p>
       <form method="post" action="/api/practice-access" className="admin-login-form">
         <input type="hidden" name="next" value={safePracticePath(next)} />
