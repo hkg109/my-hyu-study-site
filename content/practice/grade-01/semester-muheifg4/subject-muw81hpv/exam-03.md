@@ -1,5 +1,5 @@
 ---
-title: C++ Expected Exam Questions
+title: C++ Mid Expected Exam 1
 description: Nine expected questions based on Homework 1–3, covering concepts, operator precedence, debugging, output tracing, code writing, and converting recursion to loops.
 week: 0
 order: 3
