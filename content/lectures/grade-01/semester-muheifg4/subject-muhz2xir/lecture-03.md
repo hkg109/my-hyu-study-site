@@ -1,9 +1,9 @@
 ---
 title: "2장 B · 협업에서 조직 지식과 IS 기능까지"
-description: "협업과 소셜 비즈니스에서 지식관리 가치사슬·KMS·책임 있는 AI·IT 거버넌스까지 이어지는 Chapter 2 후반부 필기."
+description: "협업과 소셜 비즈니스에서 지식관리 가치사슬·KMS·IT 거버넌스까지, 교재 그림과 개념·판서·해설·오답 주의·예제·확인 문제로 정리한 Chapter 2 후반부 교재형 필기."
 order: 3
 published: true
-duration: 100
+duration: 125
 tags: [정시개, MIS, 2장, 협업, 지식관리, IT 거버넌스]
 objectives:
   - 협업 성과를 만드는 문화·프로세스·도구의 조건을 설명한다.
@@ -18,6 +18,23 @@ objectives:
 **범위:** Chapter 2 슬라이드 30–73 · Collaboration → Knowledge → IS Function
 
 [Chapter 2 원본 PDF](/materials/mis-exam-slides/ch02_17ed.pdf) · [Chapter 2 확장 PDF](/materials/mis-exam-slides/ch02_17ed_final.pdf)
+
+## 단원 도입
+
+| 출제 포인트 | 빈도 | 이렇게 나온다 |
+|---|:---:|---|
+| 지식관리 가치사슬 4단계 | ★★★ | 순서, 막힌 단계 찾기 |
+| Tacit vs Explicit knowledge | ★★★ | 사례 분류 |
+| KMS 세 유형(전사 KMS · KWS · 지능형 기법) | ★★★ | 사례에 맞는 유형 고르기 |
+| 시간·공간 협업 매트릭스 | ★★ | 도구를 칸에 넣기 |
+| 협업의 요건, social business | ★★ | 기술만으로 안 되는 이유 |
+| IS 부서 · systems analyst · IT governance | ★★ | 역할과 정의 |
+
+**책 읽는 법:** 슬라이드 제목 아래의 짧은 목록과 요약 한 줄이 강의 **핵심 필기**다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
+
+> [!PAGEBREAK]
+
+## PART 1 · 협업과 소셜 비즈니스
 
 ## Slide 30 — What Is Collaboration?
 
@@ -55,9 +72,12 @@ objectives:
 
 > **Social Business = social platform을 business interaction과 information sharing에 활용**
 
+> [!CONCEPT]
+> **Social business** — 사내외 소셜 네트워킹 플랫폼으로 직원·고객·공급업체와의 상호작용을 깊게 하고 정보 공유를 빠르게 하는 것. **정보 투명성**이 전제다.
+
+
 > [!NOTE]
 > Social business는 회사 안팎에서 SNS처럼 대화하고 공유하는 플랫폼을 업무에 쓰는 것이다. 예를 들어 고객이 남긴 리뷰에 직원이 바로 답하고, 그 의견을 메뉴 개발팀이 같은 피드에서 보는 식이다. 효과를 보려면 정보를 숨기지 않는 **투명성(information transparency)**이 필요하다. 위에서 정보를 통제하는 문화에서는 플랫폼을 깔아도 대화가 일어나지 않는다.
-
 ---
 
 ## Slide 32 — Collaboration Is Expanding to Human-Agent Teams
@@ -78,9 +98,12 @@ objectives:
 
 > **Human-Agent Team의 핵심 = workflow + handoff + review + authority를 명확히 정의**
 
+> [!CONCEPT]
+> **Human-agent team** — 사람과 AI agent가 함께 일하는 팀. AI가 어디서 사람에게 넘기는지(**handoff**), 무엇으로 검토하는지(**review**), 무엇을 할 수 있는지(**authority**)를 문서로 정한다.
+
+
 > [!NOTE]
 > 이제 팀원 중 일부가 AI agent일 수 있다. 사람 팀원과 일할 때 역할 분담을 정하듯이, AI가 어디까지 하고 언제 사람에게 넘기는지(**handoff**), 무엇을 기준으로 결과를 검토하는지(**review criteria**), 어떤 일을 할 권한이 있는지(**authority**)를 문서로 정해야 한다. 이게 없으면 AI의 실수를 아무도 발견하지 못하거나, 누가 책임질지 불분명해진다.
-
 ---
 
 ## Slide 33 — Business Benefits of Collaboration and Teamwork
@@ -122,6 +145,10 @@ objectives:
 > **좋은 collaboration = 적절한 organizational culture/structure + technology**
 
 협업 도구는 대화를 전달할 통로를 제공하지만, 누구의 의견을 받아들이고 어떤 정보를 공유할지는 팀의 일하는 방식이 결정한다. 따라서 협업 성과가 낮을 때는 도구의 기능 부족과 의견을 말하거나 활용하기 어려운 조직 조건을 나누어 살펴봐야 한다.
+
+![협업 역량과 협업 기술이 협업의 질로 모이고 협업의 질이 기업 성과로 이어지는 그림](/materials/diagrams/mis-fig-2-07.svg)
+
+*Figure 2.7 · The Requirements for Collaboration — 역량과 기술이 함께 있어야 협업의 질이 높아진다.*
 
 ---
 
@@ -165,6 +192,9 @@ objectives:
 
 > [!NOTE]
 > 예전 조직(command and control)은 위에서 결정하고 아래는 실행만 했기 때문에, 직원이 의견을 내는 것 자체가 기대되지 않았다. 협업 문화에서는 관리자의 역할이 지시하는 사람에서 **팀을 만드는 사람**으로 바뀐다. Sharp 사례처럼 도구보다 먼저 보상·평가·절차를 바꿔야 협업이 실제로 일어난다.
+
+> [!TRAP]
+> “협업 도구를 도입하면 협업이 자동으로 늘어난다”는 보기는 오답이다. **문화·보상·프로세스**가 먼저 바뀌어야 한다.
 
 ---
 
@@ -241,6 +271,11 @@ objectives:
 > [!NOTE]
 > 협업 도구를 고를 때는 먼저 팀이 **같은 시간에 일하는지(synchronous), 같은 장소에 있는지(co-located)**부터 확인한다. 그다음 여섯 단계로 문제 정의 → 대안 탐색 → 비용·편익 → 보안 → 사용자 교육 → 공급업체 순으로 따진다. 기능이 많은 도구가 아니라 **우리 팀의 일하는 방식에 맞는 도구**가 좋은 도구다.
 
+> [!PROBLEM]
+> **문제.** 서울과 부산 매장 직원들이 교대 시간이 달라 공유 캘린더와 인수인계 위키로 일정을 맞춘다. 시간·공간 매트릭스의 어느 칸인가?
+>
+> **풀이.** ① 근무 시간이 다르다 → **different time** ② 장소가 다르다 → **different place** ③ **Communication + coordination** 칸.
+
 ---
 
 ## Slide 40 — Current Criteria for Collaboration Platforms
@@ -274,12 +309,25 @@ objectives:
 
 > **Collaboration technology는 Time × Space 기준으로 분류 가능**
 
-![시간과 장소 두 축으로 구분한 협업 방식](/materials/diagrams/mis-00-collaboration-matrix.svg)
+![같은 시간 다른 시간과 같은 장소 다른 장소의 두 축으로 나눈 네 칸에 협업 도구 예시가 들어간 매트릭스](/materials/diagrams/mis-fig-2-08.svg)
+
+*Figure 2.8 · The Time/Space Collaboration and Social Tool Matrix — 시간과 장소로 협업 도구를 나눈다.*
 
 > [!NOTE]
 > 두 질문만 하면 칸이 정해진다. “같은 시간에 하는가?”와 “같은 장소에서 하는가?” 매장 회의는 같은 시간·같은 장소, 화상회의는 같은 시간·다른 장소, 교대 근무자끼리 남기는 인수인계 노트는 다른 시간·같은 장소(continuous task), 이메일과 공유 캘린더는 다른 시간·다른 장소다.
 
+> [!CHECK]
+> **1.** 협업에 필요한 두 가지 요건(Figure 2.7)을 쓰시오.
+>
+> **2.** 화상회의는 시간·공간 매트릭스의 어느 칸에 속하는가?
+>
+> **3.** Social business가 효과를 내려면 어떤 조직 조건이 필요한가?
+
 ---
+
+> [!PAGEBREAK]
+
+## PART 2 · 지식관리
 
 ## Slide 42 — Role of KMS in Business
 
@@ -335,8 +383,14 @@ objectives:
 
 > **Explicit = 문서화 가능 / Tacit = 경험과 사람에게 내재된 know-how**
 
+> [!CONCEPT]
+> **Explicit knowledge** — 문서화된 지식(매뉴얼·보고서). **Tacit knowledge** — 사람의 경험 속에 있어 문서로 옮기기 어려운 지식(노하우·감각).
+
 > [!NOTE]
 > 카페 레시피 매뉴얼은 **explicit knowledge**라 새 직원에게 그대로 넘겨줄 수 있다. 하지만 숙련 바리스타가 우유 거품 소리만 듣고 온도를 맞추는 감각은 **tacit knowledge**라 글로 옮기기 어렵다. 지식은 공유될수록 더 많은 사람이 쓰면서 가치가 커지는 **network effect**도 있다.
+
+> [!TRAP]
+> 지식을 문서로 많이 남겼다고 tacit knowledge가 다 옮겨진 것은 아니다. **언제·어떻게 적용하는지**는 사람과 상황에 붙어 있다.
 
 ---
 
@@ -396,9 +450,12 @@ objectives:
 
 > **Organizational Learning = 경험을 수집하고 행동과 process를 실제로 바꾸는 과정**
 
+> [!CONCEPT]
+> **Organizational learning** — 데이터 수집·시행착오·피드백으로 경험을 얻고, 그 결과 **새 비즈니스 프로세스와 바뀐 의사결정 패턴**을 만들어 내는 과정.
+
+
 > [!NOTE]
 > 조직 학습은 경험을 모으는 데서 끝나지 않는다. 비 오는 날 폐기가 많다는 데이터를 보고(경험 획득), 다음부터 날씨 예보에 따라 준비량을 줄이는 규칙을 만들었다면(행동 조정) 조직이 학습한 것이다. 시험에서는 결과로 **새 업무 프로세스**나 **바뀐 의사결정 패턴**이 나와야 학습이라고 쓴다.
-
 ---
 
 ## Slide 48 — Knowledge Management Value Chain (1/3)
@@ -419,9 +476,13 @@ objectives:
 
 > **KM Value Chain = Acquire → Store → Disseminate → Apply**
 
+> [!BOARD]
+> - **Acquire** → **Store** → **Disseminate** → **Apply**
+> - 각 단계가 가치를 더한다. **Apply**가 빠지면 ROI가 없다
+
+
 > [!NOTE]
 > 가치사슬이라는 이름은 각 단계가 지식에 가치를 더한다는 뜻이다. 회의록을 모으고(Acquisition), 찾기 쉽게 정리해 두고(Storage), 필요한 직원에게 보내고(Dissemination), 실제 결정에 쓰는(Application) 순서다. 어느 한 단계라도 끊기면 앞 단계의 노력이 성과로 이어지지 않는다.
-
 ---
 
 ## Slide 49 — Generative AI in the KM Value Chain
@@ -462,6 +523,12 @@ objectives:
 - application 결과가 다시 data / knowledge acquisition으로 연결
 
 > **KM은 IT activity만이 아니라 management / organization activity가 함께 있어야 완성**
+
+### 교재 그림 · Figure 11.1
+
+![지식 비즈니스 가치사슬의 획득 저장 전파 적용 단계마다 정보시스템 활동과 경영 조직 활동이 놓이고 피드백이 돌아오는 그림](/materials/diagrams/mis-fig-11-01.svg)
+
+*Figure 11.1 · The Knowledge Management Value Chain — 각 단계에 IS 활동과 경영·조직 활동이 함께 있다.*
 
 ### 개념도 · 지식이 조직 성과가 되는 과정
 
@@ -522,6 +589,11 @@ objectives:
 
 네 단계는 각각 다른 질문에 답한다. ‘자료가 있는가’는 획득·저장, ‘필요한 사람이 찾을 수 있는가’는 전달, ‘찾은 내용을 실제 결정에 썼는가’는 적용의 문제다. 보고서가 많아도 업무가 바뀌지 않았다면 어느 단계에서 흐름이 끊겼는지 이 순서로 확인한다.
 
+> [!PROBLEM]
+> **문제.** 한 회사가 프로젝트 보고서 수천 개를 저장했지만, 직원들은 관련 교훈을 찾지 못하고 업무도 바뀌지 않았다. 가치사슬의 어느 단계가 막혔는가?
+>
+> **풀이.** ① 보고서가 있다 → 획득·저장은 됐다 ② 찾지 못한다 → **전파(dissemination)** 문제 ③ 업무가 그대로다 → **적용(application)** 문제.
+
 ---
 
 ## Slide 53 — Collaboration, Communities of Practice, Office Environments
@@ -539,9 +611,12 @@ objectives:
 
 > **COP = 같은 전문영역 사람들이 경험과 know-how를 지속적으로 공유하는 network**
 
+> [!CONCEPT]
+> **Communities of practice (COPs)** — 같은 일을 하는 전문가·직원의 비공식 네트워크. 노하우를 나누고 신입의 **learning curve**를 줄인다. 지식관리 총괄 임원은 **CKO**다.
+
+
 > [!NOTE]
 > COP는 회사가 만든 공식 부서가 아니라, 같은 일을 하는 사람들이 자연스럽게 모인 비공식 모임이다. 여러 지점의 바리스타들이 단체방에서 새 원두 다루는 법을 공유하는 것과 비슷하다. 신입이 질문할 곳이 생기므로 **learning curve**가 줄어든다. CKO는 이런 지식관리 활동 전체를 책임지는 임원이다.
-
 ---
 
 ## Slide 54 — Three Major Types of KMS
@@ -556,6 +631,9 @@ objectives:
 
 > [!NOTE]
 > 세 유형은 지식을 **관리하는가, 만드는가, 발견하는가**로 나뉜다. 회사 문서와 노하우를 모아 공유하면 enterprise-wide KMS, 엔지니어가 설계하며 새 지식을 만들면 KWS, 데이터에서 기계가 패턴을 찾아내면 intelligent techniques다.
+
+> [!TRAP]
+> **KMS**는 지식관리시스템 전체의 이름이고, **KWS**는 그중 전문가가 새 지식을 만들도록 돕는 한 유형이다. KMS ⊃ KWS.
 
 ---
 
@@ -582,6 +660,12 @@ objectives:
 - intelligent agents
 
 > **KMS는 조직 전체 지식관리 / 지식 생성 작업 / AI 기반 지식기술로 나뉨**
+
+### 교재 그림 · Figure 11.2
+
+![전사적 지식관리시스템 지식작업시스템 지능형 기법의 세 유형과 각각의 설명과 예시를 나란히 놓은 그림](/materials/diagrams/mis-fig-11-02.svg)
+
+*Figure 11.2 · Major Types of Knowledge Management Systems — 관리하기 · 만들기 · 발견하기.*
 
 ### 개념도 · KMS 유형을 나누는 기준
 
@@ -633,9 +717,12 @@ objectives:
 
 > **CMS의 핵심 = content 저장보다 classification / taxonomy / retrieval**
 
+> [!CONCEPT]
+> **Taxonomy** — 콘텐츠를 쉽게 찾을 수 있도록 회사 전체가 함께 쓰는 **분류 체계**. 각 지식 객체에 이 분류로 **tag**를 붙인다.
+
+
 > [!NOTE]
 > 문서를 많이 저장하는 것보다 **다시 찾을 수 있게** 하는 것이 어렵다. 그래서 CMS의 핵심 과제는 taxonomy, 즉 회사 전체가 같은 분류 체계로 문서에 tag를 붙이는 것이다. 사진·영상 같은 디지털 자산은 따로 Digital Asset Management로 관리한다.
-
 ---
 
 ## Slide 58 — AI-Ready Content Management
@@ -677,9 +764,13 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 
 > **ECM = 다양한 enterprise content를 unified repository에서 분류·관리·배포**
 
+![사용자가 생성 태그 저장 검토 배포 활동을 거쳐 보고서 이메일 영상 위키 등을 담은 통합 저장소와 연결되는 그림](/materials/diagrams/mis-fig-11-08.svg)
+
+*Figure 11.8 · An Enterprise Content Management System — 모든 콘텐츠가 하나의 통합 저장소에 모인다.*
+
+
 > [!NOTE]
 > 그림 위쪽은 사용자가 하는 일(만들기 → 태그 → 저장·검색 → 검토 → 배포), 아래쪽은 그 결과가 모이는 **unified repository**다. 보고서·이메일·영상·위키·직원 프로필까지 한 저장소에 모으기 때문에, 부서마다 따로 흩어진 자료를 한 번에 검색할 수 있다.
-
 ---
 
 ## Slide 60 — Locating and Sharing Expertise
@@ -713,6 +804,13 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 
 > [!NOTE]
 > LMS는 직원 교육을 운영하는 시스템이다. 누가 어떤 교육을 들었는지 기록하고(tracking), 시험으로 이해도를 확인하고(assessment), 교육이 실제 효과가 있었는지 측정한다. 신입 바리스타 위생 교육을 온라인으로 듣고 수료 여부가 자동 기록되는 것이 예다.
+
+> [!CHECK]
+> **4.** 지식관리 가치사슬의 네 단계를 순서대로 쓰시오.
+>
+> **5.** Explicit knowledge와 tacit knowledge의 차이를 쓰시오.
+>
+> **6.** KMS의 세 가지 유형을 쓰시오.
 
 ---
 
@@ -777,6 +875,12 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 
 > **KWS = External Knowledge + Specialized Software + Strong Hardware + Usable Interface**
 
+### 교재 그림 · Figure 11.9
+
+![외부 지식 기반이 소프트웨어로 들어가고 소프트웨어 안의 사용자 인터페이스가 아래의 지식 워크스테이션 위에 놓인 그림](/materials/diagrams/mis-fig-11-09.svg)
+
+*Figure 11.9 · Requirements of Knowledge Work Systems — 외부 지식, 전문 소프트웨어, 인터페이스, 워크스테이션.*
+
 ### 개념도 · Knowledge Work System의 구성 층위
 
 ![Knowledge workstation을 기반으로 user interface, specialized software, external knowledge base가 층을 이루어 전문 지식 작업을 지원하는 구조](/materials/diagrams/mis-03-kws-stack.svg)
@@ -836,6 +940,9 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 > [!NOTE]
 > 표는 **목적별로** 묶어 외운다. 전문가의 tacit knowledge를 규칙이나 사례로 담는 것(expert system, case-based reasoning, fuzzy logic), 데이터에서 새 패턴을 찾는 것(neural network, data mining), 복잡한 문제의 최적 해를 찾는 것(genetic algorithm), 반복 업무를 대신하는 것(intelligent agent)이다. 최신 기술인 ML·NLP·GenAI·RAG·knowledge graph도 결국 이 목적 중 하나에 들어간다.
 
+> [!TRAP]
+> 기법은 이름이 아니라 **목적**으로 묶는다. 전문가 지식 담기(expert system, CBR, fuzzy logic) / 패턴 발견(neural network, data mining) / 최적해 찾기(genetic algorithm) / 업무 대신하기(intelligent agent).
+
 ---
 
 ## Slide 67 — Responsible Use of Generative AI
@@ -852,6 +959,10 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 > 네 단계는 위험 관리의 순서다. 누가 책임지고 무엇을 허용할지 정하고(Govern), 누가 영향을 받는지 파악하고(Map), 정확성·편향·보안을 측정하고(Measure), 문제가 생기면 통제하고 고친다(Manage). 그리고 AI가 낸 답은 확정된 지식이 아니라 **검증이 필요한 주장(claim)**으로 다룬다.
 
 ---
+
+> [!PAGEBREAK]
+
+## PART 3 · 정보시스템 기능과 조직
 
 ## Slide 68 — Information Systems Department
 
@@ -879,9 +990,12 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 > **IS Department = business need와 technology를 연결하고 IT services를 운영하는 조직**
 
+> [!CONCEPT]
+> **Systems analyst** — 현업의 문제와 요구를 정보 요구사항과 시스템으로 **번역**하는 사람. Business ↔ Technology 사이의 translator.
+
+
 > [!NOTE]
 > IS 부서는 회사의 IT 서비스를 책임지는 조직이고, CIO가 이끈다. 보안·지식·개인정보·데이터·AI처럼 책임 영역이 커지면서 각 분야의 C-level 직책이 생겼다. 그중 **systems analyst**는 현업의 요구(“주문이 자꾸 누락돼요”)를 시스템 요구사항(“주문 상태를 실시간으로 공유하는 기능”)으로 번역하는 사람이다.
-
 ---
 
 ## Slide 69 — Organizing the Information Systems Function
@@ -900,8 +1014,18 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 > **IT Governance = 누가 IT 결정을 내리고 누가 책임지는지 정의하는 framework**
 
+> [!CONCEPT]
+> **IT governance** — 누가 IT 결정을 내리고(**decision rights**) 누가 결과에 책임지는지(**accountability**)를 정해, IT가 기업 전략을 지원하게 하는 틀.
+
 > [!NOTE]
 > IT governance는 기술 선택보다 먼저 정해야 할 **규칙**이다. 새 시스템 도입을 누가 결정하는지(decision rights), 결과가 나쁘면 누가 책임지는지(accountability)를 정해 IT가 사업 목표를 따르게 한다. 중앙 IT가 모두 결정할지(centralized), 각 사업부가 결정할지(decentralized)는 조직 상황에 따라 고른다.
+
+> [!CHECK]
+> **7.** IS 부서를 이끄는 임원의 직책은?
+>
+> **8.** IT 거버넌스가 정하는 두 가지는 무엇인가?
+>
+> **9.** 중앙집중형 IT와 분산형 IT 중 표준화와 통제에 더 유리한 것은?
 
 ---
 
@@ -988,6 +1112,49 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 ---
 
+> [!PAGEBREAK]
+
+## 단원 마무리
+
+### 한 쪽 핵심 요약
+
+| 주제 | 꼭 기억할 것 |
+|---|---|
+| 협업 | 역량(개방 문화·분권 구조) + 기술 → 협업의 질 → 기업 성과 |
+| 시간·공간 매트릭스 | 같은/다른 시간 × 같은/다른 장소의 네 칸 |
+| 지식의 형태 | Explicit(문서) vs Tacit(경험), 지식은 sticky·situated·contextual |
+| KM 가치사슬 | Acquire → Store → Disseminate → Apply, Apply가 있어야 가치 |
+| KMS 세 유형 | 전사 KMS(관리) · KWS(창출) · 지능형 기법(발견) |
+| 콘텐츠 관리 | Taxonomy와 tagging이 검색의 핵심 |
+| IS 조직 | CIO · systems analyst · IT governance(decision rights + accountability) |
+
+### 단답형 연습 · Short Answer
+
+Write the term or a short answer in English. 답은 맨 끝 **정답과 해설**의 단답형 정답에서 확인한다.
+
+1. What is the use of internal and external social networking platforms to engage employees, customers, and suppliers called?  
+   Answer: ______________________________
+2. In the time/space collaboration matrix, what do we call collaboration that happens at the same time?  
+   Answer: ______________________________
+3. What is knowledge that resides in the minds of employees and has not been documented called?  
+   Answer: ______________________________
+4. What do we call the process by which organizations gain experience and change their business processes and decision patterns as a result?  
+   Answer: ______________________________
+5. List the four stages of the knowledge management value chain.  
+   Answer: ______________________________
+6. What are informal social networks of professionals and employees who share similar work-related activities and interests called?  
+   Answer: ______________________________
+7. Which type of KMS supports engineers and scientists in creating new knowledge, such as CAD and virtual reality systems?  
+   Answer: ______________________________
+8. What is the scheme of classifying information and knowledge so that it can be easily accessed called?  
+   Answer: ______________________________
+9. Who in the IS department translates business problems and requirements into information requirements and systems?  
+   Answer: ______________________________
+10. What framework specifies the decision rights and accountability that ensure IT supports the firm's strategies and objectives?  
+   Answer: ______________________________
+
+> [!PAGEBREAK]
+
 ## 개념 회상과 오개념 점검
 
 > [!QUIZ]
@@ -1018,3 +1185,34 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 > [!ANSWER]
 > **정답은 C이다.** A는 자료가 이미 수집되었다는 조건을 놓친 선택이다. B는 저장 자체를 가치 창출로 보는 오개념이다. D는 KM 문제를 hardware 문제로만 축소한 선택이다. 찾을 수 있게 전달하고 실제 업무에 적용해야 지식이 성과로 이어진다.
+
+> [!PAGEBREAK]
+
+## 정답과 해설
+
+먼저 스스로 답을 쓴 뒤 확인한다.
+
+### 확인 문제 정답
+
+1. **Collaboration capability**(개방적 문화, 분권적 구조, 협업의 폭)와 **collaboration technology**.
+2. **Same time · different place** → Remote interactions.
+3. 정보를 숨기지 않는 **정보 투명성**과 공유를 보상하는 문화.
+4. **Acquisition → Storage → Dissemination → Application.**
+5. Explicit knowledge는 **문서화된** 지식이고, tacit knowledge는 사람의 **경험 속에** 있어 문서로 옮기기 어려운 지식이다.
+6. **Enterprise-wide KMS, knowledge work systems, intelligent techniques.**
+7. **CIO**(Chief Information Officer).
+8. **Decision rights**(누가 결정하는가)와 **accountability**(누가 책임지는가).
+9. **중앙집중형(centralized).** 분산형은 현장 대응과 자율성에 유리하다.
+
+### 단답형 정답
+
+1. **Social business** — 소셜 플랫폼으로 직원·고객·공급업체와의 상호작용을 깊게 하는 것
+2. **Synchronous collaboration** — 같은 시간에 이루어지는 동기식 협업
+3. **Tacit knowledge** — 문서화되지 않고 사람의 경험 속에 있는 암묵지
+4. **Organizational learning** — 경험을 바탕으로 프로세스와 의사결정 방식을 바꾸는 조직 학습
+5. **Acquisition, storage, dissemination, application** — 획득 → 저장 → 전파 → 적용
+6. **Communities of practice (COPs)** — 같은 일을 하는 사람들의 비공식 네트워크
+7. **Knowledge work systems (KWS)** — 전문가의 새 지식 창출을 돕는 지식작업시스템
+8. **Taxonomy** — 콘텐츠를 쉽게 찾도록 분류하는 체계
+9. **Systems analyst** — 현업 요구를 시스템 요구사항으로 번역하는 시스템 분석가
+10. **IT governance** — IT 결정 권한과 책임을 정하는 IT 거버넌스

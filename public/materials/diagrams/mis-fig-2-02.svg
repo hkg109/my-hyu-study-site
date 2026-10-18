@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" role="img" aria-labelledby="mis-fig-2-02-title mis-fig-2-02-desc">
+  <title id="mis-fig-2-02-title">Figure 2.2 A Payroll TPS</title>
+  <desc id="mis-fig-2-02-desc">급여 TPS는 직원 데이터를 받아 급여를 계산하고 명세서·경영 보고서·총계정원장·정부 자료로 내보낸다</desc>
+  <defs><marker id="mis-fig-2-02-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-2-02-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-2-02-arrow);marker-end:url(#mis-fig-2-02-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-2-02-arrow);marker-end:url(#mis-fig-2-02-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="700"/><text class="tag" x="64" y="52">2장 · Figure 2.2</text><text class="title" x="64" y="92">A Payroll TPS</text><text class="subtitle" x="64" y="122">급여 TPS는 직원 데이터를 받아 급여를 계산하고 명세서·경영 보고서·총계정원장·정부 자료로 내보낸다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="focal" x="520" y="300" width="200" height="90" rx="6"/>
+  <text class="name inverse" x="620" y="340" text-anchor="middle">Payroll</text>
+  <text class="name inverse" x="620" y="364" text-anchor="middle">System</text>
+  <text class="label" x="300" y="196">Employee Data · 직원 데이터</text>
+  <path class="flow" d="M300 210 H 620 V 296"/>
+  <g><ellipse class="zone" cx="260" cy="380" rx="55" ry="14.399999999999999"/><rect class="zone" x="205" y="300" width="110" height="80" style="stroke:none"/><path class="line" d="M205 300 V 380 M315 300 V 380" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="zone" cx="260" cy="300" rx="55" ry="14.399999999999999"/></g>
+  <text class="label" x="150" y="316" text-anchor="end">Employee/File</text><text class="label" x="150" y="338" text-anchor="end">Database</text>
+  <path class="both" d="M318 345 H 516"/>
+  <path class="flow" d="M680 300 V 196 H 1180"/>
+  <text class="label" x="900" y="186">To General Ledger · 총계정원장</text>
+  <path class="flow" d="M720 345 H 900"/>
+  <text class="label" x="920" y="340">Management reports</text><text class="label" x="920" y="362">경영 보고서</text>
+  <path class="flow" d="M660 390 V 470 H 1180"/>
+  <text class="label" x="900" y="460">To government agencies · 정부 기관</text>
+  <path class="flow" d="M640 390 V 540 H 1180"/>
+  <text class="label" x="900" y="530">Employee paychecks · 급여명세서</text>
+  <path class="both" d="M600 394 V 570"/>
+  <text class="label" x="600" y="600" text-anchor="middle">Online queries</text><text class="label" x="600" y="622" text-anchor="middle">온라인 조회</text>
+  <rect class="zone" x="96" y="420" width="300" height="250" rx="6"/>
+  <text class="small" x="116" y="448">Payroll data on master file</text>
+  <text class="sub" x="116" y="478">Employee Number · Name · Address</text><text class="sub" x="116" y="508">Pay rate · Gross pay</text><text class="sub" x="116" y="538">Federal tax · FICA · Medicare</text><text class="sub" x="116" y="568">State tax · Net pay</text><text class="sub" x="116" y="598">Earnings (YTD)</text>
+</svg>

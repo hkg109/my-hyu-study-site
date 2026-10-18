@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="mis-fig-2-06-title mis-fig-2-06-desc">
+  <title id="mis-fig-2-06-title">Figure 2.6 Enterprise Application Architecture</title>
+  <desc id="mis-fig-2-06-desc">전사 시스템은 기능 부서와 관리 계층을 가로지르고, SCM은 공급자를, CRM은 고객을, KMS는 조직 지식을 연결한다</desc>
+  <defs><marker id="mis-fig-2-06-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-2-06-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-2-06-arrow);marker-end:url(#mis-fig-2-06-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-2-06-arrow);marker-end:url(#mis-fig-2-06-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="760"/><text class="tag" x="64" y="52">2장 · Figure 2.6</text><text class="title" x="64" y="92">Enterprise Application Architecture</text><text class="subtitle" x="64" y="122">전사 시스템은 기능 부서와 관리 계층을 가로지르고, SCM은 공급자를, CRM은 고객을, KMS는 조직 지식을 연결한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="zone" d="M640 170 L 1060 640 L 220 640 Z"/>
+  <ellipse class="deep" cx="640" cy="430" rx="100" ry="220"/>
+  <ellipse class="node" cx="640" cy="400" rx="380" ry="100"/>
+  <text class="name" x="640" y="250" text-anchor="middle">Enterprise Systems · 전사적 시스템</text>
+  <text class="name" x="400" y="390" text-anchor="middle">Supply Chain</text><text class="name" x="400" y="412" text-anchor="middle">Management Systems</text>
+  <text class="name" x="880" y="390" text-anchor="middle">Customer Relationship</text><text class="name" x="880" y="412" text-anchor="middle">Management Systems</text>
+  <text class="name" x="640" y="560" text-anchor="middle">Knowledge</text><text class="name" x="640" y="582" text-anchor="middle">Management Systems</text>
+  <path class="dashboth" d="M520 300 H 760"/>
+  <path class="dashboth" d="M520 420 H 760"/>
+  <text class="small" x="640" y="292" text-anchor="middle">Processes</text>
+  <text class="small" x="640" y="412" text-anchor="middle">Processes</text>
+  <text class="label" x="220" y="220" text-anchor="middle">Suppliers,</text><text class="label" x="220" y="242" text-anchor="middle">Business Partners</text>
+  <path class="both" d="M250 250 L 330 330"/>
+  <text class="label" x="1060" y="220" text-anchor="middle">Customers,</text><text class="label" x="1060" y="242" text-anchor="middle">Distributors</text>
+  <path class="both" d="M1030 250 L 950 330"/>
+  <text class="small" x="325" y="672" text-anchor="middle">Sales and Marketing</text>
+  <text class="small" x="535" y="672" text-anchor="middle">Manufacturing and Production</text>
+  <text class="small" x="745" y="672" text-anchor="middle">Finance and Accounting</text>
+  <text class="small" x="955" y="672" text-anchor="middle">Human Resources</text>
+  <text class="name" x="640" y="720" text-anchor="middle">FUNCTIONAL AREAS · 기능 부서</text>
+</svg>

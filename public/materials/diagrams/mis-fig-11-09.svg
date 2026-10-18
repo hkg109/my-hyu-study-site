@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 660" role="img" aria-labelledby="mis-fig-11-09-title mis-fig-11-09-desc">
+  <title id="mis-fig-11-09-title">Figure 11.9 Requirements of Knowledge Work Systems</title>
+  <desc id="mis-fig-11-09-desc">지식작업시스템은 외부 지식 기반, 전문 소프트웨어, 쓰기 쉬운 인터페이스, 강력한 워크스테이션으로 이루어진다</desc>
+  <defs><marker id="mis-fig-11-09-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-11-09-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-11-09-arrow);marker-end:url(#mis-fig-11-09-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-11-09-arrow);marker-end:url(#mis-fig-11-09-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="660"/><text class="tag" x="64" y="52">2장 · Figure 11.9</text><text class="title" x="64" y="92">Requirements of Knowledge Work Systems</text><text class="subtitle" x="64" y="122">지식작업시스템은 외부 지식 기반, 전문 소프트웨어, 쓰기 쉬운 인터페이스, 강력한 워크스테이션으로 이루어진다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="96" y="190" width="360" height="180" rx="6"/>
+  <text class="name" x="276" y="270" text-anchor="middle">External knowledge base</text><text class="name" x="276" y="296" text-anchor="middle">외부 지식 기반</text>
+  <path class="flow" d="M456 280 H 576"/>
+  <rect class="deep" x="580" y="176" width="600" height="330" rx="6"/>
+  <text class="name" x="880" y="214" text-anchor="middle">SOFTWARE · 소프트웨어</text>
+  <text class="label" x="880" y="252" text-anchor="middle">Graphics → Visualization</text><text class="label" x="880" y="280" text-anchor="middle">Modeling → Simulation</text><text class="label" x="880" y="308" text-anchor="middle">Document management</text><text class="label" x="880" y="336" text-anchor="middle">Communications</text>
+  <path class="both" d="M880 350 V 410"/>
+  <rect class="focal" x="720" y="414" width="320" height="70" rx="6"/>
+  <text class="name inverse" x="880" y="446" text-anchor="middle">User interface</text>
+  <text class="sub inverse" x="880" y="470" text-anchor="middle">사용자 인터페이스</text>
+  <path class="flow" d="M880 576 V 510"/>
+  <rect class="zone" x="96" y="580" width="1084" height="64" rx="6"/>
+  <text class="name" x="638" y="618" text-anchor="middle">Hardware platform: knowledge workstation · 지식 워크스테이션</text>
+</svg>

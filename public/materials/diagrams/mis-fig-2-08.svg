@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="mis-fig-2-08-title mis-fig-2-08-desc">
+  <title id="mis-fig-2-08-title">Figure 2.8 The Time/Space Collaboration and Social Tool Matrix</title>
+  <desc id="mis-fig-2-08-desc">같은 시간인지(동기·비동기), 같은 장소인지(대면·원격)에 따라 협업 도구가 나뉜다</desc>
+  <defs><marker id="mis-fig-2-08-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-2-08-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-2-08-arrow);marker-end:url(#mis-fig-2-08-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-2-08-arrow);marker-end:url(#mis-fig-2-08-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="760"/><text class="tag" x="64" y="52">2장 · Figure 2.8</text><text class="title" x="64" y="92">The Time/Space Collaboration and Social Tool Matrix</text><text class="subtitle" x="64" y="122">같은 시간인지(동기·비동기), 같은 장소인지(대면·원격)에 따라 협업 도구가 나뉜다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <text class="name" x="470" y="190" text-anchor="middle">Same time · synchronous</text>
+  <text class="name" x="910" y="190" text-anchor="middle">Different time · asynchronous</text>
+  <text class="name" x="150" y="360" text-anchor="middle">Same place</text>
+  <text class="sub" x="150" y="384" text-anchor="middle">colocated</text>
+  <text class="name" x="150" y="600" text-anchor="middle">Different place</text>
+  <text class="sub" x="150" y="624" text-anchor="middle">remote</text>
+  <rect class="node" x="250" y="210" width="440" height="240" rx="0"/>
+  <rect class="zone" x="690" y="210" width="440" height="240" rx="0"/>
+  <rect class="zone" x="250" y="450" width="440" height="240" rx="0"/>
+  <rect class="deep" x="690" y="450" width="440" height="240" rx="0"/>
+  <text class="name" x="470" y="280" text-anchor="middle">Face-to-face interactions</text><text class="sub" x="470" y="310" text-anchor="middle">decision rooms, single display groupware,</text><text class="sub" x="470" y="332" text-anchor="middle">shared table, wall displays, roomware</text>
+  <text class="name" x="910" y="280" text-anchor="middle">Continuous task</text><text class="sub" x="910" y="310" text-anchor="middle">team rooms, large public display,</text><text class="sub" x="910" y="332" text-anchor="middle">shift work groupware, project management</text>
+  <text class="name" x="470" y="560" text-anchor="middle">Remote interactions</text><text class="sub" x="470" y="590" text-anchor="middle">video conferencing, instant messaging,</text><text class="sub" x="470" y="612" text-anchor="middle">virtual worlds, shared screens, multi-user editors</text>
+  <text class="name" x="910" y="560" text-anchor="middle">Communication + coordination</text><text class="sub" x="910" y="590" text-anchor="middle">e-mail, bulletin boards, blogs, group calendars,</text><text class="sub" x="910" y="612" text-anchor="middle">workflow, version control, wikis</text>
+  <rect class="focal" x="500" y="412" width="380" height="76" rx="6"/>
+  <text class="name inverse" x="690" y="444" text-anchor="middle">Time/Space Collaboration</text><text class="name inverse" x="690" y="468" text-anchor="middle">and Social Tool Matrix</text>
+</svg>

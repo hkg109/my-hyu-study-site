@@ -1,9 +1,9 @@
 ---
 title: "2장 A · 프로세스에서 전사 시스템까지"
-description: "비즈니스 프로세스에서 TPS·MIS·DSS·ESS와 ERP·SCM·CRM·KMS까지, 슬라이드 흐름을 따라 연결하는 Chapter 2 전반부 필기."
+description: "비즈니스 프로세스에서 TPS·MIS·DSS·ESS와 ERP·SCM·CRM·KMS까지, 교재 그림과 개념·판서·해설·오답 주의·예제·확인 문제로 정리한 Chapter 2 전반부 교재형 필기."
 order: 2
 published: true
-duration: 80
+duration: 100
 tags: [정시개, MIS, 2장, 비즈니스 프로세스, TPS, ERP]
 objectives:
   - 비즈니스 프로세스와 정보시스템의 관계를 설명한다.
@@ -18,6 +18,20 @@ objectives:
 **범위:** Chapter 2 슬라이드 2–29 · Process → Management Systems → Enterprise Integration
 
 [Chapter 2 원본 PDF](/materials/mis-exam-slides/ch02_17ed.pdf) · [Chapter 2 확장 PDF](/materials/mis-exam-slides/ch02_17ed_final.pdf)
+
+## 단원 도입
+
+| 출제 포인트 | 빈도 | 이렇게 나온다 |
+|---|:---:|---|
+| TPS · MIS · DSS · ESS 구분 | ★★★ | 사용자와 결정 유형으로 시스템 고르기 |
+| ERP · SCM · CRM · KMS 구분 | ★★★ | 연결하는 경계로 시스템 고르기 |
+| Business process, cross-functional | ★★ | 정의, 주문 이행 사례 |
+| IT가 프로세스를 바꾸는 두 방식 | ★★ | 자동화 vs 재설계 |
+| Intranet · Extranet · E-business | ★★ | 범위와 포함 관계 |
+
+**책 읽는 법:** 슬라이드 제목 아래의 짧은 목록과 요약 한 줄이 강의 **핵심 필기**다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
+
+> [!PAGEBREAK]
 
 ## Chapter 2 개요
 
@@ -39,6 +53,8 @@ objectives:
 > **핵심 흐름: Process → Systems → Enterprise Integration → Collaboration → Knowledge → IS Function**
 
 ---
+
+## PART 1 · 비즈니스 프로세스와 IT
 
 ## Slide 3 — Sharp Corporation Case (1/2)
 
@@ -88,11 +104,14 @@ objectives:
 
 > **Business Process = 업무를 수행하는 연결된 task들의 흐름**
 
+> [!CONCEPT]
+> **Business process** — 특정 업무를 수행하기 위해 논리적으로 연결된 활동의 집합. 물자·정보·지식의 흐름이며, 여러 부서를 가로지르면 **cross-functional**이다.
+
+
 > [!NOTE]
 > 카페에서 “주문 받기 → 음료 만들기 → 전달하기 → 결제 기록하기”는 하나의 business process다. 각 단계는 따로 떨어진 일이 아니라 앞 단계의 정보(주문 내용)를 받아 다음 단계로 넘기는 흐름이다. 이 흐름이 잘 설계되어 있으면 손님이 몰려도 실수가 적은 **asset**이 되고, 예전 방식 그대로라 주문이 자주 누락되면 **liability**가 된다.
 
 **답안 틀:** 무엇이 흐르는가(material · information · knowledge) → 어떤 task가 이어지는가 → 한 부서 안인가, 여러 부서를 가로지르는가.
-
 ---
 
 ## Slide 6 — Business Processes (2/2)
@@ -136,6 +155,12 @@ objectives:
 
 > **Order fulfillment = Sales + Accounting + Manufacturing의 coordination**
 
+### 교재 그림 · Figure 2.1
+
+![영업 회계 생산 세 부서를 가로지르며 주문 작성부터 배송까지 이어지는 주문 이행 프로세스 그림](/materials/diagrams/mis-fig-2-01.svg)
+
+*Figure 2.1 · The Order Fulfillment Process — 한 주문이 세 기능 부서를 가로지른다.*
+
 ### 개념도 · 한 주문이 부서를 가로지르는 과정
 
 ![고객 주문이 영업, 회계, 재고 확인, 생산과 배송을 거쳐 완료되고 예외와 고객 피드백이 다시 영업으로 돌아오는 흐름](/materials/diagrams/mis-02-order-fulfillment.svg)
@@ -163,6 +188,9 @@ objectives:
 
 자동화와 프로세스 재설계의 차이는 **업무 순서가 바뀌었는가**로 확인할 수 있다. 기존 승인 절차를 그대로 두고 입력만 빨라졌다면 효율화이고, 같은 주문 정보를 여러 부서가 동시에 확인해 순차적인 전달·대기를 줄였다면 정보 흐름 자체를 바꾼 것이다.
 
+> [!TRAP]
+> **자동화(automation)**는 기존 순서를 그대로 두고 빠르게 하는 것이고, **프로세스 재설계**는 정보 흐름을 바꿔 순서 자체를 바꾸는 것이다(차례대로 → 동시에).
+
 ---
 
 ## Slide 9 — AI Changes the Design of Business Processes
@@ -179,6 +207,10 @@ objectives:
 
 ---
 
+> [!PAGEBREAK]
+
+## PART 2 · 관리 계층별 정보시스템
+
 ## Slide 10 — TPS (Transaction Processing Systems)
 
 - **Target**: operational managers & staff
@@ -190,9 +222,12 @@ objectives:
 
 > **TPS = operational level의 반복적이고 structured한 transaction을 처리·기록**
 
+> [!CONCEPT]
+> **TPS** — 주문·급여·배송 같은 **일상적이고 정형화된 거래**를 처리하고 기록하는 시스템. 운영 수준의 직원이 쓰고, 다른 모든 시스템의 데이터 원천이 된다.
+
+
 > [!NOTE]
 > TPS는 회사의 “기록 담당”이다. 카페의 POS가 주문 한 건 한 건을 시간·메뉴·금액과 함께 남기는 것처럼, 매일 반복되는 거래를 정확하게 처리하고 저장한다. 판단은 거의 하지 않고 “어제 몇 잔 팔았나?”, “이 주문은 결제됐나?” 같은 **정해진 질문**에 답한다. TPS가 멈추면 주문도 급여도 처리되지 않으므로 위 단계 시스템 모두가 이 데이터에 의존한다.
-
 ---
 
 ## Slide 11 — Figure 2.2 Payroll TPS
@@ -215,9 +250,13 @@ objectives:
 
 > **Employee Data → Payroll Processing → Paychecks / Reports / Ledger / Government**
 
+![직원 데이터와 직원 파일 데이터베이스를 받아 급여 시스템이 총계정원장 경영 보고서 정부 기관 급여명세서로 내보내는 그림](/materials/diagrams/mis-fig-2-02.svg)
+
+*Figure 2.2 · A Payroll TPS — 하나의 거래 처리 결과가 여러 사용자에게 다른 형태로 쓰인다.*
+
+
 > [!NOTE]
 > 급여 TPS는 직원 데이터(시급·근무시간·세율)를 받아 급여를 계산하고, 그 결과를 여러 곳으로 내보낸다. 직원은 급여명세서를, 관리자는 인건비 보고서를, 회계는 총계정원장(General Ledger) 기록을, 정부는 세금 자료를 받는다. **하나의 거래 처리 결과가 여러 사용자에게 다른 형태로 쓰인다**는 점이 TPS가 회사 전체의 기반인 이유다.
-
 ---
 
 ## Slide 12 — Business Intelligence (BI)
@@ -237,6 +276,9 @@ objectives:
 
 > [!NOTE]
 > BI는 특정 시스템 한 개의 이름이 아니라 **데이터를 모아 분석하는 도구와 방법 전체**를 부르는 큰 우산이다. MIS·DSS·ESS는 그 우산 아래에서 누구의 어떤 결정을 돕느냐에 따라 나뉜다. 그래서 “BI vs MIS” 문제는 “큰 범주 vs 그 안의 한 유형”으로 답한다.
+
+> [!TRAP]
+> **BI는 큰 범주**(데이터와 분석 도구 전체)이고, MIS·DSS·ESS는 그 안에서 누구의 어떤 결정을 돕느냐로 나뉜 시스템이다. “BI vs MIS”는 범주 vs 구성원의 비교다.
 
 ---
 
@@ -290,9 +332,13 @@ objectives:
 
 > **TPS → summarized data → MIS → Reports / Dashboards → Managers**
 
+![주문 처리 자재 소요 계획 총계정원장 TPS의 데이터가 MIS 파일로 요약되어 MIS를 거쳐 보고서와 대시보드로 관리자에게 가는 그림](/materials/diagrams/mis-fig-2-03.svg)
+
+*Figure 2.3 · How MIS Obtain Their Data from the Organization’s TPS — TPS의 거래 데이터를 요약해 보고서로 만든다.*
+
+
 > [!NOTE]
 > 그림의 핵심 화살표는 **summarized transaction data**다. MIS는 새 데이터를 만들지 않고 TPS가 이미 기록한 주문·자재·회계 데이터를 요약해 파일로 모은 뒤, 보고서와 대시보드로 관리자에게 보여 준다. 그래서 TPS 데이터가 틀리면 MIS 보고서도 그대로 틀린다.
-
 ---
 
 ## Slide 15 — Figure 2.4 Sample MIS Report
@@ -339,6 +385,14 @@ objectives:
 
 MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 middle manager가 같은 판매 기록을 보더라도, MIS는 ‘계획 대비 실적이 얼마인가’를 정해진 형식으로 보여 주고 DSS는 ‘수요가 달라지면 어떤 선택이 유리한가’를 분석한다. 핵심은 **정기적인 현황 확인인지, 조건을 바꿔 보는 판단인지**이다.
 
+> [!CONCEPT]
+> **Model-driven DSS** — 분석 모델(what-if, 시뮬레이션) 중심. **Data-driven DSS** — 대량의 데이터에서 쓸모 있는 정보를 찾아냄.
+
+> [!PROBLEM]
+> **문제.** 한 관리자가 “12월 판매가 두 배가 되면 생산 일정은 어떻게 바뀌나?”를 알고 싶다. 어떤 시스템이 알맞은가?
+>
+> **풀이.** ① 정해진 보고서가 아니라 **조건을 바꿔 보는 질문**이다 → non-routine ② 사용자는 중간관리자다 ③ **DSS**(그중 모델 중심 DSS).
+
 ---
 
 ## Slide 17 — Figure 2.5 Voyage-Estimating DSS
@@ -364,9 +418,13 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > **다양한 data + analytical model → shipping bid와 운항 의사결정 지원**
 
+![선박 항구 연료 용선료 항구 비용 파일이 분석 모델 데이터베이스로 모여 PC의 온라인 조회로 이어지는 그림](/materials/diagrams/mis-fig-2-05.svg)
+
+*Figure 2.5 · Voyage-Estimating Decision Support System — 대표적인 모델 중심 DSS.*
+
+
 > [!NOTE]
 > 해운회사는 배의 속도·적재량, 항구 간 거리, 연료비, 항구 비용을 조합해 “어느 배를 어디로, 얼마나 싣고, 어떤 속도로 보내야 이익이 가장 큰가”를 계산한다. 조건이 매번 달라서 정해진 보고서로는 답할 수 없는 **non-routine decision**이고, 분석 모델(Analytical Models)이 여러 시나리오를 비교해 준다. DSS가 **model-driven**이라는 말의 대표 사례다.
-
 ---
 
 ## Slide 18 — Executive Support Systems (ESS) (1/2)
@@ -390,9 +448,12 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > **ESS = senior managers가 strategic decision을 빠르게 내리도록 핵심 정보를 제공**
 
+> [!CONCEPT]
+> **ESS** — 최고경영진의 **전략적·비정형 결정**을 지원. 세법·경쟁사 같은 **외부 정보**와 MIS·DSS가 요약한 내부 정보를 **digital dashboard**로 한눈에 보여 준다.
+
+
 > [!NOTE]
 > 사장은 “이번 달 아메리카노가 몇 잔 팔렸나”보다 “경쟁사가 근처에 매장을 내면 우리는 어떻게 대응할까”를 고민한다. 이런 결정에는 정답 공식이 없어서 판단(judgment)과 통찰(insight)이 필요하다. ESS는 세법 변화·경쟁사 동향 같은 **외부 정보**와 MIS·DSS가 요약한 **내부 핵심 지표**를 한 화면의 Digital Dashboard로 보여 줘서 그 판단을 돕는다.
-
 ---
 
 ## Slide 19 — ESS + MIS + DSS Connection
@@ -419,7 +480,22 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 **그림 읽기:** TPS는 일상 거래를 기록하는 기반이고, MIS는 이를 정기 보고서로 요약하며 DSS는 같은 내부 데이터와 외부 데이터를 분석한다. ESS는 MIS와 DSS의 핵심 정보를 받아 전략적 판단을 지원한다. 오른쪽의 ERP·SCM·CRM·KMS는 특정 계층에만 속하는 시스템이 아니라 부서와 관리 수준의 경계를 가로질러 연결한다.
 
+> [!BOARD]
+> - **TPS**(운영 · 정형 거래) → **MIS**(중간 · 정기 보고) / **DSS**(중간 · 비정형 분석) → **ESS**(최고 · 전략)
+> - 아래 시스템의 데이터가 위 시스템의 품질을 결정한다
+
+> [!CHECK]
+> **1.** 관리 수준별 네 가지 시스템을 운영 단계부터 순서대로 쓰시오.
+>
+> **2.** MIS와 DSS를 구분하는 핵심 기준은 무엇인가?
+>
+> **3.** ESS가 MIS·DSS와 달리 특히 많이 쓰는 정보는 무엇인가?
+
 ---
+
+> [!PAGEBREAK]
+
+## PART 3 · 전사 애플리케이션과 인터넷
 
 ## Slide 20 — Enterprise Applications
 
@@ -468,6 +544,12 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > **Enterprise Applications는 내부 부서뿐 아니라 suppliers / customers까지 연결**
 
+### 교재 그림 · Figure 2.6
+
+![기능 부서 피라미드 위에 전사 시스템 SCM CRM KMS가 겹쳐 놓인 전사 애플리케이션 구조 그림](/materials/diagrams/mis-fig-2-06.svg)
+
+*Figure 2.6 · Enterprise Application Architecture — 기능 부서와 관리 계층을 가로지르는 전사 애플리케이션.*
+
 ### 개념도 · Enterprise applications의 역할 분담
 
 ![ERP의 공통 내부 데이터를 중심으로 SCM은 공급자와 물류를, CRM은 고객 접점을, KMS는 조직 지식을 연결하는 구조](/materials/diagrams/mis-02-enterprise-applications.svg)
@@ -497,6 +579,12 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **ERP = 여러 부서의 data를 하나의 central repository로 통합**
 
 앞의 주문 이행 사례에 대입하면 ERP의 의미가 선명해진다. 영업이 입력한 주문을 회계와 생산이 각자 다시 입력하는 대신 같은 기록을 기준으로 업무를 이어 간다. 중앙 저장소의 목적은 데이터를 한곳에 모으는 것 자체보다 부서마다 다른 기록 때문에 생기는 조정 문제를 줄이는 데 있다.
+
+> [!CONCEPT]
+> **ERP(Enterprise system)** — 여러 기능 부서의 데이터를 **하나의 중앙 저장소**에 모아 부서마다 흩어진 데이터 문제를 해결하는 시스템.
+
+> [!TRAP]
+> **Enterprise applications**(ERP·SCM·CRM·KMS 전체)와 **enterprise systems**(그중 ERP)를 혼동하지 말자. 이 장에서 ES ≈ ERP다.
 
 ---
 
@@ -540,9 +628,12 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > **SCM = supply chain 전체의 product / information flow를 최적화**
 
+> [!CONCEPT]
+> **Inter-organizational system** — 공급업체·유통업체·물류업체처럼 **조직 경계를 넘어** 정보 흐름을 자동화하는 시스템. SCM이 대표적이다.
+
+
 > [!NOTE]
 > 카페가 원두 업체, 우유 업체, 배송 업체와 주문·재고 정보를 공유하면, 원두가 떨어지기 전에 자동으로 발주가 나가고 배송 일정도 맞출 수 있다. SCM은 이렇게 **회사 바깥의 여러 조직을 잇는 inter-organizational system**이라는 점이 ERP와 다르다. 목표는 “필요한 양을, 필요한 곳에, 가장 빨리, 가장 싸게”라는 네 조건을 동시에 맞추는 것이다.
-
 ---
 
 ## Slide 25 — Walmart’s AI-Enabled Supply Chain
@@ -576,9 +667,12 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > **CRM = customer data와 customer-facing processes를 통합해 관계와 sales를 개선**
 
+> [!CONCEPT]
+> **CRM** — 영업·마케팅·서비스의 고객 관련 프로세스를 통합해, 수익성 높은 고객을 찾아 **유지(retention)**하고 매출을 높인다.
+
+
 > [!NOTE]
 > 단골손님이 매번 디카페인 라테를 주문한다는 기록이 영업·마케팅·서비스 담당자 모두에게 보이면, 신메뉴 쿠폰을 그 손님에게 맞춰 보내고 불만 전화가 와도 이력을 보고 응대할 수 있다. CRM의 핵심은 고객 정보를 **한곳에 모아 고객 접점 프로세스 전체가 같은 정보를 쓰게** 하는 것이다. 특히 이익을 많이 주는 고객을 찾아 유지(retention)하는 데 초점이 있다.
-
 ---
 
 ## Slide 27 — Knowledge Management Systems (KMS)
@@ -623,6 +717,9 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > [!NOTE]
 > 직원만 들어가는 사내 공지·매뉴얼 사이트가 Intranet이고, 여기에 원두 공급업체가 로그인해 우리 재고와 발주서를 볼 수 있게 열어 주면 Extranet이다. 둘 다 인터넷 기술을 쓰지만 **누구에게 문을 열어 주느냐**가 다르다. Extranet은 SCM처럼 외부 파트너와의 협업을 위한 통로가 된다.
 
+> [!TRAP]
+> 둘 다 인터넷 기술을 쓴다. 차이는 **누구에게 문을 여느냐**다. 직원만 → intranet, 허가된 외부 파트너까지 → extranet.
+
 ---
 
 ## Slide 29 — E-Business, E-Commerce, E-Government
@@ -638,7 +735,61 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > [!NOTE]
 > 카페가 앱으로 원두를 판매하면 E-commerce이고, 그 판매를 포함해 직원 근무표·발주·회계까지 디지털로 처리하면 E-business다. 즉 E-commerce는 “사고파는 것”만 보는 **부분집합**이다. 정부가 온라인으로 민원과 공공 정보를 제공하는 것은 E-government로, 주체가 공공부문이라는 점이 다르다.
 
+> [!TRAP]
+> **E-commerce ⊂ E-business.** “e-business는 e-commerce의 일부”라는 보기는 포함 관계를 거꾸로 쓴 오답이다.
+
+> [!CHECK]
+> **4.** ERP가 해결하는 핵심 문제는 무엇인가?
+>
+> **5.** SCM을 조직 간 시스템이라고 부르는 이유는?
+>
+> **6.** Intranet과 extranet의 차이를 한 문장으로 쓰시오.
+
 ---
+
+> [!PAGEBREAK]
+
+## 단원 마무리
+
+### 한 쪽 핵심 요약
+
+| 주제 | 꼭 기억할 것 |
+|---|---|
+| Business process | 연결된 활동의 흐름, 중요한 프로세스는 대부분 cross-functional |
+| IT와 프로세스 | 자동화(기존 순서 유지) vs 재설계(정보 흐름·순서 변경) |
+| TPS | 운영 수준, 일상 거래 처리·기록 |
+| MIS / DSS | 중간관리자, 정기 보고 vs 비정형 분석 |
+| ESS | 최고경영진, 외부 정보 + 요약 지표, digital dashboard |
+| ERP / SCM / CRM / KMS | 내부 통합 / 공급망 / 고객 / 지식 |
+| Intranet / Extranet | 직원만 / 허가된 외부 파트너까지 |
+| E-commerce / E-business | 사고팔기 ⊂ 전체 디지털 비즈니스 |
+
+### 단답형 연습 · Short Answer
+
+Write the term or a short answer in English. 답은 맨 끝 **정답과 해설**의 단답형 정답에서 확인한다.
+
+1. What is a logically related set of activities that defines how specific business tasks are performed?  
+   Answer: ______________________________
+2. What do we call a business process that requires input and coordination from several functional areas?  
+   Answer: ______________________________
+3. Which system performs and records the daily routine transactions necessary to conduct business?  
+   Answer: ______________________________
+4. Which system summarizes TPS data to give middle managers routine reports on the firm's current performance?  
+   Answer: ______________________________
+5. Which system combines data and analytical models to support non-routine decision making by middle managers?  
+   Answer: ______________________________
+6. What do we call the display that presents a firm's key performance indicators on a single screen for senior managers?  
+   Answer: ______________________________
+7. Which enterprise application integrates data from functional areas into a single central data repository?  
+   Answer: ______________________________
+8. What type of system, such as SCM, automates the flow of information across organizational boundaries?  
+   Answer: ______________________________
+9. What is an internal network based on Internet standards that is available only to employees called?  
+   Answer: ______________________________
+10. What is the buying and selling of goods and services over the Internet called?  
+   Answer: ______________________________
+
+> [!PAGEBREAK]
 
 ## 개념 회상과 오개념 점검
 
@@ -670,3 +821,31 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > [!ANSWER]
 > **정답은 C, DSS이다.** A는 operational transaction 기록과 의사결정 분석을 혼동한 선택이다. B는 routine report와 non-routine analysis를 혼동한 선택이다. D는 middle management와 senior management의 전략적 조망을 혼동한 선택이다.
+
+> [!PAGEBREAK]
+
+## 정답과 해설
+
+먼저 스스로 답을 쓴 뒤 확인한다.
+
+### 확인 문제 정답
+
+1. **TPS → MIS → DSS → ESS.**
+2. MIS는 **정형적·정기적 보고**로 현재 성과를 보여 주고, DSS는 **비정형 결정**을 위해 조건을 바꿔 분석한다.
+3. 세법·경쟁사 동향 같은 **외부 정보**와 MIS·DSS가 요약한 핵심 지표.
+4. 부서마다 데이터가 흩어진 **fragmented data** 문제. 하나의 중앙 저장소로 통합한다.
+5. 공급업체·유통업체·물류업체 등 **조직 경계를 넘어** 주문·생산·재고 정보를 자동으로 주고받기 때문이다.
+6. Intranet은 **직원만** 쓰는 내부 네트워크이고, extranet은 **허가된 외부 파트너**에게까지 접근을 연 네트워크다.
+
+### 단답형 정답
+
+1. **Business process** — 특정 업무를 수행하는 논리적으로 연결된 활동의 집합
+2. **Cross-functional business process** — 여러 기능 부서를 가로지르는 비즈니스 프로세스
+3. **Transaction processing system (TPS)** — 일상 거래를 처리·기록하는 거래처리시스템
+4. **Management information system (MIS)** — TPS 데이터를 요약해 중간관리자에게 정기 보고서를 주는 MIS
+5. **Decision support system (DSS)** — 데이터와 분석 모델로 비정형 결정을 지원하는 DSS
+6. **Digital dashboard** — 핵심 성과 지표를 한 화면에 보여 주는 디지털 대시보드(ESS)
+7. **Enterprise system (enterprise resource planning, ERP)** — 기능 부서 데이터를 하나의 중앙 저장소로 통합하는 ERP
+8. **Inter-organizational system** — 조직 경계를 넘어 정보 흐름을 자동화하는 조직 간 시스템
+9. **Intranet** — 직원만 쓰는 인터넷 기술 기반 내부 네트워크
+10. **E-commerce** — 인터넷으로 사고파는 전자상거래. e-business의 부분집합

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-fig-11-01-title mis-fig-11-01-desc">
+  <title id="mis-fig-11-01-title">Figure 11.1 The Knowledge Management Value Chain</title>
+  <desc id="mis-fig-11-01-desc">획득·저장·전파·적용의 각 단계에서 정보시스템 활동과 경영·조직 활동이 함께 가치를 더한다</desc>
+  <defs><marker id="mis-fig-11-01-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-11-01-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-11-01-arrow);marker-end:url(#mis-fig-11-01-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-11-01-arrow);marker-end:url(#mis-fig-11-01-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="720"/><text class="tag" x="64" y="52">2장 · Figure 11.1</text><text class="title" x="64" y="92">The Knowledge Management Value Chain</text><text class="subtitle" x="64" y="122">획득·저장·전파·적용의 각 단계에서 정보시스템 활동과 경영·조직 활동이 함께 가치를 더한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <text class="name" x="640" y="186" text-anchor="middle">Knowledge Business Value Chain</text>
+  <path class="deep" d="M64 200 H 254 L 276 228 L 254 256 H 64 L 86 228 Z"/><text class="label" x="170" y="234" text-anchor="middle">Data and Information</text>
+  <path class="zone" d="M290 200 H 480 L 502 228 L 480 256 H 290 L 312 228 Z"/><text class="label" x="396" y="234" text-anchor="middle">Acquire</text>
+  <path class="zone" d="M516 200 H 706 L 728 228 L 706 256 H 516 L 538 228 Z"/><text class="label" x="622" y="234" text-anchor="middle">Store</text>
+  <path class="zone" d="M742 200 H 932 L 954 228 L 932 256 H 742 L 764 228 Z"/><text class="label" x="848" y="234" text-anchor="middle">Disseminate</text>
+  <path class="zone" d="M968 200 H 1158 L 1180 228 L 1158 256 H 968 L 990 228 Z"/><text class="label" x="1074" y="234" text-anchor="middle">Apply</text>
+  <rect class="deep" x="290" y="290" width="900" height="200" rx="6"/>
+  <text class="name" x="740" y="316" text-anchor="middle">Information System Activities · 정보시스템 활동</text>
+  <text class="name" x="310" y="350">Acquire</text><text class="sub" x="310" y="376">Business analytics</text><text class="sub" x="310" y="398">Data mining · Neural networks</text><text class="sub" x="310" y="420">Machine learning</text><text class="sub" x="310" y="442">Knowledge workstations</text>
+  <text class="name" x="532" y="350">Store</text><text class="sub" x="532" y="376">Content management systems</text><text class="sub" x="532" y="398">Knowledge databases</text><text class="sub" x="532" y="420">Expert systems</text>
+  <text class="name" x="754" y="350">Disseminate</text><text class="sub" x="754" y="376">Portals · Search engines</text><text class="sub" x="754" y="398">Collaboration and</text><text class="sub" x="754" y="420">social business tools</text>
+  <text class="name" x="976" y="350">Apply</text><text class="sub" x="976" y="376">Decision support systems</text><text class="sub" x="976" y="398">Enterprise applications</text><text class="sub" x="976" y="420">Robotics</text>
+  <text class="name" x="740" y="530" text-anchor="middle">Management and Organizational Activities · 경영·조직 활동</text>
+  <text class="sub" x="310" y="562">Knowledge culture</text><text class="sub" x="310" y="584">Communities of practice</text><text class="sub" x="310" y="606">Social networks</text>
+  <text class="sub" x="532" y="562">Organizational routines</text><text class="sub" x="532" y="584">Organizational culture</text>
+  <text class="sub" x="754" y="562">Training</text><text class="sub" x="754" y="584">Collaboration</text>
+  <text class="sub" x="976" y="562">New IT-based processes</text><text class="sub" x="976" y="584">New products and services</text><text class="sub" x="976" y="606">New markets</text>
+  <text class="label" x="80" y="330">Data and</text><text class="label" x="80" y="354">Information</text><text class="label" x="80" y="378">Acquisition</text><text class="label" x="80" y="402">Collecting</text><text class="label" x="80" y="426">Storing</text><text class="label" x="80" y="450">Disseminating</text>
+  <path class="flow" d="M1210 256 V 690 H 100 V 486"/>
+  <text class="small" x="110" y="660">Feedback · 피드백</text>
+</svg>

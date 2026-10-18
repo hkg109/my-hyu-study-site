@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="mis-fig-2-01-title mis-fig-2-01-desc">
+  <title id="mis-fig-2-01-title">Figure 2.1 The Order Fulfillment Process</title>
+  <desc id="mis-fig-2-01-desc">한 고객 주문이 영업·회계·생산 부서를 차례로 가로지르는 cross-functional 프로세스</desc>
+  <defs><marker id="mis-fig-2-01-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-2-01-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-2-01-arrow);marker-end:url(#mis-fig-2-01-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-2-01-arrow);marker-end:url(#mis-fig-2-01-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="640"/><text class="tag" x="64" y="52">2장 · Figure 2.1</text><text class="title" x="64" y="92">The Order Fulfillment Process</text><text class="subtitle" x="64" y="122">한 고객 주문이 영업·회계·생산 부서를 차례로 가로지르는 cross-functional 프로세스</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <circle class="zone" cx="160" cy="220" r="64"/><text class="name" x="160" y="218" text-anchor="middle">Sales</text><text class="sub" x="160" y="242" text-anchor="middle">영업</text>
+  <circle class="zone" cx="160" cy="370" r="64"/><text class="name" x="160" y="368" text-anchor="middle">Accounting</text><text class="sub" x="160" y="392" text-anchor="middle">회계</text>
+  <circle class="zone" cx="160" cy="530" r="64"/>
+  <text class="name" x="160" y="518" text-anchor="middle">Manufacturing</text>
+  <text class="small" x="160" y="538" text-anchor="middle">and Production</text>
+  <text class="sub" x="160" y="560" text-anchor="middle">생산</text>
+  <path class="dash" d="M260 300 H 1200"/>
+  <path class="dash" d="M260 450 H 1200"/>
+  <path class="dash" d="M260 610 H 1200"/>
+  <rect class="node" x="280" y="184" width="180" height="74" rx="6"/><text class="name" x="370" y="216" text-anchor="middle">Generate order</text><text class="sub" x="370" y="240" text-anchor="middle">주문 작성</text>
+  <rect class="node" x="500" y="184" width="180" height="74" rx="6"/><text class="name" x="590" y="216" text-anchor="middle">Submit order</text><text class="sub" x="590" y="240" text-anchor="middle">주문 제출</text>
+  <rect class="node" x="500" y="334" width="180" height="74" rx="6"/><text class="name" x="590" y="366" text-anchor="middle">Check credit</text><text class="sub" x="590" y="390" text-anchor="middle">신용 확인</text>
+  <rect class="node" x="720" y="334" width="180" height="74" rx="6"/><text class="name" x="810" y="366" text-anchor="middle">Approve credit</text><text class="sub" x="810" y="390" text-anchor="middle">신용 승인</text>
+  <rect class="node" x="940" y="334" width="180" height="74" rx="6"/><text class="name" x="1030" y="366" text-anchor="middle">Generate invoice</text><text class="sub" x="1030" y="390" text-anchor="middle">송장 발행</text>
+  <rect class="node" x="720" y="494" width="180" height="74" rx="6"/><text class="name" x="810" y="526" text-anchor="middle">Assemble product</text><text class="sub" x="810" y="550" text-anchor="middle">제품 조립</text>
+  <rect class="node" x="940" y="494" width="180" height="74" rx="6"/><text class="name" x="1030" y="526" text-anchor="middle">Ship product</text><text class="sub" x="1030" y="550" text-anchor="middle">배송</text>
+  <path class="flow" d="M460 221 H 496"/>
+  <path class="flow" d="M590 258 V 330"/>
+  <path class="flow" d="M680 371 H 716"/>
+  <path class="flow" d="M900 371 H 936"/>
+  <path class="flow" d="M810 408 V 490"/>
+  <path class="flow" d="M900 531 H 936"/>
+</svg>

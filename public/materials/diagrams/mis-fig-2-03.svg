@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 680" role="img" aria-labelledby="mis-fig-2-03-title mis-fig-2-03-desc">
+  <title id="mis-fig-2-03-title">Figure 2.3 How MIS Obtain Their Data from the Organization’s TPS</title>
+  <desc id="mis-fig-2-03-desc">TPS의 거래 데이터가 MIS 파일로 요약되어 보고서와 대시보드로 관리자에게 전달된다</desc>
+  <defs><marker id="mis-fig-2-03-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-2-03-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-2-03-arrow);marker-end:url(#mis-fig-2-03-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-2-03-arrow);marker-end:url(#mis-fig-2-03-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="680"/><text class="tag" x="64" y="52">2장 · Figure 2.3</text><text class="title" x="64" y="92">How MIS Obtain Their Data from the Organization’s TPS</text><text class="subtitle" x="64" y="122">TPS의 거래 데이터가 MIS 파일로 요약되어 보고서와 대시보드로 관리자에게 전달된다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <text class="name" x="240" y="186" text-anchor="middle">Transaction Processing Systems</text>
+  <text class="name" x="640" y="186" text-anchor="middle">Management Information Systems</text>
+  <g><ellipse class="zone" cx="110" cy="262" rx="35" ry="10.08"/><rect class="zone" x="75" y="206" width="70" height="56" style="stroke:none"/><path class="line" d="M75 206 V 262 M145 206 V 262" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="zone" cx="110" cy="206" rx="35" ry="10.08"/></g><text class="small" x="110" y="290" text-anchor="middle">Order file</text><path class="both" d="M150 240 H 196"/><rect class="node" x="200" y="200" width="220" height="80" rx="6"/><text class="label" x="310" y="234" text-anchor="middle">Order processing</text><text class="label" x="310" y="254" text-anchor="middle">system</text>
+  <g><ellipse class="zone" cx="110" cy="422" rx="35" ry="10.08"/><rect class="zone" x="75" y="366" width="70" height="56" style="stroke:none"/><path class="line" d="M75 366 V 422 M145 366 V 422" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="zone" cx="110" cy="366" rx="35" ry="10.08"/></g><text class="small" x="110" y="450" text-anchor="middle">Production master file</text><path class="both" d="M150 400 H 196"/><rect class="node" x="200" y="360" width="220" height="80" rx="6"/><text class="label" x="310" y="394" text-anchor="middle">Materials resource</text><text class="label" x="310" y="414" text-anchor="middle">planning system</text>
+  <g><ellipse class="zone" cx="110" cy="582" rx="35" ry="10.08"/><rect class="zone" x="75" y="526" width="70" height="56" style="stroke:none"/><path class="line" d="M75 526 V 582 M145 526 V 582" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="zone" cx="110" cy="526" rx="35" ry="10.08"/></g><text class="small" x="110" y="610" text-anchor="middle">Accounting files</text><path class="both" d="M150 560 H 196"/><rect class="node" x="200" y="520" width="220" height="80" rx="6"/><text class="label" x="310" y="554" text-anchor="middle">General ledger</text><text class="label" x="310" y="574" text-anchor="middle">system</text>
+  <rect class="zone" x="500" y="210" width="230" height="420" rx="6"/>
+  <text class="small" x="615" y="236" text-anchor="middle">MIS FILES</text>
+  <g><ellipse class="node" cx="560" cy="318" rx="28" ry="8.64"/><rect class="node" x="532" y="270" width="56" height="48" style="stroke:none"/><path class="line" d="M532 270 V 318 M588 270 V 318" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="node" cx="560" cy="270" rx="28" ry="8.64"/></g><text class="small" x="600" y="300">Sales data</text>
+  <g><ellipse class="node" cx="560" cy="408" rx="28" ry="8.64"/><rect class="node" x="532" y="360" width="56" height="48" style="stroke:none"/><path class="line" d="M532 360 V 408 M588 360 V 408" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="node" cx="560" cy="360" rx="28" ry="8.64"/></g><text class="small" x="600" y="390">Unit product cost data</text>
+  <g><ellipse class="node" cx="560" cy="498" rx="28" ry="8.64"/><rect class="node" x="532" y="450" width="56" height="48" style="stroke:none"/><path class="line" d="M532 450 V 498 M588 450 V 498" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="node" cx="560" cy="450" rx="28" ry="8.64"/></g><text class="small" x="600" y="480">Product change data</text>
+  <g><ellipse class="node" cx="560" cy="588" rx="28" ry="8.64"/><rect class="node" x="532" y="540" width="56" height="48" style="stroke:none"/><path class="line" d="M532 540 V 588 M588 540 V 588" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="node" cx="560" cy="540" rx="28" ry="8.64"/></g><text class="small" x="600" y="570">Expense data</text>
+  <path class="dash" d="M420 240 C 460 240, 460 290, 528 290"/>
+  <path class="dash" d="M420 400 C 460 400, 460 380, 528 380"/>
+  <path class="dash" d="M420 410 C 460 410, 460 470, 528 470"/>
+  <path class="dash" d="M420 560 H 528"/>
+  <path class="flow" d="M734 420 H 790"/>
+  <rect class="focal" x="794" y="380" width="130" height="80" rx="6"/>
+  <text class="name inverse" x="859" y="426" text-anchor="middle">MIS</text>
+  <path class="flow" d="M924 400 C 960 400, 960 300, 1000 300"/>
+  <path class="flow" d="M924 440 C 960 440, 960 540, 1000 540"/>
+  <text class="label" x="1010" y="296">Reports</text><text class="label" x="1010" y="318">보고서</text>
+  <text class="label" x="1010" y="536">Online Displays</text><text class="label" x="1010" y="558">and Dashboards</text>
+  <rect class="node" x="1080" y="390" width="130" height="60" rx="6"/>
+  <text class="name" x="1145" y="418" text-anchor="middle">Managers</text>
+  <text class="sub" x="1145" y="438" text-anchor="middle">관리자</text>
+  <path class="flow" d="M1160 318 V 386"/>
+  <path class="flow" d="M1160 516 V 454"/>
+</svg>
