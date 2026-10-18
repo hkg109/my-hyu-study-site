@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 660" role="img" aria-labelledby="mis-fig-4-03-title mis-fig-4-03-desc">
+  <title id="mis-fig-4-03-title">Figure 4.3 How Cookies Identify Web Visitors</title>
+  <desc id="mis-fig-4-03-desc">웹 서버가 브라우저에 저장한 쿠키 ID로 재방문자를 알아보고, 저장해 둔 방문 기록을 불러온다</desc>
+  <defs><marker id="mis-fig-4-03-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-4-03-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-4-03-arrow);marker-end:url(#mis-fig-4-03-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-4-03-arrow);marker-end:url(#mis-fig-4-03-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="660"/><text class="tag" x="64" y="52">4장 · Figure 4.3</text><text class="title" x="64" y="92">How Cookies Identify Web Visitors</text><text class="subtitle" x="64" y="122">웹 서버가 브라우저에 저장한 쿠키 ID로 재방문자를 알아보고, 저장해 둔 방문 기록을 불러온다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="96" y="220" width="300" height="300" rx="6"/>
+  <text class="name" x="246" y="256" text-anchor="middle">User’s computer · 사용자</text>
+  <text class="sub" x="246" y="300" text-anchor="middle">Browser · OS · IP address</text><text class="sub" x="246" y="322" text-anchor="middle">브라우저 정보</text>
+  <rect class="node" x="146" y="380" width="200" height="90" rx="6"/>
+  <text class="label" x="246" y="418" text-anchor="middle">Cookie file</text><text class="label" x="246" y="442" text-anchor="middle">ID 9 3 1 2 7</text>
+  <rect class="deep" x="884" y="220" width="300" height="300" rx="6"/>
+  <text class="name" x="1034" y="256" text-anchor="middle">Web server · 웹 서버</text>
+  <text class="sub" x="1034" y="300" text-anchor="middle">Stored visitor data</text><text class="sub" x="1034" y="322" text-anchor="middle">방문 기록 · 선호</text>
+  <path class="flow" d="M396 270 H 880"/>
+  <text class="label" x="640" y="258" text-anchor="middle">① 방문하면 서버가 브라우저·OS·IP 정보를 읽는다</text>
+  <path class="flow" d="M880 330 H 400"/>
+  <text class="label" x="640" y="318" text-anchor="middle">② 서버가 고유 ID가 담긴 쿠키를 보낸다</text>
+  <text class="label" x="640" y="378" text-anchor="middle">③ 브라우저가 쿠키를 컴퓨터에 저장한다</text>
+  <path class="flow" d="M396 450 H 880"/>
+  <text class="label" x="640" y="438" text-anchor="middle">④ 재방문 때 서버가 쿠키를 요청해 ID로 방문자를 알아본다</text>
+  <rect class="zone" x="96" y="560" width="1088" height="64" rx="6"/>
+  <text class="label" x="640" y="598" text-anchor="middle">쿠키 자체는 식별자일 뿐이지만, 방문 기록과 연결되면 개인의 행동 프로필이 된다</text>
+  <text class="small" x="1216" y="640" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

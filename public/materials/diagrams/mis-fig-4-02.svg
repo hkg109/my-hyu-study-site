@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="mis-fig-4-02-title mis-fig-4-02-desc">
+  <title id="mis-fig-4-02-title">Figure 4.2 Nonobvious Relationship Awareness (NORA)</title>
+  <desc id="mis-fig-4-02-desc">여러 출처의 데이터를 이름 표준화·대조·병합해 겉으로 드러나지 않던 관계를 찾아 경고를 보낸다</desc>
+  <defs><marker id="mis-fig-4-02-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-4-02-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-4-02-arrow);marker-end:url(#mis-fig-4-02-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-4-02-arrow);marker-end:url(#mis-fig-4-02-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="640"/><text class="tag" x="64" y="52">4장 · Figure 4.2</text><text class="title" x="64" y="92">Nonobvious Relationship Awareness (NORA)</text><text class="subtitle" x="64" y="122">여러 출처의 데이터를 이름 표준화·대조·병합해 겉으로 드러나지 않던 관계를 찾아 경고를 보낸다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="64" y="176" width="300" height="58" rx="6"/><text class="label" x="214" y="212" text-anchor="middle">Incident and arrest systems</text><path class="line" d="M364 205 H 420"/>
+  <rect class="zone" x="64" y="254" width="300" height="58" rx="6"/><text class="label" x="214" y="290" text-anchor="middle">Customer transaction systems</text><path class="line" d="M364 283 H 420"/>
+  <rect class="zone" x="64" y="332" width="300" height="58" rx="6"/><text class="label" x="214" y="368" text-anchor="middle">Telephone records</text><path class="line" d="M364 361 H 420"/>
+  <rect class="zone" x="64" y="410" width="300" height="58" rx="6"/><text class="label" x="214" y="446" text-anchor="middle">Human resources systems</text><path class="line" d="M364 439 H 420"/>
+  <rect class="zone" x="64" y="488" width="300" height="58" rx="6"/><text class="label" x="214" y="524" text-anchor="middle">Watch lists</text><path class="line" d="M364 517 H 420"/>
+  <path class="line" d="M420 205 V 517"/>
+  <path class="flow" d="M420 361 H 476"/>
+  <rect class="node" x="480" y="306" width="180" height="110" rx="6"/><text class="name" x="570" y="346" text-anchor="middle">Name</text><text class="name" x="570" y="368" text-anchor="middle">standardization</text><text class="sub" x="570" y="394" text-anchor="middle">이름 표준화</text><path class="flow" d="M660 361 H 686"/>
+  <rect class="node" x="690" y="306" width="180" height="110" rx="6"/><text class="name" x="780" y="358" text-anchor="middle">Match</text><text class="sub" x="780" y="394" text-anchor="middle">대조</text><path class="flow" d="M870 361 H 896"/>
+  <rect class="deep" x="900" y="306" width="180" height="110" rx="6"/><text class="name" x="990" y="358" text-anchor="middle">Merge</text><text class="sub" x="990" y="394" text-anchor="middle">병합</text>
+  <path class="flow" d="M1080 361 H 1096"/>
+  <rect class="focal" x="1100" y="306" width="116" height="110" rx="6"/>
+  <text class="name inverse" x="1158" y="356" text-anchor="middle">NORA</text><text class="name inverse" x="1158" y="380" text-anchor="middle">Alerts</text>
+  <text class="sub" x="860" y="470" text-anchor="middle">같은 주소·전화번호·이름 변형을 찾아 사람들 사이의 숨은 관계를 드러낸다</text>
+  <text class="small" x="1216" y="620" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" role="img" aria-labelledby="mis-fig-4-01-title mis-fig-4-01-desc">
+  <title id="mis-fig-4-01-title">Figure 4.1 The Relationship Between Ethical, Social, and Political Issues</title>
+  <desc id="mis-fig-4-01-desc">새로운 정보기술은 개인의 윤리 문제에서 사회 문제, 정치 문제로 물결처럼 번지며 다섯 가지 도덕적 차원에서 검토된다</desc>
+  <defs><marker id="mis-fig-4-01-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-4-01-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-4-01-arrow);marker-end:url(#mis-fig-4-01-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-4-01-arrow);marker-end:url(#mis-fig-4-01-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="820"/><text class="tag" x="64" y="52">4장 · Figure 4.1</text><text class="title" x="64" y="92">The Relationship Between Ethical, Social, and Political Issues</text><text class="subtitle" x="64" y="122">새로운 정보기술은 개인의 윤리 문제에서 사회 문제, 정치 문제로 물결처럼 번지며 다섯 가지 도덕적 차원에서 검토된다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <circle class="zone" cx="640" cy="440" r="270"/>
+  <circle class="deep" cx="640" cy="440" r="200"/>
+  <circle class="node" cx="640" cy="440" r="130"/>
+  <circle class="focal" cx="640" cy="440" r="64"/>
+  <text class="small inverse" x="640" y="432" text-anchor="middle">Information</text><text class="small inverse" x="640" y="448" text-anchor="middle">Technology</text>
+  <text class="name" x="640" y="340" text-anchor="middle">Individual · 개인</text>
+  <text class="sub" x="640" y="362" text-anchor="middle">Ethical issues</text>
+  <text class="name" x="640" y="266" text-anchor="middle">Society · 사회</text>
+  <text class="sub" x="640" y="288" text-anchor="middle">Social issues</text>
+  <text class="name" x="640" y="196" text-anchor="middle">Polity · 정치</text>
+  <text class="sub" x="640" y="218" text-anchor="middle">Political issues</text>
+  <text class="name" x="150" y="300" text-anchor="middle">Information rights</text><text class="name" x="150" y="322" text-anchor="middle">and obligations</text><text class="sub" x="150" y="344" text-anchor="middle">정보 권리·의무</text>
+  <text class="name" x="1130" y="300" text-anchor="middle">Property rights</text><text class="name" x="1130" y="322" text-anchor="middle">and obligations</text><text class="sub" x="1130" y="344" text-anchor="middle">재산권·의무</text>
+  <text class="name" x="150" y="580" text-anchor="middle">Accountability</text><text class="name" x="150" y="602" text-anchor="middle">and control</text><text class="sub" x="150" y="624" text-anchor="middle">책임과 통제</text>
+  <text class="name" x="1130" y="580" text-anchor="middle">System quality</text><text class="sub" x="1130" y="602" text-anchor="middle">시스템 품질</text>
+  <text class="name" x="640" y="748" text-anchor="middle">Quality of life</text><text class="sub" x="640" y="770" text-anchor="middle">삶의 질</text>
+  <path class="soft" d="M270 330 L 400 360"/>
+  <path class="soft" d="M1010 330 L 880 360"/>
+  <path class="soft" d="M270 560 L 400 520"/>
+  <path class="soft" d="M1010 560 L 880 520"/>
+  <path class="soft" d="M640 712 V 726"/>
+  <text class="small" x="1216" y="800" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+  <text class="small" x="96" y="196">Five moral dimensions · 다섯 가지 도덕적 차원</text>
+</svg>

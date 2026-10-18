@@ -1,9 +1,9 @@
 ---
 title: "4장 · 정보시스템의 윤리와 사회적 책임"
-description: "윤리적 판단에서 프라이버시·지식재산·시스템 품질·책임·삶의 질까지, 슬라이드 흐름을 따라 정리한 Chapter 4 필기."
+description: "윤리적 판단에서 프라이버시·지식재산·시스템 품질·삶의 질까지, 교재 그림과 개념·판서·해설·오답 주의·예제·확인 문제로 정리한 Chapter 4 교재형 필기."
 order: 5
 published: true
-duration: 90
+duration: 115
 tags: [정시개, MIS, 4장, 윤리, 프라이버시, 지식재산]
 objectives:
   - 정보시스템이 만드는 윤리적·사회적·정치적 쟁점을 설명한다.
@@ -18,7 +18,21 @@ objectives:
 
 **범위:** Chapter 4 슬라이드 1–35 · Ethics → Privacy → Property → Quality → Accountability → Quality of Life
 
-## Chapter 4. Ethical and Social Issues in Information Systems
+## 단원 도입
+
+| 출제 포인트 | 빈도 | 이렇게 나온다 |
+|---|:---:|---|
+| 다섯 가지 도덕적 차원 | ★★★ | 사례를 차원으로 분류 |
+| Responsibility · Accountability · Liability · Due process | ★★★ | 정의 구분 |
+| 윤리 원칙(Golden Rule, Kant, Slippery slope 등) | ★★★ | 사례에 맞는 원칙 고르기 |
+| FIP, Opt-in vs Opt-out, GDPR | ★★★ | 원칙과 동의 방식 |
+| Copyright · Patent · Trademark · Trade secret | ★★ | 보호 대상과 기간 |
+| Profiling vs NORA, cookie · web beacon | ★★ | 기술 구분 |
+| Computer crime vs abuse, digital divide, RSI · CVS | ★ | 용어 정의 |
+
+**책 읽는 법:** 슬라이드 제목 아래의 짧은 목록과 요약 한 줄이 강의 **핵심 필기**다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
+
+> [!PAGEBREAK]
 
 ## Slide 1 — Ethical and Social Issues in Information Systems
 
@@ -42,6 +56,8 @@ objectives:
 > **핵심 흐름: Ethics → Privacy → Property → Quality → Accountability → Quality of Life**
 
 ---
+
+## PART 1 · 윤리적 쟁점과 판단 원칙
 
 ## Slide 3 — Video Cases
 
@@ -85,9 +101,12 @@ objectives:
 
 > **Ethics = 개인이 무엇이 옳고 그른지 판단할 때 사용하는 principles**
 
+> [!CONCEPT]
+> **Ethics** — 자유로운 도덕적 행위자로서 개인이 행동을 선택할 때 쓰는 **옳고 그름의 원칙**.
+
+
 > [!NOTE]
 > Volkswagen은 배출가스 시험 때만 오염을 줄이는 소프트웨어를 넣었고, Wells Fargo는 실적 압박 속에 고객 몰래 계좌를 만들었다. 공통점은 기술이나 시스템이 **잘못된 판단을 더 크게, 더 오래 숨길 수 있게** 했다는 것이다. 윤리는 이런 선택 앞에서 개인이 옳고 그름을 판단하는 기준이다.
-
 ---
 
 ## Slide 6 — IT/IS-Related Ethical Issues (2/2)
@@ -122,9 +141,13 @@ objectives:
 
 > **Technology 변화 속도가 law / social rules 변화 속도보다 빠름**
 
+> [!BOARD]
+> - 새 기술(돌) → **개인**: 윤리 문제 → **사회**: 새 규범·기대 → **정치**: 법·책임 배분
+> - 기술은 빠르고 법은 느리다 → 그 공백에서 윤리적 판단이 중요
+
+
 > [!NOTE]
 > 조용한 연못에 돌을 던지면 물결이 바깥으로 퍼진다. 새 기술이 그 돌이다. 처음에는 개인이 “이걸 써도 되나?”를 고민하고, 사회가 새로운 예절과 기대를 만들고, 마지막에 법이 정리된다. 문제는 물결(기술)이 빠르고 법은 느리다는 것이다. 그 사이의 **공백 기간**에 윤리적 판단이 특히 중요하다.
-
 ---
 
 ## Slide 8 — Figure 4.1 Ethical, Social, and Political Issues
@@ -142,6 +165,12 @@ objectives:
 5. Quality of Life
 
 > **New IT → ethical issue → social issue → political issue로 확장될 수 있음**
+
+### 교재 그림 · Figure 4.1
+
+![가운데 정보기술을 개인 사회 정치의 동심원이 둘러싸고 바깥에 다섯 가지 도덕적 차원이 놓인 그림](/materials/diagrams/mis-fig-4-01.svg)
+
+*Figure 4.1 · The Relationship Between Ethical, Social, and Political Issues — 기술 충격이 개인에서 사회, 정치로 번진다.*
 
 ### 개념도 · 기술 충격이 제도 문제로 확장되는 과정
 
@@ -165,6 +194,11 @@ objectives:
 
 > [!NOTE]
 > 다섯 차원은 4장 뒷부분의 목차이기도 하다. 정보 권리(19–26: privacy), 재산권(27–28: intellectual property), 책임과 통제(29–30: liability), 시스템 품질(31), 삶의 질(32–34) 순서로 다룬다. 사례 문제를 받으면 “이 사례는 다섯 차원 중 어디에 해당하는가?”부터 정하면 답의 방향이 잡힌다.
+
+> [!PROBLEM]
+> **문제.** 다음 쟁점은 다섯 가지 도덕적 차원 중 어디에 해당하는가? ㉠ 음원 불법 복제 ㉡ 소프트웨어 오류로 생긴 피해의 책임 ㉢ 화면을 오래 봐서 생기는 눈의 피로
+>
+> **풀이.** ㉠ **Property rights and obligations** ㉡ **Accountability and control** ㉢ **Quality of life**.
 
 ---
 
@@ -202,6 +236,9 @@ objectives:
 > [!NOTE]
 > 카드 결제 기록, 앱 위치 기록, 온라인 쇼핑 기록을 합치면 한 사람의 생활 패턴이 담긴 파일이 만들어진다. 이것이 **profiling**이다. **NORA**는 한 사람을 깊게 보는 대신, 여러 데이터베이스에서 “이 사람과 저 사람이 같은 주소·전화번호를 쓴다”처럼 겉으로 드러나지 않는 **관계**를 찾는다.
 
+> [!TRAP]
+> **Profiling**은 한 사람에 대한 상세 파일을 만들고, **NORA**는 여러 사람·기록 사이의 **숨은 관계**를 찾는다. 대상이 “한 사람”인지 “관계”인지로 구분한다.
+
 ---
 
 ## Slide 12 — Figure 4.2 NORA
@@ -227,7 +264,9 @@ objectives:
 
 > **NORA = 서로 다른 database를 결합해 hidden relationship을 찾아 alert 생성**
 
-![여러 데이터베이스의 이름을 표준화하고 맞춰 숨은 관계를 찾아 경고를 만드는 NORA 흐름](/materials/diagrams/mis-00-nora-flow.svg)
+![다섯 데이터 출처가 이름 표준화 대조 병합을 거쳐 NORA 경고로 이어지는 그림](/materials/diagrams/mis-fig-4-02.svg)
+
+*Figure 4.2 · Nonobvious Relationship Awareness (NORA) — 흩어진 기록을 합쳐 숨은 관계를 찾는다.*
 
 **그림 읽기:** 왼쪽의 다섯 데이터 출처는 원래 서로 다른 목적으로 만들어진 기록이다. 이름 표기를 통일하고(standardization), 같은 사람이나 주소를 찾아 연결하고(match), 하나의 관계망으로 합치면(merge) 개별 기록만 봐서는 보이지 않던 연결이 경고로 나온다. 보안에는 유용하지만, 무고한 사람의 기록도 함께 분석된다는 프라이버시 문제가 생긴다.
 
@@ -249,6 +288,9 @@ objectives:
 > [!NOTE]
 > 네 개념은 순서대로 이어진다. 결정을 내린 사람은 그 의무를 받아들여야 하고(responsibility), 조직은 누가 무엇을 했는지 추적할 수 있어야 하며(accountability), 피해가 생기면 법적으로 배상을 청구할 수 있어야 하고(liability), 그 법과 절차가 공개되고 이의를 제기할 수 있어야 한다(due process). **추적할 수 없으면(accountability 부재) 나머지도 작동하지 않는다.**
 
+> [!TRAP]
+> **Responsibility**(결정의 의무를 받아들임) → **Accountability**(누가 했는지 추적 가능) → **Liability**(법적 배상) → **Due process**(공개된 법·이의 제기). 추적이 안 되면 나머지도 작동하지 않는다.
+
 ---
 
 ## Slide 14 — Ethical Analysis
@@ -263,6 +305,10 @@ objectives:
 > **Ethical Analysis = Facts → Values → Stakeholders → Options → Consequences**
 
 분석 절차는 먼저 **무엇을 판단할지** 분명하게 만드는 과정이고, 다음 슬라이드의 윤리 원칙은 가능한 선택지를 **어떤 기준으로 비교할지** 알려 준다. 사실관계와 영향을 받는 사람을 확인하지 않은 채 원칙 이름만 붙이면, 같은 사례에서도 중요한 피해나 대안을 놓칠 수 있다.
+
+> [!BOARD]
+> **Facts → Values → Stakeholders → Options → Consequences**
+> 사실 정리 → 충돌하는 가치 → 영향받는 사람 → 가능한 선택지 → 선택별 결과
 
 ---
 
@@ -286,6 +332,9 @@ objectives:
 > [!NOTE]
 > 동료의 메일을 몰래 읽어도 되는지 판단한다고 하자. Golden Rule은 “내 메일을 누가 몰래 읽으면 괜찮은가?”를 묻는다. Kant는 “모든 직원이 서로의 메일을 읽어도 회사가 굴러가는가?”를 묻는다. Slippery Slope는 “오늘 한 번 읽으면, 내일도 모레도 읽어도 괜찮은가?”를 묻는다.
 
+> [!TRAP]
+> **Kant** = “**모두가** 해도 되는가?”, **Slippery slope** = “**계속 반복**해도 되는가?” 둘을 바꿔 쓰는 보기가 자주 나온다.
+
 ---
 
 ## Slide 16 — Ethical Principles (2/2)
@@ -300,6 +349,11 @@ objectives:
 
 > [!NOTE]
 > 고객 데이터를 마케팅에 쓸지 고민하는 상황이라면, **utilitarian**은 회사와 고객 전체의 이익이 가장 큰 선택을, **risk aversion**은 개인정보 유출 같은 피해가 가장 적은 선택을 고른다. **No free lunch**는 고객이 명시적으로 허락하지 않은 데이터는 고객의 것이라고 가정한다. 원칙마다 결론이 다를 수 있으므로 답안에는 어떤 원칙으로 판단했는지 밝힌다.
+
+> [!PROBLEM]
+> **문제.** 고객 데이터를 마케팅에 쓰면 이익은 크지만 유출 위험이 있다. 회사가 이익보다 **피해가 가장 적은 선택**을 했다면 어떤 원칙을 따른 것인가?
+>
+> **풀이.** ① 기준이 최대 가치가 아니다 → utilitarian 아님 ② 기준이 최소 피해다 ③ **Risk aversion principle**.
 
 ---
 
@@ -346,7 +400,18 @@ objectives:
 > [!NOTE]
 > 실제 딜레마는 “옳은 것 vs 틀린 것”이 아니라 **둘 다 정당한 가치끼리의 충돌**이다. 회사가 업무 시간의 인터넷 사용을 감시하는 것은 생산성이라는 정당한 목적이 있지만, 직원의 프라이버시도 정당한 권리다. 이럴 때 slide 14의 다섯 단계 분석으로 이해관계자와 선택지를 정리한다.
 
+> [!CHECK]
+> **1.** 정보 시대의 다섯 가지 도덕적 차원을 쓰시오.
+>
+> **2.** Accountability가 없을 때 liability를 물을 수 없는 이유는?
+>
+> **3.** 윤리적 분석 다섯 단계를 순서대로 쓰시오.
+
 ---
+
+> [!PAGEBREAK]
+
+## PART 2 · 정보 권리와 프라이버시
 
 ## Slide 19 — Information Rights: Privacy
 
@@ -381,9 +446,12 @@ objectives:
 
 > **FIP = personal data를 수집·사용할 때 따라야 하는 기본 privacy principles**
 
+> [!CONCEPT]
+> **FIP(Fair Information Practices)** — 개인정보의 수집·사용을 규율하는 원칙. 기록 보유자와 개인 사이의 **mutuality of interest**에 기반하며, 미국·유럽 개인정보 보호법의 바탕이다.
+
+
 > [!NOTE]
 > FIP의 바탕에는 **mutuality of interest**가 있다. 은행은 대출 심사를 위해 내 정보가 필요하고, 나는 대출을 받기 위해 정보를 준다. 서로 이익이 있으니 거래는 성립하지만, 은행이 그 정보를 동의 없이 다른 목적으로 쓰면 안 된다. FIP는 이 관계에서 지켜야 할 규칙이고, 미국의 여러 개별 법(COPPA, HIPAA 등)의 바탕이 된다.
-
 ---
 
 ## Slide 21 — FTC FIP Principles
@@ -403,6 +471,9 @@ objectives:
 ![개인의 information rights와 privacy가 FIP framework를 거쳐 notice, choice, access, security, enforcement의 다섯 운영 원칙으로 구체화되는 구조](/materials/diagrams/mis-05-privacy-fip-hierarchy.svg)
 
 FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 중간 framework다. 다섯 원칙 중 하나만 지켜서는 수집부터 집행까지 이어지는 보호 체계가 완성되지 않는다.
+
+> [!TRAP]
+> FIP 다섯 원칙 중 **핵심(core) 원칙은 Notice/awareness와 Choice/consent** 두 개다.
 
 ---
 
@@ -425,6 +496,9 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > [!NOTE]
 > GDPR은 미국 방식보다 훨씬 강하다. 미국은 업종별 법과 업계 자율 규제에 기대지만, GDPR은 EU 시민의 데이터를 다루는 **모든 기업**에 적용되고, 명시적 동의를 요구하며, 위반하면 큰 벌금을 물린다. 한국 기업도 EU 고객 데이터를 처리하면 적용 대상이다.
 
+> [!TRAP]
+> GDPR은 EU 안의 기업에만 적용되는 것이 아니다. 위치와 상관없이 **EU 시민·거주자의 데이터를 처리하는 기업**이면 적용된다.
+
 ---
 
 ## Slide 23 — Internet Challenges to Privacy (1/2)
@@ -441,6 +515,9 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > [!NOTE]
 > 다섯 기술의 공통점은 **사용자가 알아차리기 어렵다**는 것이다. 쿠키는 브라우저에 남는 식별표, 웹 비컨은 이메일을 열었는지 알려 주는 보이지 않는 그림, 스파이웨어는 몰래 설치되는 프로그램이다. behavioral targeting은 이렇게 모은 행동 기록으로 맞춤 광고를 보여 준다.
+
+> [!TRAP]
+> **Cookie**는 브라우저에 저장되는 식별용 파일, **web beacon**은 이메일·웹페이지에 숨겨 열람 여부를 알려 주는 작은 그림, **spyware**는 몰래 설치되는 프로그램이다.
 
 ---
 
@@ -464,6 +541,9 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 두 방식의 차이는 동의 화면의 모양보다 **아무 행동도 하지 않았을 때 데이터 사용이 허용되는가**에 있다. Opt-In에서는 명시적인 동의가 먼저 필요하고, Opt-Out에서는 거부하지 않으면 사용이 계속될 수 있다. 다음 cookie 사례를 볼 때도 추적 기술의 작동 방식과 이용자의 선택 방식은 별개의 질문으로 살펴보자.
 
+> [!CONCEPT]
+> **Informed consent** — 합리적 결정에 필요한 사실을 모두 알고 한 동의. **Opt-in**은 동의해야 사용, **opt-out**은 거부하지 않으면 사용.
+
 ---
 
 ## Slide 25 — Figure 4.3 How Cookies Identify Web Visitors
@@ -480,6 +560,12 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 - personalized information 제공 가능
 
 > **Cookie = browser에 저장된 identifier를 이용해 returning visitor를 인식**
+
+### 교재 그림 · Figure 4.3
+
+![사용자 컴퓨터와 웹 서버 사이에서 정보 읽기 쿠키 전송 저장 재방문 식별의 네 단계가 오가는 그림](/materials/diagrams/mis-fig-4-03.svg)
+
+*Figure 4.3 · How Cookies Identify Web Visitors — 쿠키 ID로 재방문자를 알아본다.*
 
 ### 개념도 · 식별자가 profile이 되는 과정
 
@@ -508,7 +594,18 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > [!NOTE]
 > 암호화, 익명화 도구, 시크릿 모드 같은 기술은 개인이 스스로를 지키는 방법이다. 하지만 사이트를 넘나드는 추적을 완전히 막지는 못한다. Do Not Track 신호를 보내도 사이트가 지켜야 할 의무가 없기 때문이다. **기술만으로는 부족하고 업계 합의와 법이 함께 필요**하다는 것이 결론이다.
 
+> [!CHECK]
+> **4.** FIP의 두 핵심 원칙을 쓰시오.
+>
+> **5.** Opt-in과 opt-out의 차이를 한 문장으로 쓰시오.
+>
+> **6.** 기술적 프라이버시 도구만으로 사이트 간 추적을 막지 못하는 이유는?
+
 ---
+
+> [!PAGEBREAK]
+
+## PART 3 · 재산권 · 책임 · 품질 · 삶의 질
 
 ## Slide 27 — Intellectual Property
 
@@ -532,6 +629,14 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 네 유형은 강도가 다른 한 줄의 보호 단계가 아니라 **보호 대상이 다른 병렬 분류**다. 사례에서는 무엇을 만들었는지와 무엇을 지키려는지를 먼저 확인해야 한다.
 
+> [!TRAP]
+> **Copyright는 표현**을, **patent는 아이디어(발명)**를 보호한다. “저작권은 아이디어를 보호한다”는 보기는 오답이다.
+
+> [!PROBLEM]
+> **문제.** 한 회사가 고객 추천 알고리즘을 공개하지 않고 소수 직원만 알게 하며 기밀 유지 계약을 맺었다. 어떤 보호 방식인가?
+>
+> **풀이.** ① 정부에 등록하지 않았다 → 특허 아님 ② 공개하지 않는 것이 핵심이다 ③ **Trade secret**. 공개되면 보호가 사라진다.
+
 ---
 
 ## Slide 28 — Challenges to Intellectual Property Rights
@@ -550,9 +655,12 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > **Digital information은 copy / transfer / modify가 쉬워 IP protection이 더 어려움**
 
+> [!CONCEPT]
+> **DMCA(Digital Millennium Copyright Act, 1998)** — 저작물의 기술적 보호 장치를 **우회하는 행위 자체**를 불법으로 정한 미국 법.
+
+
 > [!NOTE]
 > 종이책을 베끼려면 시간과 돈이 들지만, 디지털 파일은 클릭 한 번으로 똑같이 복사되고 전 세계로 퍼진다. 수정도 쉬워 원본이 무엇인지 판단하기 어렵다. 그래서 1998년 DMCA는 복제 방지 기술을 **우회하는 행위 자체**를 불법으로 정했다.
-
 ---
 
 ## Slide 29 — Computer-Related Liability Problems
@@ -607,6 +715,9 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 시스템이 예상대로 계산해도 입력이 부정확하면 결과 역시 잘못될 수 있다. 따라서 오류를 평가할 때는 프로그램의 결함인지, 장비 문제인지, 입력 데이터의 문제인지 먼저 구분해야 한다. 어느 원인인지에 따라 고쳐야 할 대상과 재발을 막는 방법이 달라진다.
 
+> [!TRAP]
+> 비즈니스 시스템 실패의 **가장 흔한 원인은 낮은 입력 데이터 품질**이다. 소프트웨어 버그나 하드웨어 고장보다 흔하다.
+
 ---
 
 ## Slide 32 — Quality of Life (1/3)
@@ -651,6 +762,9 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > [!NOTE]
 > 남의 계정을 해킹하면 **computer crime**(불법)이고, 불법은 아니지만 회사 메일로 사적인 광고를 대량으로 보내면 **computer abuse**(비윤리)다. Spam은 대표적인 abuse였지만 CAN-SPAM Act 같은 법으로 일부가 규제되기 시작했다. 또한 업무 재설계(reengineering)와 자동화는 효율을 높이는 대신 일자리를 줄일 수 있다.
 
+> [!TRAP]
+> **Computer crime = 불법**, **computer abuse = 비윤리적이지만 반드시 불법은 아님**. 스팸은 대표적인 abuse다.
+
 ---
 
 ## Slide 34 — Quality of Life (3/3)
@@ -670,8 +784,18 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > **Digital inequality와 physical / mental health risk도 IS의 social cost**
 
+> [!CONCEPT]
+> **Digital divide** — 소득·인구 집단에 따른 컴퓨터·인터넷 **접근 격차**. 건강 위험으로는 RSI(대표적으로 CTS), CVS, technostress가 있다.
+
 > [!NOTE]
 > 소득이나 지역에 따라 인터넷과 기기에 접근하는 정도가 다르면, 정보 격차가 교육과 소득 격차로 이어진다. 이것이 **digital divide**다. 건강 문제도 있다. 같은 동작을 반복하면 RSI가 생기고(대표가 손목의 CTS), 화면을 오래 보면 눈이 피로해지는 CVS가, 기술 사용으로 짜증과 피로가 쌓이면 technostress가 생긴다.
+
+> [!CHECK]
+> **7.** Copyright와 patent의 보호 대상과 기간을 비교하시오.
+>
+> **8.** 비즈니스 시스템 실패의 가장 흔한 원인은?
+>
+> **9.** Computer crime과 computer abuse의 경계는 무엇인가?
 
 ---
 
@@ -689,6 +813,49 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > **Privacy / ethics / governance knowledge는 실제 business 경쟁력과 연결됨**
 
 ---
+
+> [!PAGEBREAK]
+
+## 단원 마무리
+
+### 한 쪽 핵심 요약
+
+| 주제 | 꼭 기억할 것 |
+|---|---|
+| 기술과 윤리 | 개인(윤리) → 사회(규범) → 정치(법), 기술이 법보다 빠르다 |
+| 다섯 차원 | 정보 권리 · 재산권 · 책임과 통제 · 시스템 품질 · 삶의 질 |
+| 책임 개념 | Responsibility → Accountability → Liability → Due process |
+| 판단 원칙 | Golden Rule · Kant · Slippery slope · Utilitarian · Risk aversion · No free lunch |
+| 프라이버시 | FIP(핵심: notice · choice), opt-in > opt-out, GDPR |
+| 지식재산 | Copyright(표현·생존+70년) · Patent(발명·20년) · Trademark · Trade secret |
+| 품질과 삶 | 실패의 주원인 = 입력 데이터, crime vs abuse, digital divide, RSI·CVS |
+
+### 단답형 연습 · Short Answer
+
+Write the term or a short answer in English. 답은 맨 끝 **정답과 해설**의 단답형 정답에서 확인한다.
+
+1. What are principles of right and wrong that individuals, acting as free moral agents, use to make choices called?  
+   Answer: ______________________________
+2. What technology combines data from multiple sources to find obscure, hidden relationships between people?  
+   Answer: ______________________________
+3. What feature of a political system lets injured people recover damages done to them by others?  
+   Answer: ______________________________
+4. Which ethical principle says that if an action is not right for everyone to take, it is not right for anyone?  
+   Answer: ______________________________
+5. Which ethical principle says to take the action that produces the least harm or least potential cost?  
+   Answer: ______________________________
+6. What is the set of principles governing the collection and use of information about individuals called?  
+   Answer: ______________________________
+7. Under which consent model is data collection prohibited unless the user explicitly agrees?  
+   Answer: ______________________________
+8. Which protection grants the owner an exclusive monopoly on the ideas behind an invention for 20 years?  
+   Answer: ______________________________
+9. What is an act that involves a computer and may not be illegal but is considered unethical called?  
+   Answer: ______________________________
+10. What term describes large disparities in access to computers and the Internet among social groups?  
+   Answer: ______________________________
+
+> [!PAGEBREAK]
 
 ## 개념 회상과 오개념 점검
 
@@ -720,3 +887,34 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > [!ANSWER]
 > **정답은 B, accountability이다.** A는 행위자가 밝혀진 뒤 의무를 받아들이는 문제와 추적 가능성을 혼동한 선택이다. C는 피해의 법적 책임과 행위 추적을 혼동한 선택이다. D는 공정한 규칙·절차와 담당자 식별 가능성을 혼동한 선택이다.
+
+> [!PAGEBREAK]
+
+## 정답과 해설
+
+먼저 스스로 답을 쓴 뒤 확인한다.
+
+### 확인 문제 정답
+
+1. **Information rights and obligations, property rights and obligations, accountability and control, system quality, quality of life.**
+2. 누가 결정하고 행동했는지 **추적할 수 없으면** 피해를 누구에게 배상받을지 정할 수 없기 때문이다.
+3. **Facts → Values → Stakeholders → Options → Consequences.**
+4. **Notice/awareness**와 **Choice/consent.**
+5. Opt-in은 사용자가 **동의해야** 데이터를 쓸 수 있고, opt-out은 사용자가 **거부하지 않으면** 쓸 수 있다.
+6. Do Not Track 신호를 사이트가 지킬 **의무가 없고**, 업계 합의와 이를 강제하는 법이 부족하기 때문이다.
+7. Copyright는 창작물의 **표현**을 저자 생존 기간 + 70년, patent는 **발명 아이디어**를 20년 보호한다.
+8. **낮은 입력 데이터 품질(poor input data quality).**
+9. **불법인가.** Crime은 불법 행위, abuse는 비윤리적이지만 반드시 불법은 아닌 행위다.
+
+### 단답형 정답
+
+1. **Ethics** — 자유로운 도덕적 행위자가 쓰는 옳고 그름의 원칙
+2. **Nonobvious relationship awareness (NORA)** — 여러 데이터를 결합해 사람들 사이의 숨은 관계를 찾는 기술
+3. **Liability** — 피해자가 법적으로 배상받을 수 있게 하는 법적 책임
+4. **Kant’s categorical imperative** — 모두가 해도 옳지 않다면 누구에게도 옳지 않다는 칸트의 정언명령
+5. **Risk aversion principle** — 피해가 가장 적은 행동을 고르는 위험 회피 원칙
+6. **Fair Information Practices (FIP)** — 개인정보 수집·사용을 규율하는 공정 정보 관행
+7. **Opt-in** — 명시적으로 동의해야만 수집할 수 있는 옵트인
+8. **Patent** — 발명 아이디어에 20년 독점권을 주는 특허
+9. **Computer abuse** — 불법은 아니지만 비윤리적인 컴퓨터 남용
+10. **Digital divide** — 사회 집단 사이의 컴퓨터·인터넷 접근 격차
