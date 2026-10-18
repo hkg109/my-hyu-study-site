@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-fig-3-03-title mis-fig-3-03-desc">
+  <title id="mis-fig-3-03-title">Figure 3.3 The Behavioral View of Organizations</title>
+  <desc id="mis-fig-3-03-desc">행동적 관점: 조직은 구조와 사람·권리·가치가 얽힌 사회 시스템이라 쉽게 바뀌지 않는다</desc>
+  <defs><marker id="mis-fig-3-03-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-3-03-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-3-03-arrow);marker-end:url(#mis-fig-3-03-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="720"/><text class="tag" x="64" y="52">3장 · Figure 3.3</text><text class="title" x="64" y="92">The Behavioral View of Organizations</text><text class="subtitle" x="64" y="122">행동적 관점: 조직은 구조와 사람·권리·가치가 얽힌 사회 시스템이라 쉽게 바뀌지 않는다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <text class="name" x="640" y="186" text-anchor="middle">FORMAL ORGANIZATION · 공식 조직</text>
+  <rect class="zone" x="420" y="204" width="440" height="490" rx="6"/>
+  <text class="name" x="452" y="240">Structure · 구조</text>
+  <text class="label" x="476" y="272">Hierarchy</text><text class="sub" x="828" y="272" text-anchor="end">위계</text>
+  <text class="label" x="476" y="302">Division of labor</text><text class="sub" x="828" y="302" text-anchor="end">분업</text>
+  <text class="label" x="476" y="332">Rules, procedures</text><text class="sub" x="828" y="332" text-anchor="end">규칙 · 절차</text>
+  <text class="label" x="476" y="362">Business processes</text><text class="sub" x="828" y="362" text-anchor="end">비즈니스 프로세스</text>
+  <text class="label" x="476" y="392">Culture</text><text class="sub" x="828" y="392" text-anchor="end">문화</text>
+  <path class="soft" d="M452 430 H 828"/>
+  <text class="name" x="452" y="462">Process · 과정</text>
+  <text class="label" x="476" y="494">Rights / obligations</text><text class="sub" x="828" y="494" text-anchor="end">권리 · 의무</text>
+  <text class="label" x="476" y="524">Privileges / responsibilities</text><text class="sub" x="828" y="524" text-anchor="end">특권 · 책임</text>
+  <text class="label" x="476" y="554">Values</text><text class="sub" x="828" y="554" text-anchor="end">가치</text>
+  <text class="label" x="476" y="584">Norms</text><text class="sub" x="828" y="584" text-anchor="end">규범</text>
+  <text class="label" x="476" y="614">People</text><text class="sub" x="828" y="614" text-anchor="end">사람</text>
+  <text class="name" x="96" y="430">Environmental</text><text class="name" x="96" y="452">resources</text>
+  <text class="sub" x="96" y="480">환경의 자원</text>
+  <path class="flow" d="M290 440 H 414"/>
+  <path class="flow" d="M866 440 H 990"/>
+  <text class="name" x="1004" y="430">Environmental</text><text class="name" x="1004" y="452">outputs</text>
+  <text class="sub" x="1004" y="480">환경으로의 산출</text>
+</svg>

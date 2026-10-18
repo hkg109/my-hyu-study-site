@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 900" role="img" aria-labelledby="mis-fig-3-10-title mis-fig-3-10-desc">
+  <title id="mis-fig-3-10-title">Figure 3.10 The Value Web</title>
+  <desc id="mis-fig-3-10-desc">독립된 기업들이 IT로 가치사슬을 연결해 공급과 수요 변화에 함께 대응하는 네트워크</desc>
+  <defs><marker id="mis-fig-3-10-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-3-10-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-3-10-arrow);marker-end:url(#mis-fig-3-10-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="900"/><text class="tag" x="64" y="52">3장 · Figure 3.10</text><text class="title" x="64" y="92">The Value Web</text><text class="subtitle" x="64" y="122">독립된 기업들이 IT로 가치사슬을 연결해 공급과 수요 변화에 함께 대응하는 네트워크</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <circle class="focal" cx="640" cy="520" r="138"/>
+  <text class="name inverse" x="640" y="470" text-anchor="middle">Industry Firms</text><text class="name inverse" x="640" y="498" text-anchor="middle">ERP Systems</text><text class="name inverse" x="640" y="526" text-anchor="middle">Core Transaction</text><text class="name inverse" x="640" y="554" text-anchor="middle">Systems</text>
+  <text class="sub inverse" x="640" y="594" text-anchor="middle">산업 내 기업 · ERP · 핵심 거래 시스템</text>
+  <circle class="zone" cx="640" cy="246" r="102"/><text class="name" x="640" y="234" text-anchor="middle">Strategic Alliance</text><text class="name" x="640" y="258" text-anchor="middle">and Partner Firms</text><text class="sub" x="640" y="292" text-anchor="middle">전략적 제휴 · 파트너 기업</text>
+  <circle class="zone" cx="290" cy="520" r="102"/><text class="name" x="290" y="508" text-anchor="middle">Suppliers</text><text class="name" x="290" y="532" text-anchor="middle">Suppliers’ Suppliers</text><text class="sub" x="290" y="566" text-anchor="middle">공급자 · 공급자의 공급자</text>
+  <circle class="zone" cx="990" cy="520" r="102"/><text class="name" x="990" y="508" text-anchor="middle">Customers</text><text class="name" x="990" y="532" text-anchor="middle">Customers’ Customers</text><text class="sub" x="990" y="566" text-anchor="middle">고객 · 고객의 고객</text>
+  <circle class="zone" cx="640" cy="794" r="102"/><text class="name" x="640" y="794" text-anchor="middle">Indirect Suppliers</text><text class="sub" x="640" y="828" text-anchor="middle">간접 공급자</text>
+  <path class="both" d="M640 352 V 378"/>
+  <path class="both" d="M640 662 V 688"/>
+  <path class="both" d="M396 520 H 498"/>
+  <path class="both" d="M782 520 H 884"/>
+  <text class="label" x="96" y="700">Supply Chain Management Systems</text><text class="label" x="96" y="728">Supplier Extranets</text><text class="label" x="96" y="756">Net Marketplaces</text>
+  <text class="sub" x="96" y="788">공급망관리 · 공급자 엑스트라넷 · 넷 마켓플레이스</text>
+  <text class="label" x="860" y="700">Customer Relationship</text><text class="label" x="860" y="728">Management Systems</text>
+  <text class="sub" x="860" y="760">고객관계관리 시스템</text>
+</svg>

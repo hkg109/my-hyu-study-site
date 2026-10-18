@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 960" role="img" aria-labelledby="mis-fig-3-09-title mis-fig-3-09-desc">
+  <title id="mis-fig-3-09-title">Figure 3.9 The Value Chain Model</title>
+  <desc id="mis-fig-3-09-desc">기업 가치사슬의 지원·본원적 활동마다 IS를 적용할 수 있고, 기업 가치사슬은 산업 가치사슬과 이어진다</desc>
+  <defs><marker id="mis-fig-3-09-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-3-09-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-3-09-arrow);marker-end:url(#mis-fig-3-09-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="960"/><text class="tag" x="64" y="52">3장 · Figure 3.9</text><text class="title" x="64" y="92">The Value Chain Model</text><text class="subtitle" x="64" y="122">기업 가치사슬의 지원·본원적 활동마다 IS를 적용할 수 있고, 기업 가치사슬은 산업 가치사슬과 이어진다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="zone" d="M190 176 H 1050 L 1140 436 L 1050 696 H 190 Z"/>
+  <path class="soft" d="M190 240 H 1050"/><text class="name" x="214" y="202">Administration and Management · 관리</text><text class="sub" x="214" y="226">Electronic scheduling and messaging systems</text>
+  <path class="soft" d="M190 304 H 1050"/><text class="name" x="214" y="266">Human Resources · 인적자원</text><text class="sub" x="214" y="290">Workforce planning systems</text>
+  <path class="soft" d="M190 368 H 1050"/><text class="name" x="214" y="330">Technology · 기술</text><text class="sub" x="214" y="354">Computer-aided design systems</text>
+  <path class="soft" d="M190 432 H 1050"/><text class="name" x="214" y="394">Procurement · 조달</text><text class="sub" x="214" y="418">Computerized ordering systems</text>
+  <text class="name" x="206" y="462">Inbound</text><text class="name" x="206" y="484">Logistics</text><text class="sub" x="206" y="530">Automated</text><text class="sub" x="206" y="550">warehousing</text><text class="sub" x="206" y="570">systems</text>
+  <path class="soft" d="M362 432 V 696"/><text class="name" x="378" y="462">Operations</text><text class="sub" x="378" y="530">Computer-</text><text class="sub" x="378" y="550">controlled</text><text class="sub" x="378" y="570">machining systems</text>
+  <path class="soft" d="M534 432 V 696"/><text class="name" x="550" y="462">Sales and</text><text class="name" x="550" y="484">Marketing</text><text class="sub" x="550" y="530">Computerized</text><text class="sub" x="550" y="550">ordering</text><text class="sub" x="550" y="570">systems</text>
+  <path class="soft" d="M706 432 V 696"/><text class="name" x="722" y="462">Service</text><text class="sub" x="722" y="530">Equipment</text><text class="sub" x="722" y="550">maintenance</text><text class="sub" x="722" y="570">systems</text>
+  <path class="soft" d="M878 432 V 696"/><text class="name" x="894" y="462">Outbound</text><text class="name" x="894" y="484">Logistics</text><text class="sub" x="894" y="530">Automated</text><text class="sub" x="894" y="550">shipment</text><text class="sub" x="894" y="570">scheduling systems</text>
+  <text class="name" x="1080" y="420" text-anchor="middle">Firm Value</text>
+  <text class="name" x="1080" y="444" text-anchor="middle">Chain</text>
+  <path class="dash" d="M174 176 H 150 V 428 H 174"/>
+  <path class="dash" d="M174 440 H 150 V 696 H 174"/>
+  <text class="name" x="72" y="296">Support</text><text class="name" x="72" y="318">Activities</text>
+  <text class="sub" x="72" y="344">지원 활동</text>
+  <text class="name" x="72" y="560">Primary</text><text class="name" x="72" y="582">Activities</text>
+  <text class="sub" x="72" y="608">본원적 활동</text>
+  <path class="dash" d="M420 696 L 560 800"/>
+  <path class="dash" d="M820 696 L 700 800"/>
+  <text class="label" x="96" y="740">Sourcing and Procurement</text><text class="label" x="96" y="762">Systems</text>
+  <text class="sub" x="96" y="786">조달 시스템</text>
+  <text class="label" x="940" y="740">Customer Relationship</text><text class="label" x="940" y="762">Management Systems</text>
+  <text class="sub" x="940" y="786">고객관계관리 시스템</text>
+  <path class="node" d="M80 808 H 286 L 310 844 L 286 880 H 80 L 104 844 Z"/><text class="name" x="196" y="840" text-anchor="middle">Suppliers’ Suppliers</text><text class="sub" x="196" y="862" text-anchor="middle">공급자의 공급자</text>
+  <path class="node" d="M304 808 H 510 L 534 844 L 510 880 H 304 L 328 844 Z"/><text class="name" x="420" y="840" text-anchor="middle">Suppliers</text><text class="sub" x="420" y="862" text-anchor="middle">공급자</text>
+  <path class="focal" d="M528 808 H 734 L 758 844 L 734 880 H 528 L 552 844 Z"/><text class="name inverse" x="644" y="840" text-anchor="middle">Firm</text><text class="sub inverse" x="644" y="862" text-anchor="middle">기업</text>
+  <path class="node" d="M752 808 H 958 L 982 844 L 958 880 H 752 L 776 844 Z"/><text class="name" x="868" y="840" text-anchor="middle">Distributors</text><text class="sub" x="868" y="862" text-anchor="middle">유통업체</text>
+  <path class="node" d="M976 808 H 1182 L 1206 844 L 1182 880 H 976 L 1000 844 Z"/><text class="name" x="1092" y="840" text-anchor="middle">Customers</text><text class="sub" x="1092" y="862" text-anchor="middle">고객</text>
+  <text class="name" x="640" y="920" text-anchor="middle">Industry Value Chain · 산업 가치사슬</text>
+</svg>

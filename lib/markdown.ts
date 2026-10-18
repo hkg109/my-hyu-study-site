@@ -15,6 +15,13 @@ const CALLOUTS = {
   CAUTION: { type: "caution", label: "주의" },
   EXAMPLE: { type: "example", label: "예시" },
   ADVANCED: { type: "advanced", label: "심화" },
+  // Textbook-style boxes used in the printable study notes.
+  CONCEPT: { type: "concept", label: "개념" },
+  BOARD: { type: "board", label: "판서" },
+  NOTE: { type: "note", label: "해설" },
+  TRAP: { type: "trap", label: "오답 주의" },
+  PROBLEM: { type: "problem", label: "예제" },
+  CHECK: { type: "check", label: "확인 문제" },
 } as const;
 const BLOCK_TYPES = new Set(["heading", "paragraph", "blockquote", "list", "table"]);
 
@@ -82,7 +89,13 @@ function transformCallouts(tree: Root) {
     if (first?.type !== "paragraph") return;
     const marker = first.children[0];
     if (marker?.type !== "text") return;
-    const match = /^\[!(DEFINITION|EXAM|CAUTION|EXAMPLE|ADVANCED)\](?:\s*\n?|\s+)/.exec(marker.value);
+    // `> [!PAGEBREAK]` starts a new printed page and is invisible on screen.
+    if (/^\[!PAGEBREAK\]\s*$/.test(marker.value) && first.children.length === 1 && node.children.length === 1) {
+      node.children = [];
+      setProperties(node, { className: ["print-page-break"], "aria-hidden": "true" }, "div");
+      return;
+    }
+    const match = new RegExp(`^\\[!(${Object.keys(CALLOUTS).join("|")})\\](?:\\s*\\n?|\\s+)`).exec(marker.value);
     if (!match) return;
     const callout = CALLOUTS[match[1] as keyof typeof CALLOUTS];
     marker.value = marker.value.slice(match[0].length);

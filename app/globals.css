@@ -444,7 +444,18 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
 
 @page study-document {
   size:A4;
-  margin:10mm 11mm 15mm;
+  /* The wider right margin leaves room for handwritten notes. */
+  margin:14mm 26mm 16mm 14mm;
+  @top-left {
+    content:"HJS STUDY";
+    color:#666;
+    font:550 7pt sans-serif;
+  }
+  @bottom-center {
+    content:counter(page);
+    color:#666;
+    font:600 8pt sans-serif;
+  }
   @bottom-right {
     content:"26학번 한지석 제공";
     color:#666;
@@ -511,3 +522,39 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
 .unlock-card { width:min(420px,100%); margin:64px 0 96px; padding:32px; border:1px solid var(--border); border-radius:8px; background:var(--background); }
 .unlock-card h1 { margin:18px 0 10px; font-size:24px; letter-spacing:-.03em; }
 .unlock-card > p { color:var(--muted); font-size:14px; line-height:1.7; }
+
+/* Textbook-style study boxes: 개념 · 판서 · 해설 · 오답 주의 · 예제 · 확인 문제 */
+.study-callout-concept { --callout-color:#2563eb; }
+.study-callout-board { --callout-color:#475569; border-style:dashed; border-left-style:solid; }
+.study-callout-board p,.study-callout-board li { font-weight:550; }
+.study-callout-note { --callout-color:#0d9488; --callout-bg:transparent; }
+.study-callout-trap { --callout-color:#dc2626; border-left-width:6px; }
+.study-callout-problem { --callout-color:#16a34a; }
+.study-callout-check { --callout-color:#7c3aed; border-style:solid; border-left-width:1px; }
+@media screen {
+  .study-callout-concept,.study-callout-board,.study-callout-note,.study-callout-trap,.study-callout-problem,.study-callout-check { --callout-color:var(--foreground); }
+  .study-callout-board { border-style:dashed; border-left:3px solid var(--foreground); }
+  .study-callout-note { background:transparent; }
+  .study-callout-trap { border-left-width:6px; }
+  .study-callout-check { border:1px solid var(--border-strong); }
+}
+.print-page-break { display:none; }
+
+@media print {
+  .print-page-break { display:block; height:0; break-before:page; page-break-before:always; }
+  /* Section rules no longer force a new page; [!PAGEBREAK] does that where it matters. */
+  .prose > hr { height:0; margin:4mm 0; border:0; border-top:1px solid var(--border); visibility:visible; break-after:auto; page-break-after:auto; }
+  .study-callout,.study-quiz { margin:3mm 0; padding:7mm 3.5mm 3mm; border-radius:0; background:transparent; break-inside:avoid-page; page-break-inside:avoid; }
+  .study-callout::before,.study-quiz::before { top:2mm; left:3.5mm; font-size:7.5pt; }
+  .study-callout { --callout-color:var(--foreground); border:1px solid var(--border-strong); border-left:2.5px solid var(--foreground); }
+  .study-callout-board { border-style:dashed; border-left-style:solid; }
+  .study-callout-trap { border-left-width:5px; }
+  .study-callout-note { border-left-width:1px; }
+  .study-callout-check { border-left-width:1px; }
+  .study-quiz-results,.document-print-controls { display:none!important; }
+  .study-blank { min-width:5em; color:transparent!important; background:transparent!important; text-shadow:none!important; border-bottom:1px solid var(--foreground); }
+  .prose img[src^="/materials/diagrams/"] { max-height:125mm; width:auto; max-width:100%; margin:3mm auto; border-color:var(--border-strong); background:#fff; break-inside:avoid-page; page-break-inside:avoid; }
+  .prose img[src^="/materials/diagrams/"] + em,.prose p:has(> img[src^="/materials/diagrams/"]) + p > em:only-child { font-size:7.5pt; color:var(--muted); }
+  /* "문제만" print mode: hide answers and hints so the PDF works as a test sheet. */
+  html.print-mode-questions .study-answer,html.print-mode-questions .study-answer-translation,html.print-mode-questions .study-hint { display:none!important; }
+}

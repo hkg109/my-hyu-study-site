@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="mis-fig-3-11-title mis-fig-3-11-desc">
+  <title id="mis-fig-3-11-title">Figure 3.11 An Ecosystem Strategic Model</title>
+  <desc id="mis-fig-3-11-desc">디지털 시대에는 여러 산업이 묶인 생태계 전체가 다섯 가지 경쟁 요인과 맞선다</desc>
+  <defs><marker id="mis-fig-3-11-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-3-11-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-3-11-arrow);marker-end:url(#mis-fig-3-11-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="640"/><text class="tag" x="64" y="52">3장 · Figure 3.11</text><text class="title" x="64" y="92">An Ecosystem Strategic Model</text><text class="subtitle" x="64" y="122">디지털 시대에는 여러 산업이 묶인 생태계 전체가 다섯 가지 경쟁 요인과 맞선다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="64" y="168" width="1152" height="448" rx="6"/>
+  <ellipse class="deep" cx="640" cy="380" rx="280" ry="170"/>
+  <circle class="node" cx="540" cy="320" r="50"/><text class="name" x="540" y="326" text-anchor="middle">Industry 1</text>
+  <circle class="node" cx="740" cy="320" r="50"/><text class="name" x="740" y="326" text-anchor="middle">Industry 2</text>
+  <circle class="node" cx="540" cy="440" r="50"/><text class="name" x="540" y="446" text-anchor="middle">Industry 3</text>
+  <circle class="node" cx="740" cy="440" r="50"/><text class="name" x="740" y="446" text-anchor="middle">Industry 4</text>
+  <text class="name" x="640" y="588" text-anchor="middle">Industry Ecosystem · 산업 생태계</text>
+  <rect class="node" x="96" y="196" width="260" height="100" rx="6"/><text class="name" x="226" y="225" text-anchor="middle">New Market</text><text class="name" x="226" y="247" text-anchor="middle">Entrants</text><text class="sub" x="226" y="278" text-anchor="middle">신규 진입자</text><path class="flow" d="M356 262 L 404 300"/>
+  <rect class="node" x="924" y="196" width="260" height="100" rx="6"/><text class="name" x="1054" y="225" text-anchor="middle">Substitute Products</text><text class="name" x="1054" y="247" text-anchor="middle">and Services</text><text class="sub" x="1054" y="278" text-anchor="middle">대체 제품·서비스</text><path class="flow" d="M924 262 L 876 300"/>
+  <rect class="node" x="96" y="470" width="260" height="100" rx="6"/><text class="name" x="226" y="510" text-anchor="middle">Suppliers</text><text class="sub" x="226" y="552" text-anchor="middle">공급자</text><path class="flow" d="M356 500 L 404 462"/>
+  <rect class="node" x="924" y="470" width="260" height="100" rx="6"/><text class="name" x="1054" y="510" text-anchor="middle">Customers</text><text class="sub" x="1054" y="552" text-anchor="middle">고객</text><path class="flow" d="M924 500 L 876 462"/>
+</svg>

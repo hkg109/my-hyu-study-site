@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 680" role="img" aria-labelledby="mis-fig-3-05-title mis-fig-3-05-desc">
+  <title id="mis-fig-3-05-title">Figure 3.5 Environments and Organizations Have a Reciprocal Relationship</title>
+  <desc id="mis-fig-3-05-desc">정보시스템은 환경의 신호를 걸러 기업 안으로 전달하는 렌즈 역할을 한다</desc>
+  <defs><marker id="mis-fig-3-05-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-3-05-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-3-05-arrow);marker-end:url(#mis-fig-3-05-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="680"/><text class="tag" x="64" y="52">3장 · Figure 3.5</text><text class="title" x="64" y="92">Environments and Organizations Have a Reciprocal Relationship</text><text class="subtitle" x="64" y="122">정보시스템은 환경의 신호를 걸러 기업 안으로 전달하는 렌즈 역할을 한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="64" y="168" width="1152" height="488" rx="6"/>
+  <text class="name" x="400" y="204" text-anchor="middle">The Organization and Its Environment · 조직과 환경</text>
+  <text class="label" x="96" y="252">Environmental Resources</text><text class="label" x="96" y="274">and Constraints</text>
+  <text class="sub" x="96" y="300">환경의 자원과 제약</text>
+  <circle class="node" cx="980" cy="420" r="220"/>
+  <text class="name" x="1040" y="250" text-anchor="middle">The Firm · 기업</text>
+  <ellipse class="deep" cx="822" cy="420" rx="44" ry="156"/>
+  <text class="label" x="96" y="344">Governments</text><text class="sub" x="300" y="344">정부</text><path class="soft" d="M340 339 L 822 410"/>
+  <text class="label" x="96" y="372">Competitors</text><text class="sub" x="300" y="372">경쟁자</text><path class="soft" d="M340 367 L 822 410"/>
+  <text class="label" x="96" y="400">Customers</text><text class="sub" x="300" y="400">고객</text><path class="soft" d="M340 395 L 822 410"/>
+  <text class="label" x="96" y="428">Financial Institutions</text><text class="sub" x="300" y="428">금융기관</text><path class="soft" d="M360 423 L 822 410"/>
+  <text class="label" x="96" y="456">Culture</text><text class="sub" x="300" y="456">문화</text><path class="soft" d="M340 451 L 822 410"/>
+  <text class="label" x="96" y="584">Knowledge</text><text class="sub" x="300" y="584">지식</text><path class="soft" d="M340 579 L 822 430"/>
+  <text class="label" x="96" y="612">Technology</text><text class="sub" x="300" y="612">기술</text><path class="soft" d="M340 607 L 822 430"/>
+  <path class="line" d="M822 410 L 1100 330"/>
+  <path class="line" d="M822 420 L 1120 420"/>
+  <path class="line" d="M822 430 L 1110 520"/>
+  <text class="name" x="822" y="600" text-anchor="middle">Information Systems</text>
+  <text class="sub" x="822" y="624" text-anchor="middle">정보시스템 = 렌즈</text>
+</svg>

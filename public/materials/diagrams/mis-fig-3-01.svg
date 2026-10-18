@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-fig-3-01-title mis-fig-3-01-desc">
+  <title id="mis-fig-3-01-title">Figure 3.1 The Two-Way Relationship Between Organizations and Information Technology</title>
+  <desc id="mis-fig-3-01-desc">조직과 IT는 서로에게 영향을 주며, 그 사이를 여러 매개 요인이 조정한다</desc>
+  <defs><marker id="mis-fig-3-01-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-3-01-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-3-01-arrow);marker-end:url(#mis-fig-3-01-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="720"/><text class="tag" x="64" y="52">3장 · Figure 3.1</text><text class="title" x="64" y="92">The Two-Way Relationship Between Organizations and Information Technology</text><text class="subtitle" x="64" y="122">조직과 IT는 서로에게 영향을 주며, 그 사이를 여러 매개 요인이 조정한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="flow" d="M262 330 C 420 180, 860 180, 1018 330"/>
+  <path class="flow" d="M1018 530 C 860 690, 420 690, 262 530"/>
+  <text class="small" x="640" y="214" text-anchor="middle">조직의 구조·전략이 어떤 IT를 도입할지 정한다</text>
+  <text class="small" x="640" y="666" text-anchor="middle">도입된 IT가 다시 조직의 일하는 방식을 바꾼다</text>
+  <circle class="zone" cx="240" cy="430" r="120"/>
+  <text class="name" x="240" y="424" text-anchor="middle">Organizations</text>
+  <text class="sub" x="240" y="450" text-anchor="middle">조직</text>
+  <circle class="zone" cx="1040" cy="430" r="120"/>
+  <text class="name" x="1040" y="414" text-anchor="middle">Information</text>
+  <text class="name" x="1040" y="438" text-anchor="middle">Technology</text>
+  <text class="sub" x="1040" y="464" text-anchor="middle">정보기술</text>
+  <rect class="focal" x="450" y="280" width="380" height="300" rx="6"/>
+  <text class="name inverse" x="480" y="320">Mediating Factors · 매개 요인</text>
+  <text class="label inverse" x="480" y="362">Environment</text><text class="sub inverse" x="800" y="362" text-anchor="end">환경</text>
+  <text class="label inverse" x="480" y="396">Culture</text><text class="sub inverse" x="800" y="396" text-anchor="end">문화</text>
+  <text class="label inverse" x="480" y="430">Structure</text><text class="sub inverse" x="800" y="430" text-anchor="end">구조</text>
+  <text class="label inverse" x="480" y="464">Business Processes</text><text class="sub inverse" x="800" y="464" text-anchor="end">비즈니스 프로세스</text>
+  <text class="label inverse" x="480" y="498">Politics</text><text class="sub inverse" x="800" y="498" text-anchor="end">정치</text>
+  <text class="label inverse" x="480" y="532">Management Decisions</text><text class="sub inverse" x="800" y="532" text-anchor="end">경영 의사결정</text>
+</svg>
