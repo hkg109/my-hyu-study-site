@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" role="img" aria-labelledby="mis-fig-1-06-title mis-fig-1-06-desc">
+  <title id="mis-fig-1-06-title">Figure 1.6 Levels in a Firm</title>
+  <desc id="mis-fig-1-06-desc">기업은 최고경영진·중간관리자·운영관리자의 계층으로 나뉘고, 계층마다 일하는 사람과 정보 요구가 다르다</desc>
+  <defs><marker id="mis-fig-1-06-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-1-06-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-1-06-arrow);marker-end:url(#mis-fig-1-06-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-1-06-arrow);marker-end:url(#mis-fig-1-06-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="700"/><text class="tag" x="64" y="52">1장 · Figure 1.6</text><text class="title" x="64" y="92">Levels in a Firm</text><text class="subtitle" x="64" y="122">기업은 최고경영진·중간관리자·운영관리자의 계층으로 나뉘고, 계층마다 일하는 사람과 정보 요구가 다르다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="node" d="M640 170 L 760 340 L 520 340 Z"/>
+  <path class="zone" d="M520 340 L 760 340 L 880 510 L 400 510 Z"/>
+  <path class="deep" d="M400 510 L 880 510 L 1000 680 L 280 680 Z"/>
+  <text class="name" x="640" y="290" text-anchor="middle">Senior</text>
+  <text class="name" x="640" y="314" text-anchor="middle">Management</text>
+  <text class="name" x="640" y="412" text-anchor="middle">Middle Management · 중간관리자</text>
+  <text class="sub" x="640" y="440" text-anchor="middle">Scientists and knowledge workers</text>
+  <text class="name" x="640" y="580" text-anchor="middle">Operational Management · 운영관리자</text>
+  <text class="sub" x="640" y="608" text-anchor="middle">Production and service workers · Data workers</text>
+  <text class="small" x="712" y="270">← 최고경영진: 장기 전략 결정</text>
+</svg>

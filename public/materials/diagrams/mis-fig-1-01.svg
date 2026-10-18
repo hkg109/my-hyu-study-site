@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" role="img" aria-labelledby="mis-fig-1-01-title mis-fig-1-01-desc">
+  <title id="mis-fig-1-01-title">Figure 1.1 Information Technology Capital Investment</title>
+  <desc id="mis-fig-1-01-desc">IT 투자는 1999년 전체 투자 자본의 21%에서 2017년 33%로 늘었다 (값은 교재 그래프를 읽은 근사치)</desc>
+  <defs><marker id="mis-fig-1-01-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-1-01-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-1-01-arrow);marker-end:url(#mis-fig-1-01-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-1-01-arrow);marker-end:url(#mis-fig-1-01-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="700"/><text class="tag" x="64" y="52">1장 · Figure 1.1</text><text class="title" x="64" y="92">Information Technology Capital Investment</text><text class="subtitle" x="64" y="122">IT 투자는 1999년 전체 투자 자본의 21%에서 2017년 33%로 늘었다 (값은 교재 그래프를 읽은 근사치)</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="rule" d="M180 600 H 1160"/>
+  <path class="rule" d="M180 600 V 180"/>
+  <path class="rule" d="M176 600 H 1160"/><text class="small" x="168" y="605" text-anchor="end">0</text>
+  <path class="rule" d="M176 530 H 1160"/><text class="small" x="168" y="535" text-anchor="end">500</text>
+  <path class="rule" d="M176 460 H 1160"/><text class="small" x="168" y="465" text-anchor="end">1000</text>
+  <path class="rule" d="M176 390 H 1160"/><text class="small" x="168" y="395" text-anchor="end">1500</text>
+  <path class="rule" d="M176 320 H 1160"/><text class="small" x="168" y="325" text-anchor="end">2000</text>
+  <path class="rule" d="M176 249.99999999999994 H 1160"/><text class="small" x="168" y="254.99999999999994" text-anchor="end">2500</text>
+  <path class="rule" d="M176 179.99999999999994 H 1160"/><text class="small" x="168" y="184.99999999999994" text-anchor="end">3000</text>
+  <text class="small" x="200" y="626" text-anchor="middle">1999</text>
+  
+  <text class="small" x="304" y="626" text-anchor="middle">2001</text>
+  
+  <text class="small" x="408" y="626" text-anchor="middle">2003</text>
+  
+  <text class="small" x="512" y="626" text-anchor="middle">2005</text>
+  
+  <text class="small" x="616" y="626" text-anchor="middle">2007</text>
+  
+  <text class="small" x="720" y="626" text-anchor="middle">2009</text>
+  
+  <text class="small" x="824" y="626" text-anchor="middle">2011</text>
+  
+  <text class="small" x="928" y="626" text-anchor="middle">2013</text>
+  
+  <text class="small" x="1032" y="626" text-anchor="middle">2015</text>
+  
+  <text class="small" x="1136" y="626" text-anchor="middle">2017</text>
+  <path class="line" d="M200 298.99999999999994 L 252 277.99999999999994 L 304 282.2 L 356 291.99999999999994 L 408 280.79999999999995 L 460 256.99999999999994 L 512 233.2 L 564 227.59999999999997 L 616 234.59999999999997 L 668 259.79999999999995 L 720 317.2 L 772 313 L 824 294.79999999999995 L 876 263.99999999999994 L 928 249.99999999999994 L 980 230.39999999999998 L 1032 214.99999999999994 L 1084 289.2 L 1136 269.59999999999997"/><circle class="focal" cx="200" cy="298.99999999999994" r="4"/><circle class="focal" cx="252" cy="277.99999999999994" r="4"/><circle class="focal" cx="304" cy="282.2" r="4"/><circle class="focal" cx="356" cy="291.99999999999994" r="4"/><circle class="focal" cx="408" cy="280.79999999999995" r="4"/><circle class="focal" cx="460" cy="256.99999999999994" r="4"/><circle class="focal" cx="512" cy="233.2" r="4"/><circle class="focal" cx="564" cy="227.59999999999997" r="4"/><circle class="focal" cx="616" cy="234.59999999999997" r="4"/><circle class="focal" cx="668" cy="259.79999999999995" r="4"/><circle class="focal" cx="720" cy="317.2" r="4"/><circle class="focal" cx="772" cy="313" r="4"/><circle class="focal" cx="824" cy="294.79999999999995" r="4"/><circle class="focal" cx="876" cy="263.99999999999994" r="4"/><circle class="focal" cx="928" cy="249.99999999999994" r="4"/><circle class="focal" cx="980" cy="230.39999999999998" r="4"/><circle class="focal" cx="1032" cy="214.99999999999994" r="4"/><circle class="focal" cx="1084" cy="289.2" r="4"/><circle class="focal" cx="1136" cy="269.59999999999997" r="4"/>
+  <path class="soft" d="M200 537 L 252 524.4 L 304 524.4 L 356 528.6 L 408 521.6 L 460 513.2 L 512 507.6 L 564 499.2 L 616 488 L 668 486.6 L 720 493.6 L 772 486.6 L 824 482.4 L 876 476.79999999999995 L 928 471.2 L 980 465.6 L 1032 458.6 L 1084 497.8 L 1136 492.2"/><circle class="deep" cx="200" cy="537" r="4"/><circle class="deep" cx="252" cy="524.4" r="4"/><circle class="deep" cx="304" cy="524.4" r="4"/><circle class="deep" cx="356" cy="528.6" r="4"/><circle class="deep" cx="408" cy="521.6" r="4"/><circle class="deep" cx="460" cy="513.2" r="4"/><circle class="deep" cx="512" cy="507.6" r="4"/><circle class="deep" cx="564" cy="499.2" r="4"/><circle class="deep" cx="616" cy="488" r="4"/><circle class="deep" cx="668" cy="486.6" r="4"/><circle class="deep" cx="720" cy="493.6" r="4"/><circle class="deep" cx="772" cy="486.6" r="4"/><circle class="deep" cx="824" cy="482.4" r="4"/><circle class="deep" cx="876" cy="476.79999999999995" r="4"/><circle class="deep" cx="928" cy="471.2" r="4"/><circle class="deep" cx="980" cy="465.6" r="4"/><circle class="deep" cx="1032" cy="458.6" r="4"/><circle class="deep" cx="1084" cy="497.8" r="4"/><circle class="deep" cx="1136" cy="492.2" r="4"/>
+  <text class="name" x="560" y="206">Total investment · 전체 투자</text>
+  <text class="name" x="560" y="560">IT investment · IT 투자</text>
+  <text class="name" x="200" y="519" text-anchor="middle">21%</text>
+  <text class="name" x="1156" y="474.2" text-anchor="middle">33%</text>
+  <text class="small" x="96" y="400" text-anchor="middle">US$ billions</text>
+  <text class="sub" x="640" y="664" text-anchor="middle">IT 투자 = 하드웨어 · 소프트웨어 · 통신 장비 투자</text>
+</svg>

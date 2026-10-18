@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="mis-fig-1-07-title mis-fig-1-07-desc">
+  <title id="mis-fig-1-07-title">Figure 1.7 The Business Information Value Chain</title>
+  <desc id="mis-fig-1-07-desc">데이터 수집에서 시작한 정보 처리 활동이 비즈니스 프로세스와 경영 활동을 거쳐 수익성과 전략적 위치를 높인다</desc>
+  <defs><marker id="mis-fig-1-07-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-1-07-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-1-07-arrow);marker-end:url(#mis-fig-1-07-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-1-07-arrow);marker-end:url(#mis-fig-1-07-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="760"/><text class="tag" x="64" y="52">1장 · Figure 1.7</text><text class="title" x="64" y="92">The Business Information Value Chain</text><text class="subtitle" x="64" y="122">데이터 수집에서 시작한 정보 처리 활동이 비즈니스 프로세스와 경영 활동을 거쳐 수익성과 전략적 위치를 높인다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="deep" d="M64 360 H 176 L 198 400 L 176 440 H 64 L 86 400 Z"/><text class="small" x="64" y="472">Data Collection</text><text class="small" x="64" y="490">and Storage</text>
+  <path class="deep" d="M202 360 H 314 L 336 400 L 314 440 H 202 L 224 400 Z"/><text class="small" x="202" y="472">Transformation into</text><text class="small" x="202" y="490">Business Systems</text>
+  <path class="deep" d="M340 360 H 452 L 474 400 L 452 440 H 340 L 362 400 Z"/><text class="small" x="340" y="472">Dissemination</text>
+  <path class="flow" d="M470 360 L 520 300"/>
+  <path class="flow" d="M470 440 L 520 500"/>
+  <text class="name" x="700" y="196">Business Processes · 비즈니스 프로세스</text>
+  <path class="node" d="M540 216 H 652 L 674 251 L 652 286 H 540 L 562 251 Z"/><text class="small" x="540" y="308">Supply Chain</text><text class="small" x="540" y="325">Management</text>
+  <path class="node" d="M680 216 H 792 L 814 251 L 792 286 H 680 L 702 251 Z"/><text class="small" x="680" y="308">Enterprise</text><text class="small" x="680" y="325">Management</text>
+  <path class="node" d="M820 216 H 932 L 954 251 L 932 286 H 820 L 842 251 Z"/><text class="small" x="820" y="308">Customer</text><text class="small" x="820" y="325">Management</text>
+  <path class="node" d="M960 216 H 1072 L 1094 251 L 1072 286 H 960 L 982 251 Z"/><text class="small" x="960" y="308">Knowledge</text><text class="small" x="960" y="325">Management</text>
+  <text class="name" x="700" y="520">Management Activities · 경영 활동</text>
+  <path class="node" d="M540 540 H 652 L 674 575 L 652 610 H 540 L 562 575 Z"/><text class="small" x="540" y="632">Planning</text>
+  <path class="node" d="M680 540 H 792 L 814 575 L 792 610 H 680 L 702 575 Z"/><text class="small" x="680" y="632">Coordinating</text>
+  <path class="node" d="M820 540 H 932 L 954 575 L 932 610 H 820 L 842 575 Z"/><text class="small" x="820" y="632">Controlling</text>
+  <path class="node" d="M960 540 H 1072 L 1094 575 L 1072 610 H 960 L 982 575 Z"/><text class="small" x="960" y="632">Modeling and</text><text class="small" x="960" y="649">Decision Making</text>
+  <path class="focal" d="M1066 320 H 1178 L 1206 395 L 1178 470 H 1066 L 1094 395 Z"/>
+  <text class="small inverse" x="1134" y="364" text-anchor="middle">Firm</text><text class="small inverse" x="1134" y="384" text-anchor="middle">Profitability</text><text class="small inverse" x="1134" y="404" text-anchor="middle">and Strategic</text><text class="small inverse" x="1134" y="424" text-anchor="middle">Position</text>
+  <text class="small" x="1134" y="500" text-anchor="middle">수익성 · 전략적 위치</text>
+  <path class="flow" d="M64 700 H 1200"/>
+  <text class="small" x="64" y="690">Information Processing Activities</text>
+  <text class="small" x="700" y="690">Management Activities</text>
+  <text class="name" x="640" y="734" text-anchor="middle">Business Value · 비즈니스 가치</text>
+</svg>

@@ -1,9 +1,9 @@
 ---
 title: "1장 · 정보시스템은 어떻게 비즈니스 가치를 만드는가"
-description: "Chapter 1 슬라이드 1–50 필기본. 핵심 영문 용어와 한국어 필기, 쉬운 설명, 카페 사례, 개념도와 복습을 함께 읽습니다."
+description: "Chapter 1 슬라이드 1–50 교재형 필기. 교재 그림 10개와 개념·판서·해설·오답 주의·예제·확인 문제, 영어 단답형 10문제로 정리합니다."
 order: 1
 published: true
-duration: 85
+duration: 110
 tags: [정시개, MIS, 1장, 필기, 디지털 기업, 보완 자산]
 objectives:
   - 디지털 기업의 특징과 정보시스템에 투자하는 여섯 목적을 구분한다.
@@ -35,6 +35,24 @@ objectives:
 | 45–50 | 기술과 사람을 어떻게 함께 보는가? | 기술적·행동적·사회기술적 접근, 진로 |
 
 ---
+
+## 단원 도입
+
+| 출제 포인트 | 빈도 | 이렇게 나온다 |
+|---|:---:|---|
+| 여섯 가지 전략적 비즈니스 목표 | ★★★ | 사례에 맞는 목표 고르기, 여섯 개 쓰기 |
+| IT vs IS, Data vs Information | ★★★ | 정의 구분하기 |
+| Input · Processing · Output · Feedback | ★★★ | 활동 분류하기 |
+| 세 차원(조직·경영·기술)과 보완 자산 | ★★★ | 같은 IT에 성과가 다른 이유 설명 |
+| Digital firm, time / space shifting | ★★ | 정의와 구분 |
+| 기술적·행동적·사회기술적 접근 | ★★ | 학문 분류, joint optimization |
+| 관리 계층과 근로자 유형 | ★ | 계층별 역할 |
+
+**책 읽는 법:** 슬라이드 제목 아래의 **핵심 필기**는 강의 필기 그대로다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습이고, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
+
+> [!PAGEBREAK]
+
+## PART 1 · 기업은 왜 디지털로 바뀌는가
 
 ## Slides 1–3 · 장의 주제와 학습목표
 
@@ -79,6 +97,10 @@ objectives:
 - IT·서비스 투자 증가 → 기술이 기업 운영의 주요 기반이 됨.
 - **Figure 1.1:** IT 자본 투자 비중이 1999년 약 21% → 2017년 약 33%로 증가한 자료.
 - **핵심 결론:** ==yellow:IT 투자 확대가 모든 기업의 성과 개선을 보장하지는 않는다.==
+
+![1999년부터 2017년까지 전체 투자와 IT 투자의 추이를 보여 주는 꺾은선 그래프](/materials/diagrams/mis-fig-1-01.svg)
+
+*Figure 1.1 · Information Technology Capital Investment — IT 투자 비중이 21%에서 33%로 늘었다. 값은 교재 그래프를 읽은 근사치다.*
 
 > [!NOTE]
 > 투자액은 회사가 기술에 얼마나 많은 자원을 투입했는지 보여 준다. 하지만 돈을 썼다는 사실만으로 사용자가 더 빨리 일하거나 더 좋은 결정을 내렸다고 할 수는 없다. 새 재고 앱을 샀는데 직원들이 계속 종이와 앱에 이중 입력한다면 투자와 함께 업무 부담도 늘 수 있다.
@@ -147,11 +169,21 @@ objectives:
 - **Time shifting:** 정해진 영업·근무시간 밖에서도 업무를 이어감. 예: 밤에 접수된 주문을 다음 날 처리.
 - **Space shifting:** 서로 다른 장소에서 업무를 수행·조정함. 예: 본사와 해외 매장이 같은 재고 정보를 확인.
 
+> [!CONCEPT]
+> **Digital firm** — 고객·공급업체·직원과의 **중요한 관계**, **핵심 비즈니스 프로세스**, **핵심 자산**이 디지털로 연결·수행·관리되는 기업.
+
 > [!NOTE]
 > 종이 주문서를 PDF로 스캔했지만 여전히 담당자에게 전화해 주문을 확인해야 한다면 파일은 디지털이어도 프로세스의 연결은 약하다. **디지털 전환(Digital transformation)**은 디지털 역량으로 운영과 가치 창출 방식까지 바꾸는 것이다. 디지털 기업은 중요한 관계·업무·자산을 디지털로 연결하므로 다른 시간대와 지역에 걸친 글로벌 운영에 유리하다.
 
 > [!CAUTION]
 > 모든 작업이 온라인이나 원격으로 바뀐다는 뜻은 아니다. 음료 제조와 배송은 물리적 활동이고, 디지털 시스템은 이 활동의 정보와 조정을 지원한다.
+
+> [!TRAP]
+> **Time shifting = 시간**(24시간 계속 이어지는 업무), **Space shifting = 장소**(어디서든 수행하는 업무). 두 도시가 등장해도 “일이 멈추지 않는다”가 핵심이면 time shifting이다.
+
+> [!PAGEBREAK]
+
+## PART 2 · 기업은 왜 정보시스템에 투자하는가
 
 ## Slides 16–17 · 기업과 정보시스템의 상호의존
 
@@ -162,6 +194,10 @@ objectives:
 - 기업이 원하는 전략을 실행하려면 시스템도 바뀌어야 한다.
 - 반대로 시스템의 능력과 한계가 기업이 할 수 있는 일을 결정한다.
 - **Figure 1.2:** 기업이 시스템을 만들고, 시스템이 기업의 역량을 바꾼다.
+
+![왼쪽 기업의 전략 목표와 비즈니스 프로세스와 오른쪽 정보시스템의 소프트웨어 하드웨어 데이터 관리 통신이 양방향으로 연결된 그림](/materials/diagrams/mis-fig-1-02.svg)
+
+*Figure 1.2 · The Interdependence Between Organizations and Information Systems — 전략이 시스템을, 시스템이 전략을 바꾼다.*
 
 > [!NOTE]
 > “어느 지점에서 주문해도 가까운 매장에서 픽업”이라는 전략에는 지점별 재고 공유가 필요하다. 기존 시스템이 지점별로 분리되어 있으면 이 전략을 실행하기 어렵다. 공통 재고 시스템을 만든 뒤에는 다른 지점 상품의 예약·이동이라는 새로운 서비스도 가능해진다. **요구사항이 기술을 바꾸고, 새 기술 능력이 새로운 선택지를 만든다.**
@@ -181,6 +217,11 @@ objectives:
 
 > [!NOTE]
 > 기술 이름을 보고 목표를 고르는 것이 아니다. 모바일 주문이 “기다리는 시간을 줄이려는 것”인지, “경쟁사보다 나은 픽업 경험을 주려는 것”인지, “고객이 당연히 요구하는 수준을 맞추려는 것”인지에 따라 답이 달라진다. 한 시스템이 여러 목표를 동시에 지원할 수도 있다.
+
+> [!PROBLEM]
+> **문제.** 한 커피 체인이 판매 데이터를 로스터리와 공유해, 매장 원두가 떨어지기 전에 자동으로 보충되게 했다. 가장 직접적인 전략적 목표는?
+>
+> **풀이.** ① 정보를 공유하는 상대가 **공급업체**다 ② 목적은 공급 일정 조정이다 ③ **Customer and supplier intimacy**(공급업체 친밀성). 경쟁사와의 비교가 없으므로 경쟁우위라고 단정할 수 없다.
 
 ## Slide 19 · Operational Excellence
 
@@ -271,6 +312,17 @@ objectives:
 > [!ANSWER]
 > 첫 번째는 **생존**, 두 번째는 **경쟁우위**에 무게가 있다. 양쪽 모두 운영 효율을 높일 수도 있다. 목표는 사용한 기기가 아니라 의도한 결과와 업무 변화로 판단한다.
 
+> [!CHECK]
+> **1.** 기업이 정보시스템에 투자하는 여섯 가지 전략적 목표를 순서대로 쓰시오.
+>
+> **2.** 디지털 기업의 세 가지 특징을 쓰시오.
+>
+> **3.** 운영 우수성과 경쟁우위를 구분하는 기준은 무엇인가?
+
+> [!PAGEBREAK]
+
+## PART 3 · 정보시스템은 무엇이고 무엇으로 이루어지나
+
 ## Slides 25–26 · IT / IS, Data / Information
 
 ### 핵심 필기
@@ -286,6 +338,10 @@ objectives:
 - 분석, 시각화, 제품 창출에도 활용.
 - **Figure 1.3:** 계산대의 품목번호·품명·가격 → 품목별 판매량·누적매출·지역별 실적.
 
+![왼쪽 계산대 원시 데이터가 가운데 정보시스템을 거쳐 오른쪽 지역 매장 품목별 판매 정보로 바뀌는 나비넥타이 모양 그림](/materials/diagrams/mis-fig-1-03.svg)
+
+*Figure 1.3 · Data and Information — 같은 품목의 거래를 모으면 관리자가 쓸 정보가 된다.*
+
 > [!NOTE]
 > **IT와 IS:** 태블릿과 재고 앱은 도구다. 직원이 판매를 입력하고, 점장이 재고 경고를 읽고, 발주 담당자가 주문을 바꾸는 절차까지 연결하면 정보시스템으로 설명할 수 있다. 원문의 집 비유에서 컴퓨터와 소프트웨어는 목재·벽돌·공구에 가깝다. 설계와 역할 분담이 있어야 실제로 쓸 수 있는 집이 된다.
 
@@ -294,6 +350,9 @@ objectives:
 
 > [!EXAM]
 > 데이터와 정보는 서로 완전히 다른 물질이 아니다. **같은 기록이 어떤 목적과 맥락으로 처리되었는지**가 핵심이다. 한 시스템의 출력 정보가 다른 분석의 입력 데이터가 될 수도 있다.
+
+> [!TRAP]
+> “정보시스템 = 컴퓨터”라고 쓰면 오답이다. IT는 IS의 **한 구성요소**이고, IS는 도구에 사람·절차·목적이 연결된 체계다.
 
 ## Slides 27–29 · Input → Processing → Output + Feedback
 
@@ -317,6 +376,10 @@ objectives:
 
 ### Figure 1.4 · 기업 바깥도 시스템의 환경
 
+![환경과 조직 안에 정보시스템이 있고 입력 처리 출력과 피드백이 이어지며 공급업체 고객 규제기관 주주 경쟁자가 바깥에서 상호작용하는 그림](/materials/diagrams/mis-fig-1-04.svg)
+
+*Figure 1.4 · Functions of an Information System — 입력·처리·출력과 피드백, 그리고 조직 밖의 환경.*
+
 - **Customers:** 주문·선호·불만, 서비스 결과.
 - **Suppliers:** 가격·납기·재고, 주문과 배송 상태.
 - **Competitors:** 가격·제품·서비스 변화.
@@ -331,6 +394,11 @@ objectives:
 > [!ANSWER]
 > 보고서를 보고 누락된 거래를 확인해 입력을 바로잡거나 예측 방식을 수정해야 한다. 피드백은 출력 결과를 시스템 활동의 평가·수정에 돌려쓰는 것이다. 보고서를 한 장 더 출력하는 것은 출력의 반복이다.
 
+> [!PROBLEM]
+> **문제.** 급여 시스템에서 다음을 입력·처리·출력·피드백으로 분류하시오. ㉠ 근무시간 기록 ㉡ 급여 계산 ㉢ 급여명세서 발송 ㉣ 명세서 오류 신고를 받아 근무시간 기록을 고침
+>
+> **풀이.** ㉠ **Input** ㉡ **Processing** ㉢ **Output** ㉣ 출력 결과가 입력을 바로잡는 데 쓰였으므로 **Feedback**.
+
 ## Slides 30–31 · 정보시스템을 이해하는 세 차원
 
 ### 핵심 필기
@@ -342,6 +410,10 @@ objectives:
 | **Organization** | 누가 어떤 규칙·절차·문화 속에서 일하는가? | 기록 담당자, 교대조 인수인계, 부서 간 공유 |
 | **Management** | 무엇을 목표로 어떤 자원·권한을 배분할 것인가? | 폐기 감소 목표, 예산, 발주 변경 책임 |
 | **Technology** | 정보를 어떤 도구로 수집·처리·저장·전달하는가? | POS, 데이터베이스, 분석 프로그램, 통신 |
+
+![가운데 정보시스템을 두고 조직 경영 기술 세 영역으로 나뉜 원 그림](/materials/diagrams/mis-fig-1-05.svg)
+
+*Figure 1.5 · Information Systems Are More Than Computers — 조직·경영·기술의 세 차원.*
 
 > [!NOTE]
 > 세 차원은 세 개의 별도 제품이 아니라 **같은 시스템을 보는 세 가지 관점**이다. 판매 앱이 아무리 정확해도 폐기를 숨기는 문화가 있으면 데이터가 왜곡된다. 반대로 기록 문화가 좋아도 앱이 여러 지점의 재고를 합칠 수 없다면 필요한 정보가 만들어지지 않는다.
@@ -366,6 +438,10 @@ objectives:
 | **Knowledge workers** | 지식·제품·서비스를 설계하고 창출 | 엔지니어, 과학자, 건축가 |
 | **Data workers** | 기록·일정·연락·정보 처리를 보조 | 비서, 사무직 |
 | **Production/service workers** | 제품을 생산하거나 서비스를 제공 | 제조 작업자, 매장 서비스 직원 |
+
+![최고경영진 중간관리자 운영관리자로 나뉜 피라미드 그림](/materials/diagrams/mis-fig-1-06.svg)
+
+*Figure 1.6 · Levels in a Firm — 계층마다 일하는 사람과 정보 요구가 다르다.*
 
 > [!NOTE]
 > 관리 계층은 권한과 결정의 수준을, 근로자 유형은 주로 수행하는 일의 성격을 구분한다. 두 분류를 한 줄로 맞춰 “지식근로자는 곧 중간관리자”라고 외우면 안 된다. 지식근로자는 중간관리층과 협력할 수 있지만 그 자체가 같은 직위는 아니다.
@@ -411,10 +487,16 @@ objectives:
 | **Intranet** | 인터넷 기술을 사용하는 조직 내부의 제한된 네트워크 |
 | **Extranet** | 허가받은 외부 공급업체·파트너 등에도 접근을 확장 |
 
+> [!CONCEPT]
+> **IT infrastructure** — 하드웨어·소프트웨어·데이터 관리·네트워킹 기술과 이를 운영하는 사람으로 이루어진, 여러 시스템이 **함께 쓰는 기술 기반**.
+
 > [!NOTE]
 > 인터넷과 웹은 도로와 그 도로를 이용하는 서비스처럼 구분해 볼 수 있다. 웹은 인터넷 위의 한 서비스이며 둘이 같은 말은 아니다. 직원만 보는 인사 포털은 인트라넷 사례, 허가받은 공급업체가 들어와 납기·발주를 확인하는 연결은 엑스트라넷 사례로 생각하면 쉽다.
 
 **IT 인프라**는 앱 하나의 이름이 아니다. 여러 앱이 함께 기대어 돌아가는 기반이다. 공통 네트워크가 끊기면 주문과 재고 앱이 함께 영향을 받는 이유가 여기에 있다.
+
+> [!TRAP]
+> **Internet**은 네트워크들을 연결한 기반이고, **World Wide Web**은 그 위에서 돌아가는 서비스다. 둘은 같은 말이 아니다.
 
 ## Slide 37 · JurongHealth: 의료 사례 분석하기
 
@@ -432,6 +514,17 @@ objectives:
 
 **답안 연결:** 기술 → 정보 흐름 → 의료진 행동 → 탐색시간·안전·장비 활용 등 평가 지표.
 
+> [!CHECK]
+> **4.** 데이터와 정보의 차이를 한 문장으로 쓰시오.
+>
+> **5.** 출력(output)과 피드백(feedback)을 구분하는 기준은 무엇인가?
+>
+> **6.** 기술 차원을 이루는 네 가지 기술을 쓰시오.
+
+> [!PAGEBREAK]
+
+## PART 4 · IT 투자는 어떻게 가치가 되는가
+
 ## Slides 38–40 · Business Information Value Chain
 
 ### 핵심 필기
@@ -442,6 +535,15 @@ objectives:
 - **Value-adding activities:** 각 단계가 다음 단계에서 활용할 수 있는 가치를 더함.
 - 성과 판단은 데이터 양·장비 수보다 **더 나은 결정·효율·성과**에 연결.
 - 의무 보고처럼 직접적인 이익 증가가 주목적이 아닌 시스템도 존재.
+
+![데이터 수집 변환 배포의 정보 처리 활동이 비즈니스 프로세스와 경영 활동으로 이어져 수익성과 전략적 위치를 높이는 가치사슬 그림](/materials/diagrams/mis-fig-1-07.svg)
+
+*Figure 1.7 · The Business Information Value Chain — 정보 처리 활동이 경영 활동을 거쳐 비즈니스 가치가 된다.*
+
+> [!BOARD]
+> - 데이터 수집·저장 → 비즈니스 시스템으로 변환 → 배포
+> - → 비즈니스 프로세스(SCM·전사 관리·고객 관리·지식 관리) + 경영 활동(계획·조정·통제·의사결정)
+> - → **수익성과 전략적 위치** = 비즈니스 가치
 
 > [!NOTE]
 > 카페에 판매 기록이 100만 건 쌓여 있다는 사실만으로는 폐기가 줄지 않는다. 그 기록을 시간대별 수요 정보로 바꾸고, 발주량을 실제로 조정해야 한다. 따라서 “처리한 데이터가 많다”는 기술 지표와 “품절·폐기가 줄었다”는 사업 지표는 구분해야 한다.
@@ -457,8 +559,17 @@ objectives:
 - 차이를 만드는 조건: 적합한 **business model**과 **complementary assets**.
 - Figure 1.8은 “많이 투자할수록 무조건 성공”이라는 해석을 경계하게 함.
 
+![IT 자본 투자와 생산성을 두 축으로 하고 네 사분면에 기업들이 흩어진 산점도](/materials/diagrams/mis-fig-1-08.svg)
+
+*Figure 1.8 · Variation in Returns on Information Technology Investment — 평균적으로는 투자가 성과와 함께 늘지만 기업마다 차이가 크다. 점은 개념 설명용 예시다.*
+
 > [!NOTE]
 > 같은 재고 시스템을 설치한 두 카페를 비교해 보자. A점은 판매·폐기를 정확히 기록하고 점장이 보고서를 발주에 활용한다. B점은 기록이 누락되고 발주 변경에는 오래 걸리는 승인이 필요하다. 프로그램이 같아도 입력의 질과 실행 조건이 다르므로 결과는 달라질 수 있다. 한 사례만으로 원인을 확정하기보다는 이런 조건을 함께 점검해야 한다.
+
+> [!PROBLEM]
+> **문제.** Figure 1.8의 4사분면(IT 투자는 평균보다 많지만 생산성은 평균보다 낮음)에 있는 기업에게 무엇이 부족했을 가능성이 큰가?
+>
+> **풀이.** ① 투자는 충분했다 → 기술 부족이 아니다 ② 성과가 낮다 → 투자를 성과로 바꾸는 조건이 약했다 ③ **보완 자산**(교육, 새 프로세스, 경영 지원)이나 알맞은 사업모델이 부족했을 가능성이 크다.
 
 ## Slides 43–44 · Complementary Assets: 보완 자산
 
@@ -490,6 +601,11 @@ objectives:
 > [!ANSWER]
 > 기술은 분석 역량을 제공했지만, 보완 자산이 있어야 이를 활용할 수 있었다. 교육은 해석 능력을, 권한 개편은 행동 가능성을 높였다. 기술과 조직·경영을 함께 보아야 성과 차이를 설명할 수 있다.
 
+> [!PROBLEM]
+> **문제.** 다음을 조직적·경영적·사회적 보완 자산으로 분류하시오. ㉠ 경영진의 강한 변화 지원 ㉡ 효율적인 비즈니스 프로세스 ㉢ 국가의 인터넷·통신 인프라
+>
+> **풀이.** ㉠ **경영적(managerial)** ㉡ **조직적(organizational)** ㉢ **사회적(social)**. 사회적 자산은 기업이 아니라 사회가 만든다.
+
 ## Slides 45–46 · Technical / Behavioral Approach
 
 ### 핵심 필기
@@ -499,10 +615,17 @@ objectives:
 | **Technical approach** | 컴퓨터과학, 경영과학, 운영연구(OR) | 계산·모형·최적화로 어떻게 더 정확하고 효율적으로 설계할까? |
 | **Behavioral approach** | 심리학, 사회학, 경제학 | 사람·조직·시장·유인은 도입과 사용에 어떤 영향을 줄까? |
 
+![가운데 MIS를 두고 컴퓨터과학 운영과학 경영과학의 기술적 접근과 사회학 경제학 심리학의 행동적 접근으로 나뉜 원 그림](/materials/diagrams/mis-fig-1-09.svg)
+
+*Figure 1.9 · Contemporary Approaches to Information Systems — 기술적 접근과 행동적 접근.*
+
 > [!NOTE]
 > 배송 경로를 가장 짧게 계산하는 모형은 기술적 접근의 예다. 운전자가 새 경로를 믿지 않거나 평가 방식 때문에 따르지 않는 이유를 분석하는 것은 행동적 접근에 가깝다. 가장 좋은 계산과 실제 사용을 모두 이해해야 성과를 설명할 수 있다.
 
 **주의:** 기술적 접근이 사람을 완전히 무시하거나 행동적 접근이 기술을 무시한다는 뜻은 아니다. 강조점이 다르며, 어느 한쪽만으로 정보시스템 전체를 충분히 설명하기 어렵다.
+
+> [!TRAP]
+> **운영과학(operations research)**과 **경영과학(management science)**은 이름에 경영이 들어가도 **기술적 접근**이다. 행동적 접근은 심리학·사회학·경제학이다.
 
 ## Slides 47–49 · Sociotechnical Systems: 함께 맞추기
 
@@ -517,10 +640,24 @@ objectives:
 > [!NOTE]
 > 새 재고 프로그램이 모든 발주를 본사에서만 승인하게 설계되어 있는데 매장은 하루에도 여러 번 즉시 보충해야 한다고 하자. 프로그램을 매장에 맞춰 수정할 수도 있고, 조직의 승인 규칙을 바꿀 수도 있다. 비용·정확성·책임을 비교해 두 부분을 함께 조정하는 것이 사회기술적 관점이다.
 
+![기술 대안과 조직 대안이 계단 모양으로 서로 맞춰지며 최종 기술 설계와 최종 조직 설계로 모이는 그림](/materials/diagrams/mis-fig-1-10.svg)
+
+*Figure 1.10 · A Sociotechnical Perspective on Information Systems — 기술과 조직의 대안을 함께 조정한다.*
+
+> [!CONCEPT]
+> **Joint optimization** — 기술 시스템과 사회·조직 시스템을 **함께 조정**해 실행 가능한 최적의 조합을 찾는 것. 사회기술적 관점의 핵심이다.
+
 **Figure 1.10 읽기:** 여러 기술 대안과 조직 대안 중 성과에 맞는 조합을 찾는 그림이다. 모든 경우에 기술과 조직이 같은 정도로 바뀌는 것은 아니다. 기업용 패키지를 도입하면서 조직이 크게 바뀔 수도 있고, 현장 필요 때문에 더 단순한 기술을 택할 수도 있다.
 
 > [!EXAM]
 > 답안에서 “직원을 교육한다”만 쓰면 한쪽 조정만 설명한 셈이다. **기술의 기능·화면·규칙과 조직의 역할·권한·프로세스를 어떻게 맞출지**까지 연결한다.
+
+> [!CHECK]
+> **7.** 보완 자산의 세 가지 유형을 쓰시오.
+>
+> **8.** 정보시스템 연구의 기술적 접근에 속하는 학문 세 가지를 쓰시오.
+>
+> **9.** 사회기술적 관점에서 시스템 성과가 최적이 되는 조건은 무엇인가?
 
 ## Slide 50 · MIS와 진로
 
@@ -537,6 +674,8 @@ objectives:
 
 ---
 
+> [!PAGEBREAK]
+
 ## 18판 보충 · 신기술을 역할로 연결하기
 
 Slide 2·9에서 언급한 기술을 이해하기 위한 보충이다. 교과서 18판 §1.7의 읽기 범위와 연결한다.
@@ -552,6 +691,35 @@ Slide 2·9에서 언급한 기술을 이해하기 위한 보충이다. 교과서
 **연결해서 이해하기:** 센서가 온도를 기록한다 → 저장·분석 자원이 기록을 처리한다 → 이상 패턴을 탐지한다 → 직원에게 경고한다 → 직원이 냉장고를 확인한다. 이 흐름에서 IoT는 관측, 클라우드는 기반, 분석·AI는 판단 지원의 역할이다. 모든 시스템이 이 기술을 모두 써야 하는 것은 아니다.
 
 18판에서 강조하는 지속가능성·거버넌스·책임 있는 AI도 기존 여섯 목표와 연결해 볼 수 있다. 예를 들어 폐기 감소는 운영 우수성과 환경 영향 개선에 함께 기여할 수 있다.
+
+> [!PAGEBREAK]
+
+## 단원 마무리
+
+### 단답형 연습 · Short Answer
+
+Write the term or a short answer in English. 답은 맨 끝 **정답과 해설**의 단답형 정답에서 확인한다.
+
+1. What do we call a firm in which nearly all significant business relationships, core business processes, and key assets are digitally enabled and managed?  
+   Answer: ______________________________
+2. Which strategic business objective is served when an investment is required simply to stay in business, such as meeting an industry standard or a regulation?  
+   Answer: ______________________________
+3. What is the set of interrelated components that collect, process, store, and distribute information to support decision making and control?  
+   Answer: ______________________________
+4. What are streams of raw facts, before they are organized into a meaningful form, called?  
+   Answer: ______________________________
+5. Which activity converts raw input into a more meaningful form?  
+   Answer: ______________________________
+6. What is output that is returned to appropriate members of the organization to help them evaluate or correct the input stage called?  
+   Answer: ______________________________
+7. Name the three dimensions of information systems.  
+   Answer: ______________________________
+8. What is the shared technology platform of hardware, software, data management, and networking, plus the people needed to run it, called?  
+   Answer: ______________________________
+9. What are the organizational, managerial, and social assets required to derive value from IT investments called?  
+   Answer: ______________________________
+10. Which view holds that system performance is optimized when the technical and behavioral systems are adjusted to each other?  
+   Answer: ______________________________
 
 ## 시험 직전 · 구분표와 답안 틀
 
@@ -594,7 +762,36 @@ Slide 2·9에서 언급한 기술을 이해하기 위한 보충이다. 교과서
 
 **다음으로 갈 기준:** IS를 ‘컴퓨터’라는 말만으로 설명하지 않고, 출력과 피드백을 구별하며, 보완 자산 하나를 예로 들 수 있다. 이제 이 시스템이 지원하는 업무를 따라가자: [2장 A · 프로세스와 전사 시스템](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02).
 
+> [!PAGEBREAK]
 
+## 정답과 해설
+
+먼저 스스로 답을 쓴 뒤 확인한다.
+
+### 확인 문제 정답
+
+1. **Operational excellence → New products, services, and business models → Customer and supplier intimacy → Improved decision making → Competitive advantage → Survival** (운-신-친-결-경-생)
+2. 중요한 **관계**, 핵심 **비즈니스 프로세스**, 핵심 **자산**이 디지털로 연결·수행·관리된다.
+3. 운영 우수성은 **자기 기업 내부**의 효율 개선이고, 경쟁우위는 **경쟁사와 비교해** 더 낫다는 상대적 유리함이다.
+4. 데이터는 가공되지 않은 사실이고, 정보는 목적에 맞게 **의미 있고 쓸모 있게** 정리된 데이터다.
+5. 출력은 결과를 전달하는 데서 끝나고, 피드백은 그 결과가 **입력·처리를 평가하고 고치는 데** 다시 쓰인다.
+6. **Hardware, software, data management technology, networking and telecommunications technology.**
+7. **Organizational, managerial, social** assets.
+8. **Computer science, management science, operations research.**
+9. 기술 시스템과 조직(행동) 시스템이 **서로에게 맞춰 함께 조정될 때**(joint optimization).
+
+### 단답형 정답
+
+1. **Digital firm** — 중요한 관계·핵심 프로세스·자산이 디지털로 연결되고 관리되는 디지털 기업
+2. **Survival** — 업계 표준이나 규제 때문에 꼭 필요한 투자는 생존 목표다
+3. **Information system (IS)** — 정보를 수집·처리·저장·배포해 의사결정과 통제를 지원하는 정보시스템
+4. **Data** — 의미 있게 정리되기 전의 원시 사실
+5. **Processing** — 원래 입력을 의미 있는 형태로 바꾸는 처리
+6. **Feedback** — 입력 단계를 평가·수정하도록 되돌아오는 출력
+7. **Organizations, management, and technology** — 조직·경영·기술의 세 차원
+8. **IT infrastructure** — 여러 시스템이 함께 쓰는 공유 기술 기반
+9. **Complementary assets** — IT 투자가 가치를 내게 하는 조직·경영·사회적 보완 자산
+10. **Sociotechnical view (joint optimization)** — 기술과 조직을 함께 조정할 때 성과가 최적이라는 사회기술적 관점
 
 ## 교과서와 함께 읽기 · 출처와 대응 쪽수
 

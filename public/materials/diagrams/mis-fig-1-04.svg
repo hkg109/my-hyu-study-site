@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-fig-1-04-title mis-fig-1-04-desc">
+  <title id="mis-fig-1-04-title">Figure 1.4 Functions of an Information System</title>
+  <desc id="mis-fig-1-04-desc">정보시스템은 입력·처리·출력과 피드백으로 작동하며, 조직과 환경 속에서 외부 주체와 상호작용한다</desc>
+  <defs><marker id="mis-fig-1-04-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-1-04-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-1-04-arrow);marker-end:url(#mis-fig-1-04-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-1-04-arrow);marker-end:url(#mis-fig-1-04-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="720"/><text class="tag" x="64" y="52">1장 · Figure 1.4</text><text class="title" x="64" y="92">Functions of an Information System</text><text class="subtitle" x="64" y="122">정보시스템은 입력·처리·출력과 피드백으로 작동하며, 조직과 환경 속에서 외부 주체와 상호작용한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="64" y="168" width="1152" height="530" rx="6"/>
+  <text class="name" x="640" y="196" text-anchor="middle">ENVIRONMENT · 환경</text>
+  <text class="name" x="640" y="262" text-anchor="middle">ORGANIZATION · 조직</text>
+  <rect class="deep" x="150" y="286" width="980" height="250" rx="6"/>
+  <text class="name" x="640" y="314" text-anchor="middle">INFORMATION SYSTEM · 정보시스템</text>
+  <rect class="node" x="200" y="350" width="220" height="100" rx="6"/>
+  <text class="name" x="310" y="396" text-anchor="middle">Input</text>
+  <text class="sub" x="310" y="420" text-anchor="middle">입력</text>
+  <rect class="focal" x="530" y="340" width="220" height="120" rx="6"/>
+  <text class="name inverse" x="640" y="376" text-anchor="middle">Processing</text><text class="name inverse" x="640" y="402" text-anchor="middle">Classify · Arrange</text><text class="name inverse" x="640" y="428" text-anchor="middle">Calculate</text>
+  <rect class="node" x="860" y="350" width="220" height="100" rx="6"/>
+  <text class="name" x="970" y="396" text-anchor="middle">Output</text>
+  <text class="sub" x="970" y="420" text-anchor="middle">출력</text>
+  <path class="flow" d="M420 400 H 526"/>
+  <path class="flow" d="M750 400 H 856"/>
+  <path class="flow" d="M970 450 V 506 H 310 V 454"/>
+  <text class="small" x="640" y="526" text-anchor="middle">Feedback · 피드백</text>
+  <text class="label" x="200" y="216" text-anchor="middle">Suppliers</text><text class="sub" x="200" y="238" text-anchor="middle">공급업체</text><path class="dashboth" d="M240 236 L 280 280"/>
+  <text class="label" x="1080" y="216" text-anchor="middle">Customers</text><text class="sub" x="1080" y="238" text-anchor="middle">고객</text><path class="dashboth" d="M1040 236 L 1000 280"/>
+  <text class="label" x="200" y="640" text-anchor="middle">Regulatory Agencies</text><text class="sub" x="200" y="662" text-anchor="middle">규제기관</text><path class="dashboth" d="M240 600 L 280 544"/>
+  <text class="label" x="640" y="640" text-anchor="middle">Stockholders</text><text class="sub" x="640" y="662" text-anchor="middle">주주</text><path class="dashboth" d="M640 600 V 544"/>
+  <text class="label" x="1080" y="640" text-anchor="middle">Competitors</text><text class="sub" x="1080" y="662" text-anchor="middle">경쟁자</text><path class="dashboth" d="M1040 600 L 1000 544"/>
+</svg>

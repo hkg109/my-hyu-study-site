@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="mis-fig-1-08-title mis-fig-1-08-desc">
+  <title id="mis-fig-1-08-title">Figure 1.8 Variation in Returns on Information Technology Investment</title>
+  <desc id="mis-fig-1-08-desc">평균적으로 IT 투자가 많을수록 생산성이 높지만, 같은 투자에도 기업마다 결과가 크게 다르다 (점은 개념 설명용 예시)</desc>
+  <defs><marker id="mis-fig-1-08-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-1-08-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-1-08-arrow);marker-end:url(#mis-fig-1-08-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-1-08-arrow);marker-end:url(#mis-fig-1-08-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="720"/><text class="tag" x="64" y="52">1장 · Figure 1.8</text><text class="title" x="64" y="92">Variation in Returns on Information Technology Investment</text><text class="subtitle" x="64" y="122">평균적으로 IT 투자가 많을수록 생산성이 높지만, 같은 투자에도 기업마다 결과가 크게 다르다 (점은 개념 설명용 예시)</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="260" y="176" width="760" height="460" rx="0"/>
+  <path class="line" d="M640 176 V 636"/>
+  <path class="line" d="M260 406 H 1020"/>
+  <path class="soft" d="M260 560 L 1020 250"/>
+  <circle class="focal" cx="330" cy="420" r="7"/>
+  <circle class="focal" cx="420" cy="372" r="7"/>
+  <circle class="focal" cx="440" cy="540" r="7"/>
+  <circle class="focal" cx="470" cy="300" r="7"/>
+  <circle class="focal" cx="500" cy="470" r="7"/>
+  <circle class="focal" cx="530" cy="452" r="7"/>
+  <circle class="focal" cx="560" cy="430" r="7"/>
+  <circle class="focal" cx="580" cy="470" r="7"/>
+  <circle class="focal" cx="600" cy="380" r="7"/>
+  <circle class="focal" cx="620" cy="440" r="7"/>
+  <circle class="focal" cx="640" cy="470" r="7"/>
+  <circle class="focal" cx="660" cy="360" r="7"/>
+  <circle class="focal" cx="680" cy="400" r="7"/>
+  <circle class="focal" cx="700" cy="330" r="7"/>
+  <circle class="focal" cx="720" cy="410" r="7"/>
+  <circle class="focal" cx="740" cy="300" r="7"/>
+  <circle class="focal" cx="760" cy="370" r="7"/>
+  <circle class="focal" cx="780" cy="260" r="7"/>
+  <circle class="focal" cx="800" cy="350" r="7"/>
+  <circle class="focal" cx="830" cy="470" r="7"/>
+  <circle class="focal" cx="860" cy="200" r="7"/>
+  <circle class="focal" cx="880" cy="330" r="7"/>
+  <circle class="focal" cx="910" cy="300" r="7"/>
+  <circle class="focal" cx="940" cy="360" r="7"/>
+  <circle class="focal" cx="960" cy="290" r="7"/>
+  <circle class="focal" cx="520" cy="520" r="7"/>
+  <circle class="focal" cx="690" cy="520" r="7"/>
+  <circle class="focal" cx="560" cy="340" r="7"/>
+  <circle class="focal" cx="640" cy="420" r="7"/>
+  <circle class="focal" cx="610" cy="410" r="7"/>
+  <text class="name" x="290" y="210">1</text>
+  <text class="name" x="990" y="210">2</text>
+  <text class="name" x="290" y="620">3</text>
+  <text class="name" x="990" y="620">4</text>
+  <text class="label" x="64" y="380">Productivity</text><text class="label" x="64" y="404">(relative to</text><text class="label" x="64" y="428">industry average)</text><text class="label" x="64" y="452">생산성</text>
+  <text class="label" x="640" y="676" text-anchor="middle">IT Capital Stock (relative to industry average) · IT 자본 투자</text>
+  <text class="small" x="1040" y="290">2: 많이 투자하고</text>
+  <text class="small" x="1040" y="308">성과도 높음</text>
+  <text class="small" x="1040" y="560">4: 많이 투자했지만</text>
+  <text class="small" x="1040" y="578">성과는 낮음</text>
+</svg>

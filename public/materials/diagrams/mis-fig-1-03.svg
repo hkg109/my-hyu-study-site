@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 600" role="img" aria-labelledby="mis-fig-1-03-title mis-fig-1-03-desc">
+  <title id="mis-fig-1-03-title">Figure 1.3 Data and Information</title>
+  <desc id="mis-fig-1-03-desc">가공되지 않은 판매 데이터가 정보시스템을 거쳐 의미 있는 정보가 된다</desc>
+  <defs><marker id="mis-fig-1-03-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-1-03-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-1-03-arrow);marker-end:url(#mis-fig-1-03-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-1-03-arrow);marker-end:url(#mis-fig-1-03-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="600"/><text class="tag" x="64" y="52">1장 · Figure 1.3</text><text class="title" x="64" y="92">Data and Information</text><text class="subtitle" x="64" y="122">가공되지 않은 판매 데이터가 정보시스템을 거쳐 의미 있는 정보가 된다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="zone" d="M80 190 L 520 360 L 80 530 Z"/>
+  <path class="zone" d="M1200 190 L 760 360 L 1200 530 Z"/>
+  <text class="name" x="150" y="228">Data · 데이터</text>
+  <text class="sub" x="100" y="290">331 Brite Dish Soap  1.29</text><text class="sub" x="100" y="314">863 BL Hill Coffee  4.69</text><text class="sub" x="100" y="338">173 Meow Cat  .79</text><text class="sub" x="100" y="362">331 Brite Dish Soap  1.29</text><text class="sub" x="100" y="386">663 Country Ham  3.29</text><text class="sub" x="100" y="410">524 Fiery Mustard  1.49</text><text class="sub" x="100" y="434">113 Ginger Root  .85</text>
+  <circle class="focal" cx="640" cy="360" r="110"/>
+  <text class="name inverse" x="640" y="352" text-anchor="middle">Information</text>
+  <text class="name inverse" x="640" y="376" text-anchor="middle">System</text>
+  <text class="name" x="1130" y="228" text-anchor="end">Information · 정보</text>
+  <text class="sub" x="1180" y="300" text-anchor="end">Sales Region: Northwest</text><text class="sub" x="1180" y="322" text-anchor="end">Store: Superstore #122</text>
+  <text class="label" x="1180" y="370" text-anchor="end">ITEM 331 · Brite Dish Soap</text><text class="label" x="1180" y="396" text-anchor="end">UNITS SOLD 7,156</text><text class="label" x="1180" y="422" text-anchor="end">YTD SALES $9,231.24</text>
+  <text class="sub" x="640" y="570" text-anchor="middle">같은 품목(331)의 거래를 모아 지역·매장·누적 판매로 정리하면 관리자가 쓸 수 있는 정보가 된다</text>
+</svg>
