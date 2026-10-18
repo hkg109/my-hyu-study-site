@@ -17,6 +17,86 @@ Homework 3은 하나의 카운트 배열을 두 방식으로 읽는 문제입니
 
 ## 문제 1a · 알파벳 빈도 세기
 
+### Problem (Original)
+
+*Homework 3.doc (Handout 3), Exercise 1a*
+
+**Exercise 1a**
+
+**Problem.** Write a function `count_chars` that has the function head `void count_chars(char text[])` and that performs the following task: `count_chars` prints a table listing the number of occurrences of the individual characters A to Z (capitalized as well as non-capitalized) in the argument `text`. The argument `text` is assumed to be a C-string that is terminated using a NULL-character.
+
+Example: the program
+
+~~~cpp
+int main() {
+    char text[] = "Today is a nice day for having a little picnic.";
+    count_chars(text);
+    return 0;
+} // end main
+~~~
+
+shall print:
+
+~~~text
+A, a : 5
+B, b : 0
+C, c : 3
+D, d : 2
+E, e : 2
+F, f : 1
+G, g : 1
+H, h : 1
+I, i : 6
+J, j : 0
+K, k : 0
+L, l : 2
+M, m : 0
+N, n : 3
+O, o : 2
+P, p : 1
+Q, q : 0
+R, r : 1
+S, s : 1
+T, t : 3
+U, u : 0
+V, v : 1
+W, w : 0
+X, x : 0
+Y, y : 2
+Z, z : 0
+~~~
+
+> [!TRANSLATION]
+> **문제.** 함수 머리가 `void count_chars(char text[])`인 함수 `count_chars`를 작성하세요. 이 함수는 인자 `text`에 A부터 Z까지의 각 문자(대문자와 소문자 모두)가 몇 번 나오는지 표로 출력합니다. 인자 `text`는 널 문자로 끝나는 C 문자열이라고 가정합니다.
+>
+> 위 `main`처럼 "Today is a nice day for having a little picnic."을 넘기면 위와 같은 표를 출력해야 합니다.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **문자는 정수 코드입니다.** 알파벳 대문자 `'A'~'Z'`와 소문자 `'a'~'z'`는 각각 연속된 코드 값을 가지므로
+>
+> - 대문자: `index = ch - 'A'`
+> - 소문자: `index = ch - 'a'`
+>
+> 로 0~25 인덱스를 얻고 `counter[index]++` 하면 됩니다. C 문자열은 길이 정보 없이 끝에 `'\0'`이 있으므로, `'\0'`을 만날 때까지 한 글자씩 순회합니다.
+
+> [!PROBLEM]
+> `"Dad!"`를 처리하면
+>
+> | 문자 | 범위 | 인덱스 | 결과 |
+> | --- | --- | --- | --- |
+> | `D` | 대문자 | `'D' - 'A' = 3` | counter[3] = 1 |
+> | `a` | 소문자 | `'a' - 'a' = 0` | counter[0] = 1 |
+> | `d` | 소문자 | `'d' - 'a' = 3` | counter[3] = 2 |
+> | `!` | 알파벳 아님 | — | 건너뜀 |
+> | `\0` | 끝 | — | 반복 종료 |
+>
+> 출력은 `A, a : 1`, `D, d : 2`, 나머지는 0입니다.
+
+> [!TRAP]
+> 카운터 배열을 `int counter[26];`처럼 초기화하지 않으면 쓰레기 값에서 시작합니다. `int counter[26] = {0};`으로 반드시 0으로 채우세요.
+
 ### 문제 이해
 
 `void count_chars(char text[])` 함수는 널 문자 `\0`로 끝나는 C 문자열을 받아 A부터 Z까지 각 알파벳의 등장 횟수를 출력합니다. 대문자와 소문자는 같은 알파벳으로 합산합니다.
@@ -42,6 +122,45 @@ while ((ch = text[i]) != '\0') {
 대입식 전체의 값은 대입된 문자입니다. 현재 문자를 `ch`에 저장한 뒤 그 값이 널 문자인지 검사합니다. 공백, 마침표 같은 문자는 알파벳 범위에 들어오지 않으므로 카운트하지 않고 다음 위치로 넘어갑니다.
 
 ## 문제 1b · 세로 막대그래프 출력
+
+### Problem (Original)
+
+*Homework 3.doc (Handout 3), Exercise 1b*
+
+**Exercise 1b**
+
+**Problem.** Modify/extend the function `count_chars` so that it additionally prints a bar diagram showing the occurrences of the characters A to Z. The height of each bar shall be equal to the number of occurrences of the corresponding character in the argument `text`.
+
+For the above example, your output should look like this (output of the provided solution):
+
+~~~text
+        *                 
+*       *                 
+*       *                 
+* *     *    *     *      
+* ***   *  * **    *    * 
+* *******  * *** *** *  * 
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+~~~
+
+> [!TRANSLATION]
+> **문제.** `count_chars` 함수를 수정·확장해, A부터 Z까지 각 문자의 등장 횟수를 보여 주는 막대그래프도 함께 출력하세요. 각 막대의 높이는 인자 `text`에서 해당 문자가 나온 횟수와 같아야 합니다.
+>
+> 위 예제에서는 위와 같은 모양이 출력되어야 합니다.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **콘솔은 위에서 아래로만 출력합니다.** 그래서 세로 막대를 그리려면 가장 높은 층(`max`)부터 1층까지 한 줄씩 내려오며, 각 줄에서 "이 문자의 개수가 지금 높이 이상인가?"를 묻습니다. 그렇다면 `*`, 아니면 공백을 출력합니다. 마지막 줄에 `A~Z` 라벨을 붙이면 각 열이 어느 문자인지 맞춰집니다.
+
+> [!PROBLEM]
+> 위 예제에서 I는 6번, A는 5번 나옵니다.
+>
+> - 높이 6 줄: `counter[I] = 6 ≥ 6`인 I 열에만 `*`
+> - 높이 5 줄: A(5)와 I(6)에 `*`
+> - 높이 1 줄: 한 번이라도 나온 모든 문자에 `*`
+>
+> 그래서 첫 줄에는 I 위치(9번째 열)에만 별이 하나 찍힙니다.
 
 가장 높은 빈도 `max`를 찾은 뒤 높이 `j`를 `max`부터 1까지 줄입니다. 각 행에서 `counter[i] >= j`이면 별을, 아니면 공백을 출력합니다.
 

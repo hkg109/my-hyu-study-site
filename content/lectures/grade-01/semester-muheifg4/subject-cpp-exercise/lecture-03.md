@@ -94,38 +94,57 @@ for: 초기화 → 조건 확인 → 본문 → 갱신 → 조건 확인 → …
 
 > **난이도:** 중
 
-#### 요구사항
+#### Problem (Original)
 
-- 두 양의 정수의 최대공약수를 구합니다.
-- 두 수를 나누어떨어지게 하는 양의 정수 중 가장 큰 값을 출력합니다. 아래 풀이는 유클리드 호제법을 사용합니다.
-- 결과 뒤에 줄바꿈을 출력합니다.
+*CPP Programming Exercise 03.pdf, slide 19*
 
-#### 입력
+**Quiz 1: Greatest Common Divisor**
 
-한 줄에 1 이상 1,000,000,000 이하의 두 정수 a, b가 주어집니다.
+**Problem.** Find the greatest common divisor of two positive integers: the largest positive integer that divides both without a remainder.
 
-#### 출력
+**Input.** One line containing two integers `a b`.
 
-a와 b의 최대공약수를 출력합니다.
+**Output.** Print their greatest common divisor followed by a newline.
 
-#### 입력 예시
+**Constraints.** `1 ≤ a, b ≤ 10⁹`
 
-~~~text
-48 18
-~~~
-
-#### 출력 예시
-
-~~~text
-6
-~~~
-
-#### 원문 추가 예제
-
-| 입력 | 출력 | 확인할 점 |
+| Sample | Input | Output |
 | --- | --- | --- |
-| 17 13 | 1 | 서로소이면 최대공약수는 1 |
-| 987654312 765432108 | 36 | 큰 정수에서도 같은 나머지 반복 사용 |
+| 1 | `48 18` | `6` |
+| 2 | `17 13` | `1` |
+| 3 | `987654312 765432108` | `36` |
+
+> [!TRANSLATION]
+> **문제.** 두 양의 정수의 최대공약수, 즉 두 수를 모두 나누어떨어지게 하는 가장 큰 양의 정수를 구합니다.
+>
+> **입력.** 한 줄에 두 정수 `a b`가 주어집니다.
+>
+> **출력.** 최대공약수를 출력하고 줄을 바꿉니다.
+>
+> **제약 조건.** `1 ≤ a, b ≤ 10⁹`
+>
+> 예제 입력과 출력은 위 표와 같습니다.
+
+#### 개념과 예제
+
+> [!CONCEPT]
+> **유클리드 호제법:** `gcd(a, b) = gcd(b, a % b)`, 그리고 `gcd(a, 0) = a`.
+>
+> `a`와 `b`의 공약수 `d`는 `a - q·b`도 나누므로 나머지 `a % b`도 나눕니다. 그래서 "큰 수를 작은 수로 나눈 나머지"로 바꿔도 공약수 집합은 그대로이고, 두 번째 값은 계속 작아져 결국 0이 됩니다.
+
+> [!PROBLEM]
+> `84 36`의 최대공약수:
+>
+> | a | b | a % b |
+> | --- | --- | --- |
+> | 84 | 36 | 12 |
+> | 36 | 12 | 0 |
+> | 12 | 0 | 끝 |
+>
+> `b`가 0이 된 순간의 `a = 12`가 답입니다.
+
+> [!TRAP]
+> 1부터 `min(a, b)`까지 모두 나눠 보는 방법은 `a, b`가 10억 근처일 때 최대 10억 번 반복하므로 시간 안에 끝나지 않습니다.
 
 #### 접근 방법
 
@@ -213,39 +232,60 @@ b = remainder        나머지를 두 번째 자리로 이동
 
 > **난이도:** 중상
 
-#### 요구사항
+#### Problem (Original)
 
-- 하나 이상의 연속된 원소를 선택합니다.
-- 선택한 연속 구간에서 만들 수 있는 가장 큰 합을 구합니다.
-- 모든 값이 음수인 경우도 올바르게 처리합니다.
+*CPP Programming Exercise 03.pdf, slide 20*
 
-#### 입력
+**Quiz 2: Maximum Subarray Sum**
 
-첫째 줄에 1 이상 100 이하의 n이 주어지고, 둘째 줄에 -100 이상 100 이하의 정수 n개가 주어집니다.
+**Problem.** Read a sequence of integers. Find the largest sum of a contiguous segment containing at least one element.
 
-#### 출력
+**Input.** The first line contains an integer `n`. The second line contains `n` integers in order.
 
-비어 있지 않은 연속 부분 배열의 최대 합을 출력합니다.
+**Output.** Print the maximum sum followed by a newline.
 
-#### 입력 예시
+**Constraints.** `1 <= n <= 100`. Each input value is from -100 to 100.
 
-~~~text
-5
--2 3 -1 4 -5
-~~~
-
-#### 출력 예시
-
-~~~text
-6
-~~~
-
-#### 원문 추가 예제
-
-| 첫 줄 n | 둘째 줄 | 출력 | 확인할 점 |
+| Sample | Input line 1 (n) | Input line 2 | Output |
 | --- | --- | --- | --- |
-| 4 | -8 -3 -6 -2 | -2 | 빈 구간을 고르면 안 되므로 답이 0이 아님 |
-| 1 | 0 | 0 | 원소 하나도 유효한 구간 |
+| 1 | `5` | `-2 3 -1 4 -5` | `6` |
+| 2 | `4` | `-8 -3 -6 -2` | `-2` |
+| 3 | `1` | `0` | `0` |
+
+> [!TRANSLATION]
+> **문제.** 정수 수열을 입력받아, 원소를 하나 이상 포함하는 **연속 구간**의 합 중 가장 큰 값을 구합니다.
+>
+> **입력.** 첫 줄에 정수 `n`, 둘째 줄에 정수 `n`개가 순서대로 주어집니다.
+>
+> **출력.** 최대 합을 출력하고 줄을 바꿉니다.
+>
+> **제약 조건.** `1 <= n <= 100`, 각 값은 -100 이상 100 이하입니다.
+>
+> 예제 입력과 출력은 위 표와 같습니다.
+
+#### 개념과 예제
+
+> [!CONCEPT]
+> **"여기서 끝나는 최선"만 들고 다니면 됩니다(카데인 알고리즘).**
+>
+> - `current` = 지금 원소에서 끝나는 연속 구간의 최대 합 = `max(x, current + x)`
+> - `best` = 지금까지 본 모든 `current` 중 최댓값
+>
+> 앞 구간의 합이 음수라면 이어 붙여 봐야 손해이므로 `x`부터 새로 시작합니다.
+
+> [!PROBLEM]
+> 수열 `2 -5 3`:
+>
+> | x | current = max(x, current + x) | best |
+> | --- | --- | --- |
+> | 2 | 2 | 2 |
+> | -5 | max(-5, -3) = -3 | 2 |
+> | 3 | max(3, 0) = 3 | 3 |
+>
+> 답은 구간 `[3]`의 합 `3`입니다.
+
+> [!TRAP]
+> `best`를 0으로 시작하면 모든 값이 음수인 예제 2에서 0을 출력합니다. 구간은 **원소를 하나 이상** 포함해야 하므로 첫 원소로 초기화해야 `-2`가 나옵니다.
 
 #### 접근 방법
 

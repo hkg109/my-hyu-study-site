@@ -26,9 +26,43 @@ Homework 2의 공통 주제는 **함수 호출을 따라가며 반복되는 구�
 
 ## Exercise 1 · 이항계수 계산
 
+### Problem (Original)
+
+*Homework 2.doc (Handout 2), Exercise 1*
+
+**Exercise 1**
+
+**Problem.** 1) Write a function that computes the value of the binomial coefficient
+
+~~~text
+C(n, r) = n! / ((n - r)! · r!)
+~~~
+
+2) Embed your function into a little program that reads two integers `n` and `r` from `std::cin` and writes the value of the binomial coefficient to `std::cout`.
+
+> [!TRANSLATION]
+> **문제.** 1) 이항계수 `C(n, r) = n! / ((n - r)! · r!)`의 값을 계산하는 함수를 작성하세요.
+>
+> 2) 이 함수를 작은 프로그램에 넣어, `std::cin`으로 두 정수 `n`, `r`을 읽고 이항계수 값을 `std::cout`으로 출력하세요.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **함수로 나누어 생각하기**: 팩토리얼 `fac(n)`을 먼저 만들고, 이항계수는 그 함수를 세 번 불러 조합합니다. `fac`의 재귀는 `fac(n) = n × fac(n - 1)`, 기저 조건은 `n <= 1`일 때 `1`입니다. 이항계수 `C(n, r)`은 "n개 중 순서 없이 r개를 고르는 방법의 수"입니다.
+
+> [!PROBLEM]
+> `n = 5, r = 2`
+>
+> `fac(5) / (fac(3) × fac(2)) = 120 / (6 × 2) = 10`
+>
+> 실제로 {1,2,3,4,5}에서 두 개를 고르는 경우는 12, 13, 14, 15, 23, 24, 25, 34, 35, 45로 10가지입니다.
+
+> [!TRAP]
+> `int` 팩토리얼은 `13! = 6,227,020,800`부터 범위를 넘습니다. 그래서 `n = 13, r = 1`처럼 답이 작아도 중간 계산이 넘쳐 틀린 값이 나옵니다.
+
 ### 문제와 공식
 
-정수 `n`, `r`을 입력받아 이항계수 \(\binom{n}{r}\)을 출력합니다.
+정수 `n`, `r`을 입력받아 이항계수 `C(n, r)`을 출력합니다.
 
 ~~~text
 n! = n × (n-1) × ... × 2 × 1
@@ -71,6 +105,49 @@ int main() {
 이 정답은 과제에서 제시한 팩토리얼 공식을 직접 구현한 것입니다. `0 <= r <= n`이고 팩토리얼 결과가 `int` 범위에 들어간다는 전제가 필요합니다. 일반적인 32비트 `int`에서는 `13!`부터 범위를 넘으므로 큰 입력에는 곱하면서 나누는 방식이나 더 큰 정수 표현이 필요합니다.
 
 ## Exercise 2 · 백트래킹으로 모든 순열 출력
+
+### Problem (Original)
+
+*Homework 2.doc (Handout 2), Exercise 2*
+
+**Exercise 2**
+
+**Problem.** Write a function `permutNumbers` that prints all `n!` many permutations of the numbers 1 to `n` on `std::out`.
+
+Example: the output for `permutNumbers(3)` shall be:
+
+~~~text
+123, 132, 213, 231, 312, 321
+~~~
+
+> [!TRANSLATION]
+> **문제.** 1부터 `n`까지의 수로 만들 수 있는 `n!`개의 순열을 모두 출력하는 함수 `permutNumbers`를 작성하세요.
+>
+> 예: `permutNumbers(3)`의 출력은 `123, 132, 213, 231, 312, 321`이어야 합니다.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **백트래킹 = 선택 → 재귀 → 되돌리기.** 위치 `i`에 올 값을 하나 고르고(교환), 나머지 위치는 재귀 호출에 맡긴 뒤, 돌아오면 교환을 원래대로 되돌립니다. 되돌리기 때문에 다음 선택이 항상 같은 상태에서 시작합니다.
+>
+> 경우의 수: 첫 자리 n가지 × 둘째 자리 n-1가지 × … = `n!`.
+
+> [!PROBLEM]
+> `n = 3`의 선택 트리
+>
+> ~~~text
+> 첫 자리 1 ─ 둘째 2 ─ 123
+>          └ 둘째 3 ─ 132
+> 첫 자리 2 ─ 둘째 1 ─ 213
+>          └ 둘째 3 ─ 231
+> 첫 자리 3 ─ 둘째 2 ─ 321
+>          └ 둘째 1 ─ 312
+> ~~~
+>
+> 리프가 3! = 6개이므로 순열도 6개입니다.
+
+> [!TRAP]
+> 교환 방식은 첫 자리가 3인 분기에서 배열이 `321`부터 시작하므로 `321`, `312` 순서로 출력됩니다. 원문 예시처럼 **사전순**이 꼭 필요하면 "사용하지 않은 수 중 작은 것부터 고르기"(used 배열) 방식으로 구현해야 합니다.
 
 ### 핵심 아이디어
 
@@ -146,6 +223,63 @@ int main() {
 > 제공 배열의 크기는 30이므로 `n > 30`이면 범위를 벗어납니다. 또한 순열 수는 매우 빠르게 증가하므로 훨씬 작은 n에서도 출력량이 커집니다.
 
 ## Exercise 3 · 이중 재귀를 반복문으로 바꾸기
+
+### Problem (Original)
+
+*Homework 2.doc (Handout 2), Exercise 3*
+
+**Exercise 3**
+
+**Problem.** Given the following function definition:
+
+~~~cpp
+int sum_down(int x) {
+    if (x >= 0) {
+        x = x - 1;
+        int y = x + sum_down(x);
+        return y + sum_down(x);
+    } else {
+        return 1;
+    }
+}
+~~~
+
+- (a) What is the smallest integer value of the parameter `x`, so that the returned value is greater than 1.000.000?
+- (b) Rewrite the function, so that it is free of recursion, i.e. give an iterative definition on the foundation of a loop-construct. *TIP: First transform the recursive definition, so that you have just a single recursive call.*
+- (c) Is it OK to switch the type of the parameter `x` to `double`? Discuss your decision / give an argumentation.
+- (d) Is it OK to switch the type of the parameter `x` to `unsigned int`? Discuss your decision / give an argumentation.
+- (e) Is it OK to switch the function head to `int sum_down(const int x)`? Discuss your decision / give an argumentation.
+
+> [!TRANSLATION]
+> **문제.** 다음 함수 정의가 주어져 있습니다(위 코드).
+>
+> - (a) 반환값이 1,000,000보다 커지게 하는 매개변수 `x`의 가장 작은 정수값은?
+> - (b) 재귀가 없도록 함수를 다시 작성하세요. 즉 반복문을 바탕으로 한 반복적 정의를 제시하세요. *팁: 먼저 재귀 호출이 하나만 남도록 재귀 정의를 변형하세요.*
+> - (c) 매개변수 `x`의 자료형을 `double`로 바꿔도 될까요? 판단과 근거를 제시하세요.
+> - (d) 매개변수 `x`의 자료형을 `unsigned int`로 바꿔도 될까요? 판단과 근거를 제시하세요.
+> - (e) 함수 머리를 `int sum_down(const int x)`로 바꿔도 될까요? 판단과 근거를 제시하세요.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **같은 호출이 두 번이면 한 번만 계산해 두 배 하면 됩니다.** 두 `sum_down(x)` 호출은 같은 인자(이미 1 줄어든 x)를 받으므로 결과도 같습니다. 그래서
+>
+> `sum_down(x) = (x - 1) + 2 × sum_down(x - 1)`, `sum_down(-1) = 1`
+>
+> 로 바꿀 수 있고, 호출이 하나뿐인 재귀는 아래(-1)에서 위로 올라가는 반복문으로 바로 옮길 수 있습니다. 원래 함수는 호출이 매 단계 두 배로 늘어 약 `2^(x+2)`번 호출되지만, 반복문은 `x + 1`번이면 끝납니다.
+
+> [!PROBLEM]
+> 작은 값부터 표로 채워 보면 규칙이 보입니다.
+>
+> | x | 계산 | sum_down(x) |
+> | --- | --- | --- |
+> | -1 | 기저 조건 | 1 |
+> | 0 | -1 + 2 × 1 | 1 |
+> | 1 | 0 + 2 × 1 | 2 |
+> | 2 | 1 + 2 × 2 | 5 |
+> | 3 | 2 + 2 × 5 | 12 |
+>
+> 반복문은 `sum = 1`에서 시작해 카운터 `i = -1, 0, 1, …, x - 1`마다 `sum = i + 2 * sum`을 하면 같은 값이 나옵니다.
 
 ### 원래 함수 단순화
 

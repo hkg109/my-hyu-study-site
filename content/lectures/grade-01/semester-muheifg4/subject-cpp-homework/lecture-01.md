@@ -29,6 +29,49 @@ Homework 1은 **조건식 읽기 → 선택 → 반복 → 알고리즘 구현**
 
 ## Exercise 1 · 논리식의 결과 계산
 
+### Problem (Original)
+
+*Homework 1.doc (Handout 1), Exercise 1*
+
+**Exercise 1**
+
+**Problem.** Given the following assignment of variables to values, fill in the result values of the conditions in the table below.
+
+~~~cpp
+int x = -5;  int power = 1024;  int y = 7;
+double item = 1.5;  double MIN = -12.0;  char DAY = 'M';
+int num = 12;  int MAX = 1024;  int Sens = 12;
+~~~
+
+| Condition | Result |
+| --- | --- |
+| `(x>y) && !y` | ? |
+| `(item>MIN) \|\| (DAY!='M')` | ? |
+| `((num*128)<power) && y` | ? |
+| `(!(power!=MAX)) && (Sens==num)` | ? |
+| `((y+x)<num) \|\| (DAY=='M')` | ? |
+| `(Sens*(!y)) != 0` | ? |
+| `(!x\|\|y) && (!y\|\|x)` | ? |
+
+변수 값은 함께 제공된 `Code_Exercise_1.c` 기준입니다.
+
+> [!TRANSLATION]
+> **문제.** 변수에 아래와 같은 값이 대입되어 있을 때, 표에 있는 각 조건식의 결과 값을 채우세요.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **정수 ↔ 참/거짓 변환과 단락 평가**
+>
+> - 조건식에서 `0`은 거짓, 0이 아닌 값(음수 포함)은 참입니다. 그래서 `!7`은 `0`, `!(-5)`도 `0`입니다.
+> - 비교·논리 연산의 결과는 `bool`이고, `cout`으로 출력하면 `1`(참) 또는 `0`(거짓)입니다.
+> - `A && B`는 A가 거짓이면 B를 보지 않고, `A || B`는 A가 참이면 B를 보지 않습니다.
+
+> [!PROBLEM]
+> `int a = 0, b = 3;`일 때 `(a != 0) && (b / a > 1)`은?
+>
+> 왼쪽 `a != 0`이 거짓이므로 오른쪽은 **실행되지 않습니다**. 0으로 나누는 오류 없이 결과는 `0`입니다. 반대로 `(a == 0) || (b / a > 1)`도 왼쪽이 참이라 결과는 `1`이고 나눗셈은 일어나지 않습니다.
+
 ### 문제 이해
 
 다음 값이 주어졌을 때 일곱 조건식의 결과를 계산합니다.
@@ -92,6 +135,42 @@ int main() {
 
 ## Exercise 2 · 세 정수 중 최댓값
 
+### Problem (Original)
+
+*Homework 1.doc (Handout 1), Exercise 2*
+
+**Exercise 2**
+
+**Problem.** Write a program in C++ that performs the following tasks:
+
+- Read three integer values using `cin`.
+- Determine the maximum of the three values entered by the user.
+- Print the maximum of this three values using `cout`.
+
+> [!TRANSLATION]
+> **문제.** 다음 작업을 수행하는 C++ 프로그램을 작성하세요.
+>
+> - `cin`으로 정수 세 개를 입력받습니다.
+> - 사용자가 입력한 세 값 중 최댓값을 구합니다.
+> - 그 최댓값을 `cout`으로 출력합니다.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **"현재 최댓값" 패턴**: 첫 값을 일단 최댓값으로 두고, 나머지 값을 하나씩 비교해 더 크면 바꿉니다. 비교 횟수는 항상 2번이고, 값이 늘어나도 반복문으로 그대로 확장됩니다.
+
+> [!PROBLEM]
+> 입력 `4 9 7`
+>
+> 1. `max = 4`
+> 2. `9 > 4` → `max = 9`
+> 3. `7 > 9`는 거짓 → 그대로
+>
+> 출력 `9`
+
+> [!TRAP]
+> `if (a > b && a > c) ... else if (b > a && b > c) ... else c` 처럼 엄격한 `>`만 쓰면 `5 5 3`에서 두 조건이 모두 거짓이 되어 `3`을 출력합니다. 같은 값이 있어도 동작하는지 꼭 확인하세요.
+
 ### 문제 이해와 풀이 흐름
 
 정수 세 개를 입력받아 가장 큰 값을 출력합니다. 첫 값을 현재 최댓값으로 정한 뒤 나머지 두 값을 차례로 비교하면 됩니다.
@@ -138,6 +217,32 @@ int main() {
 
 ## Exercise 3 · 0이 입력될 때까지 누적 합
 
+### Problem (Original)
+
+*Homework 1.doc (Handout 1), Exercise 3*
+
+**Exercise 3**
+
+**Problem.** Write a program that asks the user to type numbers. After each entry, the program should report the cumulative sum of the entries. The program should terminate when the user enters 0.
+
+> [!TRANSLATION]
+> **문제.** 사용자에게 숫자를 입력하도록 요청하는 프로그램을 작성하세요. 숫자가 하나 입력될 때마다 지금까지 입력한 값의 누적 합을 알려 줍니다. 사용자가 0을 입력하면 프로그램을 종료합니다.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **센티널(종료 표시) 반복**: 몇 번 입력할지 미리 알 수 없을 때, 특별한 값(여기서는 0)이 들어오면 멈춥니다. 반복마다 "읽기 → 종료 검사 → 누적 → 출력" 순서를 지키는 것이 핵심이고, 반복 사이에 유지할 상태는 `sum` 하나입니다.
+
+> [!PROBLEM]
+> 입력 순서 `3`, `-1`, `5`, `0`
+>
+> | 입력 | 종료? | sum | 출력 |
+> | --- | --- | --- | --- |
+> | 3 | 아니오 | 3 | 3 |
+> | -1 | 아니오 | 2 | 2 |
+> | 5 | 아니오 | 7 | 7 |
+> | 0 | 예 | 7 | (종료) |
+
 ### 문제 이해와 상태 설계
 
 사용자가 숫자를 입력할 때마다 지금까지의 합을 출력하고, `0`을 입력하면 종료합니다. 여기서 0은 실제 데이터가 아니라 반복 종료를 알리는 **센티널 값**입니다.
@@ -174,6 +279,53 @@ int main() {
 > 일반적인 계산에서는 부동소수점 값을 `==`로 비교할 때 오차를 고려해야 합니다. 이 문제처럼 사용자가 종료값 `0` 자체를 입력하는 센티널 비교는 의도가 분명하지만, 계산 결과가 0에 가까운지를 검사하는 문제라면 오차 범위를 사용해야 합니다.
 
 ## Exercise 4 · 유클리드 호제법으로 최대공약수 구하기
+
+### Problem (Original)
+
+*Homework 1.doc (Handout 1), Exercise 4*
+
+**Exercise 4**
+
+**Problem.** Create a program to determine the GCD (Greatest Common Divisor) of two integers `x` and `y` using a **while loop**.
+
+Formal description of the Euclidean algorithm:
+
+- **Input:** Two positive integers, `a` and `b`.
+- **Output:** The greatest common divisor, `g`, of `a` and `b`.
+- **Internal computation:**
+  1. If `a < b`, exchange `a` and `b`.
+  2. Divide `a` by `b` and get the remainder, `r`. If `r = 0`, report `b` as the GCD of `a` and `b`.
+  3. Replace `a` by `b` and replace `b` by `r`. Return to the previous step.
+
+> [!TRANSLATION]
+> **문제.** **while 반복문**을 사용해 두 정수 `x`, `y`의 최대공약수(GCD)를 구하는 프로그램을 작성하세요.
+>
+> 유클리드 호제법의 형식적 설명:
+>
+> - **입력:** 두 양의 정수 `a`, `b`
+> - **출력:** `a`와 `b`의 최대공약수 `g`
+> - **내부 계산:**
+>   1. `a < b`이면 `a`와 `b`를 바꿉니다.
+>   2. `a`를 `b`로 나눈 나머지 `r`을 구합니다. `r = 0`이면 `b`를 최대공약수로 보고합니다.
+>   3. `a`를 `b`로, `b`를 `r`로 바꾸고 이전 단계로 돌아갑니다.
+
+### 개념과 예제
+
+> [!CONCEPT]
+> **반복 한 번 = (a, b) → (b, a % b)**. 반복문 안에서는 나머지 `r`을 먼저 임시 변수에 저장한 뒤 `a = b; b = r;` 순서로 옮겨야 값이 사라지지 않습니다. 사실 `a < b`일 때도 `a % b = a`이므로 첫 반복이 자동으로 두 값을 바꿔 줍니다.
+
+> [!PROBLEM]
+> `12 30`
+>
+> | 단계 | a | b | r = a % b |
+> | --- | --- | --- | --- |
+> | 교환 | 30 | 12 | 6 |
+> | 이동 | 12 | 6 | 0 |
+>
+> `r = 0`이므로 `b = 6`이 최대공약수입니다.
+
+> [!TRAP]
+> `a = b; b = a % b;`처럼 임시 변수 없이 쓰면 두 번째 줄에서 이미 바뀐 `a`를 사용해 `b % b = 0`이 됩니다.
 
 ### 알고리즘
 

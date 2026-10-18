@@ -86,31 +86,49 @@ int score = 75;  // score: 변수, 75: 정수 리터럴
 
 > **난이도:** 중하
 
-#### 요구사항
+#### Problem (Original)
 
-- 상품의 가격 price, 수량 quantity, 할인액 discount를 입력받습니다.
-- 상품 가격에 수량을 곱한 뒤 할인액을 정확히 한 번만 뺍니다.
-- 최종 결제 금액을 total에 저장하여 출력합니다.
+*CPP Programming Exercise 02.pdf, slide 14*
 
-#### 입력
+**Quiz 1: Shopping Total**
 
-한 줄에 세 정수 price, quantity, discount가 주어집니다.
+**Problem.** Read an item's price, quantity, and a discount. Calculate the total price and subtract the discount once. Store the result in `total` and print it.
 
-#### 출력
+**Input.** Three integers: `price quantity discount`
 
-최종 결제 금액을 정수로 출력합니다.
+**Output.** Print the final total as an integer.
 
-#### 입력 예시
+**Constraints.** `1 <= price <= 10000`, `1 <= quantity <= 100`, `0 <= discount <= price * quantity`
 
-~~~text
-1500 4 1000
-~~~
+| Sample | Input | Output |
+| --- | --- | --- |
+| 1 | `1500 4 1000` | `5000` |
 
-#### 출력 예시
+> [!TRANSLATION]
+> **문제.** 상품 하나의 가격, 수량, 할인 금액을 입력받습니다. 총 가격을 계산한 뒤 할인 금액을 **한 번만** 뺍니다. 결과를 `total`에 저장하고 출력합니다.
+>
+> **입력.** 세 정수 `price quantity discount`
+>
+> **출력.** 최종 금액을 정수로 출력합니다.
+>
+> **제약 조건.** `1 <= price <= 10000`, `1 <= quantity <= 100`, `0 <= discount <= price * quantity`
+>
+> 예제 입력과 출력은 위 표와 같습니다.
 
-~~~text
-5000
-~~~
+#### 개념과 예제
+
+> [!CONCEPT]
+> **식의 순서가 곧 문제의 의미입니다.** "총액을 구한 뒤 할인을 한 번 뺀다"는 문장은 `total = price * quantity - discount`로 옮겨집니다. `*`가 `-`보다 우선순위가 높으므로 괄호 없이도 곱셈이 먼저 계산됩니다.
+>
+> 범위도 함께 확인합니다. 가장 큰 총액은 `10000 × 100 = 1,000,000`이므로 32비트 `int`(약 21억까지)로 충분합니다.
+
+> [!PROBLEM]
+> 가격 2000원, 수량 3개, 할인 500원이면 `2000 * 3 - 500 = 6000 - 500 = 5500`입니다.
+>
+> 입력 `2000 3 500` → 출력 `5500`
+
+> [!TRAP]
+> `(price - discount) * quantity`는 **상품마다** 할인하는 식입니다. 예제 `1500 4 1000`에 넣으면 `500 × 4 = 2000`이 되어 정답 5000과 다릅니다.
 
 #### 접근 방법
 
@@ -200,31 +218,53 @@ int main() {
 
 > **난이도:** 중
 
-#### 요구사항
+#### Problem (Original)
 
-- Day 0의 00:00:00부터 흐른 총 초를 입력받습니다.
-- 총 초를 일, 시, 분, 초로 나눕니다.
-- PDF에 지정된 라벨과 순서를 바꾸지 않고 출력합니다.
+*CPP Programming Exercise 02.pdf, slide 15*
 
-#### 입력
+**Quiz 2: Timestamp Conversion**
 
-0 이상 1,000,000,000 이하의 정수 elapsedSeconds가 주어집니다.
+**Problem.** The reference time is Day 0, 00:00:00. Given the elapsed time in seconds, calculate the day number and time. Each day has 24 hours.
 
-#### 출력
+**Input.** One integer `elapsedSeconds`, from 0 to 1,000,000,000.
 
-Days, Hours, Minutes, Seconds 라벨 뒤에 변환된 값을 출력합니다.
+**Output.** Print the values with the labels shown below. Use hours from 0 to 23, and minutes and seconds from 0 to 59. Keep the labels unchanged for all values.
 
-#### 입력 예시
+| Sample | Input | Output |
+| --- | --- | --- |
+| 1 | `93605` | `Days: 1 Hours: 2 Minutes: 0 Seconds: 5` |
 
-~~~text
-93605
-~~~
+> [!TRANSLATION]
+> **문제.** 기준 시각은 0일 00:00:00입니다. 경과 시간이 초 단위로 주어질 때 며칠째인지와 그날의 시각을 계산합니다. 하루는 24시간입니다.
+>
+> **입력.** 정수 하나 `elapsedSeconds`가 주어지며 범위는 0 이상 1,000,000,000 이하입니다.
+>
+> **출력.** 아래 예시와 같은 라벨을 붙여 출력합니다. 시는 0~23, 분과 초는 0~59 범위로 나타냅니다. 어떤 값이 들어와도 라벨 형식은 바꾸지 않습니다.
+>
+> 예제 입력과 출력은 위 표와 같습니다.
 
-#### 출력 예시
+#### 개념과 예제
 
-~~~text
-Days: 1 Hours: 2 Minutes: 0 Seconds: 5
-~~~
+> [!CONCEPT]
+> **큰 단위부터 몫(`/`)으로 떼어 내고, 남은 양은 나머지(`%`)로 넘깁니다.**
+>
+> - 하루 = `24 × 60 × 60 = 86400`초 → `days = s / 86400`
+> - 그날 남은 초 = `s % 86400` → 여기서 `/ 3600`이 시, `% 3600`이 남은 초
+> - 남은 초에서 `/ 60`이 분, `% 60`이 초
+>
+> 입력 최댓값 10억은 `int` 최댓값(2,147,483,647)보다 작으므로 `int`로 저장할 수 있습니다.
+
+> [!PROBLEM]
+> `3725`초를 변환해 봅시다.
+>
+> - `3725 / 86400 = 0`일, 남은 초 `3725`
+> - `3725 / 3600 = 1`시간, 남은 초 `3725 % 3600 = 125`
+> - `125 / 60 = 2`분, `125 % 60 = 5`초
+>
+> 출력: `Days: 0 Hours: 1 Minutes: 2 Seconds: 5`
+
+> [!TRAP]
+> `hours = s / 3600`처럼 **하루를 빼지 않고** 시간을 구하면 93605초에서 26시간이 나옵니다. 시는 반드시 `s % 86400`에서 계산해야 0~23 범위가 됩니다.
 
 #### 접근 방법
 
