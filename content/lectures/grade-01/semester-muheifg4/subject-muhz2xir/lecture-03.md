@@ -32,6 +32,8 @@ objectives:
 
 **책 읽는 법:** 슬라이드 제목 아래의 짧은 목록과 요약 한 줄이 강의 **핵심 필기**다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
 
+**형광펜 읽는 법:** ==yellow:노랑== 핵심 정의·결론 · ==red:빨강== 시험에서 헷갈리는 구분·함정 · ==blue:파랑== 외워야 할 순서·목록
+
 > [!PAGEBREAK]
 
 ## PART 1 · 협업과 소셜 비즈니스
@@ -53,7 +55,7 @@ objectives:
 > **현대 업무는 개인 작업보다 interaction과 collaboration 비중이 커짐**
 
 > [!NOTE]
-> 협업은 “같이 일한다”는 막연한 말이 아니라, 공통 목표를 위해 둘 이상이 함께 작업하는 것이다. 신메뉴 출시처럼 몇 주 안에 끝나는 일(short-term)도 있고, 매장 운영 개선처럼 계속 이어지는 일(long-term)도 있다. 협업이 더 중요해진 이유는 혼자 처리하는 일보다 **다른 사람과 정보를 주고받아야 끝나는 일(interaction jobs)**이 늘었기 때문이다.
+> 협업은 “같이 일한다”는 막연한 말이 아니라, 공통 목표를 위해 둘 이상이 함께 작업하는 것이다. 신메뉴 출시처럼 몇 주 안에 끝나는 일(short-term)도 있고, 매장 운영 개선처럼 계속 이어지는 일(long-term)도 있다. 협업이 더 중요해진 이유는 혼자 처리하는 일보다 ==다른 사람과 정보를 주고받아야 끝나는 일(interaction jobs)==이 늘었기 때문이다.
 
 ---
 
@@ -73,11 +75,11 @@ objectives:
 > **Social Business = social platform을 business interaction과 information sharing에 활용**
 
 > [!CONCEPT]
-> **Social business** — 사내외 소셜 네트워킹 플랫폼으로 직원·고객·공급업체와의 상호작용을 깊게 하고 정보 공유를 빠르게 하는 것. **정보 투명성**이 전제다.
+> **Social business** — 사내외 소셜 네트워킹 플랫폼으로 직원·고객·공급업체와의 상호작용을 깊게 하고 정보 공유를 빠르게 하는 것. ==red:정보 투명성==이 전제다.
 
 
 > [!NOTE]
-> Social business는 회사 안팎에서 SNS처럼 대화하고 공유하는 플랫폼을 업무에 쓰는 것이다. 예를 들어 고객이 남긴 리뷰에 직원이 바로 답하고, 그 의견을 메뉴 개발팀이 같은 피드에서 보는 식이다. 효과를 보려면 정보를 숨기지 않는 **투명성(information transparency)**이 필요하다. 위에서 정보를 통제하는 문화에서는 플랫폼을 깔아도 대화가 일어나지 않는다.
+> Social business는 회사 안팎에서 SNS처럼 대화하고 공유하는 플랫폼을 업무에 쓰는 것이다. 예를 들어 고객이 남긴 리뷰에 직원이 바로 답하고, 그 의견을 메뉴 개발팀이 같은 피드에서 보는 식이다. 효과를 보려면 정보를 숨기지 않는 ==red:투명성(information transparency)==이 필요하다. ==red:위에서 정보를 통제하는 문화에서는 플랫폼을 깔아도 대화가 일어나지 않는다.==
 ---
 
 ## Slide 32 — Collaboration Is Expanding to Human-Agent Teams
@@ -96,14 +98,14 @@ objectives:
 - AI agents
 를 함께 coordinate
 
-> **Human-Agent Team의 핵심 = workflow + handoff + review + authority를 명확히 정의**
+> **Human-Agent Team의 핵심 = ==blue:workflow + handoff + review + authority를 명확히 정의==**
 
 > [!CONCEPT]
 > **Human-agent team** — 사람과 AI agent가 함께 일하는 팀. AI가 어디서 사람에게 넘기는지(**handoff**), 무엇으로 검토하는지(**review**), 무엇을 할 수 있는지(**authority**)를 문서로 정한다.
 
 
 > [!NOTE]
-> 이제 팀원 중 일부가 AI agent일 수 있다. 사람 팀원과 일할 때 역할 분담을 정하듯이, AI가 어디까지 하고 언제 사람에게 넘기는지(**handoff**), 무엇을 기준으로 결과를 검토하는지(**review criteria**), 어떤 일을 할 권한이 있는지(**authority**)를 문서로 정해야 한다. 이게 없으면 AI의 실수를 아무도 발견하지 못하거나, 누가 책임질지 불분명해진다.
+> 이제 팀원 중 일부가 AI agent일 수 있다. 사람 팀원과 일할 때 역할 분담을 정하듯이, AI가 어디까지 하고 언제 사람에게 넘기는지(**handoff**), 무엇을 기준으로 결과를 검토하는지(**review criteria**), 어떤 일을 할 권한이 있는지(**authority**)를 문서로 정해야 한다. ==red:이게 없으면 AI의 실수를 아무도 발견하지 못하거나, 누가 책임질지 불분명해진다.==
 ---
 
 ## Slide 33 — Business Benefits of Collaboration and Teamwork
@@ -119,16 +121,16 @@ objectives:
 > **Collaboration은 productivity / quality / innovation / service를 통해 firm performance에 영향**
 
 > [!NOTE]
-> 표의 다섯 효과는 순서대로 이어진다. 지식을 나누면 문제를 빨리 풀고(productivity), 품질 문제를 빨리 고치고(quality), 아이디어가 늘고(innovation), 고객 불만에 빨리 대응한다(customer service). 이 네 가지가 쌓인 결과가 **financial performance**다. 그래서 답안에서 협업이 바로 매출을 올린다고 쓰기보다 중간 효과를 거쳐 설명하는 것이 좋다.
+> 표의 다섯 효과는 순서대로 이어진다. 지식을 나누면 문제를 빨리 풀고(productivity), 품질 문제를 빨리 고치고(quality), 아이디어가 늘고(innovation), 고객 불만에 빨리 대응한다(customer service). 이 네 가지가 쌓인 결과가 **financial performance**다. ==red:그래서 답안에서 협업이 바로 매출을 올린다고 쓰기보다 중간 효과를 거쳐 설명하는 것이 좋다.==
 
 ---
 
 ## Slide 34 — Figure 2.7 Requirements for Collaboration
 
 ### Collaboration Capability
-- open culture
-- decentralized structure
-- breadth of collaboration
+- ==blue:open culture==
+- ==blue:decentralized structure==
+- ==blue:breadth of collaboration==
 
 ### Collaboration Technology
 - implementation / operations 지원
@@ -144,7 +146,7 @@ objectives:
 
 > **좋은 collaboration = 적절한 organizational culture/structure + technology**
 
-협업 도구는 대화를 전달할 통로를 제공하지만, 누구의 의견을 받아들이고 어떤 정보를 공유할지는 팀의 일하는 방식이 결정한다. 따라서 협업 성과가 낮을 때는 도구의 기능 부족과 의견을 말하거나 활용하기 어려운 조직 조건을 나누어 살펴봐야 한다.
+협업 도구는 대화를 전달할 통로를 제공하지만, 누구의 의견을 받아들이고 어떤 정보를 공유할지는 팀의 일하는 방식이 결정한다. ==따라서 협업 성과가 낮을 때는 도구의 기능 부족과 의견을 말하거나 활용하기 어려운 조직 조건을 나누어 살펴봐야 한다.==
 
 ![협업 역량과 협업 기술이 협업의 질로 모이고 협업의 질이 기업 성과로 이어지는 그림](/materials/diagrams/mis-fig-2-07.svg)
 
@@ -167,10 +169,10 @@ objectives:
 ### Efficiency
 - cleaner energy + more efficient hardware 중요
 
-> **Digital investment는 service value뿐 아니라 environmental cost도 함께 평가**
+> ==Digital investment는 service value뿐 아니라 environmental cost도 함께 평가==
 
 > [!NOTE]
-> 클라우드와 AI는 “보이지 않는” 서비스처럼 느껴지지만, 실제로는 데이터센터가 전기·냉각수·하드웨어를 대량으로 쓴다. 그래서 IS 투자를 평가할 때 서비스 가치뿐 아니라 **에너지·탄소·물·하드웨어·공급망** 비용도 함께 따져야 한다는 것이 이 슬라이드의 요점이다.
+> 클라우드와 AI는 “보이지 않는” 서비스처럼 느껴지지만, 실제로는 데이터센터가 전기·냉각수·하드웨어를 대량으로 쓴다. 그래서 IS 투자를 평가할 때 서비스 가치뿐 아니라 ==blue:에너지·탄소·물·하드웨어·공급망== 비용도 함께 따져야 한다는 것이 이 슬라이드의 요점이다.
 
 ---
 
@@ -185,16 +187,16 @@ objectives:
 - manager의 역할 = **build teams**
 
 ### Key
-- collaboration technology만 도입해도 collaboration이 자동으로 생기지는 않음
+- ==red:collaboration technology만 도입해도 collaboration이 자동으로 생기지는 않음==
 - culture / reward / process가 필요
 
-> **Collaboration은 technology보다 culture와 management design이 선행되어야 함**
+> ==Collaboration은 technology보다 culture와 management design이 선행되어야 함==
 
 > [!NOTE]
-> 예전 조직(command and control)은 위에서 결정하고 아래는 실행만 했기 때문에, 직원이 의견을 내는 것 자체가 기대되지 않았다. 협업 문화에서는 관리자의 역할이 지시하는 사람에서 **팀을 만드는 사람**으로 바뀐다. Sharp 사례처럼 도구보다 먼저 보상·평가·절차를 바꿔야 협업이 실제로 일어난다.
+> 예전 조직(command and control)은 위에서 결정하고 아래는 실행만 했기 때문에, 직원이 의견을 내는 것 자체가 기대되지 않았다. 협업 문화에서는 관리자의 역할이 지시하는 사람에서 ==팀을 만드는 사람==으로 바뀐다. Sharp 사례처럼 도구보다 먼저 보상·평가·절차를 바꿔야 협업이 실제로 일어난다.
 
 > [!TRAP]
-> “협업 도구를 도입하면 협업이 자동으로 늘어난다”는 보기는 오답이다. **문화·보상·프로세스**가 먼저 바뀌어야 한다.
+> ==red:“협업 도구를 도입하면 협업이 자동으로 늘어난다”는 보기는 오답이다.== ==blue:문화·보상·프로세스==가 먼저 바뀌어야 한다.
 
 ---
 
@@ -213,7 +215,7 @@ objectives:
 - embedded **Generative AI assistants**
 - human direction 아래 task 수행하는 **AI agents**
 
-> **Collaboration tools는 messaging → shared workspace → cloud → AI-assisted workflow로 확장**
+> ==blue:Collaboration tools는 messaging → shared workspace → cloud → AI-assisted workflow로 확장==
 
 > [!NOTE]
 > 도구 목록을 외우기보다 발전 방향을 잡으면 된다. 메시지를 주고받는 단계(e-mail, IM) → 같은 문서를 함께 고치는 단계(wiki, Google Docs) → 클라우드에서 언제 어디서나 같이 쓰는 단계(Teams, Slack, Notion) → AI가 요약·초안을 돕거나 일부 작업을 수행하는 단계로 넓어지고 있다.
@@ -242,7 +244,7 @@ objectives:
 > **Enterprise social platform = communication + content + workflow + governance + AI**
 
 > [!NOTE]
-> 기업용 소셜 네트워크는 사내 SNS다. 프로필로 누가 무엇을 아는지 찾고, 피드로 소식을 받고, 그룹 공간에서 프로젝트를 진행한다. 개인 SNS와 다른 점은 **권한·보존·데이터 위치 같은 governance**와 사내 시스템과의 **integration**이 평가 기준에 들어간다는 것이다.
+> 기업용 소셜 네트워크는 사내 SNS다. 프로필로 누가 무엇을 아는지 찾고, 피드로 소식을 받고, 그룹 공간에서 프로젝트를 진행한다. 개인 SNS와 다른 점은 ==red:권한·보존·데이터 위치 같은 governance==와 사내 시스템과의 **integration**이 평가 기준에 들어간다는 것이다.
 
 ---
 
@@ -252,8 +254,8 @@ objectives:
 
 | Dimension | 구분 |
 |---|---|
-| **Space** | remote / co-located |
-| **Time** | synchronous / asynchronous |
+| **Space** | ==blue:remote / co-located== |
+| **Time** | ==blue:synchronous / asynchronous== |
 
 ### Six Steps
 
@@ -266,10 +268,10 @@ objectives:
 | 5 | users에게 implementation / training issue 확인 |
 | 6 | vendors evaluate |
 
-> **Tool 선택은 기능보다 work context + cost + security + users + vendor를 함께 봐야 함**
+> ==blue:Tool 선택은 기능보다 work context + cost + security + users + vendor를 함께 봐야 함==
 
 > [!NOTE]
-> 협업 도구를 고를 때는 먼저 팀이 **같은 시간에 일하는지(synchronous), 같은 장소에 있는지(co-located)**부터 확인한다. 그다음 여섯 단계로 문제 정의 → 대안 탐색 → 비용·편익 → 보안 → 사용자 교육 → 공급업체 순으로 따진다. 기능이 많은 도구가 아니라 **우리 팀의 일하는 방식에 맞는 도구**가 좋은 도구다.
+> 협업 도구를 고를 때는 먼저 팀이 ==blue:같은 시간에 일하는지(synchronous), 같은 장소에 있는지(co-located)==부터 확인한다. 그다음 여섯 단계로 ==blue:문제 정의 → 대안 탐색 → 비용·편익 → 보안 → 사용자 교육 → 공급업체== 순으로 따진다. 기능이 많은 도구가 아니라 ==우리 팀의 일하는 방식에 맞는 도구==가 좋은 도구다.
 
 > [!PROBLEM]
 > **문제.** 서울과 부산 매장 직원들이 교대 시간이 달라 공유 캘린더와 인수인계 위키로 일정을 맞춘다. 시간·공간 매트릭스의 어느 칸인가?
@@ -288,10 +290,10 @@ objectives:
 | **AI Quality** | grounding / citations / access-aware retrieval / monitoring / human review |
 | **Adoption** | active use / search success / cycle time / quality / employee experience / outcomes |
 
-> **Collaboration platform 평가는 Work Fit + Integration + Governance + AI Quality + Adoption**
+> ==blue:Collaboration platform 평가는 Work Fit + Integration + Governance + AI Quality + Adoption==
 
 > [!NOTE]
-> 다섯 기준은 “잘 맞는가 → 잘 연결되는가 → 잘 통제되는가 → AI 답변을 믿을 수 있는가 → 실제로 쓰이는가”라는 질문으로 바꿔 기억하면 쉽다. 특히 마지막 **Adoption**은 도입 여부가 아니라 직원들이 실제로 쓰고 일이 빨라졌는지를 본다. 깔아 놓고 아무도 안 쓰면 실패다.
+> 다섯 기준은 “잘 맞는가 → 잘 연결되는가 → 잘 통제되는가 → AI 답변을 믿을 수 있는가 → 실제로 쓰이는가”라는 질문으로 바꿔 기억하면 쉽다. 특히 마지막 **Adoption**은 ==red:도입 여부가 아니라 직원들이 실제로 쓰고 일이 빨라졌는지를 본다.== 깔아 놓고 아무도 안 쓰면 실패다.
 
 ---
 
@@ -299,8 +301,8 @@ objectives:
 
 | | Same Time | Different Time |
 |---|---|---|
-| **Same Place** | Face-to-face interactions | Continuous task |
-| **Different Place** | Remote interactions | Communication + coordination |
+| **Same Place** | ==red:Face-to-face interactions== | ==red:Continuous task== |
+| **Different Place** | ==red:Remote interactions== | ==red:Communication + coordination== |
 
 ### Examples
 - Same place + same time: meeting / decision room
@@ -314,7 +316,7 @@ objectives:
 *Figure 2.8 · The Time/Space Collaboration and Social Tool Matrix — 시간과 장소로 협업 도구를 나눈다.*
 
 > [!NOTE]
-> 두 질문만 하면 칸이 정해진다. “같은 시간에 하는가?”와 “같은 장소에서 하는가?” 매장 회의는 같은 시간·같은 장소, 화상회의는 같은 시간·다른 장소, 교대 근무자끼리 남기는 인수인계 노트는 다른 시간·같은 장소(continuous task), 이메일과 공유 캘린더는 다른 시간·다른 장소다.
+> 두 질문만 하면 칸이 정해진다. “같은 시간에 하는가?”와 “같은 장소에서 하는가?” 매장 회의는 같은 시간·같은 장소, 화상회의는 같은 시간·다른 장소, ==red:교대 근무자끼리 남기는 인수인계 노트는 다른 시간·같은 장소(continuous task)==, 이메일과 공유 캘린더는 다른 시간·다른 장소다.
 
 > [!CHECK]
 > **1.** 협업에 필요한 두 가지 요건(Figure 2.7)을 쓰시오.
@@ -333,14 +335,14 @@ objectives:
 
 - KMS는 software investment의 빠르게 성장하는 영역
 - knowledge / information workers 비중 큼
-- firm value의 상당 부분이 **intangible assets**와 연결
+- firm value의 상당 부분이 ==intangible assets==와 연결
   - knowledge
   - brands
   - reputation
   - unique business processes
 - well-executed knowledge project → 높은 ROI 가능
 
-> **현대 기업의 핵심 자산 중 상당 부분은 physical asset이 아니라 knowledge**
+> ==현대 기업의 핵심 자산 중 상당 부분은 physical asset이 아니라 knowledge==
 
 > [!NOTE]
 > 오늘날 많은 기업 가치는 건물이나 기계가 아니라 지식·브랜드·평판·독특한 업무 방식 같은 **무형 자산**에서 나온다. 이런 자산은 장부에 잘 드러나지 않지만 경쟁력의 핵심이라서, 이를 관리하는 KMS에 대한 투자가 빠르게 늘고 있다.
@@ -354,10 +356,10 @@ objectives:
 - **Tacit Knowledge / Explicit Knowledge**
 
 ### Four Dimensions
-- Knowledge is a **firm asset**
-- Knowledge has **different forms**
-- Knowledge has a **location**
-- Knowledge is **situational**
+- Knowledge is a ==blue:firm asset==
+- Knowledge has ==blue:different forms==
+- Knowledge has a ==blue:location==
+- Knowledge is ==blue:situational==
 
 > **Knowledge는 단순 정보가 아니라 조직 안에서 형태·위치·상황을 갖는 asset**
 
@@ -371,26 +373,26 @@ objectives:
 ### Knowledge Is a Firm Asset
 - intangible
 - data / information → knowledge 변환에 organizational resources 필요
-- 공유될수록 **network effects** 발생
+- 공유될수록 ==network effects== 발생
 
 ### Explicit vs Tacit Knowledge
 
 | | Explicit Knowledge | Tacit Knowledge |
 |---|---|---|
-| 형태 | documented | 사람의 mind / experience에 존재 |
+| 형태 | ==red:documented== | ==red:사람의 mind / experience에 존재== |
 | 예 | procedure / manual / report | know-how / craft / skill |
-| 전달 | 비교적 쉬움 | 문서화·이전이 어려움 |
+| 전달 | ==red:비교적 쉬움== | ==red:문서화·이전이 어려움== |
 
 > **Explicit = 문서화 가능 / Tacit = 경험과 사람에게 내재된 know-how**
 
 > [!CONCEPT]
-> **Explicit knowledge** — 문서화된 지식(매뉴얼·보고서). **Tacit knowledge** — 사람의 경험 속에 있어 문서로 옮기기 어려운 지식(노하우·감각).
+> **Explicit knowledge** — ==문서화된 지식(매뉴얼·보고서)==. **Tacit knowledge** — ==사람의 경험 속에 있어 문서로 옮기기 어려운 지식(노하우·감각)==.
 
 > [!NOTE]
 > 카페 레시피 매뉴얼은 **explicit knowledge**라 새 직원에게 그대로 넘겨줄 수 있다. 하지만 숙련 바리스타가 우유 거품 소리만 듣고 온도를 맞추는 감각은 **tacit knowledge**라 글로 옮기기 어렵다. 지식은 공유될수록 더 많은 사람이 쓰면서 가치가 커지는 **network effect**도 있다.
 
 > [!TRAP]
-> 지식을 문서로 많이 남겼다고 tacit knowledge가 다 옮겨진 것은 아니다. **언제·어떻게 적용하는지**는 사람과 상황에 붙어 있다.
+> ==red:지식을 문서로 많이 남겼다고 tacit knowledge가 다 옮겨진 것은 아니다.== **언제·어떻게 적용하는지**는 사람과 상황에 붙어 있다.
 
 ---
 
@@ -399,15 +401,15 @@ objectives:
 ### Knowledge Has a Location
 - cognitive event
 - individual + social
-- **sticky**: 이동하기 어려움
-- **situated**: firm culture에 얽혀 있음
-- **contextual**: 특정 context에서만 작동 가능
+- ==blue:sticky==: 이동하기 어려움
+- ==blue:situated==: firm culture에 얽혀 있음
+- ==blue:contextual==: 특정 context에서만 작동 가능
 
 ### Knowledge Is Situational
 - **Conditional**: 언제 procedure를 적용할지 앎
 - **Contextual**: 어떤 상황에서 tool을 쓸지 앎
 
-> **Knowledge는 context에서 분리하면 그대로 이전되지 않는 경우가 많음**
+> ==Knowledge는 context에서 분리하면 그대로 이전되지 않는 경우가 많음==
 
 매뉴얼은 절차를 기록할 수 있어도 숙련자가 **언제 그 절차를 적용하거나 예외로 처리하는지**까지 모두 담기는 어렵다. 그래서 tacit knowledge를 다룰 때는 문서를 늘리는 것뿐 아니라 경험을 가진 사람과 연결하고 적용 상황을 함께 전달하는 방법이 필요하다.
 
@@ -423,10 +425,10 @@ objectives:
 
 ### Wisdom
 - knowledge를 실제 문제에 적용한 collective / individual experience
-- where / when / how to apply knowledge
+- ==where / when / how to apply knowledge==
 
 ### Knowledge-Based Core Competencies
-- competitors가 쉽게 duplicate하지 못하는 know-how
+- ==competitors가 쉽게 duplicate하지 못하는 know-how==
 - profit / competitive advantage의 원천
 
 > **Information + context/pattern → Knowledge → 경험을 통한 적용 = Wisdom**
@@ -435,7 +437,7 @@ objectives:
 
 ![Data가 information으로 정리되고 patterns, rules, context가 더해져 knowledge가 되며 경험과 적용 판단을 거쳐 wisdom으로 올라가는 네 단계 위계](/materials/diagrams/mis-03-knowledge-hierarchy.svg)
 
-이 위계에서 위 단계는 아래 단계를 없애는 것이 아니라 **해석과 판단을 추가**한다. 따라서 data를 많이 모았다는 사실만으로 knowledge나 wisdom이 자동으로 생기지는 않는다.
+이 위계에서 위 단계는 아래 단계를 없애는 것이 아니라 **해석과 판단을 추가**한다. ==red:따라서 data를 많이 모았다는 사실만으로 knowledge나 wisdom이 자동으로 생기지는 않는다.==
 
 ---
 
@@ -451,7 +453,7 @@ objectives:
 > **Organizational Learning = 경험을 수집하고 행동과 process를 실제로 바꾸는 과정**
 
 > [!CONCEPT]
-> **Organizational learning** — 데이터 수집·시행착오·피드백으로 경험을 얻고, 그 결과 **새 비즈니스 프로세스와 바뀐 의사결정 패턴**을 만들어 내는 과정.
+> **Organizational learning** — 데이터 수집·시행착오·피드백으로 경험을 얻고, 그 결과 ==새 비즈니스 프로세스와 바뀐 의사결정 패턴==을 만들어 내는 과정.
 
 
 > [!NOTE]
@@ -461,7 +463,7 @@ objectives:
 ## Slide 48 — Knowledge Management Value Chain (1/3)
 
 ### Knowledge Management
-- knowledge를 **create / store / transfer / apply**하기 위한 business processes
+- knowledge를 ==blue:create / store / transfer / apply==하기 위한 business processes
 
 ### Value Chain
 
@@ -474,15 +476,15 @@ objectives:
 
 - 각 stage가 raw data / information에 value 추가
 
-> **KM Value Chain = Acquire → Store → Disseminate → Apply**
+> **KM Value Chain = ==blue:Acquire → Store → Disseminate → Apply==**
 
 > [!BOARD]
 > - **Acquire** → **Store** → **Disseminate** → **Apply**
-> - 각 단계가 가치를 더한다. **Apply**가 빠지면 ROI가 없다
+> - 각 단계가 가치를 더한다. **Apply**==red:가 빠지면 ROI가 없다==
 
 
 > [!NOTE]
-> 가치사슬이라는 이름은 각 단계가 지식에 가치를 더한다는 뜻이다. 회의록을 모으고(Acquisition), 찾기 쉽게 정리해 두고(Storage), 필요한 직원에게 보내고(Dissemination), 실제 결정에 쓰는(Application) 순서다. 어느 한 단계라도 끊기면 앞 단계의 노력이 성과로 이어지지 않는다.
+> 가치사슬이라는 이름은 각 단계가 지식에 가치를 더한다는 뜻이다. 회의록을 모으고(Acquisition), 찾기 쉽게 정리해 두고(Storage), 필요한 직원에게 보내고(Dissemination), 실제 결정에 쓰는(Application) 순서다. ==red:어느 한 단계라도 끊기면 앞 단계의 노력이 성과로 이어지지 않는다.==
 ---
 
 ## Slide 49 — Generative AI in the KM Value Chain
@@ -497,7 +499,7 @@ objectives:
 > **GenAI도 KM Value Chain 안에서 Acquire → Store → Retrieve → Apply 구조로 관리**
 
 > [!NOTE]
-> GenAI는 가치사슬의 각 단계를 빠르게 만들지만 단계를 없애지는 않는다. 회의 녹음을 글로 바꾸는 것(Acquire), 문서에 메타데이터와 권한을 붙이는 것(Store), RAG로 승인된 문서만 찾아 답하는 것(Disseminate), 사람이 검토하고 결정하는 것(Apply)이 각각 관리 대상이다. 특히 **Apply 단계의 사람 검토**가 빠지면 틀린 답이 그대로 업무에 쓰인다.
+> ==red:GenAI는 가치사슬의 각 단계를 빠르게 만들지만 단계를 없애지는 않는다.== 회의 녹음을 글로 바꾸는 것(Acquire), 문서에 메타데이터와 권한을 붙이는 것(Store), RAG로 승인된 문서만 찾아 답하는 것(Disseminate), 사람이 검토하고 결정하는 것(Apply)이 각각 관리 대상이다. 특히 ==red:Apply 단계의 사람 검토==가 빠지면 틀린 답이 그대로 업무에 쓰인다.
 
 ---
 
@@ -522,7 +524,7 @@ objectives:
 ### Feedback
 - application 결과가 다시 data / knowledge acquisition으로 연결
 
-> **KM은 IT activity만이 아니라 management / organization activity가 함께 있어야 완성**
+> ==KM은 IT activity만이 아니라 management / organization activity가 함께 있어야 완성==
 
 ### 교재 그림 · Figure 11.1
 
@@ -534,7 +536,7 @@ objectives:
 
 ![지식을 획득하고 저장하고 전달해 업무에 적용한 뒤 결과를 다시 조직 학습으로 연결하는 지식관리 가치사슬](/materials/diagrams/mis-03-knowledge-value-chain.svg)
 
-**그림 읽기:** 지식을 많이 저장하는 것만으로는 가치가 생기지 않는다. 필요한 사람에게 전달된 지식이 의사결정과 프로세스에 **적용(Application)**되어야 새 업무·제품·시장이 만들어진다. 그 결과를 다시 획득 단계로 돌려 기준과 행동을 바꾸는 것이 **조직 학습(Organizational Learning)**이다.
+**그림 읽기:** ==red:지식을 많이 저장하는 것만으로는 가치가 생기지 않는다.== 필요한 사람에게 전달된 지식이 의사결정과 프로세스에 ==적용(Application)==되어야 새 업무·제품·시장이 만들어진다. 그 결과를 다시 획득 단계로 돌려 기준과 행동을 바꾸는 것이 ==조직 학습(Organizational Learning)==이다.
 
 ---
 
@@ -557,7 +559,7 @@ objectives:
 - corporate-wide schema / indexing 설계
 - employees가 문서를 update / store하도록 incentive 제공
 
-> **Acquire는 지식을 모으는 단계 / Store는 구조화·관리 가능한 형태로 보존하는 단계**
+> ==Acquire는 지식을 모으는 단계 / Store는 구조화·관리 가능한 형태로 보존하는 단계==
 
 > [!NOTE]
 > 지식을 모으는 방법은 문서화만이 아니다. 전문가 네트워크를 만들어 “누가 아는지”를 모으는 것도 획득이다. 저장 단계에서는 관리자의 역할이 크다. 회사 전체가 같은 분류 체계(**schema · indexing**)를 써야 나중에 찾을 수 있고, 직원이 문서를 올리고 고치도록 **incentive**를 줘야 저장소가 살아 있다.
@@ -578,7 +580,7 @@ objectives:
 - shared management experience
 
 ### Knowledge Application
-- ROI를 내려면 knowledge가 실제 decision making에 들어가야 함
+- ==ROI를 내려면 knowledge가 실제 decision making에 들어가야 함==
 - DSS / management process에 embed
 - 결과
   - new business practices
@@ -592,7 +594,7 @@ objectives:
 > [!PROBLEM]
 > **문제.** 한 회사가 프로젝트 보고서 수천 개를 저장했지만, 직원들은 관련 교훈을 찾지 못하고 업무도 바뀌지 않았다. 가치사슬의 어느 단계가 막혔는가?
 >
-> **풀이.** ① 보고서가 있다 → 획득·저장은 됐다 ② 찾지 못한다 → **전파(dissemination)** 문제 ③ 업무가 그대로다 → **적용(application)** 문제.
+> **풀이.** ① 보고서가 있다 → 획득·저장은 됐다 ② 찾지 못한다 → ==red:전파(dissemination)== 문제 ③ 업무가 그대로다 → ==red:적용(application)== 문제.
 
 ---
 
@@ -603,11 +605,11 @@ objectives:
 - knowledge managers / dedicated staff
 
 ### Communities of Practice (COPs)
-- professionals / employees의 informal social networks
+- ==professionals / employees의 informal social networks==
 - education
 - newsletters
 - knowledge sharing
-- new employee learning curve 감소
+- ==new employee learning curve 감소==
 
 > **COP = 같은 전문영역 사람들이 경험과 know-how를 지속적으로 공유하는 network**
 
@@ -623,17 +625,17 @@ objectives:
 
 | Type | 대상 / 목적 |
 |---|---|
-| **Enterprise-Wide KMS** | firm-wide knowledge의 collection / storage / distribution / application |
-| **Knowledge Work Systems (KWS)** | engineers / scientists 등 knowledge workers의 new knowledge 생성 |
-| **Intelligent Techniques** | data mining 등으로 knowledge discovery / optimal solution 탐색 |
+| **Enterprise-Wide KMS** | ==firm-wide knowledge의 collection / storage / distribution / application== |
+| **Knowledge Work Systems (KWS)** | ==engineers / scientists 등 knowledge workers의 new knowledge 생성== |
+| **Intelligent Techniques** | ==data mining 등으로 knowledge discovery / optimal solution 탐색== |
 
 > **KMS 3종류 = Enterprise-wide KMS / KWS / Intelligent Techniques**
 
 > [!NOTE]
-> 세 유형은 지식을 **관리하는가, 만드는가, 발견하는가**로 나뉜다. 회사 문서와 노하우를 모아 공유하면 enterprise-wide KMS, 엔지니어가 설계하며 새 지식을 만들면 KWS, 데이터에서 기계가 패턴을 찾아내면 intelligent techniques다.
+> 세 유형은 지식을 ==blue:관리하는가, 만드는가, 발견하는가==로 나뉜다. 회사 문서와 노하우를 모아 공유하면 enterprise-wide KMS, 엔지니어가 설계하며 새 지식을 만들면 KWS, 데이터에서 기계가 패턴을 찾아내면 intelligent techniques다.
 
 > [!TRAP]
-> **KMS**는 지식관리시스템 전체의 이름이고, **KWS**는 그중 전문가가 새 지식을 만들도록 돕는 한 유형이다. KMS ⊃ KWS.
+> **KMS**는 지식관리시스템 전체의 이름이고, **KWS**는 그중 전문가가 새 지식을 만들도록 돕는 한 유형이다. ==red:KMS ⊃ KWS.==
 
 ---
 
@@ -671,7 +673,7 @@ objectives:
 
 ![Knowledge management systems가 enterprise-wide KMS, knowledge work systems, intelligent techniques의 세 유형으로 나뉘는 구조](/materials/diagrams/mis-03-kms-types.svg)
 
-**그림 읽기:** enterprise-wide KMS는 조직 전체의 지식 공유, KWS는 전문가의 새로운 지식 창출, intelligent techniques는 규칙·사례·data에서 pattern이나 해법을 찾는 데 초점이 있다. 사용 기술보다 지원하는 knowledge activity로 구분한다.
+**그림 읽기:** enterprise-wide KMS는 조직 전체의 지식 공유, KWS는 전문가의 새로운 지식 창출, intelligent techniques는 규칙·사례·data에서 pattern이나 해법을 찾는 데 초점이 있다. ==red:사용 기술보다 지원하는 knowledge activity로 구분한다.==
 
 ---
 
@@ -679,9 +681,9 @@ objectives:
 
 | Type | 예시 | 특징 |
 |---|---|---|
-| **Structured** | reports / presentations / formal rules | 형식과 구조가 명확 |
-| **Semistructured** | e-mails / videos | 일부 구조는 있으나 완전히 정형화되지 않음 |
-| **Unstructured / Tacit** | experience / know-how | 사람과 상황에 내재 |
+| **Structured** | ==red:reports / presentations / formal rules== | 형식과 구조가 명확 |
+| **Semistructured** | ==red:e-mails / videos== | 일부 구조는 있으나 완전히 정형화되지 않음 |
+| **Unstructured / Tacit** | ==red:experience / know-how== | 사람과 상황에 내재 |
 
 - informal / unstructured knowledge도 business에서 중요
 - 비율은 organization마다 다름
@@ -718,11 +720,11 @@ objectives:
 > **CMS의 핵심 = content 저장보다 classification / taxonomy / retrieval**
 
 > [!CONCEPT]
-> **Taxonomy** — 콘텐츠를 쉽게 찾을 수 있도록 회사 전체가 함께 쓰는 **분류 체계**. 각 지식 객체에 이 분류로 **tag**를 붙인다.
+> **Taxonomy** — 콘텐츠를 쉽게 찾을 수 있도록 회사 전체가 함께 쓰는 ==분류 체계==. 각 지식 객체에 이 분류로 **tag**를 붙인다.
 
 
 > [!NOTE]
-> 문서를 많이 저장하는 것보다 **다시 찾을 수 있게** 하는 것이 어렵다. 그래서 CMS의 핵심 과제는 taxonomy, 즉 회사 전체가 같은 분류 체계로 문서에 tag를 붙이는 것이다. 사진·영상 같은 디지털 자산은 따로 Digital Asset Management로 관리한다.
+> 문서를 많이 저장하는 것보다 ==다시 찾을 수 있게== 하는 것이 어렵다. 그래서 CMS의 핵심 과제는 taxonomy, 즉 회사 전체가 같은 분류 체계로 문서에 tag를 붙이는 것이다. 사진·영상 같은 디지털 자산은 따로 Digital Asset Management로 관리한다.
 ---
 
 ## Slide 58 — AI-Ready Content Management
@@ -735,9 +737,9 @@ objectives:
 | **Provenance** | source link / creation date / version history / correction path |
 | **Evaluation** | retrieval coverage / accuracy / confidentiality / bias / real-work performance |
 
-> **AI-ready content = clean + well-labeled + access-controlled + traceable + evaluated**
+> **AI-ready content = ==blue:clean + well-labeled + access-controlled + traceable + evaluated==**
 
-AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한을 건너뛸 수는 없다. 오래된 판본과 최신 판본을 구분하지 못하면 그럴듯한 답을 잘못된 근거로 만들 수 있고, 권한을 지키지 못하면 찾을 수 있다는 이유만으로 보여서는 안 되는 정보까지 노출될 수 있다.
+AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한을 건너뛸 수는 없다. 오래된 판본과 최신 판본을 구분하지 못하면 그럴듯한 답을 잘못된 근거로 만들 수 있고, ==red:권한을 지키지 못하면 찾을 수 있다는 이유만으로 보여서는 안 되는 정보까지 노출될 수 있다.==
 
 ---
 
@@ -780,7 +782,7 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 - social networking / social business tools로 external knowledge 탐색
 - saving / tagging / sharing web pages
 
-> **모든 knowledge를 문서화할 수 없으므로 ‘누가 알고 있는지’를 찾는 기능도 중요**
+> ==모든 knowledge를 문서화할 수 없으므로 ‘누가 알고 있는지’를 찾는 기능도 중요==
 
 > [!NOTE]
 > tacit knowledge는 문서로 옮기기 어렵기 때문에, 차라리 **그 지식을 가진 사람을 빨리 찾게** 하는 것이 현실적이다. 사내 전문가 디렉터리에서 “라테아트 교육 담당자”를 검색해 바로 연락하는 식이다.
@@ -823,7 +825,7 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 ### Three Roles
 - organization의 knowledge를 current하게 유지
 - internal consultant 역할
-- **change agent** 역할
+- ==blue:change agent== 역할
 
 ### Knowledge Work Systems
 - knowledge workers가 new knowledge를 만들고 business에 integrate하도록 지원
@@ -831,7 +833,7 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 > **Knowledge Worker = 지식을 사용하는 사람을 넘어 새로운 organizational knowledge를 만드는 사람**
 
 > [!NOTE]
-> 지식 근로자는 지식을 쓰기만 하는 사람이 아니라 **새로 만드는 사람**이다. 세 역할을 한 문장으로 묶으면, 회사 지식을 최신으로 유지하고(current), 다른 부서에 조언하며(internal consultant), 변화를 이끈다(change agent).
+> 지식 근로자는 지식을 쓰기만 하는 사람이 아니라 ==새로 만드는 사람==이다. 세 역할을 한 문장으로 묶으면, ==blue:회사 지식을 최신으로 유지하고(current), 다른 부서에 조언하며(internal consultant), 변화를 이끈다(change agent).==
 
 ---
 
@@ -849,7 +851,7 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 > **KWS는 일반 office system보다 specialized hardware/software와 external knowledge access가 중요**
 
 > [!NOTE]
-> 설계 엔지니어가 쓰는 3D 모델링 프로그램은 일반 사무용 컴퓨터로는 돌아가지 않는다. KWS는 강한 계산 능력과 그래픽, 외부 데이터베이스 접근, 쓰기 쉬운 화면이 필요하고, 무엇보다 **특정 전문 작업에 최적화**되어 있다는 점이 일반 office system과 다르다.
+> 설계 엔지니어가 쓰는 3D 모델링 프로그램은 일반 사무용 컴퓨터로는 돌아가지 않는다. KWS는 강한 계산 능력과 그래픽, 외부 데이터베이스 접근, 쓰기 쉬운 화면이 필요하고, 무엇보다 ==특정 전문 작업에 최적화==되어 있다는 점이 일반 office system과 다르다.
 
 ---
 
@@ -873,7 +875,7 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 ### Hardware Platform
 - Knowledge Workstation
 
-> **KWS = External Knowledge + Specialized Software + Strong Hardware + Usable Interface**
+> **KWS = ==blue:External Knowledge + Specialized Software + Strong Hardware + Usable Interface==**
 
 ### 교재 그림 · Figure 11.9
 
@@ -896,11 +898,11 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 - 3D printing
 
 ### Virtual Reality
-- real-life environment simulation
+- ==red:real-life environment simulation==
 - 3D medical modeling
 
 ### Augmented Reality
-- physical environment 위에 digital data / image overlay
+- ==red:physical environment 위에 digital data / image overlay==
 
 ### Investment Workstations
 - internal + external financial data 통합
@@ -919,10 +921,10 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 | 목적 | Technique |
 |---|---|
-| **Tacit knowledge capture** | expert systems / case-based reasoning / fuzzy logic |
-| **Knowledge discovery** | neural networks / data mining |
-| **Complex problem solution** | genetic algorithms |
-| **Task automation** | intelligent agents |
+| **Tacit knowledge capture** | ==blue:expert systems / case-based reasoning / fuzzy logic== |
+| **Knowledge discovery** | ==blue:neural networks / data mining== |
+| **Complex problem solution** | ==blue:genetic algorithms== |
+| **Task automation** | ==blue:intelligent agents== |
 
 ### Modern Techniques
 
@@ -931,7 +933,7 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 | **Machine Learning** | patterns identify / outcomes predict |
 | **NLP** | documents / conversations의 meaning extract |
 | **Generative AI** | drafts / summaries / code / explanations 생성 |
-| **RAG** | approved enterprise source에 grounded answer 생성 |
+| **RAG** | ==approved enterprise source에 grounded answer 생성== |
 | **Knowledge Graphs** | people / concepts / records / relationships 연결 |
 | **AI Agents** | policy와 human oversight 아래 defined task 실행 |
 
@@ -941,7 +943,7 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 > 표는 **목적별로** 묶어 외운다. 전문가의 tacit knowledge를 규칙이나 사례로 담는 것(expert system, case-based reasoning, fuzzy logic), 데이터에서 새 패턴을 찾는 것(neural network, data mining), 복잡한 문제의 최적 해를 찾는 것(genetic algorithm), 반복 업무를 대신하는 것(intelligent agent)이다. 최신 기술인 ML·NLP·GenAI·RAG·knowledge graph도 결국 이 목적 중 하나에 들어간다.
 
 > [!TRAP]
-> 기법은 이름이 아니라 **목적**으로 묶는다. 전문가 지식 담기(expert system, CBR, fuzzy logic) / 패턴 발견(neural network, data mining) / 최적해 찾기(genetic algorithm) / 업무 대신하기(intelligent agent).
+> 기법은 이름이 아니라 ==red:목적==으로 묶는다. 전문가 지식 담기(expert system, CBR, fuzzy logic) / 패턴 발견(neural network, data mining) / 최적해 찾기(genetic algorithm) / 업무 대신하기(intelligent agent).
 
 ---
 
@@ -951,12 +953,12 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 - **Map**: users / affected people / data / dependencies / misuse identify
 - **Measure**: accuracy / security / privacy / bias / transparency / robustness / human oversight
 - **Manage**: controls / monitoring / incidents / updates / retirement
-- **Knowledge**: AI output을 authoritative knowledge가 아니라 **verification이 필요한 claim**으로 취급
+- **Knowledge**: AI output을 authoritative knowledge가 아니라 ==red:verification이 필요한 claim==으로 취급
 
-> **Responsible AI = Govern → Map → Measure → Manage + Verify**
+> **Responsible AI = ==blue:Govern → Map → Measure → Manage + Verify==**
 
 > [!NOTE]
-> 네 단계는 위험 관리의 순서다. 누가 책임지고 무엇을 허용할지 정하고(Govern), 누가 영향을 받는지 파악하고(Map), 정확성·편향·보안을 측정하고(Measure), 문제가 생기면 통제하고 고친다(Manage). 그리고 AI가 낸 답은 확정된 지식이 아니라 **검증이 필요한 주장(claim)**으로 다룬다.
+> 네 단계는 위험 관리의 순서다. 누가 책임지고 무엇을 허용할지 정하고(Govern), 누가 영향을 받는지 파악하고(Map), 정확성·편향·보안을 측정하고(Measure), 문제가 생기면 통제하고 고친다(Manage). 그리고 AI가 낸 답은 확정된 지식이 아니라 ==red:검증이 필요한 주장(claim)==으로 다룬다.
 
 ---
 
@@ -991,7 +993,7 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 > **IS Department = business need와 technology를 연결하고 IT services를 운영하는 조직**
 
 > [!CONCEPT]
-> **Systems analyst** — 현업의 문제와 요구를 정보 요구사항과 시스템으로 **번역**하는 사람. Business ↔ Technology 사이의 translator.
+> **Systems analyst** — 현업의 문제와 요구를 정보 요구사항과 시스템으로 **번역**하는 사람. ==Business ↔ Technology 사이의 translator.==
 
 
 > [!NOTE]
@@ -1006,19 +1008,19 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 ### IT Governance
 - organization에서 IT를 사용하는 strategies / policies
-- decision rights + accountability framework
+- ==decision rights + accountability framework==
 - IT가 business strategy / objectives를 지원하도록 보장
 
 ### Organization
 - centralized / decentralized 등 가능
 
-> **IT Governance = 누가 IT 결정을 내리고 누가 책임지는지 정의하는 framework**
+> **IT Governance = ==누가 IT 결정을 내리고 누가 책임지는지 정의하는 framework==**
 
 > [!CONCEPT]
 > **IT governance** — 누가 IT 결정을 내리고(**decision rights**) 누가 결과에 책임지는지(**accountability**)를 정해, IT가 기업 전략을 지원하게 하는 틀.
 
 > [!NOTE]
-> IT governance는 기술 선택보다 먼저 정해야 할 **규칙**이다. 새 시스템 도입을 누가 결정하는지(decision rights), 결과가 나쁘면 누가 책임지는지(accountability)를 정해 IT가 사업 목표를 따르게 한다. 중앙 IT가 모두 결정할지(centralized), 각 사업부가 결정할지(decentralized)는 조직 상황에 따라 고른다.
+> IT governance는 기술 선택보다 먼저 정해야 할 **규칙**이다. 새 시스템 도입을 누가 결정하는지(decision rights), 결과가 나쁘면 누가 책임지는지(accountability)를 정해 IT가 사업 목표를 따르게 한다. ==중앙 IT가 모두 결정할지(centralized), 각 사업부가 결정할지(decentralized)는 조직 상황에 따라 고른다.==
 
 > [!CHECK]
 > **7.** IS 부서를 이끄는 임원의 직책은?
@@ -1041,10 +1043,10 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 | service reliability | data accountability 공유 |
 | organization-wide governance | responsible AI accountability 공유 |
 
-> **Modern IS = 핵심 standards/governance는 중앙화하고 business execution은 분산 협업**
+> **Modern IS = ==핵심 standards/governance는 중앙화하고 business execution은 분산 협업==**
 
 > [!NOTE]
-> 요즘 방식은 중앙과 현업이 일을 나눈다. 보안·공통 플랫폼·데이터 표준처럼 **회사 전체가 같아야 하는 것**은 중앙 IT가 맡고, 어떤 성과를 낼지·무엇부터 할지·실제로 쓰게 만들기처럼 **현업이 더 잘 아는 것**은 사업부가 맡는다. 데이터와 AI의 책임은 양쪽이 함께 진다.
+> 요즘 방식은 중앙과 현업이 일을 나눈다. 보안·공통 플랫폼·데이터 표준처럼 ==red:회사 전체가 같아야 하는 것==은 중앙 IT가 맡고, 어떤 성과를 낼지·무엇부터 할지·실제로 쓰게 만들기처럼 ==red:현업이 더 잘 아는 것==은 사업부가 맡는다. 데이터와 AI의 책임은 양쪽이 함께 진다.
 
 ---
 
@@ -1108,7 +1110,7 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 | **Knowledge** | enterprise content가 RAG에 적합하려면 무엇이 필요한가? |
 | **Sustainability** | IS investment decision에 어떤 environmental measures를 포함해야 하는가? |
 
-> **시험 체크: AI process / Cloud ERP risk / Human-Agent control / RAG-ready knowledge / Sustainability**
+> **시험 체크: ==blue:AI process / Cloud ERP risk / Human-Agent control / RAG-ready knowledge / Sustainability==**
 
 ---
 
