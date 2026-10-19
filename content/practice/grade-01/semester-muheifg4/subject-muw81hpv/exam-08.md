@@ -1,8 +1,8 @@
 ---
-title: "C++ Mid Expected Exam 6"
+title: "C++ Mid Expected Exam 4"
 description: "Ten expected midterm questions built from Homework 3 with a few combined Homework 1–3 tasks (before pointers): character codes, C strings, counting letters, vertical and horizontal histograms, and frequency arrays."
 week: 0
-order: 8
+order: 6
 published: true
 ---
 

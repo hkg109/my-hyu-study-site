@@ -1,8 +1,8 @@
 ---
-title: "C++ Mid Expected Exam 5"
+title: "C++ Mid Expected Exam 3"
 description: "Ten expected midterm questions built only from Homework 2 (before pointers): recursive factorials, binomial coefficients, Pascal's triangle, permutations with backtracking, and turning double recursion into loops."
 week: 0
-order: 7
+order: 5
 published: true
 ---
 

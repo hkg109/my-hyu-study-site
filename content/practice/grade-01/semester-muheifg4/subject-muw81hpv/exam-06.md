@@ -1,8 +1,8 @@
 ---
-title: "C++ Mid Expected Exam 4"
+title: "C++ Mid Expected Exam 2"
 description: "Ten expected midterm questions built only from Homework 1 (before pointers): evaluating conditions, short-circuit evaluation, the maximum of several values, sentinel loops, references, and the Euclidean algorithm."
 week: 0
-order: 6
+order: 4
 published: true
 ---
 
