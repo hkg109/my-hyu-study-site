@@ -192,7 +192,7 @@ published: true
 > ```
 >
 > 1. Write the output of `permutNumbers(3)` in order.
-> 2. What is printed if line (*) is removed? What does line (*) do?
+> 2. What is printed if the line marked `// (*)` (the second `swap(a[i], a[j]);`, after the recursive call) is removed? What does that line do?
 > 3. Why is the output not in dictionary order (123 132 213 231 312 321)?
 
 > [!HINT 1]
@@ -213,7 +213,7 @@ published: true
 > 312
 > ```
 >
-> **2.** `123 132 312 321 123 132` (one per line). Some permutations repeat and 213, 231 are missing. Line (*) is the **restore step of backtracking**: it undoes the swap so that every choice starts from the same array.
+> **2.** `123 132 312 321 123 132` (one per line). Some permutations repeat and 213, 231 are missing. The line marked `(*)` is the **restore step of backtracking**: it undoes the swap so that every choice starts from the same array.
 >
 > **3.** The branch with 3 in front starts from `321` (1 and 3 swapped), so `321` is printed before `312`.
 
