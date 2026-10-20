@@ -21,6 +21,8 @@ objectives:
 
 이 강의는 1–5강에 나온 Chapter 1–4의 전공 용어를 **무엇을 관리하는가**, **누가 사용하는가**, **어떤 결정이나 책임과 연결되는가**라는 기준으로 다시 묶은 시험 직전용 용어집이다. 각 분야는 먼저 표로 차이를 확인하고, 바로 아래 개념도로 용어 사이의 관계를 한 번 더 정리한다.
 
+**형광펜 읽는 법:** ==yellow:노랑== 핵심 정의·결론 · ==red:빨강== 시험에서 헷갈리는 구분·함정 · ==blue:파랑== 외워야 할 순서·목록
+
 | 범위 | 다루는 분야 | 원래 강의 |
 |---|---|---|
 | **1장** | 정보시스템 기본 개념 · 디지털 기업 · 세 차원과 보완 자산 | [1강](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) |
@@ -37,19 +39,19 @@ objectives:
 
 | 용어 | 핵심 의미 | 구분 포인트 |
 |---|---|---|
-| **IT** | Information Technology · 업무 목표 달성에 쓰는 hardware와 software | 도구 자체 |
-| **IS** | Information System · 정보를 수집·처리·저장·배포해 의사결정과 통제를 지원하는 구성요소의 집합 | 도구 + 사람 + 절차 |
-| **Data** | 아직 정리되지 않은 사실의 나열 | “오늘 아메리카노 판매 기록 312건” |
-| **Information** | 사람에게 의미 있고 쓸모 있게 가공된 데이터 | “비 오는 날 판매량이 20% 줄었다” |
+| **IT** | Information Technology · 업무 목표 달성에 쓰는 hardware와 software | ==도구 자체== |
+| **IS** | Information System · 정보를 수집·처리·저장·배포해 의사결정과 통제를 지원하는 구성요소의 집합 | ==red:도구 + 사람 + 절차== |
+| **Data** | ==아직 정리되지 않은 사실의 나열== | “오늘 아메리카노 판매 기록 312건” |
+| **Information** | ==사람에게 의미 있고 쓸모 있게 가공된 데이터== | “비 오는 날 판매량이 20% 줄었다” |
 | **Input** | 조직 안팎에서 raw data를 수집 | 주문 입력, 스캔 |
 | **Processing** | raw data를 의미 있는 형태로 변환 | 분류 · 정렬 · 계산 |
 | **Output** | 처리된 정보를 필요한 사람·활동에 전달 | 보고서, 화면 |
-| **Feedback** | 결과를 평가·수정하도록 다시 입력 단계로 돌아가는 출력 | 다음 발주량 조정 |
+| **Feedback** | ==결과를 평가·수정하도록 다시 입력 단계로 돌아가는 출력== | 다음 발주량 조정 |
 | **Environment** | 고객·공급업체·경쟁자·규제기관처럼 조직 밖에서 시스템과 상호작용하는 주체 | 시스템의 경계 밖 |
 
 ![입력 처리 출력이 피드백으로 다시 입력에 영향을 주는 정보시스템 순환](/materials/diagrams/mis-01-information-feedback.svg)
 
-*IT는 IS의 한 부분이다. 컴퓨터를 사도 사람이 데이터를 의미 있게 쓰는 절차가 없으면 정보시스템은 완성되지 않는다.*
+*==IT는 IS의 한 부분이다.== 컴퓨터를 사도 사람이 데이터를 의미 있게 쓰는 절차가 없으면 정보시스템은 완성되지 않는다.*
 
 ### 2. Digital Firm·전략적 비즈니스 목표
 
@@ -64,9 +66,9 @@ objectives:
 | **Customer & Supplier Intimacy** | 고객·공급업체를 깊이 이해하고 행동을 맞춤 | 고객 선호 기록 |
 | **Improved Decision Making** | 정확하고 시의적절한 정보로 더 나은 결정 | 실시간 대시보드 |
 | **Competitive Advantage** | 경쟁사보다 낮은 비용·더 나은 서비스·빠른 대응 | 위 목표들의 결과 |
-| **Survival** | 업계 표준이나 규제 때문에 반드시 필요한 투자 | 은행의 ATM |
+| **Survival** | ==업계 표준이나 규제 때문에 반드시 필요한 투자== | 은행의 ATM |
 
-*여섯 목표는 **Operational excellence → New products → Intimacy → Decision making → Competitive advantage → Survival** 순으로 외운다. 경쟁우위는 반드시 **경쟁사와 비교**했을 때만 주장할 수 있다.*
+*여섯 목표는 ==blue:Operational excellence → New products → Intimacy → Decision making → Competitive advantage → Survival== 순으로 외운다. 경쟁우위는 반드시 ==red:경쟁사와 비교==했을 때만 주장할 수 있다.*
 
 ### 3. 세 차원·보완 자산·접근법
 
@@ -75,14 +77,14 @@ objectives:
 | **Organization 차원** | 계층·기능·사람·문화·정치·비즈니스 프로세스 | 시스템이 들어갈 조직의 모습 |
 | **Management 차원** | 상황을 파악하고 결정·계획을 세워 문제를 푸는 관리자의 역할 | 무엇을 결정할 것인가 |
 | **Technology 차원** | Hardware · Software · Data management · Networking 기술 | IT infrastructure |
-| **Complementary Assets** | IT 투자가 실제 가치를 내도록 돕는 조직·경영·사회적 자산 | 교육, 새 업무 방식, 경영 문화 |
+| **Complementary Assets** | ==IT 투자가 실제 가치를 내도록 돕는 조직·경영·사회적 자산== | 교육, 새 업무 방식, 경영 문화 |
 | **Technical Approach** | 수학적 모형과 기술 능력에 초점 | Computer science · Operations research |
 | **Behavioral Approach** | 사람의 수용·조직 변화·정책 같은 행동 문제에 초점 | Sociology · Psychology · Economics |
-| **Sociotechnical View** | 기술과 조직이 서로 맞춰 갈 때 최적 성과가 난다는 관점 | 기술과 조직의 **joint optimization** |
+| **Sociotechnical View** | ==기술과 조직이 서로 맞춰 갈 때 최적 성과가 난다는 관점== | 기술과 조직의 **joint optimization** |
 
 ![같은 시스템을 도입해도 보완 자산 유무에 따라 성과가 갈리는 가치 진단 구조](/materials/diagrams/mis-01-value-diagnosis.svg)
 
-*같은 IT를 사도 성과가 다른 이유는 **Complementary Assets** 차이다. 답안에서는 기술 + 조직 변화 + 경영 관행을 함께 쓴다.*
+*같은 IT를 사도 성과가 다른 이유는 **Complementary Assets** 차이다. ==답안에서는 기술 + 조직 변화 + 경영 관행을 함께 쓴다.==*
 
 ## 2장 · 전사 시스템·지식관리·IT 조직
 
@@ -92,15 +94,15 @@ objectives:
 |---|---|---|---|
 | **TPS** | Transaction Processing System | 일상적인 **routine transaction**을 처리·기록 | Operational level · 주문, 급여, 배송 |
 | **BI** | Business Intelligence | 데이터를 조직·분석해 **better decision making** 지원 | 분석을 위한 큰 개념 |
-| **MIS** | Management Information System | TPS 데이터를 요약해 **middle manager**에게 정기 보고서 제공 | Routine · predefined questions |
-| **DSS** | Decision Support System | 데이터와 분석 모델로 **non-routine decision** 지원 | Middle management · 분석 중심 |
-| **ESS** | Executive Support System | Senior management의 **strategic, non-routine decision** 지원 | 외부 데이터 + MIS/DSS 요약 정보 |
+| **MIS** | Management Information System | TPS 데이터를 요약해 **middle manager**에게 정기 보고서 제공 | ==red:Routine · predefined questions== |
+| **DSS** | Decision Support System | 데이터와 분석 모델로 **non-routine decision** 지원 | ==red:Middle management · 분석 중심== |
+| **ESS** | Executive Support System | Senior management의 **strategic, non-routine decision** 지원 | ==red:외부 데이터 + MIS/DSS 요약 정보== |
 
 #### MIS와 DSS 비교
 
 | MIS | DSS |
 |---|---|
-| Routine decision | Non-routine decision |
+| ==red:Routine decision== | ==red:Non-routine decision== |
 | 정기 보고서 | 분석·Simulation |
 | Predefined procedure | Flexible analytical model |
 | “이번 달 매출은?” | “판매량이 2배 되면 생산계획은?” |
@@ -114,8 +116,8 @@ objectives:
 | 용어 | Full Name | 핵심 의미 | 주요 대상 |
 |---|---|---|---|
 | **Enterprise Applications** | Enterprise Applications | 기업 전체와 외부 조직까지 연결하는 시스템의 **큰 범주** | ERP + SCM + CRM + KMS |
-| **ES** | Enterprise System | 여러 Functional Area를 통합하는 시스템 | 이 장에서는 보통 **ERP와 같은 의미** |
-| **ERP** | Enterprise Resource Planning | 여러 부서 데이터를 **single central repository**에 통합 | 회사 내부 전체 |
+| **ES** | Enterprise System | 여러 Functional Area를 통합하는 시스템 | 이 장에서는 보통 ==red:ERP와 같은 의미== |
+| **ERP** | Enterprise Resource Planning | 여러 부서 데이터를 ==single central repository==에 통합 | 회사 내부 전체 |
 | **SCM** | Supply Chain Management | Supplier부터 Distribution까지 공급망 관리 | Suppliers · logistics |
 | **CRM** | Customer Relationship Management | 고객 관련 Sales·Marketing·Service 프로세스 통합 | Customers |
 | **KMS** | Knowledge Management System | 조직 지식의 생성·저장·공유·활용 지원 | Knowledge |
@@ -153,7 +155,7 @@ objectives:
 
 ![Manage Create Discover로 구분하는 KMS 세 가지 유형](/materials/diagrams/mis-03-kms-types.svg)
 
-*암기 흐름: **Manage → Create → Discover**.*
+*암기 흐름: ==blue:Manage → Create → Discover==.*
 
 ### 7. Knowledge 자체와 관련된 용어
 
@@ -170,7 +172,7 @@ objectives:
 
 ![데이터가 정보 지식 지혜로 발전하는 지식 위계](/materials/diagrams/mis-03-knowledge-hierarchy.svg)
 
-*핵심 흐름은 **Data → Information → Knowledge → Wisdom**이며, `Tacit = 사람 안`, `Explicit = 문서 밖`으로 기억한다.*
+*핵심 흐름은 ==blue:Data → Information → Knowledge → Wisdom==이며, `Tacit = 사람 안`, `Explicit = 문서 밖`으로 기억한다.*
 
 ### 8. Knowledge Management Value Chain
 
@@ -183,7 +185,7 @@ objectives:
 
 ![Acquire Store Disseminate Apply로 이어지는 지식관리 가치사슬](/materials/diagrams/mis-03-knowledge-value-chain.svg)
 
-*Knowledge는 저장만으로 가치가 생기지 않는다. **Apply**되어 의사결정이나 프로세스를 바꿔야 가치가 완성된다.*
+*==Knowledge는 저장만으로 가치가 생기지 않는다.== **Apply**되어 의사결정이나 프로세스를 바꿔야 가치가 완성된다.*
 
 ### 9. GenAI·AI 핵심 용어
 
@@ -193,7 +195,7 @@ objectives:
 | **ML** | Machine Learning | 데이터에서 Pattern을 학습 |
 | **NLP** | Natural Language Processing | 인간의 Language를 처리 |
 | **GenAI** | Generative AI | Text, Code 등 새로운 Content 생성 |
-| **RAG** | Retrieval-Augmented Generation | Source를 먼저 검색한 뒤 그 근거로 답변 생성 |
+| **RAG** | Retrieval-Augmented Generation | ==Source를 먼저 검색한 뒤 그 근거로 답변 생성== |
 | **AI Agent** | AI Agent | Tool·System을 사용해 여러 단계 Workflow 수행 |
 | **Expert System** | Expert System | 전문가 지식을 Rule 형태로 저장·활용 |
 | **Data Mining** | Data Mining | 대규모 데이터에서 숨은 Pattern 발견 |
@@ -213,15 +215,15 @@ objectives:
 
 ![질문 검색 근거 생성으로 이어지는 RAG 흐름](/materials/diagrams/mis-00-rag-flow.svg)
 
-*일반 GenAI는 모델이 학습한 지식으로 답하고, **RAG는 외부 지식을 검색한 뒤 그 근거로 답한다**.*
+*일반 GenAI는 모델이 학습한 지식으로 답하고, ==red:RAG는 외부 지식을 검색한 뒤 그 근거로 답한다==.*
 
 ### 10. Assist·Automate·Agent
 
 | AI 역할 | 의미 | 사람의 위치 |
 |---|---|---|
-| **Assist** | Human이 일하고 AI가 보조 | 사람이 작업과 판단을 주도 |
-| **Automate** | 정해진 반복 Task를 시스템이 자동 수행 | 사람이 규칙과 예외를 관리 |
-| **Agent** | AI가 여러 Task를 연결해 defined workflow 수행 | 사람이 목표·권한·검토 기준 설정 |
+| **Assist** | Human이 일하고 AI가 보조 | ==사람이 작업과 판단을 주도== |
+| **Automate** | 정해진 반복 Task를 시스템이 자동 수행 | ==사람이 규칙과 예외를 관리== |
+| **Agent** | AI가 여러 Task를 연결해 defined workflow 수행 | ==사람이 목표·권한·검토 기준 설정== |
 
 ![Assist Automate Agent로 자율성이 커지는 흐름](/materials/diagrams/mis-00-assist-automate-agent.svg)
 
@@ -231,9 +233,9 @@ objectives:
 
 | 용어 | 핵심 의미 | 예시 |
 |---|---|---|
-| **Taxonomy** | Knowledge를 분류하기 위한 Category 체계 | Finance · HR · Sales |
+| **Taxonomy** | ==Knowledge를 분류하기 위한 Category 체계== | Finance · HR · Sales |
 | **Tagging** | Knowledge Object에 Category·Tag 부여 | `#Finance` |
-| **Metadata** | Content를 설명하는 데이터 | 작성자, 작성일, Category |
+| **Metadata** | ==Content를 설명하는 데이터== | 작성자, 작성일, Category |
 | **Provenance** | 정보가 어디서 왔는지 추적하는 정보 | 원본 문서와 변경 이력 |
 | **Repository** | Content를 저장하는 통합 저장소 | 사내 문서 저장소 |
 | **Unified Repository** | 여러 Enterprise Content를 하나로 통합한 저장소 | 부서 저장소의 통합 |
@@ -251,8 +253,8 @@ objectives:
 | **Asynchronous** | 서로 다른 시간에 Collaboration | Synchronous |
 | **Co-located** | 같은 장소 | Remote |
 | **Remote** | 다른 장소 | Co-located |
-| **Intranet** | Employees만 사용하는 내부 Network | 내부 경계 |
-| **Extranet** | Authorized external partners까지 접근 가능한 Network | 허가된 외부까지 확장 |
+| **Intranet** | ==red:Employees만 사용하는 내부 Network== | 내부 경계 |
+| **Extranet** | ==red:Authorized external partners까지 접근 가능한 Network== | 허가된 외부까지 확장 |
 | **Social Business** | 소셜 네트워킹 도구로 직원·고객·공급업체와의 상호작용을 깊게 하는 것 | 대화 중심의 업무 |
 | **Enterprise Social Networking** | 기업 내부 Communication · Collaboration Platform | 조직 협업 기반 |
 
@@ -273,22 +275,22 @@ objectives:
 
 ![CIO와 보안 지식 개인정보 데이터 AI 책임자의 역할 지도](/materials/diagrams/mis-00-it-leadership.svg)
 
-*직책 문제는 약어보다 담당 객체를 연결한다: **CIO–전체 IT, CISO–Security, CKO–Knowledge, CPO–Privacy, CDO–Data, CAIO–AI**.*
+*직책 문제는 약어보다 담당 객체를 연결한다: ==blue:CIO–전체 IT, CISO–Security, CKO–Knowledge, CPO–Privacy, CDO–Data, CAIO–AI==.*
 
 ### 14. IT Governance·IS Organization
 
 | 용어 | 핵심 의미 | 구분 포인트 |
 |---|---|---|
-| **IT Governance** | 누가 IT 결정을 내리고 누가 책임지는지 정하는 Framework | 권한과 책임의 설계 |
-| **Decision Rights** | 누가 Decision을 내릴 권한이 있는가 | 결정 전의 권한 |
-| **Accountability** | 결과에 누가 책임지는가 | 결정 후의 책임 |
+| **IT Governance** | ==누가 IT 결정을 내리고 누가 책임지는지 정하는 Framework== | 권한과 책임의 설계 |
+| **Decision Rights** | 누가 Decision을 내릴 권한이 있는가 | ==red:결정 전의 권한== |
+| **Accountability** | 결과에 누가 책임지는가 | ==red:결정 후의 책임== |
 | **Centralized** | 중앙 IT 조직에 Decision 집중 | 표준화·통제에 유리 |
 | **Decentralized** | 각 Business Unit에 Decision 분산 | 현장 대응·자율성에 유리 |
 | **Systems Analyst** | Business Requirements를 Information·System Requirements로 변환 | Business ↔ Technology 번역자 |
 
 ![의사결정 권한에서 책임과 시스템 요구사항으로 이어지는 IT 거버넌스 흐름](/materials/diagrams/mis-00-it-governance.svg)
 
-*Systems Analyst는 한 문장으로 **Business와 Technology 사이의 Translator**다.*
+*Systems Analyst는 한 문장으로 ==Business와 Technology 사이의 Translator==다.*
 
 ### 15. Business·투자 관련 용어
 
@@ -310,18 +312,18 @@ objectives:
 
 | 용어 | 핵심 의미 | 구분 포인트 |
 |---|---|---|
-| **Technical Definition** | 환경에서 capital·labor를 받아 production process로 output을 만드는 formal social structure | 조직 = 생산 기계 · 쉽게 재배열 가능 |
-| **Behavioral Definition** | 권리·특권·의무·책임이 갈등과 해결을 거쳐 균형을 이루는 social system | 조직 = 사람과 관계 · 바꾸기 어려움 |
+| **Technical Definition** | ==환경에서 capital·labor를 받아 production process로 output을 만드는 formal social structure== | 조직 = 생산 기계 · 쉽게 재배열 가능 |
+| **Behavioral Definition** | ==권리·특권·의무·책임이 갈등과 해결을 거쳐 균형을 이루는 social system== | 조직 = 사람과 관계 · 바꾸기 어려움 |
 | **Routines (SOPs)** | 예상되는 상황에 대응하도록 정해 둔 정확한 규칙·절차·관행 | Standard Operating Procedures |
 | **Business Process** | Routine들의 모음 | Routine → Process → Firm |
 | **Organizational Politics** | 서로 다른 관점과 이해관계가 권력·자원을 두고 경쟁하는 것 | 변화에 대한 **political resistance** |
-| **Organizational Culture** | 무엇을·어떻게·누구를 위해 생산할지에 대한 구성원의 공유된 기본 가정 | 통합하는 힘이자 변화의 제약 |
+| **Organizational Culture** | 무엇을·어떻게·누구를 위해 생산할지에 대한 구성원의 공유된 기본 가정 | ==red:통합하는 힘이자 변화의 제약== |
 | **Organizational Environment** | 정부·경쟁자·고객·금융기관·기술 등 조직과 서로 영향을 주는 바깥 | **reciprocal relationship** |
 | **Environmental Scanning** | IS가 환경 변화를 감지해 조직에 알려 주는 기능 | IS = 조직의 **lens** |
 
 ![개별 routine이 business process를 이루고 여러 process가 business firm을 구성하는 포함 관계](/materials/diagrams/mis-04-routine-process-firm.svg)
 
-*Technical view와 Behavioral view는 경쟁하는 정의가 아니라 **서로 보완하는 정의**다. 시스템을 바꾸면 안쪽 routine까지 바뀌어야 바깥 process가 실제로 달라진다.*
+*Technical view와 Behavioral view는 경쟁하는 정의가 아니라 ==red:서로 보완하는 정의==다. 시스템을 바꾸면 안쪽 routine까지 바뀌어야 바깥 process가 실제로 달라진다.*
 
 ### 17. 조직 구조와 파괴적 기술
 
@@ -334,28 +336,28 @@ objectives:
 | **Adhocracy** | 변화에 빠르게 대응하는 전문가 팀 중심의 유연한 조직 | Consulting firm |
 | **Disruptive Technology** | 기존 제품을 대체하거나 능가해 산업·시장을 크게 바꾸는 기술 | PC, Smartphone, AI |
 | **First Mover** | 파괴적 기술을 처음 만든 기업 | 발명자 |
-| **Fast Follower** | 규모와 자원으로 기술을 빠르게 상업화하는 기업 | 최종 승자가 될 수 있음 |
+| **Fast Follower** | 규모와 자원으로 기술을 빠르게 상업화하는 기업 | ==red:최종 승자가 될 수 있음== |
 
-*조직 목표의 세 유형은 **Coercive(강제적) · Utilitarian(공리적) · Normative(규범적)**이다. 같은 IT도 조직 구조·목표·리더십이 다르면 효과가 달라진다.*
+*조직 목표의 세 유형은 ==blue:Coercive(강제적) · Utilitarian(공리적) · Normative(규범적)==이다. 같은 IT도 조직 구조·목표·리더십이 다르면 효과가 달라진다.*
 
 ### 18. IT가 조직에 미치는 영향
 
 | 용어 | 핵심 의미 | IT의 효과 |
 |---|---|---|
-| **Transaction Cost** | 시장에서 공급자를 찾고 계약·감시할 때 드는 비용 | IT ↓ → **outsourcing ↑**, 기업 규모 축소 가능 |
+| **Transaction Cost** | ==시장에서 공급자를 찾고 계약·감시할 때 드는 비용== | IT ↓ → **outsourcing ↑**, 기업 규모 축소 가능 |
 | **Transaction Cost Theory** | 거래 비용을 줄이려고 기업이 커지거나(vertical integration) 시장을 이용한다는 이론 | 바깥 거래 비용 |
-| **Agency Cost** | 주인(principal)이 대리인(agent)인 직원을 감독·관리하는 비용 | IT ↓ → **적은 관리자로 확장** |
+| **Agency Cost** | ==주인(principal)이 대리인(agent)인 직원을 감독·관리하는 비용== | IT ↓ → **적은 관리자로 확장** |
 | **Agency Theory** | 기업을 이해관계가 다른 개인들의 계약 묶음으로 보고 감독 비용을 설명하는 이론 | 안쪽 관리 비용 |
 | **Flattening** | 의사결정이 아래로 내려가고 관리 계층이 줄어드는 것 | 계층 ↓ · 의사결정 속도 ↑ |
 | **Span of Control** | 관리자 한 명이 관리하는 부하 직원의 수 | IT로 넓어짐 |
 | **Postindustrial Organization** | 직위보다 지식과 역량에 권한이 기반하는 조직 | 전문가 중심 |
-| **Resistance to Change** | 정보 접근·권력·업무가 바뀌면서 생기는 저항 | 대형 IS 실패의 주원인 |
+| **Resistance to Change** | 정보 접근·권력·업무가 바뀌면서 생기는 저항 | ==red:대형 IS 실패의 주원인== |
 
 ![IT가 바깥 거래 비용과 안쪽 관리 비용을 함께 낮추는 두 이론의 비교](/materials/diagrams/mis-00-cost-theories.svg)
 
 ![기술 구조 업무 사람 네 요소를 동시에 조정해야 하는 변화 저항 모형](/materials/diagrams/mis-00-resistance-diamond.svg)
 
-*Transaction cost는 **바깥**(시장) 비용, Agency cost는 **안쪽**(직원 관리) 비용이다. 변화 저항은 **Technology · Structure · Tasks · People**을 동시에 조정해야 줄어든다.*
+*Transaction cost는 **바깥**(시장) 비용, Agency cost는 **안쪽**(직원 관리) 비용이다. 변화 저항은 ==blue:Technology · Structure · Tasks · People==을 동시에 조정해야 줄어든다.*
 
 ### 19. 경쟁 전략 · Porter's Competitive Forces Model
 
@@ -377,29 +379,29 @@ objectives:
 
 ![기존 경쟁자를 중심으로 신규 진입자 대체재 공급자 고객의 다섯 경쟁 압력과 IT 대응 전략](/materials/diagrams/mis-00-five-forces.svg)
 
-*다섯 힘은 **분석**, 네 전략은 **대응**이다. 문제에서 “고객이 쉽게 떠난다”는 압력이 나오면, 대응은 Intimacy로 **switching cost**를 높이는 방향이다.*
+*다섯 힘은 ==red:분석==, 네 전략은 ==red:대응==이다. 문제에서 “고객이 쉽게 떠난다”는 압력이 나오면, 대응은 Intimacy로 **switching cost**를 높이는 방향이다.*
 
 ### 20. Value Chain·Network 전략
 
 | 용어 | 핵심 의미 | 구분 포인트 |
 |---|---|---|
 | **Value Chain Model** | 기업을 가치를 더하는 활동의 연속으로 보고 IS 적용 지점을 찾는 모형 | 기업 **내부** 어디를 개선할까 |
-| **Primary Activities** | 제품·서비스의 생산과 전달에 직접 관련된 활동 | Inbound logistics · Operations · Outbound logistics · Sales & marketing · Service |
-| **Support Activities** | Primary activities가 가능하도록 돕는 활동 | Administration · HR · Technology · Procurement |
+| **Primary Activities** | 제품·서비스의 생산과 전달에 직접 관련된 활동 | ==blue:Inbound logistics · Operations · Outbound logistics · Sales & marketing · Service== |
+| **Support Activities** | Primary activities가 가능하도록 돕는 활동 | ==blue:Administration · HR · Technology · Procurement== |
 | **Benchmarking** | 제품·서비스·프로세스의 효율을 엄격한 기준과 비교해 측정 | 기준과의 비교 |
 | **Best Practices** | 목표를 달성하는 가장 성공적인 해법으로 검증된 방식 | 따라 할 모범 |
 | **Value Web** | 독립 기업들이 IT로 가치사슬을 조정해 함께 제품·서비스를 만드는 네트워크 | 같은 산업 중심 · customer-driven |
 | **Synergy** | 한 단위의 output을 다른 단위의 input으로 쓰거나 시장·전문성을 공유 | 1 + 1 > 2 |
 | **Core Competency** | 기업이 세계 수준의 리더인 핵심 활동 | 쉽게 복제 불가 |
-| **Network Economics** | 참여자 추가의 marginal cost는 거의 0이고 가치는 커지는 경제 | 사용자가 많을수록 가치 ↑ |
+| **Network Economics** | ==참여자 추가의 marginal cost는 거의 0이고 가치는 커지는 경제== | 사용자가 많을수록 가치 ↑ |
 | **Virtual Company** | 물리적 경계 없이 다른 기업과 네트워크로 협력해 사업을 수행 | Li & Fung |
 | **Business Ecosystem** | 공급자·유통·기술 기업 등이 플랫폼을 중심으로 엮인 느슨한 네트워크 | 여러 산업에 걸침 |
-| **Keystone Firm** | 생태계를 지배하고 플랫폼을 제공하는 기업 | Microsoft, Facebook |
+| **Keystone Firm** | ==생태계를 지배하고 플랫폼을 제공하는 기업== | Microsoft, Facebook |
 | **Niche Firm** | Keystone firm의 플랫폼 위에서 특정 가치를 제공하는 기업 | 앱 개발사 |
 
 ![Competitive Forces Value Chain Business Ecosystem이 서로 다른 분석 수준을 보는 구조](/materials/diagrams/mis-04-strategy-lenses.svg)
 
-*Porter model은 **산업 압력**, Value Chain은 **기업 내부 활동**, Ecosystem은 **여러 산업의 파트너 네트워크**를 본다. 셋은 분석 수준이 다른 도구다.*
+*Porter model은 ==red:산업 압력==, Value Chain은 ==red:기업 내부 활동==, Ecosystem은 ==red:여러 산업의 파트너 네트워크==를 본다. 셋은 분석 수준이 다른 도구다.*
 
 ## 4장 · 윤리와 사회적 책임
 
@@ -408,15 +410,15 @@ objectives:
 | 용어 | 핵심 의미 | 구분 포인트 |
 |---|---|---|
 | **Ethics** | 자유로운 도덕적 행위자로서 행동을 선택할 때 쓰는 옳고 그름의 원칙 | 개인의 판단 기준 |
-| **Five Moral Dimensions** | Information rights · Property rights · Accountability & control · System quality · Quality of life | 4장 전체의 분석 틀 |
-| **Responsibility** | 자신이 내린 결정의 비용·의무를 받아들이는 것 | 선택한 사람 |
-| **Accountability** | 누가 어떤 행동을 했고 누가 책임지는지 확인할 수 있는 메커니즘 | 추적 가능성 |
-| **Liability** | 피해를 입은 사람이 법적으로 배상을 청구할 수 있게 하는 법 체계 | 법적 배상 |
-| **Due Process** | 법이 알려져 있고 이해되며, 상급 기관에 이의를 제기할 수 있는 절차 | 공정한 절차 |
-| **Ethical Analysis** | Facts → Values → Stakeholders → Options → Consequences의 다섯 단계 | 무엇을 판단할지 정리 |
+| **Five Moral Dimensions** | ==blue:Information rights · Property rights · Accountability & control · System quality · Quality of life== | 4장 전체의 분석 틀 |
+| **Responsibility** | 자신이 내린 결정의 비용·의무를 받아들이는 것 | ==red:선택한 사람== |
+| **Accountability** | 누가 어떤 행동을 했고 누가 책임지는지 확인할 수 있는 메커니즘 | ==red:추적 가능성== |
+| **Liability** | 피해를 입은 사람이 법적으로 배상을 청구할 수 있게 하는 법 체계 | ==red:법적 배상== |
+| **Due Process** | 법이 알려져 있고 이해되며, 상급 기관에 이의를 제기할 수 있는 절차 | ==red:공정한 절차== |
+| **Ethical Analysis** | ==blue:Facts → Values → Stakeholders → Options → Consequences==의 다섯 단계 | 무엇을 판단할지 정리 |
 | **Golden Rule** | 남에게 대접받고 싶은 대로 남을 대하라 | 입장 바꾸기 |
-| **Kant’s Categorical Imperative** | 모두가 해도 옳지 않다면 누구에게도 옳지 않다 | 보편화 가능성 |
-| **Slippery Slope Rule** | 반복할 수 없는 행동이라면 처음부터 하지 마라 | 반복 가능성 |
+| **Kant’s Categorical Imperative** | ==모두가 해도 옳지 않다면 누구에게도 옳지 않다== | 보편화 가능성 |
+| **Slippery Slope Rule** | ==반복할 수 없는 행동이라면 처음부터 하지 마라== | 반복 가능성 |
 | **Utilitarian Principle** | 더 큰 가치를 만드는 행동을 선택하라 | 최대 가치 |
 | **Risk Aversion Principle** | 피해나 잠재적 비용이 가장 적은 행동을 선택하라 | 최소 피해 |
 | **No Free Lunch Rule** | 명시적 허락이 없으면 모든 대상은 누군가의 소유라고 가정하라 | 소유권 존중 |
@@ -424,21 +426,21 @@ objectives:
 
 ![Responsibility Accountability Liability Due Process의 순서와 윤리적 분석 다섯 단계](/materials/diagrams/mis-00-ethics-chain.svg)
 
-*Kant는 **“모두가 해도 되는가?”**, Slippery Slope는 **“계속 반복해도 되는가?”**다. Accountability가 없으면 Liability도 물을 수 없다.*
+*Kant는 ==red:“모두가 해도 되는가?”==, Slippery Slope는 ==red:“계속 반복해도 되는가?”==다. ==red:Accountability가 없으면 Liability도 물을 수 없다.==*
 
 ### 22. 데이터 분석·Privacy·Information Rights
 
 | 용어 | 핵심 의미 | 구분 포인트 |
 |---|---|---|
-| **Profiling** | 여러 출처의 데이터를 결합해 한 개인의 상세 파일(dossier)을 만드는 것 | 한 사람을 깊게 |
-| **NORA** | Nonobvious Relationship Awareness · 여러 데이터베이스를 결합해 숨은 관계를 찾는 기술 | 사람들 사이의 관계 |
+| **Profiling** | 여러 출처의 데이터를 결합해 한 개인의 상세 파일(dossier)을 만드는 것 | ==red:한 사람을 깊게== |
+| **NORA** | Nonobvious Relationship Awareness · 여러 데이터베이스를 결합해 숨은 관계를 찾는 기술 | ==red:사람들 사이의 관계== |
 | **Privacy** | 감시·간섭 없이 혼자 있을 권리와 자신의 정보를 통제할 권리 | 정보에 대한 통제 |
 | **FIP** | Fair Information Practices · 개인정보 수집·사용을 규율하는 원칙 | 미국·유럽 프라이버시 법의 기반 |
 | **Notice / Awareness** | 데이터를 수집하기 전에 수집 방식을 알림 | FIP 핵심 원칙 |
 | **Choice / Consent** | 2차 사용에 대해 소비자가 선택할 수 있게 함 | FIP 핵심 원칙 |
 | **Informed Consent** | 합리적 결정에 필요한 사실을 모두 알고 한 동의 | 알고 한 동의 |
-| **Opt-Out** | 사용자가 거부하지 않으면 정보 수집·사용이 허용되는 방식 | 기본값 = 허용 |
-| **Opt-In** | 사용자가 명시적으로 동의해야만 정보 수집·사용이 가능한 방식 | 기본값 = 거부 · 더 강한 보호 |
+| **Opt-Out** | ==red:사용자가 거부하지 않으면 정보 수집·사용이 허용되는 방식== | 기본값 = 허용 |
+| **Opt-In** | ==red:사용자가 명시적으로 동의해야만 정보 수집·사용이 가능한 방식== | 기본값 = 거부 · 더 강한 보호 |
 | **GDPR** | EU의 General Data Protection Regulation · 명시적 동의와 강한 처벌이 특징 | EU 시민 데이터 처리 기업에 적용 |
 | **Right to Be Forgotten** | 자신에 대한 정보를 삭제해 달라고 요구할 권리 | GDPR에서 강화 |
 | **Cookies** | 웹사이트가 브라우저에 저장해 재방문자를 식별하는 작은 텍스트 파일 | 식별자 |
@@ -452,17 +454,17 @@ objectives:
 
 ![Privacy가 FIP를 거쳐 다섯 운영 원칙으로 구체화되는 위계](/materials/diagrams/mis-05-privacy-fip-hierarchy.svg)
 
-*FIP 다섯 원칙은 **Notice · Choice · Access · Security · Enforcement**다. Opt-In과 Opt-Out의 차이는 **아무것도 하지 않았을 때 데이터 사용이 허용되는가**에 있다.*
+*FIP 다섯 원칙은 ==blue:Notice · Choice · Access · Security · Enforcement==다. Opt-In과 Opt-Out의 차이는 **아무것도 하지 않았을 때 데이터 사용이 허용되는가**에 있다.*
 
 ### 23. Intellectual Property
 
 | 용어 | 핵심 의미 | 보호 기간·특징 |
 |---|---|---|
 | **Intellectual Property** | 개인이나 기업이 만든 유형·무형의 지적 창작물 | 네 가지 방식으로 보호 |
-| **Copyright** | 창작물의 **표현**을 무단 복제로부터 보호 | 저자 생존 기간 + 70년 · 아이디어는 보호 안 됨 |
-| **Patent** | 새롭고 독창적인 **발명 아이디어**에 독점권 부여 | 20년 · 심사가 까다로움 |
+| **Copyright** | 창작물의 **표현**을 무단 복제로부터 보호 | ==red:저자 생존 기간 + 70년 · 아이디어는 보호 안 됨== |
+| **Patent** | 새롭고 독창적인 **발명 아이디어**에 독점권 부여 | ==red:20년 · 심사가 까다로움== |
 | **Trademark** | 브랜드를 식별하는 표지(이름·로고)를 보호 | 소비자 혼동 방지 |
-| **Trade Secret** | 공개되지 않은 영업상 지적 산출물을 보호 | 공개되는 순간 보호 상실 |
+| **Trade Secret** | 공개되지 않은 영업상 지적 산출물을 보호 | ==red:공개되는 순간 보호 상실== |
 | **DMCA** | Digital Millennium Copyright Act(1998) · 저작권 보호 기술을 우회하는 행위를 불법화 | 디지털 저작권 |
 
 ![Intellectual Property가 copyright patent trademark trade secret의 네 보호 유형으로 나뉘는 구조](/materials/diagrams/mis-05-ip-protections.svg)
@@ -476,9 +478,9 @@ objectives:
 | **Computer-Related Liability** | 소프트웨어 오류로 피해가 생겼을 때 누가 책임지는가의 문제 | 제품·책·서비스 중 무엇으로 보느냐에 따라 다름 |
 | **Section 230** | 미국에서 플랫폼이 사용자 게시물에 대한 책임을 대부분 면제받는 조항 | 플랫폼 책임 논쟁 |
 | **System Quality** | 경제적으로 감당 가능한 수준에서 요구되는 시스템·데이터 품질 | 완벽한 소프트웨어는 비경제적 |
-| **Data Quality** | 입력 데이터의 정확성 | 시스템 실패의 가장 흔한 원인 = **poor input data** |
-| **Computer Crime** | 컴퓨터를 이용하거나 컴퓨터를 대상으로 한 **불법** 행위 | Illegal |
-| **Computer Abuse** | 불법은 아니지만 **비윤리적인** 행위 | Unethical, not necessarily illegal |
+| **Data Quality** | 입력 데이터의 정확성 | 시스템 실패의 가장 흔한 원인 = ==red:poor input data== |
+| **Computer Crime** | 컴퓨터를 이용하거나 컴퓨터를 대상으로 한 ==red:불법== 행위 | Illegal |
+| **Computer Abuse** | 불법은 아니지만 ==red:비윤리적인== 행위 | Unethical, not necessarily illegal |
 | **Spam** | 원하지 않는 상업성 대량 이메일 | CAN-SPAM Act로 규제 |
 | **Digital Divide** | 소득·인구 집단에 따른 컴퓨터·인터넷 접근 격차 | Equity and access |
 | **RSI** | Repetitive Stress Injury · 같은 동작의 반복으로 생기는 근육 손상 | 가장 흔한 형태가 CTS |
@@ -489,7 +491,7 @@ objectives:
 
 ![새로운 기술이 개인의 윤리 문제에서 사회와 정치 문제로 번지는 파장 모형](/materials/diagrams/mis-05-ethical-ripple.svg)
 
-*Crime과 Abuse의 경계는 **불법인가**다. 시스템이 이상한 결과를 내면 먼저 **bug · hardware · input data** 중 어디서 생긴 문제인지 구분한다.*
+*Crime과 Abuse의 경계는 ==red:불법인가==다. 시스템이 이상한 결과를 내면 먼저 **bug · hardware · input data** 중 어디서 생긴 문제인지 구분한다.*
 
 ## 시험에서 특히 헷갈리는 용어 최종 비교
 

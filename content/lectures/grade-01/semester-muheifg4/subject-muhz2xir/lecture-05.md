@@ -32,6 +32,8 @@ objectives:
 
 **책 읽는 법:** 슬라이드 제목 아래의 짧은 목록과 요약 한 줄이 강의 **핵심 필기**다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
 
+**형광펜 읽는 법:** ==yellow:노랑== 핵심 정의·결론 · ==red:빨강== 시험에서 헷갈리는 구분·함정 · ==blue:파랑== 외워야 할 순서·목록
+
 > [!PAGEBREAK]
 
 ## Slide 1 — Ethical and Social Issues in Information Systems
@@ -53,7 +55,7 @@ objectives:
 - **quality of life**
 - career relevance
 
-> **핵심 흐름: Ethics → Privacy → Property → Quality → Accountability → Quality of Life**
+> **핵심 흐름: ==blue:Ethics → Privacy → Property → Quality → Accountability → Quality of Life==**
 
 ---
 
@@ -69,7 +71,7 @@ objectives:
 > **Chapter 4의 주요 사례는 privacy, regulation, data use에 집중**
 
 > [!NOTE]
-> 네 사례의 공통 질문은 “기술로 할 수 있게 된 일을 해도 되는가?”다. 인터넷 사업자가 트래픽을 차별해도 되는지(net neutrality), 플랫폼이 개인정보를 어디까지 써도 되는지, 범죄 수사를 위한 데이터 분석이 무고한 사람까지 감시해도 되는지, 오래된 정보를 지워 달라고 요구할 수 있는지(right to be forgotten)를 다룬다.
+> 네 사례의 공통 질문은 ==“기술로 할 수 있게 된 일을 해도 되는가?”==다. 인터넷 사업자가 트래픽을 차별해도 되는지(net neutrality), 플랫폼이 개인정보를 어디까지 써도 되는지, 범죄 수사를 위한 데이터 분석이 무고한 사람까지 감시해도 되는지, 오래된 정보를 지워 달라고 요구할 수 있는지(right to be forgotten)를 다룬다.
 
 ---
 
@@ -96,8 +98,8 @@ objectives:
 - Madoff Ponzi scheme
 
 ### Ethics
-- **right / wrong의 principles**
-- individuals가 free moral agents로서 behavior를 결정할 때 사용하는 기준
+- ==right / wrong의 principles==
+- ==individuals가 free moral agents로서 behavior를 결정할 때 사용하는 기준==
 
 > **Ethics = 개인이 무엇이 옳고 그른지 판단할 때 사용하는 principles**
 
@@ -106,13 +108,13 @@ objectives:
 
 
 > [!NOTE]
-> Volkswagen은 배출가스 시험 때만 오염을 줄이는 소프트웨어를 넣었고, Wells Fargo는 실적 압박 속에 고객 몰래 계좌를 만들었다. 공통점은 기술이나 시스템이 **잘못된 판단을 더 크게, 더 오래 숨길 수 있게** 했다는 것이다. 윤리는 이런 선택 앞에서 개인이 옳고 그름을 판단하는 기준이다.
+> Volkswagen은 배출가스 시험 때만 오염을 줄이는 소프트웨어를 넣었고, Wells Fargo는 실적 압박 속에 고객 몰래 계좌를 만들었다. 공통점은 기술이나 시스템이 ==red:잘못된 판단을 더 크게, 더 오래 숨길 수 있게== 했다는 것이다. 윤리는 이런 선택 앞에서 개인이 옳고 그름을 판단하는 기준이다.
 ---
 
 ## Slide 6 — IT/IS-Related Ethical Issues (2/2)
 
 ### Information Systems가 만드는 새로운 문제
-- 기존 **power / money / rights / obligations** 분배 변화
+- 기존 ==power / money / rights / obligations== 분배 변화
 - intense social change
 - new opportunities for crime
 - new kinds of crimes
@@ -123,7 +125,7 @@ objectives:
 > **IS는 기존 사회 규칙으로 다루기 어려운 새로운 ethical questions를 만듦**
 
 > [!NOTE]
-> IS는 기존의 힘과 돈의 분배를 바꾼다. 데이터를 많이 가진 기업은 더 강해지고, 예전에는 없던 범죄(해킹, 랜섬웨어)가 생긴다. 특히 무료 서비스 대신 개인정보를 모아 광고로 돈을 버는 사업 모델은, 이용자가 모르는 사이에 프라이버시를 대가로 치르게 만든다.
+> IS는 기존의 힘과 돈의 분배를 바꾼다. 데이터를 많이 가진 기업은 더 강해지고, 예전에는 없던 범죄(해킹, 랜섬웨어)가 생긴다. 특히 무료 서비스 대신 개인정보를 모아 광고로 돈을 버는 사업 모델은, ==red:이용자가 모르는 사이에 프라이버시를 대가로 치르게 만든다.==
 
 ---
 
@@ -139,30 +141,30 @@ objectives:
 - social / political institutions는 즉시 대응하기 어려움
 - etiquette / expectations / laws 형성에 시간 필요
 
-> **Technology 변화 속도가 law / social rules 변화 속도보다 빠름**
+> ==Technology 변화 속도가 law / social rules 변화 속도보다 빠름==
 
 > [!BOARD]
 > - 새 기술(돌) → **개인**: 윤리 문제 → **사회**: 새 규범·기대 → **정치**: 법·책임 배분
-> - 기술은 빠르고 법은 느리다 → 그 공백에서 윤리적 판단이 중요
+> - ==기술은 빠르고 법은 느리다 → 그 공백에서 윤리적 판단이 중요==
 
 
 > [!NOTE]
-> 조용한 연못에 돌을 던지면 물결이 바깥으로 퍼진다. 새 기술이 그 돌이다. 처음에는 개인이 “이걸 써도 되나?”를 고민하고, 사회가 새로운 예절과 기대를 만들고, 마지막에 법이 정리된다. 문제는 물결(기술)이 빠르고 법은 느리다는 것이다. 그 사이의 **공백 기간**에 윤리적 판단이 특히 중요하다.
+> 조용한 연못에 돌을 던지면 물결이 바깥으로 퍼진다. 새 기술이 그 돌이다. 처음에는 개인이 “이걸 써도 되나?”를 고민하고, 사회가 새로운 예절과 기대를 만들고, 마지막에 법이 정리된다. 문제는 물결(기술)이 빠르고 법은 느리다는 것이다. 그 사이의 ==red:공백 기간==에 윤리적 판단이 특히 중요하다.
 ---
 
 ## Slide 8 — Figure 4.1 Ethical, Social, and Political Issues
 
 ### Levels
-- **Individual** → Ethical Issues
-- **Society** → Social Issues
-- **Polity** → Political Issues
+- **Individual** → ==blue:Ethical Issues==
+- **Society** → ==blue:Social Issues==
+- **Polity** → ==blue:Political Issues==
 
 ### Five Moral Dimensions
-1. Information Rights & Obligations
-2. Property Rights & Obligations
-3. Accountability & Control
-4. System Quality
-5. Quality of Life
+1. ==blue:Information Rights & Obligations==
+2. ==blue:Property Rights & Obligations==
+3. ==blue:Accountability & Control==
+4. ==blue:System Quality==
+5. ==blue:Quality of Life==
 
 > **New IT → ethical issue → social issue → political issue로 확장될 수 있음**
 
@@ -193,7 +195,7 @@ objectives:
 > **Chapter 4의 핵심 framework = Five Moral Dimensions**
 
 > [!NOTE]
-> 다섯 차원은 4장 뒷부분의 목차이기도 하다. 정보 권리(19–26: privacy), 재산권(27–28: intellectual property), 책임과 통제(29–30: liability), 시스템 품질(31), 삶의 질(32–34) 순서로 다룬다. 사례 문제를 받으면 “이 사례는 다섯 차원 중 어디에 해당하는가?”부터 정하면 답의 방향이 잡힌다.
+> 다섯 차원은 4장 뒷부분의 목차이기도 하다. 정보 권리(19–26: privacy), 재산권(27–28: intellectual property), 책임과 통제(29–30: liability), 시스템 품질(31), 삶의 질(32–34) 순서로 다룬다. ==red:사례 문제를 받으면 “이 사례는 다섯 차원 중 어디에 해당하는가?”부터 정하면 답의 방향이 잡힌다.==
 
 > [!PROBLEM]
 > **문제.** 다음 쟁점은 다섯 가지 도덕적 차원 중 어디에 해당하는가? ㉠ 음원 불법 복제 ㉡ 소프트웨어 오류로 생긴 피해의 책임 ㉢ 화면을 오래 봐서 생기는 눈의 피로
@@ -223,12 +225,12 @@ objectives:
 
 ### Profiling
 - multiple sources의 data 결합
-- individual에 대한 detailed dossier 생성
+- ==red:individual에 대한 detailed dossier 생성==
 
 ### NORA
 - **Nonobvious Relationship Awareness**
 - multiple sources 결합
-- obscure / hidden relationships 발견
+- ==red:obscure / hidden relationships 발견==
 - criminals / terrorists 식별 등에 사용
 
 > **Profiling = 개인 특성 분석 / NORA = 숨겨진 관계 탐색**
@@ -237,7 +239,7 @@ objectives:
 > 카드 결제 기록, 앱 위치 기록, 온라인 쇼핑 기록을 합치면 한 사람의 생활 패턴이 담긴 파일이 만들어진다. 이것이 **profiling**이다. **NORA**는 한 사람을 깊게 보는 대신, 여러 데이터베이스에서 “이 사람과 저 사람이 같은 주소·전화번호를 쓴다”처럼 겉으로 드러나지 않는 **관계**를 찾는다.
 
 > [!TRAP]
-> **Profiling**은 한 사람에 대한 상세 파일을 만들고, **NORA**는 여러 사람·기록 사이의 **숨은 관계**를 찾는다. 대상이 “한 사람”인지 “관계”인지로 구분한다.
+> **Profiling**은 한 사람에 대한 상세 파일을 만들고, **NORA**는 여러 사람·기록 사이의 **숨은 관계**를 찾는다. ==red:대상이 “한 사람”인지 “관계”인지로 구분한다.==
 
 ---
 
@@ -253,9 +255,9 @@ objectives:
 ↓
 
 ### Processing
-- name standardization
+- ==blue:name standardization==
 - match
-- merge
+- ==blue:merge==
 
 ↓
 
@@ -268,7 +270,7 @@ objectives:
 
 *Figure 4.2 · Nonobvious Relationship Awareness (NORA) — 흩어진 기록을 합쳐 숨은 관계를 찾는다.*
 
-**그림 읽기:** 왼쪽의 다섯 데이터 출처는 원래 서로 다른 목적으로 만들어진 기록이다. 이름 표기를 통일하고(standardization), 같은 사람이나 주소를 찾아 연결하고(match), 하나의 관계망으로 합치면(merge) 개별 기록만 봐서는 보이지 않던 연결이 경고로 나온다. 보안에는 유용하지만, 무고한 사람의 기록도 함께 분석된다는 프라이버시 문제가 생긴다.
+**그림 읽기:** 왼쪽의 다섯 데이터 출처는 원래 서로 다른 목적으로 만들어진 기록이다. 이름 표기를 통일하고(standardization), 같은 사람이나 주소를 찾아 연결하고(match), 하나의 관계망으로 합치면(merge) 개별 기록만 봐서는 보이지 않던 연결이 경고로 나온다. ==red:보안에는 유용하지만, 무고한 사람의 기록도 함께 분석된다는 프라이버시 문제가 생긴다.==
 
 ---
 
@@ -276,17 +278,17 @@ objectives:
 
 | Concept | 의미 |
 |---|---|
-| **Responsibility** | decision의 costs / duties / obligations를 받아들이는 것 |
-| **Accountability** | 누가 어떤 action을 했고 누가 책임지는지 확인 가능해야 함 |
-| **Liability** | damage에 대해 법적으로 compensation을 요구할 수 있음 |
-| **Due Process** | laws가 알려져 있고 appeal을 통해 올바른 적용을 확인할 수 있음 |
+| **Responsibility** | ==decision의 costs / duties / obligations를 받아들이는 것== |
+| **Accountability** | ==누가 어떤 action을 했고 누가 책임지는지 확인 가능해야 함== |
+| **Liability** | ==damage에 대해 법적으로 compensation을 요구할 수 있음== |
+| **Due Process** | ==laws가 알려져 있고 appeal을 통해 올바른 적용을 확인할 수 있음== |
 
-> **Ethical analysis에는 Responsibility → Accountability → Liability → Due Process가 중요**
+> **Ethical analysis에는 ==blue:Responsibility → Accountability → Liability → Due Process==가 중요**
 
 ![Responsibility Accountability Liability Due Process의 순서와 윤리적 분석 다섯 단계](/materials/diagrams/mis-00-ethics-chain.svg)
 
 > [!NOTE]
-> 네 개념은 순서대로 이어진다. 결정을 내린 사람은 그 의무를 받아들여야 하고(responsibility), 조직은 누가 무엇을 했는지 추적할 수 있어야 하며(accountability), 피해가 생기면 법적으로 배상을 청구할 수 있어야 하고(liability), 그 법과 절차가 공개되고 이의를 제기할 수 있어야 한다(due process). **추적할 수 없으면(accountability 부재) 나머지도 작동하지 않는다.**
+> 네 개념은 순서대로 이어진다. 결정을 내린 사람은 그 의무를 받아들여야 하고(responsibility), 조직은 누가 무엇을 했는지 추적할 수 있어야 하며(accountability), 피해가 생기면 법적으로 배상을 청구할 수 있어야 하고(liability), 그 법과 절차가 공개되고 이의를 제기할 수 있어야 한다(due process). ==red:추적할 수 없으면(accountability 부재) 나머지도 작동하지 않는다.==
 
 > [!TRAP]
 > **Responsibility**(결정의 의무를 받아들임) → **Accountability**(누가 했는지 추적 가능) → **Liability**(법적 배상) → **Due process**(공개된 법·이의 제기). 추적이 안 되면 나머지도 작동하지 않는다.
@@ -302,9 +304,9 @@ objectives:
 4. reasonable options identify
 5. each option의 consequences identify
 
-> **Ethical Analysis = Facts → Values → Stakeholders → Options → Consequences**
+> **Ethical Analysis = ==blue:Facts → Values → Stakeholders → Options → Consequences==**
 
-분석 절차는 먼저 **무엇을 판단할지** 분명하게 만드는 과정이고, 다음 슬라이드의 윤리 원칙은 가능한 선택지를 **어떤 기준으로 비교할지** 알려 준다. 사실관계와 영향을 받는 사람을 확인하지 않은 채 원칙 이름만 붙이면, 같은 사례에서도 중요한 피해나 대안을 놓칠 수 있다.
+분석 절차는 먼저 ==red:무엇을 판단할지== 분명하게 만드는 과정이고, 다음 슬라이드의 윤리 원칙은 가능한 선택지를 ==red:어떤 기준으로 비교할지== 알려 준다. 사실관계와 영향을 받는 사람을 확인하지 않은 채 원칙 이름만 붙이면, 같은 사례에서도 중요한 피해나 대안을 놓칠 수 있다.
 
 > [!BOARD]
 > **Facts → Values → Stakeholders → Options → Consequences**
@@ -315,17 +317,17 @@ objectives:
 ## Slide 15 — Ethical Principles (1/2)
 
 ### Golden Rule
-- 남에게 대접받고 싶은 방식으로 남을 대하라
+- ==남에게 대접받고 싶은 방식으로 남을 대하라==
 
 ### Kant’s Categorical Imperative
-- 모두가 해도 옳지 않은 행동이라면 누구에게도 옳지 않음
+- ==모두가 해도 옳지 않은 행동이라면 누구에게도 옳지 않음==
 
 ### Slippery Slope Rule
-- 반복해서 할 수 없는 행동이라면 처음부터 하지 말아야 함
+- ==반복해서 할 수 없는 행동이라면 처음부터 하지 말아야 함==
 
 ### 차이
-- **Categorical Imperative**: 모든 사람에게 universalize 가능한가?
-- **Slippery Slope**: 같은 행동을 반복해도 acceptable한가?
+- **Categorical Imperative**: ==red:모든 사람에게 universalize 가능한가?==
+- **Slippery Slope**: ==red:같은 행동을 반복해도 acceptable한가?==
 
 > **Kant = 모두가 해도 되는가 / Slippery Slope = 계속 반복해도 되는가**
 
@@ -333,7 +335,7 @@ objectives:
 > 동료의 메일을 몰래 읽어도 되는지 판단한다고 하자. Golden Rule은 “내 메일을 누가 몰래 읽으면 괜찮은가?”를 묻는다. Kant는 “모든 직원이 서로의 메일을 읽어도 회사가 굴러가는가?”를 묻는다. Slippery Slope는 “오늘 한 번 읽으면, 내일도 모레도 읽어도 괜찮은가?”를 묻는다.
 
 > [!TRAP]
-> **Kant** = “**모두가** 해도 되는가?”, **Slippery slope** = “**계속 반복**해도 되는가?” 둘을 바꿔 쓰는 보기가 자주 나온다.
+> **Kant** = “**모두가** 해도 되는가?”, **Slippery slope** = “**계속 반복**해도 되는가?” ==red:둘을 바꿔 쓰는 보기가 자주 나온다.==
 
 ---
 
@@ -341,14 +343,14 @@ objectives:
 
 | Principle | 기준 |
 |---|---|
-| **Utilitarian Principle** | greater value를 만드는 action 선택 |
-| **Risk Aversion Principle** | harm / potential cost가 가장 적은 action 선택 |
-| **No Free Lunch Rule** | 명시적 허용이 없다면 tangible / intangible object는 누군가의 property라고 가정 |
+| **Utilitarian Principle** | ==greater value를 만드는 action 선택== |
+| **Risk Aversion Principle** | ==harm / potential cost가 가장 적은 action 선택== |
+| **No Free Lunch Rule** | ==명시적 허용이 없다면 tangible / intangible object는 누군가의 property라고 가정== |
 
 > **Utilitarian = 최대 가치 / Risk Aversion = 최소 피해 / No Free Lunch = ownership 존중**
 
 > [!NOTE]
-> 고객 데이터를 마케팅에 쓸지 고민하는 상황이라면, **utilitarian**은 회사와 고객 전체의 이익이 가장 큰 선택을, **risk aversion**은 개인정보 유출 같은 피해가 가장 적은 선택을 고른다. **No free lunch**는 고객이 명시적으로 허락하지 않은 데이터는 고객의 것이라고 가정한다. 원칙마다 결론이 다를 수 있으므로 답안에는 어떤 원칙으로 판단했는지 밝힌다.
+> 고객 데이터를 마케팅에 쓸지 고민하는 상황이라면, **utilitarian**은 회사와 고객 전체의 이익이 가장 큰 선택을, **risk aversion**은 개인정보 유출 같은 피해가 가장 적은 선택을 고른다. **No free lunch**는 고객이 명시적으로 허락하지 않은 데이터는 고객의 것이라고 가정한다. ==red:원칙마다 결론이 다를 수 있으므로 답안에는 어떤 원칙으로 판단했는지 밝힌다.==
 
 > [!PROBLEM]
 > **문제.** 고객 데이터를 마케팅에 쓰면 이익은 크지만 유출 위험이 있다. 회사가 이익보다 **피해가 가장 적은 선택**을 했다면 어떤 원칙을 따른 것인가?
@@ -365,7 +367,7 @@ objectives:
 - ACM
 
 ### Purpose
-- professions가 society의 general interest를 위해 self-regulation
+- ==professions가 society의 general interest를 위해 self-regulation==
 
 ### Governance Codes
 - guidelines / policies 설정
@@ -395,10 +397,10 @@ objectives:
   - efficiency
   - employment / job loss
 
-> **Ethical dilemma는 right vs wrong보다 competing values의 충돌인 경우가 많음**
+> ==red:Ethical dilemma는 right vs wrong보다 competing values의 충돌인 경우가 많음==
 
 > [!NOTE]
-> 실제 딜레마는 “옳은 것 vs 틀린 것”이 아니라 **둘 다 정당한 가치끼리의 충돌**이다. 회사가 업무 시간의 인터넷 사용을 감시하는 것은 생산성이라는 정당한 목적이 있지만, 직원의 프라이버시도 정당한 권리다. 이럴 때 slide 14의 다섯 단계 분석으로 이해관계자와 선택지를 정리한다.
+> 실제 딜레마는 “옳은 것 vs 틀린 것”이 아니라 ==둘 다 정당한 가치끼리의 충돌==이다. 회사가 업무 시간의 인터넷 사용을 감시하는 것은 생산성이라는 정당한 목적이 있지만, 직원의 프라이버시도 정당한 권리다. 이럴 때 slide 14의 다섯 단계 분석으로 이해관계자와 선택지를 정리한다.
 
 > [!CHECK]
 > **1.** 정보 시대의 다섯 가지 도덕적 차원을 쓰시오.
@@ -416,8 +418,8 @@ objectives:
 ## Slide 19 — Information Rights: Privacy
 
 ### Privacy
-- surveillance / interference 없이 혼자 있을 권리
-- 자기 personal information을 control할 권리
+- ==surveillance / interference 없이 혼자 있을 권리==
+- ==자기 personal information을 control할 권리==
 
 ### U.S. Protection
 - First Amendment
@@ -428,16 +430,16 @@ objectives:
 > **Privacy = personal life와 personal information에 대한 control**
 
 > [!NOTE]
-> 프라이버시는 두 가지로 나눠 기억한다. 감시나 간섭 없이 **혼자 있을 권리**, 그리고 내 정보가 어떻게 쓰이는지 **스스로 통제할 권리**다. 정보시스템 시대에 더 문제가 되는 것은 뒤쪽이다. 미국은 헌법 조항과 1974년 Privacy Act 같은 개별 법으로 보호한다.
+> 프라이버시는 두 가지로 나눠 기억한다. 감시나 간섭 없이 **혼자 있을 권리**, 그리고 내 정보가 어떻게 쓰이는지 **스스로 통제할 권리**다. ==red:정보시스템 시대에 더 문제가 되는 것은 뒤쪽이다.== 미국은 헌법 조항과 1974년 Privacy Act 같은 개별 법으로 보호한다.
 
 ---
 
 ## Slide 20 — Fair Information Practices (FIP)
 
 ### FIP
-- information collection / use를 규율하는 principles
+- ==information collection / use를 규율하는 principles==
 - U.S. / European privacy law의 기반
-- record holder와 individual 사이의 **mutuality of interest**
+- record holder와 individual 사이의 ==red:mutuality of interest==
 
 ### 관련 법률
 - COPPA
@@ -458,34 +460,34 @@ objectives:
 
 | Principle | 의미 |
 |---|---|
-| **Notice / Awareness** | data collection 전에 practices 공개 |
-| **Choice / Consent** | secondary use에 대해 consumer가 선택 가능 |
+| **Notice / Awareness** | ==data collection 전에 practices 공개== |
+| **Choice / Consent** | ==secondary use에 대해 consumer가 선택 가능== |
 | **Access / Participation** | personal data를 확인하고 정확성에 이의 제기 가능 |
 | **Security** | personal data의 accuracy / security 보호 |
 | **Enforcement** | FIP principles를 실제 집행할 mechanism 필요 |
 
-> **FIP 핵심 = Notice + Choice + Access + Security + Enforcement**
+> **FIP 핵심 = ==blue:Notice + Choice + Access + Security + Enforcement==**
 
 ### 개념도 · Privacy에서 FIP 원칙까지의 위계
 
 ![개인의 information rights와 privacy가 FIP framework를 거쳐 notice, choice, access, security, enforcement의 다섯 운영 원칙으로 구체화되는 구조](/materials/diagrams/mis-05-privacy-fip-hierarchy.svg)
 
-FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 중간 framework다. 다섯 원칙 중 하나만 지켜서는 수집부터 집행까지 이어지는 보호 체계가 완성되지 않는다.
+FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 중간 framework다. ==다섯 원칙 중 하나만 지켜서는 수집부터 집행까지 이어지는 보호 체계가 완성되지 않는다.==
 
 > [!TRAP]
-> FIP 다섯 원칙 중 **핵심(core) 원칙은 Notice/awareness와 Choice/consent** 두 개다.
+> FIP 다섯 원칙 중 ==red:핵심(core) 원칙은 Notice/awareness와 Choice/consent== 두 개다.
 
 ---
 
 ## Slide 22 — EU GDPR
 
 ### GDPR
-- explicit / informed consent 요구
+- ==explicit / informed consent 요구==
 - EU citizens / residents의 data 처리 firm에 적용
 - EU 수준의 privacy protection이 없는 국가로 data transfer 제한
-- **Right to Be Forgotten** 강화
+- ==Right to Be Forgotten== 강화
 - Privacy Shield agreements
-- heavy fines
+- ==heavy fines==
 
 ### 적용 범위
 - EU에서 operating하는 firm
@@ -494,10 +496,10 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > **GDPR = consent 중심의 강력한 personal data protection framework**
 
 > [!NOTE]
-> GDPR은 미국 방식보다 훨씬 강하다. 미국은 업종별 법과 업계 자율 규제에 기대지만, GDPR은 EU 시민의 데이터를 다루는 **모든 기업**에 적용되고, 명시적 동의를 요구하며, 위반하면 큰 벌금을 물린다. 한국 기업도 EU 고객 데이터를 처리하면 적용 대상이다.
+> GDPR은 미국 방식보다 훨씬 강하다. 미국은 업종별 법과 업계 자율 규제에 기대지만, GDPR은 EU 시민의 데이터를 다루는 ==red:모든 기업==에 적용되고, 명시적 동의를 요구하며, 위반하면 큰 벌금을 물린다. 한국 기업도 EU 고객 데이터를 처리하면 적용 대상이다.
 
 > [!TRAP]
-> GDPR은 EU 안의 기업에만 적용되는 것이 아니다. 위치와 상관없이 **EU 시민·거주자의 데이터를 처리하는 기업**이면 적용된다.
+> GDPR은 EU 안의 기업에만 적용되는 것이 아니다. 위치와 상관없이 ==red:EU 시민·거주자의 데이터를 처리하는 기업==이면 적용된다.
 
 ---
 
@@ -505,16 +507,16 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 | Technology | 역할 |
 |---|---|
-| **Cookies** | browser identify / site visit tracking |
-| **Super Cookies** | persistent tracking |
-| **Web Beacons** | e-mail / web page viewing 여부 추적 |
-| **Spyware** | 몰래 설치되어 activity / keystroke 등 수집 가능 |
-| **Behavioral Targeting** | browsing behavior 기반 광고 |
+| **Cookies** | ==browser identify / site visit tracking== |
+| **Super Cookies** | ==persistent tracking== |
+| **Web Beacons** | ==e-mail / web page viewing 여부 추적== |
+| **Spyware** | ==몰래 설치되어 activity / keystroke 등 수집 가능== |
+| **Behavioral Targeting** | ==browsing behavior 기반 광고== |
 
-> **Online privacy 문제의 핵심 = invisible tracking**
+> **Online privacy 문제의 핵심 = ==red:invisible tracking==**
 
 > [!NOTE]
-> 다섯 기술의 공통점은 **사용자가 알아차리기 어렵다**는 것이다. 쿠키는 브라우저에 남는 식별표, 웹 비컨은 이메일을 열었는지 알려 주는 보이지 않는 그림, 스파이웨어는 몰래 설치되는 프로그램이다. behavioral targeting은 이렇게 모은 행동 기록으로 맞춤 광고를 보여 준다.
+> 다섯 기술의 공통점은 ==사용자가 알아차리기 어렵다==는 것이다. 쿠키는 브라우저에 남는 식별표, 웹 비컨은 이메일을 열었는지 알려 주는 보이지 않는 그림, 스파이웨어는 몰래 설치되는 프로그램이다. behavioral targeting은 이렇게 모은 행동 기록으로 맞춤 광고를 보여 준다.
 
 > [!TRAP]
 > **Cookie**는 브라우저에 저장되는 식별용 파일, **web beacon**은 이메일·웹페이지에 숨겨 열람 여부를 알려 주는 작은 그림, **spyware**는 몰래 설치되는 프로그램이다.
@@ -527,22 +529,22 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 | Model | 의미 |
 |---|---|
-| **Opt-Out** | 기본적으로 data use 허용, 사용자가 거부 |
-| **Opt-In** | 사용자가 명시적으로 동의해야 data use 가능 |
+| **Opt-Out** | ==red:기본적으로 data use 허용, 사용자가 거부== |
+| **Opt-In** | ==red:사용자가 명시적으로 동의해야 data use 가능== |
 
 ### Issues
 - U.S.는 transaction information의 marketing use 허용
-- industry는 privacy legislation보다 self-regulation 선호
+- ==red:industry는 privacy legislation보다 self-regulation 선호==
 - complex privacy statements
 - cookie banners
 - facial recognition data collection 문제
 
-> **Opt-In이 Opt-Out보다 stronger informed consent**
+> ==Opt-In이 Opt-Out보다 stronger informed consent==
 
-두 방식의 차이는 동의 화면의 모양보다 **아무 행동도 하지 않았을 때 데이터 사용이 허용되는가**에 있다. Opt-In에서는 명시적인 동의가 먼저 필요하고, Opt-Out에서는 거부하지 않으면 사용이 계속될 수 있다. 다음 cookie 사례를 볼 때도 추적 기술의 작동 방식과 이용자의 선택 방식은 별개의 질문으로 살펴보자.
+두 방식의 차이는 동의 화면의 모양보다 ==red:아무 행동도 하지 않았을 때 데이터 사용이 허용되는가==에 있다. Opt-In에서는 명시적인 동의가 먼저 필요하고, Opt-Out에서는 거부하지 않으면 사용이 계속될 수 있다. 다음 cookie 사례를 볼 때도 추적 기술의 작동 방식과 이용자의 선택 방식은 별개의 질문으로 살펴보자.
 
 > [!CONCEPT]
-> **Informed consent** — 합리적 결정에 필요한 사실을 모두 알고 한 동의. **Opt-in**은 동의해야 사용, **opt-out**은 거부하지 않으면 사용.
+> **Informed consent** — ==합리적 결정에 필요한 사실을 모두 알고 한 동의.== **Opt-in**은 동의해야 사용, **opt-out**은 거부하지 않으면 사용.
 
 ---
 
@@ -559,7 +561,7 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 ### Result
 - personalized information 제공 가능
 
-> **Cookie = browser에 저장된 identifier를 이용해 returning visitor를 인식**
+> **Cookie = ==browser에 저장된 identifier를 이용해 returning visitor를 인식==**
 
 ### 교재 그림 · Figure 4.3
 
@@ -571,7 +573,7 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 ![브라우저 요청으로 저장된 cookie identifier가 재방문 때 전달되고 여러 활동 기록을 연결해 profile과 의사결정에 사용되는 흐름](/materials/diagrams/mis-05-cookie-profile-flow.svg)
 
-**그림 읽기:** cookie 자체는 identifier이지만, 반복 방문의 activity log와 결합되면 장기 profile을 만들 수 있다. privacy 쟁점은 저장 여부 하나가 아니라 consent, access, retention, purpose limitation을 전 과정에서 어떻게 통제하느냐에 있다.
+**그림 읽기:** ==red:cookie 자체는 identifier이지만, 반복 방문의 activity log와 결합되면 장기 profile을 만들 수 있다.== privacy 쟁점은 저장 여부 하나가 아니라 consent, access, retention, purpose limitation을 전 과정에서 어떻게 통제하느냐에 있다.
 
 ---
 
@@ -585,14 +587,14 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 - Do Not Track
 
 ### Limitation
-- site-to-site tracking을 완전히 막는 데 실패
-- industry-wide Do Not Track agreement 부족
-- tracking 중단을 강제하는 legislation도 제한적
+- ==red:site-to-site tracking을 완전히 막는 데 실패==
+- ==red:industry-wide Do Not Track agreement 부족==
+- ==red:tracking 중단을 강제하는 legislation도 제한적==
 
 > **Technical privacy tools는 존재하지만 cross-site tracking을 완전히 해결하지 못함**
 
 > [!NOTE]
-> 암호화, 익명화 도구, 시크릿 모드 같은 기술은 개인이 스스로를 지키는 방법이다. 하지만 사이트를 넘나드는 추적을 완전히 막지는 못한다. Do Not Track 신호를 보내도 사이트가 지켜야 할 의무가 없기 때문이다. **기술만으로는 부족하고 업계 합의와 법이 함께 필요**하다는 것이 결론이다.
+> 암호화, 익명화 도구, 시크릿 모드 같은 기술은 개인이 스스로를 지키는 방법이다. 하지만 사이트를 넘나드는 추적을 완전히 막지는 못한다. Do Not Track 신호를 보내도 사이트가 지켜야 할 의무가 없기 때문이다. ==기술만으로는 부족하고 업계 합의와 법이 함께 필요==하다는 것이 결론이다.
 
 > [!CHECK]
 > **4.** FIP의 두 핵심 원칙을 쓰시오.
@@ -610,16 +612,16 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 ## Slide 27 — Intellectual Property
 
 ### Intellectual Property
-- individual / corporation이 만든 **tangible / intangible products of the mind**
+- individual / corporation이 만든 ==tangible / intangible products of the mind==
 
 ### Four Main Protections
 
 | Protection | 핵심 |
 |---|---|
-| **Copyright** | copying 방지, author life + 70 years |
-| **Patent** | invention idea에 대한 exclusive monopoly, 20 years |
-| **Trademark** | brand / identifying mark 보호 |
-| **Trade Secret** | public domain에 공개되지 않은 business intellectual work 보호 |
+| **Copyright** | ==red:copying 방지, author life + 70 years== |
+| **Patent** | ==red:invention idea에 대한 exclusive monopoly, 20 years== |
+| **Trademark** | ==red:brand / identifying mark 보호== |
+| **Trade Secret** | ==red:public domain에 공개되지 않은 business intellectual work 보호== |
 
 > **Copyright / Patent / Trademark / Trade Secret은 보호 대상과 방식이 다름**
 
@@ -627,36 +629,36 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 ![Intellectual Property가 copyright, patent, trademark, trade secret의 네 보호 유형으로 나뉘고 각 유형이 서로 다른 대상을 보호하는 분류 구조](/materials/diagrams/mis-05-ip-protections.svg)
 
-네 유형은 강도가 다른 한 줄의 보호 단계가 아니라 **보호 대상이 다른 병렬 분류**다. 사례에서는 무엇을 만들었는지와 무엇을 지키려는지를 먼저 확인해야 한다.
+네 유형은 강도가 다른 한 줄의 보호 단계가 아니라 ==보호 대상이 다른 병렬 분류==다. 사례에서는 무엇을 만들었는지와 무엇을 지키려는지를 먼저 확인해야 한다.
 
 > [!TRAP]
-> **Copyright는 표현**을, **patent는 아이디어(발명)**를 보호한다. “저작권은 아이디어를 보호한다”는 보기는 오답이다.
+> ==red:Copyright는 표현==을, ==red:patent는 아이디어(발명)==를 보호한다. ==red:“저작권은 아이디어를 보호한다”는 보기는 오답이다.==
 
 > [!PROBLEM]
 > **문제.** 한 회사가 고객 추천 알고리즘을 공개하지 않고 소수 직원만 알게 하며 기밀 유지 계약을 맺었다. 어떤 보호 방식인가?
 >
-> **풀이.** ① 정부에 등록하지 않았다 → 특허 아님 ② 공개하지 않는 것이 핵심이다 ③ **Trade secret**. 공개되면 보호가 사라진다.
+> **풀이.** ① 정부에 등록하지 않았다 → 특허 아님 ② 공개하지 않는 것이 핵심이다 ③ **Trade secret**. ==red:공개되면 보호가 사라진다.==
 
 ---
 
 ## Slide 28 — Challenges to Intellectual Property Rights
 
 ### Digital Media 특징
-- replication 쉬움
-- transmission 쉬움
-- alteration 쉬움
+- ==blue:replication 쉬움==
+- ==blue:transmission 쉬움==
+- ==blue:alteration 쉬움==
 - software classification 어려움
 - compact해서 theft 쉬움
 - uniqueness 판단 어려움
 
 ### DMCA
 - **Digital Millennium Copyright Act, 1998**
-- copyright protection technology 우회 illegal
+- ==red:copyright protection technology 우회 illegal==
 
 > **Digital information은 copy / transfer / modify가 쉬워 IP protection이 더 어려움**
 
 > [!CONCEPT]
-> **DMCA(Digital Millennium Copyright Act, 1998)** — 저작물의 기술적 보호 장치를 **우회하는 행위 자체**를 불법으로 정한 미국 법.
+> **DMCA(Digital Millennium Copyright Act, 1998)** — 저작물의 기술적 보호 장치를 ==red:우회하는 행위 자체==를 불법으로 정한 미국 법.
 
 
 > [!NOTE]
@@ -666,17 +668,17 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 ## Slide 29 — Computer-Related Liability Problems
 
 ### 핵심 질문
-- software failure가 발생하면 **누가 responsible한가?**
+- software failure가 발생하면 ==누가 responsible한가?==
 
 ### 가능 관점
-- machine 일부 → producer / operator liability 가능
-- book과 유사 → author / publisher 책임 인정 어려움
-- service와 유사 → transmitted content에 대한 책임 제한 가능
+- ==blue:machine 일부 → producer / operator liability 가능==
+- ==blue:book과 유사 → author / publisher 책임 인정 어려움==
+- ==blue:service와 유사 → transmitted content에 대한 책임 제한 가능==
 
 ### AI
 - AI도 동일한 liability question을 확대
 
-> **Software / AI liability는 product, information, service 중 어떻게 볼지에 따라 달라짐**
+> ==Software / AI liability는 product, information, service 중 어떻게 볼지에 따라 달라짐==
 
 > [!NOTE]
 > 내비게이션 소프트웨어 오류로 사고가 났다면 누구 책임일까? 소프트웨어를 기계 부품처럼 보면 제조사가 책임지지만, 책처럼 정보를 담은 것으로 보면 저자에게 책임을 묻기 어렵다. 통신 서비스처럼 보면 전달한 내용에 대한 책임이 제한된다. AI는 판단까지 하기 때문에 이 질문이 더 어려워진다.
@@ -693,30 +695,30 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > **Platform liability와 user-generated content regulation의 어려움을 다루는 사례**
 
 > [!NOTE]
-> Section 230은 플랫폼이 사용자가 올린 글에 대해 대부분 책임지지 않게 해 주는 미국 법 조항이다. 덕분에 SNS와 커뮤니티가 성장했지만, 허위 정보나 혐오 표현이 퍼져도 플랫폼이 책임을 피한다는 비판이 커졌다. 기술은 빨리 변하는데 법은 표현의 자유와 피해 방지 사이에서 균형을 찾아야 해서 새 규제를 만들기 어렵다.
+> ==Section 230은 플랫폼이 사용자가 올린 글에 대해 대부분 책임지지 않게 해 주는 미국 법 조항이다.== 덕분에 SNS와 커뮤니티가 성장했지만, 허위 정보나 혐오 표현이 퍼져도 플랫폼이 책임을 피한다는 비판이 커졌다. 기술은 빨리 변하는데 법은 표현의 자유와 피해 방지 사이에서 균형을 찾아야 해서 새 규제를 만들기 어렵다.
 
 ---
 
 ## Slide 31 — System Quality: Data Quality and System Errors
 
 ### 핵심 질문
-- economically feasible한 **acceptable system quality** 수준은 어디까지인가?
-- flawless software는 economically infeasible
+- economically feasible한 ==acceptable system quality== 수준은 어디까지인가?
+- ==red:flawless software는 economically infeasible==
 
 ### Poor System Performance의 주요 원인
-1. software bugs / errors
-2. hardware / facility failures
-3. **poor input data quality**
+1. ==blue:software bugs / errors==
+2. ==blue:hardware / facility failures==
+3. ==red:poor input data quality==
 
 ### Key
-- business system failure의 가장 common source = **poor input data**
+- business system failure의 가장 common source = ==red:poor input data==
 
 > **Perfect system은 불가능하며 data quality가 system quality에 큰 영향**
 
 시스템이 예상대로 계산해도 입력이 부정확하면 결과 역시 잘못될 수 있다. 따라서 오류를 평가할 때는 프로그램의 결함인지, 장비 문제인지, 입력 데이터의 문제인지 먼저 구분해야 한다. 어느 원인인지에 따라 고쳐야 할 대상과 재발을 막는 방법이 달라진다.
 
 > [!TRAP]
-> 비즈니스 시스템 실패의 **가장 흔한 원인은 낮은 입력 데이터 품질**이다. 소프트웨어 버그나 하드웨어 고장보다 흔하다.
+> 비즈니스 시스템 실패의 ==red:가장 흔한 원인은 낮은 입력 데이터 품질==이다. 소프트웨어 버그나 하드웨어 고장보다 흔하다.
 
 ---
 
@@ -724,14 +726,14 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 ### Negative Social Consequences
 - Big Tech의 economic / political power concentration
-- rapidity of change
-- work / family / leisure boundaries 약화
-- dependence / vulnerability 증가
+- ==blue:rapidity of change==
+- ==blue:work / family / leisure boundaries 약화==
+- ==blue:dependence / vulnerability 증가==
 - computer crime / abuse
 
 ### EU DMA
 - **Digital Markets Act**
-- gatekeeper platforms의 lock-in / rival suppression 방지 목적
+- ==gatekeeper platforms의 lock-in / rival suppression 방지 목적==
 
 > **IS는 efficiency를 높이지만 power concentration과 boundary erosion도 발생시킴**
 
@@ -746,8 +748,8 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 | | 의미 |
 |---|---|
-| **Computer Crime** | computer를 이용하거나 computer system을 대상으로 한 illegal act |
-| **Computer Abuse** | illegal하지는 않지만 unethical한 act |
+| **Computer Crime** | ==red:computer를 이용하거나 computer system을 대상으로 한 illegal act== |
+| **Computer Abuse** | ==red:illegal하지는 않지만 unethical한 act== |
 
 ### 기타 문제
 - Spam
@@ -763,7 +765,7 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > 남의 계정을 해킹하면 **computer crime**(불법)이고, 불법은 아니지만 회사 메일로 사적인 광고를 대량으로 보내면 **computer abuse**(비윤리)다. Spam은 대표적인 abuse였지만 CAN-SPAM Act 같은 법으로 일부가 규제되기 시작했다. 또한 업무 재설계(reengineering)와 자동화는 효율을 높이는 대신 일자리를 줄일 수 있다.
 
 > [!TRAP]
-> **Computer crime = 불법**, **computer abuse = 비윤리적이지만 반드시 불법은 아님**. 스팸은 대표적인 abuse다.
+> **Computer crime = 불법**, **computer abuse = 비윤리적이지만 반드시 불법은 아님**. ==red:스팸은 대표적인 abuse다.==
 
 ---
 
@@ -771,16 +773,16 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 ### Equity and Access
 - **Digital Divide**
-  - income / demographic group에 따라 computer / Internet access 격차
+  - ==income / demographic group에 따라 computer / Internet access 격차==
 
 ### Health Risks
 
 | Risk | 설명 |
 |---|---|
-| **RSI** | repetitive stress injury |
-| **CTS** | 가장 common한 computer-related RSI |
-| **CVS** | screen use로 인한 eyestrain / headaches |
-| **Technostress** | aggravation / impatience / fatigue |
+| **RSI** | ==repetitive stress injury== |
+| **CTS** | ==red:가장 common한 computer-related RSI== |
+| **CVS** | ==red:screen use로 인한 eyestrain / headaches== |
+| **Technostress** | ==aggravation / impatience / fatigue== |
 
 > **Digital inequality와 physical / mental health risk도 IS의 social cost**
 

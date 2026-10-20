@@ -1,618 +1,620 @@
 ---
-title: "참조와 배열, vector"
-description: "참조와 배열, vector의 핵심 사용법을 익힙니다."
+title: "참조, 배열, 문자 배열, vector"
+description: "참조의 초기화 규칙, 1차원·2차원 배열, 문자 배열과 널 문자, 정렬과 탐색, vector를 시험 문제 중심으로 정리합니다."
 order: 3
 published: true
 ---
 
-# 참조와 배열, vector
+# 참조, 배열, 문자 배열, vector
 
-## 전체 학습 흐름
+## 학습 흐름
 
 ```text
-참조 변수로 기존 객체에 별명 붙이기
+참조 변수(별명) → 참조 초기화 규칙 → 참조 매개변수 (값 전달과 비교)
         ↓
-참조 매개변수로 함수 밖의 값 변경하기
+1차원 배열(초기화, 크기, 함수 전달) → 배열 패턴(누적, 뒤집기, 이동)
         ↓
-배열에 같은 자료형의 값 모으기
-        ↓
-배열을 함수에 전달하기
-        ↓
-다차원 배열로 표 형태의 데이터 표현하기
-        ↓
-vector로 크기가 변하는 배열 다루기
+문자 배열과 '\0' → 2차원 배열 → 정렬과 탐색 → vector
 ```
 
-| 개념 | 핵심 역할 |
-|---|---|
-| 참조 변수 | 기존 변수에 새로운 이름을 붙임 |
-| 참조 매개변수 | 복사 없이 원본을 함수에서 사용 |
-| 배열 | 같은 자료형의 값을 연속해서 저장 |
-| 다차원 배열 | 행과 열처럼 여러 차원의 데이터 저장 |
-| `vector` | 실행 중에도 크기를 바꿀 수 있는 컨테이너 |
+> [!EXAM]
+> 중간고사 족보에서 이 단원은 ① **참조 선언의 컴파일 오류 찾기**, ② **참조 / 값 전달 후 출력**, ③ **배열을 함수에 넘긴 뒤 원소 추적**, ④ **배열 선언 오류 / 범위 초과 판정**으로 나옵니다.
 
 ---
 
-## 참조 변수
+## 1. 참조 변수
 
 > [!DEFINITION]
-> 참조(reference)는 이미 존재하는 변수에 붙이는 **별명**입니다. 참조를 통해 값을 바꾸면 원본 변수도 함께 바뀝니다.
+> 참조(reference)는 이미 존재하는 변수에 붙이는 **또 하나의 이름(별명)**입니다. 새 저장 공간을 만들지 않으며, 참조를 바꾸면 원본이 바뀝니다.
 
 ```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int score = 80;
-    int& scoreRef = score;
-
-    scoreRef = 95;
-
-    cout << score << '\n';     // 95
-    cout << scoreRef << '\n';  // 95
-    return 0;
-}
+int score = 80;
+int& ref = score;      // ref는 score의 별명
+ref = 95;              // score도 95
 ```
 
-```text
-score ──────┐
-            ├── 같은 int 객체
-scoreRef ───┘
-```
+### 참조 초기화 규칙 (시험 최빈출)
 
-### 참조 선언 문법
+| 코드 | 판정 | 이유 |
+| --- | --- | --- |
+| `int& r = a;` | OK | 변수에 연결 |
+| `int& r;` | **컴파일 오류** | 참조는 선언할 때 **반드시** 대상을 지정 |
+| `int& r = 5;` | **컴파일 오류** | 일반 참조는 리터럴(임시 값)에 연결 불가 |
+| `int& r = a + 1;` | **컴파일 오류** | 식의 결과도 임시 값 |
+| `const int& r = 5;` | OK | **const 참조**는 임시 값에도 연결 가능 |
+| `const int c = 3; int& r = c;` | **컴파일 오류** | const 변수를 수정 가능한 참조로 연결 불가 |
+| `const int& r = a; r = 10;` | **컴파일 오류** | const 참조로는 수정 불가 |
+| `int& r = arr[1];` | OK | 배열 원소에도 연결 가능 |
+
+### 참조는 다시 연결되지 않는다
 
 ```cpp
-자료형& 참조이름 = 원본변수;
+int a = 1, b = 2;
+int& r = a;
+r = b;          // r을 b에 다시 연결하는 것이 아님! a에 b의 값(2)을 대입
 ```
 
-참조는 선언할 때 반드시 원본 변수와 연결해야 합니다.
-
-```cpp
-int value = 10;
-int& ref = value;  // 올바른 선언
-
-// int& emptyRef;  // 오류: 연결할 원본이 없음
-```
-
-### 참조는 다른 변수로 다시 연결되지 않는다
-
-```cpp
-int first = 10;
-int second = 20;
-int& ref = first;
-
-ref = second;
-```
-
-> [!CAUTION]
-> 마지막 줄은 `ref`를 `second`에 다시 연결하는 코드가 아닙니다. `second`의 값인 `20`을 `first`에 대입합니다.
-
-```text
-실행 전: first = 10, second = 20
-실행 후: first = 20, second = 20
-```
-
-### const 참조
-
-원본을 읽기만 하고 수정하지 않을 때는 `const` 참조를 사용합니다.
-
-```cpp
-int number = 42;
-const int& readOnly = number;
-
-cout << readOnly << '\n';
-// readOnly = 50;  // 오류: const 참조로 값을 변경할 수 없음
-```
-
-큰 객체를 복사하지 않고 안전하게 읽을 때 `const` 참조가 자주 사용됩니다.
+> [!TRAP]
+> 족보 단골 오류: `int &var2; var2 = y;`는 **첫 줄에서** 컴파일 오류입니다. 고치려면 `int &var2 = y;`로 선언과 동시에 연결해야 합니다. 그 뒤 `var2 = y;`는 대입일 뿐입니다.
 
 ---
 
-## 참조 매개변수
+## 2. 참조 매개변수
 
-일반 매개변수는 인수의 값을 복사합니다. 함수 안에서 매개변수를 바꿔도 원본은 변하지 않습니다.
-
-```cpp
-void addOne(int number) {
-    number++;
-}
-
-int main() {
-    int value = 5;
-    addOne(value);
-    cout << value << '\n';  // 5
-}
-```
-
-참조 매개변수는 원본 변수에 직접 연결됩니다.
+| 선언 | 복사 | 원본 수정 | 넘길 수 있는 인수 |
+| --- | --- | --- | --- |
+| `void f(int x)` | 함 | 불가 | 변수, 리터럴, 식 모두 |
+| `void f(int& x)` | 안 함 | **가능** | **수정 가능한 변수만** |
+| `void f(const int& x)` | 안 함 | 불가 | 변수, 리터럴, 식, const 변수 모두 |
 
 ```cpp
-#include <iostream>
-using namespace std;
+void inc(int& n) { n++; }
 
-void addOne(int& number) {
-    number++;
-}
-
-int main() {
-    int value = 5;
-    addOne(value);
-    cout << value << '\n';  // 6
-    return 0;
-}
+int a = 1;
+inc(a);        // OK, a = 2
+inc(5);        // 컴파일 오류: 리터럴
+inc(a + 1);    // 컴파일 오류: 식의 결과
+const int c = 3;
+inc(c);        // 컴파일 오류: const 변수
 ```
 
-### 두 값 교환하기
+참조 매개변수는 **값을 바꾸는 swap**이나 **여러 결과를 돌려줄 때** 씁니다.
 
 ```cpp
-void swapValues(int& a, int& b) {
-    int temp = a;
-    a = b;
-    b = temp;
-}
+void swapValues(int& a, int& b) { int t = a; a = b; b = t; }
+
+void divide(int x, int y, int& q, int& r) { q = x / y; r = x % y; }
 ```
 
-```cpp
-int x = 3;
-int y = 7;
-swapValues(x, y);
+> [!QUIZ]
+> 다음 코드에서 컴파일 오류가 나는 줄을 모두 고르시오. 오류 줄을 지운 뒤의 출력을 쓰시오.
+>
+> ```cpp
+> int a = 1, b = 2;
+> int& r1 = a;           // (1)
+> int& r2;               // (2)
+> int& r3 = 5;           // (3)
+> const int& r4 = 5;     // (4)
+> const int c = 3;
+> int& r5 = c;           // (5)
+> const int& r6 = a;     // (6)
+> r6 = 10;               // (7)
+> r1 = b;                // (8)
+> cout << a << ' ' << b << ' ' << r1 << ' ' << r4 << ' ' << r6;
+> ```
 
-cout << x << ' ' << y << '\n';  // 7 3
-```
+> [!ANSWER]
+> 오류: **(2), (3), (5), (7)**.
+>
+> - (2) 참조는 초기화가 필수입니다.
+> - (3) 일반 참조는 리터럴에 연결할 수 없습니다. (4)처럼 const 참조는 됩니다.
+> - (5) const 변수를 수정 가능한 참조로 가리킬 수 없습니다.
+> - (7) const 참조로는 값을 바꿀 수 없습니다.
+>
+> 출력: `2 2 2 5 2` — (8)의 `r1 = b`는 `a = 2`와 같습니다. `r6`도 `a`를 가리키므로 2입니다.
 
-### 출력값을 여러 개 돌려주기
+> [!QUIZ]
+> 다음 출력을 쓰시오.
+>
+> ```cpp
+> void hi(int& x, int y) {
+>     x = x * 2;
+>     y = y * 2;
+> }
+>
+> int main() {
+>     int x = 3, y = 4;
+>     int& rx = x;
+>     hi(rx, y);
+>     cout << x << ' ' << y << '\n';
+>
+>     int arr[3] = {1, 2, 3};
+>     int& e = arr[1];
+>     e = 9;
+>     for (int v : arr) cout << v << ' ';
+> }
+> ```
+>
+> 그리고 `x`를 `const int x = 3;`으로 바꿀 수 있는지 설명하시오.
 
-함수는 `return`으로 하나의 값만 직접 반환하지만, 참조 매개변수를 사용하면 여러 결과를 전달할 수 있습니다.
-
-```cpp
-void divide(int dividend, int divisor, int& quotient, int& remainder) {
-    quotient = dividend / divisor;
-    remainder = dividend % divisor;
-}
-
-int main() {
-    int q = 0;
-    int r = 0;
-
-    divide(17, 5, q, r);
-    cout << q << ' ' << r << '\n';  // 3 2
-}
-```
-
-### 값, 참조, const 참조 비교
-
-| 선언 | 복사 여부 | 원본 수정 | 주 용도 |
-|---|---:|---:|---|
-| `void f(int x)` | 복사함 | 불가능 | 작은 값을 입력받음 |
-| `void f(int& x)` | 복사 안 함 | 가능 | 원본을 변경함 |
-| `void f(const int& x)` | 복사 안 함 | 불가능 | 복사 없이 안전하게 읽음 |
+> [!ANSWER]
+> ```text
+> 6 4
+> 1 9 3
+> ```
+>
+> `x`는 참조로 전달되어 6이 되고, `y`는 값으로 전달되어 함수 안의 복사본만 8이 됩니다. `e`는 `arr[1]`의 별명입니다.
+>
+> `const int x = 3;`으로 **바꿀 수 없습니다**. `int& rx = x;`는 const 변수를 수정 가능한 참조로 연결하므로 오류이고, `hi`의 첫 매개변수도 `int&`라서 const 변수를 넘길 수 없습니다.
 
 ---
 
-## 배열 선언과 초기화
+## 3. 1차원 배열
 
-> [!DEFINITION]
-> 배열(array)은 같은 자료형의 값을 정해진 개수만큼 연속해서 저장합니다.
+### 선언과 초기화
 
-```cpp
-int scores[5];
-```
+| 코드 | 결과 |
+| --- | --- |
+| `int a[5];` (함수 안) | 다섯 칸 모두 **쓰레기 값** |
+| `int a[5] = {};` 또는 `{0}` | 모두 0 |
+| `int a[5] = {1, 2};` | `{1, 2, 0, 0, 0}` (나머지는 0) |
+| `int a[] = {4, 5, 6};` | 크기 3으로 자동 결정 |
+| `int a[3] = {1, 2, 3, 4};` | **컴파일 오류** (초기값이 너무 많음) |
+| `int n = 5; int a[n];` | 표준 C++에서는 불가(크기는 상수여야 함) |
 
-배열의 각 칸은 **요소(element)**이며, 위치를 나타내는 숫자를 **인덱스(index)**라고 합니다. 인덱스는 `0`부터 시작합니다.
+- 인덱스는 **0부터 크기 − 1까지**입니다. `a[5]`(크기 5)는 **범위 초과 → UB**입니다. 컴파일 오류가 아니며 실행 중 오류가 난다고 보장되지도 않습니다(족보에서는 "runtime error"로 분류하기도 함).
+- **배열 원소 개수** = `sizeof(a) / sizeof(a[0])`. `sizeof(a)`는 바이트 수입니다(`int` 5개면 20).
+- 배열끼리 **대입할 수 없습니다**. `a = b;`는 컴파일 오류입니다. 원소를 하나씩 복사해야 합니다.
 
-```text
-인덱스:   0    1    2    3    4
-scores: [ ]  [ ]  [ ]  [ ]  [ ]
-```
+### 배열을 함수에 넘기면 원본이 바뀐다
 
-### 배열 초기화
-
-```cpp
-int scores[5] = {90, 85, 100, 70, 95};
-int numbers[] = {1, 2, 3, 4};  // 요소 개수로 크기 결정
-int zeros[5] = {};              // 모든 요소를 0으로 초기화
-```
-
-일부 값만 적으면 나머지 요소는 `0`으로 초기화됩니다.
+배열 매개변수 `int a[]`는 배열 **전체를 복사하지 않고** 원본 배열을 가리킵니다. 그래서 함수 안에서 `a[i]`를 바꾸면 호출한 쪽 배열이 바뀝니다. 대신 함수는 배열 크기를 알 수 없으므로 **크기를 따로 넘깁니다**.
 
 ```cpp
-int values[5] = {10, 20};  // {10, 20, 0, 0, 0}
+void mod(int a[], int n) {               // 원본 배열을 바꿈
+    for (int i = 1; i < n; i++)
+        a[i] += a[i - 1];
+}
+void modv(int x) { x = 100; }            // 원소 하나를 값으로 받으면 복사본
+
+int a[] = {1, 2, 3, 4};
+mod(a, 4);
+modv(a[0]);
+// a = {1, 3, 6, 10}
 ```
 
-### 배열 요소 사용하기
+> [!TRAP]
+> - 함수 안에서 `sizeof(a) / sizeof(a[0])`로 길이를 구하면 **틀립니다**. 매개변수 `a`는 배열이 아니기 때문입니다. 길이는 꼭 인수로 넘기세요.
+> - 원본을 바꾸지 않을 함수는 `const int a[]`로 받으면 실수로 수정하는 것을 컴파일러가 막아 줍니다.
+
+> [!QUIZ]
+> 다음 출력을 쓰시오.
+>
+> ```cpp
+> int a[5] = {1, 2};
+> int b[] = {4, 5, 6};
+> int c[5] = {};
+> for (int v : a) cout << v << ' ';
+> cout << "| " << sizeof(a) / sizeof(a[0]) << ' '
+>      << sizeof(b) / sizeof(b[0]) << ' ' << sizeof(a) << ' ' << c[4] << '\n';
+> ```
+>
+> 그리고 다음 두 줄을 각각 판정하시오. `int d[3] = {1, 2, 3, 4};` / `int x[3], y[3]; x = y;`
+
+> [!ANSWER]
+> ```text
+> 1 2 0 0 0 | 5 3 20 0
+> ```
+>
+> `int`가 4바이트인 환경에서 `sizeof(a)`는 20입니다. 두 줄은 모두 **컴파일 오류**(초기값이 너무 많음 / 배열은 대입 불가)입니다.
+
+### 자주 나오는 배열 패턴
 
 ```cpp
-int scores[3] = {80, 90, 100};
+// 최댓값 (첫 원소로 초기화!)
+int mx = a[0];
+for (int i = 1; i < n; i++) if (a[i] > mx) mx = a[i];
 
-cout << scores[0] << '\n';
-scores[1] = 95;
-cout << scores[1] << '\n';
+// 내적
+int dot = 0;
+for (int i = 0; i < n; i++) dot += a[i] * b[i];
+
+// 뒤집기: 앞뒤를 바꾸며 가운데까지
+for (int i = 0; i < n / 2; i++) { int t = a[i]; a[i] = a[n-1-i]; a[n-1-i] = t; }
+
+// 왼쪽으로 한 칸 회전
+int first = a[0];
+for (int i = 0; i < n - 1; i++) a[i] = a[i + 1];
+a[n - 1] = first;
 ```
 
-배열의 범위를 벗어난 인덱스를 사용하면 정의되지 않은 동작이 발생합니다.
+> [!QUIZ]
+> `int a[] = {3, 8, 1, 9, 4};`에 "왼쪽으로 한 칸 회전"을 실행한 결과를 쓰시오. 반복 조건을 `i < n`으로 잘못 쓰면 어떤 문제가 생기는가?
 
-```cpp
-int numbers[3] = {1, 2, 3};
-// cout << numbers[3];  // 잘못된 접근: 마지막 인덱스는 2
-```
+> [!ANSWER]
+> `8 1 9 4 3`. 조건을 `i < n`으로 쓰면 마지막 반복에서 `a[i + 1]`이 `a[5]`가 되어 **범위를 벗어난 읽기(UB)**가 됩니다.
 
 ---
 
-## 배열 순회
+## 4. 문자 배열과 C 문자열
 
-> [!DEFINITION]
-> 배열의 모든 요소를 차례로 처리하는 것을 순회라고 합니다.
-
-### 인덱스를 사용하는 for문
+C 문자열은 **마지막에 널 문자 `'\0'`(코드 0)이 있는 `char` 배열**입니다. 문자열 리터럴 `"Hi"`는 `'H'`, `'i'`, `'\0'` 세 칸입니다.
 
 ```cpp
-int scores[5] = {90, 85, 100, 70, 95};
+char s[] = "Hi C++";      // 문자 6개 + '\0' = 7칸
+char t[10] = "ab";        // 10칸: 'a' 'b' '\0' 그리고 나머지는 '\0'
+char w[5] = "Hello";      // 컴파일 오류: '\0'까지 6칸 필요
+```
 
-for (int i = 0; i < 5; i++) {
-    cout << i << ": " << scores[i] << '\n';
+| | `sizeof(s)` | 문자 수(길이) |
+| --- | ---: | ---: |
+| `char s[] = "Hi C++";` | 7 | 6 |
+| `char t[10] = "ab";` | 10 | 2 |
+
+### 문자열 순회: `'\0'`을 만날 때까지
+
+```cpp
+int len = 0;
+while (s[len] != '\0') len++;          // 직접 구한 길이
+
+for (int i = 0; s[i] != '\0'; i++) {   // 한 글자씩 처리
+    char c = s[i];
+    if (c >= 'a' && c <= 'z') s[i] = c - 'a' + 'A';   // 소문자 → 대문자
 }
 ```
 
-반복 조건은 `i <= 5`가 아니라 `i < 5`입니다.
-
-### 범위 기반 for문
+### 알파벳 빈도 세기 (Homework 3 패턴)
 
 ```cpp
-for (int score : scores) {
-    cout << score << '\n';
+int count[26] = {0};                     // 반드시 0으로 초기화
+for (int i = 0; s[i] != '\0'; i++) {
+    if (s[i] >= 'a' && s[i] <= 'z') count[s[i] - 'a']++;
+    else if (s[i] >= 'A' && s[i] <= 'Z') count[s[i] - 'A']++;
 }
 ```
 
-값을 변경하려면 참조 변수로 요소를 받아야 합니다.
+> [!TRAP]
+> - 끝 표시는 숫자 문자 `'0'`(코드 48)이 아니라 **널 문자 `'\0'`**(코드 0)입니다.
+> - `count[s[i]]`처럼 문자 코드를 그대로 인덱스로 쓰면 범위를 벗어납니다. `'a'`를 빼서 0~25로 만드세요.
+> - 배열 크기를 정할 때 `'\0'` 자리 **+1**을 잊지 마세요.
 
-```cpp
-for (int& score : scores) {
-    score += 5;
-}
-```
+> [!QUIZ]
+> 다음 출력을 쓰시오.
+>
+> ```cpp
+> // (1)
+> char s[] = "Hi C++";
+> int len = 0;
+> while (s[len] != '\0') len++;
+> char t[10] = "ab";
+> cout << sizeof(s) << ' ' << len << ' ' << sizeof(t) << '\n';
+>
+> // (2) 대문자, 소문자, 숫자, 그 밖의 문자 개수
+> char u[] = "Hello World 2026!";
+>
+> // (3)
+> char v[] = "banana";
+> int cnt[26] = {0};
+> for (int i = 0; v[i] != '\0'; i++) cnt[v[i] - 'a']++;
+> for (int i = 0; i < 26; i++)
+>     if (cnt[i]) cout << char('a' + i) << cnt[i] << ' ';
+>
+> // (4) 문자열 뒤집기
+> char w[] = "abcde";
+> int n = 0;
+> while (w[n] != '\0') n++;
+> for (int i = 0; i < n / 2; i++) { char c = w[i]; w[i] = w[n-1-i]; w[n-1-i] = c; }
+> cout << w;
+> ```
 
-읽기만 할 때는 `const` 참조를 사용할 수 있습니다.
-
-```cpp
-for (const int& score : scores) {
-    cout << score << '\n';
-}
-```
-
-### 합계와 평균 구하기
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int scores[5] = {90, 85, 100, 70, 95};
-    int sum = 0;
-
-    for (int score : scores) {
-        sum += score;
-    }
-
-    double average = static_cast<double>(sum) / 5;
-    cout << "합계: " << sum << '\n';
-    cout << "평균: " << average << '\n';
-    return 0;
-}
-```
+> [!ANSWER]
+> **(1)** `7 6 10`
+>
+> **(2)** 대문자 2(H, W), 소문자 8, 숫자 4, 그 밖의 문자 3(공백 2개, `!`).
+>
+> **(3)** `a3 b1 n2 `
+>
+> **(4)** `edcba` — 마지막 인덱스는 `n - 1`입니다. `'\0'`(인덱스 n)과 바꾸면 문자열이 빈 문자열이 됩니다.
 
 ---
 
-## 배열과 함수
+## 5. 2차원 배열
 
-배열을 함수에 전달하면 배열 전체가 복사되지 않습니다. 함수는 원본 배열의 요소에 접근합니다.
-
-```cpp
-void printArray(const int values[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << values[i] << ' ';
-    }
-    cout << '\n';
-}
-```
-
-배열만 전달하면 함수는 요소 개수를 자동으로 알 수 없으므로 크기도 함께 전달해야 합니다.
+2차원 배열은 **행 × 열** 표입니다. `a[행][열]`로 접근합니다.
 
 ```cpp
-int numbers[4] = {10, 20, 30, 40};
-printArray(numbers, 4);
-```
-
-### 배열 요소 변경하기
-
-```cpp
-void doubleValues(int values[], int size) {
-    for (int i = 0; i < size; i++) {
-        values[i] *= 2;
-    }
-}
-```
-
-```cpp
-int numbers[3] = {1, 2, 3};
-doubleValues(numbers, 3);
-// numbers는 {2, 4, 6}
-```
-
-원본을 변경하지 않는 함수라면 `const`를 붙이는 습관이 좋습니다.
-
-```cpp
-int findMax(const int values[], int size) {
-    int maximum = values[0];
-
-    for (int i = 1; i < size; i++) {
-        if (values[i] > maximum) {
-            maximum = values[i];
-        }
-    }
-
-    return maximum;
-}
-```
-
-### 배열 크기를 자동으로 받는 함수
-
-배열 참조와 템플릿을 사용하면 고정 배열의 크기를 자동으로 받을 수 있습니다.
-
-```cpp
-template <size_t N>
-void printArray(const int (&values)[N]) {
-    for (int value : values) {
-        cout << value << ' ';
-    }
-    cout << '\n';
-}
-```
-
-이 문법은 뒤에서 템플릿을 배운 뒤 더 자세히 이해해도 됩니다. 지금은 일반적으로 배열과 크기를 함께 전달한다는 점이 중요합니다.
-
----
-
-## 다차원 배열
-
-2차원 배열은 행과 열로 이루어진 표처럼 생각할 수 있습니다.
-
-```cpp
-int board[2][3] = {
-    {1, 2, 3},
-    {4, 5, 6}
+int m[2][3] = {
+    {1, 2, 3},      // 행 0
+    {4, 5, 6}       // 행 1
 };
+cout << m[1][0];    // 4  (행 1, 열 0)
 ```
 
-```text
-          열 0  열 1  열 2
-행 0       1     2     3
-행 1       4     5     6
-```
+### 초기화 규칙
 
-요소에 접근할 때는 `[행][열]` 순서로 작성합니다.
+| 코드 | 결과 |
+| --- | --- |
+| `int m[2][3] = {1, 2, 3, 4};` | 행 순서로 채움: `{1, 2, 3}`, `{4, 0, 0}` |
+| `int m[2][3] = {{1}, {4, 5}};` | 행마다 채움: `{1, 0, 0}`, `{4, 5, 0}` |
+| `int m[][3] = {{1}, {2, 3}, {4, 5, 6}};` | **행 수만** 생략 가능 → 3행 |
+| `int m[2][] = {…};` | **컴파일 오류**: 열 수는 생략 불가 |
+
+### 메모리는 행 우선(row-major)
+
+`m[2][3]`은 메모리에 `m[0][0] m[0][1] m[0][2] m[1][0] m[1][1] m[1][2]` 순서로 **한 줄로** 저장됩니다. 그래서 중괄호 없이 `{1, 2, 3, 4}`를 쓰면 0행부터 채워집니다.
+
+- 행 수 = `sizeof(m) / sizeof(m[0])`
+- 열 수 = `sizeof(m[0]) / sizeof(m[0][0])`
+
+### 순회 패턴
 
 ```cpp
-cout << board[0][1] << '\n';  // 2
-board[1][2] = 10;
-```
+const int R = 3, C = 4;
+int m[R][C] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
 
-### 중첩 반복문으로 순회하기
-
-```cpp
-for (int row = 0; row < 2; row++) {
-    for (int column = 0; column < 3; column++) {
-        cout << board[row][column] << ' ';
-    }
-    cout << '\n';
+// 행 합: 바깥 = 행, 안쪽 = 열
+for (int i = 0; i < R; i++) {
+    int sum = 0;
+    for (int j = 0; j < C; j++) sum += m[i][j];
+    cout << sum << ' ';                 // 10 26 42
 }
+
+// 열 합: 바깥 = 열, 안쪽 = 행
+for (int j = 0; j < C; j++) {
+    int sum = 0;
+    for (int i = 0; i < R; i++) sum += m[i][j];
+    cout << sum << ' ';                 // 15 18 21 24
+}
+
+// 주대각선 (정사각 부분): m[i][i]
+// 반대 대각선 (N×N): m[i][N-1-i]
+// 아래 삼각형 (대각선 포함): i >= j
+// 전치(행과 열 바꿔 출력): 바깥 j, 안쪽 i로 m[i][j]
 ```
 
-### 2차원 배열을 함수에 전달하기
-
-2차원 배열을 전달할 때는 두 번째 차원의 크기를 함수가 알아야 합니다.
+### 함수에 넘기기: 열 크기는 반드시 적는다
 
 ```cpp
-const int COLUMN_COUNT = 3;
-
-void printBoard(const int board[][COLUMN_COUNT], int rowCount) {
-    for (int row = 0; row < rowCount; row++) {
-        for (int column = 0; column < COLUMN_COUNT; column++) {
-            cout << board[row][column] << ' ';
-        }
+const int COLS = 3;
+void printM(int m[][COLS], int rows) {     // 첫 번째 [] 만 비울 수 있음
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < COLS; j++) cout << m[i][j] << ' ';
         cout << '\n';
     }
 }
 ```
 
+> [!TRAP]
+> - `m[i][j]`의 **i가 행, j가 열**입니다. 열 합을 구할 때 반복 순서를 바꾸지 않으면 행 합이 나옵니다.
+> - `int m[][]`처럼 열 크기를 비우는 매개변수는 컴파일 오류입니다. 컴파일러가 `m[i]`가 몇 칸 뒤인지 계산하려면 열 수가 필요하기 때문입니다.
+> - 2차원 배열도 함수에 넘기면 **원본이 바뀝니다**.
+
+> [!QUIZ]
+> 다음 출력을 쓰시오.
+>
+> ```cpp
+> // (1)
+> int m[2][3] = {1, 2, 3, 4};
+> int b[2][3] = {{1}, {4, 5}};
+> int c[][3] = {{1}, {2, 3}, {4, 5, 6}};
+> printM(m, 2);
+> printM(b, 2);
+> cout << sizeof(c) / sizeof(c[0]) << ' ' << sizeof(c[0]) / sizeof(c[0][0]) << '\n';
+>
+> // (2)
+> int a[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+> int s = 0, t = 0;
+> for (int i = 0; i < 3; i++)
+>     for (int j = 0; j < 3; j++)
+>         if (i >= j) s += a[i][j];
+> for (int i = 0; i < 3; i++) t += a[i][2 - i];
+> cout << s << ' ' << t << '\n';
+> ```
+
+> [!ANSWER]
+> **(1)**
+>
+> ```text
+> 1 2 3
+> 4 0 0
+> 1 0 0
+> 4 5 0
+> 3 3
+> ```
+>
+> **(2)** `34 15` — `i >= j`는 대각선 포함 아래 삼각형(1 + 4 + 5 + 7 + 8 + 9 = 34), `a[i][2 - i]`는 반대 대각선(3 + 5 + 7 = 15).
+
+> [!QUIZ]
+> `int m[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};`일 때
+>
+> 1. 행 합, 열 합, `m[i][i]`(i = 0~2)의 합을 쓰시오.
+> 2. 행과 열을 바꿔(전치하여) 출력하는 코드를 쓰고 출력 결과를 쓰시오.
+> 3. 다음 코드의 `cnt`를 쓰시오.
+>
+> ```cpp
+> int k[2][3] = {{1, 2, 3}, {4, 5, 6}};
+> int cnt = 0;
+> for (int i = 0; i < 2; i++)
+>     for (int j = 0; j < 3; j++) {
+>         if (j == 1) continue;
+>         if (k[i][j] > 4) break;
+>         cnt += k[i][j];
+>     }
+> ```
+
+> [!ANSWER]
+> **1.** 행 합 `10 26 42`, 열 합 `15 18 21 24`, 대각선 합 1 + 6 + 11 = `18`.
+>
+> **2.**
+>
+> ```cpp
+> for (int j = 0; j < 4; j++) {          // 원래의 열이 새 행
+>     for (int i = 0; i < 3; i++) cout << m[i][j] << ' ';
+>     cout << '\n';
+> }
+> ```
+>
+> ```text
+> 1 5 9
+> 2 6 10
+> 3 7 11
+> 4 8 12
+> ```
+>
+> **3.** `8` — 행 0: 1 더함, j = 1 건너뜀, 3 더함(4). 행 1: 4 더함(8), j = 1 건너뜀, 6 > 4라서 `break`(안쪽 반복만 종료).
+
+> [!QUIZ]
+> 2×3 행렬 A와 3×2 행렬 B의 곱 C(2×2)를 구하는 3중 반복문을 쓰고 C를 구하시오.
+>
+> ```cpp
+> int A[2][3] = {{1, 2, 3}, {4, 5, 6}};
+> int B[3][2] = {{1, 0}, {0, 1}, {1, 1}};
+> int C[2][2] = {};
+> ```
+
+> [!ANSWER]
+> ```cpp
+> for (int i = 0; i < 2; i++)
+>     for (int j = 0; j < 2; j++)
+>         for (int k = 0; k < 3; k++)
+>             C[i][j] += A[i][k] * B[k][j];
+> ```
+>
+> `C = {{4, 5}, {10, 11}}`. 예: `C[0][0] = 1·1 + 2·0 + 3·1 = 4`. `C`를 `{}`로 0 초기화하지 않으면 쓰레기 값에 더해집니다.
+
 ---
 
-## vector
+## 6. 정렬과 탐색
 
-> [!DEFINITION]
-> `vector`는 같은 자료형의 값을 연속해서 저장하지만, 일반 배열과 달리 실행 중에 크기를 바꿀 수 있습니다.
+### 버블 정렬: 이웃끼리 비교해 큰 값을 뒤로
+
+한 패스가 끝날 때마다 **가장 큰 값이 맨 뒤로** 확정됩니다. 교환이 한 번도 없으면 이미 정렬된 것입니다.
 
 ```cpp
-#include <iostream>
+for (int pass = 1; pass < n; pass++) {
+    bool swapped = false;
+    for (int j = 0; j < n - pass; j++)
+        if (a[j] > a[j + 1]) { int t = a[j]; a[j] = a[j + 1]; a[j + 1] = t; swapped = true; }
+    if (!swapped) break;
+}
+```
+
+### 선택 정렬: 남은 것 중 최솟값을 앞으로
+
+i번째 패스에서 `a[i..n-1]`의 최솟값을 찾아 `a[i]`와 **한 번만** 교환합니다.
+
+```cpp
+for (int i = 0; i < n - 1; i++) {
+    int mi = i;
+    for (int j = i + 1; j < n; j++)
+        if (a[j] < a[mi]) mi = j;
+    int t = a[i]; a[i] = a[mi]; a[mi] = t;
+}
+```
+
+### 이진 탐색: 정렬된 배열에서 절반씩
+
+```cpp
+int lo = 0, hi = n - 1;
+while (lo <= hi) {
+    int mid = (lo + hi) / 2;
+    if (a[mid] == key) return mid;
+    if (a[mid] < key) lo = mid + 1;
+    else hi = mid - 1;
+}
+return -1;
+```
+
+> [!QUIZ]
+> 1. `{5, 1, 4, 2, 8}`을 위 버블 정렬로 정렬할 때 패스마다의 배열을 쓰시오. 몇 번째 패스에서 끝나는가?
+> 2. `{64, 25, 12, 22, 11}`을 선택 정렬할 때 i마다 교환 후의 배열을 쓰시오.
+> 3. `{2, 5, 8, 12, 16, 23, 38, 56, 72, 91}`에서 23을 이진 탐색할 때 `[lo, hi]`와 `mid`를 차례로 쓰시오.
+
+> [!ANSWER]
+> **1.**
+>
+> ```text
+> pass 1: 1 4 2 5 8
+> pass 2: 1 2 4 5 8
+> pass 3: 1 2 4 5 8   ← 교환이 없어 여기서 종료
+> ```
+>
+> **2.**
+>
+> ```text
+> i=0: 11 25 12 22 64
+> i=1: 11 12 25 22 64
+> i=2: 11 12 22 25 64
+> i=3: 11 12 22 25 64
+> ```
+>
+> **3.** `[0, 9] mid=4`(16 < 23) → `[5, 9] mid=7`(56 > 23) → `[5, 6] mid=5`(23 발견). 비교 3번, 인덱스 5.
+
+퀵 정렬과 힙 정렬은 [Exercise 05](/lectures/grade-01/semester-muheifg4/subject-cpp-exercise/lecture-05)에서 단계별로 추적합니다.
+
+---
+
+## 7. vector
+
+```cpp
 #include <vector>
-using namespace std;
-
-int main() {
-    vector<int> scores = {90, 85, 100};
-
-    scores.push_back(95);
-    scores.push_back(80);
-
-    for (int score : scores) {
-        cout << score << ' ';
-    }
-    return 0;
-}
+vector<int> v = {90, 85};
+v.push_back(100);         // 끝에 추가
+v.size();                 // 3
+v.pop_back();             // 끝 원소 제거
+v[0];                     // 범위 검사 없음
+v.at(0);                  // 범위를 벗어나면 예외(out_of_range)
+vector<int> z(5);         // 0으로 채운 5칸
 ```
 
-### 자주 사용하는 기능
+> [!TRAP]
+> **배열과 vector는 함수에 넘길 때 다르게 동작합니다.**
+>
+> | 매개변수 | 함수 안에서 바꾸면 |
+> | --- | --- |
+> | `int a[]` | 원본 배열이 바뀜 |
+> | `vector<int> v` | **복사본**만 바뀜 (원본 그대로) |
+> | `vector<int>& v` | 원본이 바뀜 |
+> | `const vector<int>& v` | 복사 없이 읽기만 |
 
-| 표현식 | 의미 |
-|---|---|
-| `values.size()` | 현재 요소 개수 |
-| `values.empty()` | 비어 있는지 확인 |
-| `values.push_back(x)` | 마지막에 `x` 추가 |
-| `values.pop_back()` | 마지막 요소 제거 |
-| `values.front()` | 첫 번째 요소 |
-| `values.back()` | 마지막 요소 |
-| `values.clear()` | 모든 요소 제거 |
+> [!QUIZ]
+> 다음 출력을 쓰시오.
+>
+> ```cpp
+> void addV(vector<int> v)  { v.push_back(9); v[0] = 0; }
+> void addR(vector<int>& v) { v.push_back(9); v[0] = 0; }
+>
+> vector<int> v = {1, 2, 3};
+> addV(v);
+> cout << v.size() << ' ' << v[0] << ' ';
+> addR(v);
+> cout << v.size() << ' ' << v[0] << '\n';
+>
+> int a[] = {1, 2, 3};
+> for (int x : a) x *= 10;
+> cout << a[0];
+> for (int& x : a) x *= 10;
+> cout << ' ' << a[0];
+> ```
 
-```cpp
-vector<int> values;
-values.push_back(10);
-values.push_back(20);
-
-cout << values.size() << '\n';  // 2
-cout << values.front() << '\n'; // 10
-cout << values.back() << '\n';  // 20
-
-values.pop_back();
-```
-
-### 인덱스 접근과 at
-
-```cpp
-vector<int> numbers = {10, 20, 30};
-
-cout << numbers[1] << '\n';    // 20
-cout << numbers.at(1) << '\n'; // 20
-```
-
-`[]`는 범위를 검사하지 않지만 `at()`은 범위를 벗어나면 예외를 발생시킵니다.
-
-### vector를 함수에 전달하기
-
-읽기만 하는 함수에는 `const` 참조를 사용합니다.
-
-```cpp
-double calculateAverage(const vector<int>& scores) {
-    int sum = 0;
-
-    for (int score : scores) {
-        sum += score;
-    }
-
-    return static_cast<double>(sum) / scores.size();
-}
-```
-
-원본을 변경하려면 일반 참조를 사용합니다.
-
-```cpp
-void addBonus(vector<int>& scores, int bonus) {
-    for (int& score : scores) {
-        score += bonus;
-    }
-}
-```
-
-### 배열과 vector 비교
-
-| 구분 | 배열 | `vector` |
-|---|---|---|
-| 크기 | 선언할 때 고정 | 실행 중 변경 가능 |
-| 요소 개수 | 따로 관리하는 경우가 많음 | `size()`로 확인 |
-| 범위 검사 | 없음 | `at()` 사용 가능 |
-| 함수 전달 | 크기를 함께 전달 | `const vector<int>&` 사용 |
-| 사용 추천 | 크기가 확실히 고정됨 | 일반적인 가변 목록 |
-
----
-
-## 종합 예제: 점수 관리
-
-```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
-
-void addBonus(vector<int>& scores, int bonus) {
-    for (int& score : scores) {
-        score += bonus;
-
-        if (score > 100) {
-            score = 100;
-        }
-    }
-}
-
-double calculateAverage(const vector<int>& scores) {
-    if (scores.empty()) {
-        return 0.0;
-    }
-
-    int sum = 0;
-    for (int score : scores) {
-        sum += score;
-    }
-
-    return static_cast<double>(sum) / scores.size();
-}
-
-int main() {
-    vector<int> scores = {72, 88, 95, 100};
-
-    addBonus(scores, 5);
-
-    for (int score : scores) {
-        cout << score << ' ';
-    }
-    cout << "\n평균: " << calculateAverage(scores) << '\n';
-    return 0;
-}
-```
-
----
-
-## 자주 하는 실수
-
-### 참조를 초기화하지 않음
-
-```cpp
-// int& ref;  // 오류
-```
-
-### 배열 범위를 벗어남
-
-```cpp
-int values[3] = {1, 2, 3};
-// values[3] = 10;  // 마지막 유효 인덱스는 2
-```
-
-### 함수에서 배열 크기를 자동으로 알 수 있다고 생각함
-
-```cpp
-void printArray(const int values[], int size);
-```
-
-배열과 함께 `size`를 전달해야 합니다.
-
-### 범위 기반 for문에서 복사본을 수정함
-
-```cpp
-for (int value : values) {
-    value *= 2;  // 원본 요소는 바뀌지 않음
-}
-
-for (int& value : values) {
-    value *= 2;  // 원본 요소가 바뀜
-}
-```
+> [!ANSWER]
+> ```text
+> 3 1 4 0
+> 1 10
+> ```
+>
+> `addV`는 복사본을 바꾸므로 원본은 그대로이고, `addR`은 원본에 9를 추가하고 첫 원소를 0으로 바꿉니다. 범위 기반 for도 `int x`는 복사본, `int& x`는 원본입니다.
 
 ---
 
 ## 핵심 정리
 
-- 참조 변수는 기존 변수의 별명이다.
-- 참조 매개변수를 사용하면 함수가 원본 값을 변경할 수 있다.
-- 원본을 읽기만 할 때는 `const` 참조를 우선 고려한다.
-- 배열의 인덱스는 `0`부터 시작하며 크기를 벗어나면 안 된다.
-- 배열을 함수에 전달할 때는 일반적으로 요소 개수도 함께 전달한다.
-- 2차원 배열은 중첩 반복문으로 순회한다.
-- `vector`는 크기가 변하는 값 목록을 다룰 때 편리하다.
-- `vector`를 함수에 전달할 때는 목적에 따라 참조 또는 `const` 참조를 사용한다.
-
+1. 참조는 선언과 동시에 연결해야 하고, 다시 연결되지 않는다. `r = b`는 대입이다.
+2. 일반 참조(`int&`)는 리터럴·식·const 변수에 연결할 수 없다. `const int&`는 모두 가능하다.
+3. `int&` 매개변수는 원본을 바꾸고, 값 매개변수는 복사본만 바꾼다.
+4. 배열: 부분 초기화하면 나머지는 0, 초기화하지 않은 지역 배열은 쓰레기 값, 초기값이 크기보다 많으면 컴파일 오류, 범위 초과는 UB.
+5. 원소 개수 = `sizeof(a) / sizeof(a[0])` (함수 매개변수에서는 불가). 배열끼리 대입 불가.
+6. 배열을 함수에 넘기면 원본이 바뀐다. vector는 값으로 넘기면 복사된다.
+7. C 문자열은 `'\0'`으로 끝난다. 배열 크기는 문자 수 + 1. 빈도는 `count[c - 'a']++`.
+8. 2차원 배열은 행 우선으로 저장되고, 함수 매개변수에서 **열 크기는 필수**다. `a[i][j]`의 i가 행, j가 열.
+9. 버블 정렬은 패스마다 최댓값이 뒤로, 선택 정렬은 최솟값을 앞으로 보낸다.

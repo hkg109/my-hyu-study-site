@@ -31,6 +31,8 @@ objectives:
 
 **책 읽는 법:** 슬라이드 제목 아래의 짧은 목록과 요약 한 줄이 강의 **핵심 필기**다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
 
+**형광펜 읽는 법:** ==yellow:노랑== 핵심 정의·결론 · ==red:빨강== 시험에서 헷갈리는 구분·함정 · ==blue:파랑== 외워야 할 순서·목록
+
 > [!PAGEBREAK]
 
 ## Chapter 2 개요
@@ -50,7 +52,7 @@ objectives:
 - **Knowledge Management Systems**
 - **Information Systems Function / Career**
 
-> **핵심 흐름: Process → Systems → Enterprise Integration → Collaboration → Knowledge → IS Function**
+> **핵심 흐름: ==blue:Process → Systems → Enterprise Integration → Collaboration → Knowledge → IS Function==**
 
 ---
 
@@ -69,13 +71,13 @@ objectives:
 - organizational culture 변화
 - **Microsoft Yammer** 도입
 
-> **문제는 단순히 software 부족이 아니라 process + culture + collaboration의 문제**
+> ==red:문제는 단순히 software 부족이 아니라 process + culture + collaboration의 문제==
 
 > [!NOTE]
-> Sharp의 문제는 “메신저가 없어서”가 아니었다. 위에서 아래로만 지시가 내려가는 구조라 현장의 아이디어가 위로 올라가지 못했고, 새 경쟁자가 빠르게 따라오는 동안 부서끼리 알고 있는 것을 나누지 못했다. 그래서 해결책도 도구(Yammer) 하나가 아니라 **목표 설정 → 공유 절차 재설계 → 문화 변화 → 도구 도입**의 묶음이었다.
+> Sharp의 문제는 “메신저가 없어서”가 아니었다. 위에서 아래로만 지시가 내려가는 구조라 현장의 아이디어가 위로 올라가지 못했고, 새 경쟁자가 빠르게 따라오는 동안 부서끼리 알고 있는 것을 나누지 못했다. 그래서 해결책도 도구(Yammer) 하나가 아니라 ==blue:목표 설정 → 공유 절차 재설계 → 문화 변화 → 도구 도입==의 묶음이었다.
 
 > [!EXAM]
-> 사례 문제에서 해결책을 쓸 때 기술 이름만 쓰면 감점된다. 1장의 세 차원처럼 **조직(문화·절차) + 경영(목표) + 기술(도구)**을 함께 쓴다.
+> ==red:사례 문제에서 해결책을 쓸 때 기술 이름만 쓰면 감점된다.== 1장의 세 차원처럼 ==blue:조직(문화·절차) + 경영(목표) + 기술(도구)==을 함께 쓴다.
 
 ---
 
@@ -85,10 +87,10 @@ objectives:
 - **teamwork + collaboration** → innovation / profit growth
 - knowledge dissemination에는 **organizational culture + business processes**가 중요
 
-> **Information system의 효과는 technology만이 아니라 organization과 process에 달려 있음**
+> ==Information system의 효과는 technology만이 아니라 organization과 process에 달려 있음==
 
 > [!NOTE]
-> 같은 협업 도구를 도입한 회사가 모두 성과를 내지는 못한다. 도구에 글을 올려도 상사가 읽지 않거나, 공유한 아이디어가 평가에 반영되지 않으면 직원은 다시 예전처럼 일한다. 지식이 퍼지려면 **공유하는 행동이 보상받는 문화**와 그 지식을 실제 업무에 쓰는 **프로세스**가 함께 있어야 한다.
+> 같은 협업 도구를 도입한 회사가 모두 성과를 내지는 못한다. 도구에 글을 올려도 상사가 읽지 않거나, 공유한 아이디어가 평가에 반영되지 않으면 직원은 다시 예전처럼 일한다. 지식이 퍼지려면 ==공유하는 행동이 보상받는 문화==와 그 지식을 실제 업무에 쓰는 **프로세스**가 함께 있어야 한다.
 
 ---
 
@@ -96,16 +98,16 @@ objectives:
 
 - **Business Process**
   - material / information / knowledge의 flow
-  - 특정 business task를 수행하는 **logically related set of tasks**
+  - 특정 business task를 수행하는 ==logically related set of tasks==
   - 한 functional area 내부 또는 **cross-functional** 가능
 - business = 여러 business processes의 집합으로 볼 수 있음
-- business process는 **asset 또는 liability**가 될 수 있음
+- business process는 ==red:asset 또는 liability==가 될 수 있음
   - outdated process → responsiveness / efficiency 저하
 
 > **Business Process = 업무를 수행하는 연결된 task들의 흐름**
 
 > [!CONCEPT]
-> **Business process** — 특정 업무를 수행하기 위해 논리적으로 연결된 활동의 집합. 물자·정보·지식의 흐름이며, 여러 부서를 가로지르면 **cross-functional**이다.
+> **Business process** — ==특정 업무를 수행하기 위해 논리적으로 연결된 활동의 집합.== 물자·정보·지식의 흐름이며, 여러 부서를 가로지르면 **cross-functional**이다.
 
 
 > [!NOTE]
@@ -128,7 +130,7 @@ objectives:
 > **각 functional area마다 고유한 business process가 존재**
 
 > [!NOTE]
-> 표의 프로세스는 부서 이름으로 묶여 있지만, 실제 일은 부서 경계에서 자주 막힌다. 예를 들어 인사팀의 “채용”은 현업 부서가 필요 인원을 알려 줘야 시작되고, 회계팀이 급여를 등록해야 끝난다. 그래서 다음 슬라이드의 주문 이행처럼 **중요한 프로세스는 대부분 cross-functional**이라는 점이 시험에 나온다.
+> 표의 프로세스는 부서 이름으로 묶여 있지만, 실제 일은 부서 경계에서 자주 막힌다. 예를 들어 인사팀의 “채용”은 현업 부서가 필요 인원을 알려 줘야 시작되고, 회계팀이 급여를 등록해야 끝난다. 그래서 다음 슬라이드의 주문 이행처럼 ==red:중요한 프로세스는 대부분 cross-functional==이라는 점이 시험에 나온다.
 
 ---
 
@@ -184,12 +186,12 @@ objectives:
 - digital music download
 - e-book purchase / one-click purchase
 
-> **IT는 기존 process를 빠르게 만들 뿐 아니라 새로운 process 자체를 가능하게 함**
+> ==IT는 기존 process를 빠르게 만들 뿐 아니라 새로운 process 자체를 가능하게 함==
 
-자동화와 프로세스 재설계의 차이는 **업무 순서가 바뀌었는가**로 확인할 수 있다. 기존 승인 절차를 그대로 두고 입력만 빨라졌다면 효율화이고, 같은 주문 정보를 여러 부서가 동시에 확인해 순차적인 전달·대기를 줄였다면 정보 흐름 자체를 바꾼 것이다.
+자동화와 프로세스 재설계의 차이는 ==red:업무 순서가 바뀌었는가==로 확인할 수 있다. 기존 승인 절차를 그대로 두고 입력만 빨라졌다면 효율화이고, 같은 주문 정보를 여러 부서가 동시에 확인해 순차적인 전달·대기를 줄였다면 정보 흐름 자체를 바꾼 것이다.
 
 > [!TRAP]
-> **자동화(automation)**는 기존 순서를 그대로 두고 빠르게 하는 것이고, **프로세스 재설계**는 정보 흐름을 바꿔 순서 자체를 바꾸는 것이다(차례대로 → 동시에).
+> ==red:자동화(automation)==는 ==red:기존 순서를 그대로 두고 빠르게 하는 것==이고, **프로세스 재설계**는 ==red:정보 흐름을 바꿔 순서 자체를 바꾸는 것==이다(차례대로 → 동시에).
 
 ---
 
@@ -201,9 +203,9 @@ objectives:
 | **Automate** | System이 routine steps 수행 | rules / models가 repeatable work 수행 |
 | **Agent** | AI가 defined workflow 수행 | tools / systems 호출, permissions / monitoring / escalation 필요 |
 
-> **AI 활용 수준: Assist → Automate → Agent**
+> **AI 활용 수준: ==blue:Assist → Automate → Agent==**
 
-세 수준의 차이는 AI가 결과를 만드는 데서 끝나는지, 실제 업무 단계를 수행하는지에 있다. Assist에서는 사람이 제안을 검토해 행동하고, Automate에서는 정해진 반복 단계를 시스템이 처리한다. Agent가 여러 도구를 이용해 흐름을 이어 간다면 권한 범위와 사람이 넘겨받아야 할 예외를 먼저 정해야 한다.
+세 수준의 차이는 AI가 결과를 만드는 데서 끝나는지, 실제 업무 단계를 수행하는지에 있다. Assist에서는 사람이 제안을 검토해 행동하고, Automate에서는 정해진 반복 단계를 시스템이 처리한다. Agent가 여러 도구를 이용해 흐름을 이어 간다면 ==red:권한 범위와 사람이 넘겨받아야 할 예외를 먼저 정해야 한다.==
 
 ---
 
@@ -214,16 +216,16 @@ objectives:
 ## Slide 10 — TPS (Transaction Processing Systems)
 
 - **Target**: operational managers & staff
-- **Function**: perform + record **daily routine transactions**
+- **Function**: perform + record ==daily routine transactions==
   - sales order entry / payroll / shipping
 - **Purpose**: operations status와 external environment monitor
-- **Decision**: **predefined + structured**
+- **Decision**: ==red:predefined + structured==
 - routine questions에 답하기 위한 필수 system
 
 > **TPS = operational level의 반복적이고 structured한 transaction을 처리·기록**
 
 > [!CONCEPT]
-> **TPS** — 주문·급여·배송 같은 **일상적이고 정형화된 거래**를 처리하고 기록하는 시스템. 운영 수준의 직원이 쓰고, 다른 모든 시스템의 데이터 원천이 된다.
+> **TPS** — 주문·급여·배송 같은 **일상적이고 정형화된 거래**를 처리하고 기록하는 시스템. 운영 수준의 직원이 쓰고, ==다른 모든 시스템의 데이터 원천이 된다.==
 
 
 > [!NOTE]
@@ -256,7 +258,7 @@ objectives:
 
 
 > [!NOTE]
-> 급여 TPS는 직원 데이터(시급·근무시간·세율)를 받아 급여를 계산하고, 그 결과를 여러 곳으로 내보낸다. 직원은 급여명세서를, 관리자는 인건비 보고서를, 회계는 총계정원장(General Ledger) 기록을, 정부는 세금 자료를 받는다. **하나의 거래 처리 결과가 여러 사용자에게 다른 형태로 쓰인다**는 점이 TPS가 회사 전체의 기반인 이유다.
+> 급여 TPS는 직원 데이터(시급·근무시간·세율)를 받아 급여를 계산하고, 그 결과를 여러 곳으로 내보낸다. 직원은 급여명세서를, 관리자는 인건비 보고서를, 회계는 총계정원장(General Ledger) 기록을, 정부는 세금 자료를 받는다. ==하나의 거래 처리 결과가 여러 사용자에게 다른 형태로 쓰인다==는 점이 TPS가 회사 전체의 기반인 이유다.
 ---
 
 ## Slide 12 — Business Intelligence (BI)
@@ -275,10 +277,10 @@ objectives:
 > **BI = data를 organize/analyze해서 decision making을 지원하는 tools**
 
 > [!NOTE]
-> BI는 특정 시스템 한 개의 이름이 아니라 **데이터를 모아 분석하는 도구와 방법 전체**를 부르는 큰 우산이다. MIS·DSS·ESS는 그 우산 아래에서 누구의 어떤 결정을 돕느냐에 따라 나뉜다. 그래서 “BI vs MIS” 문제는 “큰 범주 vs 그 안의 한 유형”으로 답한다.
+> BI는 특정 시스템 한 개의 이름이 아니라 ==데이터를 모아 분석하는 도구와 방법 전체==를 부르는 큰 우산이다. MIS·DSS·ESS는 그 우산 아래에서 누구의 어떤 결정을 돕느냐에 따라 나뉜다. 그래서 “BI vs MIS” 문제는 “큰 범주 vs 그 안의 한 유형”으로 답한다.
 
 > [!TRAP]
-> **BI는 큰 범주**(데이터와 분석 도구 전체)이고, MIS·DSS·ESS는 그 안에서 누구의 어떤 결정을 돕느냐로 나뉜 시스템이다. “BI vs MIS”는 범주 vs 구성원의 비교다.
+> ==red:BI는 큰 범주==(데이터와 분석 도구 전체)이고, MIS·DSS·ESS는 그 안에서 누구의 어떤 결정을 돕느냐로 나뉜 시스템이다. “BI vs MIS”는 범주 vs 구성원의 비교다.
 
 ---
 
@@ -286,9 +288,9 @@ objectives:
 
 - **Target**: middle management
 - **Input**: data from **TPS**
-- **Output**: firm의 **current performance report**
-- routine questions + **predefined procedures**
-- analytic capability가 적고 flexible하지 않음
+- **Output**: firm의 ==current performance report==
+- routine questions + ==red:predefined procedures==
+- ==red:analytic capability가 적고 flexible하지 않음==
 
 ### 주의
 - 학문 분야로서의 MIS와 **system 종류로서 MIS**는 의미가 다름
@@ -296,7 +298,7 @@ objectives:
 > **MIS = TPS data를 요약해 middle managers에게 정기 report 제공**
 
 > [!NOTE]
-> 카페 점장이 매주 받는 “메뉴별 판매량과 지난주 대비 증감” 보고서가 MIS의 결과물이다. TPS가 쌓은 거래 기록을 정해진 형식으로 요약해 주기 때문에 **현황을 확인하고 이상한 점을 발견**하는 데 좋다. 하지만 “신메뉴를 내면 매출이 얼마나 늘까?”처럼 조건을 바꿔 보는 질문에는 약하다. 그건 DSS의 역할이다.
+> 카페 점장이 매주 받는 “메뉴별 판매량과 지난주 대비 증감” 보고서가 MIS의 결과물이다. TPS가 쌓은 거래 기록을 정해진 형식으로 요약해 주기 때문에 ==현황을 확인하고 이상한 점을 발견==하는 데 좋다. ==red:하지만 “신메뉴를 내면 매출이 얼마나 늘까?”처럼 조건을 바꿔 보는 질문에는 약하다.== 그건 DSS의 역할이다.
 
 ---
 
@@ -338,7 +340,7 @@ objectives:
 
 
 > [!NOTE]
-> 그림의 핵심 화살표는 **summarized transaction data**다. MIS는 새 데이터를 만들지 않고 TPS가 이미 기록한 주문·자재·회계 데이터를 요약해 파일로 모은 뒤, 보고서와 대시보드로 관리자에게 보여 준다. 그래서 TPS 데이터가 틀리면 MIS 보고서도 그대로 틀린다.
+> 그림의 핵심 화살표는 **summarized transaction data**다. MIS는 새 데이터를 만들지 않고 TPS가 이미 기록한 주문·자재·회계 데이터를 요약해 파일로 모은 뒤, 보고서와 대시보드로 관리자에게 보여 준다. ==red:그래서 TPS 데이터가 틀리면 MIS 보고서도 그대로 틀린다.==
 ---
 
 ## Slide 15 — Figure 2.4 Sample MIS Report
@@ -364,26 +366,26 @@ objectives:
 > **MIS report는 manager가 performance를 비교·monitor하기 쉽게 요약한 정보**
 
 > [!NOTE]
-> 숫자 하나로 계획 대비 실적을 읽는 방법이다. 1.19는 계획보다 19% 더 팔았다는 뜻이고 0.85는 계획의 85%만 팔았다는 뜻이다. 관리자는 수백 개의 거래를 다 보지 않고도 **1.00에서 크게 벗어난 항목만 골라** 원인을 살펴볼 수 있다. 이것이 MIS가 “요약”을 하는 이유다.
+> 숫자 하나로 계획 대비 실적을 읽는 방법이다. 1.19는 계획보다 19% 더 팔았다는 뜻이고 0.85는 계획의 85%만 팔았다는 뜻이다. 관리자는 수백 개의 거래를 다 보지 않고도 ==1.00에서 크게 벗어난 항목만 골라== 원인을 살펴볼 수 있다. 이것이 MIS가 “요약”을 하는 이유다.
 
 ---
 
 ## Slide 16 — Decision Support Systems (DSS)
 
 - **Target**: middle management
-- **Purpose**: **non-routine decision making** 지원
+- **Purpose**: ==non-routine decision making== 지원
   - ex) December sales가 2배라면 production schedule 영향?
 - **Data**
   - internal: TPS / MIS data
   - external information 가능
 
 ### Types
-- **Model-driven DSS**: analytical model 중심
-- **Data-driven DSS**: large data에서 useful information 추출
+- **Model-driven DSS**: ==blue:analytical model 중심==
+- **Data-driven DSS**: ==blue:large data에서 useful information 추출==
 
 > **DSS = analytical model / data를 이용해 non-routine decision 지원**
 
-MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 middle manager가 같은 판매 기록을 보더라도, MIS는 ‘계획 대비 실적이 얼마인가’를 정해진 형식으로 보여 주고 DSS는 ‘수요가 달라지면 어떤 선택이 유리한가’를 분석한다. 핵심은 **정기적인 현황 확인인지, 조건을 바꿔 보는 판단인지**이다.
+MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 middle manager가 같은 판매 기록을 보더라도, MIS는 ‘계획 대비 실적이 얼마인가’를 정해진 형식으로 보여 주고 DSS는 ‘수요가 달라지면 어떤 선택이 유리한가’를 분석한다. 핵심은 ==red:정기적인 현황 확인인지, 조건을 바꿔 보는 판단인지==이다.
 
 > [!CONCEPT]
 > **Model-driven DSS** — 분석 모델(what-if, 시뮬레이션) 중심. **Data-driven DSS** — 대량의 데이터에서 쓸모 있는 정보를 찾아냄.
@@ -391,7 +393,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > [!PROBLEM]
 > **문제.** 한 관리자가 “12월 판매가 두 배가 되면 생산 일정은 어떻게 바뀌나?”를 알고 싶다. 어떤 시스템이 알맞은가?
 >
-> **풀이.** ① 정해진 보고서가 아니라 **조건을 바꿔 보는 질문**이다 → non-routine ② 사용자는 중간관리자다 ③ **DSS**(그중 모델 중심 DSS).
+> **풀이.** ① 정해진 보고서가 아니라 ==red:조건을 바꿔 보는 질문==이다 → non-routine ② 사용자는 중간관리자다 ③ **DSS**(그중 모델 중심 DSS).
 
 ---
 
@@ -430,7 +432,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 ## Slide 18 — Executive Support Systems (ESS) (1/2)
 
 - **Target**: senior management
-- **Purpose**: **non-routine / strategic decisions** 지원
+- **Purpose**: ==non-routine / strategic decisions== 지원
 - 요구되는 것
   - judgment
   - evaluation
@@ -449,7 +451,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **ESS = senior managers가 strategic decision을 빠르게 내리도록 핵심 정보를 제공**
 
 > [!CONCEPT]
-> **ESS** — 최고경영진의 **전략적·비정형 결정**을 지원. 세법·경쟁사 같은 **외부 정보**와 MIS·DSS가 요약한 내부 정보를 **digital dashboard**로 한눈에 보여 준다.
+> **ESS** — 최고경영진의 **전략적·비정형 결정**을 지원. 세법·경쟁사 같은 ==red:외부 정보==와 MIS·DSS가 요약한 내부 정보를 **digital dashboard**로 한눈에 보여 준다.
 
 
 > [!NOTE]
@@ -458,7 +460,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 ## Slide 19 — ESS + MIS + DSS Connection
 
-- **ESS relies on MIS + DSS inputs**
+- ==ESS relies on MIS + DSS inputs==
 - systems는 서로 isolated되면 안 됨
 - accurate MIS / DSS data가 ESS 품질을 결정
 - modern ESS: **Digital Dashboard / ease of use / simple display / quick access**
@@ -467,22 +469,22 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 | System | Main User | Decision | 핵심 역할 |
 |---|---|---|---|
-| **TPS** | operational managers & staff | routine / structured | daily transaction 처리·기록 |
-| **MIS** | middle management | routine / predefined | TPS data 요약·report |
-| **DSS** | middle management | non-routine / analytical | model / data 기반 분석 |
-| **ESS** | senior management | non-routine / strategic | 핵심 KPI와 strategic information 제공 |
+| **TPS** | operational managers & staff | ==red:routine / structured== | daily transaction 처리·기록 |
+| **MIS** | middle management | ==red:routine / predefined== | TPS data 요약·report |
+| **DSS** | middle management | ==red:non-routine / analytical== | model / data 기반 분석 |
+| **ESS** | senior management | ==red:non-routine / strategic== | 핵심 KPI와 strategic information 제공 |
 
-> **TPS → MIS / DSS → ESS → Senior Management**
+> ==blue:TPS → MIS / DSS → ESS → Senior Management==
 
 ### 개념도 · 관리 수준별 시스템 연결
 
 ![운영 수준의 TPS가 MIS와 DSS를 거쳐 전략 수준의 ESS에 정보를 공급하고 전사 애플리케이션이 모든 수준을 연결하는 구조](/materials/diagrams/mis-02-management-systems.svg)
 
-**그림 읽기:** TPS는 일상 거래를 기록하는 기반이고, MIS는 이를 정기 보고서로 요약하며 DSS는 같은 내부 데이터와 외부 데이터를 분석한다. ESS는 MIS와 DSS의 핵심 정보를 받아 전략적 판단을 지원한다. 오른쪽의 ERP·SCM·CRM·KMS는 특정 계층에만 속하는 시스템이 아니라 부서와 관리 수준의 경계를 가로질러 연결한다.
+**그림 읽기:** TPS는 일상 거래를 기록하는 기반이고, MIS는 이를 정기 보고서로 요약하며 DSS는 같은 내부 데이터와 외부 데이터를 분석한다. ESS는 MIS와 DSS의 핵심 정보를 받아 전략적 판단을 지원한다. ==red:오른쪽의 ERP·SCM·CRM·KMS는 특정 계층에만 속하는 시스템이 아니라 부서와 관리 수준의 경계를 가로질러 연결한다.==
 
 > [!BOARD]
 > - **TPS**(운영 · 정형 거래) → **MIS**(중간 · 정기 보고) / **DSS**(중간 · 비정형 분석) → **ESS**(최고 · 전략)
-> - 아래 시스템의 데이터가 위 시스템의 품질을 결정한다
+> - ==아래 시스템의 데이터가 위 시스템의 품질을 결정한다==
 
 > [!CHECK]
 > **1.** 관리 수준별 네 가지 시스템을 운영 단계부터 순서대로 쓰시오.
@@ -508,18 +510,18 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 | Application | 주요 대상 / 역할 |
 |---|---|
-| **ERP / Enterprise Systems** | 내부 functional areas와 data 통합 |
-| **SCM** | suppliers / logistics / supply chain 관리 |
-| **CRM** | customers / sales / marketing / service 관리 |
-| **KMS** | organizational knowledge 수집·공유·활용 |
+| **ERP / Enterprise Systems** | ==blue:내부 functional areas와 data 통합== |
+| **SCM** | ==blue:suppliers / logistics / supply chain 관리== |
+| **CRM** | ==blue:customers / sales / marketing / service 관리== |
+| **KMS** | ==blue:organizational knowledge 수집·공유·활용== |
 
 > **Enterprise Applications = 여러 부서와 management level을 연결하는 firm-wide systems**
 
 > [!NOTE]
-> 앞의 TPS·MIS·DSS·ESS가 **관리 계층(세로)**으로 나눈 시스템이라면, Enterprise Applications는 **부서와 회사 경계(가로)**를 연결하는 시스템이다. 영업·생산·회계가 각자 다른 프로그램과 엑셀을 쓰면 같은 고객 주문도 부서마다 다르게 기록된다. 전사 애플리케이션은 이 흩어진 기록을 하나의 흐름으로 묶는다.
+> 앞의 TPS·MIS·DSS·ESS가 ==red:관리 계층(세로)==으로 나눈 시스템이라면, Enterprise Applications는 ==red:부서와 회사 경계(가로)==를 연결하는 시스템이다. 영업·생산·회계가 각자 다른 프로그램과 엑셀을 쓰면 같은 고객 주문도 부서마다 다르게 기록된다. 전사 애플리케이션은 이 흩어진 기록을 하나의 흐름으로 묶는다.
 
 > [!EXAM]
-> “TPS는 ERP의 일부인가?” 같은 질문은 분류 기준이 다르다는 점으로 답한다. 관리 수준별 분류(TPS–ESS)와 연결 범위별 분류(ERP·SCM·CRM·KMS)는 서로 다른 축이다.
+> “TPS는 ERP의 일부인가?” 같은 질문은 분류 기준이 다르다는 점으로 답한다. ==red:관리 수준별 분류(TPS–ESS)와 연결 범위별 분류(ERP·SCM·CRM·KMS)는 서로 다른 축이다.==
 
 ---
 
@@ -554,7 +556,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 ![ERP의 공통 내부 데이터를 중심으로 SCM은 공급자와 물류를, CRM은 고객 접점을, KMS는 조직 지식을 연결하는 구조](/materials/diagrams/mis-02-enterprise-applications.svg)
 
-**그림 읽기:** ERP는 내부 data와 process의 공통 기반이고, SCM과 CRM은 각각 supplier side와 customer side를 연결한다. KMS는 이 과정에서 생긴 know-how를 수집·공유·적용한다. 네 system은 대체 관계가 아니라 서로 다른 경계를 연결한다.
+**그림 읽기:** ERP는 내부 data와 process의 공통 기반이고, SCM과 CRM은 각각 supplier side와 customer side를 연결한다. KMS는 이 과정에서 생긴 know-how를 수집·공유·적용한다. ==red:네 system은 대체 관계가 아니라 서로 다른 경계를 연결한다.==
 
 ---
 
@@ -562,8 +564,8 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 - **aka ERP (Enterprise Resource Planning)**
 - 여러 functional areas의 data 수집
-- **single central data repository**에 저장
-- **fragmented data problem** 해결
+- ==single central data repository==에 저장
+- ==fragmented data problem== 해결
 
 ### Benefits
 - information flow 통합
@@ -578,13 +580,13 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > **ERP = 여러 부서의 data를 하나의 central repository로 통합**
 
-앞의 주문 이행 사례에 대입하면 ERP의 의미가 선명해진다. 영업이 입력한 주문을 회계와 생산이 각자 다시 입력하는 대신 같은 기록을 기준으로 업무를 이어 간다. 중앙 저장소의 목적은 데이터를 한곳에 모으는 것 자체보다 부서마다 다른 기록 때문에 생기는 조정 문제를 줄이는 데 있다.
+앞의 주문 이행 사례에 대입하면 ERP의 의미가 선명해진다. 영업이 입력한 주문을 회계와 생산이 각자 다시 입력하는 대신 같은 기록을 기준으로 업무를 이어 간다. ==중앙 저장소의 목적은 데이터를 한곳에 모으는 것 자체보다 부서마다 다른 기록 때문에 생기는 조정 문제를 줄이는 데 있다.==
 
 > [!CONCEPT]
 > **ERP(Enterprise system)** — 여러 기능 부서의 데이터를 **하나의 중앙 저장소**에 모아 부서마다 흩어진 데이터 문제를 해결하는 시스템.
 
 > [!TRAP]
-> **Enterprise applications**(ERP·SCM·CRM·KMS 전체)와 **enterprise systems**(그중 ERP)를 혼동하지 말자. 이 장에서 ES ≈ ERP다.
+> **Enterprise applications**(ERP·SCM·CRM·KMS 전체)와 **enterprise systems**(그중 ERP)를 혼동하지 말자. ==red:이 장에서 ES ≈ ERP다.==
 
 ---
 
@@ -600,7 +602,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **ERP trend = on-premise → Cloud ERP + embedded AI**
 
 > [!NOTE]
-> 예전에는 회사가 서버를 사서 ERP를 직접 설치했다면, 지금은 구독료를 내고 클라우드에서 빌려 쓰는 방식이 늘고 있다. 업데이트가 자동으로 되고 AI 기능이 빨리 붙는 장점이 있지만, 매달 비용이 나가고 기존 데이터를 옮기는 작업이 어렵고 특정 공급업체에 묶이는(**vendor dependence**) 위험도 있다. 시험에서는 장점과 관리상의 부담을 함께 쓴다.
+> 예전에는 회사가 서버를 사서 ERP를 직접 설치했다면, 지금은 구독료를 내고 클라우드에서 빌려 쓰는 방식이 늘고 있다. 업데이트가 자동으로 되고 AI 기능이 빨리 붙는 장점이 있지만, 매달 비용이 나가고 기존 데이터를 옮기는 작업이 어렵고 특정 공급업체에 묶이는(**vendor dependence**) 위험도 있다. ==red:시험에서는 장점과 관리상의 부담을 함께 쓴다.==
 
 ---
 
@@ -617,13 +619,13 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
   - inventory levels
 
 ### Goal
-- correct amount of product
-- source → point of consumption
-- as quickly as possible
-- at lowest cost
+- ==blue:correct amount of product==
+- ==blue:source → point of consumption==
+- ==blue:as quickly as possible==
+- ==blue:at lowest cost==
 
 ### Type
-- **inter-organizational system**
+- ==inter-organizational system==
 - organizational boundaries를 넘어 information flow 자동화
 
 > **SCM = supply chain 전체의 product / information flow를 최적화**
@@ -633,7 +635,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 
 > [!NOTE]
-> 카페가 원두 업체, 우유 업체, 배송 업체와 주문·재고 정보를 공유하면, 원두가 떨어지기 전에 자동으로 발주가 나가고 배송 일정도 맞출 수 있다. SCM은 이렇게 **회사 바깥의 여러 조직을 잇는 inter-organizational system**이라는 점이 ERP와 다르다. 목표는 “필요한 양을, 필요한 곳에, 가장 빨리, 가장 싸게”라는 네 조건을 동시에 맞추는 것이다.
+> 카페가 원두 업체, 우유 업체, 배송 업체와 주문·재고 정보를 공유하면, 원두가 떨어지기 전에 자동으로 발주가 나가고 배송 일정도 맞출 수 있다. SCM은 이렇게 ==red:회사 바깥의 여러 조직을 잇는 inter-organizational system==이라는 점이 ERP와 다르다. 목표는 “필요한 양을, 필요한 곳에, 가장 빨리, 가장 싸게”라는 네 조건을 동시에 맞추는 것이다.
 ---
 
 ## Slide 25 — Walmart’s AI-Enabled Supply Chain
@@ -646,10 +648,10 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 | **Learn** | operating feedback으로 개선 |
 | **Control** | data quality / access / exception / performance / accountability 관리 |
 
-> **AI-enabled SCM = Sense → Predict → Act → Learn + Control**
+> **AI-enabled SCM = ==blue:Sense → Predict → Act → Learn + Control==**
 
 > [!NOTE]
-> 다섯 단계는 사람이 재고를 관리하는 방식을 시스템으로 옮긴 것이다. 신호를 모으고(Sense), 부족해질 곳을 미리 예측하고(Predict), 재고를 옮기고(Act), 결과를 보고 다음 예측을 고친다(Learn). 마지막 **Control**은 AI가 틀렸을 때 누가 확인하고 책임지는지를 정하는 단계로, 자동화가 커질수록 더 중요해진다.
+> 다섯 단계는 사람이 재고를 관리하는 방식을 시스템으로 옮긴 것이다. 신호를 모으고(Sense), 부족해질 곳을 미리 예측하고(Predict), 재고를 옮기고(Act), 결과를 보고 다음 예측을 고친다(Learn). 마지막 **Control**은 AI가 틀렸을 때 누가 확인하고 책임지는지를 정하는 단계로, ==red:자동화가 커질수록 더 중요해진다.==
 
 ---
 
@@ -661,23 +663,23 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 ### Goals
 - optimize revenue
 - improve customer satisfaction
-- increase customer retention
-- identify & retain profitable customers
+- ==increase customer retention==
+- ==identify & retain profitable customers==
 - increase sales
 
 > **CRM = customer data와 customer-facing processes를 통합해 관계와 sales를 개선**
 
 > [!CONCEPT]
-> **CRM** — 영업·마케팅·서비스의 고객 관련 프로세스를 통합해, 수익성 높은 고객을 찾아 **유지(retention)**하고 매출을 높인다.
+> **CRM** — 영업·마케팅·서비스의 고객 관련 프로세스를 통합해, 수익성 높은 고객을 찾아 ==유지(retention)==하고 매출을 높인다.
 
 
 > [!NOTE]
-> 단골손님이 매번 디카페인 라테를 주문한다는 기록이 영업·마케팅·서비스 담당자 모두에게 보이면, 신메뉴 쿠폰을 그 손님에게 맞춰 보내고 불만 전화가 와도 이력을 보고 응대할 수 있다. CRM의 핵심은 고객 정보를 **한곳에 모아 고객 접점 프로세스 전체가 같은 정보를 쓰게** 하는 것이다. 특히 이익을 많이 주는 고객을 찾아 유지(retention)하는 데 초점이 있다.
+> 단골손님이 매번 디카페인 라테를 주문한다는 기록이 영업·마케팅·서비스 담당자 모두에게 보이면, 신메뉴 쿠폰을 그 손님에게 맞춰 보내고 불만 전화가 와도 이력을 보고 응대할 수 있다. CRM의 핵심은 고객 정보를 ==한곳에 모아 고객 접점 프로세스 전체가 같은 정보를 쓰게== 하는 것이다. 특히 이익을 많이 주는 고객을 찾아 유지(retention)하는 데 초점이 있다.
 ---
 
 ## Slide 27 — Knowledge Management Systems (KMS)
 
-- knowledge / expertise를 **capture + apply**
+- knowledge / expertise를 ==capture + apply==
 - relevant knowledge를 collect하고 필요한 곳에서 사용 가능하게 함
 - business processes / management decisions 개선
 - external knowledge sources와 연결
@@ -690,7 +692,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **KMS = organizational knowledge를 수집·공유·활용하는 system**
 
 > [!NOTE]
-> 10년 차 바리스타가 알고 있는 “습한 날 원두 분쇄도를 조절하는 법”은 그 사람이 그만두면 사라진다. KMS는 이런 노하우와 문제 해결 방법을 모아 두고, 필요한 직원이 필요한 순간에 찾아 쓰게 한다. 데이터가 아니라 **경험과 전문성**을 다룬다는 점이 다른 전사 시스템과의 차이이며, 자세한 내용은 2장 B의 지식관리 부분에서 이어진다.
+> 10년 차 바리스타가 알고 있는 “습한 날 원두 분쇄도를 조절하는 법”은 그 사람이 그만두면 사라진다. KMS는 이런 노하우와 문제 해결 방법을 모아 두고, 필요한 직원이 필요한 순간에 찾아 쓰게 한다. 데이터가 아니라 ==red:경험과 전문성==을 다룬다는 점이 다른 전사 시스템과의 차이이며, 자세한 내용은 2장 B의 지식관리 부분에서 이어진다.
 
 ---
 
@@ -708,7 +710,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 | | Intranet | Extranet |
 |---|---|---|
-| 대상 | Employees | Authorized external partners |
+| 대상 | ==red:Employees== | ==red:Authorized external partners== |
 | 범위 | Internal | Internal + selected external |
 | 목적 | 내부 정보 공유 | 외부 partner와 collaboration |
 
@@ -718,7 +720,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > 직원만 들어가는 사내 공지·매뉴얼 사이트가 Intranet이고, 여기에 원두 공급업체가 로그인해 우리 재고와 발주서를 볼 수 있게 열어 주면 Extranet이다. 둘 다 인터넷 기술을 쓰지만 **누구에게 문을 열어 주느냐**가 다르다. Extranet은 SCM처럼 외부 파트너와의 협업을 위한 통로가 된다.
 
 > [!TRAP]
-> 둘 다 인터넷 기술을 쓴다. 차이는 **누구에게 문을 여느냐**다. 직원만 → intranet, 허가된 외부 파트너까지 → extranet.
+> 둘 다 인터넷 기술을 쓴다. 차이는 **누구에게 문을 여느냐**다. ==red:직원만 → intranet, 허가된 외부 파트너까지 → extranet.==
 
 ---
 
@@ -727,7 +729,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 | 개념 | 정의 | 범위 |
 |---|---|---|
 | **E-business** | digital technology / Internet으로 major business processes 수행 | 가장 넓음 |
-| **E-commerce** | Internet을 통한 buying / selling | **E-business의 subset** |
+| **E-commerce** | Internet을 통한 buying / selling | ==red:E-business의 subset== |
 | **E-government** | Internet으로 citizens / employees / businesses에 public information / services 제공 | public sector |
 
 > **E-commerce ⊂ E-business / E-government는 공공부문의 Internet 활용**
@@ -736,7 +738,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > 카페가 앱으로 원두를 판매하면 E-commerce이고, 그 판매를 포함해 직원 근무표·발주·회계까지 디지털로 처리하면 E-business다. 즉 E-commerce는 “사고파는 것”만 보는 **부분집합**이다. 정부가 온라인으로 민원과 공공 정보를 제공하는 것은 E-government로, 주체가 공공부문이라는 점이 다르다.
 
 > [!TRAP]
-> **E-commerce ⊂ E-business.** “e-business는 e-commerce의 일부”라는 보기는 포함 관계를 거꾸로 쓴 오답이다.
+> **E-commerce ⊂ E-business.** ==red:“e-business는 e-commerce의 일부”라는 보기는 포함 관계를 거꾸로 쓴 오답이다.==
 
 > [!CHECK]
 > **4.** ERP가 해결하는 핵심 문제는 무엇인가?
