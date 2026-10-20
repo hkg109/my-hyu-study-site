@@ -64,7 +64,7 @@ export function AdminProvider({ children, initialAdmin }: { children: React.Reac
             <Dialog.Close asChild><button className="button primary">계속 편집하기</button></Dialog.Close>
           </div> : <form onSubmit={authenticate} className="admin-login-form">
             <label htmlFor="admin-password">비밀번호</label>
-            <input id="admin-password" type="password" inputMode="numeric" autoComplete="current-password" autoFocus value={password} onChange={event => { setPassword(event.target.value); setError(""); }} placeholder="비밀번호 입력" aria-invalid={Boolean(error)} aria-describedby={error ? "admin-password-error" : undefined} />
+            <input id="admin-password" type="password" autoComplete="current-password" autoFocus value={password} onChange={event => { setPassword(event.target.value); setError(""); }} placeholder="비밀번호 입력" aria-invalid={Boolean(error)} aria-describedby={error ? "admin-password-error" : undefined} />
             {error && <p id="admin-password-error" className="admin-error" role="alert">{error}</p>}
             <button className="button primary" type="submit" disabled={pending}>{pending ? "확인 중…" : "관리자 모드 시작"}</button>
           </form>}

@@ -25,7 +25,7 @@ export default async function UnlockPage({ searchParams }: { searchParams: Promi
         <form method="post" action="/api/practice-access" className="admin-login-form">
           <input type="hidden" name="next" value={doc.path} />
           <label htmlFor="practice-password">비밀번호</label>
-          <input id="practice-password" name="password" type="password" inputMode="numeric" autoComplete="current-password" autoFocus required aria-invalid={Boolean(error)} aria-describedby={error ? "practice-password-error" : undefined} />
+          <input id="practice-password" name="password" type="password" autoComplete="current-password" autoFocus required aria-invalid={Boolean(error)} aria-describedby={error ? "practice-password-error" : undefined} />
           {error && <p id="practice-password-error" className="admin-error" role="alert">비밀번호가 맞지 않습니다. 다시 입력해 주세요.</p>}
           <button className="button primary" type="submit">족보 열기</button>
         </form>
