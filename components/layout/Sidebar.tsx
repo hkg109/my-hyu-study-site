@@ -8,6 +8,7 @@ import { useProgress } from "@/components/lecture/ProgressProvider";
 import { useAdmin } from "@/components/admin/AdminContext";
 import { useEffect, useState } from "react";
 import { forgetNoteDraft, NOTE_TITLE_EVENT } from "@/lib/note-draft";
+import { CreateDocumentDialog, type CreateTarget } from "@/components/admin/CreateDocumentDialog";
 
 type Level = "grade" | "semester" | "subject";
 
@@ -20,6 +21,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
   const documents = practiceMode ? exams : lectures;
   const [editedTitles, setEditedTitles] = useState<Record<string, string>>({});
   const [pending, setPending] = useState(false);
+  const [createTarget, setCreateTarget] = useState<CreateTarget>();
   useEffect(() => {
     const syncTitle = (event: Event) => {
       const detail = (event as CustomEvent<{ path: string; title: string }>).detail;
@@ -43,16 +45,11 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
     } finally { setPending(false); }
   };
 
-  const addDocument = async (gradeId: string, semesterId: string, subjectId: string) => {
-    const title = window.prompt(practiceMode ? "새 족보 제목을 입력하세요." : "새 강의 노트 제목을 입력하세요.", practiceMode ? "새 족보" : "새 강의 노트");
-    if (!title?.trim()) return;
-    setPending(true);
-    try {
-      const response = await fetch(practiceMode ? "/api/admin/practice" : "/api/admin/lectures", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ gradeId, semesterId, subjectId, title }) });
-      const result = await response.json().catch(() => ({})) as { error?: string; path?: string };
-      if (!response.ok || !result.path) { window.alert(result.error ?? "노트를 만들지 못했습니다."); return; }
-      router.refresh(); router.push(result.path); onNavigate?.();
-    } finally { setPending(false); }
+  // Opens the template dialog; the new note opens in the editor once it exists.
+  const addDocument = (target: CreateTarget) => setCreateTarget(target);
+  const openCreated = (path: string) => {
+    setCreateTarget(undefined);
+    router.refresh(); router.push(`${path}?edit=1`); onNavigate?.();
   };
 
   const deleteCategory = async (level: Level, label: string, ids: { gradeId?: string; semesterId?: string; subjectId?: string }) => {
@@ -101,7 +98,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
         <summary><span>{semester.name}</span><span className="catalog-actions">{editButton(semester.name, () => catalogAction("rename", "semester", semester.name, { gradeId: grade.id, semesterId: semester.id }))}{deleteButton(semester.name, () => deleteCategory("semester", semester.name, { gradeId: grade.id, semesterId: semester.id }))}{addButton("과목", () => catalogAction("add", "subject", undefined, { gradeId: grade.id, semesterId: semester.id }))}<ChevronDown size={13} /></span></summary>
         {[...semester.subjects].sort((a, b) => a.order - b.order).map(subject => {
           const subjectDocuments = documents.filter(document => document.gradeId === grade.id && document.semesterId === semester.id && document.subjectId === subject.id);
-          return <details open className="catalog-subject" key={subject.id}><summary><span>{subject.name}</span><span className="catalog-actions">{editButton(subject.name, () => catalogAction("rename", "subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{deleteButton(subject.name, () => deleteCategory("subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{addButton(practiceMode ? "족보" : "노트", () => addDocument(grade.id, semester.id, subject.id))}<ChevronDown size={12} /></span></summary>
+          return <details open className="catalog-subject" key={subject.id}><summary><span>{subject.name}</span><span className="catalog-actions">{editButton(subject.name, () => catalogAction("rename", "subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{deleteButton(subject.name, () => deleteCategory("subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{addButton(practiceMode ? "족보" : "노트", () => addDocument({ gradeId: grade.id, semesterId: semester.id, subjectId: subject.id, subjectName: subject.name }))}<ChevronDown size={12} /></span></summary>
             <div>{subjectDocuments.map(document => <div className="side-document-row" key={document.path}><Link href={document.path} onClick={onNavigate} className={`side-link ${pathname === document.path ? "active" : ""}`} aria-current={pathname === document.path ? "page" : undefined}><span className="side-order">{String(document.order).padStart(2, "0")}</span><span>{editedTitles[document.path] ?? document.title}</span>{!practiceMode && progress[document.slug.join("/")] && <Check size={14} aria-label="학습 완료" className="trailing" />}</Link>{isAdmin && <button type="button" className="catalog-icon-button catalog-delete-button side-document-delete" disabled={pending} aria-label={`${editedTitles[document.path] ?? document.title} 삭제`} onClick={() => deleteDocument(document)}><Trash2 size={12} /></button>}</div>)}</div>
           </details>;
         })}
@@ -109,5 +106,6 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
     </details>)}
     <div className="sidebar-section resources"><span className="nav-label">자료</span><Link href="/practice" onClick={onNavigate} className={`side-link ${pathname.startsWith("/practice") ? "active" : ""}`}><FileArchive size={16} />족보</Link></div>
     <div className="sidebar-note"><span className="small-logo">HJS STUDY</span><p>학년·학기·과목별로<br />차곡차곡 기록합니다.</p></div>
+    {isAdmin && <CreateDocumentDialog kind={practiceMode ? "practice" : "lectures"} target={createTarget} onClose={() => setCreateTarget(undefined)} onCreated={openCreated} />}
   </nav>;
 }

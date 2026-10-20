@@ -38,6 +38,21 @@ export function MarkdownEditor({ path, filename, source, children }: { path: str
     setEditing(true);
   };
 
+  // A note created from a template opens with ?edit=1 so the admin lands straight in the editor.
+  useEffect(() => {
+    if (!isAdmin || editing) return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("edit") !== "1") return;
+    const frame = requestAnimationFrame(() => {
+      url.searchParams.delete("edit");
+      window.history.replaceState(window.history.state, "", url);
+      setValue(current => loaded ? current : loadNoteDraft(path, source));
+      setLoaded(true);
+      setEditing(true);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [isAdmin, editing, loaded, path, source]);
+
   const update = (next: string) => { setValue(next); saveNoteDraft(path, next); };
 
   const onChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
