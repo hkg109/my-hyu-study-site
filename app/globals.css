@@ -559,6 +559,40 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   html.print-mode-questions .study-answer,html.print-mode-questions .study-answer-translation,html.print-mode-questions .study-hint { display:none!important; }
 }
 
+/* Mobile drawer: the main sections stay pinned while the subject list scrolls underneath. */
+.mobile-drawer { display:flex; flex-direction:column; overflow:hidden; }
+.mobile-drawer .drawer-heading { flex-shrink:0; }
+.drawer-primary-nav { flex-shrink:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px; padding:12px 14px; border-bottom:1px solid var(--border); background:var(--background); }
+.drawer-primary-nav a { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; min-height:58px; padding:8px 4px; border:1px solid var(--border); border-radius:4px; color:var(--muted); font-size:13px; font-weight:550; text-align:center; }
+.drawer-primary-nav a:hover { color:var(--foreground); background:var(--surface-hover); }
+.drawer-primary-nav a.selected { color:var(--foreground); border-color:var(--foreground); background:var(--surface-active); font-weight:650; }
+.drawer-scroll { flex:1; min-height:0; overflow:auto; overscroll-behavior:contain; }
+.mobile-drawer .drawer-scroll .sidebar-content { min-height:100%; }
+
+/* Mobile and tablet table of contents (the desktop column takes over from 1280px). */
+.mobile-toc { display:none; }
+@media screen and (max-width:1279px) {
+  .mobile-toc { display:block; }
+  .mobile-toc-trigger { position:fixed; z-index:40; right:max(16px,env(safe-area-inset-right)); bottom:calc(16px + env(safe-area-inset-bottom)); display:flex; align-items:center; gap:7px; max-width:min(340px,calc(100vw - 32px)); min-height:44px; padding:0 15px; border:1px solid var(--border-strong); border-radius:22px; color:var(--foreground); background:color-mix(in srgb,var(--background) 94%,transparent); backdrop-filter:blur(10px); box-shadow:0 8px 28px rgb(0 0 0 / .14); font-size:13px; font-weight:600; }
+  .mobile-toc-trigger:hover { background:var(--surface-hover); }
+  .mobile-toc-current { min-width:0; overflow:hidden; color:var(--muted); font-weight:500; text-overflow:ellipsis; white-space:nowrap; }
+  .mobile-toc-current::before { content:"·"; margin-right:6px; }
+}
+.mobile-toc-sheet { position:fixed; z-index:51; right:0; bottom:0; left:0; display:flex; flex-direction:column; max-height:min(78dvh,640px); padding-bottom:env(safe-area-inset-bottom); border-top:1px solid var(--border-strong); border-radius:10px 10px 0 0; background:var(--background); box-shadow:0 -18px 60px rgb(0 0 0 / .18); }
+.mobile-toc-heading { flex-shrink:0; display:flex; align-items:center; justify-content:space-between; padding:12px 14px 12px 22px; border-bottom:1px solid var(--border); }
+.mobile-toc-heading h2 { font-size:15px; }
+.mobile-toc-list { overflow:auto; overscroll-behavior:contain; padding:10px 12px 16px; }
+.mobile-toc-list a { display:block; min-height:44px; padding:11px 12px; border-left:2px solid transparent; color:var(--muted); font-size:15px; line-height:1.45; white-space:normal; word-break:keep-all; overflow-wrap:anywhere; }
+.mobile-toc-list a.level-3 { padding-left:26px; font-size:14px; }
+.mobile-toc-list a.level-4 { padding-left:40px; font-size:13px; }
+.mobile-toc-list a:hover { color:var(--foreground); background:var(--surface-hover); }
+.mobile-toc-list a.active { color:var(--foreground); border-left-color:var(--foreground); background:var(--surface-active); font-weight:650; }
+@media(min-width:768px) {
+  .mobile-toc-sheet { top:0; left:auto; width:min(400px,60vw); max-height:none; border-top:0; border-left:1px solid var(--border-strong); border-radius:0; }
+}
+.prose h2:focus,.prose h3:focus,.prose h4:focus { outline:none; }
+.prose h2:focus-visible,.prose h3:focus-visible,.prose h4:focus-visible { outline:2px solid var(--focus-ring); outline-offset:4px; }
+
 /* Admin: template dialog and exam access settings. */
 .document-toolbar-actions { display:flex; align-items:center; gap:8px; flex-shrink:0; }
 .document-access-button { display:inline-flex; align-items:center; gap:7px; min-height:34px; padding:0 11px; border:1px dashed var(--border-strong); border-radius:3px; color:var(--muted); background:transparent; font-size:12px; }
@@ -608,4 +642,4 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   .admin-wide-dialog { top:auto; bottom:0; left:0; width:100%; max-height:92dvh; transform:none; border-radius:10px 10px 0 0; padding:24px 18px calc(18px + env(safe-area-inset-bottom)); }
   .access-status div,.access-current div { grid-template-columns:1fr; gap:2px; }
 }
-@media print { .document-access-button { display:none!important; } }
+@media print { .mobile-toc,.mobile-toc-sheet,.document-access-button { display:none!important; } }

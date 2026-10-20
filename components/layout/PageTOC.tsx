@@ -1,39 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import type { Heading } from "@/types/content";
-import { getHeadings } from "@/lib/markdown";
-import { NOTE_UPDATE_EVENT } from "@/lib/note-draft";
+import { useActiveHeading, useDocumentHeadings } from "./useDocumentHeadings";
 
 export function PageTOC({ headings, documentPath, format = "mdx" }: { headings: Heading[]; documentPath?: string; format?: "md" | "mdx" }) {
-  const [liveHeadings, setLiveHeadings] = useState(headings);
-  const [active, setActive] = useState(headings[0]?.id ?? "");
+  const liveHeadings = useDocumentHeadings(headings, documentPath, format);
+  const active = useActiveHeading(liveHeadings);
   const tocRef = useRef<HTMLElement>(null);
-  useEffect(() => {
-    if (!documentPath) return;
-    const syncHeadings = (event: Event) => {
-      const detail = (event as CustomEvent<{ path: string; value: string }>).detail;
-      if (detail.path === documentPath) setLiveHeadings(getHeadings(detail.value, format));
-    };
-    window.addEventListener(NOTE_UPDATE_EVENT, syncHeadings);
-    return () => window.removeEventListener(NOTE_UPDATE_EVENT, syncHeadings);
-  }, [documentPath, format]);
-  useEffect(() => {
-    let frame = 0;
-    const update = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        let current = liveHeadings[0]?.id ?? "";
-        for (const heading of liveHeadings) {
-          const element = document.getElementById(heading.id);
-          if (element && element.getBoundingClientRect().top <= 150) current = heading.id;
-        }
-        setActive(current);
-      });
-    };
-    update(); window.addEventListener("scroll", update, { passive: true });
-    return () => { cancelAnimationFrame(frame); window.removeEventListener("scroll", update); };
-  }, [liveHeadings]);
   useEffect(() => {
     const container = tocRef.current;
     const link = container?.querySelector<HTMLElement>(`[data-heading-id="${CSS.escape(active)}"]`);

@@ -4,6 +4,7 @@ import { renderMDX } from "@/lib/mdx";
 import { getPrevNextLecture } from "@/lib/lectures";
 import type { ContentDocument } from "@/types/content";
 import { PageTOC } from "@/components/layout/PageTOC";
+import { MobileTOC } from "@/components/layout/MobileTOC";
 import { Footer } from "@/components/layout/Footer";
 import { LectureHeader } from "./LectureHeader";
 import { LearningObjectives } from "./LearningObjectives";
@@ -24,6 +25,8 @@ export async function DocumentPage({ document }: { document: ContentDocument }) 
   return <div className="document-grid"><article className={`document-main${isPrintable ? " printable-document" : ""}`}>
     <div className="document-toolbar"><nav className="breadcrumb" aria-label="현재 위치"><Link href={`/${document.kind}`}>{label}</Link><ChevronRight size={13} />{document.gradeName ? <><span>{document.gradeName}</span><ChevronRight size={13} /><span>{document.semesterName}</span><ChevronRight size={13} /><span>{document.subjectName}</span></> : <span>{document.title}</span>}</nav><div className="document-toolbar-actions">{isEditable && isPractice && <PracticeAccessSettings slug={document.slug} title={document.title} />}{isPrintable && <PrintLectureButton title={document.title} kind={isPractice ? "practice" : "lecture"} />}</div></div>
     <LectureHeader lecture={document} hideDescription={isLecture} /><LearningObjectives objectives={document.objectives} />
+    {/* Exams only reach this component after their password check, so their headings are never sent before unlocking. */}
+    <MobileTOC key={document.path} headings={headings} documentPath={isEditable ? document.path : undefined} format={document.format} />
     {document.kind === "assignments" && <div className="assignment-info"><div><span className="meta">제출 기한</span>{document.due ?? "멘토 공지 확인"}</div>{document.submissionUrl ? <a href={document.submissionUrl} target="_blank" rel="noopener noreferrer" className="button">과제 제출하기<ArrowUpRight size={16} /></a> : <span className="muted">제출 링크는 멘토가 안내합니다.</span>}</div>}
     <StudyWorkspace documentPath={document.path}>{isEditable ? <MarkdownEditor path={document.path} filename={`${document.slug.at(-1) ?? "document"}.${document.kind === "practice" || document.format === "md" ? "md" : "mdx"}`} source={document.content}>{content}</MarkdownEditor> : <div className="prose">{content}</div>}</StudyWorkspace>
     {isPrintable && <div className="document-print-watermark" aria-hidden="true">26학번 한지석 제공</div>}

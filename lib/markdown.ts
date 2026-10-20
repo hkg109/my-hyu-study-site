@@ -319,17 +319,27 @@ function normalizeHeadings(tree: Root) {
   }
 }
 
+// Answers, hints, translations and flashcards render as closed <details>; so do <Answer> and raw <details>.
+const isCollapsed = (node: { type: string; name?: unknown; data?: { hName?: string } }) =>
+  node.data?.hName === "details" || ((node.type === "mdxJsxFlowElement" || node.type === "mdxJsxTextElement") && (node.name === "Answer" || node.name === "details"));
+
 export function getHeadings(source: string, format: "md" | "mdx" = "mdx"): Heading[] {
   const headings: Heading[] = [];
   const slugger = new GithubSlugger();
   const tree = parseMarkdown(source, format);
   normalizeHeadings(tree);
-  visit(tree, "heading", node => {
-    if (node.depth >= 2 && node.depth <= 4) {
+  // Every heading still takes its slug, in document order, so ids match remarkDocumentHeadings;
+  // headings inside collapsed blocks are left out so the TOC never reveals folded answers.
+  const walk = (node: RootContent | Root, hidden: boolean) => {
+    const collapsed = hidden || isCollapsed(node as Parameters<typeof isCollapsed>[0]);
+    if (node.type === "heading" && node.depth >= 2 && node.depth <= 4) {
       const text = toString(node);
-      headings.push({ id: slugger.slug(text), text, level: node.depth });
+      const id = slugger.slug(text);
+      if (!collapsed) headings.push({ id, text, level: node.depth });
     }
-  });
+    if ("children" in node) for (const child of node.children) walk(child as RootContent, collapsed);
+  };
+  walk(tree, false);
   return headings;
 }
 
