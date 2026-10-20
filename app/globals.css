@@ -558,3 +558,54 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   /* "문제만" print mode: hide answers and hints so the PDF works as a test sheet. */
   html.print-mode-questions .study-answer,html.print-mode-questions .study-answer-translation,html.print-mode-questions .study-hint { display:none!important; }
 }
+
+/* Admin: template dialog and exam access settings. */
+.document-toolbar-actions { display:flex; align-items:center; gap:8px; flex-shrink:0; }
+.document-access-button { display:inline-flex; align-items:center; gap:7px; min-height:34px; padding:0 11px; border:1px dashed var(--border-strong); border-radius:3px; color:var(--muted); background:transparent; font-size:12px; }
+.document-access-button:hover { color:var(--foreground); border-color:var(--foreground); }
+.admin-wide-dialog { width:min(620px,calc(100% - 32px)); max-height:calc(100dvh - 40px); overflow:auto; }
+.admin-wide-dialog code { font-family:"JetBrains Mono",monospace; font-size:.86em; overflow-wrap:anywhere; }
+.create-document-form { display:flex; flex-direction:column; }
+.create-field-label { margin:22px 0 7px; font-size:12px; font-weight:600; }
+.create-title-input,.access-key-fields input,.access-key-fields select { height:44px; padding:0 13px; border:1px solid var(--border-strong); border-radius:4px; outline:none; color:var(--foreground); background:var(--surface); font-size:15px; }
+.create-title-input:focus,.access-key-fields input:focus,.access-key-fields select:focus { border-color:var(--foreground); box-shadow:0 0 0 1px var(--foreground); }
+.template-picker,.access-picker { margin:20px 0 0; padding:0; border:0; min-width:0; }
+.template-picker legend,.access-picker legend { margin-bottom:8px; font-size:12px; font-weight:600; }
+.template-option,.access-option { display:flex; align-items:flex-start; gap:10px; margin-top:6px; padding:11px 13px; border:1px solid var(--border); border-radius:4px; cursor:pointer; }
+.template-option:hover,.access-option:hover { border-color:var(--border-strong); background:var(--surface-hover); }
+.template-option:has(input:checked),.access-option:has(input:checked) { border-color:var(--foreground); background:var(--surface); }
+.template-option:has(input:focus-visible),.access-option:has(input:focus-visible) { outline:2px solid var(--focus-ring); outline-offset:2px; }
+.template-option input,.access-option input { margin-top:4px; accent-color:var(--foreground); }
+.template-option span,.access-option span { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.template-option strong,.access-option strong { font-size:14px; }
+.template-option small,.access-option small { color:var(--muted); font-size:12px; line-height:1.5; word-break:keep-all; }
+.template-preview { margin-top:16px; padding:14px 16px; border:1px solid var(--border); border-radius:4px; background:var(--surface); }
+.template-preview h3 { margin-bottom:6px; font-size:12px; }
+.template-preview ol { display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; list-style:none; counter-reset:outline; }
+.template-preview li { padding:3px 9px; border:1px solid var(--border-strong); border-radius:12px; font-size:12px; counter-increment:outline; }
+.template-preview li::before { content:counter(outline) ". "; color:var(--muted); }
+.template-preview details { margin-top:10px; font-size:12px; }
+.template-preview summary { color:var(--muted); cursor:pointer; }
+.template-preview pre { max-height:260px; margin:8px 0 0; padding:12px; overflow:auto; border:1px solid var(--border); border-radius:3px; background:var(--background); font:12px/1.55 "JetBrains Mono",monospace; white-space:pre-wrap; overflow-wrap:anywhere; }
+.access-key-fields { display:flex; flex-direction:column; margin-top:12px; }
+.access-key-fields label { margin:10px 0 6px; font-size:12px; font-weight:600; }
+.access-help { margin-top:6px; color:var(--muted); font-size:12px; }
+.access-status,.access-current { display:grid; gap:6px; margin:14px 0 0; padding:12px 14px; border:1px solid var(--border); border-radius:4px; font-size:13px; }
+.access-current { margin-top:18px; }
+.access-status div,.access-current div { display:grid; grid-template-columns:96px minmax(0,1fr); gap:10px; }
+.access-status dt,.access-current dt { color:var(--muted); font-size:12px; }
+.access-status dd,.access-current dd { margin:0; min-width:0; overflow-wrap:anywhere; }
+.access-ok,.access-missing { display:inline-flex; align-items:center; gap:5px; font-weight:600; }
+.access-missing { text-decoration:underline; text-decoration-style:wavy; text-underline-offset:3px; }
+.access-warning,.access-note,.access-notice { display:flex; gap:8px; margin-top:10px; padding:10px 12px; border-radius:4px; font-size:12px; line-height:1.6; }
+.access-warning { border:1px solid var(--foreground); border-left-width:4px; }
+.access-note { color:var(--muted); background:var(--surface); }
+.access-notice { border:1px solid var(--border-strong); font-weight:600; }
+.access-warning svg,.access-note svg { flex-shrink:0; margin-top:2px; }
+.access-settings-form .admin-error,.create-document-form .admin-error { margin-top:12px; }
+@media(max-width:767px) {
+  .document-toolbar-actions { flex-wrap:wrap; justify-content:flex-end; }
+  .admin-wide-dialog { top:auto; bottom:0; left:0; width:100%; max-height:92dvh; transform:none; border-radius:10px 10px 0 0; padding:24px 18px calc(18px + env(safe-area-inset-bottom)); }
+  .access-status div,.access-current div { grid-template-columns:1fr; gap:2px; }
+}
+@media print { .document-access-button { display:none!important; } }

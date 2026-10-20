@@ -12,6 +12,7 @@ import { PrevNextNavigation } from "./PrevNextNavigation";
 import { MarkdownEditor } from "@/components/admin/MarkdownEditor";
 import { PrintLectureButton } from "./PrintLectureButton";
 import { StudyWorkspace } from "@/components/study/StudyWorkspace";
+import { PracticeAccessSettings } from "@/components/admin/PracticeAccessSettings";
 
 export async function DocumentPage({ document }: { document: ContentDocument }) {
   const { content, headings } = await renderMDX(document.content, document.format);
@@ -21,7 +22,7 @@ export async function DocumentPage({ document }: { document: ContentDocument }) 
   const isEditable = process.env.NODE_ENV === "development" && (isLecture || document.kind === "practice");
   const label = isLecture ? "강의 정리" : document.kind === "practice" ? "족보" : "과제";
   return <div className="document-grid"><article className={`document-main${isPrintable ? " printable-document" : ""}`}>
-    <div className="document-toolbar"><nav className="breadcrumb" aria-label="현재 위치"><Link href={`/${document.kind}`}>{label}</Link><ChevronRight size={13} />{document.gradeName ? <><span>{document.gradeName}</span><ChevronRight size={13} /><span>{document.semesterName}</span><ChevronRight size={13} /><span>{document.subjectName}</span></> : <span>{document.title}</span>}</nav>{isPrintable && <PrintLectureButton title={document.title} kind={isPractice ? "practice" : "lecture"} />}</div>
+    <div className="document-toolbar"><nav className="breadcrumb" aria-label="현재 위치"><Link href={`/${document.kind}`}>{label}</Link><ChevronRight size={13} />{document.gradeName ? <><span>{document.gradeName}</span><ChevronRight size={13} /><span>{document.semesterName}</span><ChevronRight size={13} /><span>{document.subjectName}</span></> : <span>{document.title}</span>}</nav><div className="document-toolbar-actions">{isEditable && isPractice && <PracticeAccessSettings slug={document.slug} title={document.title} />}{isPrintable && <PrintLectureButton title={document.title} kind={isPractice ? "practice" : "lecture"} />}</div></div>
     <LectureHeader lecture={document} hideDescription={isLecture} /><LearningObjectives objectives={document.objectives} />
     {document.kind === "assignments" && <div className="assignment-info"><div><span className="meta">제출 기한</span>{document.due ?? "멘토 공지 확인"}</div>{document.submissionUrl ? <a href={document.submissionUrl} target="_blank" rel="noopener noreferrer" className="button">과제 제출하기<ArrowUpRight size={16} /></a> : <span className="muted">제출 링크는 멘토가 안내합니다.</span>}</div>}
     <StudyWorkspace documentPath={document.path}>{isEditable ? <MarkdownEditor path={document.path} filename={`${document.slug.at(-1) ?? "document"}.${document.kind === "practice" || document.format === "md" ? "md" : "mdx"}`} source={document.content}>{content}</MarkdownEditor> : <div className="prose">{content}</div>}</StudyWorkspace>
