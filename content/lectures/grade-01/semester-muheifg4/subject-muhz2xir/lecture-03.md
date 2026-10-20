@@ -55,7 +55,9 @@ objectives:
 > **현대 업무는 개인 작업보다 interaction과 collaboration 비중이 커짐**
 
 > [!NOTE]
-> 협업은 “같이 일한다”는 막연한 말이 아니라, 공통 목표를 위해 둘 이상이 함께 작업하는 것이다. 신메뉴 출시처럼 몇 주 안에 끝나는 일(short-term)도 있고, 매장 운영 개선처럼 계속 이어지는 일(long-term)도 있다. 협업이 더 중요해진 이유는 혼자 처리하는 일보다 ==다른 사람과 정보를 주고받아야 끝나는 일(interaction jobs)==이 늘었기 때문이다.
+> 협업은 공통 목표를 위해 둘 이상이 함께 일하는 것이다(신메뉴 출시처럼 short-term도, 매장 운영 개선처럼 long-term도 있다). 중요해진 이유는 ==다른 사람과 정보를 주고받아야 끝나는 일(interaction jobs)==이 늘었기 때문이다.
+
+**예시 박스 읽는 법:** **예시** 박스는 ==슬라이드의 실제 사례·수치와 교수님 메모==를 교재로 보충한 것이다. ==기업 → 시스템 → 결과 → 개념==을 함께 외운다. 장 끝 **사례 총정리**에 한 표로 모았다.
 
 ---
 
@@ -79,7 +81,14 @@ objectives:
 
 
 > [!NOTE]
-> Social business는 회사 안팎에서 SNS처럼 대화하고 공유하는 플랫폼을 업무에 쓰는 것이다. 예를 들어 고객이 남긴 리뷰에 직원이 바로 답하고, 그 의견을 메뉴 개발팀이 같은 피드에서 보는 식이다. 효과를 보려면 정보를 숨기지 않는 ==red:투명성(information transparency)==이 필요하다. ==red:위에서 정보를 통제하는 문화에서는 플랫폼을 깔아도 대화가 일어나지 않는다.==
+> 고객 리뷰에 직원이 바로 답하고 그 의견을 개발팀이 같은 피드에서 보는 식이다. ==red:위에서 정보를 통제하는 문화에서는 플랫폼을 깔아도 대화가 일어나지 않는다.==
+
+> [!EXAMPLE]
+> **슬라이드 원문과 사례**
+>
+> - Information transparency의 원문 정의: ==경영진이나 다른 사람의 개입 없이(without intervention from executives or others) 정보 교환을 이끄는 것==.
+> - 고객과의 =="conversations(대화)"==로 유대를 강화한다.
+> - 대표 사례: ==Sharp의 Yammer==(2장 A Slide 3), 영상 ==Cemex: Becoming a Social Business==(소셜 비즈니스의 best practice).
 ---
 
 ## Slide 32 — Collaboration Is Expanding to Human-Agent Teams
@@ -104,8 +113,19 @@ objectives:
 > **Human-agent team** — 사람과 AI agent가 함께 일하는 팀. AI가 어디서 사람에게 넘기는지(**handoff**), 무엇으로 검토하는지(**review**), 무엇을 할 수 있는지(**authority**)를 문서로 정한다.
 
 
+> [!EXAMPLE]
+> **Microsoft 2026 연구 (슬라이드 수치)**
+>
+> | 항목 | 내용 |
+> | --- | --- |
+> | 조사 대상 | ==10개국 AI 사용 근로자 2만 명== + Microsoft 365 사용 데이터(telemetry) |
+> | Shared learning | AI를 잘 쓰는 ==Frontier Professionals==는 AI 활용법과 실수를 팀과 더 자주 공유: ==61% vs 36%== |
+> | Quality | AI 지원 작업의 품질 기준을 더 자주 논의: ==54% vs 29%== |
+> | Repeatability | 효과적인 팀은 ==agent workflow, 사람에게 넘기는 지점(human handoffs), 검토 기준(review criteria), 프로세스 변경 권한(authority)==을 문서화 |
+> | Management | 협업 = ==사람, 데이터, 애플리케이션, AI agent==를 함께 조정하는 일 |
+
 > [!NOTE]
-> 이제 팀원 중 일부가 AI agent일 수 있다. 사람 팀원과 일할 때 역할 분담을 정하듯이, AI가 어디까지 하고 언제 사람에게 넘기는지(**handoff**), 무엇을 기준으로 결과를 검토하는지(**review criteria**), 어떤 일을 할 권한이 있는지(**authority**)를 문서로 정해야 한다. ==red:이게 없으면 AI의 실수를 아무도 발견하지 못하거나, 누가 책임질지 불분명해진다.==
+> 사람 팀원과 역할을 나누듯 AI의 handoff·review·authority를 문서로 정한다. ==red:이게 없으면 AI의 실수를 아무도 발견하지 못하거나 책임이 불분명해진다.==
 ---
 
 ## Slide 33 — Business Benefits of Collaboration and Teamwork
@@ -122,6 +142,8 @@ objectives:
 
 > [!NOTE]
 > 표의 다섯 효과는 순서대로 이어진다. 지식을 나누면 문제를 빨리 풀고(productivity), 품질 문제를 빨리 고치고(quality), 아이디어가 늘고(innovation), 고객 불만에 빨리 대응한다(customer service). 이 네 가지가 쌓인 결과가 **financial performance**다. ==red:그래서 답안에서 협업이 바로 매출을 올린다고 쓰기보다 중간 효과를 거쳐 설명하는 것이 좋다.==
+
+**슬라이드·교수님 메모:** 협업 기술 투자는 특히 ==영업·마케팅, 연구개발(R&D)==에서 큰 보상을 낸다. 협업의 효과에 대한 연구는 ==일화적(anecdotal)==이지만, 업계와 학계는 협업을 성공의 필수 동력으로 본다: ==“더 많이 협업하는 기업이 더 많이 번다.”==
 
 ---
 
@@ -152,6 +174,8 @@ objectives:
 
 *Figure 2.7 · The Requirements for Collaboration — 역량과 기술이 함께 있어야 협업의 질이 높아진다.*
 
+**교수님 메모:** 두 핵심 재료는 ==협업 역량(collaboration capability)==과 ==협업 기술(technology or means)==이며, 둘의 질이 높을수록 기업 성과가 좋다. ==저품질 협업의 예: 사업 문제를 풀려고 팀을 꾸렸지만 내부 정치(internal politics) 때문에 함께 일하지 못하는 경우.==
+
 ---
 
 ## Slide 35 — Digital Infrastructure Has an Environmental Footprint
@@ -172,7 +196,15 @@ objectives:
 > ==Digital investment는 service value뿐 아니라 environmental cost도 함께 평가==
 
 > [!NOTE]
-> 클라우드와 AI는 “보이지 않는” 서비스처럼 느껴지지만, 실제로는 데이터센터가 전기·냉각수·하드웨어를 대량으로 쓴다. 그래서 IS 투자를 평가할 때 서비스 가치뿐 아니라 ==blue:에너지·탄소·물·하드웨어·공급망== 비용도 함께 따져야 한다는 것이 이 슬라이드의 요점이다.
+> 클라우드와 AI는 보이지 않지만 데이터센터가 전기·냉각수·하드웨어를 대량으로 쓴다. 그래서 IS 투자는 ==blue:에너지·탄소·물·하드웨어·공급망== 비용까지 함께 평가한다.
+
+> [!EXAMPLE]
+> **Google 2024 (슬라이드 수치)**
+>
+> - 에너지 수요가 늘었는데도 ==데이터센터 에너지 배출량 12% 감소==.
+> - 2024년 ==8 GW(기가와트) 이상의 청정에너지 발전 계약== 체결.
+> - ==Ironwood TPU==는 2018년의 첫 Cloud TPU보다 ==전력 효율이 약 30배==.
+> - MIS 교훈: 관리자는 ==서비스 가치를 에너지·탄소·물·하드웨어·공급망 영향과 함께== 평가해야 한다.
 
 ---
 
@@ -198,6 +230,8 @@ objectives:
 > [!TRAP]
 > ==red:“협업 도구를 도입하면 협업이 자동으로 늘어난다”는 보기는 오답이다.== ==blue:문화·보상·프로세스==가 먼저 바뀌어야 한다.
 
+**교수님 메모:** 협업은 저절로 생기지 않고 ==가능하게 만들고 길러야(enabled and nurtured)== 한다. 협업 기술이 있어도 협업이 ==업무의 일부로 여겨지고 보상받지 않으면== 협업은 일어나지 않는다. “command and control”은 ==과거의 대기업== 방식이다. 생각해 볼 질문: 협업이 적을수록 이득인 업무가 있을까? 협업의 단점은?
+
 ---
 
 ## Slide 37 — Tools and Technologies for Collaboration
@@ -218,7 +252,19 @@ objectives:
 > ==blue:Collaboration tools는 messaging → shared workspace → cloud → AI-assisted workflow로 확장==
 
 > [!NOTE]
-> 도구 목록을 외우기보다 발전 방향을 잡으면 된다. 메시지를 주고받는 단계(e-mail, IM) → 같은 문서를 함께 고치는 단계(wiki, Google Docs) → 클라우드에서 언제 어디서나 같이 쓰는 단계(Teams, Slack, Notion) → AI가 요약·초안을 돕거나 일부 작업을 수행하는 단계로 넓어지고 있다.
+> 발전 방향: 메시지(e-mail, IM) → 공동 문서(wiki, Google Docs) → 클라우드 협업(Teams, Slack, Notion) → AI가 요약·초안·일부 작업 수행.
+
+> [!EXAMPLE]
+> **슬라이드의 도구 예시와 교재 사례**
+>
+> - **Virtual worlds:** ==Second Life== (온라인 3D 가상 환경, 초기 협업 도구의 예).
+> - **Virtual meeting systems:** ==telepresence==.
+> - **Cloud collaboration services:** ==Google Drive, Google Docs== 등.
+> - **현재 플랫폼:** ==Microsoft Teams, Microsoft SharePoint, Slack, Zoom, Google Workspace, Notion==.
+> - **Spotlight on Technology Case Study: ==AI Accelerates Drug Discovery and Development==** (사람–AI 협업 사례)
+>   - 신약 하나를 허가받기까지 ==10–15년 이상==, 실험실에서 수천 개의 화합물을 시험해야 하나를 찾는다.
+>   - AI는 ==후보 화합물의 특성을 예측==해 가망 없는 화합물 작업을 막고, ==수천 장의 세포 현미경 이미지 분석 같은 반복 작업==을 줄이며, ==완전히 새로운 화합물 아이디어를 생성==한다.
+>   - 교재 표의 다른 사람–AI 협업 예: Johnson & Johnson과 Mayo Clinic 등의 의료 영상 진단 AI, ==CarMax==가 GPT-3.5로 고객 리뷰 5,000건을 요약해 사람 검토 후 웹사이트에 게시, ==JP Morgan Chase== 트레이더가 25년간의 연준 연설을 분석하는 모델 사용.
 
 ---
 
@@ -244,7 +290,9 @@ objectives:
 > **Enterprise social platform = communication + content + workflow + governance + AI**
 
 > [!NOTE]
-> 기업용 소셜 네트워크는 사내 SNS다. 프로필로 누가 무엇을 아는지 찾고, 피드로 소식을 받고, 그룹 공간에서 프로젝트를 진행한다. 개인 SNS와 다른 점은 ==red:권한·보존·데이터 위치 같은 governance==와 사내 시스템과의 **integration**이 평가 기준에 들어간다는 것이다.
+> 기업용 소셜 네트워크는 사내 SNS다. 개인 SNS와 다른 점은 ==red:권한·보존·데이터 위치 같은 governance==와 사내 시스템과의 **integration**이 평가 기준에 들어간다는 것이다.
+
+**교수님 메모(원본 PDF):** ==Facebook에서 보는 거의 모든 기능이 기업용 소셜 네트워킹 커뮤니티에 다시 만들어져 있다.== 단, Facebook에는 팀 작업공간(team workspaces)이 없다. 대표 제품 예: ==Yammer==(Sharp 사례).
 
 ---
 
@@ -345,7 +393,18 @@ objectives:
 > ==현대 기업의 핵심 자산 중 상당 부분은 physical asset이 아니라 knowledge==
 
 > [!NOTE]
-> 오늘날 많은 기업 가치는 건물이나 기계가 아니라 지식·브랜드·평판·독특한 업무 방식 같은 **무형 자산**에서 나온다. 이런 자산은 장부에 잘 드러나지 않지만 경쟁력의 핵심이라서, 이를 관리하는 KMS에 대한 투자가 빠르게 늘고 있다.
+> 많은 기업 가치가 건물·기계가 아니라 지식·브랜드·평판 같은 **무형 자산**에서 나오므로 KMS 투자가 빠르게 늘고 있다.
+
+> [!EXAMPLE]
+> **정보 경제 수치 (Slide 42) — 숫자를 정확히 외운다**
+>
+> | 항목 | 수치 |
+> | --- | --- |
+> | 미국 노동력 중 지식·정보 근로자 | ==37%== |
+> | 미국 GDP 중 지식·정보 부문 | ==55%== |
+> | 뉴욕증권거래소(NYSE) 상장 주식 가치 | ==절반 이상이 지식·노하우 같은 무형 자산에서 나옴== |
+>
+> 잘 실행된 지식 기반 프로젝트는 ==extraordinary ROI(투자수익률)==를 낼 수 있다.
 
 ---
 
@@ -365,6 +424,8 @@ objectives:
 
 > [!NOTE]
 > 네 차원은 다음 슬라이드들의 목차다. 지식은 회사의 **자산**이고(44), 문서와 경험이라는 **다른 형태**로 있으며(44), 특정 사람과 장소에 **붙어 있고**(45), 언제 어떻게 쓸지 아는 **상황성**이 있다(45). 이 네 가지 때문에 지식은 데이터처럼 복사해서 옮기기 어렵다.
+
+**교수님 메모 · “지식은 기업 자산이다”의 예:** ==가전제품 회사라면, 가장 효율적이고 가장 싼 에어컨을 만드는 방법을 아는 것.== 각 차원마다 예를 들 수 있게 준비한다 — 예: 사회적 기반을 가진 지식의 예는? ==sticky(옮기기 어려운) 지식의 예와 무엇이 sticky한지==?
 
 ---
 
@@ -389,7 +450,9 @@ objectives:
 > **Explicit knowledge** — ==문서화된 지식(매뉴얼·보고서)==. **Tacit knowledge** — ==사람의 경험 속에 있어 문서로 옮기기 어려운 지식(노하우·감각)==.
 
 > [!NOTE]
-> 카페 레시피 매뉴얼은 **explicit knowledge**라 새 직원에게 그대로 넘겨줄 수 있다. 하지만 숙련 바리스타가 우유 거품 소리만 듣고 온도를 맞추는 감각은 **tacit knowledge**라 글로 옮기기 어렵다. 지식은 공유될수록 더 많은 사람이 쓰면서 가치가 커지는 **network effect**도 있다.
+> 레시피 매뉴얼은 explicit, 숙련 바리스타의 우유 거품 감각은 tacit knowledge다. 지식은 공유될수록 가치가 커지는 **network effect**가 있다.
+
+**슬라이드 원문 · 지식의 형태:** ==know-how, craft, skill== / ==how to follow procedure(절차를 따르는 법)== / ==knowing why things happen(인과관계, causality)==.
 
 > [!TRAP]
 > ==red:지식을 문서로 많이 남겼다고 tacit knowledge가 다 옮겨진 것은 아니다.== **언제·어떻게 적용하는지**는 사람과 상황에 붙어 있다.
@@ -430,6 +493,7 @@ objectives:
 ### Knowledge-Based Core Competencies
 - ==competitors가 쉽게 duplicate하지 못하는 know-how==
 - profit / competitive advantage의 원천
+- 슬라이드 예: ==독특한 주문생산(build-to-order) 생산 시스템을 갖는 것==
 
 > **Information + context/pattern → Knowledge → 경험을 통한 적용 = Wisdom**
 
@@ -457,7 +521,15 @@ objectives:
 
 
 > [!NOTE]
-> 조직 학습은 경험을 모으는 데서 끝나지 않는다. 비 오는 날 폐기가 많다는 데이터를 보고(경험 획득), 다음부터 날씨 예보에 따라 준비량을 줄이는 규칙을 만들었다면(행동 조정) 조직이 학습한 것이다. 시험에서는 결과로 **새 업무 프로세스**나 **바뀐 의사결정 패턴**이 나와야 학습이라고 쓴다.
+> 비 오는 날 폐기가 많다는 데이터를 보고 날씨에 따라 준비량을 줄이는 규칙을 만들었다면 조직이 학습한 것이다. 결과로 **새 프로세스**나 **바뀐 의사결정 패턴**이 나와야 학습이다.
+
+> [!EXAMPLE]
+> **교수님 메모 (Slide 47)**
+>
+> - 경쟁우위를 주는 기업 지식의 예: ==Apple, eBay, Burger King== 등이 가진 지식.
+> - ==skilled labor force(숙련 노동력)==의 가치는 직원들이 일을 효율적·효과적으로 하는 지식에서 나온다. ==직원 머릿속의 지식은 대체하기 어렵다.==
+> - Organizational learning에서 ==지식이 새로운 행동(의사결정, 신제품·서비스, 새 프로세스)의 동력==이 된다. 조직이 환경을 ==감지하고 대응하는(sensing and responding)== 과정으로도 볼 수 있다. 배우기를 거부한 조직의 예도 많다.
+
 ---
 
 ## Slide 48 — Knowledge Management Value Chain (1/3)
@@ -532,6 +604,8 @@ objectives:
 
 *Figure 11.1 · The Knowledge Management Value Chain — 각 단계에 IS 활동과 경영·조직 활동이 함께 있다.*
 
+**슬라이드 메모:** 오늘날의 지식관리는 ==정보시스템 활동 + 그것을 가능하게 하는 수많은 경영·조직 활동==으로 이루어진다. 그림 옆 판서 ==“80:20”==은 지식관리에서 기술보다 ==경영·조직 쪽 비중이 훨씬 크다==는 뜻으로 읽는다(정확한 의미는 수업 필기로 확인). 그림의 두 추가 요건: 지식의 기반이 되는 ==초기 데이터·정보 획득==, 적용 단계에서 새 기회로 이어지는 ==피드백==.
+
 ### 개념도 · 지식이 조직 성과가 되는 과정
 
 ![지식을 획득하고 저장하고 전달해 업무에 적용한 뒤 결과를 다시 조직 학습으로 연결하는 지식관리 가치사슬](/materials/diagrams/mis-03-knowledge-value-chain.svg)
@@ -563,6 +637,8 @@ objectives:
 
 > [!NOTE]
 > 지식을 모으는 방법은 문서화만이 아니다. 전문가 네트워크를 만들어 “누가 아는지”를 모으는 것도 획득이다. 저장 단계에서는 관리자의 역할이 크다. 회사 전체가 같은 분류 체계(**schema · indexing**)를 써야 나중에 찾을 수 있고, 직원이 문서를 올리고 고치도록 **incentive**를 줘야 저장소가 살아 있다.
+
+**슬라이드 메모:** ==Schema: 지식의 추상적 구조(abstract structure of knowledge).== 경영진의 세 역할: ① ==계획된 지식 저장 시스템 개발 지원== ② ==전사적 문서 색인 스키마 개발 장려== ③ ==문서를 제대로 갱신·저장하는 데 시간을 쓴 직원에게 보상==.
 
 ---
 
@@ -618,7 +694,10 @@ objectives:
 
 
 > [!NOTE]
-> COP는 회사가 만든 공식 부서가 아니라, 같은 일을 하는 사람들이 자연스럽게 모인 비공식 모임이다. 여러 지점의 바리스타들이 단체방에서 새 원두 다루는 법을 공유하는 것과 비슷하다. 신입이 질문할 곳이 생기므로 **learning curve**가 줄어든다. CKO는 이런 지식관리 활동 전체를 책임지는 임원이다.
+> COP는 공식 부서가 아니라 같은 일을 하는 사람들의 비공식 모임이다(여러 지점 바리스타들의 단체방처럼). 신입이 질문할 곳이 생겨 **learning curve**가 줄어든다.
+
+**교재 보충 (p.455 표시):** ==CKO(chief knowledge officer)==는 기업의 지식관리 프로그램을 책임지는 임원으로, ==새로운 지식 원천을 찾거나 기존 지식을 조직·경영 프로세스에 더 잘 쓰도록== 프로그램과 시스템을 설계한다. COP 활동 예: ==교육, 온라인 뉴스레터, 지식 공유==.
+
 ---
 
 ## Slide 54 — Three Major Types of KMS
@@ -636,6 +715,8 @@ objectives:
 
 > [!TRAP]
 > **KMS**는 지식관리시스템 전체의 이름이고, **KWS**는 그중 전문가가 새 지식을 만들도록 돕는 한 유형이다. ==red:KMS ⊃ KWS.==
+
+**교수님 메모:** 세 범주는 ==지원 대상(constituencies), 사용 목적, 강조점==이 다르다. Intelligent techniques는 흔히 ==인공지능(AI)==이라고 부른다.
 
 ---
 
@@ -691,7 +772,14 @@ objectives:
 > **기업 지식은 structured + semistructured + tacit/unstructured 모두 관리해야 함**
 
 > [!NOTE]
-> 보고서처럼 형식이 정해진 지식(structured)만 관리하면 회사 지식의 일부만 담긴다. 이메일과 회의 영상(semistructured), 직원 머릿속의 경험(tacit)에도 중요한 지식이 많다. 그래서 enterprise-wide KMS는 세 종류를 모두 다룰 방법이 필요하다.
+> 보고서(structured)만 관리하면 회사 지식의 일부만 담긴다. 이메일·영상(semistructured), 직원의 경험(tacit)에도 중요한 지식이 많다.
+
+> [!EXAMPLE]
+> **슬라이드 수치와 메모 (Slide 56)**
+>
+> - 원문: ==조직 비즈니스 콘텐츠의 80%가 semistructured 또는 unstructured==다.
+> - 단, 최신 슬라이드 메모: ==비율은 조직마다 다르므로 관리자는 보편적 비율에 기대지 말고 자기 조직의 콘텐츠를 직접 측정해야 한다.==
+> - 생각해 볼 것: 보고서 같은 structured knowledge보다 ==더 중요한 tacit knowledge의 예==는?
 
 ---
 
@@ -724,7 +812,10 @@ objectives:
 
 
 > [!NOTE]
-> 문서를 많이 저장하는 것보다 ==다시 찾을 수 있게== 하는 것이 어렵다. 그래서 CMS의 핵심 과제는 taxonomy, 즉 회사 전체가 같은 분류 체계로 문서에 tag를 붙이는 것이다. 사진·영상 같은 디지털 자산은 따로 Digital Asset Management로 관리한다.
+> 문서를 많이 저장하는 것보다 ==다시 찾을 수 있게== 하는 것이 어렵다. 그래서 CMS의 핵심 과제는 taxonomy다.
+
+**교수님 메모:** CMS 구축의 첫 단계는 지식 객체(문서)를 ==나중에 찾을 수 있게 설명하는 것==이다. 기업은 ==사용자에게 의미 있는 범주를 정의하는 taxonomy==를 정하고, 지식 객체에 분류를 붙여(tagged) 검색되게 한다. ==기업마다 taxonomy가 다를 수 있는 이유==도 생각해 볼 것. **Digital asset management 시스템이 필요한 기업:** ==출판사, 광고회사, 로펌, 방송사, 엔터테인먼트 제작사== 등.
+
 ---
 
 ## Slide 58 — AI-Ready Content Management
@@ -785,7 +876,7 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 > ==모든 knowledge를 문서화할 수 없으므로 ‘누가 알고 있는지’를 찾는 기능도 중요==
 
 > [!NOTE]
-> tacit knowledge는 문서로 옮기기 어렵기 때문에, 차라리 **그 지식을 가진 사람을 빨리 찾게** 하는 것이 현실적이다. 사내 전문가 디렉터리에서 “라테아트 교육 담당자”를 검색해 바로 연락하는 식이다.
+> tacit knowledge는 문서로 옮기기 어려우므로 **그 지식을 가진 사람을 빨리 찾게** 하는 것이 현실적이다. 2장 A의 Sharp Yammer ==People Directory==가 바로 이런 전문가 검색 기능이다.
 
 ---
 
@@ -805,7 +896,9 @@ AI가 문서를 검색해 답할 때도 원래 문서의 품질과 접근 권한
 > **LMS = organizational learning을 체계적으로 운영·추적하는 system**
 
 > [!NOTE]
-> LMS는 직원 교육을 운영하는 시스템이다. 누가 어떤 교육을 들었는지 기록하고(tracking), 시험으로 이해도를 확인하고(assessment), 교육이 실제 효과가 있었는지 측정한다. 신입 바리스타 위생 교육을 온라인으로 듣고 수료 여부가 자동 기록되는 것이 예다.
+> LMS는 누가 어떤 교육을 들었는지 기록하고(tracking), 이해도를 확인하며(assessment), 교육 효과를 측정한다.
+
+**슬라이드 원문:** ==MOOCs(Massively Open Online Courses)==: ==아주 많은 참여자에게 열린 웹 강좌==. LMS는 기업이 ==직원 학습을 추적·관리==할 수 있게 한다.
 
 > [!CHECK]
 > **4.** 지식관리 가치사슬의 네 단계를 순서대로 쓰시오.
@@ -913,6 +1006,19 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 > [!NOTE]
 > 네 사례 모두 “전문가가 새로운 것을 설계하거나 판단하는 일”을 돕는다는 공통점이 있다. CAD는 설계를, VR은 실제 환경을 흉내 낸 시뮬레이션을, AR은 현실 위에 정보를 겹쳐 보여 주는 것을, 투자 워크스테이션은 여러 금융 데이터를 한 화면에서 분석하는 것을 지원한다.
 
+> [!EXAMPLE]
+> **KWS 예시 — 슬라이드 원문 그대로**
+>
+> | 시스템 | 원문 예시 |
+> | --- | --- |
+> | **CAD** (computer-aided design) | 공학·건축 설계 생성, ==3D printing== |
+> | **Virtual reality** | 실제 환경 시뮬레이션, ==외과의를 위한 3D 의료 모델링(3D medical modeling for surgeons)== |
+> | **Augmented reality (AR)** | 현실 위에 디지털 데이터·이미지를 겹쳐 시각화 강화 (판서: ==MR== — mixed reality) |
+> | **VRML** | ==Virtual Reality Modeling Language== |
+> | **Investment workstations** | ==브로커·트레이더·포트폴리오 매니저==를 위해 내부·외부 데이터를 통합하고 투자 과정을 간소화 |
+>
+> Figure 11.9 메모: 엔지니어·재무 분석가·의학 연구자에게 ==어떤 외부 지식==이 가치 있을지 생각해 볼 것. 소프트웨어 구성: ==Graphics → Visualization, Modeling → Simulation, Document management, Communications==.
+
 ---
 
 ## Slide 66 — Intelligent Techniques for Knowledge Management
@@ -997,7 +1103,25 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 
 > [!NOTE]
-> IS 부서는 회사의 IT 서비스를 책임지는 조직이고, CIO가 이끈다. 보안·지식·개인정보·데이터·AI처럼 책임 영역이 커지면서 각 분야의 C-level 직책이 생겼다. 그중 **systems analyst**는 현업의 요구(“주문이 자꾸 누락돼요”)를 시스템 요구사항(“주문 상태를 실시간으로 공유하는 기능”)으로 번역하는 사람이다.
+> **Systems analyst**는 현업의 요구(“주문이 자꾸 누락돼요”)를 시스템 요구사항(“주문 상태를 실시간 공유하는 기능”)으로 번역하는 사람이다.
+
+> [!EXAMPLE]
+> **C-level 직책 — 교재 정의로 구분하기**
+>
+> | 직책 | 책임 |
+> | --- | --- |
+> | **CIO** (chief information officer) | 기업의 IT·IS 사용을 총괄하는 고위 관리자. ==강한 비즈니스 배경 + IS 전문성==으로 기술을 사업 전략과 통합 |
+> | **CSO** (chief security officer) | IS 보안 담당, ==보안 정책 시행==. 물리 보안과 분리될 때는 ==CISO==라고도 함. 사용자 교육, 위협 보고, 보안 도구·정책 유지 |
+> | **CPO** (chief privacy officer) | ==데이터 프라이버시 법규 준수== 보장 |
+> | **CKO** (chief knowledge officer) | ==지식관리 프로그램== 책임 |
+> | **CDO** (chief data officer) | ==전사 데이터 거버넌스와 활용==, 데이터에서 얻는 가치 극대화 |
+> | **CAIO** (chief AI officer) | ==AI 전략·도입·구현·모니터링== 총괄 (새로 생긴 C-suite 직책) |
+>
+> - **Programmers:** 컴퓨터 소프트웨어 명령을 작성하는 고도로 훈련된 기술 전문가.
+> - **Systems analysts:** IS 그룹과 나머지 조직 사이의 ==주된 연결 고리(principal liaisons)==.
+> - **IS managers:** 프로그래머·분석가·프로젝트 관리자·통신 관리자·DB 전문가 팀의 리더.
+> - 교수님 메모: 부서 구성은 ==기업의 성격과 규모==에 따라 다르다. ==작은 회사는 공식 IS 부서가 없을 수도== 있고, 큰 회사는 사업부마다 IT 부서를 두기도 한다. 최근에는 ==AI governance(responsible AI) 리더십==이 추가되었다.
+
 ---
 
 ## Slide 69 — Organizing the Information Systems Function
@@ -1021,6 +1145,8 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 > [!NOTE]
 > IT governance는 기술 선택보다 먼저 정해야 할 **규칙**이다. 새 시스템 도입을 누가 결정하는지(decision rights), 결과가 나쁘면 누가 책임지는지(accountability)를 정해 IT가 사업 목표를 따르게 한다. ==중앙 IT가 모두 결정할지(centralized), 각 사업부가 결정할지(decentralized)는 조직 상황에 따라 고른다.==
+
+**교수님 메모:** 시스템 개발이 성숙하면서 ==end user가 성공적인 시스템 개발의 핵심(pivotal)==으로 인정받게 되었다. IS 부서도 ==신제품·서비스·효율을 만드는 강력한 자원==으로 인정받으므로 ==IT governance는 핵심 경영 관심사==다. 교재: 초기 IS 부서는 주로 프로그래머였지만, 지금은 ==systems analyst와 네트워크 전문가 비중이 커지고 IS 부서가 강력한 변화 주도자(change agent)== 역할을 한다.
 
 > [!CHECK]
 > **7.** IS 부서를 이끄는 임원의 직책은?
@@ -1069,12 +1195,15 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 
 > **강점 = Business + Data + Technology + Collaboration + Responsible AI를 연결하는 능력**
 
+**원본 PDF의 진로 사례:** 회사 ==Comprehensive Supplemental Insurance USA==, 직무 ==Sales support specialist== — Job requirements, Interview questions, Author tips로 구성. (17판 원본 슬라이드에는 Microsoft Teams·SharePoint와 AI 협업 슬라이드도 함께 있었다.)
+
 ---
 
 ## Slide 72 — Current Career Context
 
 ### Workforce Change
 - macrotrends로 job creation / displacement 동시 발생
+- ==World Economic Forum: 2030년까지 일자리 1억 7천만 개 창출, 9,200만 개 대체(displaced)== 전망
 
 ### Growing Roles
 - big data specialists
@@ -1113,6 +1242,60 @@ KWS는 한 가지 software의 이름이 아니라, 전문 작업에 필요한 **
 > **시험 체크: ==blue:AI process / Cloud ERP risk / Human-Agent control / RAG-ready knowledge / Sustainability==**
 
 ---
+
+> [!PAGEBREAK]
+
+## 사례 총정리 · 2장 B에 나오는 예시와 수치
+
+| 슬라이드 | 기업·사례 | 내용 | 핵심 수치·결과 | 연결 개념 |
+| --- | --- | --- | --- | --- |
+| 31 | **Sharp (Yammer), Cemex** | 사내외 소셜 플랫폼 | 경영진 개입 없는 정보 교환 | Social business |
+| 32 | **Microsoft 2026 연구** | 10개국 AI 사용자 2만 명 | 실수 공유 61% vs 36%, 품질 기준 논의 54% vs 29% | Human-agent teams |
+| 34 | 내부 정치로 실패한 팀 | 저품질 협업의 예 | — | Collaboration capability |
+| 35 | **Google 2024** | 데이터센터 | 배출 12%↓, 청정에너지 8 GW+, Ironwood TPU 약 30배 효율 | 디지털 인프라의 환경 발자국 |
+| 37 | Second Life, Google Docs, Teams, SharePoint, Slack, Zoom, Notion | 협업 도구 | — | Collaboration tools |
+| 37 | **AI Accelerates Drug Discovery** | 사람–AI 협업 신약 개발 | 신약 10–15년, AI가 특성 예측·이미지 분석·새 화합물 아이디어 | Human-AI collaboration |
+| 38 | Facebook → 기업용 SNS, Yammer | 기능 재현 | Facebook엔 팀 작업공간 없음 | Enterprise social networking |
+| 42 | 정보 경제 | 지식·정보 근로자·GDP·NYSE | 37%, 55%, 주식 가치 절반 이상 무형 | KMS의 중요성 |
+| 43 | 가전제품 회사 | 가장 효율적이고 싼 에어컨 제조법 | — | Knowledge = firm asset |
+| 46 | build-to-order 생산 시스템 | 따라 하기 어려운 노하우 | — | Core competency |
+| 47 | Apple, eBay, Burger King | 기업 지식 | 숙련 노동력은 대체 어려움 | Organizational learning |
+| 56 | 기업 콘텐츠 | 80% semistructured·unstructured | 조직마다 직접 측정 | Enterprise-wide KM |
+| 57 | 출판사·광고사·로펌·방송사 | Digital asset management | — | CMS |
+| 65 | CAD·3D printing, VR 3D 의료 모델링, AR, VRML, 투자 워크스테이션 | 전문가 작업 | — | KWS |
+| 68 | CIO, CSO/CISO, CPO, CKO, CDO, CAIO | C-level 직책 | — | IS function |
+| 72 | **World Economic Forum** | 2030년까지 | 1억 7천만 창출, 9,200만 대체 | Career context |
+
+> [!TRAP]
+> ==red:CSO(보안)와 CPO(프라이버시), CKO(지식)와 CDO(데이터)를 섞지 말 것.== ==red:VR은 현실을 흉내 내는 시뮬레이션, AR은 현실 위에 정보를 겹치는 것이다.== ==red:37%는 노동력, 55%는 GDP다.==
+
+> [!FLASHCARD]
+> Q: 2장 사례 — Microsoft 2026 연구의 대상과 두 비교 수치는?
+> A: 10개국 AI 사용 근로자 2만 명과 Microsoft 365 데이터. Frontier Professionals는 AI 활용법과 실수를 팀과 더 자주 공유(61% vs 36%)하고 품질 기준을 더 자주 논의(54% vs 29%)한다.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — Google 2024의 환경 관련 수치 세 가지는?
+> A: 데이터센터 에너지 배출 12% 감소, 8 GW 이상의 청정에너지 계약, Ironwood TPU가 2018년 첫 Cloud TPU보다 전력 효율 약 30배.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — 정보 경제를 보여 주는 Slide 42의 수치는?
+> A: 미국 노동력의 37%가 지식·정보 근로자, 미국 GDP의 55%가 지식·정보 부문, NYSE 상장 주식 가치의 절반 이상이 지식·노하우 같은 무형 자산.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — 조직 비즈니스 콘텐츠 중 semistructured·unstructured 비율과 최신 메모는?
+> A: 80%. 단, 비율은 조직마다 다르므로 관리자는 자기 조직의 콘텐츠를 직접 측정해야 한다.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — KWS의 슬라이드 예시를 모두 쓰면?
+> A: CAD(3D printing 포함), virtual reality(외과의를 위한 3D 의료 모델링), augmented reality, VRML, investment workstations(브로커·트레이더·포트폴리오 매니저).
+
+> [!FLASHCARD]
+> Q: 2장 사례 — CSO, CPO, CKO, CDO, CAIO의 책임은?
+> A: CSO = IS 보안·보안 정책 시행(CISO), CPO = 개인정보 법규 준수, CKO = 지식관리 프로그램, CDO = 전사 데이터 거버넌스·활용, CAIO = AI 전략·도입·모니터링.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — AI Accelerates Drug Discovery 사례에서 AI가 돕는 세 가지는?
+> A: 후보 화합물의 특성을 예측해 가망 없는 작업을 막음, 수천 장의 세포 이미지 분석 같은 반복 작업을 줄임, 새로운 화합물 아이디어를 생성. 신약 개발은 보통 10–15년 이상 걸린다.
 
 > [!PAGEBREAK]
 

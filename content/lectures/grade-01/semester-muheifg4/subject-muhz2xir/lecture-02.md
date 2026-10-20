@@ -41,6 +41,19 @@ objectives:
 
 > **기업의 업무 흐름과 의사결정을 information systems가 어떻게 지원하는지 보는 장**
 
+**예시 박스 읽는 법:** **예시** 박스는 ==슬라이드에 나온 실제 기업 사례와 교수님 메모==를 교재 설명으로 보충한 것이다. 시험에서 “이 사례는 어떤 시스템·개념인가?”로 나오므로 ==기업 → 시스템 → 결과 → 개념==을 함께 외운다. 장 끝 **사례 총정리**에 한 표로 모았다. 카페 예시는 이해를 돕는 짧은 가상 사례다.
+
+> [!EXAMPLE]
+> **원본 영상 사례 (Slide 1)**
+>
+> | 영상 사례 | 연결 개념 |
+> | --- | --- |
+> | **Case 1 · Walmart's Retail Link Supply Chain** | SCM, 공급업체–매장 연결 (1장 Operational excellence와 같은 사례) |
+> | **Case 2 · Cemex: Becoming a Social Business** | 소셜 비즈니스, 협업 (CEMEX는 소셜 비즈니스의 best practice) |
+> | **Instructional Video · US Foodservice Grows Market with Oracle CRM on Demand** | CRM (클라우드형 CRM으로 시장 확대) |
+>
+> 교수님 메모: 이 장은 ==전형적인 기업에 있는 시스템 종류를 빠르게 훑어보는 장==이다. 1장의 **관리 계층, 인트라넷, 비즈니스 프로세스**를 다시 떠올리고, **전사 시스템(enterprise-wide systems)** 같은 새 개념을 더한다.
+
 ---
 
 ## Slide 2 — Learning Objectives
@@ -79,6 +92,16 @@ objectives:
 > [!EXAM]
 > ==red:사례 문제에서 해결책을 쓸 때 기술 이름만 쓰면 감점된다.== 1장의 세 차원처럼 ==blue:조직(문화·절차) + 경영(목표) + 기술(도구)==을 함께 쓴다.
 
+> [!EXAMPLE]
+> **Sharp Corporation × Microsoft Yammer (17판 도입 사례)**
+>
+> - 교수님 메모: ==일종의 지식관리(knowledge management) 사례==다. 교재 p.73의 두 질문을 풀어 볼 것.
+> - **Yammer:** 기업용 소셜 네트워킹(enterprise social networking) 도구. 연락처·기술·전문성을 검색하는 ==People Directory==가 있고, 웹·데스크톱·모바일에서 쓰며 ==SharePoint, Office 365==와 연동된다.
+> - **도입 방식:** ==2013년 2월 시범(pilot) 프로그램==, 참여는 ==자발적==, 업무뿐 아니라 ==취미·관심사==도 쓸 수 있게 허용.
+> - **확산:** 몇 달 만에 ==6,000명==이 사용, 이후 ==1만 명 이상==. 일본 국내 전 직원 → 해외 지사로 확대 계획.
+> - **결과:** ==최고경영진 ↔ 일반 직원==의 정보 흐름 개선, 다른 부서·지역 간 대화 증가. 예: ==스마트폰 개발자들이 기능·사용 편의성 의견을 회사 전체와 공유==하고 평소 몰랐던 다른 부서 활동을 알게 됨. 부서장들이 직원에게 최신 기술 활용 아이디어를 구하고, 그 의견을 ==제품 개발과 회사 정책==에 반영.
+> - 핵심: 회사 곳곳의 정보를 모으고 관리자가 직원에게 배우는 것 자체가 ==큰 문화적 변화(major cultural change)==였다.
+
 ---
 
 ## Slide 4 — Sharp Corporation Case (2/2)
@@ -110,8 +133,15 @@ objectives:
 > **Business process** — ==특정 업무를 수행하기 위해 논리적으로 연결된 활동의 집합.== 물자·정보·지식의 흐름이며, 여러 부서를 가로지르면 **cross-functional**이다.
 
 
+> [!EXAMPLE]
+> **교수님 메모 (Slide 5)**
+>
+> - Business process는 모든 비즈니스의 심장이다. 예: ==McDonald's에서 햄버거를 주문하는 것==, ==DMV(Department of Motor Vehicles, 차량국)에서 운전면허를 신청하는 것==.
+> - 기업의 비즈니스 프로세스를 공부하면 ==그 기업이 실제로 어떻게 일하는지==를 많이 배울 수 있다.
+> - **Process가 liability(부채)가 되는 경우:** ==조직의 대응력과 효율을 가로막는 낡은 업무 방식(outdated ways of working)==에 기반할 때.
+
 > [!NOTE]
-> 카페에서 “주문 받기 → 음료 만들기 → 전달하기 → 결제 기록하기”는 하나의 business process다. 각 단계는 따로 떨어진 일이 아니라 앞 단계의 정보(주문 내용)를 받아 다음 단계로 넘기는 흐름이다. 이 흐름이 잘 설계되어 있으면 손님이 몰려도 실수가 적은 **asset**이 되고, 예전 방식 그대로라 주문이 자주 누락되면 **liability**가 된다.
+> 카페의 “주문 → 제조 → 전달 → 결제 기록”도 하나의 프로세스다. 잘 설계되면 asset, 낡아서 주문이 자주 누락되면 liability다.
 
 **답안 틀:** 무엇이 흐르는가(material · information · knowledge) → 어떤 task가 이어지는가 → 한 부서 안인가, 여러 부서를 가로지르는가.
 ---
@@ -188,6 +218,15 @@ objectives:
 
 > ==IT는 기존 process를 빠르게 만들 뿐 아니라 새로운 process 자체를 가능하게 함==
 
+> [!EXAMPLE]
+> **IT가 가능하게 한 완전히 새로운 프로세스 (교수님 메모)**
+>
+> - ==iTunes에서 노래 다운로드하기==
+> - ==Amazon에서 책 또는 e-book 사기==
+> - ==Amazon Kindle==: 인터넷에 ==항상 연결된 e-book 단말기==로, 고객이 책을 내려받고 Amazon의 ==one-click purchase(원클릭 구매)== 방식으로 결제한다.
+>
+> 이 사례들은 기존 절차를 빠르게 한 것이 아니라 ==이전에는 없던 프로세스==라는 점에서 automation과 구분된다.
+
 자동화와 프로세스 재설계의 차이는 ==red:업무 순서가 바뀌었는가==로 확인할 수 있다. 기존 승인 절차를 그대로 두고 입력만 빨라졌다면 효율화이고, 같은 주문 정보를 여러 부서가 동시에 확인해 순차적인 전달·대기를 줄였다면 정보 흐름 자체를 바꾼 것이다.
 
 > [!TRAP]
@@ -229,7 +268,10 @@ objectives:
 
 
 > [!NOTE]
-> TPS는 회사의 “기록 담당”이다. 카페의 POS가 주문 한 건 한 건을 시간·메뉴·금액과 함께 남기는 것처럼, 매일 반복되는 거래를 정확하게 처리하고 저장한다. 판단은 거의 하지 않고 “어제 몇 잔 팔았나?”, “이 주문은 결제됐나?” 같은 **정해진 질문**에 답한다. TPS가 멈추면 주문도 급여도 처리되지 않으므로 위 단계 시스템 모두가 이 데이터에 의존한다.
+> TPS는 회사의 “기록 담당”이다. 카페 POS처럼 거래를 기록하고 “이 주문은 결제됐나?” 같은 **정해진 질문**에 답한다.
+
+**교수님 메모:** TPS의 목적은 조직 안 거래 흐름에 대한 ==routine questions에 답하는 것==이며, ==모든 비즈니스의 필수품(necessity)==이다. 오래전부터 써 온 시스템이라 ==aka. legacy systems==라고도 부른다. 예: ==sales order entry, payroll, shipping==.
+
 ---
 
 ## Slide 11 — Figure 2.2 Payroll TPS
@@ -259,6 +301,9 @@ objectives:
 
 > [!NOTE]
 > 급여 TPS는 직원 데이터(시급·근무시간·세율)를 받아 급여를 계산하고, 그 결과를 여러 곳으로 내보낸다. 직원은 급여명세서를, 관리자는 인건비 보고서를, 회계는 총계정원장(General Ledger) 기록을, 정부는 세금 자료를 받는다. ==하나의 거래 처리 결과가 여러 사용자에게 다른 형태로 쓰인다==는 점이 TPS가 회사 전체의 기반인 이유다.
+
+**교수님 메모:** 급여 TPS의 입력은 ==time card(근무시간 기록)== 같은 직원 지급 거래 데이터이고, 출력은 관리자용 온라인·인쇄 보고서와 급여명세서다. 급여 시스템의 출력은 회사 안의 관리자뿐 아니라 ==규제기관(regulatory agencies)과 보고 데이터의 정확성에 의존하는 다른 기관==에도 유용하다.
+
 ---
 
 ## Slide 12 — Business Intelligence (BI)
@@ -298,7 +343,9 @@ objectives:
 > **MIS = TPS data를 요약해 middle managers에게 정기 report 제공**
 
 > [!NOTE]
-> 카페 점장이 매주 받는 “메뉴별 판매량과 지난주 대비 증감” 보고서가 MIS의 결과물이다. TPS가 쌓은 거래 기록을 정해진 형식으로 요약해 주기 때문에 ==현황을 확인하고 이상한 점을 발견==하는 데 좋다. ==red:하지만 “신메뉴를 내면 매출이 얼마나 늘까?”처럼 조건을 바꿔 보는 질문에는 약하다.== 그건 DSS의 역할이다.
+> 카페 점장의 “메뉴별 주간 판매량” 보고서가 MIS다. ==red:“신메뉴를 내면 매출이 얼마나 늘까?” 같은 질문에는 약하다== — 그건 DSS의 역할이다.
+
+**교수님 메모:** 대부분의 MIS는 ==단순한 루틴(simple routine)==을 쓴다. 이 장의 MIS는 ==중간관리자를 위한 특정 시스템 유형==이고, 1장의 MIS(비즈니스의 정보시스템 전체를 연구하는 학문)와 ==이름은 같지만 뜻이 매우 다르다.==
 
 ---
 
@@ -365,8 +412,26 @@ objectives:
 
 > **MIS report는 manager가 performance를 비교·monitor하기 쉽게 요약한 정보**
 
+> [!EXAMPLE]
+> **Figure 2.4 원본 보고서 — Consolidated Consumer Products Corporation, Sales by Product and Sales Region: 2020**
+>
+> | 제품 코드 | 제품 | 지역 | 실제 판매 | 계획 | 실제/계획 |
+> | --- | --- | --- | ---: | ---: | ---: |
+> | 4469 | **Carpet Cleaner** | Northeast | 4,066,700 | 4,800,000 | ==red:0.85== |
+> | | | South | 3,778,112 | 3,750,000 | 1.01 |
+> | | | Midwest | 4,867,001 | 4,600,000 | 1.06 |
+> | | | West | 4,003,440 | 4,400,000 | 0.91 |
+> | | | **Total** | **16,715,253** | **17,550,000** | **0.95** |
+> | 5674 | **Room Freshener** | Northeast | 3,676,700 | 3,900,000 | 0.94 |
+> | | | South | 5,608,112 | 4,700,000 | ==blue:1.19== |
+> | | | Midwest | 4,711,001 | 4,200,000 | 1.12 |
+> | | | West | 4,563,440 | 4,900,000 | 0.93 |
+> | | | **Total** | **18,559,253** | **17,700,000** | **1.05** |
+>
+> **읽는 법:** 이 보고서는 Figure 2.3의 MIS가 만든 =="reports" 부분==이다. ==1.00보다 크면 계획보다 많이 팔았고, 작으면 실망스러운 결과==다. Carpet Cleaner는 전체 0.95(계획 미달, 특히 Northeast 0.85), Room Freshener는 전체 1.05(계획 초과, 특히 South 1.19).
+
 > [!NOTE]
-> 숫자 하나로 계획 대비 실적을 읽는 방법이다. 1.19는 계획보다 19% 더 팔았다는 뜻이고 0.85는 계획의 85%만 팔았다는 뜻이다. 관리자는 수백 개의 거래를 다 보지 않고도 ==1.00에서 크게 벗어난 항목만 골라== 원인을 살펴볼 수 있다. 이것이 MIS가 “요약”을 하는 이유다.
+> 관리자는 수백 개의 거래를 다 보지 않고 ==1.00에서 크게 벗어난 항목만 골라== 원인을 살핀다. 이것이 MIS가 “요약”을 하는 이유다.
 
 ---
 
@@ -389,6 +454,18 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > [!CONCEPT]
 > **Model-driven DSS** — 분석 모델(what-if, 시뮬레이션) 중심. **Data-driven DSS** — 대량의 데이터에서 쓸모 있는 정보를 찾아냄.
+
+> [!EXAMPLE]
+> **DSS 두 유형의 슬라이드 사례**
+>
+> | 유형 | 슬라이드 사례 | 특징 |
+> | --- | --- | --- |
+> | **Model-driven DSS** | ==Voyage-estimating systems== (해운사의 항해 견적 시스템, 다음 슬라이드) | 분석 모델 중심(analytical) |
+> | **Data-driven DSS** | ==Intrawest's marketing analysis systems== (스키 리조트 운영사 Intrawest의 마케팅 분석 시스템) | ==대량의 데이터에서 유용한 정보를 추출== |
+>
+> - 슬라이드의 non-routine 질문 예: ==“12월 판매가 두 배가 되면 생산 일정에 어떤 영향이 있나?”== 교재의 또 다른 예: “공장 일정이 6개월 늦어지면 투자수익률(ROI)은 어떻게 되나?”
+> - DSS는 TPS·MIS의 **내부** 데이터를 쓰지만 ==현재 주가, 경쟁사 제품 가격== 같은 **외부** 정보도 가져온다.
+> - 교수님 메모: ==routine과 non-routine 의사결정의 차이==, 그리고 DSS가 왜 non-routine 결정을 위해 설계되었는지 이해할 것.
 
 > [!PROBLEM]
 > **문제.** 한 관리자가 “12월 판매가 두 배가 되면 생산 일정은 어떻게 바뀌나?”를 알고 싶다. 어떤 시스템이 알맞은가?
@@ -425,8 +502,19 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 *Figure 2.5 · Voyage-Estimating Decision Support System — 대표적인 모델 중심 DSS.*
 
 
+> [!EXAMPLE]
+> **Voyage-Estimating DSS (교재 설명)**
+>
+> - **회사:** 모회사를 위해 ==석탄·석유·광석·완제품 같은 벌크 화물==을 주로 운송하는 대형 글로벌 해운사. 배를 일부는 소유하고 일부는 용선(charter)하며, 공개 시장에서 일반 화물 운송 계약에 ==입찰(bid)==한다.
+> - **사용자·환경:** 해운 계약 ==입찰가를 만들어야 하는 관리자들이 매일== 사용. ==강력한 PC(데스크톱)==에서 메뉴 방식으로 작동.
+> - **재무 계산:** 선박·시간 비용(==연료, 인건비, 자본==), 화물 종류별 운임, 항구 비용.
+> - **기술 계산:** 적재 용량, 속도, 항구 간 거리, 연료·물 소비량, ==적재 패턴(loading pattern)==.
+> - **답하는 질문:** 고객 배송 일정과 제시 운임이 주어지면 ==어떤 배를 얼마에 배정해야 이익이 최대인가?== 배송 일정을 지키면서 이익을 최적화하는 ==최적 속도==는? ==말레이시아 → 미국 샌디에이고== 배의 최적 적재 패턴은?
+> - 교수님 메모: 이 그림은 analytical models와 large databases 중 ==analytical models==에 가깝다 → **model-driven DSS**.
+
 > [!NOTE]
-> 해운회사는 배의 속도·적재량, 항구 간 거리, 연료비, 항구 비용을 조합해 “어느 배를 어디로, 얼마나 싣고, 어떤 속도로 보내야 이익이 가장 큰가”를 계산한다. 조건이 매번 달라서 정해진 보고서로는 답할 수 없는 **non-routine decision**이고, 분석 모델(Analytical Models)이 여러 시나리오를 비교해 준다. DSS가 **model-driven**이라는 말의 대표 사례다.
+> 조건이 매번 달라 정해진 보고서로는 답할 수 없는 **non-routine decision**이고, 분석 모델이 여러 시나리오를 비교해 준다.
+
 ---
 
 ## Slide 18 — Executive Support Systems (ESS) (1/2)
@@ -455,7 +543,17 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 
 > [!NOTE]
-> 사장은 “이번 달 아메리카노가 몇 잔 팔렸나”보다 “경쟁사가 근처에 매장을 내면 우리는 어떻게 대응할까”를 고민한다. 이런 결정에는 정답 공식이 없어서 판단(judgment)과 통찰(insight)이 필요하다. ESS는 세법 변화·경쟁사 동향 같은 **외부 정보**와 MIS·DSS가 요약한 **내부 핵심 지표**를 한 화면의 Digital Dashboard로 보여 줘서 그 판단을 돕는다.
+> 사장은 “경쟁사가 근처에 매장을 내면 어떻게 대응할까”처럼 정답 공식이 없는 결정을 내린다. 그래서 판단(judgment)과 통찰(insight)이 필요하다.
+
+> [!EXAMPLE]
+> **ESS의 예와 교수님 메모 (Slides 18–19)**
+>
+> - **예:** ==기업 KPI(key performance indicator)와 재무 성과==(운전자본 working capital, 현금흐름 cash flow, 재고 inventory)를 ==실시간==으로 보여 주는 **digital dashboard** → ==현대 ESS의 공통 기능==.
+> - ESS가 non-routine인 이유: ==해답에 이르는 합의된 절차가 없기 때문==이다.
+> - ESS는 여러 출처의 그래프와 데이터를 하나의 인터페이스로 보여 주며, ==portal(웹 인터페이스로 통합·개인화된 비즈니스 콘텐츠를 보여 줌)==을 쓰기도 한다.
+> - ESS는 MIS·DSS의 ==정확한 입력==에 의존한다. 시스템들이 서로 고립되어 있다면 ==과거에서 물려받은 조직의 기능 장애(organizational dysfunction)==다.
+> - ESS의 핵심 특징은 ==사용 편의성과 단순한 화면==이다. 경영진은 회사에 가장 중요한 데이터에 ==빠르게== 접근하고 싶어 한다.
+
 ---
 
 ## Slide 19 — ESS + MIS + DSS Connection
@@ -519,6 +617,8 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > [!NOTE]
 > 앞의 TPS·MIS·DSS·ESS가 ==red:관리 계층(세로)==으로 나눈 시스템이라면, Enterprise Applications는 ==red:부서와 회사 경계(가로)==를 연결하는 시스템이다. 영업·생산·회계가 각자 다른 프로그램과 엑셀을 쓰면 같은 고객 주문도 부서마다 다르게 기록된다. 전사 애플리케이션은 이 흩어진 기록을 하나의 흐름으로 묶는다.
+
+**교수님 메모:** Enterprise applications는 앞에서 본 시스템들이 쓰는 정보를 관리한다. 즉 ==TPS, MIS, DSS, ESS가 함께 매끄럽게 작동하도록== 하는 것이 전사 애플리케이션이다.
 
 > [!EXAM]
 > “TPS는 ERP의 일부인가?” 같은 질문은 분류 기준이 다르다는 점으로 답한다. ==red:관리 수준별 분류(TPS–ESS)와 연결 범위별 분류(ERP·SCM·CRM·KMS)는 서로 다른 축이다.==
@@ -594,7 +694,7 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 | 관점 | 핵심 내용 |
 |---|---|
-| **Market** | Cloud ERP 확산 / SAP Cloud ERP Suite revenue 증가 |
+| **Market** | Cloud ERP 확산 / ==SAP Cloud ERP Suite 매출: 2022년 82.09억 → 2025년 181.19억(약 2.2배)== |
 | **Architecture** | standardized processes / shared data / APIs / analytics / continuous updates |
 | **Management** | subscription cost / configuration / data migration / integration / skills / vendor dependence |
 | **AI** | ERP에 **copilots / agents** embedded → decision support / task execution |
@@ -635,7 +735,10 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 
 > [!NOTE]
-> 카페가 원두 업체, 우유 업체, 배송 업체와 주문·재고 정보를 공유하면, 원두가 떨어지기 전에 자동으로 발주가 나가고 배송 일정도 맞출 수 있다. SCM은 이렇게 ==red:회사 바깥의 여러 조직을 잇는 inter-organizational system==이라는 점이 ERP와 다르다. 목표는 “필요한 양을, 필요한 곳에, 가장 빨리, 가장 싸게”라는 네 조건을 동시에 맞추는 것이다.
+> 카페가 원두·우유·배송 업체와 재고를 공유하면 떨어지기 전에 자동 발주가 나간다. SCM은 ==red:회사 바깥의 여러 조직을 잇는 inter-organizational system==이라는 점이 ERP와 다르다.
+
+**교수님 메모:** 이 구분(조직 간 시스템)이 중요한 이유는 SCM 시스템이 ==잠재적 파트너와 공급업체의 비즈니스 프로세스까지 고려해서 설계되어야== 하기 때문이다. 대표 사례: 영상 Case 1 ==Walmart's Retail Link Supply Chain==.
+
 ---
 
 ## Slide 25 — Walmart’s AI-Enabled Supply Chain
@@ -650,8 +753,21 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 > **AI-enabled SCM = ==blue:Sense → Predict → Act → Learn + Control==**
 
+> [!EXAMPLE]
+> **Walmart AI 공급망 — 슬라이드 원문 키워드**
+>
+> | 단계 | 원문 내용 |
+> | --- | --- |
+> | **Sense** | 수요·재고·운송·운영 신호가 ==현재 상황에 대한 공유된 view==를 제공 |
+> | **Predict** | ==Machine learning==이 수요를 예측하고 재고·주문 이행·경로 문제를 미리 찾아냄 |
+> | **Act** | ==Self-healing inventory==: 불균형이 낭비가 되기 전에 ==필요한 곳으로 상품을 자동 재배치== |
+> | **Learn** | ==재사용 가능한 기술 구성요소(reusable components)==와 현지 운영 피드백 → ==여러 나라로 빠르게 배포== |
+> | **Control** | 관리자는 여전히 ==데이터 품질, 접근 권한, 예외 처리, 성과 측정, 책임 있는 결정==이 필요 |
+>
+> 1장 Slides 4–5의 Walmart 도입 사례(같은 회사의 세 차원 분석)와 영상 Case 1(Retail Link)과 연결해서 기억한다.
+
 > [!NOTE]
-> 다섯 단계는 사람이 재고를 관리하는 방식을 시스템으로 옮긴 것이다. 신호를 모으고(Sense), 부족해질 곳을 미리 예측하고(Predict), 재고를 옮기고(Act), 결과를 보고 다음 예측을 고친다(Learn). 마지막 **Control**은 AI가 틀렸을 때 누가 확인하고 책임지는지를 정하는 단계로, ==red:자동화가 커질수록 더 중요해진다.==
+> 마지막 **Control**은 AI가 틀렸을 때 누가 확인하고 책임지는지를 정하는 단계로, ==red:자동화가 커질수록 더 중요해진다.==
 
 ---
 
@@ -674,7 +790,10 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 
 
 > [!NOTE]
-> 단골손님이 매번 디카페인 라테를 주문한다는 기록이 영업·마케팅·서비스 담당자 모두에게 보이면, 신메뉴 쿠폰을 그 손님에게 맞춰 보내고 불만 전화가 와도 이력을 보고 응대할 수 있다. CRM의 핵심은 고객 정보를 ==한곳에 모아 고객 접점 프로세스 전체가 같은 정보를 쓰게== 하는 것이다. 특히 이익을 많이 주는 고객을 찾아 유지(retention)하는 데 초점이 있다.
+> 단골의 주문 이력이 영업·마케팅·서비스 모두에게 보이면 맞춤 쿠폰도 불만 응대도 같은 정보로 한다. 핵심은 ==고객 접점 프로세스 전체가 같은 고객 정보를 쓰게== 하는 것이다.
+
+**교수님 메모:** CRM은 ==마케팅과 고객 서비스 모두에 매우 중요==하다. 슬라이드 사례: 영상 ==US Foodservice Grows Market with Oracle CRM on Demand==(클라우드형 CRM으로 시장 확대).
+
 ---
 
 ## Slide 27 — Knowledge Management Systems (KMS)
@@ -692,7 +811,9 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **KMS = organizational knowledge를 수집·공유·활용하는 system**
 
 > [!NOTE]
-> 10년 차 바리스타가 알고 있는 “습한 날 원두 분쇄도를 조절하는 법”은 그 사람이 그만두면 사라진다. KMS는 이런 노하우와 문제 해결 방법을 모아 두고, 필요한 직원이 필요한 순간에 찾아 쓰게 한다. 데이터가 아니라 ==red:경험과 전문성==을 다룬다는 점이 다른 전사 시스템과의 차이이며, 자세한 내용은 2장 B의 지식관리 부분에서 이어진다.
+> 10년 차 바리스타의 노하우는 그 사람이 그만두면 사라진다. KMS는 데이터가 아니라 ==red:경험과 전문성==을 모아 필요한 사람이 찾아 쓰게 한다. 자세한 내용은 2장 B에서 이어진다.
+
+**교수님 메모:** 기업이 ==지식의 저장소(repositories of knowledge)==라는 생각은 낯설 수 있다. 기업 지식의 예: ==패스트푸드 식당을 운영하는 데 필요한 지식==, ==Amazon 같은 웹사이트를 운영하는 데 필요한 지식==. KMS는 직원이 ==특정 프로세스를 수행하거나 문제를 해결하는 법==을 이해하도록 돕는다. 생각해 볼 것: KMS가 부실한 기업에는 어떤 결과가 생길까?
 
 ---
 
@@ -717,7 +838,9 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **Intranet = 내부용 / Extranet = 제한된 외부 partner까지 확장**
 
 > [!NOTE]
-> 직원만 들어가는 사내 공지·매뉴얼 사이트가 Intranet이고, 여기에 원두 공급업체가 로그인해 우리 재고와 발주서를 볼 수 있게 열어 주면 Extranet이다. 둘 다 인터넷 기술을 쓰지만 **누구에게 문을 열어 주느냐**가 다르다. Extranet은 SCM처럼 외부 파트너와의 협업을 위한 통로가 된다.
+> 사내 공지 사이트는 Intranet, 여기에 원두 공급업체가 로그인해 발주서를 보게 열어 주면 Extranet이다.
+
+**슬라이드 메모:** Intranet은 흔히 ==회사 웹사이트 안의 비공개(private) 접근 영역==이고, Extranet은 ==공급망 조정==에 자주 쓰인다. ==intranet·extranet이라는 용어는 점점 덜 쓰이지만== 아직 쓰는 기업도 있다.
 
 > [!TRAP]
 > 둘 다 인터넷 기술을 쓴다. 차이는 **누구에게 문을 여느냐**다. ==red:직원만 → intranet, 허가된 외부 파트너까지 → extranet.==
@@ -735,7 +858,9 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **E-commerce ⊂ E-business / E-government는 공공부문의 Internet 활용**
 
 > [!NOTE]
-> 카페가 앱으로 원두를 판매하면 E-commerce이고, 그 판매를 포함해 직원 근무표·발주·회계까지 디지털로 처리하면 E-business다. 즉 E-commerce는 “사고파는 것”만 보는 **부분집합**이다. 정부가 온라인으로 민원과 공공 정보를 제공하는 것은 E-government로, 주체가 공공부문이라는 점이 다르다.
+> 카페가 앱으로 원두를 팔면 E-commerce, 근무표·발주·회계까지 디지털로 하면 E-business다.
+
+**슬라이드 메모:** E-business는 ==인터넷과 네트워킹으로 비즈니스의 모든 부분==을 가능하게 하는 것이고, E-commerce는 그중 ==인터넷으로 상품·서비스를 파는 부분==만 가리킨다. 인터넷 기술이 공공부문에 가져온 비슷한 변화가 ==E-government==(시민·직원·기업에게 정보와 서비스 제공)다.
 
 > [!TRAP]
 > **E-commerce ⊂ E-business.** ==red:“e-business는 e-commerce의 일부”라는 보기는 포함 관계를 거꾸로 쓴 오답이다.==
@@ -748,6 +873,56 @@ MIS와 DSS는 사용자나 데이터만으로 구분하면 헷갈린다. 같은 
 > **6.** Intranet과 extranet의 차이를 한 문장으로 쓰시오.
 
 ---
+
+> [!PAGEBREAK]
+
+## 사례 총정리 · 2장 A에 나오는 기업 예시
+
+시험은 “다음 사례가 보여 주는 시스템·개념은?” 또는 “X의 예를 들라”로 나온다. ==blue:기업 → 시스템 → 결과 → 개념==을 한 줄로 말할 수 있으면 된다.
+
+| 슬라이드 | 기업·사례 | 시스템·내용 | 핵심 결과·수치 | 연결 개념 |
+| --- | --- | --- | --- | --- |
+| 1 | Walmart (영상) | Retail Link 공급망 | 공급업체–매장 연결 | SCM |
+| 1 | **Cemex** (영상) | 소셜 비즈니스 | 소셜 비즈니스의 best practice | Social business |
+| 1 | **US Foodservice** (영상) | Oracle CRM on Demand | 시장 확대 | CRM |
+| 3–4 | **Sharp Corporation** | **Microsoft Yammer** (기업용 소셜 네트워킹) | 2013년 2월 시범 → 6,000명 → 1만 명+, 큰 문화 변화 | 협업·지식 공유 (일종의 KM 사례) |
+| 5 | McDonald's, DMV | 햄버거 주문, 운전면허 신청 | 모든 비즈니스의 심장 | Business process |
+| 8 | **Apple iTunes, Amazon, Kindle** | 노래 다운로드, e-book 구매, 원클릭 결제 | 이전에 없던 프로세스 | IT가 가능하게 한 새 프로세스 |
+| 11 | 급여 시스템 | time card → 급여명세서·보고서 | 규제기관도 출력 사용 | TPS |
+| 15 | **Consolidated Consumer Products Corp.** | Carpet Cleaner(0.95), Room Freshener(1.05) | 1.00 초과 = 계획 초과 | MIS 보고서 |
+| 16–17 | **해운사 Voyage-estimating** | 선박·운임·연료·적재 패턴 모델 | 배 배정, 최적 속도, 적재 패턴 | ==Model-driven DSS== |
+| 16 | **Intrawest** | 마케팅 분석 시스템 | 대량 데이터에서 정보 추출 | ==Data-driven DSS== |
+| 18 | Digital dashboard | KPI, 운전자본·현금흐름·재고 | 실시간 | ESS |
+| 23 | **SAP** | Cloud ERP Suite | 2022년 82.09억 → 2025년 181.19억 | Cloud ERP |
+| 25 | **Walmart** | AI 공급망 (Sense–Predict–Act–Learn–Control) | Self-healing inventory | AI-enabled SCM |
+| 27 | 패스트푸드 식당, Amazon 웹사이트 | 운영 지식 | 기업 = 지식의 저장소 | KMS |
+
+> [!TRAP]
+> ==red:Voyage-estimating은 model-driven, Intrawest는 data-driven DSS다.== ==red:Sharp는 협업 도구(Yammer) 사례지만 교수님은 “일종의 지식관리 사례”라고 메모했다.== ==red:Kindle의 원클릭 구매는 기존 절차의 자동화가 아니라 새로운 프로세스의 예다.==
+
+> [!FLASHCARD]
+> Q: 2장 사례 — Sharp는 어떤 문제를 무엇으로 해결했고 결과는?
+> A: 위계적 top-down 프로세스, 새 경쟁자, 협업·아이디어 공유 부족. 지식 공유 전략·프로세스 재설계·문화 변화와 함께 Microsoft Yammer를 도입(2013년 2월 시범, 자발적 참여). 1만 명 이상이 쓰며 경영진–직원·부서 간 소통이 늘고 아이디어가 제품 개발에 반영되었다.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — IT가 가능하게 한 완전히 새로운 프로세스의 슬라이드 예는?
+> A: iTunes에서 노래 다운로드, Amazon에서 책·e-book 구매, 항상 인터넷에 연결된 Kindle과 원클릭 구매.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — Model-driven DSS와 Data-driven DSS의 슬라이드 예는?
+> A: Model-driven = 해운사의 voyage-estimating system. Data-driven = Intrawest의 마케팅 분석 시스템.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — Voyage-estimating DSS가 답하는 질문 세 가지는?
+> A: 배송 일정과 운임이 주어질 때 어떤 배를 얼마에 배정해야 이익이 최대인가, 일정을 지키며 이익을 최적화하는 속도는, 말레이시아→샌디에이고 배의 최적 적재 패턴은.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — Figure 2.4 MIS 보고서의 회사와 제품, 해석법은?
+> A: Consolidated Consumer Products Corporation의 2020년 제품·지역별 판매. Carpet Cleaner 전체 0.95(미달), Room Freshener 1.05(초과). 1.00보다 크면 계획보다 많이 판 것.
+
+> [!FLASHCARD]
+> Q: 2장 사례 — Chapter 2 영상 사례 세 개와 각각의 개념은?
+> A: Walmart Retail Link 공급망(SCM), Cemex 소셜 비즈니스(social business), US Foodservice의 Oracle CRM on Demand(CRM).
 
 > [!PAGEBREAK]
 
