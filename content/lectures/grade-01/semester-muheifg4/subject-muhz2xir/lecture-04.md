@@ -43,6 +43,8 @@ objectives:
 
 **형광펜 읽는 법:** ==yellow:노랑== 핵심 정의·결론 · ==red:빨강== 시험에서 헷갈리는 구분·함정 · ==blue:파랑== 외워야 할 순서·목록
 
+**예시 박스 읽는 법:** **예시** 박스는 ==슬라이드의 실제 기업 사례와 교수님 메모==를 교재 설명으로 보충한 것이다. 시험에서 “이 사례는 어떤 전략·힘·개념인가?”로 나오므로 ==기업 → 시스템 → 결과 → 개념==을 함께 외운다. 장 끝 **사례 총정리**에 한 표로 모았다. 카페 예시는 이해를 돕는 짧은 가상 사례다.
+
 > [!PAGEBREAK]
 
 ## PART 1 · 조직이란 무엇인가
@@ -56,6 +58,14 @@ objectives:
   - IT를 competitive strategy에 어떻게 활용하는가?
 
 > **핵심 흐름: ==blue:Organization ↔ IT → Organizational Impact → Competitive Forces → Value Chain → Network Strategy==**
+
+> [!EXAMPLE]
+> **원본 영상 사례 (Slide 1)**
+>
+> | 영상 사례 | 연결 개념 |
+> | --- | --- |
+> | **Case 1 · GE Becomes a Digital Firm: The Emerging Industrial Internet** | 디지털 기업, 산업용 IoT(Industrial Internet), 스마트 제품 |
+> | **Case 2 · National Basketball Association (NBA): Competing on Global Delivery with Akamai OS Streaming** | 인터넷 기반 글로벌 콘텐츠 전송(라이브 스트리밍), 경쟁 전략 |
 
 ---
 
@@ -91,7 +101,21 @@ objectives:
 > **AI/ML을 product experience 개선에 적용한 사례**
 
 > [!NOTE]
-> 게임 방송을 하며 과자를 먹으면 바삭 소리가 마이크로 들어가 방해가 된다. PepsiCo는 이 불편 때문에 게이머가 Doritos를 덜 먹을 수 있다고 보고, AI로 바삭 소리만 골라 지우는 도구를 만들었다. 3장의 관점으로 보면 IT가 제품 자체를 바꾼 것이 아니라 ==고객 경험을 바꿔 특정 시장(gamer segment)에서의 경쟁력==을 지킨 사례다.
+> 게임 중 과자를 먹으면 바삭 소리가 마이크로 들어가 방해가 된다. PepsiCo는 AI로 바삭 소리만 지우는 도구를 만들어 ==고객 경험을 바꿔 특정 시장(gamer segment)에서의 경쟁력==을 지켰다.
+
+> [!EXAMPLE]
+> **PepsiCo × Doritos Silent (도입 사례) — 세 차원으로 정리**
+>
+> | 구분 | 내용 |
+> | --- | --- |
+> | **Business challenges** | 새 기술이 주는 기회, ==강력한 경쟁자==, 지켜야 할 큰 시장 점유율 |
+> | **Management** | ==고객 경험 최적화== |
+> | **Organization** | Doritos 특유의 ==바삭함(crunchiness)은 유지==하면서 배경 소음 문제 해결 |
+> | **Technology** | ==AI 머신러닝==이 ==5,000개 이상의 서로 다른 crunch 소리==를 분석 |
+> | **Information system** | ==Doritos Silent== 소프트웨어: 사용자 목소리는 살리고 배경의 Doritos 씹는 소리만 제거 |
+> | **Business solutions** | 매출 증가, 고객 경험·서비스 개선 |
+>
+> 교재 연결: Doritos Silent는 Slide 33의 ==customer experience management(고객 경험 관리)==, 즉 ==product differentiation== 전략의 예로 다시 나온다.
 
 ---
 
@@ -115,7 +139,10 @@ objectives:
 
 
 > [!NOTE]
-> 같은 POS 시스템을 두 카페가 도입해도 결과가 다르다. 사장이 모든 걸 직접 결정하는 매장과 점장에게 권한을 준 매장, 기록을 중시하는 문화와 감으로 일하는 문화에서 시스템이 쓰이는 방식이 달라지기 때문이다. 그리고 시스템이 들어오면 다시 일하는 방식과 권한이 바뀐다. 이것이 **two-way relationship**이다.
+> 같은 POS도 권한 구조와 문화가 다른 두 카페에서는 다르게 쓰이고, 들어온 시스템이 다시 일하는 방식을 바꾼다. 이것이 **two-way relationship**이다.
+
+**교수님 메모:** 이 개념은 1장 Figure 1.2·1.4에서 이미 나왔다. 양방향 관계를 매개하는 요인 중 ==관리자가 내린(또는 내리지 않은) 결정==이 특히 중요하다. 두 관계가 미래에 미칠 영향은 예측하기 어렵다 — 예: ==15년 전에는 거의 아무도 이메일과 메신저가 비즈니스 소통의 중심이 될 줄 몰랐다.==
+
 ---
 
 ## Slide 5 — Figure 3.1 Two-Way Relationship
@@ -162,7 +189,9 @@ objectives:
 > **Technical = input → process → output / Behavioral = people + rights + conflict + relationships**
 
 > [!NOTE]
-> 카페를 technical 관점으로 보면 “원두·우유·직원(입력)을 음료(출력)로 바꾸는 생산 시설”이다. behavioral 관점으로 보면 “누가 마감을 맡고, 누가 휴가 우선권을 갖고, 점장과 직원이 의견 충돌을 어떻게 풀어 왔는지가 쌓인 사회 집단”이다. 시스템을 도입할 때 앞의 관점만 보면 기계 배치만 바꾸면 된다고 착각하고, 뒤의 관점까지 봐야 사람들이 왜 저항하는지 이해할 수 있다.
+> 카페를 technical 관점으로 보면 “원두·직원(입력)을 음료(출력)로 바꾸는 시설”, behavioral 관점으로 보면 “마감 담당·휴가 우선권·갈등 해결 방식이 쌓인 사회 집단”이다. 뒤의 관점까지 봐야 사람들이 왜 저항하는지 이해된다.
+
+**슬라이드 원문:** Technical definition의 다른 표현 — ==내부 규칙과 절차를 가진 공식적인 법적 실체(formal legal entity)이자 사회 구조==. Behavioral definition — 권리·특권·의무·책임이 ==갈등과 갈등 해결을 통해 오랜 시간에 걸쳐 섬세하게 균형 잡힌(delicately balanced)== 집합. 교수님 메모: 두 정의는 ==서로 보완적이므로 하나만 쓰지 말고 둘 다 고려==한다.
 
 > [!TRAP]
 > “Technical view가 맞고 behavioral view는 틀렸다”는 식의 보기는 오답이다. 교재는 두 정의가 ==red:서로 보완(complementary)==한다고 본다.
@@ -258,6 +287,8 @@ feedback → 다시 capital / labor 제공
 > [!NOTE]
 > 목록은 다음 슬라이드들의 목차다. routine(10–11), politics(12), culture(13), environment(14–15), structure(17)를 차례로 다룬다. 공통 메시지는 하나다. 이 특징들이 조직마다 다르기 때문에 ==같은 IT가 조직마다 다른 결과==를 낸다.
 
+**교수님 메모:** ==Accountability==는 4장에서 나오는 시스템과 사회 제도의 특징으로, ==누가 책임 있는 행동을 했고 누가 책임지는지 가려내는 메커니즘이 있다는 뜻==이다(교재 p.159). ==impartial은 unbiased(편향 없는)라는 뜻==. 생각해 볼 것: 위계 구조가 없는 조직(일이 진행될까?), 효율 원칙을 지키지 않는 조직(쓸 만한 제품을 적정 가격에 낼 수 있을까?)은 어떻게 될까?
+
 ---
 
 ## Slide 10 — Routines and Business Processes
@@ -284,7 +315,10 @@ feedback → 다시 capital / labor 제공
 
 
 > [!NOTE]
-> “주문이 들어오면 컵에 이름을 쓰고, 샷을 뽑고, 우유를 데운다”는 정해진 순서가 routine(SOP)이다. 이런 routine이 모여 “음료 제조”라는 business process가 되고, 주문·제조·결제·재고 같은 process가 모여 하나의 카페(firm)가 된다. 이 포함 관계를 기억하면 다음 슬라이드의 “IT 도입 시 routine까지 바뀌어야 한다”는 말이 자연스럽게 이해된다.
+> “컵에 이름 쓰기 → 샷 뽑기 → 우유 데우기”가 routine, 이것이 모여 “음료 제조” process, process가 모여 카페(firm)가 된다.
+
+**교수님 메모 · 슬라이드 예:** 잘 정해진 루틴의 예는 ==병원(doctor's office)==이다. ==접수원, 간호사, 의사가 각각 정해진 루틴==을 가지고 있다.
+
 ---
 
 ## Slide 11 — Figure 3.4 Routines, Business Processes, and Firms
@@ -352,7 +386,9 @@ feedback → 다시 capital / labor 제공
 > **Culture = organization이 당연하다고 믿는 기본 가정**
 
 > [!NOTE]
-> “우리는 손님 얼굴을 보고 주문받는 게 맞다”는 믿음이 강한 카페에 키오스크를 들이면, 기술이 좋아도 직원과 단골이 거부할 수 있다. 문화는 구성원을 하나로 묶는 힘이지만, 그 믿음과 맞지 않는 **기술 변화에는 강한 제약**이 된다.
+> “얼굴 보고 주문받는 게 맞다”는 믿음이 강한 카페에 키오스크를 들이면 거부당할 수 있다. 문화는 통합하는 힘이자 **기술 변화의 제약**이다.
+
+**슬라이드 판서:** 문화 = 구성원들이 ==기반암(bedrock)처럼 공격할 수 없고(unassailable), 의심하지 않는(unquestioned) 가정==. 교수님 메모: 문화는 추상적으로 보이지만 ==특히 기술 변화(technological change)==에 대한 제약이 된다.
 
 ---
 
@@ -370,7 +406,9 @@ feedback → 다시 capital / labor 제공
 > **IS = 외부 변화를 감지하는 organization의 lens**
 
 > [!NOTE]
-> 카페는 주변 상권·경쟁 매장·원두 가격·규제에 영향을 받고, 반대로 지역 상권에 영향을 주기도 한다(reciprocal). 문제는 바깥이 조직보다 빨리 변한다는 것이다. IS는 판매 데이터나 리뷰를 통해 변화를 감지하는 **lens** 역할을 하지만, 렌즈가 잘못 설계되면 중요한 변화를 놓친다.
+> 카페는 상권·경쟁·원두 가격에 영향을 받고 상권에 영향을 주기도 한다(reciprocal). IS는 변화를 감지하는 **lens**지만, 잘못 설계되면 중요한 변화를 놓친다.
+
+**교수님 메모:** ==Environmental scanning(환경 탐색)==은 조직의 대응이 필요할 수 있는 ==외부 변화를 찾아내고 판단하는 것==이다. 예: ==현재의 경제 상황(economic climate)==은 생존을 위해 대대적인 조직 대응이 필요한 외부 변화다. Figure 3.5 메모: IS는 기업의 =="lens"==로서 외부 요인을 관찰해 정보를 기업 안으로 걸러 보낸다. 어느 정도 ==조직은 시스템이 보여 주는 것만 “본다”==. 시스템이 부실하면 ==관리자가 문제를 보지 못하게(blind)== 만들 수 있다.
 
 ---
 
@@ -441,6 +479,13 @@ feedback → 다시 capital / labor 제공
 
 > [!EXAM]
 > “disruptive technology의 발명자가 항상 이익을 얻는다”는 보기는 틀린 문장이다. Fast follower가 승자가 될 수 있다.
+
+> [!EXAMPLE]
+> **교수님 메모 — 시험에 쓸 실제 예**
+>
+> - ==PageRank 알고리즘==이 ==Google 검색==의 기반 기술이다.
+> - ==disruptive technology를 발명했지만 살아남지 못한 first mover==의 예: ==Altair 개인용 컴퓨터==, ==Netscape Navigator 인터넷 브라우저==.
+> - 슬라이드의 disruptive technology 예: ==personal computers, smartphones, Big Data, artificial intelligence, the Internet==.
 ---
 
 ## Slide 17 — Organizational Structure
@@ -456,6 +501,7 @@ feedback → 다시 capital / labor 제공
 | **Adhocracy** | ==blue:consulting firm== |
 
 - information system은 organization structure를 반영하는 경우가 많음
+- 출처: ==Mintzberg(1979)==의 다섯 가지 기본 구조. 슬라이드 판서: adhocracy는 ==중앙 관리·권한이 약한(weak central management or authority)== 구조. ==모든 조직은 구조(모양)를 가진다.==
 
 > **Organization structure가 다르면 필요한 IS도 달라짐**
 
@@ -484,6 +530,8 @@ feedback → 다시 capital / labor 제공
 
 > [!NOTE]
 > 조직 목표의 세 유형은 구성원을 움직이는 방식으로 구분한다. 강제로 따르게 하면 ==blue:coercive==(교도소), 보상으로 움직이면 ==blue:utilitarian==(기업), 가치와 신념으로 움직이면 ==blue:normative==(종교 단체, 대학)다. 리더십이 민주적인지 권위적인지, 업무가 반복적인지 아닌지에 따라서도 같은 IT의 효과가 달라진다.
+
+**교수님 메모(슬라이드 원문 짝):** ==prisons → coercive, businesses → utilitarian, colleges → normative==. 이 세 쌍은 순서대로 그대로 외운다.
 
 > [!CHECK]
 > **1.** 조직의 behavioral definition과 technical definition의 핵심 차이를 한 문장으로 쓰시오.
@@ -518,6 +566,9 @@ feedback → 다시 capital / labor 제공
 
 > [!NOTE]
 > IT 가격이 계속 내려가면서 기업은 비싼 사람(노동)이나 자본 대신 IT를 더 쓴다. 이 장에서 중요한 효과는 ==정보를 얻는 비용이 싸진다==는 점이다. 정보가 싸지면 거래 상대를 찾고 감독하는 비용이 내려가고, 그 결과 기업의 크기와 구조가 달라진다. 이 변화를 설명하는 두 이론이 다음 두 슬라이드다.
+
+**교수님 메모:** Transaction cost = ==기업이 스스로 만들 수 없는 것을 시장에서 살 때 드는 비용==. 시간이 지날수록 IT가 ==더 많은 중간관리자의 기능을 대체==하고, 건물·기계 같은 ==다른 자본의 필요==도 줄일 것이다. ==“economics of information(정보의 경제학)”==의 의미와 IT 때문에 ==outsourcing==이 가능해지는 이유를 설명할 수 있어야 한다.
+
 ---
 
 ## Slide 20 — Transaction Cost Theory
@@ -545,7 +596,9 @@ feedback → 다시 capital / labor 제공
 > **Transaction cost** — 시장에서 거래할 때 드는 비용(공급자 탐색, 계약, 품질 확인, 감시). 높으면 기업은 직접 하려고 커지고(vertical integration), 낮아지면 ==red:외부에 맡기며 작아질 수 있다==.
 
 > [!NOTE]
-> 카페가 원두를 직접 볶을지, 로스터리에서 사 올지를 고민한다고 하자. 좋은 로스터리를 찾고, 계약하고, 품질을 계속 확인하는 비용이 크면 직접 볶는 편(vertical integration)이 낫다. 그런데 온라인 플랫폼으로 공급업체 비교와 주문 관리가 쉬워지면 **사 오는 편이 더 싸지고**, 카페는 직접 할 일을 줄여 더 작게 운영할 수 있다.
+> 로스터리를 찾고 계약·검수하는 비용이 크면 원두를 직접 볶고(vertical integration), 온라인으로 그 비용이 줄면 **사 오는 편이 싸져** 카페는 더 작게 운영할 수 있다.
+
+**교수님 메모 (슬라이드 원문 흐름):** 시장을 쓰는 것은 비쌀 수 있다. 직원을 고용하지 않고 시장에 의존하면 ==인재를 찾고, 공급자·작업자의 품질을 조사하고, 계약서를 쓰고, 작업을 감시==해야 한다. 시장 참여가 비싸면 기업은 차라리 ==직원을 고용==한다. 그런데 ==인터넷이 시장 이용을 싸게== 만들어, 직원을 고용하기보다 ==시장에서 계약하는 것이 더 비용 효율적==이 되었다. 생각해 볼 질문: 인터넷은 왜 시장 참여를 예전보다 싸게 만드는가?
 
 > [!PROBLEM]
 > **문제.** 온라인 조달 플랫폼 덕분에 한 제조업체가 공급업체를 비교하고 계약을 관리하는 비용이 크게 줄었다. 어떤 이론으로 설명하며, 기업은 어떻게 변할 가능성이 큰가?
@@ -565,6 +618,8 @@ feedback → 다시 capital / labor 제공
 - ==red:managers / employees를 크게 늘리지 않고도 firm 확장 가능==
 
 > ==IT ↓ Agency Cost → larger firm을 더 적은 management cost로 운영 가능==
+
+**슬라이드 원문:** 기업은 ==감독이 필요한 자기 이익 추구자들 사이의 계약의 결합체(nexus of contracts among self-interested parties)==다. 교수님 메모: 직원을 ==끊임없는 감독이 필요한 독립적인 대리인(independent agents)==으로 보기 때문에, agency theory는 기업이 커질수록 ==직원 관리에 더 많은 노력이 들어 비용이 늘어나는 이유==를 강조한다. IT는 ==내부 관리 비용==도 줄인다.
 
 두 이론은 비용이 생기는 ==red:조직의 경계==가 다르다. Transaction cost는 외부 공급업체를 찾고 계약·거래하는 비용이고, agency cost는 내부 구성원의 일을 조정·감독하는 비용이다. IT가 어느 비용을 낮추는지에 따라 외부와 협력하기 쉬워질 수도, 내부 조직을 더 넓게 관리하기 쉬워질 수도 있다.
 
@@ -597,7 +652,16 @@ feedback → 다시 capital / labor 제공
 
 
 > [!NOTE]
-> 예전에는 매장 직원 → 점장 → 지역 관리자 → 본사 순으로 보고가 올라가야 결정이 났다. 이제 직원이 실시간 재고와 판매 데이터를 직접 보면 그 자리에서 발주를 결정할 수 있다. 중간 관리자의 “정보 전달” 역할이 줄어 계층이 납작해지고(**flattening**), 관리자 한 명이 더 많은 직원을 관리하게 된다(**span of control ↑**).
+> 직원이 실시간 재고를 직접 보고 발주를 결정하면 중간 관리자의 “정보 전달” 역할이 줄어 계층이 납작해지고(**flattening**), span of control이 넓어진다.
+
+> [!EXAMPLE]
+> **교수님 메모와 슬라이드 예 (Slides 22–23)**
+>
+> - Postindustrial organization은 ==사회학(sociology)==에 기반한 개념이며, 판서 키워드는 ==empowerment(권한 위임)==다.
+> - 권위가 ==공식 직위가 아니라 지식과 역량==에 기반하면 왜 조직이 납작해지는가? 충분한 IT가 있으면 유능한 직원이 ==위계 구조에서보다 혼자서 더 많은 일==을 해낼 수 있기 때문이다.
+> - IT는 ==task force-networked organization==(전문가 그룹이 ==짧은 기간 모였다 흩어지는== 조직)을 장려할 수 있다. 예: ==Accenture==.
+> - Figure 3.6의 이점: 정보가 ==더 적은 계층==을 거쳐 전달되고, 관리자가 적어 ==agency cost가 작으며==, ==의사결정 지연이 줄어== 더 빨리 행동한다.
+
 ---
 
 ## Slide 23 — Figure 3.6 Flattening Organizations
@@ -649,6 +713,8 @@ feedback → 다시 capital / labor 제공
 > [!NOTE]
 > 대형 시스템 프로젝트가 실패하는 이유는 버그보다 사람 쪽에 있는 경우가 많다. 새 시스템이 누가 정보를 보는지, 누가 결정하는지, 어떤 일을 하는지를 바꾸기 때문이다. 저항의 크기는 혁신의 성격, 조직 구조, 문화, 영향받는 업무라는 네 요인에 따라 달라진다.
 
+**교수님 메모:** IS는 ==핵심 자원인 정보(information)에 대한 접근==을 좌우하기 때문에 조직 정치에 얽힌다. 예: ==직원들은 자기 루틴을 깨뜨리는 변화에 저항==할 수 있다. 관리자에게는 IS의 기술적 이해만큼 ==IS의 영향을 받는 사람·조직 구조·관습을 이해하는 것==이 중요하다.
+
 ---
 
 ## Slide 25 — Figure 3.7 Resistance to IS Innovations
@@ -697,7 +763,13 @@ feedback → 다시 capital / labor 제공
 > **Internet → information cost ↓ + transaction/agency cost ↓ + organization flattening**
 
 > [!NOTE]
-> 인터넷은 앞에서 본 효과를 한꺼번에 키운다. 정보를 모으고 저장하고 나누는 비용이 거의 0에 가까워지면서 거래 비용과 감독 비용이 함께 내려간다. 예를 들어 매장 운영 매뉴얼을 인쇄해 우편으로 보내던 일을 사내 웹사이트에 올리면 배포 비용이 사라지고, 수정본도 즉시 모든 매장에 반영된다.
+> 인터넷은 정보를 모으고 나누는 비용을 거의 0으로 만들어 거래 비용과 감독 비용을 함께 낮춘다.
+
+> [!EXAMPLE]
+> **슬라이드 예와 교수님 메모 (Slide 26)**
+>
+> - 예: 한 ==대기업이 내부 매뉴얼을 사내 웹사이트로 직원에게 배포==해 ==배포 비용 수백만 달러==를 절약.
+> - 인터넷은 많은 조직을 ==납작하게(flattening)== 만드는 효과도 있다. 전형적인 기업에서 ==단순한 일도 7단계 이상의 관리층이 결정==하던 =="bad old days"==가 있었고, ==많은 Fortune 1000 기업은 아직도 그렇다.==
 
 ---
 
@@ -719,6 +791,8 @@ feedback → 다시 capital / labor 제공
 
 > [!NOTE]
 > 이 슬라이드는 3장 앞부분의 요약이다. 시스템을 설계할 때는 기능 목록보다 먼저 이 조직의 환경·구조·문화·정치·리더십·사용자 태도·업무를 확인해야 한다. 기술적으로 완벽해도 조직과 맞지 않으면(**organizational fit** 부족) 쓰이지 않는다.
+
+**슬라이드 메모:** 예: ==회사의 문화와 정치를 이해하지 못하고 설계한 시스템==은 인기가 없을 가능성이 크고, 직원들이 ==기존 루틴에서 크게 벗어나도록 강요==할 수 있다.
 
 > [!CHECK]
 > **4.** IT가 공급업체 탐색과 계약 비용을 낮출 때, 이를 설명하는 이론과 기업 규모의 변화 방향을 쓰시오.
@@ -749,7 +823,9 @@ feedback → 다시 capital / labor 제공
 > ==Competitive Advantage는 direct competitor뿐 아니라 5가지 industry forces로 결정==
 
 > [!NOTE]
-> 카페 사장이 옆 카페만 경쟁자로 생각하면 시야가 좁다. 새로 들어올 프랜차이즈(new entrants), 편의점 커피 같은 대체재(substitutes), 쿠폰만 쫓는 손님(customers), 원두 값을 올리는 공급업체(suppliers)도 수익을 깎아 먹는다. Porter 모형은 이 **다섯 방향의 압력**을 한 번에 보게 해 준다.
+> 옆 카페만 경쟁자가 아니다. 새 프랜차이즈(new entrants), 편의점 커피(substitutes), 쿠폰만 쫓는 손님(customers), 원두 값을 올리는 공급업체(suppliers)도 수익을 깎는다. Porter 모형은 이 **다섯 방향의 압력**을 한 번에 보게 해 준다.
+
+**교수님 메모:** Porter 모형은 ==왜 어떤 기업은 다른 기업보다 잘하는가==를 설명하려는 것이다. 판서 키워드: ==Competitive advantage==. 생각해 볼 질문: 다섯 요인 중 기업의 성공에 가장 중요한 것은?
 
 ---
 
@@ -778,6 +854,9 @@ feedback → 다시 capital / labor 제공
 
 > [!NOTE]
 > 기존 경쟁자는 신제품·서비스·효율 개선으로 계속 압박하고, 고객이 쉽게 떠나지 못하도록 **switching cost**를 높이려 한다. 신규 진입자는 브랜드 인지도는 낮지만 최신 설비와 젊은 인력이라는 장점이 있다. 진입 장벽이 낮은 업종일수록 이 압력이 크다.
+
+**슬라이드 예:** 진입 장벽이 높은 산업의 예 = ==컴퓨터 칩(computer chip) 사업==.
+
 ---
 
 ## Slide 30 — Porter’s Model (3/3)
@@ -799,6 +878,14 @@ feedback → 다시 capital / labor 제공
 
 > [!TRAP]
 > **Substitute**는 같은 필요를 *다른 방식*으로 채우는 것(==red:카페 커피 ↔ 편의점 커피==), **traditional competitor**는 ==red:같은 업종의 직접 경쟁자(옆 카페)==다.
+
+> [!EXAMPLE]
+> **슬라이드 원문 예와 메모 (Slides 30–31)**
+>
+> - **Substitute 예:** 가격이 너무 높아지면 고객이 쓸 대체재 — ==iTunes가 CD를 대체==.
+> - **Customers:** 고객이 경쟁사 제품으로 쉽게 옮길 수 있는가? ==제품 차별화가 거의 없는 투명한 시장==에서 고객이 ==가격만으로 경쟁==하도록 강요할 수 있는가?
+> - **Suppliers:** 기업이 ==공급업체만큼 빨리 가격을 올릴 수 없을 때== 공급업체의 시장 지배력이 커진다.
+> - Figure 3.8 메모: 그림에서 ==기존 경쟁자는 다른 네 힘과 다르게 표시==된다. 이유: 경쟁자는 ==같은 산업 안의 기업==이라 비슷한 압력을 받기 때문이다.
 
 ---
 
@@ -858,7 +945,23 @@ feedback → 다시 capital / labor 제공
 > **Low Cost = efficiency / Differentiation = uniqueness & experience**
 
 > [!NOTE]
-> Walmart는 판매 데이터를 공급업체와 실시간 공유해 재고와 물류 비용을 줄였다. 같은 물건을 더 싸게 파는 **low-cost** 전략이다. 반대로 Nike는 운동화를 직접 디자인하게 하는 맞춤 서비스로 다른 브랜드가 줄 수 없는 경험을 준다. 대량생산 설비로 개인 맞춤 제품을 만드는 이것이 **mass customization**이다.
+> Walmart는 판매 데이터를 공급업체와 공유해 재고·물류 비용을 줄였고(**low-cost**), Nike는 직접 디자인하는 맞춤 운동화로 다른 경험을 준다(**mass customization**).
+
+> [!EXAMPLE]
+> **Walmart — continuous replenishment system (Low-cost leadership)**
+>
+> - 고객이 계산대에서 결제하는 ==즉시 새 상품 주문이 공급업체로 직접== 간다. POS 단말기가 각 상품의 ==바코드==를 기록해 ==본사 중앙 정보시스템==으로 보내고, 시스템이 ==모든 매장의 주문을 모아 공급업체에 전송==한다. 공급업체는 웹으로 Walmart의 판매·재고 데이터에 접근한다.
+> - 재고를 번개처럼 빠르게 채우므로 ==자체 창고에 대량 재고를 둘 필요가 없고==, 매출 대비 ==간접비(overhead) 비율이 업계 대부분보다 낮다.==
+> - 판서: ==Efficient customer response system==은 ==소비자 행동을 유통·생산·공급망에 직접 연결==하는 시스템이다. Walmart의 continuous replenishment system이 그 예다.
+> - 1장 Slide 19의 ==Retail Link==(operational excellence)와 같은 사례 계열이다.
+
+> [!EXAMPLE]
+> **Product differentiation 사례**
+>
+> - 슬라이드 예: ==Google, Nike, Apple== (교재 Table 3.4: ==Uber, Nike, Apple==). Apple은 ==거의 매년 새 iPhone·iPad==로 차별화한다.
+> - **Mass customization 예(18판 교재):** 시계 브랜드 ==Baume==(Baume et Mercier 계열)는 Salesforce Commerce Cloud 기반 모바일 웹사이트에서 다이얼·케이스·스트랩·각인을 골라 ==2,160가지 조합==으로 나만의 시계를 만들게 한다.
+> - **Customer experience management:** 고객과 회사 사이의 ==전체 관계 동안의 모든 상호작용을 관리==하는 것. 예: 도입 사례 ==PepsiCo Doritos Silent==.
+> - **교재 Table 3.3 · 따라 하기 어려운 IT 기반 신제품·서비스:** ==Amazon 원클릭 쇼핑(특허)==, ==Apple iTunes Store(5대 음반사 모두의 합법 디지털 음악 시장, 미국 최대 음악 판매처)==, ==Ping 골프클럽 맞춤 제작==, ==PayPal 개인 간 온라인 송금==.
 
 ---
 
@@ -878,8 +981,23 @@ feedback → 다시 capital / labor 제공
 
 > **Niche = 좁은 target에 집중 / Intimacy = 관계 강화로 switching cost 증가**
 
+> [!EXAMPLE]
+> **Market niche와 intimacy 사례 (Slide 34 + 교재)**
+>
+> | 전략 | 사례 | 내용 |
+> | --- | --- | --- |
+> | **Focus on market niche** | ==Hilton Hotels의 OnQ 시스템== (교재 Table 3.4: Hilton Hotels, ==Harrah's==) | 고객 데이터를 분석해 좁은 목표 시장을 공략. 판서: ==CRM의 분석 기능(analytical capabilities)== |
+> | | ==Charlotte Hornets(NBA)== (18판 교재) | 온라인·경기장 티켓, 구단 상품, 경기장 식음료 구매를 ==실시간으로 합쳐 팬 한 명당 하나의 프로필== → 더 개인적인 관계, 타깃 마케팅 |
+> | | 신용카드 회사 | 구매 데이터를 마이닝해 ==가장 수익성 높은 카드 회원==을 예측 |
+> | **Customer & supplier intimacy** | ==Toyota== (Ford 등 자동차 회사) | 공급업체가 ==생산 일정에 직접 접근==하고, ==언제 어떻게 부품을 보낼지 직접 결정== → 공급업체에 더 많은 준비 시간 |
+> | | ==Amazon== | 사용자 선호를 추적해 ==다른 사람이 산 상품을 추천== |
+> | | ==Starbucks== (슬라이드 예) | 고객과의 강한 유대·충성도 |
+>
+> - IS는 niche 전략을 ==잘게 조정된 판매·마케팅 기법을 위한 데이터 생산·분석==으로 지원한다(판서).
+> - ==Switching costs(전환 비용)==: 한 제품·공급자에서 경쟁 제품·공급자로 바꿀 때 드는 ==시간 손실과 자원 지출==. 강한 고객·공급업체 연결은 전환 비용과 충성도를 높인다.
+
 > [!NOTE]
-> Hilton은 OnQ 시스템으로 고객 데이터를 분석해 수익성이 높은 고객층에 맞춘 서비스를 제공한다(**niche**). Amazon은 구매 기록으로 추천을 해 주고, 고객은 그 추천이 편해서 다른 쇼핑몰로 옮기기 어려워진다(**intimacy → switching cost ↑**). Toyota는 부품 공급업체와 생산 정보를 공유해 공급업체가 쉽게 떠나지 않게 한다.
+> Hilton은 수익성 높은 고객층에 집중하고(**niche**), Amazon 추천은 편해서 다른 쇼핑몰로 옮기기 어렵게 만든다(**intimacy → switching cost ↑**).
 
 > [!PROBLEM]
 > **문제.** 한 호텔 체인이 고객 데이터를 분석해, 출장이 잦은 고소득 고객에게만 맞춤 서비스를 집중한다. 어떤 기본 전략인가?
@@ -902,7 +1020,21 @@ feedback → 다시 capital / labor 제공
 > ==red:Internet은 경쟁을 없애지 않고 오히려 rivalry와 entry pressure를 강화==
 
 > [!NOTE]
-> 인터넷이 등장하자 여행사와 종이 백과사전 산업은 크게 무너졌다. 누구나 같은 기술 표준을 쓸 수 있어 신규 진입이 쉬워지고, 고객은 가격을 쉽게 비교해 경쟁이 더 치열해졌다. 하지만 동시에 브랜드를 알리고 충성 고객을 만들 새 기회도 생겼다. 인터넷은 **경쟁을 없애지 않고 더 세게 만든다**.
+> 인터넷은 **경쟁을 없애지 않고 더 세게 만든다.** 누구나 같은 표준을 쓰니 진입이 쉽고, 고객은 가격을 쉽게 비교한다.
+
+> [!EXAMPLE]
+> **인터넷이 바꾼 산업과 다섯 힘 (교재 Table 3.5 요약)**
+>
+> - 거의 무너진 산업: ==여행사(travel agency), 종이 백과사전(printed encyclopedia)==. 큰 영향을 받은 산업: 소매, 음악, 도서, 증권 중개, 소프트웨어, 통신, ==신문(media)==.
+> - 새 시장·브랜드를 만든 기업 예: ==Amazon, eBay, YouTube, Facebook, Expedia, Google== — 인터넷이 산업 전체를 “transform”했다.
+>
+> | 경쟁 요인 | 인터넷의 영향 |
+> | --- | --- |
+> | 대체재 | 새로운 방식의 대체재가 등장 |
+> | 고객의 교섭력 | ==전 세계 가격·제품 정보== → 교섭력이 고객 쪽으로 이동 |
+> | 공급자의 교섭력 | 인터넷 조달로 기업의 공급자 교섭력 ↑, 공급자도 중간상 제거로 이득 |
+> | 신규 진입 위협 | ==영업 인력·유통 채널·물리적 자산== 같은 진입 장벽이 낮아짐 |
+> | 기존 경쟁자 간 경쟁 | 지리적 시장 확대 → 경쟁자 수 ↑, 차별화 ↓, ==가격 경쟁 압력== |
 
 ---
 
@@ -927,7 +1059,15 @@ feedback → 다시 capital / labor 제공
 > **IoT는 product를 단순 물건에서 data-driven service platform으로 확장**
 
 > [!NOTE]
-> 스마트 체중계는 몸무게만 재는 기계가 아니라, 기록을 앱으로 보내 건강 관리 서비스를 제공하는 **플랫폼**이 된다. 사용자는 몇 년치 기록이 쌓인 앱을 떠나기 어렵고(switching cost ↑), 다른 회사가 같은 서비스를 만들기도 어렵다(new entrants ↓). ==red:다섯 힘 모두에 영향을 준다는 점이 시험 포인트다.==
+> 스마트 체중계는 기록을 앱으로 보내 건강 관리 서비스를 주는 **플랫폼**이 된다. 쌓인 기록 때문에 떠나기 어렵다(switching cost ↑). ==red:다섯 힘 모두에 영향을 준다는 점이 시험 포인트다.==
+
+> [!EXAMPLE]
+> **스마트 제품 사례 (교재 pp.129–130 표시)**
+>
+> - ==Under Armour== 등 스포츠·피트니스 기업: 센서가 사용자 활동을 원격 데이터센터로 보내는 ==웨어러블 건강 트래커와 피트니스 장비==.
+> - ==John Deere 트랙터==: 현장 레이더, GPS, ==수백 개의 센서==로 장비를 추적.
+> - 스마트 제품 = ==기업이 파는 더 큰 정보 집약적 서비스의 일부인 제품==. 웨어러블을 사면 제품뿐 아니라 ==제조사 클라우드 서버의 여러 서비스==도 함께 얻는다.
+> - 고객이 ==지배적 기업의 소프트웨어 환경에 갇혀(trapped)== 전환 비용이 오르고 신규 진입이 막힌다. 물리적 제품보다 ==소프트웨어·하드웨어가 더 중요해지면 부품 공급업체의 힘이 약해질 수== 있다.
 
 > [!CHECK]
 > **7.** Porter의 다섯 가지 경쟁 요인을 모두 쓰시오.
@@ -967,6 +1107,8 @@ feedback → 다시 capital / labor 제공
 
 > [!TRAP]
 > Porter 모형과 가치사슬 모형은 경쟁하는 이론이 아니다. **Porter = 산업 수준(어떤 압력과 싸우나)**, **Value chain = 기업 내부(어느 활동을 고치나)** — 둘은 분석 수준이 다르다.
+
+**교수님 메모 · Porter 모형의 한계 (교재 p.118–119):** ① Porter 모형은 경쟁우위를 얻기 위해 따라야 할 ==방법론(methodology)을 제공하지 않는다.== ② ==정확히 무엇을 해야 하는지 구체적이지 않다.== → 가치사슬 모형은 ==경쟁우위를 얻기 위해 정확히 무엇을 할지 더 구체적으로== 알려 준다. 각 단계에서 IS가 ==운영 효율과 고객·공급업체 친밀성==을 어떻게 높일지 정하고, ==벤치마킹과 업계 best practices==를 활용한다.
 
 ---
 
@@ -1036,6 +1178,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 > [!NOTE]
 > 한 회사의 value chain은 공급업체와 고객의 value chain에 이어져 있다. 이 연결을 IT로 실시간 조정하면, 여러 독립 기업이 마치 한 회사처럼 제품을 함께 만들 수 있다. 그것이 **value web**이다. 일직선 사슬보다 덜 선형적이고, 고객 수요에 맞춰 파트너를 바꿔 끼울 수 있을 만큼 유연하다.
 
+**교수님 메모:** ==인터넷 기술==이 value web이라는 고도로 동기화된 산업 가치사슬을 가능하게 했다. Value web은 ==개별 기업의 경계를 넘어 여러 독립 기업의 가치사슬을 조정==하며, ==수요·공급과 시장 상황 변화에 유연하게 적응==한다.
+
 ---
 
 ## Slide 40 — Figure 3.10 The Value Web
@@ -1080,8 +1224,15 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 
 > **Synergy = 1 + 1 > 2가 되도록 business units를 IT로 연결**
 
+> [!EXAMPLE]
+> **Synergy 사례 (Slide 41 + 교재)**
+>
+> - 슬라이드 예: ==Bank of New York과 JP Morgan Chase의 합병==, ==Google의 YouTube 인수==.
+> - 교재 예: ==Bank of America와 Countrywide Financial==의 합병, ==Amazon의 MGM 인수(2022)== — IS로 콘텐츠를 활용하고 운영을 통합해 비용을 낮추고 교차 마케팅을 늘렸다.
+> - 판서: ==SBU(strategic business unit)== — IS는 사업부들의 시너지와 핵심 역량을 높여 ==전체 성과==를 개선한다. IT의 역할은 ==서로 다른 사업부의 운영을 묶어 하나처럼 움직이게== 하는 것 → 비용 감소, 효율 증가.
+
 > [!NOTE]
-> 은행과 증권사가 합병하면 은행 고객에게 투자 상품을 팔 수 있다. 한쪽의 고객(output)이 다른 쪽의 영업 기반(input)이 되는 것이다. IT는 두 회사의 고객 데이터와 시스템을 연결해 이런 **synergy**를 실제로 만든다.
+> 은행과 증권사가 합치면 한쪽의 고객(output)이 다른 쪽의 영업 기반(input)이 된다. IT가 두 회사의 고객 데이터를 연결해 이 **synergy**를 실제로 만든다.
 
 ---
 
@@ -1106,6 +1257,18 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 > [!NOTE]
 > core competency는 회사가 **세계 최고 수준**인 활동이다. Google의 검색, Intel의 프로세서처럼 오랜 경험과 지식이 쌓여 경쟁사가 쉽게 따라 하기 어렵다. IT는 사업부 사이에서 이 지식을 공유하게 해 핵심 역량을 키운다. P&G가 사내 전문가 디렉터리와 인트라넷으로 연구 지식을 공유한 것이 예다.
 
+> [!EXAMPLE]
+> **Core competency 사례 짝 (슬라이드·교수님 메모)**
+>
+> | 기업 | 핵심 역량 |
+> | --- | --- |
+> | ==Procter & Gamble(P&G)== | 브랜드 관리·소비재 혁신의 세계적 리더. ==인트라넷과 사내 전문가(subject matter experts) 디렉터리==로 지식 공유 |
+> | ==Google== | ==검색(search)== |
+> | ==Microsoft== | ==오피스 생산성 소프트웨어== |
+> | ==Intel== | ==프로세서== |
+>
+> 교재: 핵심 역량의 예 — 세계 최고의 초소형 부품 설계, ==최고의 택배 서비스==, 최고의 박막 제조. 핵심 역량은 보통 ==수년간의 현장 경험에서 얻은 지식==에 기반하며, ==사업부 간 지식 공유를 장려하는 IS==가 역량을 강화한다.
+
 > [!TRAP]
 > **Core competency**는 “잘하는 일”이 아니라 ==red:세계 최고 수준==이면서 경쟁사가 쉽게 따라 하지 못하는 활동이다.
 
@@ -1125,6 +1288,8 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 
 > [!NOTE]
 > 지금까지의 전략이 한 회사 안에서 무엇을 할지였다면, 네트워크 전략은 **다른 회사·사용자와 연결된 정도 자체**를 경쟁력으로 쓴다. 세 유형은 다음 세 슬라이드에서 하나씩 다룬다.
+
+**교수님 메모 · 예:** ==Facebook과 eBay==는 ==수백만 사용자의 네트워크==에 기반한 기업이다. 웹과 인터넷 통신 도구로 ==커뮤니티==를 만들었고, ==더 많은 사람이 가입할수록 회원이 얻는 이익이 커진다.==
 
 ---
 
@@ -1169,8 +1334,18 @@ Primary activities는 제품과 서비스를 직접 만들고 전달하며, supp
 
 > **Virtual Company = ==자산을 직접 소유하기보다 network coordination으로 business 수행==**
 
+> [!EXAMPLE]
+> **Li & Fung (Virtual company, 교재 pp.136–137 표시)**
+>
+> - ==홍콩== 기업. ==GUESS, Ann Taylor, Levi Strauss, Reebok== 같은 패션 기업의 의류 생산·배송을 관리한다.
+> - 제품 개발, 원자재 조달, 생산 계획, 품질 보증, 배송까지 맡지만 ==원단·공장·기계를 하나도 소유하지 않는다.==
+> - 모든 일을 ==40개국 1만 5천 곳 이상의 공급업체 네트워크==에 아웃소싱.
+> - 고객은 ==Li & Fung의 private extranet==으로 주문하고, Li & Fung이 원자재 공급업체와 공장에 지시를 보내며, extranet이 ==주문별 생산 과정 전체를 추적==한다.
+> - 결과: 빠르게 변하는 패션 트렌드에 맞춰 ==유연하고 빠르게== 생산.
+> - 교수님 메모: “virtual” = ==공장·기계 같은 인프라를 실제로 소유하지 않고==, IS의 도움으로 ==지리적 경계 없이== 서비스를 제공한다는 뜻.
+
 > [!NOTE]
-> Li & Fung은 공장을 거의 소유하지 않으면서 의류를 생산·배송한다. 수천 곳의 공급업체 네트워크를 조정하고, 주문마다 가장 알맞은 공장을 골라 맡긴다. 자산을 소유하는 대신 **연결과 조정 능력**으로 사업을 하는 것이 virtual company다.
+> 자산을 소유하는 대신 **연결과 조정 능력**으로 사업을 하는 것이 virtual company다.
 
 ---
 
@@ -1201,6 +1376,15 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 
 > [!CONCEPT]
 > **Keystone firm** — 생태계를 지배하고 플랫폼을 제공하는 기업. **Niche firm** — 그 플랫폼 위에서 특정 가치를 제공하는 기업.
+
+> [!EXAMPLE]
+> **Business ecosystem 사례와 메모**
+>
+> - 슬라이드 예: ==수천 개 기업이 쓰는 Microsoft 플랫폼==, ==Facebook==, ==Walmart의 주문 입력·재고 관리 시스템==.
+> - 정의 출처: ==Iansiti and Levien(2004)== — 공급업체·유통업체·아웃소싱 기업·운송 서비스 기업·기술 제조사의 ==느슨하게 결합되었지만 상호 의존적인(loosely coupled but interdependent)== 네트워크.
+> - 교재 예 · ==모바일 인터넷 플랫폼==: 네 산업 — ==기기 제조사(Apple iPhone, Samsung, LG), 이동통신사(AT&T, Verizon, T-Mobile), 독립 앱 개발사, 인터넷 서비스 제공자==가 협력·경쟁하며 혼자서는 못 만드는 가치를 만든다.
+> - 교수님 메모 · value web과의 차이: business ecosystem은 ==여러 산업에 걸치고==, value web은 ==같은 산업 안의 기업들==이다.
+> - 개별 기업은 IT로 keystone firm이 만든 큰 생태계 안에서 ==수익성 있는 niche player==가 되는 방법을 고려할 수 있다.
 
 ---
 
@@ -1251,6 +1435,34 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 
 > **이 슬라이드는 AI를 Value Chain과 Porter Model에 연결하는 관점을 제시**
 
+> [!EXAMPLE]
+> **Table 3.6 · 가치사슬 활동별 AI 활용 예 (18판 교재)**
+>
+> | 활동 | AI 활용 |
+> | --- | --- |
+> | Inbound logistics | 자동화 창고에서 ==실시간·무오류 재고 기록==, 결함 식별, 입고 화물을 최적 위치에 배정 |
+> | Operations | 대량 생산에서 ==결함 식별== → 품질 ↑, 비용 ↓ |
+> | Sales and marketing | 고객 행동 분석으로 ==마케팅 개인화== |
+> | Service | ==AI 챗봇==이 고객·영업·서비스 기술자의 흔한 질문에 빠르게 답변 |
+> | Outbound logistics | 출하 일정·배송 경로 최적화 → 운송비 ↓ |
+> | Administration and management | ==예측 분석==으로 수요 변동 예상, 재고·자원 배분 최적화 |
+> | Human resources | 적합한 지원자를 끌어올 채용 채널 예측 → 채용 비용 ↓ |
+> | Procurement | 과거 데이터·공급업체 성과·시장 추세 분석으로 공급업체 선정 개선 |
+> | Technology | AI로 신제품 개발 — ==노이즈 캔슬링 기술==(소비자 제품, 보청기, 이어폰) |
+
+> [!EXAMPLE]
+> **Table 3.7 · AI가 Porter의 다섯 힘에 주는 영향 (18판 교재)**
+>
+> | 경쟁 요인 | AI의 영향 |
+> | --- | --- |
+> | 대체재 | ==개인 맞춤 패션 추천==처럼 대체하기 어려운 고유 제품·서비스 → 대체재 위협 ↓ |
+> | 고객의 교섭력 | AI 배송·고객 서비스로 구매 경험 개선 → ==충성도 ↑, 고객 교섭력 ↓== |
+> | 공급자의 교섭력 | AI 공급망 관리로 ==대체 공급업체 탐색 → 공급자 교섭력 ↓==. 단, 공급업체가 AI로 맞춤형·저가 제품을 주면 ==공급자 교섭력 ↑==도 가능 |
+> | 신규 진입 위협 | 비싸고 전문 지식이 필요한 AI는 ==진입 억제==. 하지만 ==상용 AI 플랫폼·오픈소스==로 진입이 쉬워지기도 함 |
+> | 기존 경쟁자 간 경쟁 | AI를 잘 쓰는 기업이 우위 → 다른 기업도 ==AI를 도입하지 않으면 경쟁력 상실== → 경쟁 심화 |
+>
+> 교재 핵심: AI는 ==전략적 결정을 스스로 내리지 못하지만== 경영진에게 조언할 수 있고, ==인간의 창의성·지혜를 완전히 대체하지 못한다.== AI 성공에는 ==정확·완전·정리된 대규모 데이터==, 구현 전문성, 변화 관리가 필요하다.
+
 ### 개념도 · 전략 분석의 세 가지 수준
 
 ![Competitive Forces는 산업 수준의 전략적 위치를, Value Chain은 기업 활동 재설계를, Business Ecosystem은 파트너 네트워크의 우위를 분석하는 구조](/materials/diagrams/mis-04-strategy-lenses.svg)
@@ -1277,7 +1489,17 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 > **Strategic IS의 핵심 과제 = Advantage를 만들고, 유지하고, business strategy와 정렬하는 것**
 
 > [!NOTE]
-> 처음 모바일 주문을 도입한 카페는 한동안 경쟁우위를 누렸지만, 모든 카페가 따라 하자 이제는 없으면 손님을 잃는 **survival** 도구가 됐다. 그래서 전략적 시스템은 만드는 것보다 **유지하는 것**이 어렵다. 또한 IT 계획이 사업 전략과 따로 놀면 돈만 쓰고 성과가 없으므로 둘을 맞추는 **alignment**가 필요하다.
+> 처음 모바일 주문을 도입한 카페의 우위도 모두가 따라 하면 **survival** 도구가 된다. 그래서 전략적 시스템은 **유지하기**가 어렵고, IT와 사업 전략의 **alignment**가 필요하다.
+
+> [!EXAMPLE]
+> **교재 사례 · Spotify's Podcasting Strategy Stumbles (Spotlight on Management)**
+>
+> - ==Spotify==: 세계 최대 온디맨드 음악 서비스(==180개국 5억 7,400만 명 이상==). 경쟁우위의 원천은 ==AI 기반 초개인화 추천==.
+> - ==AI DJ==: 사용자 취향·청취 행동으로 곡을 고르고 생성형 AI 음성으로 해설, 실시간 피드백으로 곡 변경.
+> - ==Discover Weekly==: 매주 월요일 사용자마다 ==30곡짜리 맞춤 플레이리스트== 생성.
+> - AI 오디오 모델로 원음 데이터를 분석해, 온라인 언급이 적은 신인 곡도 추천.
+> - 교훈: ==좋은 전략이 항상 옳은 전략이거나 제대로 실행되는 것은 아니다== — 팟캐스트 전략은 흔들렸다.
+> - 슬라이드 메모: 경쟁우위 유지 관련 통계는 교재 ==p.127== 참고. 관리자는 IT를 사업과 정렬하고 경쟁우위에 효과적으로 쓰기 위해 ==strategic systems analysis==를 해야 한다(산업 구조 + 기업·산업 가치사슬).
 
 > [!TRAP]
 > 처음엔 경쟁우위를 줬던 시스템도 모두가 따라 하면 **survival** 도구가 된다. ==red:“전략적 시스템은 경쟁우위를 영원히 보장한다”는 보기는 오답이다.==
@@ -1298,7 +1520,91 @@ Network economics는 참여자가 늘어날 때 네트워크 가치가 어떻게
 
 > **이 장의 핵심 역량 = Organization + IT + Strategy를 함께 보는 능력**
 
+> [!EXAMPLE]
+> **Crayola 진로 사례 (교재 Real-World Scenario)**
+>
+> - Pennsylvania주 Easton의 크레용·마커·점토·미술 도구 브랜드. 컴퓨터와 온라인 학습으로 ==손으로 쓰는 미술 도구 인기가 떨어지자==, 사업모형을 ==크레용 제조사 → 창의적 놀이를 위한 도구와 경험의 신뢰받는 공급자==로 바꾸었다.
+> - 디지털 제품: ==iMarker==(디지털 펜·크레용·연필 일체형, ==Color Studio HD iPad 앱==용).
+> - 디지털 마케팅(온라인 광고·소셜 미디어)과 ==business development representative==로 부모·교육자와 연결하고, ==Google Analytics==로 온라인 채널 활동을 추적.
+> - Crayola는 교재에서 ==product differentiation==(아이들이 디지털 도구로 그리고 디자인하게 하는 신제품)의 예로도 나온다.
+> - 슬라이드: 장 마무리 사례 ==AI Redesigns the Fashion Industry==.
+
 ---
+
+> [!PAGEBREAK]
+
+## 사례 총정리 · 3장에 나오는 기업 예시
+
+시험은 “다음 사례는 어떤 전략·경쟁 요인·개념인가?” 또는 “X의 예를 들라”로 나온다. ==blue:기업 → 시스템 → 결과 → 개념==을 한 줄로 말할 수 있으면 된다.
+
+| 슬라이드 | 기업·사례 | 시스템·내용 | 핵심 결과·수치 | 연결 개념 |
+| --- | --- | --- | --- | --- |
+| 1 | **GE** (영상) | Industrial Internet | 디지털 기업으로 전환 | IoT, digital firm |
+| 1 | **NBA × Akamai** (영상) | 라이브 스트리밍 글로벌 전송 | — | 인터넷 기반 경쟁 |
+| 3 | **PepsiCo** | **Doritos Silent** (AI/ML) | crunch 소리 5,000개+ 분석, 게이머 시장 유지·매출 성장 | Customer experience, differentiation |
+| 5 | 이메일·메신저 | 15년 전엔 예측 못 함 | — | 조직–IT 관계는 예측 어려움 |
+| 10 | 병원(doctor's office) | 접수원·간호사·의사의 루틴 | — | Routines (SOPs) |
+| 16 | **Google PageRank** | 검색의 기반 기술 | — | Disruptive technology |
+| 16 | **Altair PC, Netscape Navigator** | 발명했지만 살아남지 못함 | — | First mover의 실패 |
+| 17 | 스타트업 / 중견 제조업 / Fortune 500 / 로펌·학교·병원 / 컨설팅 | Mintzberg(1979) 다섯 구조 | — | Organizational structure |
+| 18 | 교도소 / 기업 / 대학 | coercive / utilitarian / normative | — | Organizational goals |
+| 22 | **Accenture** | task force-networked organization | 전문가가 짧게 모였다 흩어짐 | Flattening, postindustrial |
+| 26 | 대기업 사내 웹 매뉴얼 | 내부 매뉴얼 웹 배포 | 배포 비용 수백만 달러 절약 | Internet ↓ transaction·agency cost |
+| 29 | 컴퓨터 칩 사업 | 높은 진입 장벽 | — | New market entrants |
+| 30 | **iTunes vs CD** | 대체재 | — | Substitute products |
+| 33 | **Walmart** | continuous replenishment = efficient customer response system | 대량 재고 불필요, 낮은 간접비 | ==Low-cost leadership== |
+| 33 | **Google, Nike, Apple** (Uber) | 신제품·경험 | — | ==Product differentiation== |
+| 33 | **Baume** 시계 | 2,160가지 조합 | — | Mass customization |
+| 34 | **Hilton OnQ** (Harrah's), Charlotte Hornets | 고객 데이터 분석 | 좁은 목표 시장 공략 | ==Focus on market niche== |
+| 34 | **Toyota, Amazon, Starbucks** | 공급업체 생산 일정 공유, 추천 | 전환 비용 ↑ | ==Customer & supplier intimacy== |
+| 35 | 여행사, 종이 백과사전, 미디어 | 인터넷으로 위협·변화 | 경쟁 심화 | Internet's impact |
+| 36 | Under Armour, John Deere | 스마트 제품·센서 | 전환 비용 ↑, 진입 억제 | Smart products, IoT |
+| 41 | **Bank of NY + JP Morgan Chase**, **Google + YouTube** | 합병·인수 | 비용 ↓, 이익 ↑ | ==Synergies== |
+| 42 | **P&G** (Google 검색, Microsoft 오피스, Intel 프로세서) | 인트라넷 + 전문가 디렉터리 | 세계 최고 수준 활동 | ==Core competencies== |
+| 43 | **Facebook, eBay** | 수백만 사용자 커뮤니티 | 가입자 ↑ → 가치 ↑ | Network-based strategy |
+| 45 | **Li & Fung** | private extranet, 공급업체 1만 5천+ (40개국) | 공장·기계 소유 없음 | ==Virtual company== |
+| 46 | **Microsoft, Facebook, Walmart** | 플랫폼 | keystone vs niche | ==Business ecosystem== |
+| 49 | **Spotify** | AI DJ, Discover Weekly | 팟캐스트 전략은 흔들림 | 경쟁우위 유지의 어려움 |
+| 50 | **Crayola** | iMarker, Google Analytics | 사업모형 전환 | 진로: Business development representative |
+
+> [!TRAP]
+> ==red:Walmart는 1장에서는 operational excellence, 3장에서는 low-cost leadership의 예다== — 장마다 묻는 분류 기준이 다르다. ==red:Hilton은 niche, Toyota·Amazon·Starbucks는 intimacy다.== ==red:Li & Fung은 virtual company, P&G는 core competency, Bank of NY + JP Morgan Chase는 synergy다.==
+
+> [!FLASHCARD]
+> Q: 3장 사례 — PepsiCo Doritos Silent의 문제·해결·결과는?
+> A: 다른 사람의 Doritos 씹는 소리가 게이머를 방해하지만 팬들은 바삭함을 좋아함. AI/ML로 5,000개 이상의 crunch 소리를 분석해 배경 소리만 지우는 Doritos Silent 개발. 게이머 시장에서 인기 유지·매출 성장(고객 경험 관리).
+
+> [!FLASHCARD]
+> Q: 3장 사례 — 네 가지 기본 경쟁 전략과 슬라이드 예시 기업은?
+> A: Low-cost leadership = Walmart(efficient customer response). Product differentiation = Google, Nike, Apple. Focus on market niche = Hilton Hotels의 OnQ. Customer & supplier intimacy = Toyota, Amazon, Starbucks.
+
+> [!FLASHCARD]
+> Q: 3장 사례 — Walmart의 continuous replenishment system은 어떻게 작동하며 무엇이라고 부르나?
+> A: 계산대 POS가 바코드를 본사 중앙 시스템으로 보내고, 시스템이 모든 매장의 주문을 모아 공급업체에 바로 전송한다. 소비자 행동을 유통·생산·공급망에 직접 연결하므로 efficient customer response system이다.
+
+> [!FLASHCARD]
+> Q: 3장 사례 — Synergy, core competency, virtual company의 슬라이드 예는?
+> A: Synergy = Bank of New York과 JP Morgan Chase 합병, Google의 YouTube 인수. Core competency = P&G의 인트라넷과 전문가 디렉터리(Google 검색, Microsoft 오피스, Intel 프로세서). Virtual company = Li & Fung.
+
+> [!FLASHCARD]
+> Q: 3장 사례 — Li & Fung은 왜 virtual company인가?
+> A: 공장·원단·기계를 소유하지 않고 40개국 1만 5천 곳 이상의 공급업체에 모든 일을 아웃소싱하며, private extranet으로 주문을 받고 생산 과정을 추적해 GUESS·Levi Strauss 등의 의류를 생산·배송한다.
+
+> [!FLASHCARD]
+> Q: 3장 사례 — disruptive technology를 발명했지만 살아남지 못한 first mover의 예는?
+> A: Altair 개인용 컴퓨터, Netscape Navigator 브라우저. (Google 검색의 기반 기술은 PageRank.)
+
+> [!FLASHCARD]
+> Q: 3장 사례 — Mintzberg 다섯 구조와 예시 조직은?
+> A: Entrepreneurial = 소규모 스타트업, Machine bureaucracy = 중견 제조업체, Divisionalized bureaucracy = Fortune 500 기업, Professional bureaucracy = 로펌·학교·병원, Adhocracy = 컨설팅사.
+
+> [!FLASHCARD]
+> Q: 3장 사례 — 조직 목표의 세 유형과 짝이 되는 조직은?
+> A: Coercive = 교도소, Utilitarian = 기업, Normative = 대학.
+
+> [!FLASHCARD]
+> Q: 3장 사례 — Business ecosystem의 슬라이드 예와 value web과의 차이는?
+> A: Microsoft 플랫폼, Facebook, Walmart의 주문·재고 관리 시스템. Ecosystem은 여러 산업에 걸치고, value web은 같은 산업 안 기업들의 가치사슬 연결이다.
 
 > [!PAGEBREAK]
 
