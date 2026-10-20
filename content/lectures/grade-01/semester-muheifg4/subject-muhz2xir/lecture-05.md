@@ -18,6 +18,10 @@ objectives:
 
 **범위:** Chapter 4 슬라이드 1–35 · Ethics → Privacy → Property → Quality → Accountability → Quality of Life
 
+[Chapter 4 원본 PDF](/materials/mis-exam-slides/ch04_18ed.pdf)
+
+**예시 박스 읽는 법:** **예시** 박스는 ==슬라이드의 실제 사례·법률·수치와 교수님 메모==를 교재 설명으로 보충한 것이다. 시험에서 “이 사례는 어떤 원칙·차원·법인가?”로 나오므로 ==사례 → 내용 → 개념==을 함께 외운다. 장 끝 **사례 총정리**에 한 표로 모았다.
+
 ## 단원 도입
 
 | 출제 포인트 | 빈도 | 이렇게 나온다 |
@@ -73,6 +77,16 @@ objectives:
 > [!NOTE]
 > 네 사례의 공통 질문은 ==“기술로 할 수 있게 된 일을 해도 되는가?”==다. 인터넷 사업자가 트래픽을 차별해도 되는지(net neutrality), 플랫폼이 개인정보를 어디까지 써도 되는지, 범죄 수사를 위한 데이터 분석이 무고한 사람까지 감시해도 되는지, 오래된 정보를 지워 달라고 요구할 수 있는지(right to be forgotten)를 다룬다.
 
+> [!EXAMPLE]
+> **원본 영상 사례 제목 (Slide 3)**
+>
+> | 영상 | 연결 개념 |
+> | --- | --- |
+> | **Case 1 · What Net Neutrality Means for You** | 망 중립성, 인터넷 접근의 공정성 |
+> | **Case 2 · Facebook and Google Privacy: What Privacy?** | 정보 권리·프라이버시, 개인정보 기반 사업모형 |
+> | **Case 3 · United States v. Terrorism: Data Mining for Terrorists and Innocents** | 데이터 마이닝·NORA, 무고한 사람의 감시 |
+> | **Instructional Video · Viktor Mayer-Schönberger on the Right to Be Forgotten** | 잊힐 권리(GDPR에서 강화) |
+
 ---
 
 ## Slide 4 — Central Bank Digital Currencies Case
@@ -108,7 +122,19 @@ objectives:
 
 
 > [!NOTE]
-> Volkswagen은 배출가스 시험 때만 오염을 줄이는 소프트웨어를 넣었고, Wells Fargo는 실적 압박 속에 고객 몰래 계좌를 만들었다. 공통점은 기술이나 시스템이 ==red:잘못된 판단을 더 크게, 더 오래 숨길 수 있게== 했다는 것이다. 윤리는 이런 선택 앞에서 개인이 옳고 그름을 판단하는 기준이다.
+> 공통점은 시스템이 ==red:잘못된 판단을 더 크게, 더 오래 숨길 수 있게== 했다는 것이다. 슬라이드: 많은 경우 ==IS가 결정을 대중의 감시(public scrutiny)로부터 묻어 버리는 데== 쓰였다.
+
+> [!EXAMPLE]
+> **Table 4.1 · 윤리적 판단 실패 사례 (18판 교재)**
+>
+> | 기업 | 무슨 일이 있었나 | 결과 |
+> | --- | --- | --- |
+> | **Volkswagen AG** | ==“defeat-device” 배출가스 소프트웨어==를 미국 디젤차 ==50만 대 이상==, 전 세계 ==약 1,050만 대==에 설치 → 규제 시험 때만 기준을 통과하고 실제 주행에선 불법 수준의 오염물질 배출 | 국제 벌금 총 ==350억 달러==(미국 차주에게 95억 달러), 임원 소송 합의 3억 6,500만 달러, 미국 임원 Oliver Schmidt ==징역 7년·벌금 40만 달러== |
+> | **Wells Fargo** | 직원들이 ==고객 몰래 수백만 개의 가짜 계좌== 개설, 주택담보대출 조건 조작, 자동차 대출 고객에게 불필요한 보험 강매 | 미국 정부 벌금 ==25억 달러== |
+> | **FX** (교재 표기) | 암호화폐 거래소 대표 Sam Bankman-Friedman — 미국 역사상 최대급 금융 사기 | ==징역 25년==, 회사 붕괴. 내부 통제·규제 준수·시스템 무결성의 결함이 범죄를 가능하게 함 |
+> | **Robinhood** | 핀테크 증권사 — 고객에게 허위·오해 소지 정보 배포, ==시스템 장애로 고객이 제때 거래하지 못함== | FINRA 사상 최대 벌금 ==7,000만 달러== |
+>
+> 교수님 메모 · ==Madoff 폰지 사기==: 시스템이 ==20년 넘게== 투자자·규제기관·수사관을 속여 Madoff 사업의 실체를 숨기는 데 쓰였다.
 ---
 
 ## Slide 6 — IT/IS-Related Ethical Issues (2/2)
@@ -126,6 +152,8 @@ objectives:
 
 > [!NOTE]
 > IS는 기존의 힘과 돈의 분배를 바꾼다. 데이터를 많이 가진 기업은 더 강해지고, 예전에는 없던 범죄(해킹, 랜섬웨어)가 생긴다. 특히 무료 서비스 대신 개인정보를 모아 광고로 돈을 버는 사업 모델은, ==red:이용자가 모르는 사이에 프라이버시를 대가로 치르게 만든다.==
+
+**교수님 메모:** ==Google, Facebook== 등 많은 사이트의 사업모형은 ==사용자가 개인정보를 내놓게 해서 그 정보로 제품을 마케팅·판매하는 것==에 의존한다. 그래서 프라이버시가 중요한 쟁점이다.
 
 ---
 
@@ -197,6 +225,11 @@ objectives:
 > [!NOTE]
 > 다섯 차원은 4장 뒷부분의 목차이기도 하다. 정보 권리(19–26: privacy), 재산권(27–28: intellectual property), 책임과 통제(29–30: liability), 시스템 품질(31), 삶의 질(32–34) 순서로 다룬다. ==red:사례 문제를 받으면 “이 사례는 다섯 차원 중 어디에 해당하는가?”부터 정하면 답의 방향이 잡힌다.==
 
+**교수님 메모 · 차원별 대표 질문:**
+- **Information rights:** 개인은 ==자기 자신에 대해 어떤 권리==를 가지는가? 무엇을 보호할 권리가 있는가?
+- **Quality of life:** 정보·지식 기반 사회에서 ==어떤 가치를 지켜야== 하는가?
+- **System quality:** 개인의 권리와 사회의 안전을 지키려면 ==어떤 수준의 데이터·시스템 품질==을 요구해야 하는가?
+
 > [!PROBLEM]
 > **문제.** 다음 쟁점은 다섯 가지 도덕적 차원 중 어디에 해당하는가? ㉠ 음원 불법 복제 ㉡ 소프트웨어 오류로 생긴 피해의 책임 ㉢ 화면을 오래 봐서 생기는 눈의 피로
 >
@@ -219,6 +252,8 @@ objectives:
 > [!NOTE]
 > 다섯 추세는 모두 “더 많이 모으고, 더 오래 저장하고, 더 쉽게 분석하고, 더 정확히 추적할 수 있게 됐다”는 한 방향을 가리킨다. 저장 비용이 싸지니 지울 이유가 없어지고, 스마트폰은 위치를 계속 기록하고, AI는 흩어진 데이터를 연결해 새로운 사실을 추론한다.
 
+**슬라이드 판서:** 컴퓨팅 파워 증가: ==Moore's law==(더 많은 조직이 핵심 업무를 컴퓨터에 의존). 모바일 기기: ==개인 휴대전화 추적(tracking)==. AI: 윤리·도덕 기준 위반 가능성, ==프라이버시와 지식재산권==에 대한 도전.
+
 ---
 
 ## Slide 11 — Advances in Data Analysis Techniques
@@ -240,6 +275,14 @@ objectives:
 
 > [!TRAP]
 > **Profiling**은 한 사람에 대한 상세 파일을 만들고, **NORA**는 여러 사람·기록 사이의 **숨은 관계**를 찾는다. ==red:대상이 “한 사람”인지 “관계”인지로 구분한다.==
+
+> [!EXAMPLE]
+> **Profiling을 하는 곳 (교수님 메모 + 교재)**
+>
+> - 교수님 메모: online profiling은 오늘날 ==가장 논쟁적인== 컴퓨터 관련 윤리·사회·정치 쟁점. 인터넷뿐 아니라 ==보험사, 건강보험사, 카지노==, 그리고 ==잠재적 테러리스트와 국내 반대 세력을 찾는 각국 정부==가 사용한다. 판서: dossier는 ==서류철, 문서 더미(files; a pile of documents)==.
+> - **Google Marketing Platform:** 사람의 소비·온라인 행동 습관에 대한 상세한 dossier를 만들어 광고 타깃팅용으로 판매. 온라인 정보에 ==매장 신용카드 구매 같은 오프라인 정보==를 결합하기도 한다.
+> - **LexisNexis Risk Solutions:** 경찰·범죄·차량 기록, 신용·고용 이력, 주소, 자격증, 보험금 청구를 모아 ==미국 거의 모든 성인의 dossier==를 만들어 기업·정부에 판매.
+> - **데이터 브로커:** ==Acxiom, Epsilon, CoreLogic, LexisNexis==. 3대 신용평가사: ==TransUnion, Equifax, Experian==.
 
 ---
 
@@ -270,6 +313,15 @@ objectives:
 
 *Figure 4.2 · Nonobvious Relationship Awareness (NORA) — 흩어진 기록을 합쳐 숨은 관계를 찾는다.*
 
+> [!EXAMPLE]
+> **NORA의 슬라이드·교재 예**
+>
+> - Figure 4.2 원문 예: ==카지노 입사 지원자가 알려진 범죄자와 같은 전화번호를 쓴다는 것을 발견해 채용 관리자에게 경고==.
+> - 교재: 비행기 탑승 ==전에, 항공권 카운터의 승객이 알려진 테러리스트와 같은 전화번호==를 쓴다는 것을 즉시 발견. 데이터가 ==생성되는 동안(실시간)== 처리한다.
+> - 카지노 업계는 NORA를 ==사기 방지(anti-fraud) 기술==로도 쓴다.
+> - 교수님 메모: 정부와 민간 모두 프로파일링에 사용 — 예: ==항공사의 잠재적 테러리스트 탑승 식별==, ==정부의 전화 통화 감시==.
+> - ==2005년 IBM==이 NORA를 처음 개발한 회사를 인수해 지금은 ==IBM InfoSphere Identity Insight==로 제공한다.
+
 **그림 읽기:** 왼쪽의 다섯 데이터 출처는 원래 서로 다른 목적으로 만들어진 기록이다. 이름 표기를 통일하고(standardization), 같은 사람이나 주소를 찾아 연결하고(match), 하나의 관계망으로 합치면(merge) 개별 기록만 봐서는 보이지 않던 연결이 경고로 나온다. ==red:보안에는 유용하지만, 무고한 사람의 기록도 함께 분석된다는 프라이버시 문제가 생긴다.==
 
 ---
@@ -292,6 +344,10 @@ objectives:
 
 > [!TRAP]
 > **Responsibility**(결정의 의무를 받아들임) → **Accountability**(누가 했는지 추적 가능) → **Liability**(법적 배상) → **Due process**(공개된 법·이의 제기). 추적이 안 되면 나머지도 작동하지 않는다.
+
+**슬라이드 원문 · 정의의 핵심 표현:** Responsibility는 ==윤리적 행동의 핵심 요소==. Accountability는 ==시스템과 사회 제도의 특징==으로, ==누가 무슨 행동을 했는지 알 수 없는 시스템·제도는 본질적으로 윤리적 분석이나 행동을 할 수 없다.== Liability는 책임 개념을 ==법의 영역==으로 확장한 ==정치 체제의 특징==. Due process는 ==법치 사회의 특징==으로 법이 알려지고 이해되며 ==상급 기관에 항소(appeal)할 수 있는== 절차.
+
+**교수님 메모 · 왜 liability와 due process가 중요한가?** 정보시스템을 잘못 관리해 ==피해를 입은 개인에게 구제 수단(recourse)==을 주고, 그래서 ==“규칙대로 하게(play by the rules)” 만드는 유인==이 되기 때문이다.
 
 ---
 
@@ -337,6 +393,14 @@ objectives:
 > [!TRAP]
 > **Kant** = “**모두가** 해도 되는가?”, **Slippery slope** = “**계속 반복**해도 되는가?” ==red:둘을 바꿔 쓰는 보기가 자주 나온다.==
 
+> [!EXAMPLE]
+> **교수님 예시 — 회사 돈을 훔치는 직원 (Slide 15, “Difference? → refer to below!”)**
+>
+> - Slippery slope rule의 다른 이름: ==Descartes' rule of change==.
+> - 차이: ==Categorical imperative는 사회 전체(모든 사람)==에 걸치고, ==rule of change는 한 사람의 결정이 시간에 따라 반복되는 것==에 적용된다.
+> - **Kant로 판단:** 직원이 회사 돈을 훔치면 안 된다. ==모든 직원이 그렇게 하면 회사가 망하기== 때문이다.
+> - **Rule of change로 판단:** 1달러를 한 번 훔치는 것은 큰 문제가 아닐 수 있지만, ==1달러를 반복해서 훔치거나 큰돈을 훔치면== 결국 회사가 망하므로 받아들일 수 없다.
+
 ---
 
 ## Slide 16 — Ethical Principles (2/2)
@@ -351,6 +415,8 @@ objectives:
 
 > [!NOTE]
 > 고객 데이터를 마케팅에 쓸지 고민하는 상황이라면, **utilitarian**은 회사와 고객 전체의 이익이 가장 큰 선택을, **risk aversion**은 개인정보 유출 같은 피해가 가장 적은 선택을 고른다. **No free lunch**는 고객이 명시적으로 허락하지 않은 데이터는 고객의 것이라고 가정한다. ==red:원칙마다 결론이 다를 수 있으므로 답안에는 어떤 원칙으로 판단했는지 밝힌다.==
+
+**교수님 메모 · No free lunch:** 이 원칙은 ==copyright, patent, trademark==와 연결된다. ==오픈소스 소프트웨어==는 만든 사람이 무료로(때로는 출처 표시 없이) 배포하도록 라이선스한 경제재다. 이때는 “free lunch”가 있지만, ==창작자가 그 조건에 동의했기 때문==이다. 또한 ==비윤리적으로 보이는 것 자체가 실제 비윤리적 행동만큼 해로울 수 있으므로== 원칙을 지키는 것이 중요하다.
 
 > [!PROBLEM]
 > **문제.** 고객 데이터를 마케팅에 쓰면 이익은 크지만 유출 위험이 있다. 회사가 이익보다 **피해가 가장 적은 선택**을 했다면 어떤 원칙을 따른 것인가?
@@ -379,6 +445,8 @@ objectives:
 > [!NOTE]
 > 의사(AMA), 변호사(ABA), 컴퓨터 전문가(ACM)는 법이 정하기 전에 스스로 행동 기준을 만든다. 전문가가 아닌 사람은 그 분야의 옳고 그름을 판단하기 어렵기 때문이다. 기업에서는 이런 원칙을 정책과 시스템의 기술적 안전장치(guardrails)로 구현해 직원의 윤리적 결정을 돕는다.
 
+**슬라이드 원문:** AMA: ==American Medical Association(미국의사협회)==, ABA: ==American Bar Association(미국변호사협회)==, ACM: ==Association for Computing Machinery==. 전문직 행동 강령: 전문직이 ==사회의 일반 이익을 위해 스스로를 규제하겠다는 약속==(판서: codes of ethics). Governance codes는 조직이 윤리적 결정을 보장하려고 쓰는 도구이며, ==Responsible AI는 11장==에서 다룬다.
+
 ---
 
 ## Slide 18 — Real-World Ethical Dilemmas
@@ -401,6 +469,17 @@ objectives:
 
 > [!NOTE]
 > 실제 딜레마는 “옳은 것 vs 틀린 것”이 아니라 ==둘 다 정당한 가치끼리의 충돌==이다. 회사가 업무 시간의 인터넷 사용을 감시하는 것은 생산성이라는 정당한 목적이 있지만, 직원의 프라이버시도 정당한 권리다. 이럴 때 slide 14의 다섯 단계 분석으로 이해관계자와 선택지를 정리한다.
+
+> [!EXAMPLE]
+> **슬라이드의 딜레마 사례 세 가지**
+>
+> | 사례 | 충돌하는 가치 |
+> | --- | --- |
+> | **직원 모니터링** | 회사의 ==노동자 생산성 극대화 권리== vs 직원의 ==짧은 개인 용무로 인터넷을 쓰고 싶은 바람== |
+> | **Facebook** | 사용자를 모니터링해 ==광고주·앱 개발자에게 정보를 판매== vs 사용자의 프라이버시 |
+> | **콜센터 자동화** (교수님 메모) | 회사가 자동화 시스템으로 ==콜센터 인력을 줄이려는 것== vs 직원의 일자리와 급여 |
+>
+> 교수님 메모: 이런 경우 ==옳고 그름이 명확하지 않고, 서로 다른 가치가 맞부딪힌다== — 회사는 생산성을, 직원은 일과 급여를 중시한다.
 
 > [!CHECK]
 > **1.** 정보 시대의 다섯 가지 도덕적 차원을 쓰시오.
@@ -432,6 +511,8 @@ objectives:
 > [!NOTE]
 > 프라이버시는 두 가지로 나눠 기억한다. 감시나 간섭 없이 **혼자 있을 권리**, 그리고 내 정보가 어떻게 쓰이는지 **스스로 통제할 권리**다. ==red:정보시스템 시대에 더 문제가 되는 것은 뒤쪽이다.== 미국은 헌법 조항과 1974년 Privacy Act 같은 개별 법으로 보호한다.
 
+**슬라이드 원문 · 미국 헌법 조항의 내용:** ==First Amendment: 표현과 결사의 자유==, ==Fourth Amendment: 부당한 수색과 압수 금지==, ==Fifth·14th Amendment: 적법 절차(due process) 보장==, 그리고 ==Privacy Act of 1974== 같은 연방 법률.
+
 ---
 
 ## Slide 20 — Fair Information Practices (FIP)
@@ -454,6 +535,21 @@ objectives:
 
 > [!NOTE]
 > FIP의 바탕에는 **mutuality of interest**가 있다. 은행은 대출 심사를 위해 내 정보가 필요하고, 나는 대출을 받기 위해 정보를 준다. 서로 이익이 있으니 거래는 성립하지만, 은행이 그 정보를 동의 없이 다른 목적으로 쓰면 안 된다. FIP는 이 관계에서 지켜야 할 규칙이고, 미국의 여러 개별 법(COPPA, HIPAA 등)의 바탕이 된다.
+
+> [!EXAMPLE]
+> **FIP의 연도와 FIP가 이끈 법 (슬라이드 + 교재)**
+>
+> - FIP는 ==1973년==에 처음 정리되었고, ==FTC가 1998년==에 온라인 프라이버시용으로 재정리·확장했다(교재: ==2010년==에 새 기술을 반영해 다시 갱신).
+> - 교수님 메모 · mutuality of interest: 개인은 ==거래를 하고 싶고==, 기록 보유자는 ==그 거래를 지원하기 위해 개인 정보가 필요==하다 — 둘 다 거래의 이해당사자다.
+>
+> | 법 | 내용 (교재) |
+> | --- | --- |
+> | **COPPA** (Children's Online Privacy Protection Act) | 웹사이트·모바일 앱이 ==13세 미만 아동==의 정보를 수집하기 전에 ==부모의 허락==을 받아야 함 |
+> | **Gramm-Leach-Bliley Act** | 은행·증권·보험사 간 제휴 제한을 없애면서, 금융기관이 ==개인정보 보호 정책을 공개==하고 고객이 ==비계열 제3자와의 정보 공유를 거부(opt out)==할 수 있게 함 |
+> | **HIPAA** (Health Insurance Portability and Accountability Act) | ==의료 기록== 보호. 환자가 자기 의료 기록에 접근하고 사용·공개를 허락할 권리, 의료기관은 ==목적에 필요한 최소한==만 공개 |
+>
+> - 교재: FTC는 세 원칙을 추가 — ==privacy by design==, 데이터 관행의 ==투명성==, ==소비자 동의와 명확한 opt-out 선택지==.
+> - 교재: Pew Research(2023) 조사에서 ==80% 이상==이 온라인 프라이버시를 걱정하고, 대부분은 기업이 자기 데이터로 무엇을 하는지 ==통제할 수 없다==고 느낀다.
 ---
 
 ## Slide 21 — FTC FIP Principles
@@ -477,6 +573,8 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > [!TRAP]
 > FIP 다섯 원칙 중 ==red:핵심(core) 원칙은 Notice/awareness와 Choice/consent== 두 개다.
 
+**교수님 메모:** 이 다섯 FIP는 ==미국과 유럽 대부분의 모든 프라이버시 법의 기초==다. 인기 웹사이트의 privacy policy를 찾아 이 원칙에 얼마나 맞는지 확인해 보면, ==개인정보로 무엇이든 할 수 있게 허용하는 문장==이 여럿 있을 가능성이 크다.
+
 ---
 
 ## Slide 22 — EU GDPR
@@ -497,6 +595,15 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > [!NOTE]
 > GDPR은 미국 방식보다 훨씬 강하다. 미국은 업종별 법과 업계 자율 규제에 기대지만, GDPR은 EU 시민의 데이터를 다루는 ==red:모든 기업==에 적용되고, 명시적 동의를 요구하며, 위반하면 큰 벌금을 물린다. 한국 기업도 EU 고객 데이터를 처리하면 적용 대상이다.
+
+> [!EXAMPLE]
+> **GDPR 슬라이드 세부 사항과 메모**
+>
+> - 시행: ==2018년==. 고객의 ==모호하지 않고 명시적인 informed consent== 요구.
+> - EU 회원국은 ==비슷한 프라이버시 보호가 없는 국가로 개인정보를 이전할 수 없다.== Privacy shield agreements: EU 데이터를 처리하는 모든 국가는 GDPR 요건을 따라야 한다(판서: ==Safe harbor==).
+> - 벌금: ==2,000만 달러 또는 전 세계 매출의 4%== (슬라이드 표기: "4% of global daily revenue").
+> - 교수님 메모: EU 보호가 미국보다 훨씬 강한 이유는 ==현재 거래를 지원하는 것 외에는 무엇이든 하기 전에 informed consent를 요구==하기 때문이다. 그래서 ==유럽에는 광고성 우편물(junk postal mail)이 없다== — 광고 회사가 ==제3자에게서 얻은 개인정보를 본인 동의 없이 쓸 수 없기== 때문이다.
+> - 판서: ==The EU AI Act== — 교재: ==AI 사용을 규율하는 세계 최초의 광범위한 법==.
 
 > [!TRAP]
 > GDPR은 EU 안의 기업에만 적용되는 것이 아니다. 위치와 상관없이 ==red:EU 시민·거주자의 데이터를 처리하는 기업==이면 적용된다.
@@ -520,6 +627,8 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > [!TRAP]
 > **Cookie**는 브라우저에 저장되는 식별용 파일, **web beacon**은 이메일·웹페이지에 숨겨 열람 여부를 알려 주는 작은 그림, **spyware**는 몰래 설치되는 프로그램이다.
+
+**슬라이드 원문:** Super cookies: ==Flash cookies==. Web beacons: ==web bugs(tracking file)==. Spyware는 사용자 컴퓨터에 ==몰래(surreptitiously)== 설치되어 ==키 입력을 전송하거나 원치 않는 광고(adware)==를 띄운다. ==Google 서비스와 behavioral targeting(aka interest-based advertising)==. 판서: ==first-party tracking(개별 웹사이트) vs third-party tracking==.
 
 ---
 
@@ -545,6 +654,8 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > [!CONCEPT]
 > **Informed consent** — ==합리적 결정에 필요한 사실을 모두 알고 한 동의.== **Opt-in**은 동의해야 사용, **opt-out**은 거부하지 않으면 사용.
+
+**슬라이드 원문과 교수님 메모:** 온라인 업계가 self-regulation을 선호하는 방식 — ==복잡하고 모호한 개인정보 처리방침, opt-in보다 opt-out 선택, 온라인 프라이버시 “인증 마크(seals)”==. ==Cookie banner==: 사이트의 쿠키를 수락·거부할 수 있게 하는 팝업 창. AI의 도전: ==얼굴 인식 시스템용 데이터 수집==(11장)이 큰 우려 대상. 생각해 볼 질문: 기업에 더 강한 온라인 프라이버시 보호를 강제해야 할까? ==기업은 느슨한 규제를 선호==하고, ==대부분의 사람은 온라인에서 자기 프라이버시를 지키는 방법을 모른다== — 그렇다고 프라이버시가 중요하지 않은 것일까?
 
 ---
 
@@ -631,6 +742,8 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 네 유형은 강도가 다른 한 줄의 보호 단계가 아니라 ==보호 대상이 다른 병렬 분류==다. 사례에서는 무엇을 만들었는지와 무엇을 지키려는지를 먼저 확인해야 한다.
 
+**슬라이드 판서 · 기간:** Copyright는 ==저자 생존 기간 + 70년==, ==기업 소유 저작물은 95년==. Patent는 발명의 아이디어에 대한 ==20년 독점==. Trade secret은 ==공공 영역(public domain)에 있지 않은== 기업의 지적 작업·제품.
+
 > [!TRAP]
 > ==red:Copyright는 표현==을, ==red:patent는 아이디어(발명)==를 보호한다. ==red:“저작권은 아이디어를 보호한다”는 보기는 오답이다.==
 
@@ -663,6 +776,14 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > [!NOTE]
 > 종이책을 베끼려면 시간과 돈이 들지만, 디지털 파일은 클릭 한 번으로 똑같이 복사되고 전 세계로 퍼진다. 수정도 쉬워 원본이 무엇인지 판단하기 어렵다. 그래서 1998년 DMCA는 복제 방지 기술을 **우회하는 행위 자체**를 불법으로 정했다.
+
+> [!EXAMPLE]
+> **지식재산 보호 기관과 교재 사례**
+>
+> - 판서 · ==SIIA(Software and Information Industry Association)==: ==Microsoft와 주요 소프트웨어·정보 콘텐츠 기업==을 대표. ==불법 복제 신고 핫라인(antipiracy hotline)==을 운영하고, 조직의 불법 복제 방지 교육 프로그램과 직원 소프트웨어 사용 지침을 제공하며, 지식재산 보호 법을 위해 로비한다.
+> - 교재 · DMCA: ==World Intellectual Property Organization 조약==을 시행하며, ISP는 침해 통지를 받으면 ==호스팅 중인 저작권 침해 사이트를 내려야(take down)== 한다.
+> - 교재: 스트리밍 서비스는 녹음이 어려워 불법 복제를 억제한다. 음악 산업 매출은 1999–2014년 ==50% 이상 급락==했다가 ==2015년 이후 두 배 이상== 회복.
+> - 교재 · AI의 도전: ==OpenAI, Google, Microsoft, Meta== 등이 ==허락 없이 저작물로 AI 모델을 학습==시켰다는 논란(11장에서 더 다룸).
 ---
 
 ## Slide 29 — Computer-Related Liability Problems
@@ -720,6 +841,8 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > [!TRAP]
 > 비즈니스 시스템 실패의 ==red:가장 흔한 원인은 낮은 입력 데이터 품질==이다. 소프트웨어 버그나 하드웨어 고장보다 흔하다.
 
+**슬라이드 원문:** ==소프트웨어 업계는 아직 “받아들일 만하지만 완벽하지 않은” 성능의 소프트웨어를 보장할 테스트 표준에 도달하지 못했다.==
+
 ---
 
 ## Slide 32 — Quality of Life (1/3)
@@ -739,6 +862,15 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > [!NOTE]
 > IS는 삶을 편하게 만들지만 부작용도 있다. 소수 빅테크에 권력이 몰리고, 변화가 너무 빨라 적응하지 못하는 사람이 생기고, 퇴근 후에도 업무 메신저가 울려 일과 생활의 경계가 흐려진다. EU의 Digital Markets Act는 거대 플랫폼(gatekeeper)이 이용자를 가두고 경쟁자를 누르지 못하게 하려는 법이다.
+
+> [!EXAMPLE]
+> **Big Tech 규제와 삶의 질 쟁점 (슬라이드 + 교재)**
+>
+> - **EU Digital Markets Act(DMA):** ==2024년 3월 시행==. 시가총액 기준 ==gatekeeper==: ==Alphabet(Google·YouTube), Meta, Amazon, Apple, Microsoft, ByteDance(TikTok)==. 상호 연결된 제품·서비스로 ==사용자를 가두고(lock in) 잠재적 경쟁자를 짓누르는 것==을 막는다. 앱스토어·온라인 광고·전자상거래·메신저에 큰 영향 예상.
+> - 교재: ==2024년 8월== 미국 연방법원이 ==Google의 인터넷 검색 독점이 반독점법 위반==이라고 판결. Apple, Amazon, Meta에 대한 반독점 소송도 진행 중.
+> - **Rapidity of change(슬라이드):** 경쟁에 대응할 시간이 줄어 기업이 ==글로벌 경쟁에 대응할 충분한 시간을 갖지 못할== 수 있다.
+> - **Maintaining boundaries(슬라이드):** 컴퓨팅·인터넷 사용이 ==근무 시간을 늘리고 가족·개인 시간을 침해==한다.
+> - **Dependence and vulnerability(슬라이드):** 공공·민간 조직이 컴퓨터 시스템에 ==점점 더 의존==한다.
 
 ---
 
@@ -767,6 +899,14 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > [!TRAP]
 > **Computer crime = 불법**, **computer abuse = 비윤리적이지만 반드시 불법은 아님**. ==red:스팸은 대표적인 abuse다.==
 
+> [!EXAMPLE]
+> **Spam 규제와 고용 (슬라이드 + 교재)**
+>
+> - Spam은 기업에 ==처리 비용이 크고==, 대부분 ==봇 네트워크(bot networks)==에서 나온다. ==유럽이 미국보다 훨씬 엄격하게 규제==한다 — EU는 ==원치 않는 상업 메시지를 금지==하고, ==사전 동의한 사람==에게만 디지털 마케팅을 할 수 있다.
+> - **CAN-SPAM Act (미국, 2003):** ==스팸 자체를 불법화하지는 않지만 기만적인 이메일 관행을 금지==한다. ==가짜 회신 주소(fake return addresses) 금지==, 교재: 정확한 제목, 진짜 발신자 표시, ==수신 거부를 쉽게 할 방법== 제공 요구.
+> - Computer crime에서 컴퓨터는 범죄의 ==대상(object)일 수도, 도구(instrument)일 수도== 있다.
+> - **Employment:** ==trickle-down technology==, ==업무 재설계(reengineering)로 인한 일자리 감소==.
+
 ---
 
 ## Slide 34 — Quality of Life (3/3)
@@ -792,6 +932,15 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 > [!NOTE]
 > 소득이나 지역에 따라 인터넷과 기기에 접근하는 정도가 다르면, 정보 격차가 교육과 소득 격차로 이어진다. 이것이 **digital divide**다. 건강 문제도 있다. 같은 동작을 반복하면 RSI가 생기고(대표가 손목의 CTS), 화면을 오래 보면 눈이 피로해지는 CVS가, 기술 사용으로 짜증과 피로가 쌓이면 technostress가 생긴다.
 
+> [!EXAMPLE]
+> **Digital divide와 건강 위험 — 슬라이드 원문**
+>
+> - Digital divide: 미국에서 ==특정 인종·소득 집단==이 컴퓨터·인터넷을 가질 가능성이 낮다. 교재: 접근 격차는 줄고 있지만 ==같은 인종·민족 집단 안에서도 고소득 가정==이 컴퓨터와 광대역을 더 많이 가진다.
+> - 판서 · ==Time-wasting gap==: ==고소득 가정 아이들은 인터넷을 교육 목적으로==, ==저소득 가정 아이들은 오락과 게임에== 훨씬 더 많이 쓴다.
+> - ==RSI의 가장 큰 원천은 컴퓨터 키보드==. ==CTS(carpal tunnel syndrome, 손목터널증후군)==가 가장 흔한 컴퓨터 관련 RSI.
+> - ==CVS(computer vision syndrome)==: 화면 사용과 관련된 ==눈의 피로와 두통==.
+> - ==Technostress==: ==짜증(aggravation), 조급함(impatience), 피로(fatigue)==.
+
 > [!CHECK]
 > **7.** Copyright와 patent의 보호 대상과 기간을 비교하시오.
 >
@@ -814,7 +963,90 @@ FIP는 privacy라는 권리를 실제 데이터 처리 규칙으로 바꾸는 �
 
 > **Privacy / ethics / governance knowledge는 실제 business 경쟁력과 연결됨**
 
+> [!EXAMPLE]
+> **Cementos Argos 진로 사례 (교재 Real-World Scenario)**
+>
+> - 시멘트·콘크리트·골재를 생산·유통하는 다국적 기업으로, 미국과 중남미 등 ==16개 국가·지역==에서 운영한다.
+> - 의사결정을 개선해 경쟁우위를 얻으려고 ==전담 비즈니스 분석 센터==를 세우고 ==비즈니스 분석가, 데이터 과학자, privacy analyst==에 투자했다.
+> - ==Privacy analyst==: 조직의 데이터 프라이버시 관행을 전문으로 하며, ==개인정보 법규 준수와 윤리적 데이터 관행==을 보장해 ==소비자 신뢰와 조직 평판==을 지킨다. 사내외 프라이버시 질문의 ==첫 번째 창구(first point of contact)== 역할.
+
 ---
+
+> [!PAGEBREAK]
+
+## 사례 총정리 · 4장에 나오는 사례·법·수치
+
+시험은 “이 사례는 어떤 차원·원칙·법인가?” 또는 “X의 예를 들라”로 나온다. ==blue:사례 → 내용 → 개념==을 한 줄로 말할 수 있으면 된다.
+
+| 슬라이드 | 사례·법 | 내용 | 핵심 수치·결과 | 연결 개념 |
+| --- | --- | --- | --- | --- |
+| 3 | Net neutrality, Facebook·Google privacy, 테러 데이터 마이닝, 잊힐 권리 | 영상 사례 | — | 정보 권리·프라이버시 |
+| 4 | **중앙은행 디지털 화폐(CBDC)** | 편리함 vs 프라이버시·공정성 | — | 도입 사례 |
+| 5 | **Volkswagen** | defeat-device 소프트웨어 | 미국 50만+·전 세계 1,050만 대, 벌금 350억 달러 | 윤리적 판단 실패 |
+| 5 | **Wells Fargo** | 가짜 계좌 수백만 개 | 벌금 25억 달러 | 윤리적 판단 실패 |
+| 5 | **FX**, **Robinhood**, **Madoff** | 금융 사기, 허위 정보·시스템 장애, 폰지 사기 | 징역 25년, 벌금 7,000만 달러, 20년 넘게 은폐 | 윤리적 판단 실패 |
+| 6 | Google, Facebook | 개인정보 기반 사업모형 | — | 프라이버시 |
+| 10 | Moore's law, 휴대전화 추적, AI | 기술 추세 | — | 윤리 문제를 키우는 추세 |
+| 11 | 보험사·카지노·정부, Google Marketing Platform, LexisNexis | 개인 dossier | 미국 거의 모든 성인 | ==Profiling== |
+| 12 | 카지노 지원자–범죄자 같은 전화번호, 항공권 카운터 | 숨은 관계 경고 | IBM InfoSphere Identity Insight | ==NORA== |
+| 15 | 회사 돈을 훔치는 직원 | 모두가 하면? / 반복하면? | — | ==Kant vs Slippery slope== |
+| 16 | 오픈소스 소프트웨어 | 창작자가 동의한 “free lunch” | — | No free lunch rule |
+| 17 | AMA, ABA, ACM | 전문직 자율 규제 | — | Professional codes |
+| 18 | 직원 모니터링, Facebook, 콜센터 자동화 | 가치의 충돌 | — | Ethical dilemmas |
+| 19 | First·Fourth·Fifth·14th Amendment, Privacy Act of 1974 | 미국 프라이버시 보호 | — | Privacy |
+| 20 | **COPPA, Gramm-Leach-Bliley, HIPAA** | 아동·금융·의료 정보 | COPPA는 13세 미만 | FIP가 이끈 법 |
+| 22 | **GDPR (2018)** | 명시적 동의, 잊힐 권리 | 2,000만 달러 또는 매출 4% | EU 프라이버시 |
+| 23 | Cookies, super cookies(Flash), web beacons(web bugs), spyware | 추적 기술 | — | Internet challenges |
+| 27 | Copyright / Patent | 보호 기간 | 생존 + 70년 (기업 95년) / 20년 | Intellectual property |
+| 28 | **DMCA (1998)**, **SIIA** | 우회 금지, 불법 복제 신고 핫라인 | — | IP 보호 |
+| 30 | **Section 230** | 플랫폼의 사용자 콘텐츠 책임 | — | Accountability, liability |
+| 32 | **EU DMA (2024)** | gatekeeper 플랫폼 규제 | Alphabet·Meta·Amazon·Apple·Microsoft·ByteDance | Quality of life (power) |
+| 33 | **CAN-SPAM Act (2003)** | 기만적 이메일 금지 | 가짜 회신 주소 금지 | Computer crime·abuse |
+| 34 | Digital divide, time-wasting gap, RSI·CTS·CVS·technostress | 격차와 건강 위험 | RSI 최대 원천 = 키보드 | Quality of life |
+| 35 | **Cementos Argos** | privacy analyst | 16개 국가·지역 | 진로 |
+
+> [!TRAP]
+> ==red:Profiling은 한 사람의 dossier, NORA는 숨은 관계다.== ==red:CAN-SPAM은 스팸을 금지하지 않고 기만적 관행만 금지한다.== ==red:COPPA는 아동, HIPAA는 의료, Gramm-Leach-Bliley는 금융==이다.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — Volkswagen과 Wells Fargo는 각각 무엇을 했고 결과는?
+> A: Volkswagen은 defeat-device 배출가스 소프트웨어를 미국 50만 대 이상·전 세계 약 1,050만 대에 설치해 국제 벌금 350억 달러. Wells Fargo는 직원들이 고객 몰래 가짜 계좌 수백만 개를 만들어 벌금 25억 달러.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — 회사 돈을 훔치는 직원 예로 Kant와 rule of change를 구분하면?
+> A: Kant(categorical imperative)는 모든 직원이 훔치면 회사가 망하므로 안 된다. Rule of change(slippery slope)는 1달러 한 번은 괜찮아 보여도 반복하면 회사가 망하므로 안 된다. Kant는 사회 전체, rule of change는 한 사람의 반복이다.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — NORA의 대표 예 두 가지는?
+> A: 카지노 입사 지원자가 알려진 범죄자와 같은 전화번호를 쓰는 것을 발견해 채용 관리자에게 경고. 항공권 카운터의 승객이 알려진 테러리스트와 같은 전화번호를 쓰는 것을 탑승 전에 발견.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — COPPA, Gramm-Leach-Bliley, HIPAA는 각각 무엇을 보호하나?
+> A: COPPA는 13세 미만 아동 정보(부모 허락 필요), Gramm-Leach-Bliley는 금융 서비스 소비자 정보(정책 공개, 제3자 공유 opt-out), HIPAA는 의료 기록.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — GDPR의 시행 연도, 동의 방식, 벌금은?
+> A: 2018년. 모호하지 않은 명시적 informed consent. 2,000만 달러 또는 전 세계 매출의 4%. 잊힐 권리를 강화하고, 비슷한 보호가 없는 국가로 데이터 이전을 금지한다.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — 유럽에 광고성 우편물(junk mail)이 없는 이유는?
+> A: 광고 회사가 제3자에게서 얻은 개인정보를 본인 동의 없이 쓸 수 없기 때문이다. EU는 거래 지원 외의 모든 사용에 informed consent를 요구한다.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — Copyright와 patent의 보호 기간은?
+> A: Copyright는 저자 생존 기간 + 70년(기업 소유 저작물은 95년). Patent는 20년.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — CAN-SPAM Act는 무엇을 금지하나?
+> A: 2003년 미국 법. 스팸 자체를 불법화하지 않고 기만적 이메일 관행을 금지한다. 가짜 회신 주소를 쓰지 못하게 한다.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — EU Digital Markets Act의 목적과 gatekeeper 예는?
+> A: 2024년 시행. gatekeeper 플랫폼이 상호 연결된 제품·서비스로 사용자를 가두고 경쟁자를 짓누르는 것을 막는다. Alphabet, Meta, Amazon, Apple, Microsoft, ByteDance.
+
+> [!FLASHCARD]
+> Q: 4장 사례 — time-wasting gap이란?
+> A: 고소득 가정 아이들은 인터넷을 교육 목적으로, 저소득 가정 아이들은 오락·게임에 더 많이 쓰는 격차. digital divide의 한 모습이다.
 
 > [!PAGEBREAK]
 
