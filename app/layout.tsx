@@ -13,7 +13,7 @@ import { getAllLectures } from "@/lib/lectures";
 import { getSearchIndex } from "@/lib/search";
 import { readCatalog } from "@/lib/catalog";
 import { readCollection, withoutBody } from "@/lib/content";
-import { adminPassword } from "@/lib/access";
+import { isAdminViewer } from "@/lib/server/auth";
 
 export const metadata: Metadata = {
   title: { default: "HJS STUDY", template: "%s | HJS STUDY" },
@@ -30,7 +30,8 @@ export const viewport: Viewport = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // Local admin edits must be read on every development request. Production content is
   // generated once at build time so Vercel can serve the pages from its static cache.
-  if (process.env.NODE_ENV === "development") await connection();
+  const development = process.env.NODE_ENV === "development";
+  if (development) await connection();
   const lectures = getAllLectures();
   const exams = readCollection("practice").map(withoutBody);
   const catalog = readCatalog();
@@ -40,6 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <AppShell sidebar={<Sidebar lectures={lectures} exams={exams} catalog={catalog} />}>{children}</AppShell>
   </>;
   return <html lang="ko" suppressHydrationWarning><body><Providers>
-    {process.env.NODE_ENV === "development" ? <AdminProvider expectedPassword={adminPassword()}>{shell}</AdminProvider> : shell}
+    {/* The browser only learns whether this visitor is signed in; the admin password is checked by /api/admin/session. */}
+    {development ? <AdminProvider initialAdmin={await isAdminViewer()}>{shell}</AdminProvider> : shell}
   </Providers></body></html>;
 }

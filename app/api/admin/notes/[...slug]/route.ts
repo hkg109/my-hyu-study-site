@@ -4,15 +4,13 @@ import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
 import { resolveLectureSource } from "@/lib/academic-lectures";
 import { resolvePracticeSource } from "@/lib/academic-practice";
+import { adminGuard } from "@/lib/server/auth";
 
 const MAX_NOTE_BYTES = 2 * 1024 * 1024;
-const localRequest = (request: Request) => {
-  const hostname = new URL(request.url).hostname;
-  return process.env.NODE_ENV === "development" && ["localhost", "127.0.0.1", "::1"].includes(hostname);
-};
 
 export async function POST(request: Request, { params }: { params: Promise<{ slug: string[] }> }) {
-  if (!localRequest(request)) return Response.json({ error: "로컬 개발 환경에서만 저장할 수 있습니다." }, { status: process.env.NODE_ENV === "development" ? 403 : 404 });
+  const refusal = await adminGuard(request);
+  if (refusal) return refusal;
   const { slug } = await params;
   let body: { kind?: unknown; content?: unknown; title?: unknown; description?: unknown };
   try { body = await request.json(); }
@@ -75,7 +73,8 @@ export async function POST(request: Request, { params }: { params: Promise<{ slu
 }
 
 export async function DELETE(request: Request, { params }: { params: Promise<{ slug: string[] }> }) {
-  if (!localRequest(request)) return Response.json({ error: "로컬 개발 환경에서만 삭제할 수 있습니다." }, { status: process.env.NODE_ENV === "development" ? 403 : 404 });
+  const refusal = await adminGuard(request);
+  if (refusal) return refusal;
   const { slug } = await params;
   let body: { kind?: unknown };
   try { body = await request.json(); }

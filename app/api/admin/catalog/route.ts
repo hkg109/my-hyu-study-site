@@ -3,14 +3,15 @@ import { revalidatePath } from "next/cache";
 import { catalogFile, readCatalog } from "@/lib/catalog";
 import { readAcademicLectures } from "@/lib/academic-lectures";
 import { readAcademicPractice } from "@/lib/academic-practice";
+import { adminGuard } from "@/lib/server/auth";
 
 type Level = "grade" | "semester" | "subject";
-const allowed = (request: Request) => process.env.NODE_ENV === "development" && ["localhost", "127.0.0.1", "::1"].includes(new URL(request.url).hostname);
 const cleanName = (value: unknown) => typeof value === "string" ? value.trim() : "";
 const nextId = (level: Level) => `${level}-${Date.now().toString(36)}`;
 
 export async function POST(request: Request) {
-  if (!allowed(request)) return Response.json({ error: "로컬 개발 환경에서만 수정할 수 있습니다." }, { status: process.env.NODE_ENV === "development" ? 403 : 404 });
+  const refusal = await adminGuard(request);
+  if (refusal) return refusal;
   let body: { action?: unknown; level?: unknown; name?: unknown; gradeId?: unknown; semesterId?: unknown; subjectId?: unknown };
   try { body = await request.json(); }
   catch { return Response.json({ error: "요청 내용을 읽을 수 없습니다." }, { status: 400 }); }

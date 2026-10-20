@@ -4,7 +4,7 @@ description: 개념 T/F, 디버깅, 튜링 머신, 중복 제거, 행렬, BNF, �
 week: 0
 order: 2
 published: true
-password: "071009"
+accessKey: cse-final
 ---
 
 **응시 안내**

@@ -4,7 +4,7 @@ description: "The 2025 midterm rebuilt from student recollections: 24 multiple-c
 week: 0
 order: 8
 published: true
-password: "071025"
+accessKey: mis-2025-midterm
 ---
 
 **Attempt first, check later.** Keep solutions closed and record your answers on paper or in a separate note. Use the button below each question when you need the Korean translation; answer translations remain separate from the English solutions.

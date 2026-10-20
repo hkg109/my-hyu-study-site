@@ -4,11 +4,12 @@ import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
 import { findCatalogPath, readCatalog } from "@/lib/catalog";
 import { readAcademicPractice } from "@/lib/academic-practice";
+import { adminGuard } from "@/lib/server/auth";
 
-const allowed = (request: Request) => process.env.NODE_ENV === "development" && ["localhost", "127.0.0.1", "::1"].includes(new URL(request.url).hostname);
 
 export async function POST(request: Request) {
-  if (!allowed(request)) return Response.json({ error: "로컬 개발 환경에서만 족보를 만들 수 있습니다." }, { status: process.env.NODE_ENV === "development" ? 403 : 404 });
+  const refusal = await adminGuard(request);
+  if (refusal) return refusal;
   let body: { gradeId?: unknown; semesterId?: unknown; subjectId?: unknown; title?: unknown };
   try { body = await request.json(); } catch { return Response.json({ error: "요청 내용을 읽을 수 없습니다." }, { status: 400 }); }
   const ids = [body.gradeId, body.semesterId, body.subjectId];

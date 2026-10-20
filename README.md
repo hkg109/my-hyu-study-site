@@ -29,29 +29,24 @@ npm start
 
 ## 비밀번호 설정
 
-기본 비밀번호는 `config/access.json`에서 관리합니다.
+비밀번호는 저장소에 두지 않고 서버 환경변수로 관리합니다. 변수 목록과 설명은 [.env.example](.env.example)에 있습니다.
 
-```json
-{
-  "practicePassword": "족보 기본 비밀번호",
-  "adminPassword": "관리자 모드 비밀번호"
-}
-```
+| 변수 | 용도 |
+| --- | --- |
+| `AUTH_SECRET` | 족보·관리자 인증 쿠키 서명용 비밀값 (32자 이상) |
+| `PRACTICE_PASSWORD_DEFAULT` | `accessKey`가 없는 족보의 기본 비밀번호 |
+| `PRACTICE_PASSWORD_<KEY>` | `accessKey`를 지정한 족보의 개별 비밀번호 |
+| `ADMIN_PASSWORD` | 로컬 개발 서버의 관리자 모드 비밀번호 |
 
-족보마다 다른 비밀번호를 쓰려면 그 족보 파일의 front matter에 `password`를 추가합니다. 숫자로 된 비밀번호도 반드시 따옴표로 감싸야 합니다(감싸지 않으면 앞자리 0이 사라져 빌드가 실패합니다).
+족보 frontmatter에는 비밀이 아닌 참조 이름만 적습니다.
 
 ```yaml
----
-title: "C++ 중간고사 족보 (2026-2)"
-password: "071025"
----
+accessKey: cse-midterm   # → PRACTICE_PASSWORD_CSE_MIDTERM
 ```
 
-- 강의 정리와 족보 목록은 누구나 볼 수 있고, 족보 본문은 족보마다 따로 잠겨 있습니다.
-- `password`가 있는 족보는 그 비밀번호로, 없는 족보는 `practicePassword`로 열립니다.
-- 한 족보의 비밀번호로는 그 족보만 열립니다. 한 번 입력하면 30일 동안 유지되고, 비밀번호를 바꾸면 그 족보에 대한 기존 접속만 다시 잠깁니다.
-- `adminPassword`는 로컬 개발 서버의 관리자 모드에 쓰입니다.
-- 이 저장소가 공개 상태라면 파일 내용과 족보 Markdown, 비밀번호도 GitHub에서 누구나 볼 수 있습니다. 사이트 화면만 잠그는 장치로 생각해 주세요.
+- `accessKey`가 없는 족보만 기본 비밀번호로 열립니다.
+- `accessKey`가 있는데 해당 변수가 없으면 기본 비밀번호로 대체하지 않고 잠긴 상태로 둡니다.
+- 한 족보의 비밀번호로는 그 족보만 열립니다. 한 번 입력하면 30일 동안 유지되고, 비밀번호나 `accessKey`를 바꾸면 그 족보에 대한 기존 접속만 다시 잠깁니다.
 
 ## 관리자 모드
 
