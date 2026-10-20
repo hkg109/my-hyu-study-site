@@ -1,10 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import { defaultPracticePassword } from "./access";
 import { findCatalogPath, readCatalog, sortedGrades } from "./catalog";
 import type { ContentDocument } from "@/types/content";
 
 const practiceRoot = path.resolve(process.cwd(), "content", "practice");
+
+// Unquoted YAML like `password: 071009` becomes a number and loses its leading zero, so only strings are accepted.
+function readPassword(data: Record<string, unknown>, file: string): string | undefined {
+  if (data.password === undefined) return undefined;
+  if (typeof data.password !== "string" || !data.password.trim()) throw new Error(`${file}: password는 따옴표로 감싼 문자열이어야 합니다 (예: password: "071009").`);
+  return data.password;
+}
 
 function readSubjectFiles(gradeId: string, semesterId: string, subjectId: string): ContentDocument[] {
   const directory = path.join(practiceRoot, gradeId, semesterId, subjectId);
@@ -18,6 +26,7 @@ function readSubjectFiles(gradeId: string, semesterId: string, subjectId: string
     if (typeof parsed.data.title !== "string" || !parsed.data.title.trim()) throw new Error(`${file}: title이 필요합니다.`);
     if (!Number.isInteger(order) || order < 1) throw new Error(`${file}: order는 1 이상의 정수여야 합니다.`);
     if (typeof parsed.data.published !== "boolean") throw new Error(`${file}: published는 boolean이어야 합니다.`);
+    readPassword(parsed.data, file);
     const id = entry.name.replace(/\.md$/, "");
     const slug = [gradeId, semesterId, subjectId, id];
     const format = /<[A-Z][A-Za-z]*(?:\s|>)/.test(parsed.content) ? "mdx" as const : "md" as const;
@@ -52,4 +61,11 @@ export function resolvePracticeSource(slug: string[]): string | undefined {
   if (!findCatalogPath(readCatalog(), gradeId, semesterId, subjectId) || !documentId.startsWith("exam-")) return undefined;
   const file = path.join(practiceRoot, gradeId, semesterId, subjectId, `${documentId}.md`);
   return fs.existsSync(file) ? file : undefined;
+}
+
+// Server-only: the password never goes into ContentDocument, which is sent to the browser.
+export function practicePasswordFor(slug: string[]): string | undefined {
+  const file = resolvePracticeSource(slug);
+  if (!file) return undefined;
+  return readPassword(matter(fs.readFileSync(file, "utf8")).data, file) ?? defaultPracticePassword();
 }

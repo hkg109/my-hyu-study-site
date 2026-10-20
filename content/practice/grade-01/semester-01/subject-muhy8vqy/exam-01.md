@@ -4,6 +4,7 @@ description: 알고리즘 효율, GCD·LCM, 데이터 정리 알고리즘, 진�
 week: 0
 order: 1
 published: true
+password: "071009"
 ---
 
 **응시 안내**

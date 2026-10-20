@@ -1,17 +1,22 @@
 import { LockKeyhole } from "lucide-react";
+import { redirect } from "next/navigation";
+import { getDocument } from "@/lib/content";
 import { safePracticePath } from "@/lib/access";
 
 export const metadata = { title: "족보 잠금", description: "족보는 비밀번호를 입력해야 볼 수 있습니다.", robots: { index: false } };
 
 export default async function UnlockPage({ searchParams }: { searchParams: Promise<{ next?: string; error?: string }> }) {
   const { next, error } = await searchParams;
+  // Every exam has its own password, so the form always unlocks one specific exam.
+  const doc = getDocument("practice", safePracticePath(next).split("/").slice(2));
+  if (!doc) redirect("/practice");
   return <div className="index-page unlock-page">
     <section className="unlock-card" aria-labelledby="unlock-title">
       <div className="admin-dialog-icon"><LockKeyhole size={22} /></div>
       <h1 id="unlock-title">비밀번호를 입력해주세요</h1>
-      <p>족보 및 예측 문제를 볼 수 있는 페이지입니다</p>
+      <p><strong>{doc.title}</strong>을(를) 열려면 이 족보의 비밀번호가 필요합니다</p>
       <form method="post" action="/api/practice-access" className="admin-login-form">
-        <input type="hidden" name="next" value={safePracticePath(next)} />
+        <input type="hidden" name="next" value={doc.path} />
         <label htmlFor="practice-password">비밀번호</label>
         <input id="practice-password" name="password" type="password" inputMode="numeric" autoComplete="current-password" autoFocus required aria-invalid={Boolean(error)} aria-describedby={error ? "practice-password-error" : undefined} />
         {error && <p id="practice-password-error" className="admin-error" role="alert">비밀번호가 맞지 않습니다. 다시 입력해 주세요.</p>}

@@ -4,6 +4,7 @@ description: "The 2026-2 C++ midterm rebuilt as practice questions: loop output 
 week: 0
 order: 3
 published: true
+password: "071025"
 ---
 
 **Instructions**
