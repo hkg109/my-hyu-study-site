@@ -12,6 +12,7 @@ const examPath = (slug: string[]) => `/practice/${slug.join("/")}`;
 test("an exam's own password overrides practicePassword from config/access.json", () => {
   assert.equal(practicePasswordFor(cseMidterm), "071009");
   assert.equal(practicePasswordFor(cppMidterm), "071025");
+  assert.equal(practicePasswordFor(["grade-01", "semester-muheifg4", "subject-muhz2xir", "exam-08"]), "071025");
   assert.equal(practicePasswordFor(["grade-01", "semester-muheifg4", "subject-muhz2xir", "exam-01"]), access.practicePassword);
   assert.equal(practicePasswordFor(["grade-01", "semester-01", "subject-muhy8vqy", "exam-99"]), undefined);
 });
