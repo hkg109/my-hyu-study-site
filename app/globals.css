@@ -661,3 +661,44 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   .study-callout::before,.study-quiz::before { left:14px; }
   .study-panel:not(.open) { box-shadow:none; visibility:hidden; }
 }
+
+/* Phones: denser reading so more of a lecture or exam fits on one screen. */
+@media screen and (max-width:767px) {
+  .document-grid { padding:16px 16px 0; }
+  .document-toolbar { align-items:center; margin-bottom:14px; }
+  .document-toolbar .breadcrumb { display:none; }
+  .document-toolbar-actions { width:100%; justify-content:flex-end; font-size:12px; }
+  .lecture-header { padding-bottom:16px; margin-bottom:18px; }
+  .lecture-header .eyebrow { font-size:10.5px; }
+  .lecture-header h1 { margin-top:8px; font-size:25px; line-height:1.3; letter-spacing:-.03em; }
+  .lecture-header .lead { margin-top:10px; font-size:14px; line-height:1.65; }
+  .lecture-metadata { margin-top:10px; }
+  .objectives { margin-bottom:24px; padding:12px 0 12px 14px; }
+  .objectives h2 { font-size:12.5px; }
+  .objectives li { font-size:13.5px; line-height:1.6; }
+  .prose { font-size:15px; line-height:1.72; letter-spacing:-.01em; }
+  .prose h1 { font-size:22px; line-height:1.35; }
+  .prose h2 { margin:36px 0 12px; padding-top:10px; font-size:20px; line-height:1.38; }
+  .prose h3 { margin:24px 0 10px; font-size:16.5px; line-height:1.45; }
+  .prose p { margin:11px 0; }
+  .prose ul,.prose ol { margin:11px 0; padding-left:20px; }
+  .prose li { margin:4px 0; padding-left:2px; }
+  .prose blockquote { margin:18px 0; padding:0 0 0 14px; }
+  .prose hr { margin:24px 0; }
+  .study-callout,.study-quiz { margin:18px 0; padding:34px 12px 12px; }
+  .study-callout::before,.study-quiz::before { top:10px; left:12px; font-size:11px; }
+  .code-block { margin:16px 0; }
+  .code-block pre { padding:40px 0 14px; line-height:1.6; }
+  .code-block pre code { font-size:12px; }
+  .code-block [data-line] { padding:0 12px; }
+  .table-scroll { margin:16px 0; }
+  .prose table { font-size:13px; line-height:1.55; }
+  .prose th,.prose td { min-width:0; padding:8px 10px; word-break:keep-all; overflow-wrap:anywhere; }
+  .prose th { font-size:12px; }
+  .prose td :not(pre)>code,.prose th :not(pre)>code,.prose td>code,.prose th>code { padding:2px 4px; white-space:normal; word-break:keep-all; overflow-wrap:normal; }
+  .prose .stack-table tr { margin-bottom:8px; }
+  .prose .stack-table td { padding:7px 11px; font-size:13.5px; line-height:1.6; }
+  .prose .stack-table td:first-child { padding-block:8px; font-size:14px; }
+  .prose .stack-table td:not(:first-child)[data-label]::before { font-size:10.5px; margin-bottom:1px; }
+  .mobile-toc-trigger { min-height:38px; padding:0 12px; font-size:12px; opacity:.92; }
+}

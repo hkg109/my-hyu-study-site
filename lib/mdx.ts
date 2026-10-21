@@ -41,16 +41,15 @@ function rehypeTableLabels() {
         if (node.tagName === "thead") visit(node, "element", cell => { if (cell.tagName === "th") labels.push(textOf(cell).trim()); });
       });
       if (labels.length < 3 || !labels.some(Boolean)) return;
-      table.properties.className = ["stack-table"];
+      const rows: Element[][] = [];
       visit(table, "element", node => {
-        if (node.tagName !== "tbody") return;
-        for (const row of node.children) {
-          if (row.type !== "element" || row.tagName !== "tr") continue;
-          row.children.filter((cell): cell is Element => cell.type === "element" && cell.tagName === "td").forEach((cell, index) => {
-            if (labels[index]) cell.properties["data-label"] = labels[index];
-          });
-        }
+        if (node.tagName === "tbody") for (const row of node.children) if (row.type === "element" && row.tagName === "tr") rows.push(row.children.filter((cell): cell is Element => cell.type === "element" && cell.tagName === "td"));
       });
+      // Short rows still read best as a grid; only prose-heavy rows become cards.
+      const averageRowLength = rows.reduce((sum, cells) => sum + cells.reduce((length, cell) => length + textOf(cell).trim().length, 0), 0) / Math.max(rows.length, 1);
+      if (averageRowLength < 60) return;
+      table.properties.className = ["stack-table"];
+      for (const cells of rows) cells.forEach((cell, index) => { if (labels[index]) cell.properties["data-label"] = labels[index]; });
     });
   };
 }
