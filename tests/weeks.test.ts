@@ -72,6 +72,15 @@ test("study syntax creates stable block ids, callouts and colored highlights", (
   assert.equal(markdownText(source, "md"), "핵심 개념 일반 문단과 중요 내용 , 주의 내용 입니다. 확산은 입자가 퍼지는 현상입니다. 첫 항목 둘째 항목");
 });
 
+test("highlights may contain a single equals sign, as in accounting formulas", () => {
+  const tree = parseMarkdown("==blue:자산 = 부채 + 자본==이고 ==red:재무회계 = 외부, 관리회계 = 내부.==", "md");
+  const highlights: string[] = [];
+  visit(tree, node => {
+    if (typeof node.data?.hProperties?.["data-highlight-color"] === "string") highlights.push(toString(node));
+  });
+  assert.deepEqual(highlights, ["자산 = 부채 + 자본", "재무회계 = 외부, 관리회계 = 내부."]);
+});
+
 test("study syntax creates revealable blanks and reviewable flashcards", () => {
   const source = "액체가 기체로 변하는 현상은 {{기화}}이다.\n\n> [!FLASHCARD]\n> Q: 응고란 무엇인가?\n> A: 액체가 고체로 변하는 상태 변화이다.";
   const tree = parseMarkdown(source, "md");

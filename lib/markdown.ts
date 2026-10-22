@@ -41,7 +41,7 @@ function setProperties(node: RootContent, properties: Properties, hName?: string
 function transformHighlights(tree: Root) {
   visit(tree, "text", (node: Text, index, parent: Parent | undefined) => {
     if (index === undefined || !parent || parent.type === "inlineCode" || parent.type === "code") return;
-    const expression = /==(?:(yellow|blue|red|green|purple):)?([^=\n]+)==/g;
+    const expression = /==(?:(yellow|blue|red|green|purple):)?((?:[^=\n]|=(?!=))+?)==/g;
     if (!expression.test(node.value)) return;
     expression.lastIndex = 0;
     const children: PhrasingContent[] = [];
