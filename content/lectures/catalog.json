@@ -38,6 +38,11 @@
               "order": 1
             },
             {
+              "id": "subject-accounting",
+              "name": "회계학 · 회계원리",
+              "order": 2
+            },
+            {
               "id": "subject-muhz3nd1",
               "name": "AI-R-PY",
               "order": 4
