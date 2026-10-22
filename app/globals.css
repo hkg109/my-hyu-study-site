@@ -695,7 +695,9 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   .code-block [data-line] { padding:0 12px; }
   .table-scroll { margin:16px 0; }
   .prose table { font-size:13px; line-height:1.55; }
-  .prose th,.prose td { min-width:0; padding:8px 10px; word-break:keep-all; overflow-wrap:anywhere; }
+  .prose th,.prose td { min-width:0; padding:8px 8px; word-break:keep-all; overflow-wrap:break-word; }
+  .prose th:first-child,.prose td:first-child { padding-left:10px; }
+  .prose td { font-variant-numeric:tabular-nums; }
   .prose th { font-size:12px; }
   .prose td :not(pre)>code,.prose th :not(pre)>code,.prose td>code,.prose th>code { padding:2px 4px; white-space:normal; word-break:keep-all; overflow-wrap:normal; }
   .prose .stack-table tr { margin-bottom:8px; }
