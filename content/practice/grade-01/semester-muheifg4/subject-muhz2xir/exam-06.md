@@ -44,7 +44,7 @@ Write answers to questions 21–30 on separate paper.
 
 Choose the one best answer.
 
-### 01 · Definitions of organization
+### 01
 
 > [!QUIZ]
 > Which statement reflects the behavioral definition of an organization?
@@ -82,7 +82,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 02 · Routines
+### 02
 
 > [!QUIZ]
 > Which sequence correctly shows how routines relate to business processes and firms?
@@ -120,7 +120,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 03 · Culture
+### 03
 
 > [!QUIZ]
 > How does organizational culture typically affect technological change?
@@ -158,7 +158,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 04 · Environment
+### 04
 
 > [!QUIZ]
 > In Chapter 3, information systems are described as a ‘lens’ for the organization. What does this mean?
@@ -196,7 +196,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 05 · Disruptive technology
+### 05
 
 > [!QUIZ]
 > Which statement about disruptive technologies is correct?
@@ -234,7 +234,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 06 · Organizational structure
+### 06
 
 > [!QUIZ]
 > A hospital relies on doctors whose expertise and professional judgment drive most decisions. Which organizational structure fits best?
@@ -272,7 +272,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 07 · Transaction cost theory
+### 07
 
 > [!QUIZ]
 > An online platform makes it cheap for a manufacturer to find suppliers, compare quotes, and monitor contracts. According to transaction cost theory, what is the firm likely to do?
@@ -310,7 +310,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 08 · Agency theory
+### 08
 
 > [!QUIZ]
 > According to agency theory, how can IT help a firm grow?
@@ -348,7 +348,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 09 · Flattening
+### 09
 
 > [!QUIZ]
 > When IT pushes decision-making rights down to lower-level employees, what typically happens to the organization?
@@ -386,7 +386,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 10 · Resistance to change
+### 10
 
 > [!QUIZ]
 > According to Figure 3.7, why does a new information system often meet resistance, and what is required for success?
@@ -424,7 +424,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 11 · Competitive forces
+### 11
 
 > [!QUIZ]
 > Convenience-store coffee becomes good and cheap enough that some café customers switch to it when café prices rise. Which competitive force is this?
@@ -462,7 +462,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 12 · Competitive forces
+### 12
 
 > [!QUIZ]
 > Only two companies in the world supply a critical chip, and a device maker cannot pass their price increases on to customers. Which force is strong here?
@@ -500,7 +500,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 13 · Generic strategies
+### 13
 
 > [!QUIZ]
 > Walmart shares point-of-sale data with suppliers so they replenish stock automatically, keeping inventory and logistics costs below rivals'. Which generic strategy does this support most directly?
@@ -538,7 +538,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 14 · Switching costs
+### 14
 
 > [!QUIZ]
 > Amazon's recommendations and saved purchase history make shopping so convenient that customers find it costly to move to another retailer. Which concept does this illustrate?
@@ -576,7 +576,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 15 · Internet and competition
+### 15
 
 > [!QUIZ]
 > What does Chapter 3 say about the Internet's effect on competitive forces?
@@ -614,7 +614,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 16 · Value chain
+### 16
 
 > [!QUIZ]
 > In the value chain model, which activity is a support activity rather than a primary activity?
@@ -652,7 +652,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 17 · Value web
+### 17
 
 > [!QUIZ]
 > Independent firms use synchronized IT to coordinate their value chains and together produce a product for a market, adjusting partners quickly as demand changes. What is this called?
@@ -690,7 +690,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 18 · Network economics
+### 18
 
 > [!QUIZ]
 > A messaging app costs almost nothing to serve one more user, yet each new user makes the app more valuable to everyone. Which concept explains this?
@@ -728,7 +728,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 19 · Business ecosystems
+### 19
 
 > [!QUIZ]
 > In a business ecosystem built around a smartphone platform, what role does the company that provides the platform play?
@@ -766,7 +766,7 @@ Choose the one best answer.
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 20 · Strategic systems
+### 20
 
 > [!QUIZ]
 > The first café chain with mobile ordering gained customers, but within a few years every competitor offered it. What challenge of strategic information systems does this show?
@@ -810,7 +810,7 @@ Choose the one best answer.
 
 Write the requested term or a one-sentence explanation. Try the question first, then open **힌트 1** and **힌트 2** only if you are stuck.
 
-### 21 · Free recall
+### 21
 
 > [!QUIZ]
 > Name Porter's five competitive forces.
@@ -850,7 +850,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 22 · Free recall
+### 22
 
 > [!QUIZ]
 > Name the four generic strategies firms use IS to pursue in response to competitive forces.
@@ -890,7 +890,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 23 · Distinguish
+### 23
 
 > [!QUIZ]
 > In one sentence, explain how transaction cost theory and agency theory differ in the costs they focus on.
@@ -930,7 +930,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 24 · Cued recall
+### 24
 
 > [!QUIZ]
 > Name the model that views the firm as a series of activities that add value, so managers can find where IS will have the greatest strategic impact.
@@ -970,7 +970,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 25 · Free recall
+### 25
 
 > [!QUIZ]
 > Name the four components that must be changed together to overcome resistance to an information systems innovation (Figure 3.7).
@@ -1010,7 +1010,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 26 · Cued recall
+### 26
 
 > [!QUIZ]
 > Name the activities for which a firm is a world-class leader and that competitors find difficult to copy.
@@ -1050,7 +1050,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 27 · Scenario
+### 27
 
 > [!QUIZ]
 > A bank merges with an insurance company and uses a shared customer system so each side can sell its products to the other's customers. Name the concept and explain it in one sentence.
@@ -1090,7 +1090,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 28 · Distinguish
+### 28
 
 > [!QUIZ]
 > In one sentence, explain the difference between a value web and a business ecosystem.
@@ -1130,7 +1130,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 29 · Free recall
+### 29
 
 > [!QUIZ]
 > Name the three main types of network-based strategies.
@@ -1170,7 +1170,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 30 · Error correction
+### 30
 
 > [!QUIZ]
 > A student writes: ‘A good information system works the same way in every organization, so designers only need to focus on technical features.’ Correct this statement in one or two sentences.

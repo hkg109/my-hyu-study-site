@@ -44,7 +44,7 @@ Write answers to questions 21–30 on separate paper.
 
 Choose the one best answer.
 
-### 01 · Business process
+### 01
 
 > [!QUIZ]
 > Order fulfillment requires sales to take the order, accounting to approve credit and invoice, and production to assemble and ship. What kind of business process is this?
@@ -82,7 +82,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 02 · IT and processes
+### 02
 
 > [!QUIZ]
 > A firm lets accounting and the warehouse see a new order at the same moment, so credit checks and picking happen in parallel instead of one after the other. How has IT improved the process?
@@ -120,7 +120,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 03 · AI roles
+### 03
 
 > [!QUIZ]
 > An AI tool receives a customer refund request, checks the order system, issues the refund within a set limit, and hands any amount above the limit to a human. Which level of AI use is this?
@@ -158,7 +158,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 04 · TPS
+### 04
 
 > [!QUIZ]
 > Which statement best describes a transaction processing system (TPS)?
@@ -196,7 +196,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 05 · MIS
+### 05
 
 > [!QUIZ]
 > A store manager receives a weekly report comparing each department's actual sales with planned sales. Which system most directly produces this report?
@@ -234,7 +234,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 06 · MIS report
+### 06
 
 > [!QUIZ]
 > In a sample MIS report, the actual-versus-planned value for a product is 0.85. What does it mean?
@@ -272,7 +272,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 07 · DSS
+### 07
 
 > [!QUIZ]
 > A shipping company combines ship speed, port distances, fuel costs, and charter rates in a model to decide which vessel to send where at what speed. What kind of system is this?
@@ -310,7 +310,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 08 · ESS
+### 08
 
 > [!QUIZ]
 > Why does an executive support system (ESS) depend on MIS and DSS?
@@ -348,7 +348,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 09 · ERP
+### 09
 
 > [!QUIZ]
 > What problem do enterprise systems (ERP) mainly solve?
@@ -386,7 +386,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 10 · SCM
+### 10
 
 > [!QUIZ]
 > Why are supply chain management systems called inter-organizational systems?
@@ -424,7 +424,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 11 · CRM
+### 11
 
 > [!QUIZ]
 > A firm wants sales, marketing, and customer service to see the same customer history so it can identify and keep its most profitable customers. Which enterprise application fits best?
@@ -462,7 +462,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 12 · Intranet vs extranet
+### 12
 
 > [!QUIZ]
 > A firm lets selected suppliers log in to view its inventory levels and purchase orders. What is this network called?
@@ -500,7 +500,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 13 · E-business
+### 13
 
 > [!QUIZ]
 > Which relationship among the three terms is correct?
@@ -538,7 +538,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 14 · Collaboration
+### 14
 
 > [!QUIZ]
 > A firm installs an enterprise social network, but employees rarely post because ideas from junior staff are ignored and only individual results are rewarded. What does Chapter 2 suggest is missing?
@@ -576,7 +576,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 15 · Time/space matrix
+### 15
 
 > [!QUIZ]
 > In the time/space collaboration matrix, where does a team using e-mail and a shared calendar across different offices and work hours belong?
@@ -614,7 +614,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 16 · Tacit knowledge
+### 16
 
 > [!QUIZ]
 > A veteran technician can diagnose a machine fault by its sound but cannot fully explain how. This is an example of...
@@ -652,7 +652,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 17 · KM value chain
+### 17
 
 > [!QUIZ]
 > A firm has stored thousands of project reports in a searchable repository, yet managers make decisions exactly as before. Which stage of the knowledge management value chain is the clearest gap?
@@ -690,7 +690,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 18 · KMS types
+### 18
 
 > [!QUIZ]
 > Engineers use a 3D CAD workstation with simulation software and access to external design databases to create new product designs. Which type of knowledge management system is this?
@@ -728,7 +728,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 19 · Content management
+### 19
 
 > [!QUIZ]
 > A firm's document repository grows quickly, but employees cannot find what they need because files are labeled inconsistently. Which concept addresses this core problem of enterprise content management?
@@ -766,7 +766,7 @@ Choose the one best answer.
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 20 · Systems analyst
+### 20
 
 > [!QUIZ]
 > Who in the information systems department translates business problems and requirements into information requirements and systems?
@@ -810,7 +810,7 @@ Choose the one best answer.
 
 Write the requested term or a one-sentence explanation. Try the question first, then open **힌트 1** and **힌트 2** only if you are stuck.
 
-### 21 · Free recall
+### 21
 
 > [!QUIZ]
 > Name the four management-level systems from operational to senior management, in order.
@@ -850,7 +850,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 22 · Distinguish
+### 22
 
 > [!QUIZ]
 > In one sentence, explain the key difference between an MIS and a DSS.
@@ -890,7 +890,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 23 · Free recall
+### 23
 
 > [!QUIZ]
 > Name the four major enterprise applications.
@@ -930,7 +930,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 24 · Cued recall
+### 24
 
 > [!QUIZ]
 > Name the set of data and software tools used to organize and analyze data so that managers can make better decisions.
@@ -970,7 +970,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 25 · Free recall
+### 25
 
 > [!QUIZ]
 > List the four stages of the knowledge management value chain in order.
@@ -1010,7 +1010,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 26 · Distinguish
+### 26
 
 > [!QUIZ]
 > In one sentence, explain the difference between tacit and explicit knowledge, with one example of each.
@@ -1050,7 +1050,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 27 · Cued recall
+### 27
 
 > [!QUIZ]
 > Name the informal social networks of professionals and employees, inside and outside the firm, who share similar work-related activities and interests.
@@ -1090,7 +1090,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 28 · Free recall
+### 28
 
 > [!QUIZ]
 > Name the three major types of knowledge management systems.
@@ -1130,7 +1130,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 29 · Scenario
+### 29
 
 > [!QUIZ]
 > A hospital's IT steering committee decides who may approve new systems and who is responsible if a project fails. What framework is the committee defining?
@@ -1170,7 +1170,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 30 · Error correction
+### 30
 
 > [!QUIZ]
 > A student writes: ‘Once a firm buys a collaboration platform, collaboration improves automatically.’ Correct this statement in one or two sentences.

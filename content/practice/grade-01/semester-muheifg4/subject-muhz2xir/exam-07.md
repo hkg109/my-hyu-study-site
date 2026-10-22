@@ -44,7 +44,7 @@ Write answers to questions 21–30 on separate paper.
 
 Choose the one best answer.
 
-### 01 · Ethics
+### 01
 
 > [!QUIZ]
 > In Chapter 4, what does ethics refer to?
@@ -82,7 +82,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 02 · Ripple model
+### 02
 
 > [!QUIZ]
 > In the model of ethical, social, and political issues, new information technology is compared to a rock thrown into a calm pond. What is the main point of this image?
@@ -120,7 +120,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 03 · Moral dimensions
+### 03
 
 > [!QUIZ]
 > Software in a medical device fails and a patient is harmed. The public debate focuses on who should be held responsible. Which moral dimension is most directly involved?
@@ -158,7 +158,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 04 · Technology trends
+### 04
 
 > [!QUIZ]
 > Which technology trend most directly makes it easy for firms to keep detailed databases on individuals for long periods?
@@ -196,7 +196,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 05 · Profiling vs NORA
+### 05
 
 > [!QUIZ]
 > A casino links its guest records, employee files, and public watch lists and discovers that a dealer shares a home address with a known cheater. Which technique is this?
@@ -234,7 +234,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 06 · Accountability
+### 06
 
 > [!QUIZ]
 > An automated loan system rejects applicants unfairly, but the bank cannot determine who approved the model or changed its rules. Which concept is most directly missing?
@@ -272,7 +272,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 07 · Liability
+### 07
 
 > [!QUIZ]
 > Which concept allows people harmed by a defective system to recover damages through the legal system?
@@ -310,7 +310,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 08 · Due process
+### 08
 
 > [!QUIZ]
 > A credit bureau's laws are publicly known, and consumers can appeal to higher authorities to ensure the laws were applied correctly. Which principle is this?
@@ -348,7 +348,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 09 · Ethical principles
+### 09
 
 > [!QUIZ]
 > Before reading a coworker's private messages, a manager asks: ‘If everyone in the company did this, could the organization survive?’ Which ethical principle is the manager applying?
@@ -386,7 +386,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 10 · Ethical principles
+### 10
 
 > [!QUIZ]
 > An employee reasons: ‘Copying one file is harmless, but if I do it once I will keep doing it, and repeated copying would clearly be wrong.’ Which rule matches this reasoning?
@@ -424,7 +424,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 11 · Ethical principles
+### 11
 
 > [!QUIZ]
 > A firm must choose between two data retention policies. It picks the one that has the least potential for a damaging breach, even though the other would produce more marketing value. Which principle guides this choice?
@@ -462,7 +462,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 12 · Ethical principles
+### 12
 
 > [!QUIZ]
 > A student finds code on a website with no license statement and assumes she must ask the author before reusing it. Which rule is she following?
@@ -500,7 +500,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 13 · FIP
+### 13
 
 > [!QUIZ]
 > Under the FTC's Fair Information Practice principles, which principle requires a website to disclose its information practices before collecting data?
@@ -538,7 +538,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 14 · Consent models
+### 14
 
 > [!QUIZ]
 > A new privacy law says a company may not use your browsing data for advertising unless you actively check a box to agree. Which consent model is this?
@@ -576,7 +576,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 15 · Internet privacy
+### 15
 
 > [!QUIZ]
 > A marketing e-mail contains a tiny invisible graphic that reports back when and where the message was opened. What is this tool?
@@ -614,7 +614,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 16 · GDPR
+### 16
 
 > [!QUIZ]
 > A Korean online store has no offices in Europe but sells to and processes the personal data of EU residents. Does the EU's GDPR apply?
@@ -652,7 +652,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 17 · Intellectual property
+### 17
 
 > [!QUIZ]
 > An engineer invents a new mechanism and wants a government-granted exclusive right to the underlying idea for 20 years. Which protection fits?
@@ -690,7 +690,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 18 · Intellectual property
+### 18
 
 > [!QUIZ]
 > A soft-drink company keeps its formula known to only a few employees, who sign confidentiality agreements. It never registers the formula with any government office. Which protection is it relying on?
@@ -728,7 +728,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 19 · System quality
+### 19
 
 > [!QUIZ]
 > According to Chapter 4, what is the most common source of business system failure?
@@ -766,7 +766,7 @@ Choose the one best answer.
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 20 · Crime vs abuse
+### 20
 
 > [!QUIZ]
 > An employee sends thousands of unsolicited promotional e-mails using company systems. The act is not illegal in that country but is widely seen as unethical. How is it classified?
@@ -810,7 +810,7 @@ Choose the one best answer.
 
 Write the requested term or a one-sentence explanation. Try the question first, then open **힌트 1** and **힌트 2** only if you are stuck.
 
-### 21 · Free recall
+### 21
 
 > [!QUIZ]
 > Name the five moral dimensions of the information age.
@@ -850,7 +850,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 22 · Free recall
+### 22
 
 > [!QUIZ]
 > List the five steps of ethical analysis in order.
@@ -890,7 +890,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 23 · Distinguish
+### 23
 
 > [!QUIZ]
 > In one sentence, distinguish responsibility, accountability, and liability.
@@ -930,7 +930,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 24 · Cued recall
+### 24
 
 > [!QUIZ]
 > Name the set of principles governing the collection and use of information about individuals that forms the basis of most U.S. and European privacy laws.
@@ -970,7 +970,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 25 · Distinguish
+### 25
 
 > [!QUIZ]
 > In one sentence, explain the difference between opt-in and opt-out consent.
@@ -1010,7 +1010,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 26 · Free recall
+### 26
 
 > [!QUIZ]
 > Name the four main ways that intellectual property is legally protected.
@@ -1050,7 +1050,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 27 · Cued recall
+### 27
 
 > [!QUIZ]
 > Name the 1998 U.S. law that makes it illegal to circumvent technology-based protections of copyrighted materials.
@@ -1090,7 +1090,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 28 · Distinguish
+### 28
 
 > [!QUIZ]
 > In one sentence, explain the difference between computer crime and computer abuse.
@@ -1130,7 +1130,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 29 · Scenario
+### 29
 
 > [!QUIZ]
 > Students in low-income areas have far less access to computers and high-speed Internet than students in wealthy areas. Name the quality-of-life issue this describes.
@@ -1170,7 +1170,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 30 · Error correction
+### 30
 
 > [!QUIZ]
 > A student writes: ‘Cookies are a privacy problem only because they are stored on your computer.’ Correct this statement in one or two sentences.

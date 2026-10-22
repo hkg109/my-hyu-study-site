@@ -44,7 +44,7 @@ Write answers to questions 21–30 on separate paper.
 
 Choose the one best answer.
 
-### 01 · Digital firm
+### 01
 
 > [!QUIZ]
 > Which description best fits a digital firm?
@@ -82,7 +82,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 02 · Time shifting
+### 02
 
 > [!QUIZ]
 > A software company hands unfinished work from its Seoul team to its London team at the end of each Seoul workday, so development continues around the clock. Which digital firm capability does this illustrate?
@@ -120,7 +120,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 03 · Interdependence
+### 03
 
 > [!QUIZ]
 > Chapter 1 describes a growing interdependence between a firm and its information systems. What does this interdependence mean?
@@ -158,7 +158,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 04 · Strategic objectives
+### 04
 
 > [!QUIZ]
 > A coffee chain uses its sales data and a supplier portal so that roasters see store-level demand and restock beans before stores run out. Which strategic business objective is most directly supported?
@@ -196,7 +196,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 05 · Strategic objectives
+### 05
 
 > [!QUIZ]
 > Every bank in a country installs ATMs because customers now expect them and banks without them lose depositors. Which objective does this investment represent?
@@ -234,7 +234,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 06 · Strategic objectives
+### 06
 
 > [!QUIZ]
 > A firm can claim that an information system gives it a competitive advantage only when the system...
@@ -272,7 +272,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 07 · Strategic objectives
+### 07
 
 > [!QUIZ]
 > Apple's iPod and iTunes turned digital music into a paid download service that replaced much CD buying. Which objective does this example most directly illustrate?
@@ -310,7 +310,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 08 · IT vs IS
+### 08
 
 > [!QUIZ]
 > What is the key difference between information technology (IT) and an information system (IS)?
@@ -348,7 +348,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 09 · Data vs information
+### 09
 
 > [!QUIZ]
 > A supermarket checkout records thousands of item codes and prices each day. Which of the following is information rather than data?
@@ -386,7 +386,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 10 · Input · processing · output
+### 10
 
 > [!QUIZ]
 > In an information system, which activity converts raw input into a more meaningful form?
@@ -424,7 +424,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 11 · Feedback
+### 11
 
 > [!QUIZ]
 > A restaurant's system prints a daily waste report. The manager uses it to change tomorrow's prep quantities entered into the system. The waste report acting in this way is best described as...
@@ -462,7 +462,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 12 · Environment
+### 12
 
 > [!QUIZ]
 > In Figure 1.4, customers, suppliers, competitors, stockholders, and regulatory agencies appear outside the organization. What role do they play?
@@ -500,7 +500,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 13 · Three dimensions
+### 13
 
 > [!QUIZ]
 > Which set lists the three dimensions of information systems used throughout the textbook?
@@ -538,7 +538,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 14 · Organization dimension
+### 14
 
 > [!QUIZ]
 > Which of the following belongs to the organization dimension of information systems?
@@ -576,7 +576,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 15 · Management levels
+### 15
 
 > [!QUIZ]
 > Which group monitors the daily activities of the business, such as tracking orders and supervising shifts?
@@ -614,7 +614,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 16 · Technology dimension
+### 16
 
 > [!QUIZ]
 > What does IT infrastructure refer to?
@@ -652,7 +652,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 17 · Complementary assets
+### 17
 
 > [!QUIZ]
 > Two firms buy the same customer database system. One firm retrains staff, changes its sales process, and rewards data-driven decisions; the other does not. Why does the first firm earn much higher returns?
@@ -690,7 +690,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 18 · Complementary assets
+### 18
 
 > [!QUIZ]
 > Which item is an example of a social complementary asset rather than an organizational or managerial one?
@@ -728,7 +728,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 19 · Approaches to IS
+### 19
 
 > [!QUIZ]
 > A researcher studies why employees resist a new system and how it changes power within the firm. Which approach to information systems is this?
@@ -766,7 +766,7 @@ Choose the one best answer.
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 20 · Sociotechnical view
+### 20
 
 > [!QUIZ]
 > According to the sociotechnical view, when is the performance of an information system optimized?
@@ -810,7 +810,7 @@ Choose the one best answer.
 
 Write the requested term or a one-sentence explanation. Try the question first, then open **힌트 1** and **힌트 2** only if you are stuck.
 
-### 21 · Free recall
+### 21
 
 > [!QUIZ]
 > List the six strategic business objectives that drive firms to invest in information systems.
@@ -850,7 +850,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 22 · Cued recall
+### 22
 
 > [!QUIZ]
 > Name the output that is returned to appropriate members of the organization to help them evaluate or correct the input stage.
@@ -890,7 +890,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 23 · Distinguish
+### 23
 
 > [!QUIZ]
 > In one sentence, explain the difference between data and information.
@@ -930,7 +930,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 24 · Free recall
+### 24
 
 > [!QUIZ]
 > Name the three main activities an information system performs to produce the information organizations need.
@@ -970,7 +970,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 25 · Cued recall
+### 25
 
 > [!QUIZ]
 > What term describes the investments in organization and management, such as new business processes, training, and incentive systems, that are required to realize value from IT investments?
@@ -1010,7 +1010,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 26 · Free recall
+### 26
 
 > [!QUIZ]
 > Name the four main types of technology that make up the technology dimension of information systems.
@@ -1050,7 +1050,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 27 · Scenario
+### 27
 
 > [!QUIZ]
 > A global firm lets designers in three countries work on the same product files from wherever they are. Name the digital firm capability this shows and explain it in one sentence.
@@ -1090,7 +1090,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 28 · Error correction
+### 28
 
 > [!QUIZ]
 > A student writes: ‘If a firm buys the most advanced information technology, it will automatically gain a competitive advantage.’ Correct this statement in one or two sentences.
@@ -1130,7 +1130,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 29 · Free recall
+### 29
 
 > [!QUIZ]
 > What is a business model?
@@ -1170,7 +1170,7 @@ Write the requested term or a one-sentence explanation. Try the question first, 
 >
 > **복습:** [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01) · [용어 정리집](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-00)
 
-### 30 · Distinguish
+### 30
 
 > [!QUIZ]
 > Name the approach to information systems that holds that system performance is optimized when the technical and behavioral systems are adjusted to each other.
