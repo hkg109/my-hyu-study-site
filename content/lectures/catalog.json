@@ -43,6 +43,11 @@
               "order": 2
             },
             {
+              "id": "subject-science-transnational",
+              "name": "과학의 탈국가화",
+              "order": 3
+            },
+            {
               "id": "subject-muhz3nd1",
               "name": "AI-R-PY",
               "order": 4
