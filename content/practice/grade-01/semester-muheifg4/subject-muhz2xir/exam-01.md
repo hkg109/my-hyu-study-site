@@ -12,8 +12,6 @@ published: true
 
 **Chapter sets:** [Ch.1](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-04) · [Ch.2](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-05) · [Ch.3](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-06) · [Ch.4](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-07)
 
-**Test-bank-style sets:** [Ch.1 · 17e](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-09) · [Ch.2 · 18e](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-10) · [Ch.3 · 17e GE](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-11) · [Ch.4 · 17e](/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-12)
-
 ## Exam instructions
 
 | Item | Rule |
