@@ -47,10 +47,14 @@ published: true
 > [!ANSWER]
 > **C. Improved community relations**
 >
+> The six strategic business objectives are operational excellence; new products, services, and business models; customer and supplier intimacy; improved decision making; competitive advantage; and survival. A, B, D, and E are all on that list. Community relations is not one of the reasons the textbook gives for investing in information systems.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 지역사회 관계 개선(Improved community relations)**
+>
+> 여섯 가지 전략적 비즈니스 목표는 운영 우수성, 신제품·서비스·비즈니스 모델, 고객·공급업체 친밀성, 의사결정 개선, 경쟁우위, 생존이다. A, B, D, E는 모두 이 목록에 들어 있다. 지역사회 관계 개선은 교재가 제시하는 정보시스템 투자 목적이 아니다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -85,10 +89,14 @@ published: true
 > [!ANSWER]
 > **B. improve decision making.**
 >
+> Verizon's web-based dashboard shows managers real-time data on customer complaints, network performance, and line outages, so they can act on accurate, timely information instead of guesses. That is the textbook's example of improved decision making. A and D are not objectives tied to this case, and C and E concern relationships with customers or suppliers, not managers' decisions.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 의사결정을 개선하기 위해(improve decision making)**
+>
+> Verizon의 웹 기반 대시보드는 고객 불만, 네트워크 성능, 회선 장애에 관한 실시간 데이터를 관리자에게 보여 주어 추측이 아닌 정확하고 적시의 정보로 판단하게 한다. 교재는 이를 의사결정 개선(improved decision making)의 사례로 든다. A와 D는 이 사례와 연결된 목표가 아니고, C와 E는 관리자의 결정이 아니라 고객·공급업체와의 관계에 관한 목표다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -123,10 +131,14 @@ published: true
 > [!ANSWER]
 > **E. 1, 2, and 3**
 >
+> The textbook says competitive advantage comes from doing things better than competitors: offering new products, services, and business models, charging less for superior products, and responding to customers and suppliers in real time. All three listed items appear in that description, so every option that leaves one out (A–D) is incomplete.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 1, 2, 3 모두(1, 2, and 3)**
+>
+> 교재는 경쟁우위(competitive advantage)가 경쟁사보다 더 잘하는 데서 생긴다고 설명한다. 새로운 제품·서비스·비즈니스 모델, 우수한 제품을 더 낮은 가격에 제공하는 것, 고객과 공급업체에 실시간으로 대응하는 것이 모두 그 내용이다. 따라서 셋 중 하나라도 빠진 A–D는 불완전하다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -161,10 +173,14 @@ published: true
 > [!ANSWER]
 > **E. Survival**
 >
+> Survival covers investments a firm must make simply to stay in business, either to keep up with industry-level changes (such as Citibank's ATMs) or to meet regulations and reporting requirements. Information technology then becomes a necessity, a cost of doing business. A, B, C, and D are objectives a firm chooses in order to improve or excel, not ones forced on it as a necessity.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 생존(Survival)**
+>
+> 생존(survival)은 사업을 계속하기 위해 반드시 해야 하는 투자로, 업계 수준의 변화(Citibank의 ATM 등)를 따라가거나 규제·보고 의무를 충족하기 위한 것이다. 이때 정보기술은 사업을 하기 위한 필수품, 즉 사업 비용이 된다. A, B, C, D는 더 잘하거나 앞서기 위해 기업이 선택하는 목표이지 필수 조건으로 강요되는 목표가 아니다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -199,10 +215,14 @@ published: true
 > [!ANSWER]
 > **D. Enhance customer intimacy**
 >
+> The Mandarin Oriental records guests' preferences, such as room temperature, check-in time, and favorite TV programs, and uses them to set up rooms automatically and market to its best customers. Knowing and serving customers individually is customer intimacy. B and E (decision making, operational excellence) are other objectives, and A and C are not about understanding guests.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 고객 친밀성 강화(Enhance customer intimacy)**
+>
+> Mandarin Oriental은 실내 온도, 체크인 시간, 즐겨 보는 TV 프로그램 같은 고객 선호를 기록해 객실을 자동으로 맞추고 최우수 고객에게 맞춤 마케팅을 한다. 고객을 개별적으로 이해하고 맞춰 주는 것이 고객 친밀성(customer intimacy)이다. B와 E(의사결정 개선, 운영 우수성)는 다른 목표이고, A와 C는 고객을 이해하는 것과 관련이 없다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -237,10 +257,14 @@ published: true
 > [!ANSWER]
 > **A. Walmart's development of Retail Link.**
 >
+> Walmart's Retail Link connects suppliers to stores for efficient replenishment; it is the textbook's example of operational excellence, a choice to excel rather than a necessity. B is the survival example of industry-level change (competitors had to match Citibank's ATMs). C, D, and E are laws that force firms to keep records and report, which makes the systems a necessity of doing business.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. Walmart의 Retail Link 개발(Walmart's development of Retail Link)**
+>
+> Walmart의 Retail Link는 공급업체와 매장을 연결해 재고를 효율적으로 보충하는 시스템으로, 교재의 운영 우수성(operational excellence) 사례다. 필수라서가 아니라 앞서기 위해 선택한 투자다. B는 업계 수준 변화에 따른 생존 사례이고(경쟁 은행들이 Citibank의 ATM을 따라 도입해야 했다), C, D, E는 기록 보관과 보고를 강제하는 법률이므로 시스템이 사업의 필수품이 된다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -275,10 +299,14 @@ published: true
 > [!ANSWER]
 > **A. Increased customer intimacy**
 >
+> The opening case presents AWM Smart Shelf as a way for brands and retailers to learn more about shoppers in the store and tailor what they show them, which is aimed at serving customers better. That fits customer intimacy. B, C, and E are not what the case describes, and D concerns creating new products rather than knowing customers.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 고객 친밀성 증대(Increased customer intimacy)**
+>
+> 장 도입 사례에서 AWM Smart Shelf는 브랜드와 소매업체가 매장 안의 쇼핑객을 더 잘 파악하고 보여 줄 내용을 맞춤화하도록 돕는 수단으로 제시된다. 이는 고객에게 더 잘 맞춰 주려는 것이므로 고객 친밀성(customer intimacy)에 해당한다. B, C, E는 사례가 설명하는 내용이 아니고, D는 고객 이해가 아니라 신제품 개발에 관한 것이다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -313,10 +341,14 @@ published: true
 > [!ANSWER]
 > **E. JCPenney's information system that allows its contract manufacturers to see what garments have been sold and need to be replaced**
 >
+> JCPenney's system lets its contract manufacturer, TAL Apparel, see sales immediately and decide how many shirts to make and ship, which keeps JCPenney's shirt inventory near zero. Sharing information with a supplier to coordinate supply is supplier intimacy. A is survival, B is customer intimacy, C is improved decision making, and D is new products.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 계약 제조업체가 어떤 의류가 팔려서 보충해야 하는지 볼 수 있게 한 JCPenney의 정보시스템**
+>
+> JCPenney의 시스템은 위탁 제조업체 TAL Apparel이 판매 기록을 즉시 보고 몇 벌을 만들어 보낼지 결정하게 해 JCPenney의 셔츠 재고를 거의 0으로 유지한다. 공급업체와 정보를 공유해 공급을 조정하는 것이 공급업체 친밀성(supplier intimacy)이다. A는 생존, B는 고객 친밀성, C는 의사결정 개선, D는 신제품 사례다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -351,10 +383,14 @@ published: true
 > [!ANSWER]
 > **B. Operational efficiency**
 >
+> The textbook calls Walmart the most efficient retail store in the industry: Retail Link plus best business practices and supportive management produce operational excellence, that is, efficiency and productivity. A is Apple's iTunes example, C is the Citibank ATM example, and D is the Mandarin Oriental example. E is a possible result, but the textbook uses Walmart here specifically to illustrate operational efficiency.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 운영 효율성(Operational efficiency)**
+>
+> 교재는 Walmart를 업계에서 가장 효율적인 소매업체로 설명한다. Retail Link, 최선의 업무 관행, 경영 지원이 결합해 효율성과 생산성, 즉 운영 우수성을 만든다. A는 Apple iTunes, C는 Citibank ATM, D는 Mandarin Oriental 사례다. E도 결과로 생길 수 있지만, 교재는 여기서 Walmart를 운영 효율의 사례로 쓴다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -389,10 +425,14 @@ published: true
 > [!ANSWER]
 > **A. 40**
 >
+> This test bank, written for the 17th edition, puts IT capital investment (equipment, software, and R&D) at over 40 percent of U.S. total capital spending, which shows how central IT has become to business. The higher figures (B–E) overstate the share. Note: the course notes' Figure 1.1 shows the IT share rising from about 21 percent (1999) to about 33 percent (2017), so the claim that it was over 40 percent in every year since 1999 does not match the slide figure; memorize 40 as the test bank's answer.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 40**
+>
+> 17판 기준의 이 문제은행은 IT 장비·소프트웨어·연구개발로 이루어진 IT 자본 투자가 미국 전체 자본 지출의 40퍼센트 이상이라고 본다. IT가 기업 운영의 중심이 되었다는 근거로 쓰이는 수치다. B–E는 비중을 과장한 값이다. 참고: 강의 노트의 Figure 1.1은 IT 비중이 1999년 약 21퍼센트에서 2017년 약 33퍼센트로 늘었다고 보여 주므로, 1999년부터 매년 40퍼센트를 넘었다는 문장은 슬라이드 그림과 맞지 않는다. 이 문제은행의 정답으로 40을 기억해 두자.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -427,10 +467,14 @@ published: true
 > [!ANSWER]
 > **A. Customer intimacy**
 >
+> The store analyzes customers' spending and the styles they prefer so that it stocks what they will actually buy. Understanding customers well enough to serve them better is customer intimacy. D would involve coordinating with suppliers, B is about staying in business, and C and E would require creating a new offering, which this application does not do.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 고객 친밀성(Customer intimacy)**
+>
+> 이 백화점은 고객의 지출과 선호 스타일을 분석해 고객이 실제로 살 옷을 갖춘다. 고객을 잘 이해해 더 잘 맞춰 주는 것이 고객 친밀성(customer intimacy)이다. D는 공급업체와의 조정이 있어야 하고, B는 사업을 유지하기 위한 것이며, C와 E는 새로운 상품이나 방식을 만들어야 하는데 이 애플리케이션은 그런 일을 하지 않는다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -465,10 +509,14 @@ published: true
 > [!ANSWER]
 > **D. About $3.6 trillion**
 >
+> The chapter reports worldwide e-commerce of about $3.6 trillion in 2019 (U.S. e-commerce alone was about $1 trillion in 2018). A, B, and C understate it by factors of a thousand, a hundred, and ten. E, $36 trillion, is far too large.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 약 3조 6,000억 달러(About $3.6 trillion)**
+>
+> 이 장은 2019년 전 세계 전자상거래 규모를 약 3조 6,000억 달러로 제시한다(미국만 해도 2018년 약 1조 달러). A, B, C는 각각 1,000배, 100배, 10배 작게 잡은 값이다. E의 36조 달러는 지나치게 크다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -503,10 +551,14 @@ published: true
 > [!ANSWER]
 > **E. co-creation of business value.**
 >
+> Cloud computing, big data, the Internet of Things (IoT), and the mobile digital platform are the technology innovations the chapter lists as reshaping MIS, so A–D are all on that list. Co-creation of business value is not a technology; it is a business or management idea about creating value together with customers and partners.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 비즈니스 가치의 공동 창출(co-creation of business value)**
+>
+> 클라우드 컴퓨팅, 빅데이터, 사물인터넷(IoT), 모바일 디지털 플랫폼은 이 장이 MIS를 바꾸는 기술 혁신으로 꼽는 것들이므로 A–D는 모두 목록에 있다. 비즈니스 가치의 공동 창출은 기술이 아니라 고객·파트너와 함께 가치를 만든다는 비즈니스·경영 차원의 개념이다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -541,10 +593,14 @@ published: true
 > [!ANSWER]
 > **B. Today, most firms are fully digital.**
 >
+> The textbook says fully digital firms are still rare; most firms are moving toward becoming digital, so B is false. The other statements are true: digital firms make time shifting and space shifting the norm (A), allow flexible global organization (C), and sense and respond to their environments faster, which gives them more flexibility to survive turbulent times (D, E).
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 오늘날 대부분의 기업은 완전히 디지털화되어 있다(Today, most firms are fully digital)**
+>
+> 교재는 완전한 디지털 기업은 아직 드물고 대부분의 기업이 디지털 기업으로 옮겨 가는 중이라고 설명하므로 B가 틀린 문장이다. 나머지는 맞다. 디지털 기업에서는 시간 이동(time shifting)과 공간 이동(space shifting)이 일상이고(A), 유연한 글로벌 조직이 가능하며(C), 환경 변화를 더 빨리 감지하고 대응하므로 격변기에 살아남을 유연성이 크다(D, E).
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -579,10 +635,14 @@ published: true
 > [!ANSWER]
 > **C. Survival**
 >
+> Investing because a law requires it, like the Toxic Substances Control Act or the Sarbanes-Oxley Act, is the regulatory branch of the survival objective: the system is a necessity of doing business. A, B, D, and E are improvements a firm chooses for advantage, not obligations imposed by legislation.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 생존(Survival)**
+>
+> Toxic Substances Control Act나 Sarbanes-Oxley Act처럼 법이 요구해서 하는 투자는 생존(survival) 목표 중 규제 대응에 해당한다. 이때 시스템은 사업을 하기 위한 필수품이다. A, B, D, E는 우위를 얻으려고 기업이 선택하는 개선이지, 법률이 부과하는 의무가 아니다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -617,10 +677,14 @@ published: true
 > [!ANSWER]
 > **E. GE**
 >
+> The chapter's new face of e-commerce is online streaming services and social networks: Netflix and Apple Music deliver content online, and Facebook and Tumblr are social platforms, so A–D all fit. GE is a traditional industrial manufacturer, not an example of the new online business models.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. GE**
+>
+> 이 장이 말하는 새로운 전자상거래의 모습은 온라인 스트리밍 서비스와 소셜 네트워크다. Netflix와 Apple Music은 콘텐츠를 온라인으로 제공하고, Facebook과 Tumblr는 소셜 플랫폼이므로 A–D는 모두 해당한다. GE는 전통적인 산업 제조업체로, 새로운 온라인 비즈니스 모델의 사례가 아니다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -655,10 +719,14 @@ published: true
 > [!ANSWER]
 > **D. greater emphasis on hierarchy and structure.**
 >
+> The textbook says twenty-first-century firms are more collaborative and place less emphasis on hierarchy and structure, so D is the exception. The other options are on the chapter's list of changes: interacting with customers through social media (A), greater awareness of technology, consumer, and cultural change (B), better understanding of IT's importance (C), and more data-driven decisions (E).
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 위계와 구조를 더 강조한다(greater emphasis on hierarchy and structure)**
+>
+> 교재는 21세기 기업이 더 협업적이고 위계와 구조를 덜 강조한다고 설명하므로 D가 예외다. 나머지는 이 장이 꼽는 변화 목록에 있다. 소셜 미디어로 고객과 대화하기(A), 기술·소비자·문화 변화에 대한 인식 확대(B), IT의 중요성에 대한 이해 증가(C), 데이터 기반 의사결정 강화(E)다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -693,10 +761,14 @@ published: true
 > [!ANSWER]
 > **A. reduction of economic and cultural advantages of developed countries.**
 >
+> Friedman argues that the Internet and global communications have flattened the playing field, so developed countries lose much of their economic and cultural advantage as more people around the world can compete. B and C describe communication or travel, not his argument. D confuses global flatness with flatter organization charts, and E is unrelated.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 선진국이 가진 경제적·문화적 이점의 축소**
+>
+> Friedman은 인터넷과 세계적 통신이 경쟁의 장을 평평하게 만들어 세계 곳곳의 사람들이 경쟁에 참여하게 되면서 선진국이 경제적·문화적 이점을 많이 잃는다고 주장한다. B와 C는 통신이나 이동에 관한 설명일 뿐 그의 주장이 아니다. D는 세계가 평평해진다는 것을 조직의 위계가 납작해지는 것과 혼동했고, E는 관계가 없다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -731,10 +803,14 @@ published: true
 > [!ANSWER]
 > **C. 30 percent**
 >
+> The chapter states that in 2019 about 30 percent of the world economy came from foreign trade, both imports and exports. This figure supports the point that economies are increasingly interdependent. The other percentages are not the textbook's figure.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 30퍼센트(30 percent)**
+>
+> 이 장은 2019년 세계 경제의 약 30퍼센트가 수입과 수출을 합한 해외 무역에서 나왔다고 제시한다. 각국 경제가 점점 더 서로 의존한다는 논점의 근거다. 나머지 비율은 교재의 수치가 아니다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -769,10 +845,14 @@ published: true
 > [!ANSWER]
 > **D. increases in transaction costs.**
 >
+> Globalization and the Internet sharply reduce the costs of operating and transacting on a global scale, so an increase in transaction costs (D) is the opposite of what happens. A, B, C, and E are effects the chapter lists: lower operating costs, worldwide price and quality information, access to low-cost suppliers, and replicating business models across countries without rebuilding expensive infrastructure.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 거래 비용의 증가(increases in transaction costs)**
+>
+> 세계화와 인터넷은 세계 규모로 운영하고 거래하는 비용을 크게 낮추므로, 거래 비용의 증가(D)는 실제와 반대다. A, B, C, E는 이 장이 꼽는 효과다. 운영 비용 감소, 세계의 가격·품질 정보 확보, 저비용 공급업체 확보, 비싼 인프라를 다시 만들지 않고 여러 나라에서 비즈니스 모델을 반복하는 것이다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -807,10 +887,14 @@ published: true
 > [!ANSWER]
 > **C. 300,000**
 >
+> The textbook states that about 300,000 service jobs move offshore to lower-wage countries each year (and about 5 million manufacturing jobs have moved since 2000). The other options are off by a factor of ten or more.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 300,000개**
+>
+> 교재는 매년 약 30만 개의 서비스 일자리가 저임금 국가로 이동한다고 설명한다(제조업 일자리는 2000년 이후 약 500만 개가 이동했다). 나머지 선택지는 10배 이상 차이 나는 값이다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -845,10 +929,14 @@ published: true
 > [!ANSWER]
 > **C. In 2019, U.S. spending on IT equipment, software, and research and development accounted for about 35 percent of total U.S. capital spending (in nominal GDP)**
 >
+> This test bank gives IT's share of U.S. capital spending as about 40 percent, not 35, so C is the false statement (see question 010). B matches the chapter's figure of $160 billion on management consulting, and D and E state the chapter's point that the value of IT comes from organizational, management, and cultural changes, which is why firms spend so much on consulting. A is the test bank's figure for global IT spending in 2019.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 2019년 미국의 IT 장비, 소프트웨어, 연구개발 지출은 미국 전체 자본 지출(명목 GDP 기준)의 약 35퍼센트를 차지했다**
+>
+> 이 문제은행은 미국 자본 지출에서 IT가 차지하는 비중을 35퍼센트가 아니라 약 40퍼센트로 보므로 C가 틀린 문장이다(010번 참고). B는 경영 컨설팅 지출 1,600억 달러라는 이 장의 수치와 같고, D와 E는 IT의 가치가 조직·경영·문화 변화에서 나오며 그래서 기업이 컨설팅에 많은 돈을 쓴다는 이 장의 논점이다. A는 이 문제은행이 제시하는 2019년 세계 IT 지출 수치다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -883,10 +971,14 @@ published: true
 > [!ANSWER]
 > **D. 98 percent**
 >
+> The chapter reports that about 98 percent of Facebook's users access it from mobile phones and tablets, a sign of how far the mobile digital platform has spread. The other percentages are not the textbook's figure; E (100 percent) would mean no one uses a desktop at all.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 98퍼센트(98 percent)**
+>
+> 이 장은 Facebook 사용자의 약 98퍼센트가 휴대전화와 태블릿으로 접속한다고 제시한다. 모바일 디지털 플랫폼이 얼마나 퍼졌는지 보여 주는 수치다. 나머지 비율은 교재 수치가 아니며, E(100퍼센트)는 데스크톱 사용자가 아예 없다는 뜻이 된다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -921,10 +1013,14 @@ published: true
 > [!ANSWER]
 > **D. The Internet has eased competitive tensions among nations as global trade expands.**
 >
+> The textbook says the Internet has intensified competition among nations, for markets, jobs, and resources, so D reverses the point. A, B, and E are the chapter's evidence of globalization (foreign revenues of large U.S. firms, Intel's overseas sales, growing dependence on trade), and C matches its figure of about 5 million manufacturing jobs lost to offshore producers since 2000.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 세계 무역이 확대되면서 인터넷은 국가 간 경쟁 긴장을 완화해 왔다**
+>
+> 교재는 인터넷이 시장·일자리·자원을 둘러싼 국가 간 경쟁을 더 치열하게 만들었다고 설명하므로 D는 논점을 거꾸로 말했다. A, B, E는 세계화의 근거(미국 대기업의 해외 매출, Intel의 해외 판매, 무역 의존도 증가)이고, C는 2000년 이후 제조업 일자리 약 500만 개가 해외로 이동했다는 수치와 같다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -959,10 +1055,14 @@ published: true
 > [!ANSWER]
 > **E. input, processing, and output.**
 >
+> An information system has three activities that produce information: input captures raw data, processing converts it into a meaningful form, and output transfers the processed information to the people or activities that will use it. Feedback is a separate return flow for evaluation, so B and D are wrong, and A and C mix in terms that are not system activities.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 입력, 처리, 출력(input, processing, and output)**
+>
+> 정보시스템이 정보를 만드는 세 활동은 입력(원시 데이터 포착), 처리(의미 있는 형태로 변환), 출력(처리된 정보를 사용할 사람이나 활동에 전달)이다. 피드백은 평가를 위해 되돌아오는 별도의 흐름이므로 B와 D는 틀리고, A와 C는 시스템 활동이 아닌 용어를 섞었다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -997,10 +1097,14 @@ published: true
 > [!ANSWER]
 > **D. input.**
 >
+> Input is the capture of raw data from within the organization or its environment, and checkout scanners recording item numbers and prices are the textbook's own example (Figure 1.3). A and B come later, when the data are processed and delivered, C is output returned for correction, and E is the whole system, not one activity.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 입력(input)**
+>
+> 입력(input)은 조직 안팎에서 원시 데이터를 포착하는 활동이며, 계산대에서 품목번호와 가격을 기록하는 것은 교재 Figure 1.3의 사례 그대로다. A와 B는 데이터를 처리하고 전달하는 이후 단계이고, C는 수정을 위해 되돌아오는 출력이며, E는 활동 하나가 아니라 시스템 전체다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1035,10 +1139,14 @@ published: true
 > [!ANSWER]
 > **C. Meaningful information**
 >
+> A total count of food items with temperature problems is raw readings that have been summarized into a form people can understand and act on, which makes it meaningful information. A and B describe the individual readings before aggregation, E is the act of summarizing rather than its result, and D would require the total to be sent back to correct the input stage.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 의미 있는 정보(Meaningful information)**
+>
+> 온도 문제가 있는 식품의 총수는 개별 기록을 사람이 이해하고 행동할 수 있는 형태로 요약한 것이므로 의미 있는 정보(meaningful information)다. A와 B는 집계하기 전의 개별 기록을 말하고, E는 결과가 아니라 요약하는 행위이며, D가 되려면 이 총계가 입력 단계를 고치는 데 다시 쓰여야 한다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1073,10 +1181,14 @@ published: true
 > [!ANSWER]
 > **D. transfers processed information to the people who will use it or to the activities for which it will be used.**
 >
+> Output transfers processed information to the people who will use it or to the activities for which it will be used. B is the definition of feedback, C describes processing, E describes data, and A reverses the order, since feedback is made from output, not the other way around.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 처리된 정보를 그것을 사용할 사람이나 그것이 쓰일 활동으로 전달한다**
+>
+> 출력(output)은 처리된 정보를 그것을 사용할 사람이나 쓰일 활동으로 전달하는 것이다. B는 피드백의 정의, C는 처리, E는 데이터의 설명이고, A는 순서를 뒤집었다. 출력에서 피드백이 나오는 것이지 그 반대가 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1111,10 +1223,14 @@ published: true
 > [!ANSWER]
 > **B. processing.**
 >
+> Processing converts raw input into a more meaningful form, such as totaling sales by item and region. A and E describe input, the capture of raw data. D is output returned to evaluate or correct the input stage, and C is not one of the textbook's system activities.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 처리(processing)**
+>
+> 처리(processing)는 원시 입력을 품목별·지역별 매출 합계처럼 더 의미 있는 형태로 바꾸는 것이다. A와 E는 원시 데이터를 포착하는 입력에 해당한다. D는 입력 단계를 평가·수정하도록 되돌아오는 출력이고, C는 교재가 말하는 시스템 활동이 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1149,10 +1265,14 @@ published: true
 > [!ANSWER]
 > **C. One Subaru Outback sold July 27, 2020 in Mohegan Lake, New York for $24,000**
 >
+> Raw data are streams of raw facts recording individual events, and C records a single sale with its date, place, and price. A, B, D, and E are all averages, totals, or growth rates computed from many sales, so they are information that has already been processed.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 2020년 7월 27일 뉴욕주 Mohegan Lake에서 Subaru Outback 1대가 24,000달러에 판매됨**
+>
+> 원시 데이터(raw data)는 개별 사건을 기록한 사실들이며, C는 날짜·장소·가격이 붙은 판매 한 건의 기록이다. A, B, D, E는 모두 여러 건의 판매로 계산한 평균, 합계, 증가율이므로 이미 처리된 정보다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1187,10 +1307,14 @@ published: true
 > [!ANSWER]
 > **B. senior management.**
 >
+> A business hierarchy has three levels: senior management at the top, then middle management, then operational management. Senior management makes long-range strategic decisions about products and services. A and E are knowledge workers, and C and D are service and data workers, who are types of employees rather than the top level of management.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 최고경영진(senior management)**
+>
+> 기업의 위계는 맨 위의 최고경영진, 그 아래 중간관리층, 운영관리층의 세 단계다. 최고경영진은 제품과 서비스에 관한 장기 전략 결정을 내린다. A와 E는 지식근로자, C와 D는 서비스근로자와 데이터근로자로, 최상위 관리 계층이 아니라 근로자의 유형이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1225,10 +1349,14 @@ published: true
 > [!ANSWER]
 > **A. culture.**
 >
+> This is the textbook's definition of organizational culture: the fundamental assumptions, values, and ways of doing things accepted by most members. B is the world outside the firm, D is a set of linked tasks, E is a statement of purpose, and C is not a textbook term.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 문화(culture)**
+>
+> 조직 문화(culture)에 대한 교재의 정의 그대로다. 구성원 대부분이 받아들인 기본 가정, 가치, 일하는 방식이다. B는 기업 바깥의 세계, D는 연결된 과업의 묶음, E는 목적을 밝힌 것이고, C는 교재 용어가 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1263,10 +1391,14 @@ published: true
 > [!ANSWER]
 > **E. Software governing the organization of data on physical storage media**
 >
+> Data management technology is the software that governs how data are organized on physical storage media. A is storage hardware, B is the definition of computer software in general, C is a network, and D is networking and telecommunications technology.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 물리적 저장 매체에서 데이터의 구성을 관리하는 소프트웨어**
+>
+> 데이터 관리 기술(data management technology)은 물리적 저장 매체에서 데이터가 어떻게 구성되는지 관리하는 소프트웨어다. A는 저장 하드웨어, B는 컴퓨터 소프트웨어 일반의 정의, C는 네트워크, D는 네트워킹·통신 기술이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1301,10 +1433,14 @@ published: true
 > [!ANSWER]
 > **E. It is a fundamental set of assumptions, values, and ways of doing things that has been accepted by most members of the organization.**
 >
+> The textbook defines culture as the fundamental set of assumptions, values, and ways of doing things accepted by most of an organization's members. A says all members, which overstates it, and C limits it to senior management's view. B and D describe possible effects rather than what culture is.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 조직 구성원 대부분이 받아들인 근본적인 가정, 가치, 일하는 방식의 집합이다**
+>
+> 교재는 문화를 조직 구성원 대부분이 받아들인 기본 가정, 가치, 일하는 방식의 집합으로 정의한다. A는 모든 구성원이라고 해서 과장했고, C는 최고경영진의 관점으로 좁혔다. B와 D는 문화가 무엇인지가 아니라 생길 수 있는 효과를 말한다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1339,10 +1475,14 @@ published: true
 > [!ANSWER]
 > **C. information technology (IT) infrastructure.**
 >
+> IT infrastructure is the shared technology platform made up of computer hardware, software, data management technology, and networking and telecommunications, plus the people who run and manage them. A and B name only part of it, D is the broader system that also includes organization and management, and E is shared values, not technology.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 정보기술(IT) 인프라**
+>
+> IT 인프라(IT infrastructure)는 컴퓨터 하드웨어, 소프트웨어, 데이터 관리 기술, 네트워킹·통신 기술과 이를 운영·관리하는 사람으로 이루어진 공통 기술 기반이다. A와 B는 그 일부만 가리키고, D는 조직과 경영까지 포함하는 더 넓은 시스템이며, E는 기술이 아니라 공유된 가치다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1377,10 +1517,14 @@ published: true
 > [!ANSWER]
 > **B. Finance and accounting**
 >
+> The four major business functions are sales and marketing, manufacturing and production, finance and accounting, and human resources. Finance and accounting manages the firm's financial assets and maintains its financial records. A, C, and D pair functions that are separate in the textbook, and E maintains employee records.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 재무 및 회계(Finance and accounting)**
+>
+> 네 가지 주요 비즈니스 기능은 영업·마케팅, 제조·생산, 재무·회계, 인적자원이다. 재무·회계가 기업의 재무 자산을 관리하고 재무 기록을 유지한다. A, C, D는 교재에서 서로 다른 기능을 짝지은 것이고, E는 직원 기록을 관리한다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1415,10 +1559,14 @@ published: true
 > [!ANSWER]
 > **E. employees.**
 >
+> Figure 1.4 places customers, suppliers, competitors, stockholders, and regulatory agencies in the firm's environment, interacting with it from outside. A–D all appear there. Employees work inside the organization, so they are not environmental actors.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 직원(employees)**
+>
+> Figure 1.4는 고객, 공급업체, 경쟁자, 주주, 규제기관을 기업 바깥에서 상호작용하는 환경으로 둔다. A–D는 모두 여기에 있다. 직원은 조직 안에서 일하므로 환경 행위자가 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1453,10 +1601,14 @@ published: true
 > [!ANSWER]
 > **B. The system will create new value for the firm, beyond its costs.**
 >
+> From a business perspective, an information system is an instrument for creating value, and firms invest in it when they expect returns greater than its costs, through higher productivity, revenue, or a better strategic position. A and C may be ways of creating value but are not the reason in themselves. D and E describe what competitors do or how the system fits technically, not value to the firm.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 그 시스템이 비용을 넘어서는 새로운 가치를 기업에 창출한다(The system will create new value for the firm, beyond its costs)**
+>
+> 비즈니스 관점에서 정보시스템은 가치를 창출하는 수단이며, 기업은 생산성·매출 증가나 더 나은 전략적 위치를 통해 비용보다 큰 수익을 기대할 때 투자한다. A와 C는 가치를 만드는 방법일 수는 있지만 그 자체가 이유는 아니다. D와 E는 경쟁사의 행동이나 기술적 적합성을 말할 뿐 기업에 주는 가치가 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1491,10 +1643,14 @@ published: true
 > [!ANSWER]
 > **C. Incentive systems that monitor and reward individual innovation**
 >
+> The textbook's organizational complementary assets include a supportive culture that values efficiency and effectiveness, an appropriate business model, efficient business processes, decentralization of authority, distributed decision-making rights, and a strong IS development team, so A, B, D, and E are all on the list. Incentives for innovation belong with the managerial assets (alongside strong senior management support and teamwork).
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 개인의 혁신을 모니터링하고 보상하는 인센티브 제도(Incentive systems that monitor and reward individual innovation)**
+>
+> 교재의 조직적 보완 자산(organizational complementary assets)은 효율성과 효과성을 중시하는 문화, 적절한 비즈니스 모델, 효율적인 비즈니스 프로세스, 권한 분산, 분산된 의사결정권, 강한 IS 개발팀이다. 따라서 A, B, D, E는 모두 목록에 있다. 혁신에 대한 인센티브는 경영진의 강한 지원, 팀워크와 함께 경영적 보완 자산에 속한다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1529,10 +1685,14 @@ published: true
 > [!ANSWER]
 > **D. Operational management**
 >
+> Operational management monitors the firm's daily activities. A, middle management, carries out the programs and plans of senior management. B and E are types of employees, not management levels, and C is not one of the textbook's three levels.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 운영관리층(Operational management)**
+>
+> 운영관리층(operational management)이 기업의 일상 활동을 감독한다. A의 중간관리층은 최고경영진의 계획과 프로그램을 실행한다. B와 E는 관리 계층이 아니라 근로자 유형이고, C는 교재의 세 계층에 없다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1567,10 +1727,14 @@ published: true
 > [!ANSWER]
 > **A. an information value chain**
 >
+> In the business information value chain, raw data are acquired and transformed through stages, collection, transformation, and dissemination, each adding value until the information improves decisions and performance. B and C are Porter's value chain ideas about a firm's or an industry's activities, not about information. D and E are only parts of the process.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 정보 가치사슬(an information value chain)**
+>
+> 비즈니스 정보 가치사슬(information value chain)에서는 원시 데이터를 수집·변환·배포하는 여러 단계를 거치며 각 단계가 가치를 더하고, 결국 의사결정과 성과를 개선한다. B와 C는 정보가 아니라 기업이나 산업의 활동에 관한 Porter의 가치사슬 개념이다. D와 E는 과정의 일부일 뿐이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1605,10 +1769,14 @@ published: true
 > [!ANSWER]
 > **A. Managerial**
 >
+> Training programs that enhance management decision-making skills are listed among the managerial complementary assets, along with strong senior management support, incentives for management innovation, and teamwork. D, organizational assets, covers things such as business processes, business models, and culture. C, social assets, are built by society and government, and B and E are not categories in the textbook.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 경영적(Managerial)**
+>
+> 관리자의 의사결정 역량을 높이는 교육 프로그램은 경영진의 강한 지원, 경영 혁신 인센티브, 팀워크와 함께 경영적 보완 자산(managerial complementary assets)에 들어간다. D의 조직적 자산은 비즈니스 프로세스, 비즈니스 모델, 문화 같은 것이다. C의 사회적 자산은 사회와 정부가 만들고, B와 E는 교재의 분류가 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1643,10 +1811,14 @@ published: true
 > [!ANSWER]
 > **A. Efficient business processes**
 >
+> Efficient business processes are an organizational complementary asset, alongside an appropriate business model and a supportive culture. B and E are managerial assets (a collaborative work environment, strong senior management support). C and D are social assets, created by society and government rather than by the firm.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 효율적인 비즈니스 프로세스(Efficient business processes)**
+>
+> 효율적인 비즈니스 프로세스는 적절한 비즈니스 모델, 지원적 문화와 함께 조직적 보완 자산이다. B와 E는 경영적 자산(협업적 업무 환경, 경영진의 강한 지원)이다. C와 D는 기업이 아니라 사회와 정부가 만드는 사회적 자산이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1681,10 +1853,14 @@ published: true
 > [!ANSWER]
 > **A. Technology and service firms in adjacent markets to assist implementation**
 >
+> Social complementary assets are developed by society, governments, other firms, and key market players, not by the firm itself. Technology and service firms in adjacent markets that help with implementation are on that list, along with Internet infrastructure, standards, and laws. B and D are managerial assets, and C and E are organizational assets.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 시스템 도입을 지원할 인접 시장의 기술·서비스 기업**
+>
+> 사회적 보완 자산(social complementary assets)은 기업 자신이 아니라 사회, 정부, 다른 기업, 주요 시장 행위자가 만든다. 도입을 도와주는 인접 시장의 기술·서비스 기업은 인터넷 인프라, 표준, 법규와 함께 이 목록에 있다. B와 D는 경영적 자산, C와 E는 조직적 자산이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1719,10 +1895,14 @@ published: true
 > [!ANSWER]
 > **A. Senior management**
 >
+> Senior management makes long-range strategic decisions about products and services and ensures the firm's financial performance. B carries out senior management's plans, D monitors daily activities, and C and E are types of employees, not levels of management.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 최고경영진(Senior management)**
+>
+> 최고경영진(senior management)이 제품과 서비스에 관한 장기 전략 결정을 내리고 기업의 재무 성과를 책임진다. B는 최고경영진의 계획을 실행하고, D는 일상 활동을 감독하며, C와 E는 관리 계층이 아니라 근로자 유형이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1757,10 +1937,14 @@ published: true
 > [!ANSWER]
 > **C. Product ID and price**
 >
+> Input is raw data, and a product ID and price captured at checkout is exactly the raw data shown in Figure 1.3. A, B, D, and E are totals or reports produced by processing many such records, so they are outputs, not inputs.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 제품 ID와 가격(Product ID and price)**
+>
+> 입력은 원시 데이터이며, 계산대에서 포착하는 제품 ID와 가격은 Figure 1.3에 나오는 원시 데이터 그대로다. A, B, D, E는 그런 기록을 여러 건 처리해 만든 합계나 보고서이므로 입력이 아니라 출력이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1795,10 +1979,14 @@ published: true
 > [!ANSWER]
 > **B. senior management, middle management, and operational management.**
 >
+> The textbook divides a business hierarchy into senior management, middle management, and operational management. A, D, and E replace a management level with service or data workers, who are types of employees, and C lists information systems, which is not a level of the hierarchy.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 최고경영진, 중간관리층, 운영관리층(senior management, middle management, and operational management)**
+>
+> 교재는 기업의 위계를 최고경영진, 중간관리층, 운영관리층으로 나눈다. A, D, E는 관리 계층 하나를 근로자 유형인 서비스근로자나 데이터근로자로 바꿨고, C의 정보시스템은 위계의 계층이 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1833,10 +2021,14 @@ published: true
 > [!ANSWER]
 > **C. Knowledge workers**
 >
+> In Figure 1.6, knowledge workers such as engineers, scientists, and architects sit at the middle level and often work with middle managers. Data workers and production or service workers (B, D, E) appear at the bottom alongside operational management, and A is itself the lowest management level.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 지식근로자(Knowledge workers)**
+>
+> Figure 1.6에서 엔지니어, 과학자, 건축가 같은 지식근로자(knowledge workers)는 중간 수준에 위치하며 중간관리자와 자주 협력한다. 데이터근로자와 생산·서비스근로자(B, D, E)는 운영관리층과 함께 맨 아래에 있고, A는 그 자체가 가장 낮은 관리 계층이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1871,10 +2063,14 @@ published: true
 > [!ANSWER]
 > **B. Human resources**
 >
+> Human resources attracts, develops, and maintains the firm's workforce and maintains employee records. A sells products and services, C manages financial assets and records, and D produces goods. E is a level of management, not a business function.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 인적자원(Human resources)**
+>
+> 인적자원(human resources)은 기업의 인력을 확보·개발·유지하고 직원 기록을 관리한다. A는 제품과 서비스를 판매하고, C는 재무 자산과 기록을 관리하며, D는 제품을 생산한다. E는 비즈니스 기능이 아니라 관리 계층이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1909,10 +2105,14 @@ published: true
 > [!ANSWER]
 > **A. Anchoring the system in UPS's sales and production functions.**
 >
+> In the textbook's UPS analysis, the organizational element is that the tracking system is anchored in UPS's sales and production functions, with defined procedures for handling packages. B and C are management elements (monitoring service levels and promoting the low-cost, superior-service strategy). D and E are technology elements (handheld computers, networks, routing software).
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 시스템을 UPS의 영업 및 생산 기능에 정착시키는 것(Anchoring the system in UPS's sales and production functions)**
+>
+> 교재의 UPS 분석에서 조직 요소는 추적 시스템이 UPS의 영업·생산 기능에 정착되어 있고 패키지 처리 절차가 정해져 있다는 점이다. B와 C는 경영 요소(서비스 수준 감독, 저비용·우수 서비스 전략 추진)이다. D와 E는 기술 요소(휴대용 컴퓨터, 네트워크, 경로 소프트웨어)다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1947,10 +2147,14 @@ published: true
 > [!ANSWER]
 > **B. The decision to use computer systems to increase the ease of sending a package using UPS**
 >
+> Management sets strategy, so management's decision to use computer systems to make sending and tracking a UPS package easier is the managerial element. A, the procedures for identifying packages, and C, the training of drivers, belong to the organizational side (procedures and people). D and E are technology elements.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. UPS로 패키지를 더 쉽게 보낼 수 있도록 컴퓨터 시스템을 사용하기로 한 결정**
+>
+> 전략을 정하는 것은 경영이므로, UPS로 패키지를 보내고 조회하기 쉽게 하려고 컴퓨터 시스템을 쓰기로 한 경영진의 결정이 경영 요소다. A의 패키지 식별 절차와 C의 기사 교육은 절차와 사람에 관한 조직 측면에 속한다. D와 E는 기술 요소다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1985,10 +2189,14 @@ published: true
 > [!ANSWER]
 > **C. The Internet**
 >
+> The Internet is the global network of networks that uses universal standards to connect millions of different networks. B, the Web, is a service that runs on the Internet. A and D are private networks built with Internet technology, and E is a single telecommunications company.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **C. 인터넷(The Internet)**
+>
+> 인터넷(Internet)은 보편적 표준을 사용해 수백만 개의 서로 다른 네트워크를 연결하는 전 세계 네트워크들의 네트워크다. B의 웹은 인터넷 위에서 돌아가는 서비스다. A와 D는 인터넷 기술로 만든 사설 네트워크이고, E는 통신회사 하나일 뿐이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2023,10 +2231,14 @@ published: true
 > [!ANSWER]
 > **B. The World Wide Web**
 >
+> The World Wide Web is a service provided by the Internet that uses universally accepted standards to store, retrieve, format, and display information in a page format. A, HTML, is one of the standards used to format Web pages, not the service. C and E are other Internet services, and D is a private network.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 월드 와이드 웹(The World Wide Web)**
+>
+> 월드 와이드 웹(World Wide Web)은 보편적으로 받아들여진 표준으로 정보를 페이지 형식으로 저장·검색·구성·표시하는 인터넷 서비스다. A의 HTML은 웹 페이지를 구성하는 표준 중 하나이지 서비스 자체가 아니다. C와 E는 다른 인터넷 서비스이고, D는 사설 네트워크다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2061,10 +2273,14 @@ published: true
 > [!ANSWER]
 > **D. An extranet**
 >
+> An extranet is a private corporate network extended to authorized users outside the organization, such as suppliers and partners. A, an intranet, is limited to people inside the firm. B and C are public, and E is a file-transfer service rather than a network.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 엑스트라넷(An extranet)**
+>
+> 엑스트라넷(extranet)은 공급업체·파트너처럼 허가받은 외부 사용자에게까지 확장한 기업의 사설 네트워크다. A의 인트라넷은 기업 내부 사람으로 제한된다. B와 C는 공개되어 있고, E는 네트워크가 아니라 파일 전송 서비스다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2099,10 +2315,14 @@ published: true
 > [!ANSWER]
 > **E. Management information systems**
 >
+> Management information systems (MIS) deals with behavioral as well as technical issues surrounding the development, use, and impact of information systems used by managers and employees. A is only the ability to use computer technology. B and D concern technical structure, and C is a set of related tasks, not a field of study.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 경영정보시스템(Management information systems)**
+>
+> 경영정보시스템(MIS)은 관리자와 직원이 쓰는 정보시스템의 개발·사용·영향을 둘러싼 기술적 문제와 행동적 문제를 함께 다룬다. A는 컴퓨터 기술을 사용하는 능력일 뿐이다. B와 D는 기술적 구조에 관한 것이고, C는 연구 분야가 아니라 연결된 과업의 묶음이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2137,10 +2357,14 @@ published: true
 > [!ANSWER]
 > **D. Increase in firm transaction costs**
 >
+> A superior return on IT investment shows up as higher productivity, higher revenue, greater stock market value, and a superior long-term strategic position, so A, B, C, and E are all expressions of it. Rising transaction costs would mean the investment is making the firm less efficient, the opposite of a good return.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **D. 기업 거래 비용의 증가(Increase in firm transaction costs)**
+>
+> IT 투자의 우수한 수익은 생산성 증가, 매출 증가, 주식시장 가치 상승, 우월한 장기 전략적 위치로 나타나므로 A, B, C, E는 모두 해당한다. 거래 비용이 늘었다면 투자가 기업을 덜 효율적으로 만들었다는 뜻이므로 좋은 수익과 반대다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2175,10 +2399,14 @@ published: true
 > [!ANSWER]
 > **B. operations research, management science, and computer science.**
 >
+> The technical approach draws on computer science, management science, and operations research, which emphasize mathematical models and the physical technology of systems. A, C, and D include engineering, networking, or utilization management, which are not on the textbook's list, and E lists the disciplines of the behavioral approach.
+>
 > *LO 1-3: What academic disciplines are used to study information systems and how does each contribute to an understanding of information systems? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 운영연구, 경영과학, 컴퓨터과학(operations research, management science, and computer science)**
+>
+> 기술적 접근은 수학적 모형과 시스템의 물리적 기술을 강조하는 컴퓨터과학, 경영과학, 운영연구에서 나온다. A, C, D는 교재 목록에 없는 공학, 네트워킹, 활용 관리를 포함하고, E는 행동적 접근의 학문들이다.
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2213,10 +2441,14 @@ published: true
 > [!ANSWER]
 > **E. Operations research**
 >
+> Operations research focuses on mathematical techniques for optimizing selected parameters of organizations, such as transportation, inventory control, and transaction costs. A, management science, emphasizes models for decision making and management practices, and C, computer science, studies computation, storage, and access methods. B is the field that combines these with behavioral issues, and D is not one of the contributing disciplines.
+>
 > *LO 1-3: What academic disciplines are used to study information systems and how does each contribute to an understanding of information systems? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 운영연구(Operations research)**
+>
+> 운영연구(operations research)는 운송, 재고 관리, 거래 비용처럼 조직의 특정 변수를 최적화하는 수학적 기법에 초점을 둔다. A의 경영과학은 의사결정과 경영 실무를 위한 모형을, C의 컴퓨터과학은 계산·저장·접근 방법을 연구한다. B는 이들을 행동적 문제와 결합한 분야이고, D는 기여 학문이 아니다.
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2251,10 +2483,14 @@ published: true
 > [!ANSWER]
 > **A. how systems affect individuals, groups, and organizations.**
 >
+> In the behavioral approach, sociologists study how systems affect individuals, groups, and organizations, and how groups shape system development. B is the psychologists' focus and C is the economists' focus. D is not one of the textbook's descriptions, and E describes the technical approach.
+>
 > *LO 1-3: What academic disciplines are used to study information systems and how does each contribute to an understanding of information systems? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 시스템이 개인, 집단, 조직에 어떤 영향을 미치는가(how systems affect individuals, groups, and organizations)**
+>
+> 행동적 접근에서 사회학자는 시스템이 개인, 집단, 조직에 어떤 영향을 미치는지, 그리고 집단이 시스템 개발을 어떻게 형성하는지 연구한다. B는 심리학자, C는 경제학자의 관심사다. D는 교재의 설명이 아니고, E는 기술적 접근을 말한다.
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2289,10 +2525,14 @@ published: true
 > [!ANSWER]
 > **B. how human decision makers perceive and use formal information.**
 >
+> Psychologists study how human decision makers perceive and use formal information. A is the sociologists' focus, and C, changes in a firm's control and cost structures, is the economists' focus. D is not one of the textbook's descriptions, and E describes the technical approach.
+>
 > *LO 1-3: What academic disciplines are used to study information systems and how does each contribute to an understanding of information systems? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 인간 의사결정자가 공식 정보를 어떻게 인식하고 사용하는가(how human decision makers perceive and use formal information)**
+>
+> 심리학자는 인간 의사결정자가 공식 정보를 어떻게 인식하고 사용하는지 연구한다. A는 사회학자의 관심사이고, C의 기업 내 통제·비용 구조 변화는 경제학자의 관심사다. D는 교재의 설명이 아니고, E는 기술적 접근을 말한다.
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2320,10 +2560,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The textbook notes that outsourcing has actually accelerated the development of new information systems in the United States and worldwide. Even as some jobs move offshore, demand for IS work keeps growing, so the statement is true.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재는 아웃소싱(outsourcing)이 오히려 미국과 세계에서 새로운 정보시스템 개발을 가속했다고 설명한다. 일부 일자리가 해외로 옮겨 가도 IS 업무에 대한 수요는 계속 늘고 있으므로 참이다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2346,10 +2590,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> A business process is a set of logically related tasks and behaviors that produce a specific business result. Creating a marketing plan involves a series of connected steps carried out to produce a defined outcome, so it is a business process, just like the textbook's examples of developing a new product, fulfilling an order, and hiring an employee.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 비즈니스 프로세스(business process)는 특정 성과를 만들기 위해 논리적으로 연결된 과업과 행동의 묶음이다. 마케팅 계획 수립도 정해진 결과를 내기 위해 이어지는 여러 단계로 이루어지므로, 교재의 예인 신제품 개발, 주문 이행, 직원 채용과 마찬가지로 비즈니스 프로세스다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2372,10 +2620,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> The textbook defines a digital firm as one in which nearly all, not necessarily all, of the significant business relationships with customers, suppliers, and employees are digitally enabled, along with core processes and key assets. The word all makes the statement too strict; fully digital firms are still rare.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 교재는 디지털 기업을 고객·공급업체·직원과의 중요한 관계가 반드시 전부가 아니라 거의 전부(nearly all) 디지털로 연결되고, 핵심 프로세스와 자산도 디지털로 관리되는 기업으로 정의한다. 모두라는 표현이 정의보다 지나치게 엄격하다. 완전히 디지털화된 기업은 아직 드물다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2398,10 +2650,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> This is the textbook's definition: a business model describes how a company produces, delivers, and sells a product or service to create wealth. Apple's move from selling physical music to iTunes digital downloads is the chapter's example of a new business model.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재의 정의 그대로다. 비즈니스 모델(business model)은 기업이 부를 창출하기 위해 제품이나 서비스를 어떻게 생산·전달·판매하는지 설명한다. Apple이 실물 음반 판매에서 iTunes 디지털 다운로드로 바꾼 것이 이 장의 새로운 비즈니스 모델 사례다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2424,10 +2680,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> The opposite is true: the textbook describes strong and growing demand for information systems and technology workers, with job openings outpacing the supply of qualified applicants. That shortage is why it encourages students to build IS skills that cannot be outsourced.
+>
 > *LO 1-1: How are information systems transforming business, and why are they so essential for running and managing a business today? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 실제는 반대다. 교재는 정보시스템·기술 인력에 대한 수요가 크고 계속 늘어 일자리가 자격을 갖춘 지원자보다 많다고 설명한다. 그래서 학생들에게 아웃소싱될 수 없는 IS 역량을 기르라고 권한다.
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2450,10 +2710,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> This is the textbook's definition: information technology (IT) consists of all the hardware and software a firm needs to use to achieve its business objectives. An information system (IS) is broader, a set of interrelated components that also involves organization and management.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재의 정의 그대로다. 정보기술(IT)은 기업이 비즈니스 목표를 달성하는 데 필요한 모든 하드웨어와 소프트웨어다. 정보시스템(IS)은 조직과 경영까지 포함하는 상호 연결된 구성요소의 집합으로 IT보다 넓다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2476,10 +2740,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Social complementary assets are not investments made by the firm; they are developed by society at large, governments, other firms, and key market players, such as Internet and telecommunications infrastructure, technology standards, and laws and regulations. Investments the firm itself makes are organizational and managerial assets.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 사회적 보완 자산은 기업이 하는 투자가 아니라 사회 전반, 정부, 다른 기업, 주요 시장 행위자가 만드는 것이다. 인터넷·통신 인프라, 기술 표준, 법규가 그 예다. 기업이 스스로 하는 투자는 조직적·경영적 자산이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2502,10 +2770,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Information systems literacy covers a behavioral as well as a technical approach: understanding the management and organizational dimensions of systems, not just the technology. Knowledge focused primarily on information technology is computer literacy.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 정보시스템 이해력(information systems literacy)은 기술적 접근뿐 아니라 행동적 접근도 포함해 시스템의 경영·조직 차원까지 이해하는 능력이다. 주로 정보기술에 초점을 둔 지식은 컴퓨터 이해력(computer literacy)이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2528,10 +2800,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The textbook says that to understand information systems fully, you must understand their organization, management, and information technology dimensions (Figure 1.5). These three themes recur throughout the book.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재는 정보시스템을 제대로 이해하려면 조직, 경영, 정보기술의 세 차원을 이해해야 한다고 설명한다(Figure 1.5). 이 세 주제는 책 전체에 반복해서 나온다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2554,10 +2830,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Long-range strategic decisions about products and services are made by senior management. Knowledge workers, such as engineers, scientists, and architects, design products or services and create new knowledge for the firm.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 제품과 서비스에 관한 장기 전략 결정은 최고경영진이 내린다. 엔지니어, 과학자, 건축가 같은 지식근로자는 제품이나 서비스를 설계하고 기업에 새로운 지식을 만든다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2580,10 +2860,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> The four major business functions are sales and marketing, manufacturing and production, finance and accounting, and human resources. Information technology is not one of them; sales and marketing is the missing function.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 네 가지 주요 비즈니스 기능은 영업·마케팅, 제조·생산, 재무·회계, 인적자원이다. 정보기술은 여기에 들어가지 않으며, 빠진 기능은 영업·마케팅이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2606,10 +2890,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The textbook states that parts of a firm's culture can always be found embedded in its information systems. For example, UPS's first priority is customer service, and that value is built into its package tracking system.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재는 기업 문화의 일부가 언제나 그 정보시스템 안에 들어 있다고 설명한다. 예를 들어 UPS는 고객 서비스를 최우선으로 여기며, 이 가치가 패키지 추적 시스템에 반영되어 있다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2632,10 +2920,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Many business processes are formally documented, but many others are informal work practices that are never written down, such as the expectation that you return calls from co-workers or customers. So not all business processes are formally documented.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 많은 비즈니스 프로세스가 공식 문서로 정리되어 있지만, 동료나 고객의 전화에 회신해야 한다는 관행처럼 문서화되지 않은 비공식 업무 관행도 많다. 따라서 모든 비즈니스 프로세스가 공식 문서화되어 있는 것은 아니다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2658,10 +2950,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The textbook explains that managers do more than manage what already exists: they create new products and services and sometimes re-create the organization. Creative work driven by new knowledge and information is therefore a significant part of management's responsibility.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재는 관리자가 기존의 것을 관리하는 데 그치지 않고 새로운 제품과 서비스를 만들며 때로는 조직 자체를 다시 만든다고 설명한다. 그래서 새로운 지식과 정보에서 나오는 창의적 업무가 경영 책임의 중요한 부분이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2684,10 +2980,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Intranets are internal networks limited to people inside the organization. Coordinating with other firms on purchasing, design collaboration, and other interorganizational work is what extranets are used for, since they extend access to authorized outside users.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 인트라넷(intranet)은 조직 내부 사람으로 제한된 내부 네트워크다. 구매, 설계 협업 등 다른 기업과의 조직 간 업무를 조정하는 데 쓰는 것은 허가받은 외부 사용자에게 접근을 확장한 엑스트라넷(extranet)이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2710,10 +3010,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Letting customers embed UPS functions such as package tracking and cost calculation in their own websites makes UPS's services part of how those customers run their businesses. Serving customers' needs this closely strengthens the relationship, which is customer intimacy.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Challenging* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 고객이 패키지 추적과 요금 계산 같은 UPS 기능을 자기 웹사이트에 넣을 수 있게 하면 UPS의 서비스가 고객의 사업 운영 방식의 일부가 된다. 고객의 필요에 이렇게 밀착해 관계를 강화하는 것이 고객 친밀성(customer intimacy)이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2736,10 +3040,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Studies show considerable variation in the returns firms receive from IT investments (Figure 1.8): some firms invest heavily and get little, while others get high returns. The difference comes largely from complementary assets and an appropriate business model, not from the technology alone.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 연구에 따르면 기업이 IT 투자에서 얻는 수익은 차이가 크다(Figure 1.8). 많이 투자하고도 성과가 작은 기업이 있는가 하면 높은 수익을 얻는 기업도 있다. 그 차이는 기술 자체보다 보완 자산과 적절한 비즈니스 모델에서 주로 나온다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2762,10 +3070,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Social complementary assets are developed by society, governments, and other firms rather than by the firm itself. Laws and regulations that create fair, stable market environments are on the textbook's list, along with Internet and telecommunications infrastructure and technology standards.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 사회적 보완 자산은 기업 자신이 아니라 사회, 정부, 다른 기업이 만든다. 공정하고 안정적인 시장 환경을 만드는 법규는 인터넷·통신 인프라, 기술 표준과 함께 교재의 목록에 있다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2788,10 +3100,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The textbook's list of organizational complementary assets includes a strong IS development team, along with a supportive culture, an appropriate business model, efficient business processes, and decentralized authority. So investing in such a team is an organizational asset investment.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재의 조직적 보완 자산 목록에는 지원적 문화, 적절한 비즈니스 모델, 효율적인 비즈니스 프로세스, 권한 분산과 함께 강한 IS 개발팀이 들어 있다. 따라서 이런 팀에 대한 투자는 조직적 자산 투자다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2814,10 +3130,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> This statement defines information, not data. Data are streams of raw facts representing events occurring in organizations or the physical environment before they have been organized into a form people can understand and use.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 이 문장은 데이터가 아니라 정보(information)의 정의다. 데이터(data)는 조직이나 물리적 환경에서 일어나는 사건을 나타내는 원시 사실로, 사람이 이해하고 쓸 수 있는 형태로 정리되기 전의 것이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2840,10 +3160,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> This is the textbook's definition of feedback. For example, a report that reveals missing transactions and leads staff to correct how sales are recorded is feedback, because the output is used to evaluate and fix the input stage.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재의 피드백(feedback) 정의 그대로다. 예를 들어 보고서에서 누락된 거래를 발견하고 판매 기록 방식을 고쳤다면, 출력이 입력 단계를 평가하고 바로잡는 데 쓰였으므로 피드백이다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2866,10 +3190,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The textbook lists the key elements of an organization as its people, structure, business processes, politics, and culture. Information systems have to fit these elements, which is why the organization is one of the three dimensions of IS.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재는 조직의 핵심 요소를 사람, 구조, 비즈니스 프로세스, 정치, 문화로 제시한다. 정보시스템은 이 요소들과 맞아야 하므로 조직은 IS의 세 차원 중 하나가 된다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2892,10 +3220,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Long-range strategic decisions about products and services are made by senior management. Middle managers carry out the programs and plans of senior management, and operational managers monitor the firm's daily activities.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 제품과 서비스에 관한 장기 전략 결정은 최고경영진이 내린다. 중간관리자는 최고경영진의 계획과 프로그램을 실행하고, 운영관리자는 기업의 일상 활동을 감독한다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2918,10 +3250,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> This is the textbook's definition of computer software: the detailed, preprogrammed instructions that control and coordinate the computer hardware components in an information system. Software is one of the four technologies in the technology dimension, with hardware, data management technology, and networking.
+>
 > *LO 1-2: What is an information system? How does it work? What are its management, organization, and technology components? Why are complementary assets essential for ensuring that information systems provide genuine value for organizations? · Difficulty: Easy* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재의 컴퓨터 소프트웨어(computer software) 정의 그대로다. 정보시스템의 하드웨어 구성요소를 통제하고 조정하는 상세한 사전 프로그램된 명령이다. 소프트웨어는 하드웨어, 데이터 관리 기술, 네트워킹과 함께 기술 차원의 네 가지 기술 중 하나다.
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -2944,10 +3280,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The behavioral approach, drawing on sociology, psychology, and economics, concentrates on behavioral issues such as how systems are adopted and used and how they affect people and organizations, rather than on technical solutions. It does not ignore technology, but technology is not its focus.
+>
 > *LO 1-3: What academic disciplines are used to study information systems and how does each contribute to an understanding of information systems? · Difficulty: Moderate* · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 사회학, 심리학, 경제학에서 나온 행동적 접근은 기술적 해법보다 시스템이 어떻게 도입·사용되고 사람과 조직에 어떤 영향을 미치는지 같은 행동적 문제에 집중한다. 기술을 무시하는 것은 아니지만 초점이 기술에 있지 않다.
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
