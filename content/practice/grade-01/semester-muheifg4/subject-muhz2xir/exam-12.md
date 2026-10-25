@@ -14,6 +14,9 @@ published: true
 | Essay | 15 |
 
 
+> [!NOTE]
+> 문제 번호 옆 **· 슬라이드 없음**은 원본 수업 슬라이드에는 없고 교재에만 나오는 내용이라는 뜻이다. 나머지 문항은 정답 아래 **Slide / 관련 슬라이드** 번호를 누르면 해당 슬라이드가 열린다.
+
 ---
 
 ## I. Multiple choice
@@ -386,7 +389,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 009
+### 009 · 슬라이드 없음
 
 > [!QUIZ]
 > All of the following are factors in U.S. federal sentencing guidelines with respect to business executives except:
@@ -1168,7 +1171,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 038
+### 038 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following is not a U.S. federal law affecting private institutions?
@@ -1214,7 +1217,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 039
+### 039 · 슬라이드 없음
 
 > [!QUIZ]
 > All of the following laws apply to actions by the federal government except the:
@@ -1398,7 +1401,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 043
+### 043 · 슬라이드 없음
 
 > [!QUIZ]
 > The Network Advertising Initiative is an industry association that:
@@ -1490,7 +1493,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 045
+### 045 · 슬라이드 없음
 
 > [!QUIZ]
 > What percent of global Internet users use Google Search and other Google services?
@@ -1674,7 +1677,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 049
+### 049 · 슬라이드 없음
 
 > [!QUIZ]
 > "Look and feel" copyright infringement lawsuits are concerned with:
@@ -1720,7 +1723,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 050
+### 050 · 슬라이드 없음
 
 > [!QUIZ]
 > The NAI is an industry association formed to help with which of the following?
@@ -2134,7 +2137,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 059
+### 059 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following statements about trademarks is not true?
@@ -2226,7 +2229,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 061
+### 061 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following were involved in what has been called the patent trial of the century?
@@ -2272,7 +2275,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 062
+### 062 · 슬라이드 없음
 
 > [!QUIZ]
 > All of the following are, or were, file-sharing services except:
@@ -2817,7 +2820,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 011
+### 011 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* In today's legal environment, managers who are convicted for the misuse of information systems are unlikely to be given a prison sentence.
@@ -3225,7 +3228,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 070
+### 070 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Software programs were unprotected by copyright law until the early 1990s.
@@ -3361,7 +3364,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 074
+### 074 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Some forms of illegal sharing of music files have declined as legitimate online music stores and streaming services have expanded.
@@ -3856,7 +3859,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 081
+### 081 · 슬라이드 없음
 
 > [!QUIZ]
 > Discuss the issues raised by Apple and Samsung's patent battle against each other.

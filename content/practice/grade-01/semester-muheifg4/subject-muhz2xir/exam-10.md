@@ -14,6 +14,9 @@ published: true
 | Essay | 9 |
 
 
+> [!NOTE]
+> 문제 번호 옆 **· 슬라이드 없음**은 원본 수업 슬라이드에는 없고 교재에만 나오는 내용이라는 뜻이다. 나머지 문항은 정답 아래 **Slide / 관련 슬라이드** 번호를 누르면 해당 슬라이드가 열린다.
+
 ---
 
 ## I. Multiple choice
@@ -1614,7 +1617,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 069
+### 069 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following is not true about Customer Success Analysts?
@@ -2409,7 +2412,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 071
+### 071 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Princess Cruises, considered one of the most recognized cruise lines in the world, uses a single, well-perfected promotion concept to attract customers and remain competitive in the market.
@@ -2443,7 +2446,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 072
+### 072 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Hanover Research is a marketing and data analytics firm with expertise in customer experience analysis.
@@ -2477,7 +2480,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 073
+### 073 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Senior customer success managers can make almost $100,000.
@@ -2511,7 +2514,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 074
+### 074 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Customer success managers collaborate with various teams to address customer's needs.
@@ -2545,7 +2548,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 075
+### 075 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* On-board credit, free gratuities, and which promotional campaigns were most appealing to customers were all options that Princess Cruises considered.

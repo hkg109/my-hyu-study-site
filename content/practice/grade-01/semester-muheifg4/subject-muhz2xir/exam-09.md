@@ -12,6 +12,9 @@ published: true
 | True / False | 25 |
 | Essay | 15 |
 
+> [!NOTE]
+> 문제 번호 옆 **· 슬라이드 없음**은 원본 수업 슬라이드에는 없고 교재에만 나오는 내용이라는 뜻이다. 나머지 문항은 정답 아래 **Slide / 관련 슬라이드** 번호를 누르면 해당 슬라이드가 열린다.
+
 ---
 
 ## I. Multiple choice
@@ -292,7 +295,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 007
+### 007 · 슬라이드 없음
 
 > [!QUIZ]
 > As discussed in the chapter-opening case, AWM Smart Shelf can help brands and retailers achieve which of the following?
@@ -844,7 +847,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 019
+### 019 · 슬라이드 없음
 
 > [!QUIZ]
 > In 2019, what percent of the world economy resulted from foreign trade?
@@ -936,7 +939,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 021
+### 021 · 슬라이드 없음
 
 > [!QUIZ]
 > How many service jobs move offshore to lower-wage countries in a typical year?
@@ -1028,7 +1031,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 023
+### 023 · 슬라이드 없음
 
 > [!QUIZ]
 > What percent of Facebook's users access the service from mobile phones and tablets?
@@ -2270,7 +2273,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 058
+### 058 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following constitutes an organizational element in the UPS package tracking system described in the chapter?
@@ -2316,7 +2319,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 059
+### 059 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following constitutes a managerial element in the UPS tracking system described in the chapter?
@@ -2781,7 +2784,7 @@ published: true
 
 ## II. True or false
 
-### 025
+### 025 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Outsourcing has accelerated the development of new information systems in the United States.
@@ -2917,7 +2920,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 029
+### 029 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* In 2019, the supply of applicants far exceeded the number of job openings in information systems and technologies.

@@ -14,6 +14,9 @@ published: true
 | Essay | 15 |
 
 
+> [!NOTE]
+> 문제 번호 옆 **· 슬라이드 없음**은 원본 수업 슬라이드에는 없고 교재에만 나오는 내용이라는 뜻이다. 나머지 문항은 정답 아래 **Slide / 관련 슬라이드** 번호를 누르면 해당 슬라이드가 열린다.
+
 ---
 
 ## I. Multiple choice
@@ -2919,7 +2922,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 066
+### 066 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* A company's competitive advantages ultimately translate into higher stock market valuations than its competitors.
