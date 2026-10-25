@@ -974,7 +974,7 @@ published: true
 >
 > The FTC added guidelines that firms should practice privacy by design (A), increase the transparency of their data practices (B), and require consumer consent with clear opt-out options (C); E restates the FIP access/participation principle. There is no FTC rule limiting storage of all personal data to six months or less, so D is the exception.
 >
-> **Slide:** [20](/materials/mis-exam-slides/ch04_18ed.pdf#page=20)
+> **Slide:** [21](/materials/mis-exam-slides/ch04_18ed.pdf#page=21) · [20](/materials/mis-exam-slides/ch04_18ed.pdf#page=20) · [24](/materials/mis-exam-slides/ch04_18ed.pdf#page=24)
 >
 > *LO 4-3: Why do contemporary information systems technology and the Internet pose challenges to the protection of individual privacy and intellectual property? · Difficulty: Challenging* · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
@@ -983,7 +983,7 @@ published: true
 >
 > FTC는 기업이 프라이버시 중심 설계를 실천하고(A), 데이터 관행의 투명성을 높이며(B), 소비자 동의를 받고 명확한 거부 선택지를 제공해야 한다(C)는 지침을 추가했다. E는 FIP의 접근/참여(access/participation) 원칙을 다시 말한 것이다. 모든 개인 데이터의 보관 기간을 6개월 이하로 제한하라는 FTC 규칙은 없으므로 D가 예외다.
 >
-> **관련 슬라이드:** [20](/materials/mis-exam-slides/ch04_18ed.pdf#page=20)
+> **관련 슬라이드:** [21](/materials/mis-exam-slides/ch04_18ed.pdf#page=21) · [20](/materials/mis-exam-slides/ch04_18ed.pdf#page=20) · [24](/materials/mis-exam-slides/ch04_18ed.pdf#page=24)
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
