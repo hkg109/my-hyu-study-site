@@ -45,10 +45,14 @@ published: true
 > [!ANSWER]
 > **C. Manufacturing and production**
 >
+> A bill of materials lists the parts and materials needed to build a product, so producing it is a manufacturing and production process, alongside assembling the product and checking quality. A (finance and accounting) handles financial statements and paying creditors. B (human resources) handles hiring and evaluating employees. D (research and development) designs new products but does not prepare the build list used in production.
+>
 > *LO 2.1: Understand how business processes relate to information systems. · Difficulty: Moderate · p. 39* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. 제조·생산(manufacturing and production)**
+>
+> 자재명세서(bill of materials)는 제품을 만드는 데 필요한 부품과 자재를 정리한 목록이므로, 이를 작성하는 일은 제품 조립·품질 검사와 함께 제조·생산 프로세스에 속한다. A(재무·회계)는 재무제표 작성과 채권자 지급을 맡는다. B(인적자원)는 채용과 직원 평가를 맡는다. D(연구개발)는 신제품을 설계하지만 생산에 쓰는 자재 목록을 만드는 기능은 아니다.
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -79,10 +83,14 @@ published: true
 > [!ANSWER]
 > **C. Fulfilling a customer order**
 >
+> A cross-functional business process needs input and coordination from several functional areas. Fulfilling a customer order runs through sales (submitting the order), accounting (checking credit, invoicing) and manufacturing (assembling and shipping), as in the textbook's order fulfillment figure. A (identifying customers) is a sales and marketing process, B (shipping a product) is a manufacturing step, and D (hiring employees) is a human resources process; each sits mainly within one function.
+>
 > *LO 2.1: Understand how business processes relate to information systems. · Difficulty: Moderate · p. 39* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. 고객 주문 이행**
+>
+> 여러 기능을 가로지르는(cross-functional) 비즈니스 프로세스는 여러 기능 영역의 입력과 조정이 필요한 프로세스다. 교재의 주문 이행 그림처럼 고객 주문 이행은 영업(주문 제출), 회계(신용 확인·송장 발행), 생산(조립·배송)을 모두 거친다. A(고객 식별)는 영업·마케팅, B(제품 배송)는 생산, D(직원 채용)는 인적자원 프로세스로, 각각 주로 한 기능 안에서 이루어진다.
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -113,10 +121,14 @@ published: true
 > [!ANSWER]
 > **D. making customers aware of the product**
 >
+> Order fulfillment begins once a customer places an order: sales submits the order, accounting checks credit, approves it and invoices, and manufacturing assembles and ships the product. A, B and C are all steps in that flow. Making customers aware of the product happens before any order exists; it is a sales and marketing activity, not part of fulfilling an order.
+>
 > *LO 2.1: Understand how business processes relate to information systems. · Difficulty: Moderate · p. 39* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 고객에게 제품을 알리는 일**
+>
+> 주문 이행(order fulfillment)은 고객이 주문한 뒤에 시작된다. 영업이 주문을 제출하고, 회계가 신용을 확인·승인하고 송장을 발행하며, 생산이 제품을 조립해 배송한다. A·B·C는 모두 이 흐름의 단계다. 고객에게 제품을 알리는 일은 주문이 생기기 전의 영업·마케팅 활동이므로 주문 이행에 포함되지 않는다.
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -147,10 +159,14 @@ published: true
 > [!ANSWER]
 > **D. sales and marketing**
 >
+> The sales and marketing function identifies customers, promotes the firm's products and makes customers aware of them, then sells them. A (finance and accounting) manages the firm's money and financial records, B (human resources) manages the workforce, and C (manufacturing and production) makes the product.
+>
 > *LO 2.1: Understand how business processes relate to information systems. · Difficulty: Easy · p. 39* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 영업·마케팅(sales and marketing)**
+>
+> 영업·마케팅(sales and marketing) 기능은 고객을 식별하고, 제품을 홍보해 고객이 알게 하며, 판매한다. A(재무·회계)는 회사의 자금과 재무 기록을, B(인적자원)는 인력을, C(제조·생산)는 제품 생산을 담당한다.
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 하(Easy) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -181,10 +197,14 @@ published: true
 > [!ANSWER]
 > **C. The performance of a business firm typically is not related to its business processes.**
 >
+> A firm's performance depends heavily on how well its business processes are designed and coordinated, so C is the false statement. A, B and D are all true: a business can be seen as a collection of business processes, analyzing them shows how the business actually works, and well-designed processes are a competitive strength while outdated, inefficient ones are a liability.
+>
 > *LO 2.1: Understand how business processes relate to information systems. · Difficulty: Difficult · p. 38* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. 기업의 성과는 일반적으로 비즈니스 프로세스와 관련이 없다.**
+>
+> 기업의 성과는 비즈니스 프로세스가 얼마나 잘 설계되고 조정되는지에 크게 좌우되므로 C가 틀린 설명이다. A·B·D는 모두 맞다. 기업은 비즈니스 프로세스의 집합으로 볼 수 있고, 프로세스를 분석하면 기업이 실제로 어떻게 돌아가는지 알 수 있으며, 잘 설계된 프로세스는 경쟁력의 원천(자산)이 되고 낡고 비효율적인 프로세스는 부채(liability)가 된다.
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 상(Difficult) · p. 38* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -215,10 +235,14 @@ published: true
 > [!ANSWER]
 > **C. MIS**
 >
+> An MIS summarizes TPS data into routine reports for middle managers, such as comparing actual annual sales for each product with planned targets (the textbook's sample MIS report does exactly this). A (ESS) supports senior managers' strategic, non-routine decisions. B (TPS) records individual daily transactions but does not compare totals with plans. D (DSS) uses models for non-routine what-if questions rather than standard performance reports.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 42* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. MIS**
+>
+> MIS는 TPS 데이터를 요약해 중간관리자에게 정기 보고서를 제공한다. 제품별 연간 실제 매출을 계획 목표와 비교하는 것이 대표적인 예이며, 교재의 MIS 보고서 예시가 바로 이 형태다. A(ESS)는 최고경영진의 전략적·비정형 결정을 지원한다. B(TPS)는 개별 일상 거래를 기록할 뿐 총계를 계획과 비교하지는 않는다. D(DSS)는 정기 성과 보고서가 아니라 모델을 이용한 비정형 what-if 질문에 쓴다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 42* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -249,10 +273,14 @@ published: true
 > [!ANSWER]
 > **C. TPS typically supply data to a firm's ESS.**
 >
+> The key treats C as the untrue statement because an ESS draws its summarized internal information from MIS and DSS, not directly from TPS. A, B and D are true: a TPS supports operational managers, tracks the flow of daily routine transactions, and is so central that a failure of even a few hours can cripple a firm. Note: the course notes also call TPS the data source for all other systems, so TPS data does reach the ESS indirectly through MIS and DSS; read C as "directly supplies" to accept the key.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Difficult · p. 40* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. TPS는 일반적으로 기업의 ESS에 데이터를 공급한다.**
+>
+> 정답은 C를 틀린 설명으로 본다. ESS는 요약된 내부 정보를 TPS에서 직접 받는 것이 아니라 MIS와 DSS에서 받기 때문이다. A·B·D는 맞다. TPS는 운영 관리자를 지원하고, 일상적인 거래의 흐름을 추적하며, 몇 시간만 멈춰도 기업이 심각한 타격을 입을 만큼 핵심적인 시스템이다. 참고: 강의 노트도 TPS를 다른 모든 시스템의 데이터 원천이라고 하므로 TPS 데이터는 MIS·DSS를 거쳐 간접적으로 ESS에 들어간다. C를 “직접 공급한다”는 뜻으로 읽어야 정답과 맞는다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -283,10 +311,14 @@ published: true
 > [!ANSWER]
 > **C. TPS**
 >
+> The textbook states that managers need a TPS to monitor the status of internal operations and the firm's relations with the external environment, because it records every routine transaction such as orders, payments and shipments. A (DSS) supports non-routine what-if decisions. B (KWS) helps knowledge workers create new knowledge. D (MIS) produces periodic summary reports from TPS data rather than tracking day-to-day operations.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 40* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. TPS**
+>
+> 교재는 관리자가 내부 운영 상황과 기업과 외부 환경의 관계를 모니터링하려면 TPS가 필요하다고 설명한다. TPS가 주문·결제·배송 같은 일상 거래를 모두 기록하기 때문이다. A(DSS)는 비정형 what-if 결정을 지원한다. B(KWS)는 지식근로자가 새 지식을 만들도록 돕는다. D(MIS)는 일상 운영을 추적하기보다 TPS 데이터로 정기 요약 보고서를 만든다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -317,10 +349,14 @@ published: true
 > [!ANSWER]
 > **A. TPS**
 >
+> A TPS records the firm's daily routine transactions, and this transaction data is the raw material that MIS, DSS and ESS summarize and analyze, so TPS is a major data source for other systems. B (MIS) summarizes TPS data, C (ESS) relies on summarized information from MIS and DSS, and D (DSS) analyzes TPS and MIS data with models; all three consume data rather than originate it.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 41* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. TPS**
+>
+> TPS는 기업의 일상 거래를 기록하며, 이 거래 데이터가 MIS·DSS·ESS가 요약하고 분석하는 원재료가 된다. 그래서 TPS는 다른 시스템의 주요 데이터 원천이다. B(MIS)는 TPS 데이터를 요약하고, C(ESS)는 MIS·DSS의 요약 정보에 의존하며, D(DSS)는 TPS·MIS 데이터를 모델로 분석한다. 셋 모두 데이터를 만들어 내기보다 가져다 쓰는 시스템이다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -351,10 +387,14 @@ published: true
 > [!ANSWER]
 > **D. middle management functions**
 >
+> As a type of system, MIS serves middle management: it summarizes TPS data into periodic reports on the firm's current performance. A describes enterprise-wide integration, which is the job of enterprise applications. B describes transaction processing, the job of a TPS. C (online access to historical records) is not what defines MIS.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Easy · p. 41* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 중간관리층(middle management)의 기능**
+>
+> 시스템 유형으로서의 MIS는 중간관리층(middle management)을 지원한다. TPS 데이터를 요약해 현재 성과에 대한 정기 보고서를 제공하는 것이다. A는 기업 전체의 통합으로, 전사적 애플리케이션이 하는 일이다. B는 거래 처리로 TPS의 역할이다. C(과거 기록에 대한 온라인 접근)는 MIS를 정의하는 특징이 아니다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -385,10 +425,14 @@ published: true
 > [!ANSWER]
 > **D. DSS**
 >
+> "What happens to the production schedule if sales double?" is a non-routine what-if question, and a DSS uses analytical models and data to answer exactly this kind of question. A (MIS) gives routine reports on current performance, B (TPS) records transactions, and C (ESS) supports senior managers' broad strategic decisions rather than a model-based scenario analysis like this one.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 43* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. DSS**
+>
+> “매출이 두 배가 되면 생산 일정은 어떻게 될까?”는 비정형 what-if 질문이며, DSS는 분석 모델과 데이터로 바로 이런 질문에 답한다. A(MIS)는 현재 성과에 대한 정기 보고서를, B(TPS)는 거래 기록을 제공한다. C(ESS)는 이런 모델 기반 시나리오 분석보다는 최고경영진의 폭넓은 전략적 결정을 지원한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -419,10 +463,14 @@ published: true
 > [!ANSWER]
 > **D. MIS**
 >
+> Reporting summarized totals of relocation costs across all divisions is a routine summary report built from transaction data, which is what an MIS produces. A (KMS) manages the firm's knowledge and expertise. B (TPS) records each individual expense transaction but does not produce company-wide summaries. C (ESS) supports senior managers' strategic decisions using external data and summarized internal data.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Difficult · p. 41* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. MIS**
+>
+> 모든 사업부의 이주 관련 비용 총액을 요약해 보고하는 것은 거래 데이터로 만든 정기 요약 보고서이므로 MIS의 산출물이다. A(KMS)는 기업의 지식과 전문성을 관리한다. B(TPS)는 개별 비용 거래를 기록할 뿐 전사 요약을 만들지는 않는다. C(ESS)는 외부 데이터와 요약된 내부 데이터로 최고경영진의 전략적 결정을 지원한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -453,10 +501,14 @@ published: true
 > [!ANSWER]
 > **D. DSS**
 >
+> A DSS focuses on problems that are unique and rapidly changing, for which the procedure for reaching a solution may not be fully predefined. A (MIS) answers routine questions with predefined procedures, and B (TPS) handles routine transactions. C (ESS) also deals with non-routine problems, but at the senior, strategic level; the textbook phrase "unique and rapidly changing" is used for DSS.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 43* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. DSS**
+>
+> DSS는 고유하고 빠르게 변해서 해결 절차를 미리 다 정해 둘 수 없는 문제에 초점을 맞춘다. A(MIS)는 정해진 절차로 정기적인 질문에 답하고, B(TPS)는 일상 거래를 처리한다. C(ESS)도 비정형 문제를 다루지만 최고경영층의 전략 수준이며, 교재에서 “고유하고 빠르게 변하는(unique and rapidly changing)” 문제라는 표현은 DSS에 쓰인다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -487,10 +539,14 @@ published: true
 > [!ANSWER]
 > **D. Senior management**
 >
+> An ESS is designed for senior management, supporting strategic, non-routine decisions with external information and summarized internal information. A (operational management) is served by TPS. C (middle management) is served by MIS and DSS. B (end-users) is not a management level this category targets.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Easy · p. 44* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 최고경영층(senior management)**
+>
+> ESS는 최고경영층(senior management)을 위해 설계되어, 외부 정보와 요약된 내부 정보로 전략적·비정형 결정을 지원한다. A(운영 관리층)는 TPS가, C(중간관리층)는 MIS와 DSS가 지원한다. B(최종 사용자)는 이 분류에서 지원 대상으로 삼는 관리 계층이 아니다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -521,10 +577,14 @@ published: true
 > [!ANSWER]
 > **B. ESS**
 >
+> An ESS combines external data, such as new tax laws or competitors, with summarized information from internal MIS and DSS. A (TPS) records internal transactions. C (MIS) summarizes internal TPS data. D (DSS) can use some external data, but it is the ESS that is defined by bringing external events together with summarized internal BI information for senior managers.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 44* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. ESS**
+>
+> ESS는 새 세법이나 경쟁사 같은 외부 데이터와 내부 MIS·DSS의 요약 정보를 함께 쓴다. A(TPS)는 내부 거래를 기록하고, C(MIS)는 내부 TPS 데이터를 요약한다. D(DSS)도 일부 외부 데이터를 쓸 수 있지만, 외부 사건과 요약된 내부 비즈니스 인텔리전스 정보를 함께 모아 최고경영진에게 제공하는 것이 ESS의 정의다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -555,10 +615,14 @@ published: true
 > [!ANSWER]
 > **B. tracks the flow of materials in a factory**
 >
+> Business intelligence covers the data and tools that organize and analyze data to support decisions, which includes MIS, DSS and ESS. Tracking the flow of materials in a factory is recording routine transactions, the job of a TPS. A and D describe MIS (summary reports, comparing sales with targets), and C describes DSS (unique, rapidly changing problems).
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Difficult · p. 41* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 공장 내 자재 흐름을 추적하는**
+>
+> 비즈니스 인텔리전스(business intelligence)는 데이터를 조직·분석해 의사결정을 지원하는 데이터와 도구로, MIS·DSS·ESS가 여기에 속한다. 공장 내 자재 흐름을 추적하는 것은 일상 거래를 기록하는 일이므로 TPS의 역할이다. A와 D는 MIS(요약 보고, 매출과 목표 비교), C는 DSS(고유하고 빠르게 변하는 문제)를 설명한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -589,10 +653,14 @@ published: true
 > [!ANSWER]
 > **C. ESS**
 >
+> A common feature of a modern ESS is a digital (BI) dashboard that shows key performance indicators and financial performance, such as working capital, cash flow and inventory, on one screen in real time. A (MIS) produces periodic reports. B (TPS) records transactions. D (CRM) manages customer-related processes rather than giving executives an overview of the whole business.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 44* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. ESS**
+>
+> 현대 ESS의 공통 기능은 핵심 성과 지표와 운전자본·현금흐름·재고 같은 재무 성과를 한 화면에 실시간으로 보여 주는 디지털(BI) 대시보드다. A(MIS)는 정기 보고서를 만들고, B(TPS)는 거래를 기록한다. D(CRM)는 경영진에게 회사 전체를 조망하게 하기보다 고객 관련 프로세스를 관리한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -623,10 +691,14 @@ published: true
 > [!ANSWER]
 > **B. Helping businesses become more flexible and productive by enabling business functions and departments to share information and coordinate their business processes more closely**
 >
+> Enterprise applications span functional areas and management levels, so their key benefit is letting departments share information and coordinate their business processes more closely, which makes the firm more flexible and productive. A (creating business intelligence) and C (answering non-routine questions) describe BI systems such as DSS and ESS. D describes e-business in general rather than the specific benefit of enterprise-wide integration.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Difficult · p. 29* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 비즈니스 기능과 부서가 정보를 공유하고 비즈니스 프로세스를 더 긴밀하게 조정하게 해 기업을 더 유연하고 생산적으로 만든다**
+>
+> 전사적 애플리케이션(enterprise application)은 여러 기능 영역과 관리 계층을 가로지르므로, 핵심 이점은 부서들이 정보를 공유하고 비즈니스 프로세스를 더 긴밀하게 조정해 기업을 더 유연하고 생산적으로 만드는 것이다. A(비즈니스 인텔리전스 생성)와 C(비정형 질문에 대한 답)는 DSS·ESS 같은 BI 시스템의 설명이다. D는 전사 통합 고유의 이점이라기보다 전자 비즈니스 일반에 관한 설명이다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 상(Difficult) · p. 29* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -657,10 +729,14 @@ published: true
 > [!ANSWER]
 > **D. Enterprise applications**
 >
+> Enterprise applications are defined as systems that span functional areas and all management levels to execute business processes across the whole firm; the four are enterprise systems, SCM, CRM and KMS. A (DSS) and B (MIS) serve middle management. C (CRM) is one of the four enterprise applications but covers only customer-related processes, not every business process in the firm.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Easy · p. 45* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 전사적 애플리케이션(enterprise applications)**
+>
+> 전사적 애플리케이션(enterprise applications)은 여러 기능 영역과 모든 관리 계층을 가로질러 기업 전체의 비즈니스 프로세스를 실행하는 시스템으로 정의되며, 전사적 시스템·SCM·CRM·KMS의 네 가지가 있다. A(DSS)와 B(MIS)는 중간관리층을 지원한다. C(CRM)는 네 가지 중 하나지만 고객 관련 프로세스만 다루며 기업의 모든 프로세스를 아우르지는 않는다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 하(Easy) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -691,10 +767,14 @@ published: true
 > [!ANSWER]
 > **B. enterprise**
 >
+> An enterprise system (ERP) collects data from many key business processes in different functions and stores it in a single central data repository, solving the problem of data fragmented across departments. A (transaction processing) records transactions for one area. C (automatic reporting) is not a system category in the textbook. D (management information) summarizes data into reports for middle managers rather than integrating it into one repository.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Moderate · p. 45* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 전사적(enterprise)**
+>
+> 전사적 시스템(enterprise system, ERP)은 여러 기능의 핵심 비즈니스 프로세스 데이터를 모아 하나의 중앙 데이터 저장소에 저장해, 부서마다 데이터가 흩어지는 문제를 해결한다. A(거래 처리)는 한 영역의 거래를 기록한다. C(자동 보고)는 교재의 시스템 분류가 아니다. D(경영정보)는 데이터를 하나의 저장소로 통합하기보다 중간관리자용 보고서로 요약한다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -725,10 +805,14 @@ published: true
 > [!ANSWER]
 > **D. Human resources management systems**
 >
+> The four major enterprise applications are enterprise systems (ERP), supply chain management systems, customer relationship management systems and knowledge management systems. A, B and C are all on that list. A human resources management system supports one functional area and is not one of the four.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Easy · p. 46* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 인적자원관리 시스템(human resources management systems)**
+>
+> 전사적 애플리케이션의 4대 유형은 전사적 시스템(ERP), 공급망 관리 시스템, 고객관계관리 시스템, 지식관리 시스템이다. A·B·C는 모두 이 목록에 있다. 인적자원관리 시스템은 하나의 기능 영역을 지원하는 시스템으로, 네 가지에 들지 않는다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 하(Easy) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -759,10 +843,14 @@ published: true
 > [!ANSWER]
 > **B. Supply chain management system**
 >
+> A supply chain management (SCM) system shares order, production and inventory information with suppliers, manufacturers, distributors and logistics firms so the right amount of product moves from source to point of consumption quickly and cheaply. A (collaborative distribution system) and C (reverse logistics system) are not among the textbook's system types. D (enterprise planning system) integrates processes inside one firm rather than across the partners of a supply chain.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Moderate · p. 46* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 공급망 관리 시스템(supply chain management system)**
+>
+> 공급망 관리(SCM) 시스템은 공급업체·제조업체·유통업체·물류업체와 주문·생산·재고 정보를 공유해, 알맞은 양의 제품을 원천에서 소비 지점까지 빠르고 싸게 옮기게 한다. A(협업 유통 시스템)와 C(역물류 시스템)는 교재의 시스템 유형이 아니다. D(전사 계획 시스템)는 공급망의 여러 파트너가 아니라 한 기업 내부의 프로세스를 통합한다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -793,10 +881,14 @@ published: true
 > [!ANSWER]
 > **C. KMS**
 >
+> A knowledge management system (KMS) captures the firm's knowledge, expertise and experience and makes it available where it is needed to improve business processes and management decisions. A (TPS) records transactions, not know-how. B (an extranet) is a network giving outside partners limited access, not a knowledge system. D (CRM) manages customer relationships.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Moderate · p. 46* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. KMS**
+>
+> 지식관리시스템(KMS)은 기업의 지식·전문성·경험을 수집해 필요한 곳에서 쓸 수 있게 함으로써 비즈니스 프로세스와 경영 의사결정을 개선한다. A(TPS)는 노하우가 아니라 거래를 기록한다. B(엑스트라넷)는 외부 파트너에게 제한적 접근을 여는 네트워크일 뿐 지식 시스템이 아니다. D(CRM)는 고객 관계를 관리한다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -827,10 +919,14 @@ published: true
 > [!ANSWER]
 > **C. Extranet**
 >
+> The vendors are outsiders, so the firm needs to give authorized external parties limited access to its internal information, which is exactly what an extranet does, and cheaply, since it uses internet standards. D (an intranet) is limited to employees. A (CRM) manages customer relationships, and B (an enterprise system) integrates internal processes; both are far more costly than this simple need requires.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Difficult · p. 47* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. 엑스트라넷(extranet)**
+>
+> 판매자들은 회사 외부 사람이므로, 허가된 외부인에게 내부 정보에 대한 제한적 접근을 열어 주어야 한다. 엑스트라넷이 바로 이 역할을 하며, 인터넷 표준을 쓰므로 비용도 적게 든다. D(인트라넷)는 직원 전용이다. A(CRM)는 고객 관계를 관리하고 B(전사적 시스템)는 내부 프로세스를 통합하는데, 둘 다 이 단순한 요구에 비해 비용이 훨씬 크다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 상(Difficult) · p. 47* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -861,10 +957,14 @@ published: true
 > [!ANSWER]
 > **B. The firm's employees**
 >
+> An intranet is an internal company network based on internet standards that is open only to employees. A (the general public) uses the firm's public website. C (customers) and D (suppliers) are outsiders; when the firm lets authorized partners in, the network becomes an extranet.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Moderate · p. 47* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 그 회사의 직원**
+>
+> 인트라넷(intranet)은 인터넷 표준을 기반으로 한 회사 내부 네트워크로, 직원만 접근할 수 있다. A(일반 대중)는 회사의 공개 웹사이트를 쓴다. C(고객)와 D(공급업체)는 외부인이며, 허가된 파트너에게 접근을 열면 그 네트워크는 엑스트라넷이 된다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 47* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -895,10 +995,14 @@ published: true
 > [!ANSWER]
 > **D. Support for hierarchical organizational structures**
 >
+> The textbook's reasons for the growing importance of collaboration include the changing nature of work, the growth of professional interaction jobs, changes in firm organization and scope, the emphasis on innovation, and a changing work culture; globalization, which spreads a firm's work and teams across many locations (the changing scope of the firm), belongs here too. A, B and C fit that list. Collaboration pushes firms toward flatter, team-based structures, so supporting hierarchical structures is not a reason; command and control is the old style collaboration replaces.
+>
 > *LO 2.4: Understand the importance of collaboration and social business systems. · Difficulty: Moderate · p. 47* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 위계적 조직 구조의 지원**
+>
+> 교재가 드는 협업 중요성 증가의 이유는 일의 성격 변화, 전문적인 상호작용 업무(interaction jobs)의 증가, 기업 조직과 범위의 변화, 혁신 강조, 업무 문화의 변화이며, 기업의 일과 팀을 여러 지역으로 넓히는 세계화(globalization, 기업 범위의 변화)도 여기에 속한다. A·B·C는 이 목록에 맞는다. 협업은 기업을 더 수평적이고 팀 중심인 구조로 이끌기 때문에 위계적 구조의 지원은 이유가 아니다. 위에서 지시하는 command and control은 협업이 대체하는 과거 방식이다.
 >
 > *학습목표 2-4: 협업과 소셜 비즈니스 시스템의 중요성을 이해한다. · 난이도: 중(Moderate) · p. 47* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -929,10 +1033,14 @@ published: true
 > [!ANSWER]
 > **B. allow a person to give the appearance of being at a location other than his or her true physical location**
 >
+> Telepresence is a high-quality virtual meeting technology that lets a person appear to be present at a location other than his or her true physical location. A describes employee monitoring, C describes a dashboard for visualizing performance, and D describes content storage; none of these is the purpose of telepresence.
+>
 > *LO 2.5: Describe collaboration tools. · Difficulty: Moderate · p. 51* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 실제 물리적 위치가 아닌 다른 장소에 있는 것처럼 보이게 하는 것**
+>
+> 텔레프레즌스(telepresence)는 고품질 가상 회의 기술로, 사람이 실제 물리적 위치가 아닌 다른 장소에 있는 것처럼 보이게 한다. A는 직원 감시, C는 성과를 시각화하는 대시보드, D는 콘텐츠 저장에 관한 설명으로, 어느 것도 텔레프레즌스의 목적이 아니다.
 >
 > *학습목표 2-5: 협업 도구를 설명한다. · 난이도: 중(Moderate) · p. 51* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -963,10 +1071,14 @@ published: true
 > [!ANSWER]
 > **A. Salesforce Chatter**
 >
+> Salesforce Chatter is an enterprise social networking tool built around profiles, feeds and group workspaces, not a videoconferencing service. B (Zoom), C (Apple FaceTime) and D (Amazon Chime) all let people hold live video calls or meetings, so they are videoconferencing tools.
+>
 > *LO 2.5: Describe collaboration tools. · Difficulty: Easy · p. 51* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. Salesforce Chatter**
+>
+> Salesforce Chatter는 프로필·피드·그룹 작업공간을 중심으로 한 기업용 소셜 네트워킹 도구이지 화상회의 서비스가 아니다. B(Zoom), C(Apple FaceTime), D(Amazon Chime)는 모두 실시간 영상 통화나 회의를 할 수 있는 화상회의 도구다.
 >
 > *학습목표 2-5: 협업 도구를 설명한다. · 난이도: 하(Easy) · p. 51* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -997,10 +1109,14 @@ published: true
 > [!ANSWER]
 > **C. supply chain management**
 >
+> Enterprise social networking software offers member profiles, sharing and managing content, feeds, group or team workspaces, tagging and social bookmarking, and permissions. A, B and D are all on that list. Supply chain management is a separate enterprise application that coordinates suppliers and logistics, not a social networking capability.
+>
 > *LO 2.6: Describe social business tools. · Difficulty: Moderate · p. 55* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. 공급망 관리(supply chain management)**
+>
+> 기업용 소셜 네트워킹(enterprise social networking) 소프트웨어는 회원 프로필, 콘텐츠 공유·관리, 피드, 그룹·팀 작업공간, 태깅과 소셜 북마킹, 권한 관리 기능을 제공한다. A·B·D는 모두 이 목록에 있다. 공급망 관리는 공급업체와 물류를 조정하는 별도의 전사적 애플리케이션이지 소셜 네트워킹 기능이 아니다.
 >
 > *학습목표 2-6: 소셜 비즈니스 도구를 설명한다. · 난이도: 중(Moderate) · p. 55* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1031,10 +1147,14 @@ published: true
 > [!ANSWER]
 > **A. virtual world**
 >
+> Second Life is an online 3D virtual environment where people interact through avatars, which the textbook lists as an example of a virtual world used for collaboration. B (a wiki) is a website users edit together. C (a social network) connects people through profiles and feeds. D (a mind mapping tool) is for drawing idea diagrams.
+>
 > *LO 2.6: Describe social business tools. · Difficulty: Easy · p. 55* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 가상 세계(virtual world)**
+>
+> Second Life는 아바타로 서로 교류하는 온라인 3D 가상 환경으로, 교재는 협업에 쓰이는 가상 세계(virtual world)의 예로 든다. B(위키)는 사용자들이 함께 편집하는 웹사이트이고, C(소셜 네트워크)는 프로필과 피드로 사람을 연결하며, D(마인드맵 도구)는 아이디어 도식을 그리는 도구다.
 >
 > *학습목표 2-6: 소셜 비즈니스 도구를 설명한다. · 난이도: 하(Easy) · p. 55* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1065,10 +1185,14 @@ published: true
 > [!ANSWER]
 > **D. Time/space matrix**
 >
+> The time/space matrix classifies collaboration tools by whether people work at the same or different times (synchronous/asynchronous) and in the same or different places (co-located/remote), which helps a firm see which tools fit its needs. A, B and C are made-up frameworks that do not appear in the textbook.
+>
 > *LO 2.7: Understand how to evaluate collaboration and social business tools. · Difficulty: Moderate · p. 55* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 시간/공간 매트릭스(time/space matrix)**
+>
+> 시간/공간 매트릭스(time/space matrix)는 협업 도구를 같은 시간인지 다른 시간인지(synchronous/asynchronous), 같은 장소인지 다른 장소인지(co-located/remote)로 나누어, 어떤 도구가 기업의 필요에 맞는지 판단하게 돕는다. A·B·C는 교재에 나오지 않는 지어낸 틀이다.
 >
 > *학습목표 2-7: 협업·소셜 비즈니스 도구를 평가하는 방법을 이해한다. · 난이도: 중(Moderate) · p. 55* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1099,10 +1223,14 @@ published: true
 > [!ANSWER]
 > **D. website**
 >
+> A wiki is a collaborative website on which users can easily add, edit and delete content together. A (a social network) centers on profiles and connections between people. B (a blog) is mainly written by one author, with readers commenting. C (a virtual world) is a 3D online environment such as Second Life.
+>
 > *LO 2.8: Describe knowledge management systems. · Difficulty: Easy · p. 58* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 웹사이트**
+>
+> 위키(wiki)는 사용자들이 함께 콘텐츠를 쉽게 추가·수정·삭제할 수 있는 협업형 웹사이트다. A(소셜 네트워크)는 프로필과 사람 사이의 연결이 중심이다. B(블로그)는 주로 한 명의 작성자가 쓰고 독자가 댓글을 다는 형태다. C(가상 세계)는 Second Life 같은 3D 온라인 환경이다.
 >
 > *학습목표 2-8: 지식관리시스템을 설명한다. · 난이도: 하(Easy) · p. 58* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1133,10 +1261,14 @@ published: true
 > [!ANSWER]
 > **C. systems analyst**
 >
+> Systems analysts are the principal liaisons between the information systems group and the rest of the organization, translating business problems and requirements into information requirements and systems. A (programmers) write software instructions. B (information systems managers) lead teams of programmers, analysts and other specialists. D (the CTO) is a senior executive, not the day-to-day link to business users.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Easy · p. 61* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. 시스템 분석가(systems analyst)**
+>
+> 시스템 분석가(systems analyst)는 정보시스템 그룹과 조직의 나머지 부분을 잇는 주된 연결 고리로, 현업의 문제와 요구를 정보 요구사항과 시스템으로 번역한다. A(프로그래머)는 소프트웨어 명령을 작성한다. B(정보시스템 관리자)는 프로그래머·분석가 등 전문가 팀을 이끈다. D(CTO)는 고위 임원으로, 현업 사용자와 매일 맞닿는 연결 고리가 아니다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1167,10 +1299,14 @@ published: true
 > [!ANSWER]
 > **C. CIO**
 >
+> The chief information officer (CIO) is the senior manager who oversees the use of information technology in the firm, combining a strong business background with IS expertise. A (the CEO) runs the whole company, and B (the CFO) oversees finances. D (the CTO) is a technology executive, but the textbook defines the overall oversight of IT use as the CIO's role.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Easy · p. 61* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. CIO**
+>
+> 최고정보책임자(CIO, chief information officer)는 기업의 IT 사용을 총괄하는 고위 관리자로, 강한 비즈니스 배경과 정보시스템 전문성을 함께 갖춘다. A(CEO)는 회사 전체를 경영하고, B(CFO)는 재무를 총괄한다. D(CTO)도 기술 임원이지만, 교재는 IT 사용 전반을 총괄하는 역할을 CIO로 정의한다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1201,10 +1337,14 @@ published: true
 > [!ANSWER]
 > **D. manages computer operations and data entry staff**
 >
+> Information systems managers are leaders of teams of programmers and analysts, project managers, physical facility managers, telecommunications managers and database specialists, and they also manage computer operations and data entry staff. A describes programmers. B and C both describe systems analysts, who act as the liaison and translate business problems into information requirements.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Difficult · p. 61* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 컴퓨터 운영 인력과 데이터 입력 인력을 관리한다**
+>
+> 정보시스템 관리자(information systems manager)는 프로그래머·분석가, 프로젝트 관리자, 시설 관리자, 통신 관리자, 데이터베이스 전문가로 이루어진 팀을 이끌며, 컴퓨터 운영 인력과 데이터 입력 인력도 관리한다. A는 프로그래머의 설명이다. B와 C는 모두 연결 고리 역할을 하고 현업 문제를 정보 요구사항으로 번역하는 시스템 분석가의 설명이다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1235,10 +1375,14 @@ published: true
 > [!ANSWER]
 > **C. CKO**
 >
+> The chief knowledge officer (CKO) is responsible for the firm's knowledge management program, helping design programs and systems to find new sources of knowledge or make better use of existing knowledge. A (the CTO) focuses on technology. B (the CSO) handles information security. D (the CPO) ensures compliance with data privacy laws.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Easy · p. 61* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. CKO**
+>
+> 최고지식책임자(CKO, chief knowledge officer)는 기업의 지식관리 프로그램을 책임지며, 새로운 지식 원천을 찾거나 기존 지식을 더 잘 활용하도록 프로그램과 시스템을 설계하는 일을 돕는다. A(CTO)는 기술에, B(CSO)는 정보 보안에 초점을 둔다. D(CPO)는 데이터 개인정보 보호법 준수를 보장한다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1269,10 +1413,14 @@ published: true
 > [!ANSWER]
 > **A. Ensuring that the company complies with existing data privacy laws**
 >
+> The chief privacy officer (CPO) is responsible for ensuring that the company complies with existing data privacy laws. B describes the CKO (knowledge), C describes the CSO (information security policy), and D describes the CIO (overall use of IT). The usual trap is mixing up privacy (CPO) with security (CSO).
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Easy · p. 61* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 회사가 현행 데이터 개인정보 보호법을 준수하도록 보장하는 것**
+>
+> 최고개인정보책임자(CPO, chief privacy officer)는 회사가 현행 데이터 개인정보 보호법을 준수하도록 보장한다. B는 CKO(지식), C는 CSO(정보 보안 정책), D는 CIO(IT 사용 총괄)의 설명이다. 흔한 함정은 개인정보(CPO)와 보안(CSO)을 섞는 것이다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1303,10 +1451,14 @@ published: true
 > [!ANSWER]
 > **C. CDO**
 >
+> The chief data officer (CDO) is responsible for enterprise-wide governance and use of information to maximize the value the organization can realize from its data. A (the CKO) manages knowledge rather than data. B (the CIO) oversees the use of IT as a whole. D (the CSO) handles information security.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Difficult · p. 62* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **C. CDO**
+>
+> 최고데이터책임자(CDO, chief data officer)는 조직이 데이터에서 얻을 수 있는 가치를 극대화하도록 전사적 차원에서 정보의 거버넌스와 활용을 책임진다. A(CKO)는 데이터가 아니라 지식을 관리한다. B(CIO)는 IT 사용 전반을, D(CSO)는 정보 보안을 맡는다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1337,10 +1489,14 @@ published: true
 > [!ANSWER]
 > **D. Even with no prior experience, they will earn around $70,000.**
 >
+> This item comes from the chapter's career case. A, B and C match the job description: Microsoft 365 skills, experience with Salesforce CRM software, and responsibility for making sure customers have a positive experience. D is the statement the key marks as untrue: the case does not promise that pay to someone with no prior experience. Check the exact salary wording against the case on p. 63, since the course notes do not cover it.
+>
 > *LO 2.10: Understand how the information in this chapter can help your career. · Difficulty: Moderate · p. 63* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **D. 경력이 전혀 없어도 약 $70,000를 번다.**
+>
+> 이 문항은 장 끝 진로 사례에서 나왔다. A·B·C는 직무 설명과 맞는다. Microsoft 365 활용 능력, Salesforce CRM 소프트웨어 경험, 고객이 긍정적인 경험을 하도록 하는 책임이 요구된다. D는 정답이 틀린 설명으로 표시한 보기로, 사례는 경력이 없는 사람에게 그 급여를 약속하지 않는다. 강의 노트에는 이 사례가 없으므로 정확한 급여 표현은 교재 p. 63의 사례로 확인한다.
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 중(Moderate) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1368,10 +1524,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Checking for quality is a manufacturing and production process, listed in the textbook alongside assembling the product. The marketing function identifies customers, makes them aware of the product and sells it.
+>
 > *LO 2.1: Understand how business processes relate to information systems. · Difficulty: Moderate · p. 39* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 품질 검사는 제품 조립과 함께 교재에 나오는 제조·생산 기능의 프로세스다. 마케팅 기능은 고객을 식별하고, 제품을 알리고, 판매하는 일을 맡는다.
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1394,10 +1554,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Many business processes are cross-functional: they span several functional areas and need coordination among departments. Order fulfillment, for example, involves sales, accounting and manufacturing.
+>
 > *LO 2.1: Understand how business processes relate to information systems. · Difficulty: Moderate · p. 38* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 많은 비즈니스 프로세스는 여러 기능 영역에 걸쳐 부서 간 조정이 필요한 범기능(cross-functional) 프로세스다. 예를 들어 주문 이행에는 영업·회계·생산이 모두 관여한다.
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 38* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1420,10 +1584,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> The trend runs the other way: firms are moving toward cross-functional systems, such as enterprise applications, that coordinate business processes across functional areas, instead of isolated systems serving a single function.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 40* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 흐름은 반대다. 기업들은 한 기능만 지원하는 고립된 시스템 대신, 전사적 애플리케이션처럼 여러 기능 영역의 비즈니스 프로세스를 조정하는 범기능 시스템으로 옮겨 가고 있다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1446,10 +1614,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> A DSS supports non-routine decisions with data and analytical models; model-driven DSS run what-if analyses and simulations, and data-driven DSS extract useful information from large amounts of data. Business analysts use these sophisticated analytics and models to analyze data.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 43* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> DSS는 데이터와 분석 모델로 비정형 의사결정을 지원한다. 모델 중심 DSS는 what-if 분석과 시뮬레이션을 수행하고, 데이터 중심 DSS는 대량의 데이터에서 유용한 정보를 뽑아낸다. 비즈니스 분석가는 이런 정교한 분석 기법과 모델로 데이터를 분석한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1472,10 +1644,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Deciding whether to introduce a new product line is a non-routine decision that calls for a DSS (or, at the strategic level, an ESS). A TPS only records daily routine transactions such as orders and payroll.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 40* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 신제품 라인 도입 여부는 비정형 결정이므로 DSS(전략 수준이면 ESS)가 필요하다. TPS는 주문이나 급여 같은 일상 거래를 기록할 뿐이다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1498,10 +1674,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> A TPS answers routine, predefined questions, such as whether an order has been paid. Non-routine decisions rely on DSS for middle managers and ESS for senior managers.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 40* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> TPS는 “이 주문은 결제됐나?”처럼 미리 정해진 정형 질문에 답한다. 비정형 결정은 중간관리자의 경우 DSS, 최고경영진의 경우 ESS에 의존한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1524,10 +1704,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> A TPS records and processes routine transactions with simple, predefined procedures. Sophisticated mathematical models and statistical techniques are characteristic of a DSS.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 40* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> TPS는 단순하고 미리 정해진 절차로 일상 거래를 기록·처리한다. 정교한 수학적 모델과 통계 기법은 DSS의 특징이다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1550,10 +1734,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> A DSS uses internal information from TPS and MIS and often brings in external information as well, such as current stock prices or competitors' product prices.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 43* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> DSS는 TPS와 MIS의 내부 정보를 쓰며, 현재 주가나 경쟁사 제품 가격 같은 외부 정보도 함께 가져와 쓰는 경우가 많다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1576,10 +1764,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> An ESS draws summarized internal information from the firm's MIS and DSS and combines it with external data, such as new tax laws or competitors, to support senior managers' strategic decisions.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 44* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> ESS는 기업의 MIS와 DSS에서 요약된 내부 정보를 받아 새 세법이나 경쟁사 같은 외부 데이터와 결합해 최고경영진의 전략적 결정을 지원한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1602,10 +1794,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> Operational managers use a TPS to keep track of the elementary activities and transactions of the organization. An ESS serves senior managers making strategic, non-routine decisions.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Moderate · p. 44* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 운영 관리자가 조직의 기본 활동과 거래를 추적할 때 쓰는 시스템은 TPS다. ESS는 전략적·비정형 결정을 내리는 최고경영진을 지원한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1628,10 +1824,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> A portal is a web interface that presents integrated, personalized business content from many sources on one screen. Executives often use one to see data from different systems together.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Easy · p. 44* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 포털(portal)은 여러 출처의 비즈니스 콘텐츠를 통합·개인화해 한 화면에 보여 주는 웹 인터페이스다. 경영진은 서로 다른 시스템의 데이터를 함께 보려고 포털을 자주 쓴다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1654,10 +1854,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> An SCM system is an interorganizational system, not an intraorganizational one: it automates the flow of information across organizational boundaries, linking the firm with its suppliers, distributors and logistics partners.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Difficult · p. 46* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> SCM 시스템은 조직 내부(intraorganizational) 시스템이 아니라 조직 간(interorganizational) 시스템이다. 조직의 경계를 넘어 정보 흐름을 자동화해 기업을 공급업체·유통업체·물류 파트너와 연결한다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1680,10 +1884,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> This is the textbook definition of a TPS: a computerized system that performs and records the daily routine transactions needed to conduct business, such as sales order entry, payroll and shipping.
+>
 > *LO 2.2: Explain how information systems serve different management groups. · Difficulty: Easy · p. 40* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 교재의 TPS 정의 그대로다. TPS는 판매 주문 입력, 급여, 배송처럼 사업 수행에 필요한 일상 거래를 처리하고 기록하는 전산 시스템이다.
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1706,10 +1914,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Enterprise applications span functional areas and management levels, integrating information from multiple functions and business processes so the firm can coordinate its work and perform better as a whole.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Moderate · p. 45* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 전사적 애플리케이션은 여러 기능 영역과 관리 계층을 가로질러 여러 기능과 비즈니스 프로세스의 정보를 통합하므로, 기업이 일을 조정하고 전체 성과를 높일 수 있게 한다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1732,10 +1944,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> CRM systems integrate all of the customer-related processes in sales, marketing and customer service, helping the firm identify, attract and retain its most profitable customers.
+>
 > *LO 2.3: Explain how enterprise applications improve firm performance. · Difficulty: Moderate · p. 46* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 고객관계관리(CRM) 시스템은 영업·마케팅·고객 서비스의 모든 고객 관련 프로세스를 통합해, 기업이 수익성 높은 고객을 찾아 끌어들이고 유지하도록 돕는다.
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1758,10 +1974,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Social business uses social networking platforms to engage employees, customers and suppliers. Crowdsourcing, which gathers ideas or work from a large group of people through such platforms, is listed in the textbook as one of its applications.
+>
 > *LO 2.4: Understand the importance of collaboration and social business systems. · Difficulty: Moderate · p. 49* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 소셜 비즈니스는 소셜 네트워킹 플랫폼으로 직원·고객·공급업체와 교류한다. 이런 플랫폼으로 많은 사람에게서 아이디어나 작업을 모으는 크라우드소싱(crowdsourcing)은 교재가 드는 소셜 비즈니스 응용 사례 중 하나다.
 >
 > *학습목표 2-4: 협업과 소셜 비즈니스 시스템의 중요성을 이해한다. · 난이도: 중(Moderate) · p. 49* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1784,10 +2004,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Social business aims to deepen interactions through "conversations" with customers, suppliers and employees, which strengthen relationships and speed up information sharing. This requires information transparency.
+>
 > *LO 2.4: Understand the importance of collaboration and social business systems. · Difficulty: Moderate · p. 48* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 소셜 비즈니스는 고객·공급업체·직원과의 “대화(conversations)”로 상호작용을 깊게 하며, 대화는 관계를 강화하고 정보 공유를 빠르게 한다. 이를 위해서는 정보 투명성(information transparency)이 필요하다.
 >
 > *학습목표 2-4: 협업과 소셜 비즈니스 시스템의 중요성을 이해한다. · 난이도: 중(Moderate) · p. 48* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1810,10 +2034,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Google Drive lets users store, share and work on files together over the internet, and the course notes list Google Drive and Google Docs as examples of cloud collaboration services.
+>
 > *LO 2.5: Describe collaboration tools. · Difficulty: Moderate · p. 51* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> Google Drive는 인터넷으로 파일을 저장·공유하고 함께 작업하게 해 주며, 강의 노트도 Google Drive와 Google Docs를 클라우드 협업 서비스의 예로 든다.
 >
 > *학습목표 2-5: 협업 도구를 설명한다. · 난이도: 중(Moderate) · p. 51* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1836,10 +2064,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> End users, the representatives of departments outside the IS group for whom applications are built, are taking part more and more in system design and development and are now seen as pivotal to successful systems.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Difficult · p. 62* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 최종 사용자(end user)는 애플리케이션을 쓰는 IS 그룹 밖 부서의 대표로, 시스템 설계와 개발에 점점 더 많이 참여하며 이제 성공적인 시스템 개발의 핵심으로 인정받는다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1862,10 +2094,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> The IS department is no longer just a technical service unit; it acts as a powerful change agent that can suggest new business strategies and new information-based products and services, which is why IT governance has become a major management concern.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Moderate · p. 62* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 정보시스템 부서는 더 이상 기술 지원 조직에 그치지 않는다. 새로운 비즈니스 전략과 정보 기반의 새 제품·서비스를 제안하는 강력한 변화 주도자(change agent) 역할을 하며, 그래서 IT 거버넌스가 중요한 경영 관심사가 되었다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 중(Moderate) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1888,10 +2124,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> IT governance is the strategy and policies for using IT in the organization. It defines decision rights (who makes IT decisions) and accountability (who answers for the results), so that IT supports the firm's strategy and objectives.
+>
 > *LO 2.9: Describe the role of the information systems function. · Difficulty: Difficult · p. 62* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> IT 거버넌스(IT governance)는 조직에서 IT를 쓰는 전략과 정책이다. 누가 IT 결정을 내리는지(decision rights)와 누가 결과에 책임지는지(accountability)를 정해 IT가 기업의 전략과 목표를 지원하게 한다.
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1914,10 +2154,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Knowing the types of systems (TPS, MIS, DSS, ESS, enterprise applications, collaboration tools) and their role in the business helps you work with them in jobs such as business or data analyst, which is the point of the chapter's career section.
+>
 > *LO 2.10: Understand how the information in this chapter can help your career. · Difficulty: Easy · p. 62* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> TPS·MIS·DSS·ESS, 전사적 애플리케이션, 협업 도구 같은 시스템 유형과 그 역할을 알면 비즈니스 분석가나 데이터 분석가 같은 직무에서 이 시스템들을 잘 다룰 수 있다. 장 끝 진로 절이 강조하는 점이다.
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1940,10 +2184,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> In the career case, Princess Cruises does not rely on one perfected promotion; it tries several promotional options, such as on-board credit and free gratuities, and analyzes which campaigns appeal most to customers.
+>
 > *LO 2.10: Understand how the information in this chapter can help your career. · Difficulty: Easy · p. 63* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 진로 사례에서 Princess Cruises는 잘 다듬어진 하나의 프로모션에 의존하지 않는다. 선내 크레딧(on-board credit)이나 무료 팁 같은 여러 프로모션 방안을 시도하고, 어떤 캠페인이 고객에게 가장 매력적인지 분석한다.
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1966,10 +2214,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> In the chapter's career case, Hanover Research is the employer: a marketing and data analytics firm whose expertise includes analyzing customer experience.
+>
 > *LO 2.10: Understand how the information in this chapter can help your career. · Difficulty: Easy · p. 63* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 장 끝 진로 사례에서 Hanover Research는 채용하는 회사로, 고객 경험 분석을 전문 분야로 하는 마케팅·데이터 분석 기업이다.
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1992,10 +2244,14 @@ published: true
 > [!ANSWER]
 > **B. False**
 >
+> The key marks this False: the salary information in the chapter's career case does not support the claim that senior customer success managers make almost $100,000. The course notes do not cover this case, so check the exact figure in the case on p. 63.
+>
 > *LO 2.10: Understand how the information in this chapter can help your career. · Difficulty: Easy · p. 63* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **B. 거짓 (False)**
+>
+> 정답은 거짓이다. 장 끝 진로 사례의 급여 정보는 시니어 고객 성공 매니저가 거의 $100,000를 번다는 주장을 뒷받침하지 않는다. 강의 노트에는 이 사례가 없으므로 정확한 수치는 교재 p. 63의 사례로 확인한다.
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -2018,10 +2274,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> Customer success work is collaborative: customer success managers work with various teams inside the company to address customers' needs and make sure customers have a positive experience.
+>
 > *LO 2.10: Understand how the information in this chapter can help your career. · Difficulty: Easy · p. 63* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 고객 성공 업무는 협업이 중심이다. 고객 성공 매니저는 회사 안의 여러 팀과 함께 고객의 요구를 해결하고, 고객이 긍정적인 경험을 하도록 한다.
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -2044,10 +2304,14 @@ published: true
 > [!ANSWER]
 > **A. True**
 >
+> In the career case, Princess Cruises compared promotional options, including on-board credit, free gratuities, and which campaigns were most appealing to customers, to find what attracts customers best.
+>
 > *LO 2.10: Understand how the information in this chapter can help your career. · Difficulty: Easy · p. 63* · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **A. 참 (True)**
+>
+> 진로 사례에서 Princess Cruises는 고객을 가장 잘 끌어들이는 방법을 찾기 위해 선내 크레딧, 무료 팁, 그리고 어떤 캠페인이 고객에게 가장 매력적인지를 비교했다.
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
