@@ -2,7 +2,7 @@
 title: "정시개 Ch.3 · 17e GE · Test Bank 원문"
 description: "Chapter 3 (17e GE) test bank text extracted from the downloaded PDF: 60 multiple-choice, 25 true/false, 15 essay questions. "
 week: 0
-order: 15
+order: 11
 published: true
 ---
 
@@ -711,7 +711,7 @@ published: true
 >
 > *학습목표 3-1: 정보시스템을 성공적으로 구축하고 활용하려면 관리자는 조직의 어떤 특성을 알아야 하는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 020
+### 016
 
 > [!QUIZ]
 > When a firm buys on the marketplace what it cannot make itself, the costs incurred are referred to as ________ costs.
@@ -757,7 +757,7 @@ published: true
 >
 > *학습목표 3-2: 정보시스템은 조직에 어떤 영향을 미치는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 021
+### 017
 
 > [!QUIZ]
 > Which of the following statements information technology's impact on business firms is not true?
@@ -803,7 +803,7 @@ published: true
 >
 > *학습목표 3-2: 정보시스템은 조직에 어떤 영향을 미치는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 022
+### 018
 
 > [!QUIZ]
 > According to agency theory, the firm is viewed as a(n):
@@ -849,7 +849,7 @@ published: true
 >
 > *학습목표 3-2: 정보시스템은 조직에 어떤 영향을 미치는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 023
+### 019
 
 > [!QUIZ]
 > According to research on organizational resistance, the four components that must be changed in an organization in order to successfully implement a new information system are:
@@ -895,7 +895,7 @@ published: true
 >
 > *학습목표 3-2: 정보시스템은 조직에 어떤 영향을 미치는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 026
+### 020
 
 > [!QUIZ]
 > Which of the following models uses a general view of the firm, its competitors, and the firm's environment to understand competitive advantage?
@@ -941,7 +941,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 027
+### 021
 
 > [!QUIZ]
 > Which of the following industries has the lowest barrier to entry?
@@ -987,7 +987,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 028
+### 022
 
 > [!QUIZ]
 > All of the following are competitive forces in Porter's model except:
@@ -1033,7 +1033,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 029
+### 023
 
 > [!QUIZ]
 > Which of the following statements about Porter's competitive forces model is not true?
@@ -1079,7 +1079,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 030
+### 024
 
 > [!QUIZ]
 > All of the following could be considered substitute products for industrial electricity generation except:
@@ -1125,7 +1125,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 031
+### 025
 
 > [!QUIZ]
 > Walmart's continuous replenishment system is an example of a firm using information systems to:
@@ -1171,7 +1171,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 032
+### 026
 
 > [!QUIZ]
 > A firm can exercise greater control over its suppliers in terms of price, quality, and delivery schedules by having:
@@ -1217,7 +1217,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 033
+### 027
 
 > [!QUIZ]
 > Amazon's use of the Internet as a platform to enhance customer convenience illustrates which of the following strategies?
@@ -1263,7 +1263,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 034
+### 028
 
 > [!QUIZ]
 > The four major competitive strategies are:
@@ -1309,7 +1309,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 035
+### 029
 
 > [!QUIZ]
 > Walmart's continuous replenishment system allows it to do all of the following except:
@@ -1355,7 +1355,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 036
+### 030
 
 > [!QUIZ]
 > Firms use a ________ strategy to provide a specialized product or service for a narrow target market better than competitors.
@@ -1401,7 +1401,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 037
+### 031
 
 > [!QUIZ]
 > The ability to offer individually tailored products or services using the same production resources as bulk production is known as:
@@ -1447,7 +1447,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 038
+### 032
 
 > [!QUIZ]
 > Which of the following is not a true statement about value webs?
@@ -1493,7 +1493,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 039
+### 033
 
 > [!QUIZ]
 > An information system can enable a company to focus on a market niche through:
@@ -1539,7 +1539,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 040
+### 034
 
 > [!QUIZ]
 > All of the following are IT-enabled products and services providing competitive advantage except:
@@ -1585,7 +1585,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 041
+### 035
 
 > [!QUIZ]
 > The Internet increases the bargaining power of customers by:
@@ -1631,7 +1631,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 042
+### 036
 
 > [!QUIZ]
 > Hilton Hotels uses its OnQ system for which of the following purposes?
@@ -1677,7 +1677,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 043
+### 037
 
 > [!QUIZ]
 > Which of the following is a competitive force that has challenged the music industry?
@@ -1723,7 +1723,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 044
+### 038
 
 > [!QUIZ]
 > The value chain model:
@@ -1769,7 +1769,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 045
+### 039
 
 > [!QUIZ]
 > Which of the following represent the primary activities of a firm?
@@ -1815,7 +1815,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 046
+### 040
 
 > [!QUIZ]
 > Which of the following is a support activity in a firm's value chain?
@@ -1861,7 +1861,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 047
+### 041
 
 > [!QUIZ]
 > Which of the following would a company employ to measure and compare its business processes to similar processes of other companies within their industry?
@@ -1907,7 +1907,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 048
+### 042
 
 > [!QUIZ]
 > The most successful solutions or methods for achieving a business objective are called:
@@ -1953,7 +1953,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 049
+### 043
 
 > [!QUIZ]
 > Information systems can be used at the industry level to achieve strategic advantage by:
@@ -1999,7 +1999,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 050
+### 044
 
 > [!QUIZ]
 > In network economics, the value of a commercial software vendor's software products:
@@ -2045,7 +2045,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 051
+### 045
 
 > [!QUIZ]
 > When two organizations pool markets and expertise that result in lower costs and generate profits, they are creating:
@@ -2091,7 +2091,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 052
+### 046
 
 > [!QUIZ]
 > Which of the following is an example of synergy in business?
@@ -2137,7 +2137,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 053
+### 047
 
 > [!QUIZ]
 > Information systems enhance core competencies by:
@@ -2183,7 +2183,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 054
+### 048
 
 > [!QUIZ]
 > The idea that the more any given resource is applied to production, the lower the marginal gain in output, until a point is reached where the additional inputs produce no additional value, is referred to as:
@@ -2229,7 +2229,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 055
+### 049
 
 > [!QUIZ]
 > Which of the following statements about network economics is not true?
@@ -2275,7 +2275,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 056
+### 050
 
 > [!QUIZ]
 > A virtual company:
@@ -2321,7 +2321,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 057
+### 051
 
 > [!QUIZ]
 > Which of the following is an example of a keystone firm within a business ecosystem?
@@ -2367,7 +2367,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 058
+### 052
 
 > [!QUIZ]
 > ________ is a competitive strategy for creating brand loyalty by developing new and unique products and services that are not easily duplicated by competitors.
@@ -2413,7 +2413,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 059
+### 053
 
 > [!QUIZ]
 > The expenses incurred by a customer or company in lost time and resources when changing from one supplier or system to a competing supplier or system are known as:
@@ -2459,7 +2459,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 060
+### 054
 
 > [!QUIZ]
 > The ________ model identifies specific, critical leverage points where a firm can use information technology most effectively to enhance its competitive position.
@@ -2505,7 +2505,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 061
+### 055
 
 > [!QUIZ]
 > The parts of an organization's infrastructure, human resources, technology, and procurement that make the delivery of the firm's products or services possible are known as ________ activities.
@@ -2551,7 +2551,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 062
+### 056
 
 > [!QUIZ]
 > A(n) ________ is a collection of independent firms that use information technology to coordinate their value chains to collectively produce a product or service for a market.
@@ -2597,7 +2597,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 063
+### 057
 
 > [!QUIZ]
 > A(n) ________ is an activity for which a firm is a world-class leader.
@@ -2643,7 +2643,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 064
+### 058
 
 > [!QUIZ]
 > Why does Amazon need to worry about competitors in online shopping?
@@ -2689,7 +2689,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 095
+### 059
 
 > [!QUIZ]
 > You are consulting for a natural food products distributor who is interested in determining the benefits it could achieve from implementing new information systems. What will you advise as the first step?
@@ -2735,7 +2735,7 @@ published: true
 >
 > *학습목표 3-4: 전략적 정보시스템이 제기하는 과제는 무엇이며, 어떻게 대응해야 하는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 096
+### 060
 
 > [!QUIZ]
 > Which of the following statements about strategic information systems is not true?
@@ -2786,7 +2786,7 @@ published: true
 
 ## II. True or false
 
-### 016
+### 061
 
 > [!QUIZ]
 > *True or False:* All organizations have bedrock, unquestioned assumptions that define their goals and products.
@@ -2820,7 +2820,7 @@ published: true
 >
 > *학습목표 3-1: 정보시스템을 성공적으로 구축하고 활용하려면 관리자는 조직의 어떤 특성을 알아야 하는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 017
+### 062
 
 > [!QUIZ]
 > *True or False:* A machine bureaucracy is a knowledge-based organization where goods and services depend on the expertise and knowledge of professionals.
@@ -2854,7 +2854,7 @@ published: true
 >
 > *학습목표 3-1: 정보시스템을 성공적으로 구축하고 활용하려면 관리자는 조직의 어떤 특성을 알아야 하는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 018
+### 063
 
 > [!QUIZ]
 > *True or False:* Routines are also called standard operating procedures.
@@ -2888,7 +2888,7 @@ published: true
 >
 > *학습목표 3-1: 정보시스템을 성공적으로 구축하고 활용하려면 관리자는 조직의 어떤 특성을 알아야 하는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 065
+### 064
 
 > [!QUIZ]
 > *True or False:* Smart products increase rivalry among firms.
@@ -2922,7 +2922,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 066 · 슬라이드 없음
+### 065 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* A company's competitive advantages ultimately translate into higher stock market valuations than its competitors.
@@ -2956,7 +2956,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 067
+### 066
 
 > [!QUIZ]
 > *True or False:* The Internet of Things is an example of how the Internet is changing competition within industries and creating new products and services.
@@ -2990,7 +2990,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 068
+### 067
 
 > [!QUIZ]
 > *True or False:* The entire customer experience can be an element of product differentiation.
@@ -3024,7 +3024,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 069
+### 068
 
 > [!QUIZ]
 > *True or False:* The market power of suppliers can have a significant impact of firm profits.
@@ -3058,7 +3058,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 070
+### 069
 
 > [!QUIZ]
 > *True or False:* The effect of the Internet has been to decrease the bargaining power of customers.
@@ -3092,7 +3092,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 071
+### 070
 
 > [!QUIZ]
 > *True or False:* An efficient customer response system directly links consumer behavior to distribution, production, and supply chains.
@@ -3126,7 +3126,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 072
+### 071
 
 > [!QUIZ]
 > *True or False:* Information systems are used to enable new products and services via product differentiation.
@@ -3160,7 +3160,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 073
+### 072
 
 > [!QUIZ]
 > *True or False:* Mass customization offers individually tailored products or services using the same resources as mass production.
@@ -3194,7 +3194,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 074
+### 073
 
 > [!QUIZ]
 > *True or False:* Switching costs increase when customers are strongly linked to products and platforms.
@@ -3228,7 +3228,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 075
+### 074
 
 > [!QUIZ]
 > *True or False:* The value chain model classifies all company activities as either primary or support activities.
@@ -3262,7 +3262,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 076
+### 075
 
 > [!QUIZ]
 > *True or False:* In the value chain model, support activities are most directly related to the production and distribution of the firm's products and services, which create value for the customer.
@@ -3296,7 +3296,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 077
+### 076
 
 > [!QUIZ]
 > *True or False:* When the output of some units in a firm can be used as inputs to other units, synergies develop, which can lower costs and generate profits.
@@ -3330,7 +3330,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 078
+### 077
 
 > [!QUIZ]
 > *True or False:* According to the network economics perspective, the more people offering products on eBay's site, the greater the value of the site to all who use it.
@@ -3364,7 +3364,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 079
+### 078
 
 > [!QUIZ]
 > *True or False:* The term industry sets refers to collections of industries that provide related services and products that deliver value to the customer.
@@ -3398,7 +3398,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 080
+### 079
 
 > [!QUIZ]
 > *True or False:* A firm can be said to have competitive advantage when it has access to resources that others do not.
@@ -3432,7 +3432,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 081
+### 080
 
 > [!QUIZ]
 > *True or False:* The law of diminishing returns only applies to digital products.
@@ -3466,7 +3466,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 082
+### 081
 
 > [!QUIZ]
 > *True or False:* The inventors of a disruptive technology typically benefit the most from the technology; it is rare that fast followers catch up quickly.
@@ -3500,7 +3500,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 083
+### 082
 
 > [!QUIZ]
 > *True or False:* Smart products generally lower switching costs.
@@ -3534,7 +3534,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 084
+### 083
 
 > [!QUIZ]
 > *True or False:* Mintzberg's classification identifies five forces in an industry's environment that affect the strategic position of a firm.
@@ -3568,7 +3568,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 하(Easy)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 097
+### 084
 
 > [!QUIZ]
 > *True or False:* Research has shown that a majority of firms are able to align their information technology with their business goals.
@@ -3602,7 +3602,7 @@ published: true
 >
 > *학습목표 3-4: 전략적 정보시스템이 제기하는 과제는 무엇이며, 어떻게 대응해야 하는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 098
+### 085
 
 > [!QUIZ]
 > *True or False:* The use of Internet technologies allows companies to more easily sustain competitive advantage.
@@ -3641,7 +3641,7 @@ published: true
 
 ## III. Essay
 
-### 019
+### 086
 
 > [!QUIZ]
 > How are the behavioral and technical definitions of an organization different?
@@ -3663,7 +3663,7 @@ published: true
 >
 > *학습목표 3-1: 정보시스템을 성공적으로 구축하고 활용하려면 관리자는 조직의 어떤 특성을 알아야 하는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 024
+### 087
 
 > [!QUIZ]
 > Discuss and provide examples of how an organization's culture, politics, and structure can prevent a firm from fully realizing the benefits of a new information system.
@@ -3685,7 +3685,7 @@ published: true
 >
 > *학습목표 3-2: 정보시스템은 조직에 어떤 영향을 미치는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 025
+### 088
 
 > [!QUIZ]
 > What is agency theory? How does information technology enable a firm to reduce agency costs?
@@ -3707,7 +3707,7 @@ published: true
 >
 > *학습목표 3-2: 정보시스템은 조직에 어떤 영향을 미치는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 085
+### 089
 
 > [!QUIZ]
 > You are advising the owner of ABC Computers, a small local computer shop that repairs and also builds custom computers to order. What competitive strategies could ABC Computers employ? Which ones may it have difficulty executing?
@@ -3729,7 +3729,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 086
+### 090
 
 > [!QUIZ]
 > You are consulting with the owner of Better Fitness, a national chain of gyms. What strategies might Better Fitness use in applying information services to achieve a competitive advantage?
@@ -3751,7 +3751,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 087
+### 091
 
 > [!QUIZ]
 > What are some of the potentially negative impacts of the Internet on business firms identified by Michael Porter? Describe several positive influences the Internet has on business. Do these outweigh the negative influences?
@@ -3773,7 +3773,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 088
+### 092
 
 > [!QUIZ]
 > Value chain analysis is useful at the business level to highlight specific activities in the business where information systems are most likely to have a strategic impact. Discuss this model, identify the activities, and describe how the model can be applied.
@@ -3803,7 +3803,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 089
+### 093
 
 > [!QUIZ]
 > How is the concept of core competency relevant to Procter & Gamble? Give examples.
@@ -3825,7 +3825,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 090
+### 094
 
 > [!QUIZ]
 > How is Internet technology useful from a network economics perspective? Give examples.
@@ -3847,7 +3847,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 091
+### 095
 
 > [!QUIZ]
 > Define and describe a business ecosystem. Give an example of a business ecosystem.
@@ -3869,7 +3869,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 중(Moderate)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 092
+### 096
 
 > [!QUIZ]
 > Select a popular product or company that you are familiar with, such as Apple's iPad. Apply Porter's competitive forces model to that product and/or company. Which of the four generic strategies is the company using?
@@ -3907,7 +3907,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 093
+### 097
 
 > [!QUIZ]
 > Why are disruptive technologies "tricky"? Provide examples.
@@ -3929,7 +3929,7 @@ published: true
 >
 > *학습목표 3-3: Porter의 경쟁 요인 모형, 가치사슬 모형, 시너지, 핵심 역량, 네트워크 경제는 기업이 정보시스템을 활용한 경쟁 전략을 수립하는 데 어떻게 도움이 되는가? · 난이도: 상(Challenging)* · [3장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
-### 094
+### 098
 
 > [!QUIZ]
 > Why has the Internet made competitive rivalry more intense?

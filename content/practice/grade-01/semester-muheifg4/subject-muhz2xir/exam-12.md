@@ -2,7 +2,7 @@
 title: "정시개 Ch.4 · 17e · Test Bank 원문"
 description: "Chapter 4 (17e) test bank text extracted from the downloaded PDF: 60 multiple-choice, 25 true/false, 15 essay questions. "
 week: 0
-order: 16
+order: 12
 published: true
 ---
 
@@ -435,7 +435,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 016
+### 010
 
 > [!QUIZ]
 > ________ means that you accept the potential costs and obligations for the decisions you make.
@@ -481,7 +481,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 017
+### 011
 
 > [!QUIZ]
 > ________ is a feature of social institutions that means mechanisms are in place to determine responsibility for an action.
@@ -527,7 +527,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 018
+### 012
 
 > [!QUIZ]
 > ________ is a feature of law-governed society and involves having laws that are known and understood, along with the ability to appeal to higher authorities to ensure that the laws are applied correctly.
@@ -573,7 +573,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 019
+### 013
 
 > [!QUIZ]
 > All of the following are steps in the process for analyzing an ethical issue except:
@@ -619,7 +619,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 020
+### 014
 
 > [!QUIZ]
 > A colleague at work takes small amounts of office supplies for her own personal use, saying that this is a tiny loss to the company. You tell her that if everyone were to take office supplies, then the loss would no longer be minimal. Your rationale expresses which of the following ethical principles?
@@ -665,7 +665,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 021
+### 015
 
 > [!QUIZ]
 > A man steals from a grocery store in order to feed his starving family. Which of the following best expresses the utilitarian principle in evaluating this situation?
@@ -711,7 +711,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 022
+### 016
 
 > [!QUIZ]
 > Which of the following best describes Immanuel Kant's categorical imperative?
@@ -757,7 +757,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 023
+### 017
 
 > [!QUIZ]
 > The ethical no-free-lunch rule states that:
@@ -803,7 +803,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 024
+### 018
 
 > [!QUIZ]
 > According to ________, you should take the action that produces the least harm.
@@ -849,7 +849,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 025
+### 019
 
 > [!QUIZ]
 > Which ethical rule states that if an action cannot be taken repeatedly, it is not right to take at all?
@@ -895,7 +895,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 026
+### 020
 
 > [!QUIZ]
 > Which of the following ethical guidelines suggests that you put yourself in the place of others, and think of yourself as the object of the decision?
@@ -941,7 +941,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 033
+### 021
 
 > [!QUIZ]
 > All of the following are FTC privacy guidelines except:
@@ -987,7 +987,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 034
+### 022
 
 > [!QUIZ]
 > Which of the following regulates the U.S. federal government collection, use, and disclosure of information?
@@ -1033,7 +1033,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 035
+### 023
 
 > [!QUIZ]
 > FIP principles are based on a belief in which of the following?
@@ -1079,7 +1079,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 036
+### 024
 
 > [!QUIZ]
 > The FIP principle of Notice/Awareness states that:
@@ -1125,7 +1125,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 037
+### 025
 
 > [!QUIZ]
 > Which of the following U.S. laws gives patients access to personal medical records and the right to authorize how this information can be used or disclosed?
@@ -1171,7 +1171,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 038 · 슬라이드 없음
+### 026 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following is not a U.S. federal law affecting private institutions?
@@ -1217,7 +1217,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 039 · 슬라이드 없음
+### 027 · 슬라이드 없음
 
 > [!QUIZ]
 > All of the following laws apply to actions by the federal government except the:
@@ -1263,7 +1263,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 040
+### 028
 
 > [!QUIZ]
 > When a cookie is created during a website visit, it is stored:
@@ -1309,7 +1309,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 041
+### 029
 
 > [!QUIZ]
 > Which of the following is not a feature of the General Data Protection Regulation (GDPR)?
@@ -1355,7 +1355,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 042
+### 030
 
 > [!QUIZ]
 > Which of the following allows the EU to enforce GDPR requirements with non-EU countries?
@@ -1401,7 +1401,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 043 · 슬라이드 없음
+### 031 · 슬라이드 없음
 
 > [!QUIZ]
 > The Network Advertising Initiative is an industry association that:
@@ -1447,7 +1447,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 044
+### 032
 
 > [!QUIZ]
 > In the ________ model of informed consent, personal information cannot be collected until the consumer specifically agrees that his or her data can be collected.
@@ -1493,7 +1493,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 045 · 슬라이드 없음
+### 033 · 슬라이드 없음
 
 > [!QUIZ]
 > What percent of global Internet users use Google Search and other Google services?
@@ -1539,7 +1539,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 046
+### 034
 
 > [!QUIZ]
 > Which of the following forms of protection of intellectual property requires that the property be the subject of a nondisclosure agreement?
@@ -1585,7 +1585,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 047
+### 035
 
 > [!QUIZ]
 > All of the following are technical solutions to protecting user privacy except:
@@ -1631,7 +1631,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 048
+### 036
 
 > [!QUIZ]
 > Which of the following protects the authors of a book from having their work copied by others?
@@ -1677,7 +1677,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 049 · 슬라이드 없음
+### 037 · 슬라이드 없음
 
 > [!QUIZ]
 > "Look and feel" copyright infringement lawsuits are concerned with:
@@ -1723,7 +1723,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 050 · 슬라이드 없음
+### 038 · 슬라이드 없음
 
 > [!QUIZ]
 > The NAI is an industry association formed to help with which of the following?
@@ -1769,7 +1769,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 051
+### 039
 
 > [!QUIZ]
 > Which of the following runs an antipiracy hotline for individuals to report piracy activities?
@@ -1815,7 +1815,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 052
+### 040
 
 > [!QUIZ]
 > Which of the following adjusts copyright laws to the Internet age by making it illegal to circumvent technology-based protections of copyrighted materials?
@@ -1861,7 +1861,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 053
+### 041
 
 > [!QUIZ]
 > Which of the following statements about cookies is not true?
@@ -1907,7 +1907,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 054
+### 042
 
 > [!QUIZ]
 > Advertisers use ________ in order to display more relevant ads based on a user's search and browsing history.
@@ -1953,7 +1953,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 055
+### 043
 
 > [!QUIZ]
 > ________ allows an organization to collect personal information without the user's explicit consent.
@@ -1999,7 +1999,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 056
+### 044
 
 > [!QUIZ]
 > ________ grants the owner exclusive ownership of the ideas behind an invention for 20 years.
@@ -2045,7 +2045,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 057
+### 045
 
 > [!QUIZ]
 > The right to ________ is a feature of the GDPR that allows individuals to request that organizations delete their personal data.
@@ -2091,7 +2091,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 058
+### 046
 
 > [!QUIZ]
 > Which of the following is not a difficulty in establishing patent protection?
@@ -2137,7 +2137,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 059 · 슬라이드 없음
+### 047 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following statements about trademarks is not true?
@@ -2183,7 +2183,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 060
+### 048
 
 > [!QUIZ]
 > Digital media differs from a physical book in all of the following ways except:
@@ -2229,7 +2229,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 061 · 슬라이드 없음
+### 049 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following were involved in what has been called the patent trial of the century?
@@ -2275,7 +2275,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 062 · 슬라이드 없음
+### 050 · 슬라이드 없음
 
 > [!QUIZ]
 > All of the following are, or were, file-sharing services except:
@@ -2321,7 +2321,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 082
+### 051
 
 > [!QUIZ]
 > Which of the following is not a principal cause of poor system performance?
@@ -2367,7 +2367,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 083
+### 052
 
 > [!QUIZ]
 > Which of the following is by far the most common source of business system failure?
@@ -2413,7 +2413,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 084
+### 053
 
 > [!QUIZ]
 > Which of the following is a primary drawback to the "do anything anywhere" computing environment?
@@ -2459,7 +2459,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 085
+### 054
 
 > [!QUIZ]
 > Which of the following statements about spam is not true?
@@ -2505,7 +2505,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 086
+### 055
 
 > [!QUIZ]
 > The U.S. CAN-SPAM Act:
@@ -2551,7 +2551,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 087
+### 056
 
 > [!QUIZ]
 > Which of the five moral dimensions of the information age does the weakening of boundaries between work and family life involve?
@@ -2597,7 +2597,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 088
+### 057
 
 > [!QUIZ]
 > Redesigning and automating business processes can be seen as a double-edged sword because:
@@ -2643,7 +2643,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 089
+### 058
 
 > [!QUIZ]
 > Which of the following terms refers to significant disparities in access to computers and the Internet among different social groups and different locations?
@@ -2689,7 +2689,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 090
+### 059
 
 > [!QUIZ]
 > CVS refers to:
@@ -2735,7 +2735,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 091
+### 060
 
 > [!QUIZ]
 > Which of the following occurs when muscle groups are forced through tens of thousands of repetitions under low-impact loads?
@@ -2786,7 +2786,7 @@ published: true
 
 ## II. True or false
 
-### 010
+### 061
 
 > [!QUIZ]
 > *True or False:* Routine violations of individual privacy are made easier by advances in data storage.
@@ -2820,7 +2820,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 011 · 슬라이드 없음
+### 062 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* In today's legal environment, managers who are convicted for the misuse of information systems are unlikely to be given a prison sentence.
@@ -2854,7 +2854,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 012
+### 063
 
 > [!QUIZ]
 > *True or False:* Ethics describes the principles of right and wrong that can be used by individuals to make choices to guide their behavior.
@@ -2888,7 +2888,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 027
+### 064
 
 > [!QUIZ]
 > *True or False:* Identifying the stakeholders—people who have a vested interest in the outcome of the decision—is the last step in analyzing an ethical issue.
@@ -2922,7 +2922,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 028
+### 065
 
 > [!QUIZ]
 > *True or False:* Because of their special claims to knowledge, wisdom, and respect, professionals take on special rights and obligations.
@@ -2956,7 +2956,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 029
+### 066
 
 > [!QUIZ]
 > *True or False:* Due process is a feature of political systems and allows individuals to recover damages done to them by others.
@@ -2990,7 +2990,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 063
+### 067
 
 > [!QUIZ]
 > *True or False:* The European Parliament has banned unsolicited commercial messaging.
@@ -3024,7 +3024,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 064
+### 068
 
 > [!QUIZ]
 > *True or False:* Trade secret laws grant a monopoly on the ideas behind a work product.
@@ -3058,7 +3058,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 065
+### 069
 
 > [!QUIZ]
 > *True or False:* Malicious software that can secretly install itself on an Internet user's computer by piggybacking on other applications and then report the user's movements on the Internet to other computers. is called spyware.
@@ -3092,7 +3092,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 066
+### 070
 
 > [!QUIZ]
 > *True or False:* Most Internet businesses do very little to protect the privacy of their customers.
@@ -3126,7 +3126,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 067
+### 071
 
 > [!QUIZ]
 > *True or False:* The DMCA requires ISPs to take down sites of copyright infringers they are hosting when the ISPs are notified of the problem.
@@ -3160,7 +3160,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 068
+### 072
 
 > [!QUIZ]
 > *True or False:* Software can never be considered to be a trade secret.
@@ -3194,7 +3194,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 069
+### 073
 
 > [!QUIZ]
 > *True or False:* The claim to privacy is protected by the U.S. Constitution.
@@ -3228,7 +3228,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 070 · 슬라이드 없음
+### 074 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Software programs were unprotected by copyright law until the early 1990s.
@@ -3262,7 +3262,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 071
+### 075
 
 > [!QUIZ]
 > *True or False:* Websites using cookie technology cannot directly obtain visitors' names and addresses from the cookie.
@@ -3296,7 +3296,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 072
+### 076
 
 > [!QUIZ]
 > *True or False:* Privacy protection in Europe has historically been much stronger than in the United States.
@@ -3330,7 +3330,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 073
+### 077
 
 > [!QUIZ]
 > *True or False:* One of the key concepts in patent law is originality.
@@ -3364,7 +3364,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 074 · 슬라이드 없음
+### 078 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Some forms of illegal sharing of music files have declined as legitimate online music stores and streaming services have expanded.
@@ -3398,7 +3398,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 075
+### 079
 
 > [!QUIZ]
 > *True or False:* COPPA is a set of five principles developed by the FTC that most American and European privacy law is based on.
@@ -3432,7 +3432,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 076
+### 080
 
 > [!QUIZ]
 > *True or False:* Advertising networks such as Microsoft Advertising, Yahoo, and Google's Marketing Platform are capable of tracking personal browsing behavior across thousands of websites.
@@ -3466,7 +3466,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 077
+### 081
 
 > [!QUIZ]
 > *True or False:* Web beacons are tiny, invisible software programs embedded in email messages and web pages that are used to track and report a user's online behavior.
@@ -3500,7 +3500,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 092
+### 082
 
 > [!QUIZ]
 > *True or False:* Big Tech firms are facing increasing scrutiny with respect to alleged anticompetitive and unfair practices.
@@ -3534,7 +3534,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 093
+### 083
 
 > [!QUIZ]
 > *True or False:* Oligopolies and monopolies dominate the Web and mobile platform.
@@ -3568,7 +3568,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 094
+### 084
 
 > [!QUIZ]
 > *True or False:* Some experts believe that exposure to computers reduces intelligence and cognitive abilities.
@@ -3602,7 +3602,7 @@ published: true
 >
 > *학습목표 4-4: 정보시스템은 책임 추적성(accountability)과 법적 책임(liability)을 정하는 법, 그리고 일상생활의 질에 어떤 영향을 미쳤는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 095
+### 085
 
 > [!QUIZ]
 > *True or False:* Computer abuse refers to acts involving a computer that may not be illegal but are considered unethical.
@@ -3641,7 +3641,7 @@ published: true
 
 ## III. Essay
 
-### 013
+### 086
 
 > [!QUIZ]
 > Identify the five moral dimensions that are involved in political, social, and ethical issues and briefly describe each. Of these, which do you think is the most difficult for society to deal with? Support your opinion.
@@ -3683,7 +3683,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 014
+### 087
 
 > [!QUIZ]
 > Describe three technology trends that pose ethical issues, giving an example for each of its ethical or moral impact.
@@ -3705,7 +3705,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 015
+### 088
 
 > [!QUIZ]
 > What is NORA and how does it work?
@@ -3727,7 +3727,7 @@ published: true
 >
 > *학습목표 4-1: 정보시스템은 어떤 윤리적·사회적·정치적 쟁점을 제기하는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 030
+### 089
 
 > [!QUIZ]
 > What are the steps in conducting an ethical analysis?
@@ -3749,7 +3749,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 하(Easy)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 031
+### 090
 
 > [!QUIZ]
 > Identify and discuss the six ethical principles discussed in the chapter.
@@ -3771,7 +3771,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 032
+### 091
 
 > [!QUIZ]
 > Define the basic concepts of responsibility, accountability, and liability as applied to ethical decisions. How are these concepts related?
@@ -3793,7 +3793,7 @@ published: true
 >
 > *학습목표 4-2: 윤리적 결정을 이끄는 데 사용할 수 있는 구체적인 행동 원칙은 무엇인가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 078
+### 092
 
 > [!QUIZ]
 > What are Fair Information Practices (FIP)? Why are they important?
@@ -3815,7 +3815,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 079
+### 093
 
 > [!QUIZ]
 > What is a cookie and how does it work?
@@ -3837,7 +3837,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 중(Moderate)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 080
+### 094
 
 > [!QUIZ]
 > How does protection of privacy in Europe differ from the United States?
@@ -3859,7 +3859,7 @@ published: true
 >
 > *학습목표 4-3: 현대 정보시스템 기술과 인터넷은 왜 개인 프라이버시와 지식재산 보호에 어려움을 주는가? · 난이도: 상(Challenging)* · [4장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
-### 081 · 슬라이드 없음
+### 095 · 슬라이드 없음
 
 > [!QUIZ]
 > Discuss the issues raised by Apple and Samsung's patent battle against each other.

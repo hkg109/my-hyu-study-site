@@ -2,7 +2,7 @@
 title: "정시개 Ch.2 · 18e · Test Bank 원문"
 description: "Chapter 2 (18e) test bank text extracted from the downloaded PDF: 39 multiple-choice, 27 true/false, 9 essay questions. "
 week: 0
-order: 14
+order: 10
 published: true
 ---
 
@@ -231,7 +231,7 @@ published: true
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 상(Difficult) · p. 38* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 010
+### 006
 
 > [!QUIZ]
 > Which of the following systems would an organization use to compare total annual sales for a specific product to a planned target?
@@ -273,7 +273,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 42* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 011
+### 007
 
 > [!QUIZ]
 > Which of the following statements about a TPS is not true?
@@ -315,7 +315,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 012
+### 008
 
 > [!QUIZ]
 > Managers use which of the following systems to monitor the status of internal operations and the firm's relations with the external environment?
@@ -357,7 +357,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 013
+### 009
 
 > [!QUIZ]
 > A(n) ________ is typically a major source of data for other systems.
@@ -399,7 +399,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 014
+### 010
 
 > [!QUIZ]
 > The term management information systems refers to a specific category of information systems serving ________.
@@ -441,7 +441,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 015
+### 011
 
 > [!QUIZ]
 > Which of the following would a manager use to determine the impact on production schedule if sales doubled in the next quarter?
@@ -483,7 +483,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 016
+### 012
 
 > [!QUIZ]
 > A system that reports summaries on the total moving, house hunting, and home financing costs for employees in all company divisions is an example of which of the following?
@@ -525,7 +525,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 017
+### 013
 
 > [!QUIZ]
 > Which of the following systems is used to focus on non-routine business problems that are unique and rapidly changing?
@@ -567,7 +567,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 018
+### 014
 
 > [!QUIZ]
 > Which level of the organization is an ESS specifically designed to serve?
@@ -609,7 +609,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 019
+### 015
 
 > [!QUIZ]
 > Which of the following systems incorporates data from external events as well as summarized information from internal business intelligence systems?
@@ -651,7 +651,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 020
+### 016
 
 > [!QUIZ]
 > All of the following are examples of business intelligence systems except a system that ________.
@@ -693,7 +693,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 41* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 021
+### 017
 
 > [!QUIZ]
 > Which of the following systems typically uses a BI dashboard to display an array of charts and graphs of a business's key performance indicators?
@@ -735,7 +735,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 035
+### 018
 
 > [!QUIZ]
 > What is an important benefit of an enterprise application?
@@ -777,7 +777,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 상(Difficult) · p. 29* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 036
+### 019
 
 > [!QUIZ]
 > Which of the following systems is designed to coordinate business processes across the firm, spanning functional areas and organizational levels?
@@ -819,7 +819,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 하(Easy) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 037
+### 020
 
 > [!QUIZ]
 > A(n) ________ system collects data from various key business processes and stores the data in a single, comprehensive data repository, usable by other parts of the business.
@@ -861,7 +861,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 038
+### 021
 
 > [!QUIZ]
 > Which of the following is not one of the four major types of enterprise applications?
@@ -903,7 +903,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 하(Easy) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 039
+### 022
 
 > [!QUIZ]
 > Which of the following systems integrates supplier, manufacturer, distributor, and customer logistics processes?
@@ -945,7 +945,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 040
+### 023
 
 > [!QUIZ]
 > Which of the following systems would you use to consolidate the relevant knowledge and experience in the firm and make it available to improve business processes and management decision making?
@@ -987,7 +987,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 041
+### 024
 
 > [!QUIZ]
 > You manage the IT department for a firm that manages regional farmer's markets. You need to set up an inexpensive system that allows local vendors to see real-time statistics about which of the firm's markets have vendor openings on which days. Which of the following systems would most efficiently provide a solution?
@@ -1029,7 +1029,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 상(Difficult) · p. 47* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 042
+### 025
 
 > [!QUIZ]
 > Which of the following can typically access a firm's intranet?
@@ -1071,7 +1071,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 47* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 046
+### 026
 
 > [!QUIZ]
 > Which of the following is not a reason for the increased business focus on collaboration and teamwork?
@@ -1113,7 +1113,7 @@ published: true
 >
 > *학습목표 2-4: 협업과 소셜 비즈니스 시스템의 중요성을 이해한다. · 난이도: 중(Moderate) · p. 47* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 050
+### 027
 
 > [!QUIZ]
 > Telepresence technology is primarily designed to ________.
@@ -1155,7 +1155,7 @@ published: true
 >
 > *학습목표 2-5: 협업 도구를 설명한다. · 난이도: 중(Moderate) · p. 51* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 051
+### 028
 
 > [!QUIZ]
 > All of the following are videoconferencing tools except ________.
@@ -1197,7 +1197,7 @@ published: true
 >
 > *학습목표 2-5: 협업 도구를 설명한다. · 난이도: 하(Easy) · p. 51* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 054
+### 029
 
 > [!QUIZ]
 > All of the following are capabilities of enterprise social networking tools except ________.
@@ -1239,7 +1239,7 @@ published: true
 >
 > *학습목표 2-6: 소셜 비즈니스 도구를 설명한다. · 난이도: 중(Moderate) · p. 55* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 055
+### 030
 
 > [!QUIZ]
 > Second Life is an example of a ________.
@@ -1281,7 +1281,7 @@ published: true
 >
 > *학습목표 2-6: 소셜 비즈니스 도구를 설명한다. · 난이도: 하(Easy) · p. 55* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 056
+### 031
 
 > [!QUIZ]
 > What analytical framework helps with understanding and evaluating the benefits and uses of collaboration tools?
@@ -1323,7 +1323,7 @@ published: true
 >
 > *학습목표 2-7: 협업·소셜 비즈니스 도구를 평가하는 방법을 이해한다. · 난이도: 중(Moderate) · p. 55* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 058
+### 032
 
 > [!QUIZ]
 > A wiki is a type of collaborative ________.
@@ -1365,7 +1365,7 @@ published: true
 >
 > *학습목표 2-8: 지식관리시스템을 설명한다. · 난이도: 하(Easy) · p. 58* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 059
+### 033
 
 > [!QUIZ]
 > The principal liaison between the information systems groups and the rest of the organization is a(n) ________.
@@ -1407,7 +1407,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 060
+### 034
 
 > [!QUIZ]
 > A ________ is a senior manager who oversees the use of IT in the firm.
@@ -1449,7 +1449,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 061
+### 035
 
 > [!QUIZ]
 > An information systems manager ________.
@@ -1491,7 +1491,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 062
+### 036
 
 > [!QUIZ]
 > The ________ helps design programs and systems to find new sources of knowledge or to make better use of existing knowledge in organizational and management processes.
@@ -1533,7 +1533,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 063
+### 037
 
 > [!QUIZ]
 > Which of the following is a firm's CPO responsible for?
@@ -1575,7 +1575,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 하(Easy) · p. 61* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 064
+### 038
 
 > [!QUIZ]
 > A firm's ________ is responsible for enterprise-wide governance and utilization of information to maximize the value the organization can realize from its data.
@@ -1617,7 +1617,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 069 · 슬라이드 없음
+### 039 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following is not true about Customer Success Analysts?
@@ -1664,7 +1664,7 @@ published: true
 
 ## II. True or false
 
-### 006
+### 040
 
 > [!QUIZ]
 > *True or False:* Checking for quality is a business process handled by the marketing function.
@@ -1698,7 +1698,7 @@ published: true
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 007
+### 041
 
 > [!QUIZ]
 > *True or False:* A business process must be tied to just one specific functional area.
@@ -1732,7 +1732,7 @@ published: true
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 38* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 022
+### 042
 
 > [!QUIZ]
 > *True or False:* Cross-functional systems are being phased out in favor of systems that support business processes within a single functional group, such as human resources.
@@ -1766,7 +1766,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 023
+### 043
 
 > [!QUIZ]
 > *True or False:* A DSS enables business analysts to use sophisticated analytics and models to analyze data.
@@ -1800,7 +1800,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 024
+### 044
 
 > [!QUIZ]
 > *True or False:* You would use a TPS to help determine if your business should introduce a new product line.
@@ -1834,7 +1834,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 025
+### 045
 
 > [!QUIZ]
 > *True or False:* Managers rely on TPS for nonroutine decision making.
@@ -1868,7 +1868,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 026
+### 046
 
 > [!QUIZ]
 > *True or False:* Most TPS use sophisticated mathematical models or statistical techniques.
@@ -1902,7 +1902,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 027
+### 047
 
 > [!QUIZ]
 > *True or False:* A DSS only uses information from external sources.
@@ -1936,7 +1936,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 43* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 028
+### 048
 
 > [!QUIZ]
 > *True or False:* An organization's MIS and DSS supply an ESS with summarized information.
@@ -1970,7 +1970,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 029
+### 049
 
 > [!QUIZ]
 > *True or False:* Operational managers use ESS to keep track of the elementary activities and transactions of the organization.
@@ -2004,7 +2004,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 030
+### 050
 
 > [!QUIZ]
 > *True or False:* A web interface used to present integrated personalized business content to users is called a portal.
@@ -2038,7 +2038,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 44* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 031
+### 051
 
 > [!QUIZ]
 > *True or False:* An SCM is considered to be an intraorganizational system because it automates the flow of information across organizational boundaries.
@@ -2072,7 +2072,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 032
+### 052
 
 > [!QUIZ]
 > *True or False:* A TPS is an information system that keeps track of all of the daily routine transactions of a business.
@@ -2106,7 +2106,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 하(Easy) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 043
+### 053
 
 > [!QUIZ]
 > *True or False:* Enterprise applications integrate information from multiple functions and business processes to enhance the performance of the organization as a whole.
@@ -2140,7 +2140,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 044
+### 054
 
 > [!QUIZ]
 > *True or False:* Customer relationship management systems coordinate all of the business processes that deal with customers in sales, marketing, and service.
@@ -2174,7 +2174,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 중(Moderate) · p. 46* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 047
+### 055
 
 > [!QUIZ]
 > *True or False:* Crowdsourcing is an example of a social business application.
@@ -2208,7 +2208,7 @@ published: true
 >
 > *학습목표 2-4: 협업과 소셜 비즈니스 시스템의 중요성을 이해한다. · 난이도: 중(Moderate) · p. 49* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 048
+### 056
 
 > [!QUIZ]
 > *True or False:* A key word in social business is "conversations."
@@ -2242,7 +2242,7 @@ published: true
 >
 > *학습목표 2-4: 협업과 소셜 비즈니스 시스템의 중요성을 이해한다. · 난이도: 중(Moderate) · p. 48* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 052
+### 057
 
 > [!QUIZ]
 > *True or False:* Google Drive is an example of a cloud collaboration service.
@@ -2276,7 +2276,7 @@ published: true
 >
 > *학습목표 2-5: 협업 도구를 설명한다. · 난이도: 중(Moderate) · p. 51* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 065
+### 058
 
 > [!QUIZ]
 > *True or False:* End users are playing an increasingly large role in the design and development of information systems.
@@ -2310,7 +2310,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 066
+### 059
 
 > [!QUIZ]
 > *True or False:* The information systems department suggests new business strategies and new information- based products and services.
@@ -2344,7 +2344,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 중(Moderate) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 067
+### 060
 
 > [!QUIZ]
 > *True or False:* IT governance refers to the overall decision-making that guides the IT strategy of a firm.
@@ -2378,7 +2378,7 @@ published: true
 >
 > *학습목표 2-9: 정보시스템 기능의 역할을 설명한다. · 난이도: 상(Difficult) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 070
+### 061
 
 > [!QUIZ]
 > *True or False:* The information in Chapter 2 can help you advance your career by helping you understand the different types of systems you are likely to encounter and their role in the business.
@@ -2412,7 +2412,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 62* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 071 · 슬라이드 없음
+### 062 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Princess Cruises, considered one of the most recognized cruise lines in the world, uses a single, well-perfected promotion concept to attract customers and remain competitive in the market.
@@ -2446,7 +2446,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 072 · 슬라이드 없음
+### 063 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Hanover Research is a marketing and data analytics firm with expertise in customer experience analysis.
@@ -2480,7 +2480,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 073 · 슬라이드 없음
+### 064 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Senior customer success managers can make almost $100,000.
@@ -2514,7 +2514,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 074 · 슬라이드 없음
+### 065 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Customer success managers collaborate with various teams to address customer's needs.
@@ -2548,7 +2548,7 @@ published: true
 >
 > *학습목표 2-10: 이 장의 내용이 진로에 어떻게 도움이 되는지 이해한다. · 난이도: 하(Easy) · p. 63* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 075 · 슬라이드 없음
+### 066 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* On-board credit, free gratuities, and which promotional campaigns were most appealing to customers were all options that Princess Cruises considered.
@@ -2587,7 +2587,7 @@ published: true
 
 ## III. Essay
 
-### 008
+### 067
 
 > [!QUIZ]
 > How can information systems and information technology be used to improve business processes?
@@ -2609,7 +2609,7 @@ published: true
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 009
+### 068
 
 > [!QUIZ]
 > What are cross-functional business processes? Give an example.
@@ -2631,7 +2631,7 @@ published: true
 >
 > *학습목표 2-1: 비즈니스 프로세스가 정보시스템과 어떻게 관련되는지 이해한다. · 난이도: 중(Moderate) · p. 39* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 033
+### 069
 
 > [!QUIZ]
 > Identify and discuss the major types of information systems used by different levels of management within a business. What are the relationships among these systems?
@@ -2653,7 +2653,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 중(Moderate) · p. 40* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 034
+### 070
 
 > [!QUIZ]
 > What is a BI dashboard, and why are they becoming an increasingly popular tool?
@@ -2675,7 +2675,7 @@ published: true
 >
 > *학습목표 2-2: 정보시스템이 서로 다른 관리 계층을 어떻게 지원하는지 설명한다. · 난이도: 상(Difficult) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 045
+### 071
 
 > [!QUIZ]
 > Describe at least two benefits of using enterprise systems.
@@ -2697,7 +2697,7 @@ published: true
 >
 > *학습목표 2-3: 전사적 애플리케이션이 기업 성과를 어떻게 향상시키는지 설명한다. · 난이도: 하(Easy) · p. 45* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 049
+### 072
 
 > [!QUIZ]
 > Why are "conversations" relevant to social business?
@@ -2719,7 +2719,7 @@ published: true
 >
 > *학습목표 2-4: 협업과 소셜 비즈니스 시스템의 중요성을 이해한다. · 난이도: 상(Difficult) · p. 48* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 053
+### 073
 
 > [!QUIZ]
 > You have been hired to work with 8 employees from different branches of a national business to help create a web application to be used to train new sales employees. Identify six collaboration tools that are available to help the team work together. Which single tool would be the most helpful for the project, in your opinion, and why?
@@ -2741,7 +2741,7 @@ published: true
 >
 > *학습목표 2-5: 협업 도구를 설명한다. · 난이도: 중(Moderate) · p. 51* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 057
+### 074
 
 > [!QUIZ]
 > You have been hired by an international architectural firm, with offices in Singapore, Paris, and Mumbai. The firm would like architects and draftspeople from different teams to be able to collaborate efficiently. How will you determine what the best collaboration tools are for their needs?
@@ -2763,7 +2763,7 @@ published: true
 >
 > *학습목표 2-7: 협업·소셜 비즈니스 도구를 평가하는 방법을 이해한다. · 난이도: 상(Difficult) · p. 55* · [2장 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
-### 068
+### 075
 
 > [!QUIZ]
 > Describe the role of IT governance within the firm.

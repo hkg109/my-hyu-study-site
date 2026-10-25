@@ -2,7 +2,7 @@
 title: "정시개 Ch.1 · 17e · Test Bank 원문"
 description: "Chapter 1 (17e) test bank text extracted from the downloaded PDF: 60 multiple-choice, 25 true/false, 15 essay questions. "
 week: 0
-order: 13
+order: 9
 published: true
 ---
 
@@ -1123,7 +1123,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 033
+### 025
 
 > [!QUIZ]
 > The three activities in an information system that produce the information organizations use to make decisions, control operations, analyze problems, and create new products are:
@@ -1169,7 +1169,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 034
+### 026
 
 > [!QUIZ]
 > Raw data collected at checkout counters in a grocery store is an example of:
@@ -1215,7 +1215,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 035
+### 027
 
 > [!QUIZ]
 > The total number of food items with storage temperature problems is an example of which of the following?
@@ -1261,7 +1261,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 036
+### 028
 
 > [!QUIZ]
 > Output:
@@ -1307,7 +1307,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 037
+### 029
 
 > [!QUIZ]
 > Converting raw data into a more meaningful form is called:
@@ -1353,7 +1353,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 038
+### 030
 
 > [!QUIZ]
 > Which of the following is an example of raw data from an automobile manufacturer?
@@ -1399,7 +1399,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 039
+### 031
 
 > [!QUIZ]
 > In a hierarchical business organization, the upper level consists of:
@@ -1445,7 +1445,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 040
+### 032
 
 > [!QUIZ]
 > The fundamental set of assumptions, values, and ways of doing things that has been accepted by most of an organization's members is called its:
@@ -1491,7 +1491,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 041
+### 033
 
 > [!QUIZ]
 > Data management technology consists of which of the following?
@@ -1537,7 +1537,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 042
+### 034
 
 > [!QUIZ]
 > Which of the following statements best describes organizational culture?
@@ -1583,7 +1583,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 043
+### 035
 
 > [!QUIZ]
 > Networking and telecommunications technologies, along with computer hardware, software, data management technology, and the people required to run and manage them, constitute an organization's:
@@ -1629,7 +1629,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 044
+### 036
 
 > [!QUIZ]
 > Maintaining the organization's financial records is a central purpose of which main business function?
@@ -1675,7 +1675,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 045
+### 037
 
 > [!QUIZ]
 > All of the following are examples of environmental actors in an information system except:
@@ -1721,7 +1721,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 046
+### 038
 
 > [!QUIZ]
 > Which of the following best describes the primary reason for implementing a new information system, from a business perspective?
@@ -1767,7 +1767,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 047
+### 039
 
 > [!QUIZ]
 > Which of the following is not a key organizational complementary asset?
@@ -1813,7 +1813,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 048
+### 040
 
 > [!QUIZ]
 > In a business hierarchy, which of the following levels is responsible for monitoring the daily activities of the business?
@@ -1859,7 +1859,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 049
+### 041
 
 > [!QUIZ]
 > In ________, raw data is systematically acquired and transformed during various stages that add value to that information.
@@ -1905,7 +1905,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 050
+### 042
 
 > [!QUIZ]
 > A corporation that funds an employee training program to enhance the development of decision making skills could be seen as investing in which main category of complementary assets?
@@ -1951,7 +1951,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 051
+### 043
 
 > [!QUIZ]
 > Which of the following is an example of an organizational complementary asset?
@@ -1997,7 +1997,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 052
+### 044
 
 > [!QUIZ]
 > Which of the following is an example of a social complementary asset?
@@ -2043,7 +2043,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 053
+### 045
 
 > [!QUIZ]
 > Which of the following makes long-range strategic decisions about products and services as well as ensures financial performance of the firm?
@@ -2089,7 +2089,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 054
+### 046
 
 > [!QUIZ]
 > Which of the following would be used as an input for an information system?
@@ -2135,7 +2135,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 055
+### 047
 
 > [!QUIZ]
 > The three principal levels within a business organization hierarchy are:
@@ -2181,7 +2181,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 056
+### 048
 
 > [!QUIZ]
 > Which of the following work at the same level as middle management??
@@ -2227,7 +2227,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 057
+### 049
 
 > [!QUIZ]
 > Which of the following business functions is responsible for maintaining employee records?
@@ -2273,7 +2273,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 058 · 슬라이드 없음
+### 050 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following constitutes an organizational element in the UPS package tracking system described in the chapter?
@@ -2319,7 +2319,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 059 · 슬라이드 없음
+### 051 · 슬라이드 없음
 
 > [!QUIZ]
 > Which of the following constitutes a managerial element in the UPS tracking system described in the chapter?
@@ -2365,7 +2365,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 060
+### 052
 
 > [!QUIZ]
 > Which of the following is a global network that uses universal standards to connect millions of different networks around the world?
@@ -2411,7 +2411,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 061
+### 053
 
 > [!QUIZ]
 > Which of the following is a service provided by the Internet that uses universally accepted standards for storing, retrieving, formatting, and displaying information in a page format on the Internet?
@@ -2457,7 +2457,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 062
+### 054
 
 > [!QUIZ]
 > Which of the following is a private corporate network extended to authorized users outside the organization?
@@ -2503,7 +2503,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 063
+### 055
 
 > [!QUIZ]
 > Which of the following deals with behavioral issues as well as technical issues surrounding the development, use, and impact of information systems used by managers and employees in the firm?
@@ -2549,7 +2549,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 064
+### 056
 
 > [!QUIZ]
 > Which of the following is not an expression of a superior return on the investment in an information system?
@@ -2595,7 +2595,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 094
+### 057
 
 > [!QUIZ]
 > Disciplines that contribute to the technical approach to information systems include:
@@ -2641,7 +2641,7 @@ published: true
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 095
+### 058
 
 > [!QUIZ]
 > Which of the following disciplines focuses on mathematical techniques for optimizing parameters of organizations, such as transportation and inventory control?
@@ -2687,7 +2687,7 @@ published: true
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 096
+### 059
 
 > [!QUIZ]
 > Sociologists study information systems with an eye to understanding:
@@ -2733,7 +2733,7 @@ published: true
 >
 > *학습목표 1-3: 정보시스템 연구에는 어떤 학문 분야가 활용되며, 각 분야는 정보시스템을 이해하는 데 어떻게 기여하는가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 097
+### 060
 
 > [!QUIZ]
 > Psychologists study information systems with an eye to understanding:
@@ -2784,7 +2784,7 @@ published: true
 
 ## II. True or false
 
-### 025 · 슬라이드 없음
+### 061 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* Outsourcing has accelerated the development of new information systems in the United States.
@@ -2818,7 +2818,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 026
+### 062
 
 > [!QUIZ]
 > *True or False:* Creating a marketing plan is an example of a business process.
@@ -2852,7 +2852,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 027
+### 063
 
 > [!QUIZ]
 > *True or False:* In order to be considered a digital firm, all of the firm's significant business relationships and core business processes must be digitally enabled.
@@ -2886,7 +2886,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 028
+### 064
 
 > [!QUIZ]
 > *True or False:* A business model describes how a company produces, delivers, and sells a product or service to create wealth.
@@ -2920,7 +2920,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 029 · 슬라이드 없음
+### 065 · 슬라이드 없음
 
 > [!QUIZ]
 > *True or False:* In 2019, the supply of applicants far exceeded the number of job openings in information systems and technologies.
@@ -2954,7 +2954,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 065
+### 066
 
 > [!QUIZ]
 > *True or False:* Information technology (IT) consists of all hardware and software that a firm needs to use in order to achieve its business objectives.
@@ -2988,7 +2988,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 066
+### 067
 
 > [!QUIZ]
 > *True or False:* Social complementary assets are investments made by a firm to optimize its return on information technology assets.
@@ -3022,7 +3022,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 067
+### 068
 
 > [!QUIZ]
 > *True or False:* Information systems literacy focuses primarily on knowledge of information technology.
@@ -3056,7 +3056,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 068
+### 069
 
 > [!QUIZ]
 > *True or False:* The three main dimensions of information systems are management, organizations, and information technology.
@@ -3090,7 +3090,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 069
+### 070
 
 > [!QUIZ]
 > *True or False:* Knowledge workers make long-range strategic decisions about products and services.
@@ -3124,7 +3124,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 070
+### 071
 
 > [!QUIZ]
 > *True or False:* There are four major business functions: human resources; manufacturing and production; finance and accounting; and information technology.
@@ -3158,7 +3158,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 071
+### 072
 
 > [!QUIZ]
 > *True or False:* Parts of an organization's culture can always be found embedded in its information systems.
@@ -3192,7 +3192,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 072
+### 073
 
 > [!QUIZ]
 > *True or False:* All business processes are formally documented by an organization.
@@ -3226,7 +3226,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 073
+### 074
 
 > [!QUIZ]
 > *True or False:* Creative work driven by new knowledge and information is a significant part of management responsibility.
@@ -3260,7 +3260,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 074
+### 075
 
 > [!QUIZ]
 > *True or False:* Intranets are used by organization to coordinate their activities with other firms for making purchases, collaborating on design, and other interorganizational work.
@@ -3294,7 +3294,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 075
+### 076
 
 > [!QUIZ]
 > *True or False:* UPS's use of web-based tools that allow customers to embed UPS functions such as tracking and cost calculations into their own website is an information systems solution used to achieve customer intimacy.
@@ -3328,7 +3328,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 076
+### 077
 
 > [!QUIZ]
 > *True or False:* There is little variation in returns on IT investment across firms.
@@ -3362,7 +3362,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 077
+### 078
 
 > [!QUIZ]
 > *True or False:* Laws and regulations creating fair, stable market environments are examples of complementary social assets required to optimize returns from IT investments.
@@ -3396,7 +3396,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 078
+### 079
 
 > [!QUIZ]
 > *True or False:* A firm that invests in a strong IS development team is making an investment in organizational complementary assets.
@@ -3430,7 +3430,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 079
+### 080
 
 > [!QUIZ]
 > *True or False:* Data is information that has been shaped into a form that is meaningful to human beings.
@@ -3464,7 +3464,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 080
+### 081
 
 > [!QUIZ]
 > *True or False:* Feedback is output returned to appropriate members of the organization to help them evaluate or correct the input stage.
@@ -3498,7 +3498,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 081
+### 082
 
 > [!QUIZ]
 > *True or False:* The key elements of an organization are its structure, business processes, politics, culture, and people.
@@ -3532,7 +3532,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 082
+### 083
 
 > [!QUIZ]
 > *True or False:* Middle managers make long-range strategic decisions about the firm's products and services.
@@ -3566,7 +3566,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 083
+### 084
 
 > [!QUIZ]
 > *True or False:* Detailed, programmed instructions that control computer hardware components in an information system are known as computer software.
@@ -3600,7 +3600,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 하(Easy)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 098
+### 085
 
 > [!QUIZ]
 > *True or False:* The behavioral approach to information systems focuses on analyzing the social, psychological, and economic impacts of systems rather than the technical aspects.
@@ -3639,7 +3639,7 @@ published: true
 
 ## III. Essay
 
-### 030
+### 086
 
 > [!QUIZ]
 > You work for an auto dealer. How could you use information systems to achieve greater customer intimacy?
@@ -3661,7 +3661,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 031
+### 087
 
 > [!QUIZ]
 > Define operational excellence. How have information systems helped Walmart achieve it?
@@ -3683,7 +3683,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 032
+### 088
 
 > [!QUIZ]
 > Define business process. What might be a business process used at a hospital?
@@ -3705,7 +3705,7 @@ published: true
 >
 > *학습목표 1-1: 정보시스템은 비즈니스를 어떻게 바꾸고 있으며, 오늘날 비즈니스를 운영·관리하는 데 왜 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 084
+### 089
 
 > [!QUIZ]
 > Describe the role that management plays in an organization. What role can information technology play in helping managers?
@@ -3727,7 +3727,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 085
+### 090
 
 > [!QUIZ]
 > What do studies of returns on information technology investments show in terms of variation of returns on investment? What accounts for these results?
@@ -3749,7 +3749,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 086
+### 091
 
 > [!QUIZ]
 > What is the difference between information technology and information systems? Describe some of the functions of information systems.
@@ -3787,7 +3787,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 087
+### 092
 
 > [!QUIZ]
 > You are a marketing manager for a national movie theater chain. Give an example of data that your department could use for creating meaningful information. What type of information could that data produce?
@@ -3809,7 +3809,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 088
+### 093
 
 > [!QUIZ]
 > This chapter discusses how each organization has its own culture and sets of values shared by most of its members. What kind of shared values might you find at a law firm?
@@ -3831,7 +3831,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 089
+### 094
 
 > [!QUIZ]
 > You work at the business headquarters for a chain of movie theaters. Describe this firm's information value chain.
@@ -3853,7 +3853,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 090
+### 095
 
 > [!QUIZ]
 > How does a company's use of information systems affect its corporate strategies? Provide an example.
@@ -3875,7 +3875,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 091
+### 096
 
 > [!QUIZ]
 > Why is the building of a house an appropriate analogy for the building of an information system?
@@ -3897,7 +3897,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 상(Challenging)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 092
+### 097
 
 > [!QUIZ]
 > What is the single most important theme of the book?
@@ -3919,7 +3919,7 @@ published: true
 >
 > *학습목표 1-2: 정보시스템이란 무엇인가? 어떻게 작동하는가? 경영·조직·기술 구성요소는 무엇인가? 정보시스템이 조직에 진정한 가치를 제공하려면 왜 보완 자산이 필수적인가? · 난이도: 중(Moderate)* · [1장 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-### 093
+### 098
 
 > [!QUIZ]
 > What are complementary assets and how does investment in them impact returns on technology investments?
