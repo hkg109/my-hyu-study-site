@@ -42,18 +42,16 @@ test("plain Markdown is discovered without frontmatter or a React edit", () => {
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
 
-test("MIS practice exams are English-first with complete Korean reveal translations", () => {
+test("MIS practice exams have complete questions and solutions with translations where provided", () => {
   const exams = readCollection("practice").filter(doc => doc.subjectId === "subject-muhz2xir");
   // Exams 1–3 are 26-item mock exams; exams 4–7 are 30-item chapter sets; exam 8 is the 35-item 2025 recollection.
-  const expected = new Map([[1, 26], [2, 26], [3, 26], [4, 30], [5, 30], [6, 30], [7, 30], [8, 35]]);
   // Orders 9–12 are test bank transcripts (Ch.1 17e, Ch.2 18e, Ch.3 17e GE, Ch.4 17e), also with Korean reveals.
-  const transcripts = new Map([[9, 100], [10, 75], [11, 100], [12, 100]]);
-  const regular = exams.filter(exam => !transcripts.has(exam.order));
-  assert.deepEqual(regular.map(exam => exam.order).sort((a, b) => a - b), [...expected.keys()]);
+  // Order 13 is the 34-question 2026 recollection, with English questions and no translation blocks.
+  const expected = new Map([[1, 26], [2, 26], [3, 26], [4, 30], [5, 30], [6, 30], [7, 30], [8, 35], [9, 100], [10, 75], [11, 100], [12, 100], [13, 34]]);
+  assert.deepEqual(exams.map(exam => exam.order).sort((a, b) => a - b), [...expected.keys()]);
   for (const exam of exams) {
-    const transcript = transcripts.has(exam.order);
-    const count = transcript ? transcripts.get(exam.order) : expected.get(exam.order);
-    const translations = count;
+    const count = expected.get(exam.order);
+    const translations = exam.order === 13 ? 0 : count;
     assert.equal((exam.content.match(/^> \[!QUIZ\]$/gm) ?? []).length, count, exam.path);
     assert.equal((exam.content.match(/^> \[!TRANSLATION\]$/gm) ?? []).length, translations, exam.path);
     assert.equal((exam.content.match(/^> \[!ANSWER\]$/gm) ?? []).length, count, exam.path);
