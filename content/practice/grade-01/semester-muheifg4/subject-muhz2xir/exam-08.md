@@ -107,7 +107,7 @@ Choose the one best answer.
 
 ### 02 · 1 point
 
-**복원:** `C · 재구성` (정답 Second Life만 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Which of the following is an example of a virtual world, a collaboration tool in which people interact through 3-D avatars?
@@ -140,6 +140,8 @@ Choose the one best answer.
 >
 > The slide lists Second Life as the example of a virtual world. Yammer is an enterprise social networking tool, Google Drive is a cloud collaboration service, SharePoint is a collaboration platform, and telepresence is a virtual meeting system.
 >
+> **복원 메모:** 정답 Second Life만 기억됨
+>
 > **Source:** R25 MC 2 · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
@@ -147,11 +149,13 @@ Choose the one best answer.
 >
 > 슬라이드에서 가상 세계의 예로 Second Life를 든다. Yammer는 기업용 소셜 네트워킹 도구, Google Drive는 클라우드 협업 서비스, SharePoint는 협업 플랫폼, 텔레프레즌스는 가상 회의 시스템이다.
 >
+> **복원 메모:** 정답 Second Life만 기억됨
+>
 > **근거:** R25 객관식 2 · [Ch.2 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 ### 03 · 1 point
 
-**복원:** `B · 변형 재구성` (보호기간 숫자를 틀리게 바꾼 오답 선지 + Do Not Track 정답. 작성자 기억이 흐릿함)
+**복원:** `B · 변형 재구성`
 
 > [!QUIZ]
 > Which of the following statements is correct?
@@ -184,6 +188,8 @@ Choose the one best answer.
 >
 > Memorize the three numbers: copyright lasts for the author's life plus ==red:70== years, corporate-owned works ==red:95== years, and patents ==red:20== years. In the real exam the numbers were changed in the wrong options. Trademarks do not expire after a fixed term as long as they are renewed and used.
 >
+> **복원 메모:** 보호기간 숫자를 틀리게 바꾼 오답 선지 + Do Not Track 정답. 작성자 기억이 흐릿함
+>
 > **Source:** R25 MC 3; TB #54 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
@@ -191,11 +197,13 @@ Choose the one best answer.
 >
 > 숫자 세 개를 외우자. 저작권은 저작자 생존 + ==red:70==년, 법인 저작물은 ==red:95==년, 특허는 ==red:20==년이다. 실제 시험에서는 오답 선지의 숫자가 바뀌어 나왔다. 상표권은 갱신하고 계속 사용하면 정해진 기한에 소멸하지 않는다.
 >
+> **복원 메모:** 보호기간 숫자를 틀리게 바꾼 오답 선지 + Do Not Track 정답. 작성자 기억이 흐릿함
+>
 > **근거:** R25 객관식 3; TB #54 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 ### 04 · 1 point
 
-**복원:** `A · 원문` (작성자가 “테뱅 문제 그대로”라고 명시)
+**복원:** `A · 원문`
 
 > [!QUIZ]
 > Mintzberg classifies a large bureaucracy existing in a slowly changing environment that produces standard products and is dominated by centralized management as a ________ bureaucracy.
@@ -228,12 +236,16 @@ Choose the one best answer.
 >
 > Machine bureaucracy = midsize manufacturing firm, centralized. Know the other four as well: entrepreneurial (start-up), divisionalized (Fortune 500), professional (law firms, hospitals; weak central authority), and adhocracy (consulting firms; weak central authority).
 >
+> **복원 메모:** 작성자가 “테뱅 문제 그대로”라고 명시
+>
 > **Source:** R25 MC 4; TB #9 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
 > **A. machine**
 >
 > 기계적 관료제 = 중견 제조업체, 중앙집권형. 나머지 넷도 함께 외우자. 기업가형(스타트업), 사업부형(포춘 500), 전문 관료제(법무법인·병원, 중앙 권한이 약함), 애드호크라시(컨설팅 회사, 중앙 권한이 약함).
+>
+> **복원 메모:** 작성자가 “테뱅 문제 그대로”라고 명시
 >
 > **근거:** R25 객관식 4; TB #9 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
@@ -283,7 +295,7 @@ Choose the one best answer.
 
 ### 06 · 1 point
 
-**복원:** `C · 재구성` (정답 “redesign 비용이 비싸서”만 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Why do many firms keep using legacy systems?
@@ -316,12 +328,16 @@ Choose the one best answer.
 >
 > A legacy system is an older system that firms keep using to avoid the high cost of replacing or redesigning it. Option E is the opposite of the truth: legacy systems are hard to integrate, which is why enterprise applications are needed.
 >
+> **복원 메모:** 정답 “redesign 비용이 비싸서”만 기억됨
+>
 > **Source:** R25 MC 6 · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
 
 > [!ANSWER-TRANSLATION]
 > **B. 교체하거나 재설계하는 데 비용이 너무 많이 들기 때문**
 >
 > 레거시 시스템은 교체·재설계의 높은 비용을 피하려고 계속 쓰는 오래된 시스템이다. E는 정반대다. 레거시 시스템은 통합이 어려워서 전사 애플리케이션이 필요해진다.
+>
+> **복원 메모:** 정답 “redesign 비용이 비싸서”만 기억됨
 >
 > **근거:** R25 객관식 6 · [Ch.2 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
 
@@ -371,7 +387,7 @@ Choose the one best answer.
 
 ### 08 · 1 point
 
-**복원:** `C · 재구성` (정답 “customer experience 증진”. 작성자가 satisfaction과 헷갈렸다고 함)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > A firm that pursues a product differentiation strategy uses information systems mainly to
@@ -404,12 +420,16 @@ Choose the one best answer.
 >
 > The slide wording is "convenience and ==red:experience==", not satisfaction. A is low-cost leadership (Walmart), C is supplier intimacy (JCPenney), and D is market niche focus. Mass customization and customer experience management also belong under product differentiation.
 >
+> **복원 메모:** 정답 “customer experience 증진”. 작성자가 satisfaction과 헷갈렸다고 함
+>
 > **Source:** R25 MC 8 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
 > **B. 고객의 편의와 경험을 크게 바꾸는 새로운 제품·서비스를 가능하게 하기 위해**
 >
 > 슬라이드 문구는 “convenience and ==red:experience==”이고 satisfaction이 아니다. A는 원가 우위(Walmart), C는 공급업체 친밀성(JCPenney), D는 틈새시장 집중이다. 대량 맞춤화와 고객 경험 관리도 제품 차별화에 속한다.
+>
+> **복원 메모:** 정답 “customer experience 증진”. 작성자가 satisfaction과 헷갈렸다고 함
 >
 > **근거:** R25 객관식 8 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
@@ -459,7 +479,7 @@ Choose the one best answer.
 
 ### 10 · 1 point
 
-**복원:** `B · 변형 재구성` (테뱅은 “primary activities를 고르시오”, 시험은 “아닌 것”으로 뒤집혀 나옴)
+**복원:** `B · 변형 재구성`
 
 > [!QUIZ]
 > Which of the following is NOT a primary activity in the value chain model?
@@ -492,12 +512,16 @@ Choose the one best answer.
 >
 > Primary activities: inbound logistics, operations, outbound logistics, sales and marketing, service. Support activities: organization infrastructure, human resources, technology, procurement.
 >
+> **복원 메모:** 테뱅은 “primary activities를 고르시오”, 시험은 “아닌 것”으로 뒤집혀 나옴
+>
 > **Source:** R25 MC 10; TB #45 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
 > **D. 기술**
 >
 > 본원적 활동: 내부 물류, 운영, 외부 물류, 판매·마케팅, 서비스. 지원 활동: 기업 인프라, 인적자원, 기술, 조달.
+>
+> **복원 메모:** 테뱅은 “primary activities를 고르시오”, 시험은 “아닌 것”으로 뒤집혀 나옴
 >
 > **근거:** R25 객관식 10; TB #45 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
@@ -547,7 +571,7 @@ Choose the one best answer.
 
 ### 12 · 1 point
 
-**복원:** `C · 재구성` (정답 “JCPenney = supplier intimacy”만 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > JCPenney uses IT to work closely with its Hong Kong supplier TAL Apparel, which sends shirts directly to each store and keeps JCPenney's shirt inventory near zero. Which strategy does this illustrate?
@@ -580,6 +604,8 @@ Choose the one best answer.
 >
 > Close relationships with suppliers result in lower costs. Pair the examples: JCPenney → supplier intimacy, Mandarin Oriental → customer intimacy, Walmart → low-cost leadership, Google/Nike/Apple → product differentiation.
 >
+> **복원 메모:** 정답 “JCPenney = supplier intimacy”만 기억됨
+>
 > **Source:** R25 MC 12 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
@@ -587,11 +613,13 @@ Choose the one best answer.
 >
 > 공급업체와 긴밀한 관계를 맺으면 비용이 낮아진다. 사례 짝을 외우자. JCPenney → 공급업체 친밀성, Mandarin Oriental → 고객 친밀성, Walmart → 원가 우위, Google·Nike·Apple → 제품 차별화.
 >
+> **복원 메모:** 정답 “JCPenney = supplier intimacy”만 기억됨
+>
 > **근거:** R25 객관식 12 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 ### 13 · 1 point
 
-**복원:** `C · 재구성` (“제도는 overnight에 바뀔 수 있다(can)”가 틀린 문장이었다는 것만 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Which statement about the model for thinking about ethical, social, and political issues is NOT true?
@@ -624,12 +652,16 @@ Choose the one best answer.
 >
 > The slide says institutions ==red:cannot== respond overnight. A single changed word ("can") made the real option false.
 >
+> **복원 메모:** “제도는 overnight에 바뀔 수 있다(can)”가 틀린 문장이었다는 것만 기억됨
+>
 > **Source:** R25 MC 13 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
 > **C. 사회·정치 제도는 이 파문에 하룻밤 사이에 대응할 수 있다.**
 >
 > 슬라이드는 제도가 하룻밤 사이에 대응할 수 ==red:없다==고 말한다. 실제 시험에서도 “can” 한 단어만 바꿔 틀린 선지를 만들었다.
+>
+> **복원 메모:** “제도는 overnight에 바뀔 수 있다(can)”가 틀린 문장이었다는 것만 기억됨
 >
 > **근거:** R25 객관식 13 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
@@ -679,7 +711,7 @@ Choose the one best answer.
 
 ### 15 · 1 point
 
-**복원:** `A · 원문` (족보에는 “NORA의 정의를 묻는 문제”로 기록됨)
+**복원:** `A · 원문`
 
 > [!QUIZ]
 > ________ is a new data analysis technology that finds hidden connections between data in disparate sources.
@@ -712,6 +744,8 @@ Choose the one best answer.
 >
 > Nonobvious relationship awareness (NORA) takes information about people from disparate sources (watch lists, arrest records, transactions, phone records, HR systems) and finds obscure relationships, for example a casino job applicant who shares a phone number with a known criminal.
 >
+> **복원 메모:** 족보에는 “NORA의 정의를 묻는 문제”로 기록됨
+>
 > **Source:** R25 MC 14 (second item numbered 14); TB #31 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
@@ -719,11 +753,13 @@ Choose the one best answer.
 >
 > NORA(비명시적 관계 인식)는 감시 명단, 체포 기록, 거래, 통화 기록, 인사 시스템 같은 서로 다른 출처의 개인 정보에서 잘 드러나지 않는 관계를 찾는다. 예를 들어 카지노 지원자가 알려진 범죄자와 전화번호를 공유한다는 사실을 찾아낸다.
 >
+> **복원 메모:** 족보에는 “NORA의 정의를 묻는 문제”로 기록됨
+>
 > **근거:** R25 객관식 14(두 번째 14번); TB #31 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 ### 16 · 1 point
 
-**복원:** `C · 재구성` (“liability의 정의를 묻는 문제”로만 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Which concept extends responsibility into the area of law, so that individuals can recover damages done to them by other actors, systems, or organizations?
@@ -756,6 +792,8 @@ Choose the one best answer.
 >
 > Responsibility = accepting the costs, duties, and obligations of decisions. Accountability = mechanisms to determine who took action and who is responsible. Liability = responsibility extended to laws, so damages can be recovered. Due process = laws are known and understood, with the ability to appeal to higher authorities.
 >
+> **복원 메모:** “liability의 정의를 묻는 문제”로만 기억됨
+>
 > **Source:** R25 MC 15 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
@@ -763,11 +801,13 @@ Choose the one best answer.
 >
 > Responsibility = 결정에 따르는 비용·의무를 받아들이는 것. Accountability = 누가 행동했고 누가 책임지는지 가려내는 메커니즘. Liability = 책임을 법으로 확장해 피해를 배상받을 수 있게 하는 것. Due process = 법이 알려져 있고 상급 기관에 이의를 제기할 수 있는 절차.
 >
+> **복원 메모:** “liability의 정의를 묻는 문제”로만 기억됨
+>
 > **근거:** R25 객관식 15 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 ### 17 · 1 point
 
-**복원:** `C · 재구성` (“윤리 원칙 중 옳은 것 고르기, 정답 slippery slope rule”로 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Which of the following correctly matches an ethical principle with its description?
@@ -800,12 +840,16 @@ Choose the one best answer.
 >
 > A and B swap the Golden Rule and Kant's Categorical Imperative; D and E swap the Utilitarian Principle and Risk Aversion. The slippery slope rule is also called Descartes' rule of change. Kant's rule spans the whole population, while the rule of change applies to one person's decisions over time.
 >
+> **복원 메모:** “윤리 원칙 중 옳은 것 고르기, 정답 slippery slope rule”로 기억됨
+>
 > **Source:** R25 MC 16 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
 > **C. 미끄러운 경사 규칙: 반복해서 할 수 없는 행동이라면 한 번도 해서는 안 된다.**
 >
 > A와 B는 황금률과 칸트의 정언명령 설명을, D와 E는 공리주의와 위험 회피 설명을 서로 바꿔 놓았다. 미끄러운 경사 규칙은 데카르트의 변화의 규칙이라고도 한다. 칸트의 원칙은 모든 사람에게 적용되고, 변화의 규칙은 한 사람이 시간에 걸쳐 내리는 결정에 적용된다.
+>
+> **복원 메모:** “윤리 원칙 중 옳은 것 고르기, 정답 slippery slope rule”로 기억됨
 >
 > **근거:** R25 객관식 16 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
@@ -855,7 +899,7 @@ Choose the one best answer.
 
 ### 19 · 1 point
 
-**복원:** `C · 재구성` (“FIP 관련 문제”로만 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Which statement about Fair Information Practices (FIP) is correct?
@@ -888,6 +932,8 @@ Choose the one best answer.
 >
 > FIP is a set of principles governing the collection and use of information, the basis of most ==red:U.S. and European== privacy laws, restated and extended by the FTC in 1998. The two core principles are ==red:notice/awareness and choice/consent==; access/participation, security, and enforcement are the others. FIP drove legislation such as COPPA, Gramm-Leach-Bliley, and HIPAA.
 >
+> **복원 메모:** “FIP 관련 문제”로만 기억됨
+>
 > **Source:** R25 MC 18 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
@@ -895,11 +941,13 @@ Choose the one best answer.
 >
 > FIP는 정보의 수집·이용을 규율하는 원칙의 집합으로, 대부분의 ==red:미국과 유럽== 개인정보 보호법의 기반이며 1998년 FTC가 재정리·확장했다. 핵심 원칙 두 가지는 ==red:고지/인식과 선택/동의==이고, 접근/참여, 보안, 집행이 나머지다. COPPA, Gramm-Leach-Bliley법, HIPAA 같은 입법을 이끌었다.
 >
+> **복원 메모:** “FIP 관련 문제”로만 기억됨
+>
 > **근거:** R25 객관식 18 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 ### 20 · 1 point
 
-**복원:** `C · 재구성` (“GDPR 관련 문제”로만 기억됨. 옳은 것/틀린 것 중 무엇을 물었는지 모름)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Which statement about the EU General Data Protection Regulation (GDPR) is NOT correct?
@@ -932,6 +980,8 @@ Choose the one best answer.
 >
 > GDPR says the opposite: EU nations ==red:cannot== transfer personal data to countries without similar protection, and privacy shield agreements require every country processing EU data to conform to GDPR. The lecture slide words the fine as "4% of global daily revenue"; the regulation itself uses annual worldwide turnover, but expect the slide wording on the exam.
 >
+> **복원 메모:** “GDPR 관련 문제”로만 기억됨. 옳은 것/틀린 것 중 무엇을 물었는지 모름
+>
 > **Source:** R25 MC 19 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
@@ -939,11 +989,13 @@ Choose the one best answer.
 >
 > GDPR은 반대로 말한다. EU 회원국은 유사한 보호 수준이 없는 국가로 개인정보를 이전할 수 ==red:없고==, privacy shield 협정에 따라 EU 데이터를 처리하는 모든 국가는 GDPR을 따라야 한다. 강의 슬라이드는 과징금을 “글로벌 일일 매출의 4%”로 적었는데, 실제 규정은 연간 전 세계 매출 기준이다. 시험에는 슬라이드 문구대로 나올 가능성이 높다.
 >
+> **복원 메모:** “GDPR 관련 문제”로만 기억됨. 옳은 것/틀린 것 중 무엇을 물었는지 모름
+>
 > **근거:** R25 객관식 19 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 ### 21 · 1 point
 
-**복원:** `C · 재구성` (정답 “virtual company model의 예 = Li & Fung”만 기억됨)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Li & Fung manages the production and shipment of garments for major fashion companies but outsources all of the work to thousands of suppliers. This is an example of
@@ -976,12 +1028,16 @@ Choose the one best answer.
 >
 > A virtual company uses networks to ally with other companies to create and distribute products without being limited by traditional organizational boundaries or physical locations. It does not own factories or similar infrastructure.
 >
+> **복원 메모:** 정답 “virtual company model의 예 = Li & Fung”만 기억됨
+>
 > **Source:** R25 MC 20 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
 > **B. 가상 기업 모델**
 >
 > 가상 기업은 네트워크로 다른 기업과 제휴해, 전통적 조직 경계나 물리적 위치에 얽매이지 않고 제품을 만들고 유통한다. 공장 같은 인프라를 직접 소유하지 않는다.
+>
+> **복원 메모:** 정답 “virtual company model의 예 = Li & Fung”만 기억됨
 >
 > **근거:** R25 객관식 20 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
@@ -1031,7 +1087,7 @@ Choose the one best answer.
 
 ### 23 · 1 point
 
-**복원:** `B · 변형 재구성` (“DSS에서 틀린 것 고르기, serve senior management 선지가 틀림”으로 기억됨)
+**복원:** `B · 변형 재구성`
 
 > [!QUIZ]
 > Which statement about decision-support systems (DSS) is NOT true?
@@ -1064,6 +1120,8 @@ Choose the one best answer.
 >
 > DSS serve ==red:middle== management; ESS serve senior management (question 05). Intrawest's marketing analysis system is the data-driven DSS example.
 >
+> **복원 메모:** “DSS에서 틀린 것 고르기, serve senior management 선지가 틀림”으로 기억됨
+>
 > **Source:** R25 MC 22 · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
 
 > [!ANSWER-TRANSLATION]
@@ -1071,11 +1129,13 @@ Choose the one best answer.
 >
 > DSS는 ==red:중간관리층==을 지원하고, 최고경영층을 지원하는 것은 ESS다(05번). Intrawest의 마케팅 분석 시스템이 데이터 기반 DSS의 예다.
 >
+> **복원 메모:** “DSS에서 틀린 것 고르기, serve senior management 선지가 틀림”으로 기억됨
+>
 > **근거:** R25 객관식 22 · [Ch.2 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
 
 ### 24 · 1 point
 
-**복원:** `B · 변형 재구성` (테뱅의 technical approach 문제가 behavioral approach로 바뀌어 나옴. 선지는 테뱅 그대로 가정)
+**복원:** `B · 변형 재구성`
 
 > [!QUIZ]
 > Disciplines that contribute to the behavioral approach to information systems are
@@ -1108,12 +1168,16 @@ Choose the one best answer.
 >
 > The test bank asks about the ==red:technical== approach (answer B: operations research, management science, computer science). The 2025 exam flipped it to the ==red:behavioral== approach. The recollection's author memorized only the answer letter and got it wrong; learn both lists.
 >
+> **복원 메모:** 테뱅의 technical approach 문제가 behavioral approach로 바뀌어 나옴. 선지는 테뱅 그대로 가정
+>
 > **Source:** R25 MC 23; TB #85 · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
 > **E. 경제학, 사회학, 심리학**
 >
 > 테스트뱅크는 ==red:기술적== 접근법을 묻는다(정답 B: 운영과학, 경영과학, 컴퓨터과학). 2025 시험은 이를 ==red:행동적== 접근법으로 뒤집었다. 족보 작성자는 정답 기호만 외웠다가 틀렸으니 두 목록을 모두 외우자.
+>
+> **복원 메모:** 테뱅의 technical approach 문제가 behavioral approach로 바뀌어 나옴. 선지는 테뱅 그대로 가정
 >
 > **근거:** R25 객관식 23; TB #85 · [Ch.1 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
@@ -1125,7 +1189,7 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 
 ### 25 · 2 points
 
-**복원:** `C · 재구성` (족보 주관식 1 · 답 time/space shifting)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Digital firms benefit from globalization because they can conduct business at any time and in any place. Name these two capabilities.
@@ -1142,6 +1206,8 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > Award 1 point for each. Time shifting means business is conducted continuously (24/7), and space shifting means work takes place in a global workshop, so digital firms suit operations across remote locations and time zones.
 >
+> **복원 메모:** 족보 주관식 1 · 답 time/space shifting
+>
 > **Source:** R25 SA 1 · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
@@ -1149,11 +1215,13 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > 각 1점. 시간 이동은 사업이 24시간 계속되는 것, 공간 이동은 업무가 전 세계 작업장에서 이루어지는 것이다. 그래서 디지털 기업은 먼 지역과 서로 다른 시간대에 걸친 운영에 적합하다.
 >
+> **복원 메모:** 족보 주관식 1 · 답 time/space shifting
+>
 > **근거:** R25 주관식 1 · [Ch.1 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 ### 26 · 2 points
 
-**복원:** `C · 재구성` (족보 주관식 2 · 답 transaction cost)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > The cost of participating in markets, which a firm incurs when it buys in the marketplace what it cannot make itself, is called ________. Because IT lowers this cost, firms find it worthwhile to contract with other firms rather than grow their number of employees.
@@ -1170,6 +1238,8 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > Transaction cost theory: firms economize on transaction costs through vertical integration, hiring, or buying suppliers and distributors. IT lowers market transaction costs, which helps firms shrink and outsource. Contrast with agency costs (question 14), which are internal supervision costs.
 >
+> **복원 메모:** 족보 주관식 2 · 답 transaction cost
+>
 > **Source:** R25 SA 2 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
@@ -1177,11 +1247,13 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > 거래비용 이론: 기업은 수직 통합, 고용, 공급·유통업체 인수로 거래비용을 줄이려 한다. IT는 시장 거래비용을 낮춰 기업이 규모를 줄이고 아웃소싱할 수 있게 한다. 내부 감독 비용인 대리인 비용(14번)과 구분하자.
 >
+> **복원 메모:** 족보 주관식 2 · 답 transaction cost
+>
 > **근거:** R25 주관식 2 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 ### 27 · 2 points
 
-**복원:** `C · 재구성` (족보 주관식 3 · 답 FIP)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > ________ is a set of principles governing the collection and use of information about individuals. It is the basis of most U.S. and European privacy laws and is based on a mutuality of interest between the record holder and the individual.
@@ -1198,6 +1270,8 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > Full name or abbreviation earns full credit. FIP appeared in both the multiple-choice (question 19) and short-answer parts of the 2025 exam.
 >
+> **복원 메모:** 족보 주관식 3 · 답 FIP
+>
 > **Source:** R25 SA 3 · [Review Ch.4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 > [!ANSWER-TRANSLATION]
@@ -1205,11 +1279,13 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > 전체 이름이나 약어 모두 만점. FIP는 2025 시험에서 객관식(19번)과 주관식에 모두 나왔다.
 >
+> **복원 메모:** 족보 주관식 3 · 답 FIP
+>
 > **근거:** R25 주관식 3 · [Ch.4 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05)
 
 ### 28 · 2 points
 
-**복원:** `C · 재구성` (족보 주관식 4 · 답 business intelligence)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Data and software tools for organizing and analyzing data, used to help managers and users make improved decisions, are called ________.
@@ -1226,6 +1302,8 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > BI is the class of software behind the systems for middle and senior management: MIS, DSS, and ESS.
 >
+> **복원 메모:** 족보 주관식 4 · 답 business intelligence
+>
 > **Source:** R25 SA 4 · [Review Ch.2 A](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
 
 > [!ANSWER-TRANSLATION]
@@ -1233,11 +1311,13 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > BI는 중간·최고경영층을 위한 시스템(MIS, DSS, ESS)의 바탕이 되는 소프트웨어 부류다.
 >
+> **복원 메모:** 족보 주관식 4 · 답 business intelligence
+>
 > **근거:** R25 주관식 4 · [Ch.2 A 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02)
 
 ### 29 · 2 points
 
-**복원:** `B · 변형 재구성` (족보 주관식 5 · 2025는 sociotechnical, 2024는 satisfactory fit이 빈칸)
+**복원:** `B · 변형 재구성`
 
 > [!QUIZ]
 > In a ________ perspective on information systems, the performance of a system is optimized when both the technology and the organization mutually adjust to each other until a satisfactory fit is obtained.
@@ -1254,6 +1334,8 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > The 2024 exam blanked the other term from the same sentence: "...mutually adjust to each other until a ==red:satisfactory fit== is obtained." Be ready for either blank.
 >
+> **복원 메모:** 족보 주관식 5 · 2025는 sociotechnical, 2024는 satisfactory fit이 빈칸
+>
 > **Source:** R25 SA 5; Figure 1.10 · [Review Ch.1](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 > [!ANSWER-TRANSLATION]
@@ -1261,11 +1343,13 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > 2024 시험은 같은 문장에서 다른 단어를 빈칸으로 냈다. “...서로 조정해 ==red:satisfactory fit==에 이를 때까지.” 두 빈칸 모두 대비하자.
 >
+> **복원 메모:** 족보 주관식 5 · 2025는 sociotechnical, 2024는 satisfactory fit이 빈칸
+>
 > **근거:** R25 주관식 5; Figure 1.10 · [Ch.1 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 ### 30 · 2 points
 
-**복원:** `C · 재구성` (족보 주관식 7 · 답 disruptive technology)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > Technologies that bring sweeping change to businesses, industries, and markets, often through substitute products that perform as well as or better than existing products, are called ________.
@@ -1282,6 +1366,8 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > Examples: personal computers, smartphones, Big Data, AI, the Internet. First movers invent them; fast followers have the size and resources to capitalize on them.
 >
+> **복원 메모:** 족보 주관식 7 · 답 disruptive technology
+>
 > **Source:** R25 SA 7 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
@@ -1289,11 +1375,13 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > 예: 개인용 컴퓨터, 스마트폰, 빅데이터, AI, 인터넷. 선발주자(first mover)가 발명하고, 규모와 자원을 갖춘 빠른 추종자(fast follower)가 이를 활용한다.
 >
+> **복원 메모:** 족보 주관식 7 · 답 disruptive technology
+>
 > **근거:** R25 주관식 7 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 ### 31 · 2 points
 
-**복원:** `C · 재구성` (족보 주관식 9 · 답 conversation, “social business에서 중요한 것”)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > A key word in social business is ________. Customers, suppliers, employees, managers, and even oversight agencies continually have them about firms, and supporters argue that firms which tune in to them will strengthen their bonds with these groups.
@@ -1310,12 +1398,16 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > Social business uses internal and external social platforms to engage employees, customers, and suppliers, deepen interactions, and strengthen conversations with customers. It requires information transparency.
 >
+> **복원 메모:** 족보 주관식 9 · 답 conversation, “social business에서 중요한 것”
+>
 > **Source:** R25 SA 9 · [Review Ch.2 B](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
 > [!ANSWER-TRANSLATION]
 > **Conversations / 대화**
 >
 > 소셜 비즈니스는 사내외 소셜 플랫폼으로 직원·고객·공급업체를 참여시키고, 상호작용을 깊게 하며, 고객과의 대화를 강화한다. 정보 투명성이 전제다.
+>
+> **복원 메모:** 족보 주관식 9 · 답 conversation, “social business에서 중요한 것”
 >
 > **근거:** R25 주관식 9 · [Ch.2 B 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03)
 
@@ -1405,7 +1497,7 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 
 ### 35 · 2 points
 
-**복원:** `C · 재구성` (족보 주관식 13 · 답 business ecosystem, 문제에 Facebook, Twitter 등이 예시로 나왔음)
+**복원:** `C · 재구성`
 
 > [!QUIZ]
 > A loosely coupled but interdependent network of suppliers, distributors, outsourcing firms, transportation service firms, and technology manufacturers, which can span multiple industries, is called a(n) ________. Platforms such as Facebook and Twitter, on which many smaller firms build their own products, are examples.
@@ -1422,12 +1514,16 @@ Write the term. Recollection items 6 and 8 are missing and could not be recovere
 >
 > The keystone firm dominates the ecosystem and provides the platform; niche firms build specific value on top of it. A value web links value chains mainly within one industry, while a business ecosystem can span multiple industries.
 >
+> **복원 메모:** 족보 주관식 13 · 답 business ecosystem, 문제에 Facebook, Twitter 등이 예시로 나왔음
+>
 > **Source:** R25 SA 13 · [Review Ch.3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
 > [!ANSWER-TRANSLATION]
 > **Business ecosystem / 비즈니스 생태계**
 >
 > 키스톤 기업은 생태계를 지배하고 플랫폼을 제공하며, 니치 기업은 그 위에서 특정 가치를 만든다. 가치망(value web)은 주로 한 산업 안의 가치사슬을 연결하고, 비즈니스 생태계는 여러 산업에 걸칠 수 있다.
+>
+> **복원 메모:** 족보 주관식 13 · 답 business ecosystem, 문제에 Facebook, Twitter 등이 예시로 나왔음
 >
 > **근거:** R25 주관식 13 · [Ch.3 복습](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04)
 
