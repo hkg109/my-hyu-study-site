@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 772" role="img" aria-labelledby="cpg-08-learning-path-title cpg-08-learning-path-desc">
+  <title id="cpg-08-learning-path-title">아홉 단계 학습 경로</title>
+  <desc id="cpg-08-learning-path-desc">준비, 화면 연습, 실제 저장, 계정과 권한, 행사 묶음, 회의록 기본, 공동편집 PoC, 건의와 기수, 운영 QA의 아홉 단계를 순서대로 놓고 각 단계에서 손에 남아야 할 결과를 적은 경로 그림이며, 공동편집 PoC를 가장 큰 기술 위험으로 강조했다.</desc>
+  <defs><marker id="cpg-08-learning-path-a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker><marker id="cpg-08-learning-path-m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.outside{fill:#f7f6f2;stroke:#65645e;stroke-width:1.5;stroke-dasharray:6 4}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#cpg-08-learning-path-a)}.dash{stroke:#65645e;stroke-width:1.8;fill:none;stroke-dasharray:7 5;marker-end:url(#cpg-08-learning-path-m)}.line{stroke:#1d1d1a;stroke-width:2;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.boundary{stroke:#65645e;stroke-width:1.5;fill:none;stroke-dasharray:8 6}.mask{fill:#f7f6f2;stroke:none}.tag{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e;letter-spacing:.02em}.title{font:700 23px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle{font:400 14.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.body{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.code{font:500 14px 'D2Coding','JetBrains Mono','Consolas',monospace;fill:#1d1d1a}.small{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.lab{font:700 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.inv{fill:#f7f6f2}.big{font:800 22px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}</style>
+  <rect class="bg" width="560" height="772"/>
+  <text class="tag" x="24" y="40">8편 · 완성 경로</text><text class="title" x="24" y="74">아홉 단계 학습 경로</text><text class="subtitle" x="24" y="104">앞 단계의 결과물이 다음 단계의 출발점이 된다.</text><line class="rule" x1="24" y1="130" x2="536" y2="130"/>
+  <path class="line" d="M52 176 V656"/>
+  <circle class="node" cx="52" cy="176" r="14"/>
+  <text class="lab" x="52" y="181" text-anchor="middle">1</text>
+  <rect class="zone" x="80" y="152" width="456" height="48" rx="6"/><text class="body" x="96" y="181.0">준비 — README · 첫 Issue·PR · 흐름 그림</text>
+  <circle class="node" cx="52" cy="236" r="14"/>
+  <text class="lab" x="52" y="241" text-anchor="middle">2</text>
+  <rect class="zone" x="80" y="212" width="456" height="48" rx="6"/><text class="body" x="96" y="241.0">화면 연습 — 가짜 Task 목록 · 상태별 화면</text>
+  <circle class="node" cx="52" cy="296" r="14"/>
+  <text class="lab" x="52" y="301" text-anchor="middle">3</text>
+  <rect class="node" x="80" y="272" width="456" height="48" rx="6"/><text class="body" x="96" y="301.0">실제 저장 — Task 생성·조회 · 새로고침 후 유지</text>
+  <circle class="node" cx="52" cy="356" r="14"/>
+  <text class="lab" x="52" y="361" text-anchor="middle">4</text>
+  <rect class="node" x="80" y="332" width="456" height="48" rx="6"/><text class="body" x="96" y="361.0">계정·권한 — Allowlist · RLS · 거부 계정 확인</text>
+  <circle class="node" cx="52" cy="416" r="14"/>
+  <text class="lab" x="52" y="421" text-anchor="middle">5</text>
+  <rect class="node" x="80" y="392" width="456" height="48" rx="6"/><text class="body" x="96" y="421.0">행사 묶음 — Event ACL · 자료 · 일정 · 인수인계</text>
+  <circle class="node" cx="52" cy="476" r="14"/>
+  <text class="lab" x="52" y="481" text-anchor="middle">6</text>
+  <rect class="node" x="80" y="452" width="456" height="48" rx="6"/><text class="body" x="96" y="481.0">회의록 기본 — 단일 사용자 저장 · 상태 · Template</text>
+  <circle class="focal" cx="52" cy="536" r="14"/>
+  <text class="lab inv" x="52" y="541" text-anchor="middle">7</text>
+  <rect class="focal" x="80" y="512" width="456" height="48" rx="6"/><text class="body inv" x="96" y="541.0">공동편집 PoC — 두 사람 동시 편집 · 실패 복구</text>
+  <circle class="node" cx="52" cy="596" r="14"/>
+  <text class="lab" x="52" y="601" text-anchor="middle">8</text>
+  <rect class="node" x="80" y="572" width="456" height="48" rx="6"/><text class="body" x="96" y="601.0">건의·기수 — 신원 분리 · Term 전환 · Grant</text>
+  <circle class="node" cx="52" cy="656" r="14"/>
+  <text class="lab" x="52" y="661" text-anchor="middle">9</text>
+  <rect class="node" x="80" y="632" width="456" height="48" rx="6"/><text class="body" x="96" y="661.0">운영 QA — E2E · 접근성 · 백업 복구 · 점검표</text>
+  <text class="small" x="280" y="708" text-anchor="middle">기간 약속이 아니다 · 다음 단계 기준을 통과하면 넘어간다</text>
+  <rect class="zone" x="24" y="736" width="22" height="16" rx="3"/><text class="small" x="54" y="749">가짜 데이터 연습</text><rect class="node" x="176.71" y="736" width="22" height="16" rx="3"/><text class="small" x="206.71" y="749">실제 기능</text><rect class="focal" x="285.68" y="736" width="22" height="16" rx="3"/><text class="small" x="315.68" y="749">가장 큰 기술 위험</text>
+</svg>

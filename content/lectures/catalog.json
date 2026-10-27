@@ -85,7 +85,7 @@
     },
     {
       "id": "grade-mukhnzii",
-      "name": "과외",
+      "name": "기타",
       "order": 4,
       "semesters": [
         {
@@ -96,6 +96,18 @@
             {
               "id": "subject-mukhs13h",
               "name": "1-2 과학",
+              "order": 1
+            }
+          ]
+        },
+        {
+          "id": "semester-mvqkxuc0",
+          "name": "학생회-프로젝트",
+          "order": 2,
+          "subjects": [
+            {
+              "id": "subject-council-guide",
+              "name": "운영 플랫폼 학습 가이드",
               "order": 1
             }
           ]

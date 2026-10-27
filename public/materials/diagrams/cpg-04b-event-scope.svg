@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 716" role="img" aria-labelledby="cpg-04b-event-scope-title cpg-04b-event-scope-desc">
+  <title id="cpg-04b-event-scope-title">하위 자료는 교집합만 본다</title>
+  <desc id="cpg-04b-event-scope-desc">Event 열람자 원과 Task ACL 대상 원이 겹치는 부분만 Task를 실제로 볼 수 있으며, Task ACL에만 있고 Event를 볼 수 없는 사람은 Task도 볼 수 없다는 교집합 그림.</desc>
+  <defs><marker id="cpg-04b-event-scope-a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker><marker id="cpg-04b-event-scope-m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.outside{fill:#f7f6f2;stroke:#65645e;stroke-width:1.5;stroke-dasharray:6 4}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#cpg-04b-event-scope-a)}.dash{stroke:#65645e;stroke-width:1.8;fill:none;stroke-dasharray:7 5;marker-end:url(#cpg-04b-event-scope-m)}.line{stroke:#1d1d1a;stroke-width:2;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.boundary{stroke:#65645e;stroke-width:1.5;fill:none;stroke-dasharray:8 6}.mask{fill:#f7f6f2;stroke:none}.tag{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e;letter-spacing:.02em}.title{font:700 23px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle{font:400 14.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.body{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.code{font:500 14px 'D2Coding','JetBrains Mono','Consolas',monospace;fill:#1d1d1a}.small{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.lab{font:700 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.inv{fill:#f7f6f2}.big{font:800 22px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}</style>
+  <rect class="bg" width="560" height="716"/>
+  <text class="tag" x="24" y="40">4편 · 공개 모드와 상속</text><text class="title" x="24" y="74">하위 자료는 교집합만 본다</text><text class="subtitle" x="24" y="104">유효 열람자 = Event 열람자 ∩ Task·Meeting 열람자</text><line class="rule" x1="24" y1="130" x2="536" y2="130"/>
+  <defs><clipPath id="cpg-04b-event-scope-clip"><circle cx="208" cy="330" r="148"/></clipPath></defs>
+  <circle class="zone" cx="208" cy="330" r="148"/><circle class="zone" cx="352" cy="330" r="148" style="fill-opacity:.55"/>
+  <circle class="deep" cx="352" cy="330" r="148" clip-path="url(#cpg-04b-event-scope-clip)"/>
+  <circle cx="208" cy="330" r="148" class="soft"/><circle cx="352" cy="330" r="148" class="soft"/>
+  <text class="name" x="132" y="300" text-anchor="middle">Event</text>
+  <text class="name" x="132" y="322" text-anchor="middle">열람자</text>
+  <text class="small" x="132" y="348" text-anchor="middle">재무국 등</text>
+  <text class="name" x="428" y="300" text-anchor="middle">Task ACL</text>
+  <text class="name" x="428" y="322" text-anchor="middle">대상</text>
+  <text class="small" x="428" y="348" text-anchor="middle">홍보국원 B</text>
+  <text class="lab" x="280" y="312" text-anchor="middle">Task를</text>
+  <text class="lab" x="280" y="332" text-anchor="middle">실제로</text>
+  <text class="lab" x="280" y="352" text-anchor="middle">보는 사람</text>
+  <rect class="outside" x="24" y="500" width="512" height="96" rx="6"/><text class="name" x="280" y="532.5" text-anchor="middle">B는 Task ACL에만 있다 → Task도 못 본다</text><text class="body" x="280" y="554.0" text-anchor="middle">그래서 v0.7은 처음부터 Event 열람자 중에서만</text><text class="body" x="280" y="575.0" text-anchor="middle">담당자·편집자·ACL 대상을 고르게 한다</text>
+  <text class="small" x="280" y="632" text-anchor="middle">Resource · Schedule · Handover는 Event 범위를 그대로 따르고</text>
+  <text class="small" x="280" y="654" text-anchor="middle">Task · Meeting은 그 안에서 더 좁힐 수만 있다</text>
+  <rect class="deep" x="24" y="680" width="22" height="16" rx="3"/><text class="small" x="54" y="693">유효 열람자</text><rect class="zone" x="146.2" y="680" width="22" height="16" rx="3"/><text class="small" x="176.2" y="693">각 규칙의 대상</text><rect class="outside" x="285.68" y="680" width="22" height="16" rx="3"/><text class="small" x="315.68" y="693">막아야 할 지정</text>
+</svg>

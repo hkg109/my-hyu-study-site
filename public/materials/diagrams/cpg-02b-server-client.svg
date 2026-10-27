@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 800" role="img" aria-labelledby="cpg-02b-server-client-title cpg-02b-server-client-desc">
+  <title id="cpg-02b-server-client-title">브라우저와 서버의 경계</title>
+  <desc id="cpg-02b-server-client-desc">위쪽 브라우저 영역의 Client Component와 아래쪽 서버 영역의 Server Component, Server Action, 그리고 RLS가 걸린 Supabase DB를 놓고, 브라우저로 넘어간 값은 사용자에게 보이므로 비밀 키는 서버에만 둔다는 점을 경계선으로 표시한 그림.</desc>
+  <defs><marker id="cpg-02b-server-client-a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker><marker id="cpg-02b-server-client-m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.outside{fill:#f7f6f2;stroke:#65645e;stroke-width:1.5;stroke-dasharray:6 4}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#cpg-02b-server-client-a)}.dash{stroke:#65645e;stroke-width:1.8;fill:none;stroke-dasharray:7 5;marker-end:url(#cpg-02b-server-client-m)}.line{stroke:#1d1d1a;stroke-width:2;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.boundary{stroke:#65645e;stroke-width:1.5;fill:none;stroke-dasharray:8 6}.mask{fill:#f7f6f2;stroke:none}.tag{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e;letter-spacing:.02em}.title{font:700 23px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle{font:400 14.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.body{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.code{font:500 14px 'D2Coding','JetBrains Mono','Consolas',monospace;fill:#1d1d1a}.small{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.lab{font:700 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.inv{fill:#f7f6f2}.big{font:800 22px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}</style>
+  <rect class="bg" width="560" height="800"/>
+  <text class="tag" x="24" y="40">2편 · React와 Next.js</text><text class="title" x="24" y="74">브라우저와 서버의 경계</text><text class="subtitle" x="24" y="104">경계 위로 올라간 값은 사용자가 볼 수 있다.</text><text class="subtitle" x="24" y="124">브라우저의 검사는 편의, 서버·DB의 검사는 보안이다.</text><line class="rule" x1="24" y1="150" x2="536" y2="150"/>
+  <rect class="zone" x="24" y="166" width="512" height="144" rx="6"/>
+  <text class="small" x="40" y="192">브라우저 · 사용자 컴퓨터</text>
+  <path class="boundary" d="M24 338 H536"/>
+  <text class="small" x="280" y="330" text-anchor="middle">네트워크 경계</text>
+  <rect class="zone" x="24" y="362" width="512" height="236" rx="6"/>
+  <text class="small" x="40" y="388">서버 · Next.js (Vercel)</text>
+  <path class="flow" d="M152 404 V292"/>
+  <rect class="mask" x="160.0" y="337" width="93.7" height="21" rx="4"/><text class="lab" x="166" y="352">HTML·데이터</text>
+  <path class="flow" d="M408 292 V404"/>
+  <rect class="mask" x="416.0" y="337" width="55.7" height="21" rx="4"/><text class="lab" x="422" y="352">폼 제출</text>
+  <path class="flow" d="M152 492 V612"/>
+  <path class="flow" d="M408 492 V612"/>
+  <rect class="node" x="40" y="204" width="480" height="88" rx="6"/><text class="name" x="280" y="233.5" text-anchor="middle">Client Component</text><text class="body" x="280" y="255.0" text-anchor="middle">버튼·입력·편집기처럼 즉시 반응하는 화면</text><text class="small" x="280" y="274.6" text-anchor="middle">공개해도 되는 값만 둔다</text>
+  <rect class="node" x="40" y="404" width="224" height="88" rx="6"/><text class="name" x="152" y="432.5" text-anchor="middle">Server Component</text><text class="body" x="152" y="454.0" text-anchor="middle">서버에서 데이터를</text><text class="body" x="152" y="475.0" text-anchor="middle">준비해 화면 전달</text>
+  <rect class="focal" x="296" y="404" width="224" height="88" rx="6"/><text class="name inv" x="408" y="432.5" text-anchor="middle">Server Action</text><text class="body inv" x="408" y="454.0" text-anchor="middle">폼 제출 처리</text><text class="body inv" x="408" y="475.0" text-anchor="middle">값을 다시 검증</text>
+  <rect class="mask" x="99.6" y="541" width="360.8" height="21" rx="4"/><text class="lab" x="280" y="556" text-anchor="middle">비밀 키 · Service Role Key · OAuth secret은 여기에만</text>
+  <rect class="deep" x="24" y="612" width="512" height="72" rx="6"/><text class="name" x="280" y="643.0" text-anchor="middle">Supabase DB</text><text class="body" x="280" y="664.5" text-anchor="middle">RLS가 행마다 한 번 더 검사</text>
+  <text class="small" x="280" y="724" text-anchor="middle">TypeScript가 오류를 잡아도 사용자가 보낸 값은 서버에서 다시 검증</text>
+  <rect class="focal" x="24" y="756" width="22" height="16" rx="3"/><text class="small" x="54" y="769">서버 검증 지점</text><rect class="zone" x="163.48000000000002" y="756" width="22" height="16" rx="3"/><text class="small" x="193.48000000000002" y="769">실행 위치</text><rect class="deep" x="272.45000000000005" y="756" width="22" height="16" rx="3"/><text class="small" x="302.45000000000005" y="769">저장소</text>
+</svg>

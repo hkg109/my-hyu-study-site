@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 956" role="img" aria-labelledby="cpg-00-course-map-title cpg-00-course-map-desc">
+  <title id="cpg-00-course-map-title">학습 가이드 전체 지도</title>
+  <desc id="cpg-00-course-map-desc">서비스 이해, 개발 기초, 기능 적용, 완성 경로의 네 부분과 각 부분에 속한 1편부터 9편까지의 강의를 위에서 아래로 놓은 지도.</desc>
+  <defs><marker id="cpg-00-course-map-a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker><marker id="cpg-00-course-map-m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.outside{fill:#f7f6f2;stroke:#65645e;stroke-width:1.5;stroke-dasharray:6 4}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#cpg-00-course-map-a)}.dash{stroke:#65645e;stroke-width:1.8;fill:none;stroke-dasharray:7 5;marker-end:url(#cpg-00-course-map-m)}.line{stroke:#1d1d1a;stroke-width:2;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.boundary{stroke:#65645e;stroke-width:1.5;fill:none;stroke-dasharray:8 6}.mask{fill:#f7f6f2;stroke:none}.tag{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e;letter-spacing:.02em}.title{font:700 23px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle{font:400 14.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.body{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.code{font:500 14px 'D2Coding','JetBrains Mono','Consolas',monospace;fill:#1d1d1a}.small{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.lab{font:700 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.inv{fill:#f7f6f2}.big{font:800 22px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}</style>
+  <rect class="bg" width="560" height="956"/>
+  <text class="tag" x="24" y="40">0편 · 길잡이</text><text class="title" x="24" y="74">학습 가이드 전체 지도</text><text class="subtitle" x="24" y="104">무엇을 만들지 → 무엇을 알아야 하는지 → 기능에 어떻게</text><text class="subtitle" x="24" y="124">붙이는지 → 어떤 순서로 완성하는지</text><line class="rule" x1="24" y1="150" x2="536" y2="150"/>
+  <rect class="zone" x="24" y="168" width="512" height="92" rx="6"/>
+  <text class="small" x="40" y="194">1부 · 서비스 이해</text>
+  <rect class="focal" x="40" y="206" width="480" height="42" rx="6"/>
+  <text class="name inv" x="58" y="233">1편</text>
+  <text class="body inv" x="112" y="233">서비스 전체 그림과 요청 흐름</text>
+  <path class="flow" d="M280 260 V292"/>
+  <rect class="zone" x="24" y="292" width="512" height="248" rx="6"/>
+  <text class="small" x="40" y="318">2부 · 개발 기초</text>
+  <rect class="node" x="40" y="330" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="357">2편</text>
+  <text class="body" x="112" y="357">Git 협업과 화면 기술</text>
+  <rect class="node" x="40" y="382" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="409">3편</text>
+  <text class="body" x="112" y="409">데이터베이스와 로그인</text>
+  <rect class="node" x="40" y="434" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="461">4편</text>
+  <text class="body" x="112" y="461">권한과 민감 정보</text>
+  <rect class="node" x="40" y="486" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="513">5편</text>
+  <text class="body" x="112" y="513">실시간 공동편집과 운영</text>
+  <path class="flow" d="M280 540 V572"/>
+  <rect class="zone" x="24" y="572" width="512" height="144" rx="6"/>
+  <text class="small" x="40" y="598">3부 · 기능 적용</text>
+  <rect class="node" x="40" y="610" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="637">6편</text>
+  <text class="body" x="112" y="637">조직·업무·행사</text>
+  <rect class="node" x="40" y="662" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="689">7편</text>
+  <text class="body" x="112" y="689">회의록·건의·기수 전환</text>
+  <path class="flow" d="M280 716 V748"/>
+  <rect class="zone" x="24" y="748" width="512" height="144" rx="6"/>
+  <text class="small" x="40" y="774">4부 · 완성 경로</text>
+  <rect class="node" x="40" y="786" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="813">8편</text>
+  <text class="body" x="112" y="813">실습 경로·협업·배포 점검</text>
+  <rect class="node" x="40" y="838" width="480" height="42" rx="6"/>
+  <text class="name" x="58" y="865">9편</text>
+  <text class="body" x="112" y="865">용어 사전과 공식 자료</text>
+  <rect class="focal" x="24" y="920" width="22" height="16" rx="3"/><text class="small" x="54" y="933">여기서 시작</text><rect class="zone" x="146.2" y="920" width="22" height="16" rx="3"/><text class="small" x="176.2" y="933">부(part) 묶음</text><rect class="node" x="286.49" y="920" width="22" height="16" rx="3"/><text class="small" x="316.49" y="933">강의 한 편</text>
+</svg>

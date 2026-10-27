@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1028" role="img" aria-labelledby="cpg-03a-erd-title cpg-03a-erd-desc">
+  <title id="cpg-03a-erd-title">핵심 테이블의 관계</title>
+  <desc id="cpg-03a-erd-desc">전역 테이블인 profiles, dashboard_links, activity_logs 아래에 terms를 두고, terms에 속하는 부서·직책, 승인 명단과 Membership, events, tasks, meeting_minutes, schedules와 handovers, suggestions, term_archive_access를 가지처럼 연결한 데이터 모델 그림.</desc>
+  <defs><marker id="cpg-03a-erd-a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker><marker id="cpg-03a-erd-m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.outside{fill:#f7f6f2;stroke:#65645e;stroke-width:1.5;stroke-dasharray:6 4}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#cpg-03a-erd-a)}.dash{stroke:#65645e;stroke-width:1.8;fill:none;stroke-dasharray:7 5;marker-end:url(#cpg-03a-erd-m)}.line{stroke:#1d1d1a;stroke-width:2;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.boundary{stroke:#65645e;stroke-width:1.5;fill:none;stroke-dasharray:8 6}.mask{fill:#f7f6f2;stroke:none}.tag{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e;letter-spacing:.02em}.title{font:700 23px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle{font:400 14.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.body{font:400 15px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.code{font:500 14px 'D2Coding','JetBrains Mono','Consolas',monospace;fill:#1d1d1a}.small{font:600 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#65645e}.lab{font:700 13.5px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}.inv{fill:#f7f6f2}.big{font:800 22px 'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;fill:#1d1d1a}</style>
+  <rect class="bg" width="560" height="1028"/>
+  <text class="tag" x="24" y="40">3편 · 데이터베이스</text><text class="title" x="24" y="74">핵심 테이블의 관계</text><text class="subtitle" x="24" y="104">거의 모든 내부 기록은 어느 기수(Term)의 것인지 안다.</text><text class="subtitle" x="24" y="124">이름 대신 ID로 다른 기록을 가리킨다.</text><line class="rule" x1="24" y1="150" x2="536" y2="150"/>
+  <rect class="zone" x="24" y="152" width="512" height="112" rx="6"/>
+  <text class="small" x="40" y="176">전역 (Term에 속하지 않음)</text>
+  <rect class="node" x="40" y="188" width="232" height="60" rx="6"/><text class="code" x="156" y="213.5" text-anchor="middle">profiles</text><text class="small" x="156" y="233.1" text-anchor="middle">= auth.users.id</text>
+  <rect class="node" x="288" y="188" width="232" height="60" rx="6"/><text class="code" x="404" y="212.5" text-anchor="middle">dashboard_links</text><text class="code" x="404" y="233.5" text-anchor="middle">activity_logs</text>
+  <path class="line" d="M60 356 V880"/>
+  <path class="flow" d="M60 404 H92"/>
+  <rect class="node" x="92" y="376" width="444" height="56" rx="6"/><text class="code" x="108" y="399.5">departments · positions</text><text class="small" x="108" y="419.1">Term마다 새로 만드는 부서와 표시 직책</text>
+  <path class="flow" d="M60 472 H92"/>
+  <rect class="node" x="92" y="444" width="444" height="56" rx="6"/><text class="code" x="108" y="467.5">approved_council_accounts → memberships</text><text class="small" x="108" y="487.1">승인 행이 첫 로그인 때 Membership이 된다</text>
+  <path class="flow" d="M60 540 H92"/>
+  <rect class="node" x="92" y="512" width="444" height="56" rx="6"/><text class="code" x="108" y="535.5">events</text><text class="small" x="108" y="555.1">event_access_rules · event_resources</text>
+  <path class="flow" d="M60 608 H92"/>
+  <rect class="node" x="92" y="580" width="444" height="56" rx="6"/><text class="code" x="108" y="603.5">tasks (event_id 선택)</text><text class="small" x="108" y="623.1">task_access_rules</text>
+  <path class="flow" d="M60 676 H92"/>
+  <rect class="node" x="92" y="648" width="444" height="56" rx="6"/><text class="code" x="108" y="671.5">meeting_minutes (event_id 선택)</text><text class="small" x="108" y="691.1">access_rules · editors · crdt_updates · snapshots</text>
+  <path class="flow" d="M60 744 H92"/>
+  <rect class="node" x="92" y="716" width="444" height="56" rx="6"/><text class="code" x="108" y="739.5">schedules · handovers (event_id 선택)</text><text class="small" x="108" y="759.1">일정과 인수인계</text>
+  <path class="flow" d="M60 812 H92"/>
+  <rect class="deep" x="92" y="784" width="444" height="56" rx="6"/><text class="code" x="108" y="807.5">suggestions</text><text class="small" x="108" y="827.1">suggestion_authors · suggestion_messages</text>
+  <path class="flow" d="M60 880 H92"/>
+  <rect class="node" x="92" y="852" width="444" height="56" rx="6"/><text class="code" x="108" y="875.5">term_archive_access</text><text class="small" x="108" y="895.1">과거 Term을 읽게 해 주는 Grant</text>
+  <rect class="focal" x="24" y="300" width="512" height="56" rx="6"/><text class="name inv" x="280" y="324.0" text-anchor="middle">terms · 학생회 기수</text><text class="small inv" x="280" y="344.1" text-anchor="middle">DRAFT · ACTIVE · CLOSED — ACTIVE는 하나</text>
+  <text class="small" x="280" y="940" text-anchor="middle">업무·회의록·일정은 Term에 직접 속하고 Event 연결은 선택</text>
+  <text class="small" x="280" y="962" text-anchor="middle">event_id가 있으면 Event와 같은 Term이어야 한다</text>
+  <rect class="focal" x="24" y="990" width="22" height="16" rx="3"/><text class="small" x="54" y="1003">모든 기록의 기준</text><rect class="deep" x="176.71" y="990" width="22" height="16" rx="3"/><text class="small" x="206.71" y="1003">신원을 분리한 테이블</text><rect class="node" x="355.88" y="990" width="22" height="16" rx="3"/><text class="small" x="385.88" y="1003">테이블 묶음</text>
+</svg>
