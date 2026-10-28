@@ -35,7 +35,8 @@ JavaScript를 **처음부터 쓰는 법**보다 **남이 쓴 코드를 읽는 �
 | 10 | 배열 메서드 | React 화면 코드의 핵심 |
 | 11–12 | 구조 분해·전개·빈 값 처리 | 짧게 꺼내고, 안전하게 꺼낸다 |
 | 13–14 | 모듈·비동기 | 파일을 나누고, DB를 기다린다 |
-| 15 | 직접 해보기 | 배운 문법을 섞어 쓴다 |
+| 15 | 실제 코드 읽기 | 이 사이트의 강의 카드 파일 |
+| 16 | 직접 해보기 | 배운 문법을 섞어 쓴다 |
 
 ---
 
@@ -1094,7 +1095,105 @@ const [tasksResult, membersResult] = await Promise.all([
 
 ---
 
-## 15. 직접 해보기
+## 15. 실제 코드 읽기 — 이 사이트의 강의 카드
+
+지금 보고 있는 이 사이트도 JavaScript(정확히는 TypeScript)로 만들었습니다. 강의 목록에 보이는 **강의 카드** 하나를 그리는 실제 파일 `components/lecture/LectureCard.tsx`를 읽어 봅니다. 원래 파일은 줄을 길게 붙여 썼는데, 읽기 쉽게 줄만 나눴습니다.
+
+```tsx
+"use client";
+
+import Link from "next/link";
+import { ArrowUpRight, Check } from "lucide-react";
+import type { LectureMeta } from "@/types/content";
+import { useProgress } from "./ProgressProvider";
+
+export function LectureCard({ lecture, showDescription = true }: { lecture: LectureMeta; showDescription?: boolean }) {
+  const { progress } = useProgress();
+  const complete = lecture.kind === "lectures" && progress[lecture.slug.join("/")];
+
+  return (
+    <Link href={lecture.path} className={`lecture-card ${showDescription ? "" : "compact"}`}>
+      <div className="card-meta">
+        <span>{String(lecture.order).padStart(2, "0")}</span>
+        <span>
+          {complete
+            ? <span className="completed"><Check size={14} />완료</span>
+            : lecture.kind === "practice" ? "족보" : "강의"}
+        </span>
+      </div>
+      <div className="card-title"><h3>{lecture.title}</h3><ArrowUpRight size={19} /></div>
+      {showDescription && <p>{lecture.description}</p>}
+      <div className="tag-list">{lecture.tags?.slice(0, 3).map(tag => <span key={tag}>#{tag}</span>)}</div>
+    </Link>
+  );
+}
+```
+
+처음 보면 복잡하지만, `<div>`처럼 꺾쇠로 된 부분(JSX, 02-1편)과 `: LectureMeta` 같은 타입(01-4편)을 빼고 나면 **이 편에서 배운 문법만** 남습니다. 카드에 들어가는 `lecture` 객체는 예를 들면 이런 모양입니다.
+
+```js
+const lecture = {
+  title: "01-3 · JavaScript 읽기",
+  description: "코드 한 줄을 읽는 기본 규칙부터 …",
+  order: 3,
+  kind: "lectures",
+  path: "/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-03",
+  slug: ["grade-mukhnzii", "semester-mvqkxuc0", "subject-cp-01-web", "lecture-03"],
+  tags: ["JavaScript", "자료형", "함수", "배열", "객체", "반복문"],
+};
+```
+
+### 15-1. 한 줄씩 읽기
+
+| 코드 | 이 편의 어느 문법 | 읽는 법 |
+| --- | --- | --- |
+| `import Link from "next/link"` | 13절 default 가져오기 | next/link의 대표 기능을 Link라는 이름으로 |
+| `import { ArrowUpRight, Check } from "lucide-react"` | 13절 이름 있는 가져오기 | 아이콘 라이브러리에서 아이콘 두 개를 이름 그대로 |
+| `import { useProgress } from "./ProgressProvider"` | 13절 상대 경로 | 같은 폴더의 ProgressProvider 파일에서 |
+| `export function LectureCard(...)` | 7절 함수, 13절 export | 다른 파일에서 쓸 수 있게 내보내는 함수 |
+| `{ lecture, showDescription = true }` | 11-3절 매개변수 구조 분해, 7-2절 기본값 | 객체 하나를 받아 두 값을 꺼낸다. showDescription이 없으면 true |
+| `const { progress } = useProgress();` | 11-1절 객체 구조 분해 | 함수가 돌려준 객체에서 progress만 꺼낸다 |
+| `lecture.kind === "lectures" && progress[...]` | 3-4절 `&&`, 5-1절 대괄호 꺼내기 | 강의일 때만 완료 기록을 확인한다 |
+| `lecture.slug.join("/")` | 6절 `join` | 배열을 `/`로 이어 붙인 글자 하나로 |
+| `` `lecture-card ${showDescription ? "" : "compact"}` `` | 4-1절 템플릿 문자열, 8-3절 삼항 | 설명을 숨기면 `"lecture-card compact"` |
+| `String(lecture.order).padStart(2, "0")` | 1절 자료형 바꾸기, 4-2절 문자열 메서드 | 숫자 3을 글자 `"3"`으로 바꾼 뒤 두 자리로 → `"03"` |
+| `complete ? … : lecture.kind === "practice" ? "족보" : "강의"` | 8-3절 삼항 두 번 | 완료면 "완료", 아니면 족보인지 보고 "족보" 또는 "강의" |
+| `showDescription && <p>…</p>` | 3-4절 `&&` | showDescription이 참일 때만 설명을 보여 준다 |
+| `lecture.tags?.slice(0, 3)` | 12절 `?.`, 4-2절 `slice` | tags가 없으면 멈추고, 있으면 앞에서 3개만 |
+| `.map(tag => …)` | 10절 `map`, 7-3절 괄호 없는 화살표 함수 | 태그 하나하나를 `#태그` 모양으로 바꾼다 |
+
+### 15-2. 가장 헷갈리는 줄 펼쳐 보기
+
+```js
+const complete = lecture.kind === "lectures" && progress[lecture.slug.join("/")];
+```
+
+안쪽부터 차례로 계산합니다.
+
+| 단계 | 계산 | 결과 |
+| --- | --- | --- |
+| 1 | `lecture.slug.join("/")` | `"grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-03"` |
+| 2 | `progress["grade-mukhnzii/…/lecture-03"]` | 이 강의를 완료로 표시했으면 `true`, 표시한 적이 없으면 `undefined`, 완료를 취소했으면 `false` |
+| 3 | `lecture.kind === "lectures"` | `true` |
+| 4 | `true && (2의 결과)` | 왼쪽이 참이므로 오른쪽 값이 그대로 결과 |
+
+`progress`는 "강의 주소 → 완료 여부"를 담은 객체입니다. 예를 들면 `{ "grade-mukhnzii/…/lecture-03": true }` 같은 모양입니다. 강의 페이지에서 완료 버튼을 누르면 이 객체가 브라우저에 저장됩니다. 키에 `/`가 들어 있어서 점 표기법으로는 꺼낼 수 없으므로 대괄호를 씁니다(5-1절).
+
+> [!NOTE]
+> `&&`는 결과로 true/false만 돌려주는 것이 아닙니다. **왼쪽이 거짓으로 취급되면 왼쪽 값을, 참이면 오른쪽 값을** 돌려줍니다. 그래서 족보 카드(`kind`가 `"practice"`)는 `complete`가 `false`가 되고, 오른쪽의 완료 기록은 아예 확인하지 않습니다.
+
+> [!CHECK]
+> `lecture.order`가 `12`이고 `lecture.tags`가 없는(undefined) 족보 카드라면 다음 세 값은 각각 무엇일까요?
+>
+> 1. `String(lecture.order).padStart(2, "0")`
+> 2. `lecture.tags?.slice(0, 3)`
+> 3. 두 번째 `<span>`에 보이는 글자
+>
+> 정답: 1. `"12"`. 이미 두 자리라 앞에 0을 붙이지 않습니다. 2. `undefined`. `?.`에서 멈추므로 오류 없이 태그 목록이 비어 보입니다. 3. `"족보"`. `complete`가 false이고 `kind`가 `"practice"`이기 때문입니다.
+
+---
+
+## 16. 직접 해보기
 
 Console에 6-2절의 `tasks` 배열을 붙여 넣고 다음을 한 줄로 써 봅니다.
 

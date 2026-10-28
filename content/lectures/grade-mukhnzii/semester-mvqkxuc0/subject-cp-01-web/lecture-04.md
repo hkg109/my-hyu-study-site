@@ -23,13 +23,13 @@ objectives:
 
 | 순서 | 내용 | 한 줄 요약 |
 | --- | --- | --- |
-| 0 | 왜 TypeScript인가 | 실행하기 전에 실수를 찾는다 |
+| 0 | 왜 TypeScript인가 | 실행하기 전에 실수를 찾고, 빌드하면 타입이 지워진다 |
 | 1–2 | 기본 타입·배열 | `이름: 타입`으로 값의 모양을 적는다 |
 | 3 | 객체 타입 | type·interface로 업무 한 건의 모양을 정한다 |
 | 4 | 유니언과 좁히기 | 허용하는 값만 나열하고, 경우를 나눠 확인한다 |
 | 5 | 함수 타입 | 받는 값과 돌려주는 값의 모양을 적는다 |
 | 6–8 | 제네릭·도우미 타입·합치기 | 있는 타입을 재료로 새 타입을 만든다 |
-| 9–10 | React·Supabase의 타입 | 실제 프로젝트 코드에서 읽기 |
+| 9–10 | React·Supabase·이 사이트의 타입 | 실제 코드에서 읽기 |
 | 11–12 | 오류 메시지·한계 | 빨간 줄을 읽고, 타입이 못 하는 일을 안다 |
 
 ---
@@ -90,12 +90,67 @@ function double(n) {
 
 브라우저는 TS를 모릅니다. Next.js가 빌드할 때 `: string` 같은 타입 부분을 지워 평범한 JavaScript로 바꿔서 실행합니다. 그래서 **타입을 지우고 남은 부분은 01-3편에서 배운 JavaScript 그대로**입니다. 처음 보는 TS 코드가 어려우면 `:` 뒤 타입을 손으로 가리고 읽어 보세요.
 
-| 확장자 | 뜻 |
-| --- | --- |
-| `.js` | JavaScript |
-| `.ts` | TypeScript |
-| `.tsx` | TypeScript + JSX (React 화면 코드) |
-| `.d.ts` | 타입 설명만 담은 파일 (실행 코드 없음) |
+| 확장자 | 뜻 | 이 사이트의 예 |
+| --- | --- | --- |
+| `.js` | JavaScript | 빌드 결과물 (`.next/` 폴더 안) |
+| `.jsx` | JavaScript + JSX (React 화면 코드) | 없음. TypeScript를 쓰므로 `.tsx`로 대신함 |
+| `.mjs` | `import`·`export` 방식(ES 모듈)임을 못 박은 JavaScript | `postcss.config.mjs`, `eslint.config.mjs` |
+| `.cjs` | `require`·`module.exports` 방식(CommonJS)임을 못 박은 JavaScript | 오래된 설정 파일에서 가끔 봄 |
+| `.ts` | TypeScript | `lib/navigation.ts`, `types/content.ts` |
+| `.tsx` | TypeScript + JSX (React 화면 코드) | `app/lectures/page.tsx`, `components/lecture/LectureCard.tsx` |
+| `.d.ts` | 타입 설명만 담은 파일 (실행 코드 없음) | `next-env.d.ts` |
+
+> [!NOTE]
+> 고르는 기준은 두 가지입니다. **타입을 쓰는가**(`js` 쪽인가 `ts` 쪽인가), **JSX(`<div>` 같은 화면 태그)가 들어가는가**(`x`가 붙는가). 화면 컴포넌트는 `.tsx`, 화면 태그가 없는 로직 파일은 `.ts`입니다. `.mjs`·`.cjs`는 주로 도구의 **설정 파일**에서 봅니다. JavaScript에는 파일을 주고받는 방식이 두 가지(옛 방식 CommonJS의 `require`, 요즘 방식 ES 모듈의 `import`)라서, 어느 쪽인지 확장자로 알려 주는 것입니다.
+
+### 0-4. 빌드 결과물 엿보기
+
+이 사이트의 `postcss.config.mjs`는 단 두 줄입니다. Tailwind CSS를 CSS 처리 도구(PostCSS)에 연결하는 설정입니다.
+
+```js
+// postcss.config.mjs — 내가 쓰는 파일
+const config = { plugins: { "@tailwindcss/postcss": {} } };
+export default config;
+```
+
+`npm run dev`로 개발 서버를 켜면 Next.js의 번들러(Turbopack)가 이 파일을 실행용으로 바꿔 `.next/` 폴더에 저장합니다. 그 결과물의 일부입니다(긴 부분은 줄였습니다).
+
+```js
+// .next/build/chunks/[root-of-the-server]__1kki86f._.js — Next.js가 만든 파일
+module.exports = [
+"[externals]/path [external] (path, cjs)", ((__turbopack_context__, module, exports) => {
+  var mod = __turbopack_context__.x("path", () => require("path"));
+  module.exports = mod;
+}),
+"[project]/postcss.config.mjs [postcss] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+const config = {
+    plugins: {
+        "@tailwindcss/postcss": {}
+    }
+};
+const __TURBOPACK__default__export__ = config;
+}),
+// … 이하 생략
+];
+```
+
+| 비교 | 내가 쓴 파일 | 빌드 결과물 |
+| --- | --- | --- |
+| 모듈 방식 | `export default config` (ES 모듈) | `module.exports`, `require(...)` (CommonJS) |
+| 내보내기 | `export default` 한 줄 | `__turbopack_context__.s(["default", ...])`로 번들러가 직접 등록 |
+| 이름 | 사람이 지은 이름 | `__TURBOPACK__default__export__` 같은 기계가 만든 이름 |
+| 파일 이름 | 고정 | `__1kki86f` 같은 해시라서 빌드할 때마다 바뀔 수 있음 |
+| Git | 올림 | 올리지 않음 (`.gitignore`에 `.next` 포함) |
+
+이 예에서 `config` 객체 내용은 **그대로 살아남고**, 파일을 주고받는 포장만 바뀐 것을 볼 수 있습니다. `.ts`·`.tsx` 파일도 같은 과정을 거치면서 `: string` 같은 타입이 모두 지워집니다(0-3절).
+
+> [!CAUTION]
+> `.next/` 폴더는 **직접 읽거나 고치는 곳이 아닙니다.** 빌드할 때마다 다시 만들어지므로 고쳐도 사라집니다. 오류 메시지가 `.next/…` 파일을 가리키더라도, 실제로 고칠 곳은 그 결과물을 만든 원래 파일(`app/`, `components/`, `lib/` 안)입니다. 빌드가 이상하게 꼬였을 때는 `.next` 폴더를 지우고 개발 서버를 다시 켜면 새로 만들어집니다.
 
 ---
 
@@ -729,6 +784,90 @@ const { data } = await supabase.from("tasks").select("id, title");
 ```
 
 DB에 열을 추가하면 타입 파일을 다시 만들고, 그 열을 안 쓰는 코드나 이름이 바뀐 열을 쓰는 코드가 어디인지 TS가 알려 줍니다.
+
+### 10-4. 이 사이트의 실제 타입 읽기
+
+지금 보고 있는 이 사이트의 코드에서 이 편의 문법을 찾아봅니다. 강의 하나의 정보를 담는 타입은 `types/content.ts`에 있습니다(일부 줄임).
+
+```ts
+// types/content.ts
+export type ContentKind = "lectures" | "practice" | "assignments";
+
+export interface LectureFrontmatter {
+  title: string;
+  description: string;
+  order: number;
+  duration?: number;
+  tags?: string[];
+  published: boolean;
+}
+
+export interface LectureMeta extends LectureFrontmatter {
+  slug: string[];
+  path: string;
+  kind: ContentKind;
+}
+```
+
+| 코드 | 이 편의 어느 문법 | 읽는 법 |
+| --- | --- | --- |
+| `"lectures" \| "practice" \| "assignments"` | 4-2절 리터럴 유니언 | 콘텐츠 종류는 강의·족보·과제 셋 중 하나 |
+| `duration?: number` | 3-1절 선택 속성 | 수업 시간은 적지 않아도 됨 |
+| `tags?: string[]` | 2절 배열, 3-1절 선택 속성 | 태그는 글자 배열이고, 없어도 됨 |
+| `interface LectureMeta extends LectureFrontmatter` | 8절 확장 | 강의 파일 맨 위 정보(front matter)에 주소·종류를 더한 모양 |
+| `slug: string[]` | 2절 배열 | 주소 조각들. 예: `["grade-mukhnzii", …, "lecture-04"]` |
+
+이 강의 파일 맨 위의 `title:`, `order:`, `tags:` 같은 줄이 바로 `LectureFrontmatter` 모양입니다. 강의 파일을 새로 쓸 때 이 타입이 요구하는 줄(`title`, `order` 등)을 빠뜨리지 않아야 하는 이유입니다.
+
+#### 01-3편의 강의 카드에 붙은 타입
+
+```tsx
+// components/lecture/LectureCard.tsx
+export function LectureCard({ lecture, showDescription = true }: { lecture: LectureMeta; showDescription?: boolean }) {
+  // ...
+}
+```
+
+`: { lecture: LectureMeta; showDescription?: boolean }`가 props의 타입입니다. 10-1절처럼 `type LectureCardProps = {...}`로 이름을 붙이지 않고 **그 자리에 바로 적은** 모양입니다. 읽는 법은 같습니다. "lecture는 꼭 넘겨야 하고 LectureMeta 모양, showDescription은 넘기지 않아도 되는 boolean". 넘기지 않으면 기본값 `true`가 들어갑니다.
+
+```ts
+// lib/progress.ts
+export type Progress = Record<string, boolean>;
+```
+
+01-3편 15-2절의 `progress` 객체의 타입입니다. 7절의 `Record<K, V>`로 "키는 글자(강의 주소), 값은 완료 여부"라고 적었습니다. 그래서 `progress["grade-mukhnzii/…/lecture-03"]`의 타입은 `boolean`입니다.
+
+#### 머리말(Header)의 한 줄
+
+```ts
+// components/layout/Header.tsx
+const NAV_ICONS: Record<PrimaryNavItem["icon"], typeof BookOpen> = {
+  lectures: BookOpen,
+  practice: FileArchive,
+  review: RotateCcw,
+};
+```
+
+```ts
+// lib/navigation.ts
+export interface PrimaryNavItem {
+  href: string;
+  label: string;
+  icon: "lectures" | "practice" | "review";
+  matches: string[];
+}
+```
+
+안쪽부터 읽습니다.
+
+| 조각 | 뜻 |
+| --- | --- |
+| `PrimaryNavItem["icon"]` | PrimaryNavItem 타입의 icon 속성의 **타입** → `"lectures" \| "practice" \| "review"` (10-3절 Supabase 타입과 같은 대괄호 읽기) |
+| `typeof BookOpen` | 아이콘 BookOpen과 같은 **타입** (7-1절의 타입 자리 `typeof`) |
+| `Record<A, B>` | 키가 A, 값이 B인 객체 |
+| 전체 | "메뉴 종류 세 가지 각각에 아이콘 하나씩을 짝지은 객체" |
+
+`Record`에 유니언을 키로 넣었으므로 셋 중 하나라도 빠뜨리면 오류가 납니다. 나중에 메뉴 종류를 하나 늘리면 이 줄에서 "아이콘이 빠졌다"는 오류가 나서 고칠 곳을 알려 줍니다. 7절의 상태별 개수 표와 같은 원리입니다.
 
 ---
 

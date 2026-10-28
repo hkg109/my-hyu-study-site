@@ -193,6 +193,101 @@ Supabase는 둘 다 걸쳐 있습니다. **Supabase(서비스)** 는 DB·로그�
 > [!ANSWER]
 > 사라지지 않습니다. supabase-js는 내 프로젝트에 설치된 **라이브러리(SDK)** 일 뿐이고, 데이터는 **Supabase 서비스**의 서버에 저장되어 있습니다. 라이브러리를 지우면 내 코드에서 요청을 보내는 수단이 없어질 뿐입니다.
 
+### 2-7. 이 사이트의 실제 코드로 연습하기
+
+지금 보고 있는 이 강의 사이트도 Next.js로 만들었습니다. 실제 파일 두 개로 2절의 구분을 연습해 봅니다.
+
+#### import 줄만 보고 분류하기
+
+화면 맨 위 머리말(로고·메뉴·검색 버튼)을 그리는 `components/layout/Header.tsx`의 첫 부분입니다.
+
+```tsx
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
+import { useState } from "react";
+import * as Dialog from "@radix-ui/react-dialog";
+import { BookOpen, FileArchive, Menu, Moon, RotateCcw, Sun, X, Search, ShieldCheck } from "lucide-react";
+import type { AcademicCatalog, LectureMeta, SearchEntry } from "@/types/content";
+import { Sidebar } from "./Sidebar";
+import { SearchDialog } from "@/components/ui/SearchDialog";
+import { useAdmin } from "@/components/admin/AdminContext";
+import { isNavActive, PRIMARY_NAV, type PrimaryNavItem } from "@/lib/navigation";
+```
+
+`from` 뒤의 경로만 보면 어디서 온 코드인지 알 수 있습니다.
+
+| 경로 모양 | 어디서 왔나 | 이 파일의 예 |
+| --- | --- | --- |
+| `"next/…"` | **프레임워크** Next.js가 제공하는 기능 | `next/link`(페이지 이동 링크), `next/navigation`(지금 주소 읽기) |
+| `"react"` | **라이브러리** React | `useState` |
+| 그 밖의 패키지 이름 | **라이브러리** (npm으로 설치한 남의 패키지) | `next-themes`(라이트·다크 테마), `@radix-ui/react-dialog`(모바일 메뉴 창), `lucide-react`(아이콘) |
+| `"@/…"` | **내 모듈** (프로젝트 최상위 기준) | `@/types/content`, `@/lib/navigation` |
+| `"./…"` | **내 모듈** (같은 폴더) | `./Sidebar` |
+
+> [!TRAP]
+> `next-themes`는 이름이 `next`로 시작하지만 Next.js가 아니라 **다른 사람이 만든 별도 라이브러리**입니다. `next/link`처럼 `next/` 뒤에 경로가 붙어야 Next.js 자체 기능입니다. 마찬가지로 `@radix-ui/…`의 `@`는 "radix-ui라는 단체가 낸 패키지"라는 뜻(스코프)이고, `@/…`의 `@/`는 우리 프로젝트 폴더를 가리키는 별칭입니다. 둘을 구분하는 기준은 `@` 바로 뒤에 `/`가 오는지입니다.
+
+#### 프레임워크가 불러 주는 파일
+
+`/lectures` 주소(강의 정리 페이지)를 그리는 `app/lectures/page.tsx`입니다. 원래 한 줄로 붙어 있는 화면 부분을 줄 나눠 정리하고, 설명 문구와 빈 목록 처리는 줄였습니다.
+
+```tsx
+import type { Metadata } from "next";
+import { getAllLectures } from "@/lib/lectures";
+import { AcademicCurriculum } from "@/components/lecture/AcademicCurriculum";
+import { Footer } from "@/components/layout/Footer";
+import { readCatalog } from "@/lib/catalog";
+
+export const metadata: Metadata = {
+  title: "강의 정리",
+  description: "학년, 학기, 과목별로 정리한 강의 노트를 살펴보세요.",
+};
+
+export default function LecturesPage() {
+  const lectures = getAllLectures();   // 내 함수: content/ 폴더의 강의 파일을 모두 읽는다
+  const catalog = readCatalog();       // 내 함수: 학년·학기·과목 목록을 읽는다
+  return (
+    <div className="index-page">
+      <header className="page-title">
+        <h1>강의 정리</h1>
+        <span className="meta">{catalog.grades.length}개 학년 · {lectures.length}개 강의</span>
+      </header>
+      <AcademicCurriculum catalog={catalog} lectures={lectures} />
+      <Footer />
+    </div>
+  );
+}
+```
+
+| 줄 | 누가 정한 규칙인가 | 누가 부르나 |
+| --- | --- | --- |
+| 파일 위치 `app/lectures/page.tsx` | Next.js: `app/` 아래 폴더 이름이 주소, `page.tsx`가 그 주소의 화면 | Next.js |
+| `export default function LecturesPage()` | Next.js: page 파일은 화면 함수를 `export default`로 내보낸다 | **Next.js가** 사용자가 `/lectures`에 들어올 때 호출 |
+| `export const metadata` | Next.js: 이 이름으로 내보내면 브라우저 탭 제목·검색 설명에 쓰인다 | **Next.js가** 읽어 감 |
+| `getAllLectures()`, `readCatalog()` | 내가 만든 함수 | **내 코드가** 호출 |
+| `<div>`, `<h1>`, `{lectures.length}` | React(JSX) 문법 | React가 화면으로 그림 |
+
+프로젝트 전체를 검색해도 `LecturesPage()`를 부르는 코드는 없습니다. 정해진 자리에 정해진 이름으로 두었기 때문에 **Next.js가 찾아서 불러 줍니다.** 이것이 2-1절의 "프레임워크가 내 코드를 부른다"입니다. 반대로 `getAllLectures()`는 내가 필요할 때 직접 부릅니다. 함수 이름을 `LecturesPage`에서 다른 이름으로 바꿔도 그대로 동작합니다. 하지만 파일 이름을 `pages.tsx`로 바꾸면 이 주소는 404가 되고, `export default`를 빼면 Next.js가 화면 함수를 찾지 못해 오류가 납니다. **이름이 중요한 것은 함수가 아니라 파일과 내보내기 방식**이라는 뜻입니다.
+
+> [!NOTE]
+> `Header.tsx`는 첫 줄이 `"use client"`이고 `page.tsx`에는 없습니다. Header는 메뉴 열기·테마 바꾸기처럼 **브라우저에서 클릭에 반응**해야 하므로 브라우저에서 실행되는 Client Component로 표시한 것입니다. page.tsx는 서버에서 강의 파일을 읽어 화면을 미리 만드는 Server Component입니다. 이 구분은 02-0편과 02-3편에서 자세히 다룹니다.
+
+> [!CHECK]
+> 다음 import 줄을 프레임워크 / 라이브러리 / 내 모듈로 분류하세요.
+>
+> ```tsx
+> import { notFound } from "next/navigation";
+> import Fuse from "fuse.js";
+> import { useProgress } from "./ProgressProvider";
+> import type { LectureMeta } from "@/types/content";
+> import { ThemeProvider } from "next-themes";
+> ```
+>
+> 정답: 프레임워크 — `next/navigation` / 라이브러리 — `fuse.js`(이 사이트의 검색 기능에 쓰는 패키지), `next-themes` / 내 모듈 — `./ProgressProvider`, `@/types/content`
+
 ## 3. 도구 사전 — 무엇이고 어떻게 작동하나
 
 | 도구 | 층 | 무엇인가 | 어떻게 작동하나 | 배우는 곳 |
