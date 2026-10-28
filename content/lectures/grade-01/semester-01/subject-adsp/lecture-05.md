@@ -163,6 +163,37 @@ Warning message: longer object length is not a multiple of shorter object length
 >
 > `na.rm`은 "NA를 remove"로 읽는다. 결측이 하나라도 있으면 대부분의 통계 함수는 NA를 돌려준다.
 
+### `str()`와 `summary()` 출력 판독
+
+R 출력 문제는 함수 이름보다 ==출력의 모양으로 변수 유형과 표본 수를 읽는 능력==을 묻는 경우가 많다.
+
+| 출력 | 바로 읽을 내용 |
+| --- | --- |
+| `str(data)` | 자료구조, 관측치 수(`obs.`), 변수 수(`variables`), 각 열의 자료형 |
+| 수치형 변수의 `summary()` | Min, 1st Qu., Median, Mean, 3rd Qu., Max, 결측이 있으면 `NA's` |
+| 범주형(factor) 변수의 `summary()` | 범주(level)별 빈도. 빈도의 합이 해당 변수의 비결측 관측치 수 |
+
+> [!EXAMPLE]
+> **혼합형 데이터 프레임 출력 읽기 (학습용 출력)**
+>
+> ```r
+> > str(student)
+> 'data.frame':  8 obs. of  2 variables:
+>  $ score: num  55 61 70 72 76 81 89 NA
+>  $ group: Factor w/ 2 levels "A","B": 1 1 1 1 2 2 2 2
+> > summary(student)
+>      score       group
+>  Min.   :55.0   A:4
+>  1st Qu.:65.5   B:4
+>  Median :72.0
+>  Mean   :72.0
+>  3rd Qu.:78.5
+>  Max.   :89.0
+>  NA's   :1
+> ```
+>
+> `8 obs.`이므로 행은 8개다. `score`는 수치형이고 결측 1개를 제외한 7개로 요약통계가 계산된다. `group`은 factor이며 A와 B가 각각 4개다. ==red:factor 출력의 숫자는 평균이나 사분위수가 아니라 범주별 개수다.==
+
 > [!CHECK]
 > **1.** `c(1, "2", TRUE)`의 자료형은?
 >
