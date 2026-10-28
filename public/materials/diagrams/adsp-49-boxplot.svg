@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-labelledby="box-title box-desc">
+  <title id="box-title">상자그림의 구성 요소</title>
+  <desc id="box-desc">제1사분위수 Q1과 제3사분위수 Q3 사이의 상자, 상자 안의 중앙값 선, 양쪽 수염과 오른쪽 이상값 두 점을 표시한다. 상자의 길이는 IQR이다. 원본 PDF 38번의 개념도를 다시 그린 것으로 실제 관측값이나 수치 축은 없다.</desc>
+  <rect width="560" height="250" fill="#f7f6f2"/>
+  <g font-family="Pretendard, Malgun Gothic, Noto Sans KR, sans-serif" font-size="16" fill="#1d1d1a" text-anchor="middle">
+    <g stroke="#1d1d1a" stroke-width="1.8" fill="none">
+      <path d="M70 124H170 M290 124H390 M70 104V144 M390 104V144"/>
+      <rect x="170" y="92" width="120" height="64" fill="#dcebe6"/>
+      <path d="M220 92V156 M220 92V58 M170 178V191H290V178"/>
+    </g>
+    <g fill="none" stroke="#9b4a3d" stroke-width="2">
+      <circle cx="454" cy="124" r="6"/><circle cx="502" cy="124" r="6"/>
+    </g>
+    <text x="220" y="45" font-weight="700">중앙값</text>
+    <text x="170" y="79" font-weight="700">Q1</text><text x="290" y="79" font-weight="700">Q3</text>
+    <text x="117" y="106">수염</text><text x="340" y="106">수염</text>
+    <text x="478" y="93" fill="#9b4a3d">이상값</text>
+    <text x="230" y="217" font-weight="700">IQR</text>
+    <text x="280" y="242" font-size="12" fill="#65645e">원본 개념도 복원 · 실제 관측값의 수치 축이 없는 모식도</text>
+  </g>
+</svg>
