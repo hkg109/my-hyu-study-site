@@ -106,9 +106,44 @@
           "order": 2,
           "subjects": [
             {
-              "id": "subject-council-guide",
-              "name": "운영 플랫폼 학습 가이드",
+              "id": "subject-cp-00-plan",
+              "name": "00 기획서 총정리",
               "order": 1
+            },
+            {
+              "id": "subject-cp-01-web",
+              "name": "01 웹 기초와 코드 읽기",
+              "order": 2
+            },
+            {
+              "id": "subject-cp-02-frontend",
+              "name": "02 프론트엔드",
+              "order": 3
+            },
+            {
+              "id": "subject-cp-03-backend",
+              "name": "03 백엔드",
+              "order": 4
+            },
+            {
+              "id": "subject-cp-04-database",
+              "name": "04 데이터베이스",
+              "order": 5
+            },
+            {
+              "id": "subject-cp-05-realtime",
+              "name": "05 실시간 공동편집",
+              "order": 6
+            },
+            {
+              "id": "subject-cp-06-features",
+              "name": "06 기능별 구현 따라가기",
+              "order": 7
+            },
+            {
+              "id": "subject-cp-07-operations",
+              "name": "07 n년 운영과 인수인계",
+              "order": 8
             }
           ]
         }
