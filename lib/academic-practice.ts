@@ -86,7 +86,8 @@ export function practiceAccessKeyUsage(): Map<string, number> {
 
 // The accessKey stays out of ContentDocument, which is sent to the browser.
 export function practiceAccessReference(slug: string[]): PracticeAccessReference | undefined {
-  const file = resolvePracticeSource(slug);
-  if (!file) return undefined;
-  return readAccessReference(matter(fs.readFileSync(file, "utf8")).data);
+  if (!resolvePracticeSource(slug)) return undefined;
+  const [gradeId, semesterId, subjectId, documentId] = slug;
+  // Built inline under practiceRoot so the bundler traces only content/practice, not the whole project.
+  return readAccessReference(matter(fs.readFileSync(path.join(practiceRoot, gradeId, semesterId, subjectId, `${documentId}.md`), "utf8")).data);
 }
