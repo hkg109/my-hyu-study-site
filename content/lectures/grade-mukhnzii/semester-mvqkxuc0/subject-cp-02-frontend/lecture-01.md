@@ -32,7 +32,7 @@ key와 "State는 새 값으로 바꾼다"
 ```
 
 > [!NOTE]
-> 이 편은 **코드를 한 번도 안 써 봤다**고 가정하고 처음부터 설명합니다. HTML을 더 자세히 보고 싶으면 [01-2 HTML·CSS 읽기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-02), JavaScript 문법이 낯설면 [01-3 JavaScript 읽기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-03)를 옆에 펴 두세요.
+> 이 편은 **코드를 한 번도 안 써 봤다**고 가정하고 처음부터 설명합니다. React와 Next.js의 전체 그림은 [02-0 React와 Next.js 한눈에 보기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-02-frontend/lecture-00)에 있습니다. HTML을 더 자세히 보고 싶으면 [01-2 HTML·CSS 읽기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-02), JavaScript 문법이 낯설면 [01-3 JavaScript 읽기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-03)를 옆에 펴 두세요.
 
 ---
 
@@ -678,4 +678,4 @@ const [keyword, setKeyword] = useState("");
 
 ## 학습 경로
 
-[← 01-5 프론트엔드·백엔드·DB 역할 분담](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-05) · [02-2 Next.js App Router →](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-02-frontend/lecture-02)
+[← 02-0 React와 Next.js 한눈에 보기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-02-frontend/lecture-00) · [02-2 Next.js App Router →](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-02-frontend/lecture-02)

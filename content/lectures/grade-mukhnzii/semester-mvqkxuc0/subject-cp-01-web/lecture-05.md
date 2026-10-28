@@ -193,4 +193,4 @@ council-platform/
 
 ## 학습 경로
 
-[← 01-4 TypeScript 읽기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-04) · [02-1 React 기초 →](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-02-frontend/lecture-01)
+[← 01-4 TypeScript 읽기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-04) · [02-0 React와 Next.js 한눈에 보기 →](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-02-frontend/lecture-00)
