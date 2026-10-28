@@ -181,6 +181,9 @@ HTTP는 요청 하나하나가 서로를 기억하지 못합니다. 그래서 "�
 > [!ANSWER]
 > `assignee_id`에 값 `"a1b2"`가 있으니 담당자가 정해졌습니다. `tags`는 배열 `["복지"]`라서 태그는 1개입니다. `done`은 `false`이므로 아직 끝나지 않았습니다.
 
+> [!NOTE]
+> 01편을 읽다 보면 "언어", "라이브러리", "프레임워크", "패키지", "API", "서비스" 같은 말이 계속 나옵니다. 헷갈리면 [01-5 2절 · 도구를 부르는 말 구분하기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-05)를 먼저 보세요. 한 표에 정리되어 있습니다. 짧게 말하면 **언어**는 코드를 쓰는 문법, **라이브러리**는 내 코드가 불러 쓰는 기능 묶음, **프레임워크**는 내 코드를 불러 주는 뼈대, **서비스**는 계정을 만들어 쓰는 남의 서버입니다.
+
 ## 학습 경로
 
 [← 00-4 데이터·기술·범위와 추가 결정](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-00-plan/lecture-04) · [01-2 HTML·CSS 읽기 →](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-01-web/lecture-02)
