@@ -2,7 +2,7 @@
 title: "05-3 · 저장·전파·복구"
 description: "회의록 Update가 save_meeting_update DB 함수에서 권한 검사·순번 발급·저장·realtime.send 발행까지 한 트랜잭션으로 처리되는 SQL, Private Channel 권한 정책, 브라우저 provider의 묶음 전송·재시도·권한 거부 처리, 순번 공백 감지와 재접속 복구, Snapshot 압축까지 회의록 공동편집의 전체 코드를 따라갑니다."
 order: 3
-published: true
+published: false
 duration: 60
 tags: [Supabase Realtime, realtime.send, Private Channel, CRDT 저장, 재시도, Snapshot]
 objectives:

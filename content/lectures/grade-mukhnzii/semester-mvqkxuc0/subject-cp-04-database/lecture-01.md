@@ -2,7 +2,7 @@
 title: "04-1 · 테이블과 관계"
 description: "관계형 데이터베이스의 테이블·행·열·기본 키·외래 키와 1:1·1:N·N:M 관계를 학생회 테이블로 익히고, 기획서의 ERD를 기수(terms)를 뿌리로 읽는 법, ID로 가리키는 이유, 추가 결정으로 생긴 테이블까지 정리합니다."
 order: 1
-published: true
+published: false
 duration: 40
 tags: [데이터베이스, PostgreSQL, 테이블, 기본 키, 외래 키, ERD, 관계]
 objectives:

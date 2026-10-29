@@ -2,7 +2,7 @@
 title: "04-4 · RLS와 권한 함수"
 description: "Row Level Security가 모든 쿼리에 조건을 덧붙이는 원리, 읽기는 RLS 정책·쓰기는 검사 함수(RPC)로 나누는 이 프로젝트의 규칙, private 스키마의 SECURITY DEFINER 권한 함수(current_membership·can_read_event·can_read_task)를 실제 SQL로 읽고, Event→Task 권한 상속과 공개 모드·ACL·Archive Grant가 한 함수 안에서 어떻게 계산되는지 따라갑니다."
 order: 4
-published: true
+published: false
 duration: 60
 tags: [RLS, 권한, SECURITY DEFINER, 정책, ACL, 권한 상속, PostgreSQL 함수]
 objectives:

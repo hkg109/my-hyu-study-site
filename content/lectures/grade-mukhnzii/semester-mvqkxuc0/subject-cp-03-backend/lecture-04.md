@@ -2,7 +2,7 @@
 title: "03-4 · 파일 업로드와 Activity Log"
 description: "행사 자료 PDF가 비공개 Storage Bucket과 event_resources 메타데이터로 나뉘어 저장되는 과정, Storage 객체에 RLS 정책을 거는 법, 짧게 만료되는 서명 URL로 내려받는 법, 외부 링크 검증을 코드로 익히고, 누가 무엇을 바꿨는지 남기는 append-only Activity Log를 DB 함수로 기록하는 법을 배웁니다."
 order: 4
-published: true
+published: false
 duration: 45
 tags: [Supabase Storage, 서명 URL, 파일 업로드, Activity Log, 감사 기록]
 objectives:

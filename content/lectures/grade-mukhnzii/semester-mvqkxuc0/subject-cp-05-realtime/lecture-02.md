@@ -2,7 +2,7 @@
 title: "05-2 · Yjs와 CRDT"
 description: "두 사람이 같은 문장을 동시에 고칠 때 왜 충돌이 생기는지, CRDT가 순서와 상관없이 같은 결과로 합치는 원리를 그림 없이 따라가고, Yjs의 Y.Doc·Update·상태 벡터·mergeUpdates·Awareness를 실제 코드로 실행해 보며 회의록 저장 설계의 근거를 이해합니다."
 order: 2
-published: true
+published: false
 duration: 45
 tags: [Yjs, CRDT, Y.Doc, Update, 상태 벡터, Awareness, 공동 편집]
 objectives:

@@ -2,7 +2,7 @@
 title: "02-3 · Server Component와 Client Component"
 description: "Next.js에서 같은 React Component가 서버에서 실행되느냐 브라우저에서 실행되느냐에 따라 할 수 있는 일과 비밀 값의 경계가 어떻게 달라지는지, 'use client' 경계와 Props로 데이터를 넘기는 법, server-only로 실수를 막는 법을 업무 목록 화면으로 익힙니다."
 order: 3
-published: true
+published: false
 duration: 45
 tags: [Next.js, Server Component, Client Component, use client, server-only, 보안 경계]
 objectives:

@@ -2,7 +2,7 @@
 title: "06-1 · 업무(Task) 따라가기"
 description: "업무 목록·상세·상태 변경·공개 모드 전환·열람자 지정·보관과 복원을 화면 → Server Action → DB 함수·RLS 순서로 처음부터 끝까지 따라갑니다. 역할별로 바꿀 수 있는 필드, DONE 재오픈, RESTRICTED 전환 미리보기, Event 범위 안에서만 담당자를 고르는 규칙을 한 기능 위에서 묶습니다."
 order: 1
-published: true
+published: false
 duration: 50
 tags: [Task, 기능 구현, 공개 모드, ACL, 보관, 상태 전이]
 objectives:

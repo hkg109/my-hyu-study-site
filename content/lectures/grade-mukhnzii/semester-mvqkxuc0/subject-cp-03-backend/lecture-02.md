@@ -2,7 +2,7 @@
 title: "03-2 · Supabase 클라이언트와 환경변수"
 description: "브라우저용·서버용·관리자용 Supabase 클라이언트 세 가지가 각각 어떤 키와 어떤 자격으로 DB에 접근하는지, proxy.ts가 매 요청 로그인 세션을 갱신하는 원리, .env 파일과 Vercel·GitHub에 비밀 값을 나눠 두는 법을 공개 저장소 기준으로 익힙니다."
 order: 2
-published: true
+published: false
 duration: 45
 tags: [Supabase, 환경변수, proxy.ts, 쿠키, publishable key, secret key, 공개 저장소]
 objectives:

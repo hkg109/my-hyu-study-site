@@ -2,7 +2,7 @@
 title: "03-3 · 로그인 구현"
 description: "Google OAuth가 동작하는 순서, 로그인 버튼과 /auth/callback Route Handler, 학교 계정만 통과시키는 Before User Created Auth Hook, profiles 자동 생성 트리거, 승인 명단을 Membership으로 바꾸는 activate_membership 함수까지 로그인 전체를 코드로 따라갑니다."
 order: 3
-published: true
+published: false
 duration: 55
 tags: [로그인, OAuth, Google, Auth Hook, Membership, Supabase Auth]
 objectives:

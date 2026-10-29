@@ -2,7 +2,7 @@
 title: "03-1 · Server Action과 Route Handler"
 description: "백엔드가 요청을 받는 두 가지 방법인 Server Action과 Route Handler를 비교하고, 업무 생성 Server Action을 '입력 검증 → 로그인 확인 → DB 함수 호출 → 오류 번역 → 캐시 갱신' 다섯 단계로 끝까지 읽습니다. zod로 입력 모양을 검증하는 법과 오류를 사용자에게 안전하게 전하는 법을 익힙니다."
 order: 1
-published: true
+published: false
 duration: 50
 tags: [백엔드, Server Action, Route Handler, 입력 검증, zod, 오류 처리]
 objectives:

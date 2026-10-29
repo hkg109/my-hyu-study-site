@@ -2,7 +2,7 @@
 title: "06-5 · 회장단 권한 이양"
 description: "추가 결정 2를 구현합니다. 현 회장이 다음 기수(DRAFT)를 만들고 다음 회장단 이메일을 지정하면, 요청자가 아닌 다른 회장단이 승인해야 다음 기수 승인 명단에 EXECUTIVE로 등록되는 흐름을 화면 → 서버 → DB로 따라가고, 거절·취소·만료와 회장단이 아무도 없을 때의 비상 절차까지 다룹니다."
 order: 5
-published: true
+published: false
 duration: 50
 tags: [권한 이양, 다음 회장단, 두 사람 승인, DRAFT 기수, 비상 절차]
 objectives:

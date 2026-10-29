@@ -2,7 +2,7 @@
 title: "06-4 · 건의(Suggestion) 따라가기"
 description: "일반 학생의 건의 제출부터 회장단의 담당 배정, 담당자의 공개 답변·내부 메모, 작성자의 상태 확인, 기수 전환 때의 이월까지를 화면 → 서버 → DB로 따라가며, 작성자 신원이 어떤 경로로도 담당자에게 새지 않도록 테이블·함수·로그를 설계하는 법을 익힙니다."
 order: 4
-published: true
+published: false
 duration: 45
 tags: [건의, 작성자 신원, 개인정보, 내부 메모, 중복 제출, 이월]
 objectives:

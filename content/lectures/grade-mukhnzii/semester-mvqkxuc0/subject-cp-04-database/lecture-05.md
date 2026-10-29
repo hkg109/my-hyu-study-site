@@ -2,7 +2,7 @@
 title: "04-5 · DB 테스트와 성능"
 description: "RLS와 권한 함수를 사람이 눈으로 확인하지 않고 pgTAP 테스트로 자동 검증하는 법을 '허용·거부' 사례 짝으로 익히고, 기획서가 요구하는 필수 사례(다른 기수·종료된 Membership·RESTRICTED 밖·회수 직후)를 테스트로 옮깁니다. RLS가 느려지지 않게 Index와 EXPLAIN을 쓰는 법도 다룹니다."
 order: 5
-published: true
+published: false
 duration: 45
 tags: [DB 테스트, pgTAP, RLS 테스트, Index, EXPLAIN, 성능]
 objectives:

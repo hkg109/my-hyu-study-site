@@ -2,7 +2,7 @@
 title: "06-3 · 안건과 회의록 따라가기"
 description: "추가 결정 4(국장 이상이 안건을 먼저 쓰고, 회의록은 그 안건 위에서 시작)를 화면 → 서버 → DB로 구현합니다. 안건 작성·공개, 안건에서 회의록 만들기(서버가 Template+안건으로 초기 Snapshot 생성), 열람 Preset과 편집자 지정, 확정·되돌리기까지 회의록의 한살이를 따라갑니다."
 order: 3
-published: true
+published: false
 duration: 55
 tags: [회의 안건, 회의록, 초기 Snapshot, 열람 Preset, 편집자, 회의록 상태]
 objectives:

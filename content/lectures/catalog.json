@@ -117,27 +117,27 @@
             },
             {
               "id": "subject-cp-02-frontend",
-              "name": "02 프론트엔드",
+              "name": "04 Next.js",
               "order": 4
             },
             {
               "id": "subject-cp-03-backend",
-              "name": "03 백엔드",
+              "name": "05 React UI",
               "order": 7
             },
             {
               "id": "subject-cp-04-database",
-              "name": "04 데이터베이스",
+              "name": "06 Supabase",
               "order": 6
             },
             {
               "id": "subject-cp-05-realtime",
-              "name": "05 실시간 공동편집",
+              "name": "07 인증·권한",
               "order": 8
             },
             {
               "id": "subject-cp-06-features",
-              "name": "06 기능별 구현 따라가기",
+              "name": "08 디버깅",
               "order": 5
             },
             {

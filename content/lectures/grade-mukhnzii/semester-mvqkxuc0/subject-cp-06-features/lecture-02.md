@@ -2,7 +2,7 @@
 title: "06-2 · 행사(Event) 따라가기"
 description: "행사 생성과 탭 화면, ALL_COUNCIL·RESTRICTED 열람 범위, 자료·일정·인수인계로의 권한 상속, 범위를 좁힐 때의 충돌 목록과 세 가지 해결 방법을 한 트랜잭션으로 적용하는 DB 함수, 종일 일정 저장, 인수인계의 낙관적 잠금을 화면 → 서버 → DB 순서로 따라갑니다."
 order: 2
-published: true
+published: false
 duration: 50
 tags: [Event, 권한 상속, 범위 축소, 충돌 처리, 일정, 인수인계, 낙관적 잠금]
 objectives:

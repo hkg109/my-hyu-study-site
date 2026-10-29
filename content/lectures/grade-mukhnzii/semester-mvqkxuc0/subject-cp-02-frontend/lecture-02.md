@@ -2,7 +2,7 @@
 title: "02-2 · Next.js App Router"
 description: "폴더가 주소가 되는 App Router의 규칙, page·layout·loading·error·not-found 파일의 역할, 동적 주소 [taskId]와 params, 라우트 그룹으로 로그인 영역을 나누는 법, Link로 이동하는 법을 기획서 12절의 화면 구조에 맞춰 익힙니다."
 order: 2
-published: true
+published: false
 duration: 45
 tags: [Next.js, App Router, layout, 동적 라우트, Link, 화면 구조]
 objectives:

@@ -2,7 +2,7 @@
 title: "02-4 · 폼과 화면 상태"
 description: "업무 등록 폼을 useActionState와 Server Action으로 연결해 저장 중 표시·중복 제출 방지·필드별 오류·입력값 유지를 구현하고, 로딩·빈 목록·오류·권한 없음·성공의 다섯 화면 상태를 loading.tsx·error.tsx·not-found.tsx와 함께 만드는 법을 익힙니다."
 order: 4
-published: true
+published: false
 duration: 50
 tags: [폼, useActionState, Server Action, revalidatePath, loading, error, 화면 상태]
 objectives:

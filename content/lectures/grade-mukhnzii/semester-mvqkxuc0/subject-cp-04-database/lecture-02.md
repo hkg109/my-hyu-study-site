@@ -2,7 +2,7 @@
 title: "04-2 · SQL 읽기·쓰기"
 description: "SELECT·WHERE·ORDER BY·LIMIT부터 JOIN·GROUP BY·EXISTS, INSERT·UPDATE·RETURNING까지 학생회 실제 쿼리로 익히고, Supabase JavaScript 쿼리(.from().select().eq())가 어떤 SQL로 바뀌는지 짝지어 읽습니다."
 order: 2
-published: true
+published: false
 duration: 50
 tags: [SQL, SELECT, JOIN, GROUP BY, INSERT, UPDATE, Supabase 쿼리]
 objectives:

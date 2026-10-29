@@ -2,7 +2,7 @@
 title: "02-1 · React 기초"
 description: "코드를 처음 보는 사람을 위해 HTML 기본 문법(태그·속성·중첩)부터 시작해, JSX가 HTML과 무엇이 다른지, 중괄호 안에 JavaScript를 넣는 규칙, 조건·목록 그리기를 익힌 뒤 Component·Props·State·key를 학생회 업무 카드와 업무 목록 필터로 차근차근 쌓아 올립니다."
 order: 1
-published: true
+published: false
 duration: 70
 tags: [HTML, JSX, React, Component, Props, State, useState]
 objectives:

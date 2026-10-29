@@ -2,7 +2,7 @@
 title: "05-1 · BlockNote 에디터"
 description: "Notion형 블록 에디터 BlockNote가 문서를 블록 목록으로 다루는 방식, React에서 에디터를 띄우는 코드, 기본 블록과 커스텀 Callout 블록, 한국어 별칭이 있는 Slash 메뉴, Template·안건을 블록 JSON으로 저장하는 법, Markdown 내보내기와 라이선스 범위를 익힙니다."
 order: 1
-published: true
+published: false
 duration: 45
 tags: [BlockNote, 에디터, 블록, Slash 메뉴, 커스텀 블록, Template]
 objectives:

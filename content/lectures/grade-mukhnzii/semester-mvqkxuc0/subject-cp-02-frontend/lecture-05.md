@@ -2,7 +2,7 @@
 title: "02-5 · Tailwind·접근성·반응형"
 description: "Tailwind CSS가 빌드 때 어떻게 CSS를 만드는지, 클래스 이름 규칙과 반응형·상태 접두어, 색 토큰을 한 곳에서 관리하는 법을 익히고, 기획서 12.1절의 접근성(키보드·포커스·label·명도 대비·색 외 표시)과 모바일 기준을 업무 화면에 적용하는 점검표를 만듭니다."
 order: 5
-published: true
+published: false
 duration: 40
 tags: [Tailwind CSS, 접근성, 반응형, 키보드, 명도 대비]
 objectives:

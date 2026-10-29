@@ -2,7 +2,7 @@
 title: "06-6 · 새 기수 세팅 화면과 기수 전환"
 description: "추가 결정 3을 구현합니다. 새 회장단이 DRAFT 기수 안에서 기수 정보·부서와 직책·구성원 일괄 등록·회의 양식을 단계별로 준비하고, 준비가 끝나면 activate_term() 한 번의 트랜잭션으로 이전 기수를 닫고 새 기수를 여는 과정, 전환 직후 Archive Grant로 이전 자료를 여는 과정까지 화면 → 서버 → DB로 따라갑니다."
 order: 6
-published: true
+published: false
 duration: 60
 tags: [새 기수, 세팅 마법사, 일괄 등록, 기수 전환, 트랜잭션, Archive Grant]
 objectives:

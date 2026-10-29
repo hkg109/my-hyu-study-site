@@ -2,7 +2,7 @@
 title: "04-3 · 마이그레이션과 제약조건"
 description: "DB 구조를 파일로 기록하는 마이그레이션과 Supabase CLI 작업 순서, 가짜 데이터로만 만드는 Seed를 익히고, 기획서 부록 B의 핵심 테이블을 실제 CREATE TABLE로 옮기며 NOT NULL·UNIQUE·부분 UNIQUE·CHECK·외래 키·복합 외래 키·트랜잭션이 각각 어떤 잘못된 상태를 막는지 배웁니다."
 order: 3
-published: true
+published: false
 duration: 55
 tags: [마이그레이션, Supabase CLI, 제약조건, CHECK, UNIQUE, 외래 키, 트랜잭션, Seed]
 objectives:
