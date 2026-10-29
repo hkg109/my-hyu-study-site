@@ -2,7 +2,7 @@
 title: "00-4 · 데이터·기술·범위와 추가 결정"
 description: "기획서 v0.7의 9–14절과 부록. 핵심 테이블과 RLS 원칙, Permission Key와 Activity Log, 기술 구조와 화면 구조, 개발 순서·MVP 범위·완료 기준 38개를 정리하고, 기획서 이후 정한 계정 구조·회장단 권한 이양·새 기수 세팅 화면·회의 안건을 확정안으로 기록합니다."
 order: 4
-published: true
+published: false
 duration: 55
 tags: [기획서, ERD, RLS, Activity Log, 기술 스택, MVP, 추가 결정]
 objectives:

@@ -2,7 +2,7 @@
 title: "07-4 · 다음 기수에게 남기는 문서"
 description: "코드만 남기면 다음 기수는 '왜 이렇게 만들었는지'를 모릅니다. README·docs 폴더 구조, 결정 기록(ADR), 운영 문서, 테스트를 문서로 쓰는 법을 정하고, 처음 온 개발자가 이 강의와 저장소를 어떤 순서로 읽고 첫 PR까지 가는지 아홉 단계 경로로 정리합니다."
 order: 4
-published: true
+published: false
 duration: 35
 tags: [문서화, README, ADR, 온보딩, 인수인계, 학습 경로]
 objectives:

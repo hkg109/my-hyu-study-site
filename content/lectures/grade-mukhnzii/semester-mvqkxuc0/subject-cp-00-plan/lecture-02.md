@@ -2,7 +2,7 @@
 title: "00-2 · 로그인·Dashboard·업무·행사"
 description: "기획서 v0.7의 2–5절. 학교 Google 계정 로그인과 승인 명단, Dashboard와 Quick Links, Task의 필드·공개 모드·ACL·변경 권한, Event의 열람 범위 상속·행사 자료·일정·인수인계를 정리합니다."
 order: 2
-published: true
+published: false
 duration: 45
 tags: [기획서, 로그인, Auth Hook, Dashboard, Task, Event, ACL]
 objectives:

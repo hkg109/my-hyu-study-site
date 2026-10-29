@@ -2,7 +2,7 @@
 title: "01-5 · 프론트엔드·백엔드·DB 역할 분담"
 description: "이 프로젝트의 도구(Next.js·React·Tailwind·Vercel·Supabase Auth·PostgreSQL·RLS·Storage·Realtime·BlockNote·Yjs)가 각각 어느 층에서 무슨 일을 하는지 지도로 정리하고, '업무 저장' 버튼 하나가 브라우저→서버→DB→화면으로 지나가는 길을 실제 코드 조각으로 따라갑니다."
 order: 5
-published: true
+published: false
 duration: 40
 tags: [프론트엔드, 백엔드, 데이터베이스, Next.js, Supabase, Vercel, 아키텍처]
 objectives:

@@ -2,7 +2,7 @@
 title: "00-3 · 회의록·건의·기수"
 description: "기획서 v0.7의 6–8절. BlockNote 에디터 사양, 회의록 생성·편집 권한과 열람 Preset, Yjs CRDT 저장 방식과 Realtime 보안, Template·회의록 상태, 건의 작성자 신원 분리와 답변·내부 메모, Term 상태와 전환 절차, Archive Grant를 정리합니다."
 order: 3
-published: true
+published: false
 duration: 50
 tags: [기획서, 회의록, BlockNote, Yjs, CRDT, 건의, Term, Archive Grant]
 objectives:

@@ -2,7 +2,7 @@
 title: "01-3 · JavaScript 읽기"
 description: "변수·자료형·객체·배열, 함수와 화살표 함수, 조건문과 반복, map·filter·find, 구조 분해와 전개, 템플릿 문자열, import·export, Promise와 async/await를 학생회 업무 데이터로 한 줄씩 읽는 법을 익힙니다."
 order: 3
-published: true
+published: false
 duration: 55
 tags: [JavaScript, 함수, 배열, 객체, async/await, 모듈]
 objectives:

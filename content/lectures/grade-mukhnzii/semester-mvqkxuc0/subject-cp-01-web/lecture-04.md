@@ -2,7 +2,7 @@
 title: "01-4 · TypeScript 읽기"
 description: "타입 표기, type과 interface, 유니언 타입, 선택 속성과 null, 배열·함수·제네릭 타입 읽는 법을 익히고, 기획서의 Task·Membership·회의록 상태를 TypeScript 타입으로 옮겨 보며 타입 오류 메시지를 해석합니다."
 order: 4
-published: true
+published: false
 duration: 45
 tags: [TypeScript, 타입, 유니언, 제네릭, Supabase 타입]
 objectives:

@@ -2,7 +2,7 @@
 title: "01-2 · HTML·CSS 읽기"
 description: "태그·속성·중첩으로 이루어진 HTML의 구조, 폼과 label, 의미 있는 태그를 업무 등록 폼으로 읽고, CSS 선택자·박스 모델·Flexbox와 Tailwind 클래스를 같은 폼에 입혀 보며 화면이 어떻게 만들어지는지 익힙니다."
 order: 2
-published: true
+published: false
 duration: 40
 tags: [HTML, CSS, 폼, label, Flexbox, Tailwind]
 objectives:

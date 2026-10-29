@@ -2,7 +2,7 @@
 title: "07-2 · Git 협업과 배포"
 description: "Issue → Branch → Commit → Pull Request → 리뷰 → Merge 흐름과 팀 규칙, main 브랜치 보호와 CODEOWNERS, PR 양식을 정하고, GitHub Actions로 PR마다 lint·test·build·DB 테스트를 돌리고 main에 합쳐지면 Supabase 마이그레이션과 Vercel 배포를 학생회 계정 토큰으로 실행하는 워크플로 파일을 한 줄씩 읽습니다."
 order: 2
-published: true
+published: false
 duration: 55
 tags: [Git, GitHub, Pull Request, 브랜치 보호, GitHub Actions, CI/CD, 배포, 롤백]
 objectives:

@@ -2,7 +2,7 @@
 title: "07-3 · 기수 교대 점검표"
 description: "매년 회장단이 바뀔 때 서비스 안(권한 이양·기수 전환)과 서비스 밖(GitHub·Vercel·Supabase 계정, 비밀번호·토큰, 백업, 비용·한도)에서 해야 할 일을 시기별 점검표로 정리하고, DB 백업·Supabase 일시 중지 복구·비밀 값 노출 대응 절차를 명령어 수준으로 기록합니다."
 order: 3
-published: true
+published: false
 duration: 45
 tags: [운영, 기수 교대, 점검표, 백업, 복구, 토큰 교체, 사고 대응]
 objectives:
