@@ -23,6 +23,31 @@ React는 "화면 조각을 만드는 법"만 알려 줍니다. **Next.js**는 �
 | 서버 함수 | 폼 제출을 서버에서 처리 (02-4편, 03-1편) |
 | 빌드·최적화 | 이미지·글꼴·코드 분할 |
 
+> [!NOTE]
+> React와 Next.js가 각각 무엇이고 어떤 문법이 어느 쪽 것인지는 [02-0 React와 Next.js 한눈에 보기](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-02-frontend/lecture-00)에 지도로 정리했습니다. 이 편은 그중 **주소와 파일 규칙**을 자세히 봅니다.
+
+### Next.js의 "문법"은 대부분 이름 규칙이다
+
+Next.js는 새 언어가 아닙니다. 코드는 그대로 React(JSX)와 TypeScript이고, Next.js가 정한 것은 주로 **이름**입니다.
+
+| 종류 | 예 | 뜻 |
+| --- | --- | --- |
+| 폴더 이름 | `app/tasks/`, `[taskId]`, `(council)` | 주소를 만든다 |
+| 파일 이름 | `page.tsx`, `layout.tsx`, `loading.tsx` | 그 주소에서 맡는 역할 |
+| 내보내기 | `export default function …` | Next.js가 찾아서 실행할 Component |
+| 가져오는 함수 | `Link`, `redirect`, `notFound` | 이동과 화면 전환 |
+
+가장 작은 페이지는 이렇게 생겼습니다.
+
+```tsx
+// app/tasks/page.tsx  →  주소 /tasks
+export default function TasksPage() {
+  return <h1>업무</h1>;
+}
+```
+
+`export default`가 중요합니다. 페이지 파일마다 **기본으로 내보내는 Component 하나**가 있어야 Next.js가 그 주소에서 그것을 그립니다. 함수 이름(`TasksPage`)은 자유입니다.
+
 > [!CAUTION]
 > 이 프로젝트가 쓰는 Next.js 16은 예전 버전과 규칙이 다른 곳이 있습니다. 예: `middleware.ts`가 **`proxy.ts`로** 이름이 바뀌었고, `params`·`cookies()`는 `await`해서 꺼냅니다. 코드를 쓸 때는 설치된 버전의 공식 문서(`node_modules/next/dist/docs/`)를 먼저 확인합니다.
 
