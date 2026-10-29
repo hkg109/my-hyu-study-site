@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 3과목 3장 (2)
 
-[← 9편 · 데이터마이닝과 분류분석](/lectures/grade-01/semester-01/subject-adsp/lecture-09) · [처음으로: 0 · 시험 지도](/lectures/grade-01/semester-01/subject-adsp/lecture-00)
+[← 9편 · 데이터마이닝과 분류분석](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-09) · [처음으로: 0 · 시험 지도](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-00)
 
 **범위:** 교재 3과목 3장 03 "군집분석"(계층적 군집, 혼합 분포 군집, SOM), 04 "연관분석"(개요와 측도, 알고리즘).
 
@@ -354,7 +354,7 @@ objectives:
 > Q: Apriori와 FP-Growth의 차이는?
 > A: Apriori는 최소 지지도로 빈발 항목집합을 단계적으로 찾으며 DB를 여러 번 스캔해 느리고, FP-Growth는 FP-Tree로 압축해 DB를 두 번만 스캔하므로 빠르다.
 
-**마무리 기준:** 거래표 하나로 세 측도를 계산하고, K-means의 한계 네 가지를 말할 수 있으면 3과목 범위를 한 바퀴 돈 것이다. [0 · 시험 지도](/lectures/grade-01/semester-01/subject-adsp/lecture-00)의 암기 코드 표로 돌아가 전체를 점검한다.
+**마무리 기준:** 거래표 하나로 세 측도를 계산하고, K-means의 한계 네 가지를 말할 수 있으면 3과목 범위를 한 바퀴 돈 것이다. [0 · 시험 지도](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-00)의 암기 코드 표로 돌아가 전체를 점검한다.
 
 > [!PAGEBREAK]
 

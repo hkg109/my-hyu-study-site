@@ -13,7 +13,7 @@ objectives:
 
 ## 학습 경로 · ADsP 노트 사용법
 
-[1편 · 데이터의 이해 →](/lectures/grade-01/semester-01/subject-adsp/lecture-01)
+[1편 · 데이터의 이해 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-01)
 
 **ADsP(Advanced Data Analytics Semi-Professional, 데이터분석 준전문가)** 는 한국데이터산업진흥원이 시행하는 국가공인 자격이다. 데이터를 이해하고(1과목), 분석 과제를 기획하고(2과목), 실제로 통계·데이터마이닝으로 분석하는(3과목) 능력을 묻는다.
 
@@ -47,16 +47,16 @@ objectives:
 
 | 노트 | 시험 범위 | 핵심 키워드 |
 | --- | --- | --- |
-| [1편](/lectures/grade-01/semester-01/subject-adsp/lecture-01) | 1과목 1장 데이터의 이해 | DIKW, 암묵지·형식지, DB 특징, DW, SQL |
-| [2편](/lectures/grade-01/semester-01/subject-adsp/lecture-02) | 1과목 2·3장 데이터의 가치와 미래, 데이터 사이언스 | 3V, 위기 요인, 비식별화, 데이터 사이언티스트 |
-| [3편](/lectures/grade-01/semester-01/subject-adsp/lecture-03) | 2과목 1장 분석 기획의 이해 | 분석 주제 4유형, KDD, CRISP-DM, 하향식·상향식 |
-| [4편](/lectures/grade-01/semester-01/subject-adsp/lecture-04) | 2과목 2장 분석 마스터플랜 | 우선순위 사분면, 거버넌스, 준비도·성숙도 |
-| [5편](/lectures/grade-01/semester-01/subject-adsp/lecture-05) | 3과목 1장 R 기초·데이터 마트·EDA | 벡터, 요약·파생변수, 결측값, 이상값 |
-| [6편](/lectures/grade-01/semester-01/subject-adsp/lecture-06) | 3과목 2장 통계의 이해 | 표본추출, 척도, 확률분포, 추정, 가설검정 |
-| [7편](/lectures/grade-01/semester-01/subject-adsp/lecture-07) | 3과목 2장 기초통계·회귀분석 | t검정, ANOVA, 교차분석, 상관, 회귀 해석 |
-| [8편](/lectures/grade-01/semester-01/subject-adsp/lecture-08) | 3과목 2장 다변량·시계열 | MDS, PCA, 정상성, AR·MA·ARIMA |
-| [9편](/lectures/grade-01/semester-01/subject-adsp/lecture-09) | 3과목 3장 데이터마이닝·분류분석 | 데이터 분할, 로지스틱, 나무, 앙상블, 신경망, 평가 |
-| [10편](/lectures/grade-01/semester-01/subject-adsp/lecture-10) | 3과목 3장 군집·연관분석 | 거리, 계층적·K-means, SOM, 지지도·신뢰도·향상도 |
+| [1편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-01) | 1과목 1장 데이터의 이해 | DIKW, 암묵지·형식지, DB 특징, DW, SQL |
+| [2편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-02) | 1과목 2·3장 데이터의 가치와 미래, 데이터 사이언스 | 3V, 위기 요인, 비식별화, 데이터 사이언티스트 |
+| [3편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-03) | 2과목 1장 분석 기획의 이해 | 분석 주제 4유형, KDD, CRISP-DM, 하향식·상향식 |
+| [4편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-04) | 2과목 2장 분석 마스터플랜 | 우선순위 사분면, 거버넌스, 준비도·성숙도 |
+| [5편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-05) | 3과목 1장 R 기초·데이터 마트·EDA | 벡터, 요약·파생변수, 결측값, 이상값 |
+| [6편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-06) | 3과목 2장 통계의 이해 | 표본추출, 척도, 확률분포, 추정, 가설검정 |
+| [7편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-07) | 3과목 2장 기초통계·회귀분석 | t검정, ANOVA, 교차분석, 상관, 회귀 해석 |
+| [8편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-08) | 3과목 2장 다변량·시계열 | MDS, PCA, 정상성, AR·MA·ARIMA |
+| [9편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-09) | 3과목 3장 데이터마이닝·분류분석 | 데이터 분할, 로지스틱, 나무, 앙상블, 신경망, 평가 |
+| [10편](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-10) | 3과목 3장 군집·연관분석 | 거리, 계층적·K-means, SOM, 지지도·신뢰도·향상도 |
 
 **추천 순서:** 1 → 2 → 3 → 4편을 이틀 안에 끝내 1·2과목 암기를 깔아 두고, 6 → 7 → 9 → 10 → 8 → 5편 순으로 3과목을 돈다. R 문법(5편)은 출력 해석 문제를 풀면서 필요한 만큼 돌아와 확인하는 편이 효율적이다.
 

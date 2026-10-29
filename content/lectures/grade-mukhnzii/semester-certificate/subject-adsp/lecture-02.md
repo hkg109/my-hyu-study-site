@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 1과목 2·3장
 
-[← 1편 · 데이터의 이해](/lectures/grade-01/semester-01/subject-adsp/lecture-01) · [다음: 3편 · 분석 기획의 이해 →](/lectures/grade-01/semester-01/subject-adsp/lecture-03)
+[← 1편 · 데이터의 이해](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-01) · [다음: 3편 · 분석 기획의 이해 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-03)
 
 **범위:** 교재 1과목 2장 "데이터의 가치와 미래"(빅데이터의 이해, 가치와 영향, 위기 요인과 통제 방안, 미래의 빅데이터)와 3장 "가치 창조를 위한 데이터 사이언스와 전략 인사이트".
 
@@ -365,7 +365,7 @@ objectives:
 > Q: 싸이월드 사례가 보여 주는 교훈은?
 > A: 분석 인프라(OLAP 등)가 있어도 분석을 의사결정과 전략 인사이트로 연결하지 못하면 경쟁에서 밀린다.
 
-**다음으로 갈 기준:** 위기 요인 세 개를 통제 방안과 짝지어 말하고, 비식별화 예시 다섯 개를 기법 이름으로 바꿀 수 있으면 2과목으로 넘어간다: [3편 · 분석 기획의 이해](/lectures/grade-01/semester-01/subject-adsp/lecture-03).
+**다음으로 갈 기준:** 위기 요인 세 개를 통제 방안과 짝지어 말하고, 비식별화 예시 다섯 개를 기법 이름으로 바꿀 수 있으면 2과목으로 넘어간다: [3편 · 분석 기획의 이해](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-03).
 
 > [!PAGEBREAK]
 

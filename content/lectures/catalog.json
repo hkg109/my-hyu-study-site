@@ -19,11 +19,6 @@
               "id": "subject-muhy93e5",
               "name": "C프로그래밍",
               "order": 2
-            },
-            {
-              "id": "subject-adsp",
-              "name": "ADsP · 데이터분석 준전문가",
-              "order": 3
             }
           ]
         },
@@ -144,6 +139,18 @@
               "id": "subject-cp-07-operations",
               "name": "02 GitHub 협업",
               "order": 2
+            }
+          ]
+        },
+        {
+          "id": "semester-certificate",
+          "name": "자격증",
+          "order": 3,
+          "subjects": [
+            {
+              "id": "subject-adsp",
+              "name": "ADsP · 데이터분석 준전문가",
+              "order": 1
             }
           ]
         }

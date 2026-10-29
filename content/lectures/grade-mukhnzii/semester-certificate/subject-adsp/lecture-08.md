@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 3과목 2장 (3)
 
-[← 7편 · 기초통계와 회귀분석](/lectures/grade-01/semester-01/subject-adsp/lecture-07) · [다음: 9편 · 데이터마이닝과 분류분석 →](/lectures/grade-01/semester-01/subject-adsp/lecture-09)
+[← 7편 · 기초통계와 회귀분석](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-07) · [다음: 9편 · 데이터마이닝과 분류분석 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-09)
 
 **범위:** 교재 3과목 2장 04 "다변량 분석"(다차원 척도법, 주성분분석), 05 "시계열 분석"(개요, 시계열 모형).
 
@@ -313,7 +313,7 @@ ARMA  : 과거 관측값 Z와 과거 오차 a를 함께 사용
 > Q: 분해시계열 4요인은?
 > A: 추세(장기 증감), 계절(고정 주기), 순환(알려지지 않은 주기), 불규칙(설명되지 않는 잔차).
 
-**다음으로 갈 기준:** PCA 출력에서 주성분 수를 고르고 ARIMA 표기를 풀어 말할 수 있으면 데이터마이닝으로 간다: [9편 · 데이터마이닝과 분류분석](/lectures/grade-01/semester-01/subject-adsp/lecture-09).
+**다음으로 갈 기준:** PCA 출력에서 주성분 수를 고르고 ARIMA 표기를 풀어 말할 수 있으면 데이터마이닝으로 간다: [9편 · 데이터마이닝과 분류분석](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-09).
 
 > [!PAGEBREAK]
 

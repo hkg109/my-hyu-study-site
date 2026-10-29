@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 2과목 2장
 
-[← 3편 · 분석 기획의 이해](/lectures/grade-01/semester-01/subject-adsp/lecture-03) · [다음: 5편 · R 기초와 데이터 마트 →](/lectures/grade-01/semester-01/subject-adsp/lecture-05)
+[← 3편 · 분석 기획의 이해](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-03) · [다음: 5편 · R 기초와 데이터 마트 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-05)
 
 **범위:** 교재 2과목 2장 — 01 마스터플랜 수립(우선순위 평가, 이행 계획), 02 분석 거버넌스 체계 수립(성숙도 진단, 인프라, 데이터 거버넌스, 조직, 과제 관리, 교육·변화 관리).
 
@@ -319,7 +319,7 @@ objectives:
 > Q: 집중형·기능형·분산형 분석 조직의 핵심 차이는?
 > A: 집중형은 독립 DSCoE가 일괄 담당(업무 이원화 가능), 기능형은 DSCoE 없이 부서별 분석(전사 관점 부족), 분산형은 분석 인력을 현업에 배치(신속한 적용).
 
-**다음으로 갈 기준:** 사분면 순서 두 개와 성숙도 네 유형을 그림 없이 말할 수 있으면 3과목으로 넘어간다: [5편 · R 기초와 데이터 마트](/lectures/grade-01/semester-01/subject-adsp/lecture-05).
+**다음으로 갈 기준:** 사분면 순서 두 개와 성숙도 네 유형을 그림 없이 말할 수 있으면 3과목으로 넘어간다: [5편 · R 기초와 데이터 마트](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-05).
 
 > [!PAGEBREAK]
 

@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 3과목 2장 (1)
 
-[← 5편 · R 기초와 데이터 마트](/lectures/grade-01/semester-01/subject-adsp/lecture-05) · [다음: 7편 · 기초통계와 회귀분석 →](/lectures/grade-01/semester-01/subject-adsp/lecture-07)
+[← 5편 · R 기초와 데이터 마트](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-05) · [다음: 7편 · 기초통계와 회귀분석 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-07)
 
 **범위:** 교재 3과목 2장 01 "통계의 이해" — 통계 개요, 확률과 확률분포, 추정과 가설검정.
 
@@ -419,7 +419,7 @@ P(A | B) = P(B | A) × P(A) ÷ P(B)
 > Q: 비모수 검정을 쓰는 상황과 대표 검정은?
 > A: 모집단 분포를 가정할 수 없거나 표본이 작을 때 순위·부호로 검정한다. 부호 검정, 윌콕슨 부호순위·순위합 검정, 만-위트니 U 검정, 크루스칼-왈리스 검정, 스피어만 순위상관.
 
-**다음으로 갈 기준:** p-value와 α로 판정을 말하고, 상황을 보고 분포를 고를 수 있으면 실제 검정으로 간다: [7편 · 기초통계와 회귀분석](/lectures/grade-01/semester-01/subject-adsp/lecture-07).
+**다음으로 갈 기준:** p-value와 α로 판정을 말하고, 상황을 보고 분포를 고를 수 있으면 실제 검정으로 간다: [7편 · 기초통계와 회귀분석](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-07).
 
 > [!PAGEBREAK]
 

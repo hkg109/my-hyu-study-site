@@ -16,6 +16,16 @@ const nextConfig: NextConfig = {
         destination: "/practice/grade-01/semester-muheifg4/subject-muhz2xir/:document",
         permanent: true,
       },
+      {
+        source: "/lectures/grade-01/semester-01/subject-adsp/:document",
+        destination: "/lectures/grade-mukhnzii/semester-certificate/subject-adsp/:document",
+        permanent: true,
+      },
+      {
+        source: "/practice/grade-01/semester-01/subject-adsp/:document",
+        destination: "/practice/grade-mukhnzii/semester-certificate/subject-adsp/:document",
+        permanent: true,
+      },
     ];
   },
   async headers() {

@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 3과목 2장 (2)
 
-[← 6편 · 통계의 이해](/lectures/grade-01/semester-01/subject-adsp/lecture-06) · [다음: 8편 · 다변량 분석과 시계열 →](/lectures/grade-01/semester-01/subject-adsp/lecture-08)
+[← 6편 · 통계의 이해](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-06) · [다음: 8편 · 다변량 분석과 시계열 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-08)
 
 **범위:** 교재 3과목 2장 02 "기초통계"(t검정, 분산분석, 교차분석, 상관분석)와 03 "회귀분석"(개요, 단순·다중 선형회귀, 최적 회귀방정식, 고급 회귀분석).
 
@@ -348,7 +348,7 @@ ADsP에서는 보통 ==blue:선형성 · 독립성 · 등분산성 · 비상관�
 > Q: 전진선택·후진제거·단계적 선택의 차이는?
 > A: 전진은 빈 모형에서 변수를 하나씩 추가, 후진은 전체 모형에서 하나씩 제거, 단계적은 추가하면서 기존 변수의 제거 여부도 매 단계 검토한다.
 
-**다음으로 갈 기준:** lm 출력 하나를 보고 회귀식, 유의한 변수, 표본 수, 설명력을 30초 안에 말할 수 있으면 다음 편으로 간다: [8편 · 다변량 분석과 시계열](/lectures/grade-01/semester-01/subject-adsp/lecture-08).
+**다음으로 갈 기준:** lm 출력 하나를 보고 회귀식, 유의한 변수, 표본 수, 설명력을 30초 안에 말할 수 있으면 다음 편으로 간다: [8편 · 다변량 분석과 시계열](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-08).
 
 > [!PAGEBREAK]
 

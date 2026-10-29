@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 2과목 1장
 
-[← 2편 · 빅데이터의 가치와 데이터 사이언스](/lectures/grade-01/semester-01/subject-adsp/lecture-02) · [다음: 4편 · 분석 마스터플랜 →](/lectures/grade-01/semester-01/subject-adsp/lecture-04)
+[← 2편 · 빅데이터의 가치와 데이터 사이언스](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-02) · [다음: 4편 · 분석 마스터플랜 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-04)
 
 **범위:** 교재 2과목 1장 — 01 분석 기획과 분석 방법론, 02 분석 과제 발굴, 03 분석 프로젝트 관리 방안.
 
@@ -410,7 +410,7 @@ ISO 21500 / PMBOK 기반: ==blue:통합 · 이해관계자 · 범위 · 자원 �
 > Q: 나선형 모델과 프로토타입 모델의 핵심 차이는?
 > A: 나선형은 반복하며 위험 요소를 분석·제거하는 데 초점, 프로토타입은 요구사항이 불명확할 때 시제품을 먼저 만들어 보완하는 데 초점.
 
-**다음으로 갈 기준:** 방법론 네 개의 단계를 막힘없이 쓰고, CRISP-DM 태스크 하나를 단계에 꽂을 수 있으면 다음 편으로 간다: [4편 · 분석 마스터플랜](/lectures/grade-01/semester-01/subject-adsp/lecture-04).
+**다음으로 갈 기준:** 방법론 네 개의 단계를 막힘없이 쓰고, CRISP-DM 태스크 하나를 단계에 꽂을 수 있으면 다음 편으로 간다: [4편 · 분석 마스터플랜](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-04).
 
 > [!PAGEBREAK]
 

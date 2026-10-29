@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 1과목 1장
 
-[← 0 · 시험 지도](/lectures/grade-01/semester-01/subject-adsp/lecture-00) · [다음: 2편 · 빅데이터의 가치와 데이터 사이언스 →](/lectures/grade-01/semester-01/subject-adsp/lecture-02)
+[← 0 · 시험 지도](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-00) · [다음: 2편 · 빅데이터의 가치와 데이터 사이언스 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-02)
 
 **범위:** 교재 1과목 1장 "데이터의 이해" — 01 데이터와 정보, 02 데이터베이스의 정의와 특징, 데이터베이스 활용.
 
@@ -361,7 +361,7 @@ objectives:
 > Q: 데이터 마트와 데이터 레이크는 DW와 어떻게 다른가?
 > A: 데이터 마트는 DW에서 특정 부서·주제용으로 떼어 낸 소규모 DW이고, 데이터 레이크는 정형·비정형 데이터를 원래 형태 그대로 대량 저장하는 저장소다.
 
-**다음으로 갈 기준:** 예문 하나를 보고 DIKW 층과 데이터 구조 유형을 바로 말할 수 있으면 다음 편으로 간다: [2편 · 빅데이터의 가치와 데이터 사이언스](/lectures/grade-01/semester-01/subject-adsp/lecture-02).
+**다음으로 갈 기준:** 예문 하나를 보고 DIKW 층과 데이터 구조 유형을 바로 말할 수 있으면 다음 편으로 간다: [2편 · 빅데이터의 가치와 데이터 사이언스](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-02).
 
 > [!PAGEBREAK]
 

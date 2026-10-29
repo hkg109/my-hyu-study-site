@@ -14,7 +14,7 @@ published: true
 - **편집 기준:** 원문 문항·보기·정답과 해설, 오답 풀이, 보충 개념을 수록했습니다. PDF의 줄바꿈을 정리하고 표·R 출력을 복원했으며, 38번 상자그림은 원본의 구성 요소를 SVG로 다시 그렸습니다.
 - **복습 메모:** 17번의 정밀도 용례와 24번의 결정계수 범위 조건을 덧붙였습니다. 42번 보충 개념에서 완전분석법을 단순대치법에 포함한 표현은 **관측치 삭제 방식**으로 바로잡았습니다.
 
-[50회 족보 이어서 풀기](/practice/grade-01/semester-01/subject-adsp/exam-50)
+[50회 족보 이어서 풀기](/practice/grade-mukhnzii/semester-certificate/subject-adsp/exam-50)
 
 
 ## Part 1 · 데이터 이해 (1–10)

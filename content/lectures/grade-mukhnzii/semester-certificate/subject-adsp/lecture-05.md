@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 3과목 1장
 
-[← 4편 · 분석 마스터플랜](/lectures/grade-01/semester-01/subject-adsp/lecture-04) · [다음: 6편 · 통계의 이해 →](/lectures/grade-01/semester-01/subject-adsp/lecture-06)
+[← 4편 · 분석 마스터플랜](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-04) · [다음: 6편 · 통계의 이해 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-06)
 
 **범위:** 교재 3과목 1장 — 01 R 기초(설치·기본 사용법, 기본 문법), 02 데이터 마트, 03 데이터 탐색(EDA, 결측값, 이상값).
 
@@ -401,7 +401,7 @@ R 함수: `is.na()`, `complete.cases()`(결측 없는 행 TRUE), `na.omit()`(결
 > Q: 이상값을 항상 제거하지 않는 이유는?
 > A: 입력 오류가 아니라 실제 현상일 수 있고, 사기 탐지·의료·부정 사용 탐지처럼 이상값 자체가 분석 대상인 경우가 있기 때문이다.
 
-**다음으로 갈 기준:** 벡터 코드 세 줄을 보고 출력을 맞히고, IQR 경계를 계산할 수 있으면 통계로 넘어간다: [6편 · 통계의 이해](/lectures/grade-01/semester-01/subject-adsp/lecture-06).
+**다음으로 갈 기준:** 벡터 코드 세 줄을 보고 출력을 맞히고, IQR 경계를 계산할 수 있으면 통계로 넘어간다: [6편 · 통계의 이해](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-06).
 
 > [!PAGEBREAK]
 

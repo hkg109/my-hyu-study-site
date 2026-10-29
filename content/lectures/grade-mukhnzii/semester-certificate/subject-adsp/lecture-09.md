@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로 · 3과목 3장 (1)
 
-[← 8편 · 다변량 분석과 시계열](/lectures/grade-01/semester-01/subject-adsp/lecture-08) · [다음: 10편 · 군집분석과 연관분석 →](/lectures/grade-01/semester-01/subject-adsp/lecture-10)
+[← 8편 · 다변량 분석과 시계열](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-08) · [다음: 10편 · 군집분석과 연관분석 →](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-10)
 
 **범위:** 교재 3과목 3장 01 "데이터 마이닝"(개요, 데이터 분할), 02 "분류 분석"(로지스틱 회귀, 의사결정나무, 앙상블, 인공신경망, 나이브 베이즈, k-NN, SVM, 성과 평가).
 
@@ -409,7 +409,7 @@ objectives:
 > Q: k-NN에서 k값이 성능에 미치는 영향은?
 > A: k가 너무 작으면 잡음에 민감해 과대적합, 너무 크면 경계가 뭉개져 과소적합된다.
 
-**다음으로 갈 기준:** 오분류표 하나로 다섯 지표를 2분 안에 계산하고, 앙상블 세 가지를 한 문장씩 구분할 수 있으면 마지막 편으로 간다: [10편 · 군집분석과 연관분석](/lectures/grade-01/semester-01/subject-adsp/lecture-10).
+**다음으로 갈 기준:** 오분류표 하나로 다섯 지표를 2분 안에 계산하고, 앙상블 세 가지를 한 문장씩 구분할 수 있으면 마지막 편으로 간다: [10편 · 군집분석과 연관분석](/lectures/grade-mukhnzii/semester-certificate/subject-adsp/lecture-10).
 
 > [!PAGEBREAK]
 
