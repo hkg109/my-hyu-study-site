@@ -1,76 +1,165 @@
 ---
 title: "07 · 인증·권한: 로그인·Role·RLS"
-description: "Google 로그인부터 세션·승인 명단·Membership·Role·RLS까지 실제 플랫폼의 세 계층 검증을 따라가며 허용과 거부를 함께 테스트합니다."
+description: "실제 Google 로그인과 Membership 활성화 코드를 읽고, 화면·서버·DB가 권한을 나누어 검증하는 이유를 허용·거부 사례로 판단합니다."
 order: 0
 published: true
-duration: 55
+duration: 60
 tags: [authentication, authorization, Google OAuth, Role, RLS, Supabase]
 objectives:
   - 인증과 인가, 로그인 사용자와 학생회 구성원을 구분한다.
-  - 실제 Google callback과 activate_membership 흐름을 설명한다.
-  - 화면·서버·DB가 각각 확인하는 것을 구분한다.
-  - 허용과 거부 사례를 가짜 계정·데이터로 검증한다.
+  - Google OAuth부터 activate_membership까지의 실제 흐름을 설명한다.
+  - Role·직책·기수 범위를 혼동하지 않는다.
+  - 허용·거부 사례가 화면·서버·DB 중 어디에서 통제되는지 판단한다.
 ---
 
 ## 1. 이 강의가 필요한 순간
 
-로그인 뒤 어디로 가는지, 어떤 구성원만 화면을 볼 수 있는지, 버튼을 숨겼는데 왜 RLS도 필요한지 궁금할 때 읽습니다. [Supabase](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-04-database/lecture-00)를 먼저 읽고, 막힌 증거를 정리할 때 [디버깅](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-06-features/lecture-00)을 봅니다.
+로그인은 됐는데 대시보드에 들어갈 수 없거나, 버튼을 숨겼는데도 RLS가 필요한 이유가 궁금할 때 읽습니다. 데이터 구조가 낯설다면 [Supabase](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-04-database/lecture-00)를 먼저 읽고, 실패 증거를 정리해야 한다면 [디버깅](/lectures/grade-mukhnzii/semester-mvqkxuc0/subject-cp-06-features/lecture-00)을 함께 봅니다.
+
+이 강의는 다음 실제 코드를 기준으로 합니다.
+
+- [Google 로그인 버튼](https://github.com/INFOSYS-COUNCIL/council-platform/blob/8ea98f2bcddab6db3fda80e0f74881f9917da62f/src/app/login/google-login-button.tsx)
+- [OAuth callback](https://github.com/INFOSYS-COUNCIL/council-platform/blob/8ea98f2bcddab6db3fda80e0f74881f9917da62f/src/app/auth/callback/route.ts)
+- [세션·Membership helper](https://github.com/INFOSYS-COUNCIL/council-platform/blob/8ea98f2bcddab6db3fda80e0f74881f9917da62f/src/lib/auth/session.ts)
+- [Auth Hook·Membership 활성화 migration](https://github.com/INFOSYS-COUNCIL/council-platform/blob/8ea98f2bcddab6db3fda80e0f74881f9917da62f/supabase/migrations/20261028080019_auth_hooks_activation.sql)
+- [Membership·RLS migration](https://github.com/INFOSYS-COUNCIL/council-platform/blob/8ea98f2bcddab6db3fda80e0f74881f9917da62f/supabase/migrations/20261028075831_membership_auth.sql)
+- [인증·권한 pgTAP](https://github.com/INFOSYS-COUNCIL/council-platform/blob/8ea98f2bcddab6db3fda80e0f74881f9917da62f/supabase/tests/auth_membership_test.sql)
 
 > [!CONCEPT]
-> **목표:** 로그인(인증)과 접근 허용(인가)을 구분하고, `requireMember`와 RLS가 왜 함께 필요한지 허용·거부 사례로 설명한다.
+> **핵심 질문:** “로그인했는가?”와 “이 자원에 접근해도 되는가?”는 서로 다른 질문이다. 전자는 인증, 후자는 인가다.
 
-## 2. 실제 로그인·세션 흐름
+## 2. 실제 로그인 흐름을 한 줄씩 연결하기
 
-인증은 “누구인가”, 인가는 “무엇을 해도 되는가”입니다. 플랫폼의 `GoogleLoginButton`은 Google OAuth를 시작하고, `src/app/auth/callback/route.ts`가 code를 세션으로 교환한 뒤 `activate_membership` RPC를 호출합니다. Auth Hook은 Google·이메일 인증·`@hanyang.ac.kr`·`hd`를 검사합니다. 승인 명단에 있으면 active Membership이 생기고, 없으면 **로그인한 일반 학생**으로 남습니다.
+플랫폼의 로그인은 단순히 Google 버튼을 누르고 끝나지 않습니다.
 
-| 확인 위치 | 실제 책임 |
-| --- | --- |
-| 로그인 UI | 계정 선택을 시작하고 실패를 안내. `hd`는 힌트일 뿐 |
-| Auth Hook·callback | 학교 계정 검증, 세션 교환, 승인 명단으로 Membership 활성화 |
-| `requireUser` / `requireMember` | page와 Server Action의 로그인·Role gate |
-| RLS | DB의 행 읽기·쓰기를 최종 제한 |
-
-`session.ts`의 `requireUser(path)`는 미로그인 사용자를 `/login?next=...`로 보냅니다. `requireMember(path, roles?)`는 ACTIVE 기수의 active Membership과 Role을 확인해 없거나 불일치하면 `notFound()`를 호출합니다. 권한 없는 화면이 존재한다는 사실도 감추는 정책입니다.
-
-```tsx
-// 실제 helper의 사용 의도
-const member = await requireMember("/dashboard", ["EXECUTIVE", "DIRECTOR"]);
-// 이 뒤의 조회도 RLS가 사용자 JWT를 기준으로 다시 제한한다.
+```text
+GoogleLoginButton
+  → Google OAuth
+  → Auth Hook의 학교 계정 검사
+  → auth.users 생성과 profiles 동기화
+  → /auth/callback에서 code를 session으로 교환
+  → activate_membership() 호출
+  → 승인 명단과 일치하면 active Membership 반환
+  → 안전한 next 경로로 이동
 ```
 
-Role은 `EXECUTIVE`·`DIRECTOR`·`MEMBER`로 정해져 있습니다. `positions`의 직책 이름은 화면 표시용이며 권한 판정에 쓰지 않습니다. 기수·부서·자원 범위의 세부 정책은 기획서에서 확정된 것만 Issue에 옮기며, 제안 상태 항목은 리드에게 확인합니다.
+`GoogleLoginButton`이 전달하는 `hd: "hanyang.ac.kr"`는 계정 선택 화면의 **힌트**입니다. 보안 검증은 서버의 Auth Hook이 Google provider, 이메일 인증 여부, 학교 도메인과 `hd`를 다시 확인합니다. UI 값만 믿으면 요청을 직접 만든 사용자를 막을 수 없습니다.
 
-## 3. 세 계층은 서로 대체하지 않는다
+callback은 query의 `code`를 세션으로 교환한 뒤 RPC를 호출합니다.
 
-화면에서 버튼을 숨기는 것은 실수를 줄이는 UX입니다. URL을 직접 열거나 Server Action을 호출하면 우회할 수 있으므로 page·Action의 `requireUser`/`requireMember`가 필요합니다. 서버 gate도 DB client의 RLS를 대체하지 않습니다. RLS는 `auth.uid()`와 정책으로 실제 행을 제한합니다. 예를 들어 migration은 positions를 같은 기수 구성원에게만 읽히게 하고, profile은 본인 또는 같은 기수 구성원에게만 읽히게 합니다.
+```ts
+const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
 
-프런트엔드에는 publishable key만 둘 수 있습니다. secret/service_role은 어떤 오류 화면·로그·AI 프롬프트에도 넣지 않습니다. DB 정책을 잠시 끄거나 service role로 테스트를 통과시키는 것은 해결이 아닙니다.
+if (!exchangeError) {
+  const { error: membershipError } = await supabase.rpc("activate_membership");
+  // 실제 코드는 민감한 값 대신 안전한 오류 code만 기록한다.
+}
+```
 
-## 4. 따라 하기: 허용 1개·거부 1개
+`activate_membership()`은 로그인 사용자의 검증된 이메일을 승인 명단과 비교합니다. 승인된 계정이면 현재 기수의 Membership을 활성화하고, 승인되지 않은 학교 계정이면 빈 결과를 반환합니다. 같은 사용자가 다시 로그인해도 중복 Membership을 만들지 않도록 설계되어 있습니다.
 
-1. local DB와 가짜 seed 계정으로 로그인합니다. 실제 학생 계정·이메일은 사용하지 않습니다.
-2. 허용 사례: 로그인한 사용자가 `/me`에서 자기 profile과 active membership을 읽는지 확인합니다.
-3. 거부 사례: Role이 맞지 않는 구성원 또는 일반 학생이 구성원 전용 URL을 직접 열어 not-found UI를 받는지 확인합니다.
-4. 같은 사례가 화면, `requireMember`, RLS 중 어디에서 제한되는지 PR에 적습니다. DB 정책 변경은 팀원 실습 범위가 아닙니다.
+따라서 다음 두 상태는 모두 정상입니다.
 
-권한 회수와 기수 전환은 현재 Issue와 기획서의 확정 정책을 따라야 합니다. 확정되지 않은 Role 이름이나 “모든 국장이 모든 부서 자료를 본다” 같은 규칙을 임의로 만들지 않습니다.
+| 사용자 상태 | 인증 | active Membership | 의미 |
+| --- | --- | --- | --- |
+| 승인된 학생회 구성원 | 성공 | 있음 | 구성원 화면 접근 후보 |
+| 승인 명단에 없는 학교 계정 | 성공 | 없음 | 로그인한 일반 학생 |
 
-## 5. 직접 해보기와 흔한 실수
+로그인 성공을 곧바로 학생회 구성원 승인으로 해석하면 안 됩니다.
 
-일반 학생과 active member의 `/me` 표시가 다름을 가짜 계정으로 캡처해 보세요. 완료 기준은 로그인 성공과 구성원 인가를 혼동하지 않고, 거부 사례에 기술 오류나 개인정보가 보이지 않으며, 직접 URL도 막히는 것입니다.
+## 3. Role, 직책, 범위를 분리하기
 
-| 잘못된 예 | 문제 | 올바른 접근 |
+실제 `member_role` enum은 세 값입니다.
+
+```sql
+create type public.member_role as enum (
+  'MEMBER',
+  'DIRECTOR',
+  'EXECUTIVE'
+);
+```
+
+일반 학생을 뜻하는 `STUDENT` Role은 없습니다. 현재 기수의 active Membership이 없다는 상태로 표현합니다. `positions`의 “회장”, “국장”, “부원” 같은 직책 이름은 화면 표시와 조직 설명에 쓰이며, 그 문자열 자체로 권한을 판정하지 않습니다.
+
+| 질문 | 확인할 값 | 임의로 정하면 안 되는 것 |
 | --- | --- | --- |
-| 화면에서만 버튼 숨김 | 직접 URL/요청으로 우회 | page·Action gate + RLS |
-| 직책 이름으로 권한 판단 | 표시 정보가 보안 규칙처럼 변함 | `memberships.role`과 확정 정책 |
-| `hd` 힌트만 믿음 | 선택 화면 값은 강제가 아님 | Auth Hook의 서버 검증 |
+| 로그인했는가? | Auth user·session | 이메일 문자열만 보고 추정 |
+| 학생회 구성원인가? | 현재 기수 active Membership | profile이 있다는 이유로 승인 |
+| 넓은 운영 권한이 있는가? | `memberships.role` | 직책 이름으로 Role 추정 |
+| 특정 부서 자료를 볼 수 있는가? | 확정된 scope 정책과 RLS | “국장이니 모두 가능” 같은 가정 |
 
-## 6. AI 요청과 완료 체크
+기수 전환, 부서별 자원 범위, 권한 회수 시점은 기획서와 Issue에서 **확정된 규칙만** 사용합니다. 아직 결정되지 않은 정책은 AI에게 채우게 하지 않고 리드에게 질문으로 남깁니다.
 
-계획: “로그인·권한 Issue의 허용/거부 경로를 확인한다. `AGENTS.md`, `session.ts`, callback, 기획서의 확정 절만 참고해라. Auth Hook·RLS·migration·공용 auth 파일은 리드 범위이므로 수정하지 마라.”
+## 4. 화면·서버·DB의 세 겹 방어
 
-구현: “page와 Action에서 실제 `requireUser`/`requireMember`를 사용하고, 준비된 RPC만 호출해라. 정책이 미정이면 확정 규칙처럼 쓰지 말고 질문으로 남겨라.”
+권한은 한 곳에서만 검사하지 않습니다.
 
-리뷰: “로그인과 구성원 상태 혼동, Role/직책 혼동, URL 우회, RLS 우회, key·이메일·쿠키 노출을 검사해라.”
+| 계층 | 책임 | 실패 시 기대 동작 |
+| --- | --- | --- |
+| 화면 | 사용할 수 없는 동작을 숨기거나 비활성화 | 혼란과 실수 감소 |
+| page·Server Action | `requireUser`·`requireMember`로 진입과 동작 검사 | login redirect 또는 not-found |
+| DB | JWT의 `auth.uid()`와 RLS·grant로 행 접근 제한 | 빈 결과 또는 `42501` 거부 |
 
-PR에는 허용·거부 계정 유형, 화면/서버/DB의 제한 위치, 확인하지 못한 대시보드 설정을 구분해 남깁니다. 공식 참고: [Supabase Auth](https://supabase.com/docs/guides/auth), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
+화면에서 버튼을 숨기는 것은 보안 경계가 아닙니다. URL을 직접 열거나 요청을 직접 보내면 우회할 수 있습니다. 반대로 서버 helper만 있어도 다른 코드 경로가 DB를 호출할 수 있으므로 RLS가 최종 경계를 맡아야 합니다.
+
+실제 helper의 의도는 다음처럼 읽을 수 있습니다.
+
+```tsx
+const member = await requireMember("/dashboard", ["EXECUTIVE", "DIRECTOR"]);
+// 여기까지 왔어도 뒤의 DB 조회·RPC는 RLS와 grant를 다시 통과해야 한다.
+```
+
+`requireUser(path)`는 미로그인 사용자를 `next`가 포함된 로그인 화면으로 보냅니다. `requireMember(path, roles?)`는 현재 기수의 active Membership과 허용 Role을 확인하고, 조건이 맞지 않으면 `notFound()`를 사용합니다. 권한 없는 화면의 존재 자체를 노출하지 않는 정책입니다.
+
+프런트엔드에는 publishable key만 둘 수 있습니다. secret 또는 service-role key로 RLS를 우회하거나, 오류 화면·로그·AI 프롬프트에 key·cookie·실제 이메일을 넣는 것은 해결책이 아닙니다.
+
+## 5. 허용·거부 사례를 판정하기
+
+아래 표는 절차가 아니라, 구현과 리뷰 때 기대 결과를 비교하는 기준입니다.
+
+| 사례 | 인증 결과 | Membership 결과 | 구성원 전용 URL | DB에서 확인할 결과 |
+| --- | --- | --- | --- | --- |
+| 승인된 학교 계정 | 성공 | 현재 기수 active | Role이 맞으면 허용 | 정책 범위 행만 조회 |
+| 미승인 학교 계정 | 성공 | 없음 | not-found | 구성원 전용 행 접근 불가 |
+| 학교 외 Google 계정 | Auth Hook에서 거부 | 생성 안 됨 | 로그인 불가 | 사용자 권한 요청 없음 |
+| 익명 사용자의 `activate_membership` | 세션 없음 | 실행 안 됨 | 로그인 필요 | `42501` |
+| 구성원의 직접 Role 상승 | 로그인됨 | 기존 Role 유지 | 기존 권한만 허용 | `42501` |
+| Role 불일치 직접 URL | 로그인됨 | 있음 | not-found | RLS 범위 밖 접근 불가 |
+
+pgTAP은 “정상 사용자는 된다”뿐 아니라 “공격에 가까운 직접 요청은 거부된다”도 계약으로 고정합니다.
+
+```sql
+select throws_ok(
+  $$ update public.memberships
+     set role = 'EXECUTIVE'
+     where user_id = 'aaaaaaaa-0000-0000-0000-00000000000a' $$,
+  '42501',
+  null,
+  'A는 자기 Membership의 role을 EXECUTIVE로 바꿀 수 없다'
+);
+```
+
+승인 계정 활성화는 `results_eq`, 미승인 계정의 빈 결과는 `is_empty`, 익명 RPC와 직접 Membership 추가는 `throws_ok(..., '42501', ...)`로 읽습니다. 거부 테스트가 실패했다면 기능이 편리해진 것이 아니라 보안 경계가 깨진 것입니다.
+
+## 6. 코드 리뷰에서 확인할 것
+
+| 아쉬운 구현 | 위험 | 판단 기준 |
+| --- | --- | --- |
+| 버튼만 숨김 | 직접 URL·요청 우회 | page·Action gate와 RLS가 함께 있는가 |
+| 로그인 성공을 구성원 승인으로 취급 | 일반 학생에게 내부 화면 노출 | active Membership을 별도로 확인하는가 |
+| 직책 이름으로 권한 판정 | 표시 문구 변경이 보안 변경이 됨 | enum Role과 확정 scope를 사용하는가 |
+| `hd` 힌트만 신뢰 | 학교 외 계정 검증 우회 | 서버 Auth Hook이 재검증하는가 |
+| service role로 오류 해결 | 실제 사용자 RLS 검증 사라짐 | 사용자 JWT로 허용·거부가 모두 확인되는가 |
+| 거부 화면에 원본 오류 출력 | 구조·개인정보 노출 | 안전한 안내와 내부 로그가 분리되는가 |
+
+AI에게 계획을 요청할 때는 “`session.ts`, callback, Auth Hook, Membership RLS의 실제 코드만 근거로 로그인·인가 흐름을 설명하고, 미확정 scope는 질문으로 남겨라”라고 범위를 줍니다. 구현 요청에는 “page와 Action에서 기존 helper를 쓰고 준비된 RPC만 호출하며, 공용 auth·migration·RLS 파일은 리드 범위로 유지하라”를 포함합니다.
+
+PR에는 다음이 설명되어야 합니다.
+
+- 어떤 계정 상태와 Role을 허용하는가
+- 일반 학생·익명·Role 불일치 요청은 어디에서 거부되는가
+- 화면, 서버, DB 중 변경된 계층은 어디인가
+- 가짜 데이터로 확인한 허용·거부 결과는 무엇인가
+- 대시보드 설정처럼 코드에서 확인하지 못한 항목은 무엇인가
+
+공식 참고: [Supabase Auth](https://supabase.com/docs/guides/auth), [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security), [Supabase Auth Hooks](https://supabase.com/docs/guides/auth/auth-hooks).
