@@ -151,6 +151,11 @@
               "id": "subject-adsp",
               "name": "ADsP · 데이터분석 준전문가",
               "order": 1
+            },
+            {
+              "id": "subject-linux-master-2",
+              "name": "리눅스마스터 2급",
+              "order": 2
             }
           ]
         }
