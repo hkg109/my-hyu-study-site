@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { BookOpen, FileArchive, Menu, Moon, RotateCcw, Sun, X, Search, ShieldCheck } from "lucide-react";
-import type { AcademicCatalog, LectureMeta, SearchEntry } from "@/types/content";
+import type { AcademicCatalog, LectureMeta } from "@/types/content";
 import { Sidebar } from "./Sidebar";
 import { SearchDialog } from "@/components/ui/SearchDialog";
 import { useAdmin } from "@/components/admin/AdminContext";
@@ -14,7 +14,7 @@ import { isNavActive, PRIMARY_NAV, type PrimaryNavItem } from "@/lib/navigation"
 
 const NAV_ICONS: Record<PrimaryNavItem["icon"], typeof BookOpen> = { lectures: BookOpen, practice: FileArchive, review: RotateCcw };
 
-export function Header({ lectures, exams, catalog, searchIndex }: { lectures: LectureMeta[]; exams: LectureMeta[]; catalog: AcademicCatalog; searchIndex: SearchEntry[] }) {
+export function Header({ lectures, exams, catalog }: { lectures: LectureMeta[]; exams: LectureMeta[]; catalog: AcademicCatalog }) {
   const path = usePathname();
   const { resolvedTheme, setTheme } = useTheme();
   const { isAdmin, openAdmin } = useAdmin();
@@ -31,13 +31,13 @@ export function Header({ lectures, exams, catalog, searchIndex }: { lectures: Le
         <nav className="drawer-primary-nav" aria-label="주 메뉴">{PRIMARY_NAV.map(item => {
           const Icon = NAV_ICONS[item.icon];
           const active = isNavActive(path, item);
-          return <Link href={item.href} key={item.href} className={active ? "selected" : ""} aria-current={active ? "page" : undefined} onClick={() => setMenuOpen(false)}><Icon size={17} aria-hidden="true" /><span>{item.label}</span></Link>;
+          return <Link prefetch={false} href={item.href} key={item.href} className={active ? "selected" : ""} aria-current={active ? "page" : undefined} onClick={() => setMenuOpen(false)}><Icon size={17} aria-hidden="true" /><span>{item.label}</span></Link>;
         })}</nav>
         <div className="drawer-scroll"><Sidebar lectures={lectures} exams={exams} catalog={catalog} onNavigate={() => setMenuOpen(false)} /></div></Dialog.Content></Dialog.Portal></Dialog.Root>
-      <Link href="/" className="brand" aria-label="HJS STUDY 홈"><span className="brand-symbol" aria-hidden="true"><svg viewBox="9 16 46 32" width="24" height="17"><g fill="none" stroke="currentColor" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 21.5V42.5M24 21.5V42.5M13 32H24" /><path d="M33 21.5V36.5C33 40.5 31.7 42.5 29 42.5" /><path d="M51 24.4C49.4 22.5 47.1 21.5 44.4 21.5C40.8 21.5 38.6 23.5 38.6 26.4C38.6 29.4 40.8 30.9 44.9 31.9C49.2 32.9 51.4 34.6 51.4 37.6C51.4 40.8 48.8 42.5 45.1 42.5C41.9 42.5 39.2 41.3 37.5 39.1" /></g></svg></span><span>HJS STUDY</span></Link>
-      <nav className="header-nav" aria-label="주 메뉴">{PRIMARY_NAV.map(item => <Link href={item.href} key={item.href} className={isNavActive(path, item) ? "selected" : ""} aria-current={isNavActive(path, item) ? "page" : undefined}>{item.label}</Link>)}</nav>
+      <Link prefetch={false} href="/" className="brand" aria-label="HJS STUDY 홈"><span className="brand-symbol" aria-hidden="true"><svg viewBox="9 16 46 32" width="24" height="17"><g fill="none" stroke="currentColor" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 21.5V42.5M24 21.5V42.5M13 32H24" /><path d="M33 21.5V36.5C33 40.5 31.7 42.5 29 42.5" /><path d="M51 24.4C49.4 22.5 47.1 21.5 44.4 21.5C40.8 21.5 38.6 23.5 38.6 26.4C38.6 29.4 40.8 30.9 44.9 31.9C49.2 32.9 51.4 34.6 51.4 37.6C51.4 40.8 48.8 42.5 45.1 42.5C41.9 42.5 39.2 41.3 37.5 39.1" /></g></svg></span><span>HJS STUDY</span></Link>
+      <nav className="header-nav" aria-label="주 메뉴">{PRIMARY_NAV.map(item => <Link prefetch={false} href={item.href} key={item.href} className={isNavActive(path, item) ? "selected" : ""} aria-current={isNavActive(path, item) ? "page" : undefined}>{item.label}</Link>)}</nav>
       <div className="header-actions"><button className="search-trigger" onClick={() => setSearchOpen(true)} aria-label="검색 열기"><Search size={16} /><span>노트 검색</span><kbd>⌘ K</kbd></button><button className="icon-button theme-toggle" aria-label="라이트·다크 테마 전환" onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}><Moon size={18} className="moon-icon" /><Sun size={18} className="sun-icon" /></button>{adminAvailable && <button className={`admin-trigger${isAdmin ? " active" : ""}`} onClick={openAdmin} aria-label="관리자 모드 열기" aria-pressed={isAdmin}><ShieldCheck size={16} /><span>관리자</span></button>}</div>
     </div></header>
-    <SearchDialog entries={searchIndex} open={searchOpen} setOpen={setSearchOpen} />
+    <SearchDialog open={searchOpen} setOpen={setSearchOpen} />
   </>;
 }

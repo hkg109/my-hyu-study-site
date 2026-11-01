@@ -8,7 +8,7 @@ import { useProgress } from "./ProgressProvider";
 export function LectureCard({ lecture, showDescription = true }: { lecture: LectureMeta; showDescription?: boolean }) {
   const { progress } = useProgress();
   const complete = lecture.kind === "lectures" && progress[lecture.slug.join("/")];
-  return <Link href={lecture.path} className={`lecture-card ${showDescription ? "" : "compact"}`}>
+  return <Link prefetch={false} href={lecture.path} className={`lecture-card ${showDescription ? "" : "compact"}`}>
     <div className="card-meta"><span>{String(lecture.order).padStart(2, "0")}</span><span>{complete ? <span className="completed"><Check size={14} />완료</span> : lecture.kind === "practice" ? "족보" : "강의"}</span></div>
     <div className="card-title"><h3>{lecture.title}</h3><ArrowUpRight size={19} /></div>
     {showDescription && <p>{lecture.description}</p>}

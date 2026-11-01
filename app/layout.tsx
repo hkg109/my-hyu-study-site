@@ -10,7 +10,6 @@ import { Header } from "@/components/layout/Header";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { AppShell } from "@/components/layout/AppShell";
 import { getAllLectures } from "@/lib/lectures";
-import { getSearchIndex } from "@/lib/search";
 import { readCatalog } from "@/lib/catalog";
 import { readCollection, withoutBody } from "@/lib/content";
 import { isAdminViewer } from "@/lib/server/auth";
@@ -37,7 +36,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const catalog = readCatalog();
   const shell = <>
     <a href="#main-content" className="skip-link">본문으로 바로가기</a>
-    <Header lectures={lectures} exams={exams} catalog={catalog} searchIndex={getSearchIndex()} />
+    <Header lectures={lectures} exams={exams} catalog={catalog} />
     <AppShell sidebar={<Sidebar lectures={lectures} exams={exams} catalog={catalog} />}>{children}</AppShell>
   </>;
   return <html lang="ko" suppressHydrationWarning><body><Providers>
