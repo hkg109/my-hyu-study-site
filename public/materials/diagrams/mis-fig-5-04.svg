@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 960" role="img" aria-labelledby="mis-fig-5-04-title mis-fig-5-04-desc">
+  <title id="mis-fig-5-04-title">Figure 5.4 IT Infrastructure Components</title>
+  <desc id="mis-fig-5-04-desc">IT 인프라 생태계를 이루는 일곱 구성요소 — 컴퓨터 하드웨어, 운영체제, 전사 소프트웨어, 네트워킹·통신, 컨설팅·시스템 통합, 데이터 관리·저장, 인터넷 플랫폼 — 와 각 요소의 대표 공급업체</desc>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.dash{stroke:#929087;stroke-width:1.6;fill:none;stroke-dasharray:6 6}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 16px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.vendor{font:500 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}.big{font:700 20px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="960"/>
+  <text class="tag" x="64" y="52">5장 · Figure 5.4</text><text class="small" x="1216" y="52" text-anchor="end">교재 그림 재구성</text>
+  <text class="title" x="64" y="92">IT Infrastructure Components</text>
+  <text class="subtitle" x="64" y="122">일곱 구성요소를 서로 맞물리게 조정해야 일관된(coherent) IT 인프라가 된다 — 원 안은 대표 기술·공급업체</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+    <line class="dash" x1="640" y1="284" x2="931" y2="388"/>
+  <line class="dash" x1="931" y1="388" x2="1003" y2="621"/>
+  <line class="dash" x1="1003" y1="621" x2="801" y2="809"/>
+  <line class="dash" x1="801" y1="809" x2="479" y2="809"/>
+  <line class="dash" x1="479" y1="809" x2="277" y2="621"/>
+  <line class="dash" x1="277" y1="621" x2="349" y2="388"/>
+  <line class="dash" x1="349" y1="388" x2="640" y2="284"/>
+  <rect class="focal" x="520" y="500" width="240" height="120" rx="10"/>
+  <text class="small inverse" x="640" y="534" text-anchor="middle">IT INFRASTRUCTURE</text>
+  <text class="big" x="640" y="566" text-anchor="middle">Ecosystem</text>
+  <text class="sub inverse" x="640" y="594" text-anchor="middle">7개 요소의 조정</text>
+    <circle class="zone" cx="640" cy="284" r="108"/>
+  <text class="small" x="640" y="210" text-anchor="middle">06</text>
+  <text class="name" x="640" y="230" text-anchor="middle">Internet</text>
+  <text class="name" x="640" y="250" text-anchor="middle">Platforms</text>
+  <text class="sub" x="640" y="271" text-anchor="middle">인터넷 플랫폼</text>
+  <text class="vendor" x="640" y="296" text-anchor="middle">Apache · Microsoft IIS</text>
+  <text class="vendor" x="640" y="314" text-anchor="middle">.NET · Unix</text>
+  <text class="vendor" x="640" y="332" text-anchor="middle">Cisco · Java</text>
+  <circle class="deep" cx="931" cy="388" r="108"/>
+  <text class="small" x="931" y="322" text-anchor="middle">01</text>
+  <text class="name" x="931" y="342" text-anchor="middle">Computer Hardware</text>
+  <text class="name" x="931" y="362" text-anchor="middle">Platforms</text>
+  <text class="sub" x="931" y="383" text-anchor="middle">컴퓨터 하드웨어</text>
+  <text class="vendor" x="931" y="408" text-anchor="middle">IBM · Oracle Sun</text>
+  <text class="vendor" x="931" y="426" text-anchor="middle">HP · Apple</text>
+  <circle class="zone" cx="1003" cy="621" r="108"/>
+  <text class="small" x="1003" y="547" text-anchor="middle">02</text>
+  <text class="name" x="1003" y="567" text-anchor="middle">Operating System</text>
+  <text class="name" x="1003" y="587" text-anchor="middle">Platforms</text>
+  <text class="sub" x="1003" y="608" text-anchor="middle">운영체제</text>
+  <text class="vendor" x="1003" y="633" text-anchor="middle">Windows · Unix · Linux</text>
+  <text class="vendor" x="1003" y="651" text-anchor="middle">macOS · Chrome</text>
+  <text class="vendor" x="1003" y="669" text-anchor="middle">Android · iOS</text>
+  <circle class="deep" cx="801" cy="809" r="108"/>
+  <text class="small" x="801" y="743" text-anchor="middle">03</text>
+  <text class="name" x="801" y="763" text-anchor="middle">Enterprise Software</text>
+  <text class="name" x="801" y="783" text-anchor="middle">Applications</text>
+  <text class="sub" x="801" y="804" text-anchor="middle">전사 SW (미들웨어 포함)</text>
+  <text class="vendor" x="801" y="829" text-anchor="middle">SAP · Oracle</text>
+  <text class="vendor" x="801" y="847" text-anchor="middle">Microsoft · IBM</text>
+  <circle class="zone" cx="479" cy="809" r="108"/>
+  <text class="small" x="479" y="735" text-anchor="middle">05</text>
+  <text class="name" x="479" y="755" text-anchor="middle">Networking /</text>
+  <text class="name" x="479" y="775" text-anchor="middle">Telecommunications</text>
+  <text class="sub" x="479" y="796" text-anchor="middle">네트워킹·통신</text>
+  <text class="vendor" x="479" y="821" text-anchor="middle">Microsoft Windows Server</text>
+  <text class="vendor" x="479" y="839" text-anchor="middle">Linux · Cisco</text>
+  <text class="vendor" x="479" y="857" text-anchor="middle">AT&T · Verizon</text>
+  <circle class="deep" cx="277" cy="621" r="108"/>
+  <text class="small" x="277" y="555" text-anchor="middle">07</text>
+  <text class="name" x="277" y="575" text-anchor="middle">Consultants and</text>
+  <text class="name" x="277" y="595" text-anchor="middle">System Integrators</text>
+  <text class="sub" x="277" y="616" text-anchor="middle">컨설팅·시스템 통합</text>
+  <text class="vendor" x="277" y="641" text-anchor="middle">IBM · HP</text>
+  <text class="vendor" x="277" y="659" text-anchor="middle">Accenture</text>
+  <circle class="zone" cx="349" cy="388" r="108"/>
+  <text class="small" x="349" y="314" text-anchor="middle">04</text>
+  <text class="name" x="349" y="334" text-anchor="middle">Data Management</text>
+  <text class="name" x="349" y="354" text-anchor="middle">and Storage</text>
+  <text class="sub" x="349" y="375" text-anchor="middle">데이터 관리·저장</text>
+  <text class="vendor" x="349" y="400" text-anchor="middle">IBM Db2 · Oracle</text>
+  <text class="vendor" x="349" y="418" text-anchor="middle">SQL Server · Sybase</text>
+  <text class="vendor" x="349" y="436" text-anchor="middle">MySQL · Apache Hadoop</text>
+  <text class="small" x="64" y="944">번호 01–07 = 슬라이드 14의 일곱 구성요소 순서. 원의 배치는 교재 그림을 따랐다.</text>
+</svg>

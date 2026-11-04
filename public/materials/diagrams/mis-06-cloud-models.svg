@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 910" role="img" aria-labelledby="mis-06-cloud-models-title mis-06-cloud-models-desc">
+  <title id="mis-06-cloud-models-title">클라우드 서비스 모델과 배치 모델</title>
+  <desc id="mis-06-cloud-models-desc">자체 보유, IaaS, PaaS, SaaS에서 제공자와 사용자 기업이 관리하는 범위, 퍼블릭·프라이빗·하이브리드 클라우드, 클라우드의 다섯 특징, 그리고 이를 떠받치는 가상화</desc>
+  <defs><marker id="mis-06-cloud-models-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-06-cloud-models-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.subtitle{font-size:14px}.name{font:700 16px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="910"/>
+  <text class="tag" x="64" y="52">5장 · 개념도</text>
+  <text class="title" x="64" y="92">클라우드: 무엇을 빌리고, 어디에 두나</text>
+  <text class="subtitle" x="64" y="122">서비스 모델(IaaS·PaaS·SaaS)은 “관리 범위”, 배치 모델(퍼블릭·프라이빗·하이브리드)은 “소유와 위치”의 구분이다</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+    <rect class="node" x="64" y="176" width="664" height="430" rx="10"/>
+  <text class="small" x="88" y="204">SERVICE MODELS · 누가 어디까지 관리하나</text>
+  <text class="name" x="342" y="230" text-anchor="middle">자체 보유</text>
+  <text class="sub" x="342" y="246" text-anchor="middle">On-premises</text>
+  <text class="name" x="450" y="230" text-anchor="middle">IaaS</text>
+  <text class="sub" x="450" y="246" text-anchor="middle">인프라</text>
+  <text class="name" x="558" y="230" text-anchor="middle">PaaS</text>
+  <text class="sub" x="558" y="246" text-anchor="middle">플랫폼</text>
+  <text class="name" x="666" y="230" text-anchor="middle">SaaS</text>
+  <text class="sub" x="666" y="246" text-anchor="middle">소프트웨어</text>
+  <text class="label" x="88" y="283">Applications</text>
+  <text class="sub" x="88" y="302">애플리케이션·데이터</text>
+  <rect class="zone" x="292" y="260" width="100" height="54" rx="5"/>
+  <text class="small" x="342" y="292" text-anchor="middle">우리 회사</text>
+  <rect class="zone" x="400" y="260" width="100" height="54" rx="5"/>
+  <text class="small" x="450" y="292" text-anchor="middle">우리 회사</text>
+  <rect class="zone" x="508" y="260" width="100" height="54" rx="5"/>
+  <text class="small" x="558" y="292" text-anchor="middle">우리 회사</text>
+  <rect class="focal" x="616" y="260" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="666" y="292" text-anchor="middle">제공자</text>
+  <text class="label" x="88" y="345">Runtime · Dev tools</text>
+  <text class="sub" x="88" y="364">런타임·개발 도구</text>
+  <rect class="zone" x="292" y="322" width="100" height="54" rx="5"/>
+  <text class="small" x="342" y="354" text-anchor="middle">우리 회사</text>
+  <rect class="zone" x="400" y="322" width="100" height="54" rx="5"/>
+  <text class="small" x="450" y="354" text-anchor="middle">우리 회사</text>
+  <rect class="focal" x="508" y="322" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="558" y="354" text-anchor="middle">제공자</text>
+  <rect class="focal" x="616" y="322" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="666" y="354" text-anchor="middle">제공자</text>
+  <text class="label" x="88" y="407">OS · Middleware</text>
+  <text class="sub" x="88" y="426">운영체제·미들웨어</text>
+  <rect class="zone" x="292" y="384" width="100" height="54" rx="5"/>
+  <text class="small" x="342" y="416" text-anchor="middle">우리 회사</text>
+  <rect class="zone" x="400" y="384" width="100" height="54" rx="5"/>
+  <text class="small" x="450" y="416" text-anchor="middle">우리 회사</text>
+  <rect class="focal" x="508" y="384" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="558" y="416" text-anchor="middle">제공자</text>
+  <rect class="focal" x="616" y="384" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="666" y="416" text-anchor="middle">제공자</text>
+  <text class="label" x="88" y="469">Servers · Storage · Net</text>
+  <text class="sub" x="88" y="488">서버·스토리지·네트워크</text>
+  <rect class="zone" x="292" y="446" width="100" height="54" rx="5"/>
+  <text class="small" x="342" y="478" text-anchor="middle">우리 회사</text>
+  <rect class="focal" x="400" y="446" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="450" y="478" text-anchor="middle">제공자</text>
+  <rect class="focal" x="508" y="446" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="558" y="478" text-anchor="middle">제공자</text>
+  <rect class="focal" x="616" y="446" width="100" height="54" rx="5"/>
+  <text class="small inverse" x="666" y="478" text-anchor="middle">제공자</text>
+  <text class="sub" x="342" y="532" text-anchor="middle">모두 직접 구매·</text>
+  <text class="sub" x="342" y="550" text-anchor="middle">운영</text>
+  <text class="sub" x="450" y="532" text-anchor="middle">남의 인프라로</text>
+  <text class="sub" x="450" y="550" text-anchor="middle">우리 IS 운영</text>
+  <text class="sub" x="558" y="532" text-anchor="middle">남의 플랫폼에서</text>
+  <text class="sub" x="558" y="550" text-anchor="middle">우리 앱 개발</text>
+  <text class="sub" x="666" y="532" text-anchor="middle">완성된 앱을</text>
+  <text class="sub" x="666" y="550" text-anchor="middle">브라우저로 사용</text>
+  <text class="label" x="88" y="541">무엇에 쓰나</text>
+  <text class="small" x="88" y="586">SaaS 예: Google Workspace · Salesforce.com   |   요금: 쓴 만큼(on-demand · utility)</text>
+  <text class="small" x="776" y="204">DEPLOYMENT · 어디에 두나</text>
+  <rect class="zone" x="752" y="220" width="464" height="118" rx="10"/>
+  <text class="name" x="776" y="252">Public cloud</text>
+  <text class="sub" x="1192" y="252" text-anchor="end">퍼블릭 클라우드</text>
+  <text class="label" x="776" y="284">외부 제공자(AWS 등)가 소유·운영하고</text>
+  <text class="label" x="776" y="308">여러 고객이 인터넷으로 공유한다</text>
+  <rect class="zone" x="752" y="350" width="464" height="118" rx="10"/>
+  <text class="name" x="776" y="382">Private cloud</text>
+  <text class="sub" x="1192" y="382" text-anchor="end">프라이빗 클라우드</text>
+  <text class="label" x="776" y="414">한 조직 전용 — 자체 데이터센터나</text>
+  <text class="label" x="776" y="438">전용 네트워크 안에서 운영한다</text>
+  <rect class="focal" x="752" y="480" width="464" height="118" rx="10"/>
+  <text class="name inverse" x="776" y="512">Hybrid cloud</text>
+  <text class="sub inverse" x="1192" y="512" text-anchor="end">하이브리드 클라우드</text>
+  <text class="label inverse" x="776" y="544">핵심 업무는 자체 인프라에 두고,</text>
+  <text class="label inverse" x="776" y="568">덜 중요한 시스템·피크 용량은 퍼블릭으로 (대기업 선호)</text>
+  <text class="small" x="64" y="646">ESSENTIAL CHARACTERISTICS · 클라우드의 다섯 특징 (교재 p.189)</text>
+  <rect class="deep" x="64" y="658" width="221" height="92" rx="8"/>
+  <text class="name" x="174" y="686" text-anchor="middle">On-demand</text>
+  <text class="name" x="174" y="706" text-anchor="middle">self-service</text>
+  <text class="sub" x="174" y="732" text-anchor="middle">필요할 때 스스로 사용</text>
+  <rect class="deep" x="297" y="658" width="221" height="92" rx="8"/>
+  <text class="name" x="407" y="686" text-anchor="middle">Ubiquitous</text>
+  <text class="name" x="407" y="706" text-anchor="middle">network access</text>
+  <text class="sub" x="407" y="732" text-anchor="middle">어디서나 네트워크 접속</text>
+  <rect class="deep" x="530" y="658" width="221" height="92" rx="8"/>
+  <text class="name" x="640" y="686" text-anchor="middle">Location-independent</text>
+  <text class="name" x="640" y="706" text-anchor="middle">resource pooling</text>
+  <text class="sub" x="640" y="732" text-anchor="middle">위치와 무관한 자원 공유</text>
+  <rect class="deep" x="762" y="658" width="221" height="92" rx="8"/>
+  <text class="name" x="873" y="686" text-anchor="middle">Rapid</text>
+  <text class="name" x="873" y="706" text-anchor="middle">elasticity</text>
+  <text class="sub" x="873" y="732" text-anchor="middle">수요 따라 빠른 증감</text>
+  <rect class="deep" x="995" y="658" width="221" height="92" rx="8"/>
+  <text class="name" x="1106" y="686" text-anchor="middle">Measured</text>
+  <text class="name" x="1106" y="706" text-anchor="middle">service</text>
+  <text class="sub" x="1106" y="732" text-anchor="middle">사용량 측정·과금</text>
+  <path class="flow" d="M640 800 V758"/>
+  <rect class="focal" x="64" y="804" width="1152" height="78" rx="10"/>
+  <text class="name inverse" x="88" y="836">Virtualization · 가상화 — 클라우드를 떠받치는 기술</text>
+  <text class="sub inverse" x="88" y="862">물리 자원 1개 → 논리 자원 여럿(서버 가상화, VMware)  ·  물리 자원 여럿 → 논리 자원 1개(SDS)  ·  서버 가동률 15–20% → 70%</text>
+</svg>

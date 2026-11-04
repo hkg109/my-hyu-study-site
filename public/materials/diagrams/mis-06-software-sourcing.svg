@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 790" role="img" aria-labelledby="mis-06-software-sourcing-title mis-06-software-sourcing-desc">
+  <title id="mis-06-software-sourcing-title">소프트웨어를 얻는 방법</title>
+  <desc id="mis-06-software-sourcing-desc">소프트웨어 패키지, 소프트웨어 아웃소싱, 클라우드 기반 소프트웨어 서비스(SaaS)의 세 외부 출처를 소유에서 임대까지 늘어놓고, 아웃소싱과 SaaS를 묶는 SLA 계약, rent-versus-buy 결정, 매시업과 앱을 함께 보인 개념도</desc>
+  <defs><marker id="mis-06-software-sourcing-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#65645e"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.both{stroke:#65645e;stroke-width:1.8;fill:none;marker-start:url(#mis-06-software-sourcing-arrow);marker-end:url(#mis-06-software-sourcing-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="790"/>
+  <text class="tag" x="64" y="52">5장 · 개념도</text>
+  <text class="title" x="64" y="92">소프트웨어를 얻는 방법</text>
+  <text class="subtitle" x="64" y="122">Three external sources for software — 사서 설치할까, 만들어 달라고 맡길까, 빌려 쓸까</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+    <path class="both" d="M72 196 H1208"/>
+  <rect class="bg" x="470" y="184" width="340" height="24"/>
+  <text class="small" x="640" y="201" text-anchor="middle">외부에서 소프트웨어를 얻는 세 가지 길</text>
+  <text class="small" x="64" y="226">← 직접 소유·통제가 큼 (buy)</text>
+  <text class="small" x="1216" y="226" text-anchor="end">빌려 씀·초기 투자 작음 (rent) →</text>
+  <rect class="zone" x="64" y="244" width="368" height="236" rx="10"/>
+  <text class="small" x="88" y="274">01</text>
+  <text class="name" x="88" y="302">Software packages</text>
+  <text class="sub" x="88" y="324">소프트웨어 패키지</text>
+  <line class="rule" x1="88" y1="342" x2="408" y2="342"/>
+  <text class="label" x="88" y="372">상용 업체가 미리 만든 프로그램을</text>
+  <text class="label" x="88" y="398">구입해 설치한다</text>
+  <text class="sub" x="88" y="424">예: ERP·CRM 등 전사 SW</text>
+  <text class="sub" x="88" y="450">(SAP, Oracle)</text>
+  <rect class="zone" x="456" y="244" width="368" height="236" rx="10"/>
+  <text class="small" x="480" y="274">02</text>
+  <text class="name" x="480" y="302">Software outsourcing</text>
+  <text class="sub" x="480" y="324">소프트웨어 아웃소싱</text>
+  <line class="rule" x1="480" y1="342" x2="800" y2="342"/>
+  <text class="label" x="480" y="372">맞춤형 SW 개발·유지보수를</text>
+  <text class="label" x="480" y="398">외부 회사에 계약으로 맡긴다</text>
+  <text class="sub" x="480" y="424">해외 위탁 = offshore outsourcing</text>
+  <text class="sub" x="480" y="450">슬라이드 예: People.ai</text>
+  <rect class="deep" x="848" y="244" width="368" height="236" rx="10"/>
+  <text class="small" x="872" y="274">03</text>
+  <text class="name" x="872" y="302">Cloud-based services</text>
+  <text class="sub" x="872" y="324">클라우드 SW 서비스 · SaaS</text>
+  <line class="rule" x1="872" y1="342" x2="1192" y2="342"/>
+  <text class="label" x="872" y="372">인터넷에서 웹 브라우저로 접속해</text>
+  <text class="label" x="872" y="398">쓰고 사용료를 낸다</text>
+  <text class="sub" x="872" y="424">예: Salesforce.com</text>
+  <text class="sub" x="872" y="450">Google Workspace</text>
+  <path class="line" d="M640 480 V520 M1032 480 V520"/>
+  <rect class="focal" x="456" y="520" width="760" height="88" rx="10"/>
+  <text class="name inverse" x="480" y="552">SLA · Service Level Agreement (서비스 수준 협약)</text>
+  <text class="sub inverse" x="480" y="580">제공자의 구체적 책임과 고객이 기대하는 서비스 수준을 정한 공식 계약 — 아웃소싱·SaaS 계약의 핵심</text>
+  <rect class="node" x="64" y="520" width="368" height="88" rx="10"/>
+  <text class="name" x="88" y="552">Rent-versus-buy 결정</text>
+  <text class="sub" x="88" y="580">계절 직원·반기 업무량 기업은 rent 쪽 (메모)</text>
+  <text class="small" x="64" y="646">함께 알아 둘 형태</text>
+  <rect class="node" x="64" y="658" width="568" height="100" rx="10"/>
+  <text class="name" x="88" y="690">Mashups · 매시업</text>
+  <text class="label" x="88" y="718">둘 이상의 온라인 앱을 결합한 새 서비스</text>
+  <text class="sub" x="88" y="742">예: 지도 SW(Google Maps) + 지역 콘텐츠</text>
+  <rect class="node" x="648" y="658" width="568" height="100" rx="10"/>
+  <text class="name" x="672" y="690">Apps · 앱</text>
+  <text class="label" x="672" y="718">인터넷·PC·모바일에서 도는 작은 SW (주로 모바일 앱)</text>
+  <text class="sub" x="672" y="742">iPhone·Android — 사용자를 플랫폼에 묶음(높은 전환 비용)</text>
+</svg>

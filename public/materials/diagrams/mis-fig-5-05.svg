@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 980" role="img" aria-labelledby="mis-fig-5-05-title mis-fig-5-05-desc">
+  <title id="mis-fig-5-05-title">Figure 5.5 Cloud Computing Platform</title>
+  <desc id="mis-fig-5-05-desc">클라우드 안의 서버들이 플랫폼 서비스, 애플리케이션 서비스, 인프라 서비스를 가상화된 자원 풀로 제공하고, 노트북·스마트폰·데스크톱·태블릿이 네트워크로 어디서나 접근하는 구조</desc>
+  <defs><marker id="mis-fig-5-05-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-5-05-arrow);marker-end:url(#mis-fig-5-05-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.subtitle{font-size:14px}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.chip{font:600 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="980"/>
+  <text class="tag" x="64" y="52">5장 · Figure 5.5</text><text class="small" x="1216" y="52" text-anchor="end">교재 그림 재구성</text>
+  <text class="title" x="64" y="92">Cloud Computing Platform</text>
+  <text class="subtitle" x="64" y="122">하드웨어·소프트웨어 능력이 네트워크(주로 인터넷)로 제공되는 가상화 자원 풀 — 언제, 어디서, 어떤 기기로든 접근</text>
+  <line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="focal" x="540" y="176" width="200" height="66" rx="8"/>
+  <text class="name inverse" x="640" y="205" text-anchor="middle">Servers</text>
+  <text class="sub inverse" x="640" y="227" text-anchor="middle">클라우드 제공자의 서버 집합</text>
+  <path class="both" d="M640 246 V296"/>
+  <rect class="zone" x="64" y="300" width="1152" height="452" rx="48"/>
+  <text class="small" x="108" y="330">CLOUD COMPUTING · 가상화된 자원 풀(pool of virtualized resources)</text>
+  <rect class="deep" x="88" y="344" width="1104" height="124" rx="10"/>
+  <text class="name" x="108" y="372">Platform Services</text><text class="sub" x="1172" y="372" text-anchor="end">플랫폼 서비스</text>
+  <rect class="node" x="108" y="390" width="256" height="58" rx="6"/>
+  <text class="chip" x="236" y="415" text-anchor="middle">Block Storage</text>
+  <text class="sub" x="236" y="435" text-anchor="middle">블록 스토리지</text>
+  <rect class="node" x="378" y="390" width="256" height="58" rx="6"/>
+  <text class="chip" x="505" y="415" text-anchor="middle">Communication Networks</text>
+  <text class="sub" x="505" y="435" text-anchor="middle">통신 네트워크</text>
+  <rect class="node" x="647" y="390" width="256" height="58" rx="6"/>
+  <text class="chip" x="775" y="415" text-anchor="middle">Identity Management</text>
+  <text class="sub" x="775" y="435" text-anchor="middle">ID 관리</text>
+  <rect class="node" x="916" y="390" width="256" height="58" rx="6"/>
+  <text class="chip" x="1044" y="415" text-anchor="middle">Content Servers</text>
+  <text class="sub" x="1044" y="435" text-anchor="middle">콘텐츠 서버</text>
+  <rect class="deep" x="88" y="478" width="1104" height="124" rx="10"/>
+  <text class="name" x="108" y="506">Application Services</text><text class="sub" x="1172" y="506" text-anchor="end">애플리케이션 서비스</text>
+  <rect class="node" x="108" y="524" width="256" height="58" rx="6"/>
+  <text class="chip" x="236" y="549" text-anchor="middle">Content Management</text>
+  <text class="sub" x="236" y="569" text-anchor="middle">콘텐츠 관리</text>
+  <rect class="node" x="378" y="524" width="256" height="58" rx="6"/>
+  <text class="chip" x="505" y="549" text-anchor="middle">Enterprise Software</text>
+  <text class="sub" x="505" y="569" text-anchor="middle">전사 소프트웨어</text>
+  <rect class="node" x="647" y="524" width="256" height="58" rx="6"/>
+  <text class="chip" x="775" y="549" text-anchor="middle">Collaboration Environments</text>
+  <text class="sub" x="775" y="569" text-anchor="middle">협업 환경</text>
+  <rect class="node" x="916" y="524" width="256" height="58" rx="6"/>
+  <text class="chip" x="1044" y="549" text-anchor="middle">Process Management</text>
+  <text class="sub" x="1044" y="569" text-anchor="middle">프로세스 관리</text>
+  <rect class="deep" x="88" y="612" width="1104" height="124" rx="10"/>
+  <text class="name" x="108" y="640">Infrastructure Services</text><text class="sub" x="1172" y="640" text-anchor="end">인프라 서비스</text>
+  <rect class="node" x="108" y="658" width="345" height="58" rx="6"/>
+  <text class="chip" x="281" y="683" text-anchor="middle">Computing Resource Management</text>
+  <text class="sub" x="281" y="703" text-anchor="middle">컴퓨팅 자원 관리</text>
+  <rect class="node" x="467" y="658" width="345" height="58" rx="6"/>
+  <text class="chip" x="640" y="683" text-anchor="middle">Network Management</text>
+  <text class="sub" x="640" y="703" text-anchor="middle">네트워크 관리</text>
+  <rect class="node" x="827" y="658" width="345" height="58" rx="6"/>
+  <text class="chip" x="999" y="683" text-anchor="middle">Storage Management</text>
+  <text class="sub" x="999" y="703" text-anchor="middle">스토리지 관리</text>
+    <rect class="node" x="64" y="812" width="200" height="70" rx="8"/>
+  <text class="name" x="164" y="842" text-anchor="middle">Laptops</text>
+  <text class="sub" x="164" y="864" text-anchor="middle">노트북</text>
+  <path class="both" d="M164 756 V808"/>
+  <rect class="node" x="381" y="812" width="200" height="70" rx="8"/>
+  <text class="name" x="481" y="842" text-anchor="middle">iPhone</text>
+  <text class="sub" x="481" y="864" text-anchor="middle">스마트폰</text>
+  <path class="both" d="M481 756 V808"/>
+  <rect class="node" x="699" y="812" width="200" height="70" rx="8"/>
+  <text class="name" x="799" y="842" text-anchor="middle">Desktops</text>
+  <text class="sub" x="799" y="864" text-anchor="middle">데스크톱</text>
+  <path class="both" d="M799 756 V808"/>
+  <rect class="node" x="1016" y="812" width="200" height="70" rx="8"/>
+  <text class="name" x="1116" y="842" text-anchor="middle">Tablet Computers</text>
+  <text class="sub" x="1116" y="864" text-anchor="middle">태블릿</text>
+  <path class="both" d="M1116 756 V808"/>
+  <text class="sub" x="64" y="928">세 층은 교재 그림의 묶음 이름이다. 시험 용어로는 IaaS(인프라) · PaaS(플랫폼) · SaaS(애플리케이션)의 세 서비스 모델과 연결해 읽는다.</text>
+  <text class="small" x="64" y="952">아래 기기들 = Businesses and employees — anywhere, at any time, on any device</text>
+</svg>
