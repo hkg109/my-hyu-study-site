@@ -66,15 +66,30 @@ function snake(items, labels, startY) {
 
 const g = (num, title, body, style) => ({ tag: num, title, body, style });
 
+// n → 1 merge whose label sits on the bus line, clear of the arrowhead. The source row needs after: 80.
+function merge(placed, i, text, { dashed = false, from = 0 } = {}) {
+  const a = placed[i], b = placed[i + 1];
+  const top = a.y + a.h + from, bottom = b.y;
+  const busY = top + 28;
+  const xs = a.boxes.map(box => box.x + box.w / 2);
+  const to = b.boxes[0].x + b.boxes[0].w / 2;
+  const cls = dashed ? "dash plain" : "line";
+  const out = xs.map(x => `<path class="${cls}" d="M${x} ${a.y + a.h} V${busY}"/>`);
+  out.push(`<path class="${cls}" d="M${Math.min(...xs, to)} ${busY} H${Math.max(...xs, to)}"/>`);
+  out.push(arrow([[to, busY], [to, bottom]], { dashed }));
+  out.push(label(to, busY, text));
+  return out.join("");
+}
+
 // =============================================================================================
 // A · overall concept map
 fig("mis-gl-00-concept-map", {
-  eyebrow: "Chapter 1–4 · 전체 개념 지도",
-  title: "네 장은 하나의 질문 사슬이다",
-  subtitle: "IS가 가치를 만드는 원리 → 업무를 지원하는 시스템 → 조직·전략과의 상호작용 → 윤리·사회적 책임",
-  desc: "1장 정보시스템과 가치, 2장 프로세스·전사 시스템·지식관리, 3장 조직과 전략, 4장 윤리와 사회적 책임을 위에서 아래로 놓고, 각 장의 핵심 질문과 개념 묶음, 장 사이의 구체화·영향·새 쟁점 관계와 4장이 앞 장을 제약하는 점선 관계를 보여 주는 개념 지도",
+  eyebrow: "Chapter 1–5 · 전체 개념 지도",
+  title: "다섯 장은 하나의 질문 사슬과 그 기반이다",
+  subtitle: "IS가 가치를 만드는 원리 → 업무를 지원하는 시스템 → 조직·전략과의 상호작용 → 윤리·사회적 책임, 그리고 이 모두를 떠받치는 IT 인프라",
+  desc: "1장 정보시스템과 가치, 2장 프로세스·전사 시스템·지식관리, 3장 조직과 전략, 4장 윤리와 사회적 책임을 위에서 아래로 놓고, 각 장의 핵심 질문과 개념 묶음, 장 사이의 구체화·영향·새 쟁점 관계와 4장이 앞 장을 제약하는 점선 관계를 보이며, 맨 아래 5장 IT 인프라와 신기술이 위의 모든 장에 기반을 제공하는 개념 지도",
   legend: ["flow", "dash", "focal"],
-  note: "점선 화살표: 4장의 법·윤리 기준이 1–3장의 시스템 설계와 투자 판단을 다시 제약한다.",
+  note: "점선 화살표: 4장의 법·윤리 기준이 1–3장의 시스템 설계와 투자 판단을 다시 제약한다. 위쪽 화살표: 5장의 IT 인프라가 1–4장의 모든 시스템에 기반을 제공한다.",
 }, y0 => {
   const bandW = CW - 64;
   const chapters = [
@@ -82,6 +97,7 @@ fig("mis-gl-00-concept-map", {
     ["2장 · 프로세스·전사 시스템·지식관리", "시스템은 업무·결정·지식을 어떻게 지원할까?", "2-1 프로세스 · 2-2 TPS·MIS·DSS·ESS · 2-3 ERP·SCM·CRM·KMS · 2-4 인트라넷·e-business · 2-5 협업 · 2-6~2-8 지식관리·AI · 2-9 IT 거버넌스"],
     ["3장 · 조직과 전략", "조직과 IT는 서로를 어떻게 바꾸고, IT로 어떻게 경쟁할까?", "3-1 조직의 정의·양방향 관계 · 3-2 루틴·문화·정치·구조 · 3-3 거래·대리인 비용, 변화 저항 · 3-4 다섯 경쟁 요인·네 전략 · 3-5 가치사슬·네트워크 전략"],
     ["4장 · 윤리와 사회적 책임", "IS가 만든 힘을 누가 어떤 책임으로 통제할까?", "4-1 다섯 도덕적 차원 · 4-2 프로파일링·NORA · 4-3 책임·판단 원칙 · 4-4 프라이버시·FIP · 4-5 지식재산 · 4-6 책임·시스템 품질 · 4-7 삶의 질"],
+    ["5장 · IT 인프라와 신기술", "모든 시스템을 떠받치는 기반을 무엇으로 짓고, 소유할까 빌릴까?", "5-1 정의·다섯 시대 · 5-2 일곱 구성요소 · 5-3 모바일·가상화·클라우드·엣지 · 5-4 오픈소스·웹 서비스·SaaS·SLA · 5-5 확장성·거버넌스·TCO·투자 요인"],
   ];
   const links = ["구체화: 원리 → 업무별 시스템", "영향: 시스템이 조직·경쟁을 바꿈", "새 쟁점: 데이터·권력의 집중"];
   const out = [];
@@ -100,14 +116,14 @@ fig("mis-gl-00-concept-map", {
     bands.push({ y, h });
     y += h + 52;
   }
-  bands.slice(0, -1).forEach((b, i) => {
-    const x = X0 + bandW / 2;
-    out.push(arrow([[x, b.y + b.h], [x, bands[i + 1].y]], { text: links[i] }));
-  });
+  const x = X0 + bandW / 2;
+  bands.slice(0, 3).forEach((b, i) => out.push(arrow([[x, b.y + b.h], [x, bands[i + 1].y]], { text: links[i] })));
+  const b4 = bands[3], b5 = bands[4];
+  out.push(arrow([[x, b5.y], [x, b4.y + b4.h]], { text: "기반 제공: 1–4장 시스템을 떠받침" }));
   const rx = X0 + bandW + 32;
-  const first = bands[0], last = bands.at(-1);
-  out.push(arrow([[X0 + bandW, last.y + last.h / 2], [rx, last.y + last.h / 2], [rx, first.y + first.h / 2], [X0 + bandW, first.y + first.h / 2]], { dashed: true }));
-  out.push(label(rx, (first.y + last.y + last.h) / 2, "제약"));
+  const first = bands[0];
+  out.push(arrow([[X0 + bandW, b4.y + b4.h / 2], [rx, b4.y + b4.h / 2], [rx, first.y + first.h / 2], [X0 + bandW, first.y + first.h / 2]], { dashed: true }));
+  out.push(label(rx, (first.y + b4.y + b4.h) / 2, "제약"));
   return { svg: out.join(""), y: y - 52 + 18 };
 });
 
@@ -906,6 +922,98 @@ fig("mis-gl-4i-quality-of-life", {
 ], y0));
 
 // =============================================================================================
+// =============================================================================================
+// Chapter 5 · IT infrastructure and emerging technologies
+
+fig("mis-gl-5-overview", {
+  eyebrow: "5장 개요 · 개념 묶음 5개",
+  title: "기반을 정의하고, 나누고, 바꾸고, 관리한다",
+  subtitle: "핵심 질문: 기업의 모든 시스템을 떠받치는 기반을 무엇으로 짓고, 직접 소유할까 빌려 쓸까?",
+  desc: "5-1 IT 인프라의 정의와 진화가 5-2 일곱 구성요소로 분해되고, 구성요소 안의 변화가 하드웨어 쪽 5-3 모바일·양자·그린·가상화·클라우드와 소프트웨어 쪽 5-4 소프트웨어 플랫폼과 조달로 나뉜 뒤, 두 쪽의 선택이 5-5 인프라 관리 과제의 확장성·거버넌스·TCO·투자 요인 판단으로 모이는 개요도",
+  legend: ["flow", "focal", "zone"],
+}, y0 => {
+  const r = rows([
+    { nodes: [g("5-1", "IT 인프라의 정의와 진화", ["장비 + 전사 서비스 플랫폼, 다섯 시대"])], edge: { type: "flow", text: "구성요소로 분해" } },
+    { nodes: [g("5-2", "일곱 구성요소", ["하·오·엔·데·네·인·컨, legacy와 통합"], "focal")], edge: { type: "rise", texts: ["하드웨어 쪽", "소프트웨어 쪽"] } },
+    { nodes: [g("5-3", "모바일·양자·그린·가상화·클라우드", ["BYOD, IaaS·PaaS·SaaS, 엣지"]), g("5-4", "소프트웨어 플랫폼과 조달", ["오픈소스, 웹 서비스·XML, SaaS·SLA, AI"])], after: 84 },
+    { nodes: [g("5-5", "인프라 관리 과제", ["확장성·MDM·거버넌스, rent vs buy, TCO, 여섯 투자 요인"])] },
+  ], y0);
+  const z = zoneAround(r.placed, 2, 2, "구성요소 안의 변화", 10, "zone", true);
+  return { svg: z + r.svg + merge(r.placed, 2, "관리·투자 판단", { from: 10 }), y: r.y };
+});
+
+// C · detail figures
+fig("mis-gl-5a-consumerization-byod", {
+  eyebrow: "5장 · 5-3 모바일·양자·그린·가상화·클라우드 ①",
+  title: "IT 소비자화 ⊃ BYOD → 통제 상실 → MDM",
+  subtitle: "새 기술은 소비자 시장에서 먼저 나와 기업으로 들어온다. BYOD는 그 한 측면이고, 대가는 IT 부서의 통제 상실이다",
+  desc: "소비자 시장에서 먼저 등장한 스마트폰과 Gmail·Dropbox 같은 서비스가 기업으로 퍼지는 IT 소비자화가 개인 기기의 업무 사용인 BYOD와 소비자 서비스의 업무 사용을 포함하고, 그 결과 IT 부서가 하드웨어 통제를 잃어 취약점이 커지며, 대응으로 모바일 기기 관리(MDM)와 새 정책·절차가 필요해지는 흐름 그림",
+  legend: ["flow", "dash", "focal", "outside"],
+}, y0 => { const r = rows([
+  { nodes: [{ title: "소비자 시장", body: ["스마트폰·태블릿, Gmail·Dropbox·Google Maps"], style: "outside" }], edge: { type: "flow", text: "먼저 등장해 기업으로 확산" } },
+  { nodes: [{ tag: "Consumerization of IT", title: "IT 소비자화", body: ["IT 장비·서비스의 획득·관리 방식을 다시 생각하게 함"], style: "focal" }], edge: { type: "bus", text: "포함" } },
+  { nodes: [{ tag: "BYOD", title: "개인 기기의 업무 사용", body: ["소비자화의 한 측면"] }, { tag: "Consumer services", title: "소비자 서비스의 업무 사용", body: ["Gmail·Dropbox·TikTok"] }], after: 80 },
+  { nodes: [{ title: "IT 부서가 기기 통제를 잃음", body: ["취약점(vulnerabilities) ↑"] }], edge: { type: "flow", text: "대응 (5-5)" } },
+  { nodes: [{ tag: "MDM + 새 정책·절차", title: "모바일 기기 관리", body: ["여러 모바일 OS의 기기를 감시·관리·보호"] }] },
+], y0); return { svg: r.svg + merge(r.placed, 2, "영향", { dashed: true }), y: r.y }; });
+
+fig("mis-gl-5b-virtualization-cloud", {
+  eyebrow: "5장 · 5-3 모바일·양자·그린·가상화·클라우드 ②",
+  title: "가상화 → 자원 풀 → 클라우드, 그리고 엣지",
+  subtitle: "가상화가 만든 자원 풀을 네트워크로 빌려 주고 쓴 만큼 받는 것이 클라우드다. 서비스 모델과 배치 모델은 다른 축이다",
+  desc: "하나의 물리 자원을 여러 논리 자원으로 쓰는 서버 가상화와 여러 물리 자원을 하나의 논리 자원으로 쓰는 소프트웨어 정의 스토리지가 가상화된 자원 풀을 만들고, 그 풀을 네트워크로 on-demand 제공하는 클라우드 컴퓨팅이 서비스 모델(IaaS·PaaS·SaaS)과 배치 모델(퍼블릭·프라이빗·하이브리드)의 두 축으로 나뉘며, 엣지 컴퓨팅이 일부 처리를 데이터 원천 가까이로 옮겨 클라우드를 최적화하는 그림",
+  legend: ["flow", "focal"],
+}, y0 => { const r = rows([
+  { nodes: [{ tag: "1 → 여럿", title: "서버 가상화", body: ["한 서버에서 여러 OS", "가동률 15–20% → 70%"] }, { tag: "여럿 → 1", title: "SDS", body: ["여러 저장 장치를 하나처럼", "범용 HW·클라우드로 대체"] }], after: 80 },
+  { nodes: [{ tag: "Cloud computing", title: "클라우드 컴퓨팅", body: ["가상화된 자원 풀을 네트워크로 on-demand 제공, 쓴 만큼 지불"], style: "focal" }], edge: { type: "bus", text: "두 축" } },
+  { nodes: [{ tag: "서비스 모델 · 관리 범위", title: "IaaS · PaaS · SaaS", body: ["운영 · 개발 · 사용"] }, { tag: "배치 모델 · 소유와 위치", title: "Public · Private · Hybrid", body: ["공유 · 전용 · 핵심은 자체"] }], edge: { type: "flow", text: "일부 처리를 가장자리로" } },
+  { nodes: [{ tag: "Edge computing", title: "데이터 원천 가까이에서 처리", body: ["지연·트래픽 ↓ — 클라우드를 대체하지 않고 최적화"] }] },
+], y0); return { svg: r.svg + merge(r.placed, 0, "자원 풀로"), y: r.y }; });
+
+fig("mis-gl-5c-web-services", {
+  eyebrow: "5장 · 5-4 소프트웨어 플랫폼과 조달",
+  title: "웹 서비스 = 표준 중간 계층, 기반은 XML",
+  subtitle: "Figure 5.7 · 서로 대화하지 못하는 시스템 사이에 표준 계층 하나를 두면 파트너마다 연결을 따로 만들 필요가 없다",
+  desc: "Southwest Airlines, 여행사와 여행 예약 시스템, 무선 웹사이트와 미래 파트너의 시스템이 웹 표준으로 웹 서비스 계층과 정보를 교환하고, 웹 서비스 계층이 Dollar Rent A Car의 오래된 예약 시스템과 연결되며, 웹 서비스의 기반 기술은 사용자 정의 태그로 컴퓨터가 데이터를 자동 처리하게 하는 XML이고, 아래에서 파트너마다 전용 연결을 만드는 방식과 웹 서비스 방식을 비교하는 그림",
+  legend: ["flow", "focal", "outside", "zone"],
+}, y0 => {
+  const r = rows([
+    { nodes: [{ title: "항공사", body: ["Southwest Airlines"], style: "outside" }, { title: "여행사", body: ["여행 예약 시스템"], style: "outside" }, { title: "무선 웹사이트", body: ["미래 파트너"], style: "outside" }], after: 80 },
+    { nodes: [{ tag: "Web services", title: "표준 중간 소프트웨어 계층", body: ["모든 파트너가 같은 방식으로 접속"], style: "focal" }], edge: { type: "rise", texts: ["연결", "기반 기술"] } },
+    { nodes: [{ tag: "Dollar Rent A Car", title: "Legacy 예약 시스템", body: ["교체하지 않고 그대로 사용"] }, { tag: "Extensible Markup Language", title: "XML", body: ["사용자 정의 태그로 자동 처리", "HTML은 보여 주기만"] }], after: 58 },
+    { nodes: [{ tag: "전용 연결 방식", title: "파트너 N곳 → 연결 N개", body: ["파트너가 늘 때마다 개발·유지"] }, { tag: "웹 서비스 방식", title: "계층 하나에 모두 접속", body: ["새 파트너도 같은 표준으로"] }] },
+  ], y0);
+  const z = zoneAround(r.placed, 3, 3, "비교 · 파트너가 늘어날 때", 10, "zone", true);
+  return { svg: z + r.svg + merge(r.placed, 0, "웹 표준으로 교환"), y: r.y + 12 };
+});
+
+fig("mis-gl-5d-tco", {
+  eyebrow: "5장 · 5-5 인프라 관리 과제",
+  title: "TCO — 구입가는 빙산의 일각",
+  subtitle: "TCO는 하드웨어의 숨은 비용을 수치화한다. 구입비는 약 20%이고 나머지 약 80%가 관리·운영 비용이다",
+  desc: "총소유비용이 보이는 비용인 하드웨어·소프트웨어 구입비 약 20%와 숨은 비용 약 80%로 이루어지고, 숨은 비용에는 설치·교육·지원·유지보수·인프라·다운타임·공간·에너지가 포함되며, 클라우드 서비스 사용과 하드웨어·소프트웨어의 중앙화·표준화로 TCO를 줄인다는 그림",
+  legend: ["flow", "focal", "zone"],
+}, y0 => {
+  const r = rows([
+    { nodes: [{ tag: "Total cost of ownership", title: "TCO · 총소유비용", body: ["기술 자원을 소유하는 직접·간접 비용의 총합"], style: "focal" }], edge: { type: "bus", text: "구성" } },
+    { nodes: [{ tag: "보이는 비용 · 약 20%", title: "HW·SW 구입비", body: ["초기 구입·설치"] }, { tag: "숨은 비용 · 약 80%", title: "관리·운영 비용", body: ["판서: hidden costs"] }], after: 84 },
+    { nodes: [{ title: "설치" }, { title: "교육" }, { title: "지원" }, { title: "유지보수" }], after: 10 },
+    { nodes: [{ title: "인프라" }, { title: "다운타임" }, { title: "공간" }, { title: "에너지" }], after: 92 },
+    { nodes: [{ title: "클라우드 서비스 사용" }, { title: "HW·SW 중앙화·표준화" }] },
+  ], y0);
+  const p = r.placed;
+  const zoneTop = p[2].y - 34, zoneBottom = p[3].y + p[3].h + 10;
+  const hidden = p[1].boxes[1];
+  const hx = hidden.x + hidden.w / 2;
+  const out = [
+    zone(X0 - 8, zoneTop, CW + 16, zoneBottom - zoneTop, "숨은 비용 여덟 가지", { center: true }),
+    r.svg,
+    arrow([[hx, p[1].y + p[1].h], [hx, zoneTop]], { text: "포함" }),
+    arrow([[W / 2, zoneBottom], [W / 2, p[4].y]], { text: "줄이는 방법" }),
+  ];
+  return { svg: out.join(""), y: r.y };
+});
+
 const written = [];
 for (const { slug, meta, build } of figures) {
   const { svg, height } = compose(meta, build);

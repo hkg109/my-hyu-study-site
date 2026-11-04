@@ -1,6 +1,6 @@
 ---
 title: 0장 · 전공 용어 정리집
-description: 'Chapter 1–4의 개념·용어·사례를 장 → 개념 묶음 → 개별 개념 순서로 다시 엮은 통합 정리집. 개념마다 정의·쉬운 설명·사례·혼동 포인트·원문 링크를 붙이고, 전체 지도부터 묶음별 세부도까지 개념도 44장과 헷갈리는 개념 비교·영문 약어 색인으로 마무리한다.'
+description: 'Chapter 1–5의 개념·용어·사례를 장 → 개념 묶음 → 개별 개념 순서로 다시 엮은 통합 정리집. 개념마다 정의·쉬운 설명·사례·혼동 포인트·원문 링크를 붙이고, 전체 지도부터 묶음별 세부도까지 개념도 49장(5장은 원문 노트 그림 6장을 함께 활용)과 헷갈리는 개념 비교·영문 약어 색인으로 마무리한다.'
 order: 0
 published: true
 duration: 180
@@ -12,15 +12,15 @@ tags:
   - 총정리
   - 개념도
 objectives:
-  - Chapter 1–4의 핵심 개념을 영문 이름·한국어 이름·약어 풀이와 한 문장 정의로 말할 수 있다.
+  - Chapter 1–5의 핵심 개념을 영문 이름·한국어 이름·약어 풀이와 한 문장 정의로 말할 수 있다.
   - 각 개념을 강의 사례에 적용해 상황 → 개념 → 이유 → 결과로 설명한다.
   - 개념도로 포함·데이터 제공·지원·영향 관계를 읽고, 비슷한 개념의 차이를 기준과 함께 설명한다.
-  - 1–5강의 원문 슬라이드 위치로 돌아가 세부 내용과 수치를 확인한다.
+  - 1–6강의 원문 슬라이드 위치로 돌아가 세부 내용과 수치를 확인한다.
 ---
 
 ## 이 정리집을 쓰는 법
 
-이 문서는 1–5강 노트(Chapter 1–4)에 흩어진 개념·용어·모형·분류·단계·사례를 한곳에 모은 **통합 개념서**다. 같은 개념이 여러 강에 나오면 여기서는 **한 곳에만 대표 설명**을 두고, 다른 곳에서는 그 설명으로 링크한다. 세부 수치와 교수님 메모는 각 개념 카드의 **원문** 링크를 눌러 해당 슬라이드 필기에서 확인한다.
+이 문서는 1–6강 노트(Chapter 1–5)에 흩어진 개념·용어·모형·분류·단계·사례를 한곳에 모은 **통합 개념서**다. 같은 개념이 여러 강에 나오면 여기서는 **한 곳에만 대표 설명**을 두고, 다른 곳에서는 그 설명으로 링크한다. 세부 수치와 교수님 메모는 각 개념 카드의 **원문** 링크를 눌러 해당 슬라이드 필기에서 확인한다.
 
 ### 장 바로가기
 
@@ -30,17 +30,18 @@ objectives:
 | [2장 · 전사 시스템·지식관리·IT 조직](#2장--전사-시스템지식관리it-조직) | 시스템은 업무·결정·협업·지식을 어떻게 지원할까? | 2-1 ~ 2-9 | [2장 A 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02) · [2장 B 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03) |
 | [3장 · 조직과 경쟁 전략](#3장--조직과-경쟁-전략) | 조직과 IT는 서로를 어떻게 바꾸고, IT로 어떻게 경쟁할까? | 3-1 ~ 3-5 | [3장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) |
 | [4장 · 윤리와 사회적 책임](#4장--윤리와-사회적-책임) | IS가 만든 힘을 누가 어떤 책임으로 통제할까? | 4-1 ~ 4-7 | [4장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) |
+| [5장 · IT 인프라와 신기술](#5장--it-인프라와-신기술) | 모든 시스템을 떠받치는 기반을 무엇으로 짓고, 소유할까 빌릴까? | 5-1 ~ 5-5 | [5장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06) |
 
 **문서 끝:** [헷갈리는 개념 비교](#헷갈리는-개념-비교) · [영문·약어 빠른 색인](#영문약어-빠른-색인) · [확인 필요 · 출처 메모](#확인-필요--출처-메모) · [장별 총정리](#장별-총정리)
 
-**파일 번호 ≠ 장 번호:** lecture-01 = 1장, lecture-02 = 2장 A(프로세스·전사 시스템), lecture-03 = 2장 B(협업·지식관리·IS 기능), lecture-04 = 3장, lecture-05 = 4장이다.
+**파일 번호 ≠ 장 번호:** lecture-01 = 1장, lecture-02 = 2장 A(프로세스·전사 시스템), lecture-03 = 2장 B(협업·지식관리·IS 기능), lecture-04 = 3장, lecture-05 = 4장, lecture-06 = 5장이다.
 
 ### 구조와 읽는 법
 
 - **목차 구조:** 장(큰 제목) → 개념 묶음(번호 1-1, 2-3 …) → 개별 개념. 사이트 목차도 같은 3단계로 보인다.
 - **개념 카드:** ① **정의** 박스에 영문 이름 · 한국어 이름 · 약어 풀이와 한 문장 정의 → ② **쉽게** 풀어 쓴 설명과 **특징** → ③ **헷갈림 주의**(비슷한 개념과의 차이·흔한 오해) → ④ **연결**(관련 개념과 원문 슬라이드) → ⑤ **예시** 박스(상황 → 적용 개념 → 이유 → 결과). 짧은 용어는 묶음 끝 표로만 정리한다.
-- **예시 표기:** 기업·기관 이름이 붙은 예시는 슬라이드나 교재의 실제 사례이며 출처 슬라이드를 적었다. 이해를 돕기 위해 지어낸 예시는 **가상 예시**라고 표시했다. 교재 판본(17판·18판)에 따라 사례가 다르면 함께 적었다.
-- **개념도 세 층:** 맨 위 **전체 지도**(A), 각 장 첫머리의 **장 개요도**(B), 각 개념 묶음의 **세부 개념도**(C). 그림을 누르면 원본 SVG가 열려 확대해 볼 수 있다. 그림 아래 **해설** 박스에 읽는 순서·핵심 관계·예시를 적었다.
+- **예시 표기:** 기업·기관 이름이 붙은 예시는 슬라이드나 교재의 실제 사례이며 출처 슬라이드를 적었다. 18판 슬라이드에는 없고 이전 판 교재에만 있는 용어는 **교재 보충**이라고 표시했다(5장). 이해를 돕기 위해 지어낸 예시는 **가상 예시**라고 표시했다. 교재 판본(17판·18판)에 따라 사례가 다르면 함께 적었다.
+- **개념도 세 층:** 맨 위 **전체 지도**(A), 각 장 첫머리의 **장 개요도**(B), 각 개념 묶음의 **세부 개념도**(C). 5장은 원문 노트의 교재 그림(Figure 5.2·5.3·5.4·5.8)과 개념도가 이미 잘 맞는 묶음에서는 그 그림을 그대로 가져와 “5장 노트 그림”이라고 표시했다. 그림을 누르면 원본 SVG가 열려 확대해 볼 수 있다. 그림 아래 **해설** 박스에 읽는 순서·핵심 관계·예시를 적었다.
 - **그림 기호:** 실선 화살표 = 흐름·데이터 제공 · 점선 화살표 = 영향·제약 · 검은 칸 = 그 그림의 중심 개념 · 점선 테두리 칸 = 조직 밖 주체 · 회색 영역 = 범위·묶음. 화살표 위 이름표가 관계의 종류(포함·지원·영향·비교 등)다. 색만으로 구분하지 않도록 모든 관계에 글자 이름표를 붙였다.
 
 **형광펜 읽는 법:** ==yellow:노랑== 핵심 정의·결론 · ==red:빨강== 시험에서 헷갈리는 구분·함정 · ==blue:파랑== 외워야 할 순서·목록
@@ -50,13 +51,13 @@ objectives:
 
 ## 전체 개념 지도
 
-[![1장부터 4장까지를 위에서 아래로 놓고 장마다 핵심 질문과 개념 묶음을 적은 뒤 구체화·영향·새 쟁점 화살표로 잇고, 4장에서 1장으로 돌아가는 점선 제약 화살표를 둔 전체 개념 지도](/materials/diagrams/mis-gl-00-concept-map.svg)](/materials/diagrams/mis-gl-00-concept-map.svg)
+[![1장부터 4장까지를 위에서 아래로 놓고 장마다 핵심 질문과 개념 묶음을 적은 뒤 구체화·영향·새 쟁점 화살표로 잇고, 4장에서 1장으로 돌아가는 점선 제약 화살표를 두며, 맨 아래 5장 IT 인프라가 위의 모든 장에 기반을 제공하는 전체 개념 지도](/materials/diagrams/mis-gl-00-concept-map.svg)](/materials/diagrams/mis-gl-00-concept-map.svg)
 
-*그림 A · Chapter 1–4 전체 개념 지도 — 누르면 원본 크기로 열린다.*
+*그림 A · Chapter 1–5 전체 개념 지도 — 누르면 원본 크기로 열린다.*
 
 > [!NOTE]
-> - **읽는 순서:** 위에서 아래로 장마다 ① 핵심 질문(굵은 글씨) ② 개념 묶음 번호를 읽고, 장 사이 화살표의 이름표를 읽는다. 마지막으로 오른쪽 점선을 따라 4장에서 1장으로 올라간다.
-> - **핵심 관계:** 1장은 IS가 가치를 만드는 **일반 원리**이고, 2장은 그 원리가 프로세스·관리 계층·전사 통합·협업·지식관리라는 **업무별 시스템으로 구체화**된 것이다. 3장은 그 시스템이 조직 구조와 경쟁 방식을 **바꾸고 동시에 조직의 영향을 받는다**는 점을, 4장은 데이터와 권력이 모이면서 생기는 **새 윤리·사회 쟁점**을 다룬다. 4장의 법·윤리 기준은 다시 1–3장의 투자와 설계를 **제약**한다.
+> - **읽는 순서:** 위에서 아래로 장마다 ① 핵심 질문(굵은 글씨) ② 개념 묶음 번호를 읽고, 장 사이 화살표의 이름표를 읽는다. 오른쪽 점선을 따라 4장에서 1장으로 올라간 뒤, 맨 아래 5장에서 위로 향하는 “기반 제공” 화살표를 읽는다.
+> - **핵심 관계:** 1장은 IS가 가치를 만드는 **일반 원리**이고, 2장은 그 원리가 프로세스·관리 계층·전사 통합·협업·지식관리라는 **업무별 시스템으로 구체화**된 것이다. 3장은 그 시스템이 조직 구조와 경쟁 방식을 **바꾸고 동시에 조직의 영향을 받는다**는 점을, 4장은 데이터와 권력이 모이면서 생기는 **새 윤리·사회 쟁점**을 다룬다. 4장의 법·윤리 기준은 다시 1–3장의 투자와 설계를 **제약**한다. 5장은 이 모든 시스템이 그 위에서 돌아가는 **기반**(IT 인프라)과 그 기반을 바꾸는 신기술(클라우드·가상화·모바일·AI)을 다룬다 — 1장에서 기술 차원의 한 요소로 나온 IT 인프라를 일곱 구성요소·조달 방식·총소유비용으로 펼친 장이다.
 > - **예시:** Walmart는 1장에서 Retail Link로 **운영 우수성**(1-2), 2장에서 AI 공급망으로 **SCM**(2-3), 3장에서 연속 보충 시스템으로 **저원가 리더십**(3-4)의 예가 된다. 같은 기업이라도 장마다 묻는 분류 기준이 다르다.
 
 > [!PAGEBREAK]
@@ -566,7 +567,7 @@ IS를 연구·설계할 때 기술과 사람 중 어디에 초점을 두는가�
 > **Business process(비즈니스 프로세스)** — 특정 업무를 수행하기 위해 ==논리적으로 연결된 활동의 집합(logically related set of tasks)==. 물자·정보·지식의 흐름이며, 기업은 프로세스의 집합으로 볼 수 있다.
 
 - **쉽게:** “업무가 **어떤 순서로** 이어지는가”다. 기능(부서)은 “어느 부서가 맡는가”다.
-- **특징:** 공식 규칙과 비공식 관행(예: 동료·고객 전화에 회신해야 한다는 문서화되지 않은 관행)을 함께 포함한다. 잘 설계되면 **자산(asset)**, 낡아서 대응력과 효율을 막으면 **부채(liability)**다.
+- **특징:** 공식 규칙과 비공식 관행(예: 동료·고객 전화에 회신해야 한다는 문서화되지 않은 관행)을 함께 포함한다. 잘 설계되면 **자산**(asset), 낡아서 대응력과 효율을 막으면 **부채**(liability)다.
 - **헷갈림 주의:** 3장에서는 [루틴](#routines-sops--표준-운영-절차)이 모여 프로세스가 되고, 프로세스가 모여 기업이 된다. 1장의 “조직 차원” 안에도 프로세스가 들어간다. 이 문서에서는 이 카드가 대표 설명이다.
 - **연결:** [Cross-functional Process](#functional--cross-functional-process--기능별범기능-프로세스) · 1장 [Digital Firm](#digital-firm--디지털-기업) · 원문 [2장 Slide 5](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-02#slide-5--business-processes-12)
 
@@ -836,7 +837,7 @@ IS를 연구·설계할 때 기술과 사람 중 어디에 초점을 두는가�
 > [!DEFINITION]
 > **Social business(소셜 비즈니스)** — 사내외 소셜 네트워킹 플랫폼으로 ==직원·고객·공급업체와의 상호작용을 깊게 하고 정보 공유를 빠르게== 하는 것. 전제는 ==red:information transparency(정보 투명성)== — 경영진이나 다른 사람의 개입 없이 정보 교환이 이루어지는 것.
 
-- **기대 효과:** 운영 효율, 혁신, 빠른 의사결정. 고객과의 **대화(conversations)**로 유대를 강화한다.
+- **기대 효과:** 운영 효율, 혁신, 빠른 의사결정. 고객과의 **대화**(conversations)로 유대를 강화한다.
 - **헷갈림 주의:** ==red:위에서 정보를 통제하는 문화에서는 플랫폼을 깔아도 대화가 일어나지 않는다.==
 - **연결:** [Enterprise Social Networking](#enterprise-social-networking--기업용-소셜-네트워킹) · [Collaborative Culture](#collaborative-culture--협업-문화) · 원문 [2장 Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03#slide-31--what-is-social-business)
 
@@ -994,7 +995,7 @@ IS를 연구·설계할 때 기술과 사람 중 어디에 초점을 두는가�
 > **Knowledge management(지식관리)** — 지식을 만들고·저장하고·전달하고·적용하기 위한 비즈니스 프로세스. **KM value chain** — ==blue:Acquisition(획득) → Storage(저장) → Dissemination(전파) → Application(적용)==, 각 단계가 원시 데이터·정보에 가치를 더한다.
 
 - **획득:** 형식지·암묵지 문서화, 보고서·best practice·이메일 저장, 전문가 네트워크 구축, TPS·외부 원천 추적.
-- **저장:** 데이터베이스·문서관리 시스템. 경영진은 계획된 저장 시스템을 지원하고, 전사 **색인 스키마(schema: 지식의 추상적 구조)**를 만들고, 문서를 갱신·저장한 직원에게 보상한다.
+- **저장:** 데이터베이스·문서관리 시스템. 경영진은 계획된 저장 시스템을 지원하고, 전사 **색인 스키마**(schema: 지식의 추상적 구조)를 만들고, 문서를 갱신·저장한 직원에게 보상한다.
 - **전파:** 포털·위키·이메일·검색·협업 도구. 정보 과부하는 교육·비공식 네트워크·경영 경험 공유로 줄인다.
 - **적용:** 지식이 실제 결정과 프로세스(DSS·경영 프로세스)에 들어가 새 업무 관행·제품·서비스·시장을 만든다.
 - **헷갈림 주의:** ==red:지식은 저장만으로 가치가 생기지 않는다. Apply가 빠지면 ROI가 없다.== 1장의 [비즈니스 정보 가치사슬](#business-information-value-chain--비즈니스-정보-가치사슬)과 구조가 닮았지만 대상이 **지식**이다.
@@ -1097,7 +1098,7 @@ IS를 연구·설계할 때 기술과 사람 중 어디에 초점을 두는가�
 > [!DEFINITION]
 > **LMS = Learning Management System(학습관리시스템)** — 직원 학습·교육의 ==관리·전달·추적·평가==를 지원하는 시스템. 과정 선택·운영을 자동화하고 학습 효과를 측정한다.
 
-- **특징:** 웹 강좌·온라인 포럼 등 여러 방식을 지원하고, **MOOC(Massively Open Online Courses: 아주 많은 참여자에게 열린 웹 강좌)**를 지원할 수도 있다.
+- **특징:** 웹 강좌·온라인 포럼 등 여러 방식을 지원하고, **MOOC**(Massively Open Online Courses: 아주 많은 참여자에게 열린 웹 강좌)를 지원할 수도 있다.
 - **연결:** [Organizational Learning](#organizational-learning--조직-학습) · 원문 [2장 Slide 61](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-03#slide-61--learning-management-systems-lms)
 
 #### Knowledge Workers · 지식근로자
@@ -1310,7 +1311,7 @@ IS를 연구·설계할 때 기술과 사람 중 어디에 초점을 두는가�
 - **연결:** [Routines](#routines-sops--표준-운영-절차) · [Resistance to Change](#resistance-to-change--변화-저항) · 원문 [3장 Slide 6](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-6--what-is-an-organization) · [Slide 7](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-7--figure-32-technical-microeconomic-definition) · [Slide 8](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-8--figure-33-behavioral-view)
 
 > [!EXAMPLE]
-> **PepsiCo × Doritos Silent ([3장 Slide 3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-3--pepsico-tames-the-doritos-crunch))** — **상황:** 다른 사람의 과자 씹는 소리가 게이머를 방해하지만 팬들은 바삭함을 좋아한다. **→ 적용 개념:** 조직(바삭함은 유지하는 제품 정체성) · 경영(고객 경험 최적화) · 기술(AI/ML로 crunch 소리 5,000개 이상 분석)이 함께 만든 IS. **→ 이유:** 사용자 목소리는 살리고 배경의 씹는 소리만 지운다. **→ 결과:** 게이머 시장에서 인기를 유지하고 매출을 지원했다. 3장 Slide 33에서 **customer experience management(제품 차별화)**의 예로 다시 나온다.
+> **PepsiCo × Doritos Silent ([3장 Slide 3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-3--pepsico-tames-the-doritos-crunch))** — **상황:** 다른 사람의 과자 씹는 소리가 게이머를 방해하지만 팬들은 바삭함을 좋아한다. **→ 적용 개념:** 조직(바삭함은 유지하는 제품 정체성) · 경영(고객 경험 최적화) · 기술(AI/ML로 crunch 소리 5,000개 이상 분석)이 함께 만든 IS. **→ 이유:** 사용자 목소리는 살리고 배경의 씹는 소리만 지운다. **→ 결과:** 게이머 시장에서 인기를 유지하고 매출을 지원했다. 3장 Slide 33에서 **customer experience management**(제품 차별화)의 예로 다시 나온다.
 
 ### 3-2 조직의 특징과 구조
 
@@ -1433,7 +1434,7 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 > [!DEFINITION]
 > **Transaction cost(거래 비용)** — 기업이 스스로 만들지 않는 것을 시장에서 살 때 드는 비용(공급자 탐색·계약 작성·품질 확인·감시). **Transaction cost theory** — 기업은 시장 참여 비용을 줄이려 한다. 비용이 높으면 ==vertical integration(수직 통합)==으로 커지고, IT로 비용이 낮아지면 ==외주(outsourcing) ↑, 기업 규모 축소 가능==.
 
-- **쉽게:** **바깥(시장)**과 거래하는 비용이다.
+- **쉽게:** **바깥**(시장)과 거래하는 비용이다.
 - **헷갈림 주의:** ==red:문제에 “공급업체·계약”이 나오면 transaction, “직원 관리·감독”이 나오면 agency다.==
 - **연결:** [Agency Theory](#agency-theory--대리인-이론) · 원문 [3장 Slide 20](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-20--transaction-cost-theory)
 
@@ -1445,7 +1446,7 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 > [!DEFINITION]
 > **Agency theory(대리인 이론)** — 기업을 ==감독이 필요한 자기 이익 추구자들 사이의 계약의 결합체(nexus of contracts)==로 본다. **Agency cost** — 주인(principal)이 대리인(agent)인 직원을 ==감독·관리하는 비용==으로, 기업이 커질수록 늘어난다. IT는 이 비용을 낮춰 ==관리자를 크게 늘리지 않고도 확장==할 수 있게 한다.
 
-- **쉽게:** **안쪽(직원)**을 관리하는 비용이다.
+- **쉽게:** **안쪽**(직원)을 관리하는 비용이다.
 - **연결:** [Flattening](#flattening--span-of-control--납작한-조직과-통제-범위) · 원문 [3장 Slide 21](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-21--agency-theory)
 
 #### Flattening · Span of Control · 납작한 조직과 통제 범위
@@ -1489,7 +1490,7 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 
 > [!NOTE]
 > - **읽는 순서:** 가운데 검은 칸(기업과 기존 경쟁자) → 위 → 오른쪽 → 아래 → 왼쪽 점선 칸의 순서로 네 힘을 확인한다.
-> - **핵심 관계:** 네 바깥 힘은 모두 기업에 **압력(영향)**을 준다. 기존 경쟁자는 같은 산업 안의 힘이라 기업과 함께 가운데 놓인다(3장 Figure 3.8 메모). 각 힘에 “강한가, 약한가?”를 묻는 것이 분석이다.
+> - **핵심 관계:** 네 바깥 힘은 모두 기업에 **압력**(영향)을 준다. 기존 경쟁자는 같은 산업 안의 힘이라 기업과 함께 가운데 놓인다(3장 Figure 3.8 메모). 각 힘에 “강한가, 약한가?”를 묻는 것이 분석이다.
 > - **예시:** 카페에게 옆 카페는 기존 경쟁자, 새 프랜차이즈는 신규 진입자, 편의점 커피는 대체재, 쿠폰만 쫓는 손님은 고객의 힘, 원두 값을 올리는 공급업체는 공급자의 힘이다(가상 예시, 3장 Slide 28 해설).
 
 [![가격 경쟁·대체재·큰 시장 열세·고객 이탈이라는 네 압력이 각각 저원가 리더십·제품 차별화·틈새시장 집중·고객 공급자 친밀성으로 대응되는 그림](/materials/diagrams/mis-gl-3g-generic-strategies.svg)](/materials/diagrams/mis-gl-3g-generic-strategies.svg)
@@ -2063,6 +2064,526 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 
 > [!PAGEBREAK]
 
+## 5장 · IT 인프라와 신기술
+
+**핵심 질문:** 기업의 모든 시스템을 떠받치는 기반을 무엇으로 짓고, 직접 소유할까 빌려 쓸까? · **원문:** [5장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06) (Slides 1–43)
+
+[![5-1 정의와 진화에서 5-2 일곱 구성요소로 분해되고, 구성요소의 변화가 하드웨어 쪽 5-3 모바일·양자·그린·가상화·클라우드와 소프트웨어 쪽 5-4 소프트웨어 플랫폼과 조달로 나뉜 뒤, 두 쪽의 선택이 5-5 인프라 관리 과제로 모이는 개요도](/materials/diagrams/mis-gl-5-overview.svg)](/materials/diagrams/mis-gl-5-overview.svg)
+
+*그림 B5 · 5장 개요 — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 맨 위 5-1(정의·진화) → “구성요소로 분해” → 검은 칸 5-2 → 왼쪽 5-3(하드웨어·컴퓨팅 쪽 변화)과 오른쪽 5-4(소프트웨어 쪽 변화) → “관리·투자 판단” → 5-5.
+> - **핵심 관계:** 5-1이 IT 인프라를 ==장비 + 전사 서비스 플랫폼==으로 정의하고 다섯 시대의 흐름을 준다. 5-2는 그 인프라를 일곱 요소로 **분해**한다. 5-3과 5-4는 일곱 요소 안에서 지금 일어나는 **변화**(모바일·가상화·클라우드 / 오픈소스·웹 서비스·SaaS)이고, 5-5는 그 변화 앞에서 ==얼마나, 어떻게 투자하고 누가 관리할지==를 정하는 틀이다. 강의 흐름은 ==blue:정의·진화 → 구성요소 → 하드웨어 트렌드 → 가상화·클라우드 → 소프트웨어 플랫폼 → 조달 → AI 인프라 → 관리==.
+> - **예시:** 세 영상 사례(Rockwell Automation·ESPN.com·Netflix)와 Grab 오프닝 케이스의 공통 질문은 ==“컴퓨팅 능력을 직접 소유할 것인가, 빌려 쓸 것인가?”==다(5장 Slide 3 해설). 이 질문이 클라우드(5-3), 아웃소싱·SaaS(5-4), rent-versus-buy·TCO(5-5)를 관통한다.
+
+### 5-1 IT 인프라의 정의와 진화
+
+IT 인프라를 어떻게 정의하고, 그 모습이 다섯 시대를 거쳐 어떻게 바뀌었는지 묶었다. 1장의 [IT Infrastructure](#it-infrastructure--it-인프라)가 “여러 시스템이 함께 쓰는 기술 기반”이라는 기본 정의라면, 여기서는 그 기반을 **서비스와 투자의 관점**에서 다시 본다. 원문: [Slide 5](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-5--defining-it-infrastructure) · [Slide 6](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-6--figure-51-connection-between-the-firm-it-infrastructure-and-business-capabilities) · [Slide 7](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-7--evolution-of-it-infrastructure) ~ [Slide 11](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-11--figure-53-a-multitiered-n-tier-clientserver-network) · [Slides 12–13](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slides-1213--stages-in-it-infrastructure-evolution)
+
+[![메인프레임 PC 클라이언트서버 엔터프라이즈 클라우드 모바일의 다섯 시대 카드와 각 시대가 시작 연도부터 현재까지 이어지는 막대](/materials/diagrams/mis-fig-5-02.svg)](/materials/diagrams/mis-fig-5-02.svg)
+
+*그림 5-1 · Figure 5.2 인프라 진화의 다섯 시대 (5장 노트 그림) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 위 카드를 왼쪽에서 오른쪽으로 읽으며 시대마다 ==처리가 어디서 일어나는가==를 확인하고, 아래 막대에서 시작 연도를 읽는다.
+> - **핵심 관계:** 연결 범위가 ==없음(독립 PC) → LAN(클라이언트/서버) → 전사(엔터프라이즈) → 인터넷 너머(클라우드)==로 넓어진다. ==red:모든 막대가 현재까지 이어진다 — 새 시대가 옛 시대를 끝낸 것이 아니다.==
+> - **예시:** 은행은 지금도 계좌 원장을 메인프레임(1959년 시대)에서 돌리면서 모바일 뱅킹은 클라우드(2000년 시대)로 제공한다(5장 Slide 16 해설). 한 회사 안에 여러 시대가 공존한다.
+
+[![클라이언트가 인터넷을 거쳐 웹 서버와 애플리케이션 서버로 요청을 보내고 판매 생산 회계 인사 기능과 데이터로 이어지는 다계층 구조](/materials/diagrams/mis-fig-5-03.svg)](/materials/diagrams/mis-fig-5-03.svg)
+
+*그림 5-2 · Figure 5.3 다계층(N-tier) 클라이언트/서버 네트워크 (5장 노트 그림) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 왼쪽 클라이언트 → 인터넷 → 웹 서버 → 애플리케이션 서버 → 판매·생산·회계·인사 업무 → 데이터.
+> - **핵심 관계:** 한 대의 거대한 컴퓨터 대신 ==역할별 서버(tier)로 요청을 나눠 처리==한다. ==red:웹 서버는 페이지 전달, 애플리케이션 서버는 업무 처리==다.
+> - **예시:** 온라인 서점에서 책 상세 페이지를 여는 것은 웹 서버, 결제를 누르면 재고 차감·결제를 처리하는 것은 애플리케이션 서버, 주문 내역 저장은 데이터 계층이다(5장 Slide 11 문제).
+
+#### Service Platform Perspective · 서비스 플랫폼 관점의 IT 인프라
+
+> [!DEFINITION]
+> **IT infrastructure(5장 정의)** — ① ==전사를 운영하는 데 필요한 물리적 장치와 소프트웨어 애플리케이션의 집합==이자 ② 경영진과 예산이 지원하는 ==전사 서비스(firmwide services)의 집합==: ==blue:컴퓨팅 플랫폼 · 통신 · 데이터 관리 · 애플리케이션 소프트웨어(ERP·CRM·SCM·KMS) · 물리적 시설 관리 · IT 관리·표준·교육·R&D==. **Service platform perspective** — ②의 관점으로 보면 인프라 투자의 ==비즈니스 가치를 더 정확하게== 볼 수 있다.
+
+- **쉽게:** 새 PC를 “한 대 100만 원”으로만 보면 비용만 보인다. 서비스 관점에서는 그 PC 덕분에 직원의 ==정보 대기 시간이 하루 한 시간 줄어드는== 가치가 보인다(교수님 메모). 장비 목록이 아니라 **그 장비가 가능하게 하는 서비스**로 평가한다.
+- **Figure 5.1:** 사업 전략 ⇄ IT 전략 ⇄ 정보기술이 서로 영향을 주며 ==IT 서비스·인프라==를 정하고, 인프라가 고객·공급자·전사 서비스를 만든다. 기업이 제공할 수 있는 서비스는 ==IT 인프라의 직접적인 함수(direct function)==다.
+- **규모(교수님 메모):** IT 인프라는 2024년 5.06조 달러 규모의 산업이고, 대기업에서 인프라 투자는 IT 지출의 25–50%다.
+- **헷갈림 주의:** ==red:IT 인프라는 하드웨어만이 아니다.== 소프트웨어와 통신·데이터 관리·시설 관리·교육·R&D 같은 **서비스**까지 포함한다. 1장 정의(네 기술 + 운영 인력)와 충돌하지 않고, 5장은 서비스 쪽을 더 넓게 적었을 뿐이다.
+- **연결:** 1장 [IT Infrastructure](#it-infrastructure--it-인프라) · [Seven Components](#seven-components-of-it-infrastructure--인프라의-일곱-구성요소) · [TCO](#tco--total-cost-of-ownership--총소유비용) · 원문 [5장 Slide 5](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-5--defining-it-infrastructure) · [Slide 6](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-6--figure-51-connection-between-the-firm-it-infrastructure-and-business-capabilities)
+
+> [!EXAMPLE]
+> **Amazon (5장 Slide 6 교수님 메모)** — **상황:** 가장 인기 있는 온라인 쇼핑 사이트로 꼽히며 서비스 품질과 처리 속도로 높은 평가를 받는다. **→ 적용 개념:** 서비스는 IT 인프라의 직접적인 함수(Figure 5.1). **→ 이유:** 수십만 개의 프로세서로 이루어진 세계 최대급 컴퓨팅 인프라가 그 품질을 떠받친다. **→ 결과:** 기업이 고객에게 전달하는 것과 그 품질은 인프라의 힘에 직접 달려 있다. 이 인프라를 외부에 판매한 것이 [AWS](#aws--industry-cloud--대표-퍼블릭-클라우드와-산업-특화-클라우드)다.
+
+#### Evolution of IT Infrastructure · 인프라 진화의 다섯 시대
+
+> [!DEFINITION]
+> **Five eras of IT infrastructure** — ==blue:Mainframe·minicomputer(1959) → Personal computer(1981) → Client/server(1983) → Enterprise computing(1992) → Cloud and mobile computing(2000)==. 모든 시대가 ==“to present”==다.
+
+| 시대 | 핵심 특징 | 대표 |
+|---|---|---|
+| **Mainframe·minicomputer** (1959–) | 중앙 집중 처리 | 1958 IBM 최초 메인프레임(판서 IBM 360), 1965 더 저렴한 DEC 미니컴퓨터 |
+| **Personal computer** (1981–) | 독립형 PC와 개인 생산성 소프트웨어 | 1981 IBM PC, Wintel PC(Windows + Intel) |
+| **Client/server** (1983–) | 처리를 클라이언트와 서버가 분담, LAN 연결 | two-tiered·N-tiered 네트워크 |
+| **Enterprise computing** (1992–) | 흩어진 네트워크·앱을 ==인터넷 표준(TCP/IP)과 전사 애플리케이션으로 통합== | 정보가 조직 안팎으로 자유롭게 흐름 |
+| **Cloud and mobile** (2000–) | ==컴퓨팅 능력과 소프트웨어를 인터넷으로 공급==, 가장 빠르게 성장 | 판서 동인: 인터넷 대역폭 증가. Google Apps, Salesforce.com |
+
+- **쉽게:** 그림 읽기의 열쇠는 ==연결 범위가 넓어진다==는 것이다. 처리는 중앙(메인프레임) → 각자(PC) → 나눠서(클라이언트/서버) → 전사 표준으로(엔터프라이즈) → 인터넷 너머에서 빌려(클라우드).
+- **헷갈림 주의:** ==red:TCP/IP로 통합한 것은 Enterprise(1992), 인터넷으로 “공급받는” 것은 Cloud(2000).== PC(1981)와 Client/Server(1983)는 2년 차이라 순서를 바꾸기 쉽다. ==red:“메인프레임은 PC 시대에 끝났다”는 오답== — 현대 IBM z-Series는 Fortune 1000 기업의 네트워크와 웹사이트를 돌리는 매우 강력한 서버이고 여전히 IBM의 큰 수입원이다(교수님 메모).
+- **연결:** [Client/Server](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조) · [Cloud Computing](#cloud-computing--클라우드-컴퓨팅) · 원문 [5장 Slide 7](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-7--evolution-of-it-infrastructure) · [Slide 8](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-8--figure-52-stages-in-it-infrastructure-evolution) · [Slide 9](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-9--evolution-of-it-infrastructure-mainframe-pc-clientserver) · [Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-10--evolution-of-it-infrastructure-cont-enterprise-cloud-and-mobile)
+
+> [!EXAMPLE]
+> **Google Apps·Salesforce.com과 Fortune 500 (5장 Slide 10 교수님 메모)** — **상황:** Google Apps는 Microsoft Office에 맞서는 소프트웨어 모음을 훨씬 싼 비용에, Salesforce.com은 CRM 소프트웨어를 인터넷으로 제공한다. **→ 적용 개념:** 클라우드·모바일 시대. **→ 이유:** 컴퓨팅 능력과 소프트웨어를 네트워크로 공급받는다. **→ 결과:** 대부분의 Fortune 500 기업이 일부 앱을 클라우드에서 쓰지만, 신뢰성과 보안 우려 때문에 ==전략적·핵심 시스템은 아직 클라우드에 올리지 않는다.==
+
+#### Client/Server Computing · N-Tier · 클라이언트/서버와 다계층 구조
+
+> [!DEFINITION]
+> **Client/server computing** — 클라이언트(데스크톱·노트북)가 네트워크로 서버에 연결되어 ==처리 작업을 클라이언트와 서버가 나누어 맡는== 분산 컴퓨팅 모형. **Multitiered(N-tier) client/server** — ==서로 다른 단계의 서버==(웹 서버·애플리케이션 서버 등)가 클라이언트의 요청을 나눠 처리하는 구조. **Web server** — 요청받은 웹 페이지를 찾아 전달하는 소프트웨어(또는 컴퓨터). **Application server** — 사용자와 백엔드 시스템·데이터 사이에서 ==업무 처리를 담당==하는 소프트웨어.
+
+- **쉽게:** **Client**는 사용자 쪽 입력 장치, **server**는 데이터를 저장·처리하거나 네트워크를 관리하는 컴퓨터다. 처리를 작고 값싼 컴퓨터에 나눴기 때문에, 예전처럼 컴퓨팅 능력을 큰 덩어리로 비싸게 사지 않고 ==수요에 맞춰 조금씩 늘릴 수== 있었다(교수님 메모).
+- **헷갈림 주의:** ==red:핵심 동사는 “분담(split)”이다.== 모든 처리를 중앙에서 하면 메인프레임, 각자 하면 독립 PC다. 웹 서버(페이지 전달)와 애플리케이션 서버(업무 로직)도 구분한다.
+- **연결:** [Evolution of IT Infrastructure](#evolution-of-it-infrastructure--인프라-진화의-다섯-시대) · [Scalability](#scalability--확장성) · 원문 [5장 Slide 9](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-9--evolution-of-it-infrastructure-mainframe-pc-clientserver) · [Slide 11](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-11--figure-53-a-multitiered-n-tier-clientserver-network)
+
+> [!EXAMPLE]
+> **가상 예시 · 온라인 서점 (5장 Slide 11 문제)** — **상황:** 고객이 책 상세 페이지를 열고, 결제를 누르고, 주문 내역이 저장된다. **→ 적용 개념:** N-tier 클라이언트/서버. **→ 이유:** 페이지 전달은 웹 서버, 재고 차감·결제는 애플리케이션 서버, 저장은 데이터 계층이 맡는다. **→ 결과:** 역할별 서버만 골라 늘릴 수 있어 확장이 쉽다.
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Wintel PC** | Windows 운영체제 + Intel 칩을 쓰는 PC. PC 시대의 사실상 표준 | [Slide 9](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-9--evolution-of-it-infrastructure-mainframe-pc-clientserver) |
+| **Minicomputer** | 메인프레임보다 저렴한 중형 컴퓨터(1965 DEC) | [Slide 9](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-9--evolution-of-it-infrastructure-mainframe-pc-clientserver) |
+| **LAN** | Local area network. Figure 5.2 클라이언트/서버 그림의 노란 고리. LAN 이전의 PC는 독립형(stand-alone) | [Slide 8](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-8--figure-52-stages-in-it-infrastructure-evolution) |
+| **TCP/IP** | 엔터프라이즈 시대에 흩어진 네트워크를 하나로 묶은 인터넷 표준 | [Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-10--evolution-of-it-infrastructure-cont-enterprise-cloud-and-mobile) |
+| **Moore's law (교재 보충)** | 마이크로프로세서 처리 능력이 약 2년(초기 표현 18개월)마다 두 배, 컴퓨팅 비용은 하락. 18판 슬라이드에는 없음 | [Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-10--evolution-of-it-infrastructure-cont-enterprise-cloud-and-mobile) |
+| **Law of mass digital storage (교재 보충)** | 저장되는 디지털 정보량이 해마다 대략 두 배, 저장 비용은 빠르게 하락 | [Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-10--evolution-of-it-infrastructure-cont-enterprise-cloud-and-mobile) |
+| **Metcalfe's law (교재 보충)** | 네트워크 가치는 구성원 수의 제곱에 비례 → 참여자가 늘수록 가치 급증. 3장 [Network Economics](#network-economics--네트워크-경제)와 연결 | [Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-10--evolution-of-it-infrastructure-cont-enterprise-cloud-and-mobile) |
+| **통신 비용 하락 · Standards (교재 보충)** | 통신 비용이 0에 가까워지며 네트워크 사용 폭증 · 기술 표준(TCP/IP, Wintel)이 규모의 경제와 가격 하락을 만듦 | [Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-10--evolution-of-it-infrastructure-cont-enterprise-cloud-and-mobile) |
+
+### 5-2 IT 인프라의 일곱 구성요소
+
+IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, 그리고 옛 시스템과 새 인프라를 맞물리게 하는 통합 서비스를 묶었다. 원문: [Slide 14](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-14--components-of-it-infrastructure) · [Slide 15](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-15--figure-54-it-infrastructure-components) · [Slide 16](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-16--computer-hardware-platforms) ~ [Slide 22](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-22--consulting-and-system-integration-services)
+
+[![IT 인프라 생태계를 가운데 두고 일곱 구성요소 원이 둘러싸며 각 원에 대표 공급업체가 적힌 그림](/materials/diagrams/mis-fig-5-04.svg)](/materials/diagrams/mis-fig-5-04.svg)
+
+*그림 5-3 · Figure 5.4 IT 인프라 구성요소 (5장 노트 그림) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 가운데 “IT Infrastructure Ecosystem” → 둘레의 일곱 원을 차례로 → 원마다 대표 기술·공급업체.
+> - **핵심 관계:** 일곱 요소가 ==서로 조정(coordinated)되어야 하나의 일관된 인프라==가 된다. 원들을 잇는 점선은 ==red:한 요소만 바꿔도 다른 요소와의 호환을 다시 맞춰야 한다==는 뜻이다. 같은 회사(IBM·Oracle·Microsoft·Linux·Cisco)가 여러 원에 반복해서 나온다.
+> - **예시:** SAP는 전사 SW, Apache Hadoop은 데이터 관리, Accenture는 컨설팅·통합, Cisco 라우터는 네트워킹(그림에서는 인터넷 플랫폼에도), Android는 운영체제다(5장 Slide 15 문제).
+
+#### Seven Components of IT Infrastructure · 인프라의 일곱 구성요소
+
+> [!DEFINITION]
+> **Seven main components** — ==blue:Computer hardware platforms · Operating system platforms · Enterprise software applications · Data management and storage · Networking/telecommunications platforms · Internet platforms · Consulting and system integration services==. 외우는 요령: ==blue:하·오·엔·데·네·인·컨==.
+
+| 구성요소 | 무엇 | 대표 공급업체·제품 (슬라이드) |
+|---|---|---|
+| **Computer hardware platforms** | 클라이언트(PC·노트북·스마트폰·태블릿), 서버, 메인프레임 | IBM mainframe(블레이드 서버 수천 대 몫), 판서 NVIDIA. 스마트폰 사용자 70억 명 이상 |
+| **Operating system platforms** | 컴퓨터 활동을 관리·통제하는 시스템 SW | Windows·Windows Server, Unix, Linux, Android, iOS, Chrome OS ([카드](#operating-system-platforms--운영체제-플랫폼)) |
+| **Enterprise software applications** | ERP·CRM·SCM 등 전사 SW와 미들웨어 | 최대 공급자 SAP·Oracle, 미들웨어 IBM·Oracle |
+| **Data management and storage** | DBMS와 대용량 데이터 관리 | IBM Db2, Oracle, Microsoft SQL Server, SAP HANA, MySQL, Apache Hadoop |
+| **Networking/telecommunications** | NOS, 네트워크 장비, 통신 서비스 | Huawei·Nokia·Ericsson·Cisco, AT&T·Verizon ([카드](#networking--internet-platforms--nos--웹-호스팅)) |
+| **Internet platforms** | 웹사이트·인트라넷용 HW·SW·서비스 | 웹 호스팅, 서버 시장 Dell·Cisco·HPE·IBM·Oracle, Visual Studio·.NET |
+| **Consulting & system integration** | 새 인프라와 legacy·새 요소끼리를 맞물리게 함 | Accenture, IBM Global Services, HPE, Infosys, Wipro ([카드](#legacy-system--software-integration--레거시-시스템과-소프트웨어-통합)) |
+
+- **헷갈림 주의:** ==red:일곱 번째는 사람이 제공하는 서비스(consulting and system integration)==다. 구성요소가 모두 기술 제품이라고 생각하면 빠뜨린다. 1장의 네 기술(HW·SW·데이터·네트워크)은 5장에서 일곱 요소로 더 잘게 나뉜다.
+- **연결:** 1장 [IT Infrastructure](#it-infrastructure--it-인프라) · 2장 [Enterprise Applications](#enterprise-applications--전사-애플리케이션) · 원문 [5장 Slide 14](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-14--components-of-it-infrastructure) · [Slide 15](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-15--figure-54-it-infrastructure-components) · [Slide 16](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-16--computer-hardware-platforms) · [Slide 18](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-18--enterprise-software-applications) · [Slide 19](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-19--data-management-and-storage)
+
+> [!EXAMPLE]
+> **IBM 메인프레임 (5장 Slide 9·16)** — **상황:** 은행 계좌 처리, 통신사 통화 기록처럼 엄청난 양의 거래를 쉬지 않고 정확하게 처리해야 한다. **→ 적용 개념:** Computer hardware platforms의 메인프레임. **→ 이유:** IBM 메인프레임 한 대가 블레이드 서버 수천 대 몫을 하는 ==은행·통신 네트워크의 디지털 일꾼(digital workhorse)==이다. **→ 결과:** ==red:Mainframes have not disappeared== — 시험에서 “메인프레임은 사라졌다”는 오답이다.
+
+#### Operating System Platforms · 운영체제 플랫폼
+
+> [!DEFINITION]
+> **Operating system** — ==컴퓨터의 활동을 관리·통제하는 시스템 소프트웨어==. 서버용: Microsoft Windows Server · Unix · Linux. 클라이언트용: Microsoft Windows · Android · iOS(multitouch) · Google Chrome OS(cloud computing).
+
+- **숫자:** ==red:데스크톱·태블릿의 68% 이상은 Windows 계열, 전 세계 클라우드 인프라의 90%는 Linux==(판서·슬라이드).
+- **쉽게:** **Chrome OS**는 프로그램과 파일 대부분을 기기가 아니라 클라우드에 두는 브라우저 중심 OS라서 “cloud computing” 꼬리표가 붙었다. **Multitouch**는 손가락 여러 개로 확대·스크롤하는 방식이다.
+- **헷갈림 주의:** ==red:Linux는 개인 데스크톱이 아니라 서버·클라우드에서 압도적==이다. 또 Windows Server와 Linux는 운영체제 플랫폼과 네트워킹 플랫폼(NOS) ==양쪽==에 나온다 — 서버 OS가 네트워크 자원 관리도 하기 때문이다.
+- **연결:** [Open-Source Software · Linux](#open-source-software--linux--오픈소스-소프트웨어와-리눅스) · [NOS](#networking--internet-platforms--nos--웹-호스팅) · 원문 [5장 Slide 17](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-17--operating-system-platforms)
+
+#### Networking & Internet Platforms · NOS · 웹 호스팅
+
+> [!DEFINITION]
+> **Networking/telecommunications platforms** — ==blue:NOS(network operating system) software · 네트워크 장비 공급업체 · 통신 서비스==. NOS 예: Windows Server, Linux, Unix. **Internet platforms** — 기업 웹사이트·인트라넷을 지원하는 하드웨어·소프트웨어·서비스. **Web hosting service** — 대형 웹 서버(또는 일부)를 보유하고 ==요금을 내는 고객의 웹사이트를 유지·관리==하는 서비스.
+
+- **네트워킹:** 장비는 Huawei·Nokia·Ericsson·Cisco Systems, 통신 서비스(음성·데이터 연결, WAN, 무선, 인터넷 접속)는 AT&T·Verizon. 교수님 메모: 2020년 기업의 통신 서비스 지출 약 1조 5,000억 달러.
+- **인터넷 플랫폼:** 웹 호스팅, 라우터, 케이블·무선 장비. 인터넷 서버 시장은 ==소수 기업(Dell·Cisco·HPE·IBM·Oracle)에 집중==되어 있고, 웹·앱 개발 도구는 Microsoft(Visual Studio, .NET), Oracle, 다수의 독립 개발사가 제공한다.
+- **헷갈림 주의:** 인터넷 플랫폼은 “인터넷 그 자체”가 아니라 ==기업이 웹사이트·인트라넷을 운영하는 데 드는 HW·SW·서비스==다. Cisco는 네트워킹과 인터넷 플랫폼 두 원에 모두 나온다.
+- **판본 차이:** *Sec 1·2 수업본*에는 “NOS software” 약어와 웹 호스팅의 “maintain websites for fee-paying clients” 정의가 없고, 전체본(43장)에 추가되었다.
+- **연결:** 2장 [Intranet / Extranet](#intranet--extranet--인트라넷엑스트라넷) · [Operating System Platforms](#operating-system-platforms--운영체제-플랫폼) · 원문 [5장 Slide 20](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-20--networkingtelecommunications-platforms) · [Slide 21](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-21--internet-platforms)
+
+#### Legacy System · Software Integration · 레거시 시스템과 소프트웨어 통합
+
+> [!DEFINITION]
+> **Legacy system(레거시 시스템)** — ==교체·재설계하는 높은 비용을 피하려고 계속 쓰는 오래된 시스템==(대표 예: 메인프레임용 TPS). **Software integration(소프트웨어 통합)** — ==새 인프라가 기존 legacy 시스템과 함께 작동하고, 새 인프라 요소끼리도 서로 맞물려 작동하도록 보장==하는 일. 컨설팅·시스템 통합 서비스의 핵심이다.
+
+- **쉽게:** 은행이 모바일 앱을 새로 만들어도 계좌 원장은 30년 된 메인프레임에 있을 수 있다. 앱과 원장을 잇고(옛 것 ↔ 새 것), 새 클라우드 서버와 앱도 서로 맞추는(새 것 ↔ 새 것) 일이 통합이다. ==대기업도 새롭고 복잡한 인프라를 전부 지원할 자원이 없어서== Accenture 같은 업체에 맡긴다.
+- **헷갈림 주의:** ==red:“legacy = 쓸모없는 시스템”이 아니다.== 바꾸는 비용과 위험이 커서 계속 쓰는 것이다. 판본 차이: *Sec 1·2 수업본*은 통합을 “새 인프라가 legacy와 작동하도록”까지만 적었고, 전체본이 ==새 요소끼리도==를 추가했다.
+- **또 하나의 변화(슬라이드):** IT 인프라를 클라우드나 외부 서비스로 옮기는 기업이 늘고 있다 → [Cloud Computing](#cloud-computing--클라우드-컴퓨팅) · [소프트웨어 외부 출처](#alternative-ways-of-obtaining-software--소프트웨어를-얻는-세-외부-출처).
+- **연결:** 2장 [TPS](#tps--transaction-processing-system--거래처리시스템) · [Web Services · XML](#web-services--xml--웹-서비스와-xml)(legacy를 파트너와 잇는 방법) · 원문 [5장 Slide 22](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-22--consulting-and-system-integration-services)
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Blade server** | 얇은 기판 형태로 랙에 꽂아 쓰는 서버. IBM 메인프레임 한 대 ≈ 블레이드 서버 수천 대 | [Slide 16](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-16--computer-hardware-platforms) |
+| **Middleware** | 서로 다른 애플리케이션·시스템을 연결해 데이터를 주고받게 하는 중간 SW. Figure 5.4에서 전사 SW에 “including middleware”로 묶임 | [Slide 18](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-18--enterprise-software-applications) |
+| **Apache Hadoop** | 매우 큰 데이터 세트를 여러 컴퓨터에 나눠 저장·처리하는 ==오픈소스 프레임워크==(DBMS 회사의 상용 제품이 아님) | [Slide 19](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-19--data-management-and-storage) |
+| **정보량 증가** | 세계의 새로운 정보량이 3년마다 두 배 → 효율적 데이터 관리·저장의 필요 (교수님 메모) | [Slide 19](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-19--data-management-and-storage) |
+| **SAN (교재 보충)** | Storage area network. 여러 저장 장치를 별도의 고속 네트워크로 묶어 여러 서버가 공유하게 하는 저장 구조. 이번 슬라이드·노트에는 없는 교재 용어 | [Slide 19](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-19--data-management-and-storage) |
+| **전사 SW 시장** | 2020년 5,000억 달러 이상, 전통적으로 대기업 중심이었으나 Microsoft 등이 중소기업 시장에 진입 (교수님 메모) | [Slide 18](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-18--enterprise-software-applications) |
+
+### 5-3 모바일·양자·그린·가상화·클라우드
+
+하드웨어·컴퓨팅 쪽에서 지금 일어나는 변화 — 모바일과 BYOD, 양자·그린 컴퓨팅, 가상화, 클라우드, 엣지 — 를 묶었다. 원문: [Slide 23](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-23--the-mobile-platform-apps-and-byod) ~ [Slide 30](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-30--edge-computing)
+
+[![IT 소비자화가 BYOD와 소비자 서비스의 업무 사용을 포함하고, BYOD로 IT 부서가 기기 통제를 잃어 취약점이 커지며, 그 대응으로 MDM과 새 정책이 필요해지는 그림](/materials/diagrams/mis-gl-5a-consumerization-byod.svg)](/materials/diagrams/mis-gl-5a-consumerization-byod.svg)
+
+*그림 5-4 · IT 소비자화 ⊃ BYOD → 통제 상실 → MDM — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 맨 위 점선 칸(소비자 시장) → “먼저 등장해 확산” → 검은 칸(IT 소비자화) → “포함” → BYOD와 소비자 서비스의 업무 사용 → 점선 “영향” → 통제 상실 → 맨 아래 대응.
+> - **핵심 관계:** ==red:기술의 흐름은 소비자 → 기업==이다. BYOD는 소비자화의 ==한 측면==이고, Gmail·Dropbox·Google Maps 같은 소비자 서비스의 업무 사용도 같은 흐름에 들어간다. IT 부서는 하드웨어에 대한 통제를 잃어 ==취약점이 커지고==, 그 대응이 5-5의 [MDM](#mdm--mobile-device-management--모바일-기기-관리)과 새 정책·절차다.
+> - **예시:** 직원이 개인 스마트폰으로 사내 메일과 업무용 Dropbox에 접속하도록 허용 → ① BYOD ② consumerization of IT ③ 걱정은 통제 상실과 보안 취약점, 대응은 MDM(5장 Slide 24 문제).
+
+[![하나의 물리 자원을 여러 논리 자원으로 쓰는 서버 가상화와 여러 물리 자원을 하나로 쓰는 SDS가 가상화된 자원 풀을 만들고, 그 풀을 네트워크로 빌려 주는 것이 클라우드 컴퓨팅이며, 클라우드는 서비스 모델과 배치 모델의 두 축으로 나뉘고 엣지 컴퓨팅이 클라우드를 최적화하는 그림](/materials/diagrams/mis-gl-5b-virtualization-cloud.svg)](/materials/diagrams/mis-gl-5b-virtualization-cloud.svg)
+
+*그림 5-5 · 가상화 → 자원 풀 → 클라우드, 그리고 엣지 — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 맨 위 가상화의 두 방향(1 → 여럿, 여럿 → 1) → “자원 풀로” → 검은 칸(클라우드 컴퓨팅) → 두 축(서비스 모델 · 배치 모델) → 맨 아래 점선 “최적화”(엣지).
+> - **핵심 관계:** ==가상화는 클라우드에서 결정적인 역할==을 한다(슬라이드 원문). 가상화가 만든 남는 능력의 풀을 네트워크로 빌려 주고 ==쓴 만큼 요금==을 받는 것이 클라우드다. ==red:서비스 모델(제공자가 어디까지 관리하나)과 배치 모델(누가 소유하고 어디에 두나)은 다른 축==이다. 엣지는 클라우드를 대체하지 않고 **최적화**한다.
+> - **예시:** 회사 서버 10대가 하루 대부분을 놀고 있다면(가동률 15–20%) 가상화로 서버 3대 위에 가상 서버 10개를 올릴 수 있고, 이 남는 능력을 여러 고객에게 나눠 파는 것이 클라우드다(5장 Slide 26 해설).
+
+[![자체 보유 IaaS PaaS SaaS에서 제공자와 사용자가 관리하는 범위 매트릭스와 퍼블릭 프라이빗 하이브리드 클라우드, 다섯 특징, 가상화 기반](/materials/diagrams/mis-06-cloud-models.svg)](/materials/diagrams/mis-06-cloud-models.svg)
+
+*그림 5-6 · 클라우드 서비스 모델과 배치 모델 (5장 노트 개념도) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 왼쪽 매트릭스를 자체 보유 → IaaS → PaaS → SaaS 순서로 읽고(검은 칸 = 제공자가 관리), 오른쪽 배치 모델 세 칸, 맨 아래 다섯 특징과 가상화 기반을 읽는다.
+> - **핵심 관계:** 오른쪽으로 갈수록 ==제공자가 더 많이 관리==한다: IaaS는 인프라만, PaaS는 개발 플랫폼까지, SaaS는 애플리케이션까지. 배치 모델은 별개의 축이라 “프라이빗 클라우드의 PaaS”도 가능하다.
+> - **예시:** 스타트업이 가상 서버·저장소를 빌려 자사 주문 시스템을 운영하면 IaaS, 개발팀이 제공자의 개발 도구에서 새 앱을 만들면 PaaS, 영업팀이 Salesforce.com CRM을 구독하면 SaaS다(5장 Slide 27 문제).
+
+#### Mobile Platform · Apps · 모바일 플랫폼과 앱
+
+> [!DEFINITION]
+> **Mobile platform** — 업무 컴퓨팅이 PC에서 옮겨 가는 모바일 기기들: ==blue:스마트폰(iPhone·Android) · 넷북 · 태블릿 · 전자책 단말과 앱(Kindle) · 웨어러블(스마트워치·스마트 글라스·스마트 배지·활동 추적기)==. **Apps** — 인터넷·컴퓨터·모바일 기기에서 실행되는 ==작은 소프트웨어 조각==. 흔히 모바일 앱을 가리키며, ==사용자를 플랫폼에 묶는다(tie user to platform)==.
+
+- **쉽게:** 관리자는 이제 모바일 기기로 업무를 조율하고 직원·고객과 소통한다(교수님 메모). 판서 “Apps → switching costs high”: 앱을 많이 사고 데이터를 쌓은 사용자는 iPhone ↔ Android로 옮기기 어렵다.
+- **헷갈림 주의:** 앱의 lock-in 효과는 3장 [Switching Cost](#switching-cost--전환-비용)와 같은 이야기다. 판서: 업무용 앱, 전자상거래 앱도 있다.
+- **연결:** [Consumerization · BYOD](#consumerization-of-it--byod--it-소비자화와-byod) · [Mashup](#mashup--매시업) · 원문 [5장 Slide 23](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-23--the-mobile-platform-apps-and-byod) · [Slide 36](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-36--mashups-and-apps)
+
+#### Consumerization of IT · BYOD · IT 소비자화와 BYOD
+
+> [!DEFINITION]
+> **Consumerization of IT(IT 소비자화)** — 새 정보기술이 ==소비자 시장에서 먼저 등장해 기업 조직으로 확산==되는 현상. 모바일 개인 기기와, 소비자 시장에서 시작된 소프트웨어 서비스(Google Search·Gmail·Google Maps·Dropbox·Facebook·TikTok)의 업무 사용을 포함한다. **BYOD = Bring Your Own Device** — ==직원이 개인 모바일 기기를 직장에서 쓰도록 허용==하는 것. 판서: ==BYOD는 consumerization의 한 측면==.
+
+- **쉽게:** 예전에는 대기업 IT 부서가 직원이 쓸 기기를 지시했다. 이제는 ==직원이 쓰고 싶은 도구를 말하고 IT에 그것을 지원하라고 요구==한다(교수님 메모). 그래서 기업과 IT 부서가 IT 장비·서비스를 ==획득하고 관리하는 방식을 다시 생각==하게 되었다.
+- **헷갈림 주의:** ==red:방향은 소비자 → 기업==이다(반대는 오답). ==red:BYOD ⊂ consumerization== — 같은 말이 아니다. 판서: IT 부서가 하드웨어 통제를 잃어 ==취약점(vulnerabilities)이 커진다.==
+- **연결:** [MDM](#mdm--mobile-device-management--모바일-기기-관리) · [Mobile Platform](#mobile-platform--apps--모바일-플랫폼과-앱) · 원문 [5장 Slide 23](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-23--the-mobile-platform-apps-and-byod) · [Slide 24](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-24--byod-and-consumerization-of-it)
+
+> [!EXAMPLE]
+> **가상 예시 · 개인 폰으로 업무 Dropbox (5장 Slide 24 문제)** — **상황:** 회사가 직원들이 개인 스마트폰으로 사내 메일과 업무용 Dropbox에 접속하도록 허용했다. **→ 적용 개념:** BYOD(정책 이름)와 consumerization of IT(더 큰 흐름). **→ 이유:** 소비자용 기기와 소비자용 클라우드 서비스가 업무로 들어왔다. **→ 결과:** IT 부서가 기기 통제를 잃어 보안 취약점이 커지므로 MDM과 새 정책이 필요하다.
+
+#### Quantum Computing · 양자 컴퓨팅
+
+> [!DEFINITION]
+> **Quantum computing(양자 컴퓨팅)** — ==양자 물리학을 이용해 데이터를 표현하고 처리==해 컴퓨팅 속도·능력을 극적으로 높이는 기술. 선도 기업: IBM, Microsoft Azure, Google(Cirq).
+
+- **쉽게:** 일반 비트는 0 또는 1이지만 큐비트는 0과 1을 동시에 가진 상태를 이용해 암호 해독, 신약·소재 시뮬레이션, 최적화 같은 특정 문제를 훨씬 빨리 풀 수 있다. 다만 오류가 많고 극저온 같은 특수 환경이 필요하다 — 슬라이드의 *Benefits and Limitations*.
+- **헷갈림 주의:** ==red:아직 실험 단계(experimental)==다(교수님 메모). “모든 업무 서버를 대체한 성숙 기술”이나 “기존 이진 비트를 더 효율적으로 쓰는 칩”은 오답이다.
+- **연결:** [Green Computing](#green-computing--그린-컴퓨팅) · 원문 [5장 Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-25--quantum-computing-and-green-computing)
+
+#### Green Computing · 그린 컴퓨팅
+
+> [!DEFINITION]
+> **Green computing(Green IT)** — 컴퓨터와 IT 장비를 ==blue:설계(designing) · 제조(manufacturing) · 사용(using) · 폐기(disposing)==하는 전 과정에서 ==환경 영향을 최소화==하는 관행과 기술. 핵심 과제는 ==컴퓨팅 전력 소비 감축==.
+
+- **특징:** 판서 — 데이터센터가 ==세계 에너지 사용의 1.5%==를 쓴다(green data center). **E-waste(전자 폐기물)** — 버려진 모든 종류의 전자 장비로, 폐기 단계의 문제다.
+- **교재 보충 · Multicore processor:** 두 개 이상의 처리 코어를 한 칩에 넣어 클럭 속도를 무리하게 올리지 않고도 성능을 높이고 ==전력 소비와 발열을 줄인다.== 18판 슬라이드에는 없지만 “전력 소비 감축”과 연결해 기억한다.
+- **헷갈림 주의:** ==red:그린 컴퓨팅은 “사용 단계의 절전”만이 아니다== — 설계·제조·폐기(E-waste)까지 포함한다. [가상화](#virtualization--sds--가상화와-소프트웨어-정의-스토리지)로 서버 수를 줄이는 것도 전력 절감 수단이다.
+- **연결:** [Quantum Computing](#quantum-computing--양자-컴퓨팅) · 원문 [5장 Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-25--quantum-computing-and-green-computing)
+
+#### Virtualization · SDS · 가상화와 소프트웨어 정의 스토리지
+
+> [!DEFINITION]
+> **Virtualization(가상화)** — 컴퓨팅 자원을 ==물리적 구성이나 지리적 위치에 제한되지 않는 방식으로 접근==하게 하는 방법. ==blue:① 하나의 물리 자원 → 여러 논리 자원(서버 가상화: 한 서버에서 여러 OS) ② 여러 물리 자원 → 하나의 논리 자원(SDS)==. **SDS = Software-Defined Storage** — ==저장소를 관리하는 소프트웨어를 물리적 저장 하드웨어에서 분리==한 구조로, 비싼 저장 장비를 저렴한 범용 하드웨어·클라우드 저장소로 대체할 수 있다.
+
+- **효과:** 하드웨어·전력 지출 감소, 하드웨어 관리의 중앙화·통합. 서버 가동률을 ==15–20% → 70%==로 높인다(교수님 메모). 판서 대표 업체: ==VMware==.
+- **헷갈림 주의:** ==red:가상화는 두 방향==이다. “하나를 여럿으로 나누는 것뿐”이라는 보기는 불완전하고, ==red:SDS는 여럿 → 하나==의 예다.
+- **연결:** [Cloud Computing](#cloud-computing--클라우드-컴퓨팅)(가상화가 결정적 역할) · [Green Computing](#green-computing--그린-컴퓨팅) · 원문 [5장 Slide 26](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-26--virtualization)
+
+> [!EXAMPLE]
+> **VMware 서버 가상화 (5장 Slide 26)** — **상황:** 서버 대부분이 하루 중 대부분 놀고 있어 가동률이 15–20%다. **→ 적용 개념:** 서버 가상화(1 → 여럿). **→ 이유:** 한 물리 서버 위에 여러 가상 서버(OS 인스턴스)를 올려 남는 능력을 쓴다. **→ 결과:** 가동률이 70%까지 오르고 장비·전기료·냉방비·관리 인력이 줄어든다.
+
+#### Cloud Computing · 클라우드 컴퓨팅
+
+> [!DEFINITION]
+> **Cloud computing(클라우드 컴퓨팅)** — 컴퓨팅 처리·저장·소프트웨어 등의 서비스를 ==가상화된 자원 풀로 네트워크(주로 인터넷)를 통해 on-demand(utility)로 제공==하는 모형. 다섯 특징(교재 p.189): ==blue:on-demand self-service · ubiquitous network access · location-independent resource pooling · rapid elasticity · measured service==.
+
+- **쉽게:** 필요할 때 필요한 만큼 빌려 쓰고 쓴 만큼 낸다. 판서: **on-demand / utility computing** = 실제 사용 시간이나 사용 전력량에 따라 요금을 내는 구조. Figure 5.5처럼 기업과 직원은 ==anywhere, at any time, on any device==로 접근한다.
+- **장점과 단점:** 자체 하드웨어·소프트웨어 유지 비용을 피하고 ==IT 투자를 최소화==한다. 단점은 ==red:보안·신뢰성(security, reliability) 우려==다 — 비용은 오히려 장점이다.
+- **헷갈림 주의:** ==red:클라우드 = 가상화가 아니다.== 가상화는 자원을 논리적으로 나누고 합치는 **기술**, 클라우드는 그 자원을 네트워크로 빌려 주는 **서비스 모형**이다. 2장 [Cloud ERP](#cloud-erp--클라우드-erp)는 이 모형으로 ERP를 쓰는 예다.
+- **연결:** [IaaS · PaaS · SaaS](#iaas--paas--saas--클라우드-서비스-모델) · [Public · Private · Hybrid](#public--private--hybrid-cloud--클라우드-배치-모델) · [Edge Computing](#edge-computing--엣지-컴퓨팅) · 원문 [5장 Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-27--cloud-computing) · [Slide 28](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-28--figure-55-cloud-computing-platform)
+
+> [!EXAMPLE]
+> **Grab (5장 Slide 4 오프닝 케이스)** — **상황:** 동남아 슈퍼앱(차량 호출·배달·결제)으로 이용자와 서비스가 폭발적으로 늘어 ==수요가 갑자기 늘어도 멈추지 않는 시스템==이 필요하다. **→ 적용 개념:** 클라우드 컴퓨팅과 [확장성](#scalability--확장성). **→ 이유:** 해법은 클라우드 자원을 수요에 맞춰 늘리고 줄이는 scalable services와 현지 도로 사정에 맞춘 자체 지도 GrabMaps. **→ 결과:** ==클라우드로 효과성을 높이고 비용을 통제==했다.
+
+#### IaaS · PaaS · SaaS · 클라우드 서비스 모델
+
+> [!DEFINITION]
+> **IaaS = Infrastructure as a Service** — 서버·스토리지·네트워크를 빌려 ==사용자의 정보시스템을 운영(run)==. **PaaS = Platform as a Service** — 개발 도구·실행 환경까지 빌려 ==사용자 자신의 애플리케이션을 개발(develop)==. **SaaS = Software as a Service** — 완성된 소프트웨어를 ==인터넷으로 구독해 사용==(Google Workspace, Salesforce.com).
+
+| 모델 | 빌리는 범위 | 슬라이드 키워드 | 예 |
+|---|---|---|---|
+| **IaaS** | 인프라(컴퓨팅·저장·네트워크) | to run users' IS | 가상 서버·저장소로 자사 주문 시스템 운영 |
+| **PaaS** | 인프라 + 개발 플랫폼 | to develop users' own applications | 제공자 개발 도구에서 새 앱 개발 |
+| **SaaS** | 인프라 + 플랫폼 + 애플리케이션 | 완성된 SW 사용 | Google Workspace, Salesforce.com |
+
+- **헷갈림 주의:** ==red:IaaS는 운영(run), PaaS는 개발(develop), SaaS는 사용.== “자체 앱을 개발하려고 빌리는 서비스”는 PaaS다. SaaS는 5-4의 [소프트웨어 외부 출처](#alternative-ways-of-obtaining-software--소프트웨어를-얻는-세-외부-출처)에서 다시 나온다.
+- **연결:** [Cloud Computing](#cloud-computing--클라우드-컴퓨팅) · [AWS](#aws--industry-cloud--대표-퍼블릭-클라우드와-산업-특화-클라우드) · 원문 [5장 Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-27--cloud-computing) · [Slide 28](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-28--figure-55-cloud-computing-platform)
+
+#### Public · Private · Hybrid Cloud · 클라우드 배치 모델
+
+> [!DEFINITION]
+> **Public cloud** — 외부 제공자가 소유·운영하고 ==여러 고객이 공유==. **Private cloud** — ==한 조직 전용==으로 사내 네트워크·데이터센터에서 운영. **Hybrid cloud computing model** — ==가장 핵심적인 활동은 자체 인프라==, ==덜 중요한 시스템과 성수기(peak)의 추가 처리 용량은 퍼블릭 클라우드==를 쓰는 방식(판서: 교재 p.191).
+
+- **쉽게:** 교수님 메모 — 하이브리드는 ==대기업==이 가장 많이 채택한다. 핵심 시스템을 클라우드에 올리지 않는 이유(보안·신뢰성 우려)와 클라우드의 비용 장점을 함께 얻는 절충이다.
+- **헷갈림 주의:** ==red:배치 모델(누가 소유·어디에)과 서비스 모델(IaaS·PaaS·SaaS)은 다른 축==이다. “여러 회사가 한 프라이빗 데이터센터를 공유”나 “직원 개인 기기에서만 실행”은 하이브리드가 아니다(5장 확인 문제 보기).
+- **연결:** [IaaS · PaaS · SaaS](#iaas--paas--saas--클라우드-서비스-모델) · [Rent-versus-Buy](#rent-versus-buy--빌릴까-살까와-투자-규모) · 원문 [5장 Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-27--cloud-computing)
+
+> [!EXAMPLE]
+> **가상 예시 · 은행의 하이브리드 (5장 Slide 27 문제)** — **상황:** 은행이 계좌 원장은 자체 데이터센터에 두고, 연말정산 시즌의 웹 트래픽은 퍼블릭 클라우드로 처리한다. **→ 적용 개념:** 하이브리드 클라우드. **→ 이유:** 핵심은 자체 인프라, 피크 용량은 퍼블릭. **→ 결과:** 핵심 데이터의 통제를 유지하면서 1년 내내 최대 용량을 사 둘 필요가 없다.
+
+#### AWS · Industry Cloud · 대표 퍼블릭 클라우드와 산업 특화 클라우드
+
+> [!DEFINITION]
+> **AWS = Amazon Web Services** — ==Amazon이 자사 클라우드 플랫폼 사용자에게 제공하는 웹 서비스의 모음==. Figure 5.6의 아홉 갈래: ==blue:Computing · Networking · Content delivery · Data storage · Database · Deployment · Management · Application services · Analytics==. 슬라이드: ==미국 최대의 클라우드 서비스 제공자==. **Industry cloud platform(vertical cloud platform)** — 의료·금융처럼 ==특정 산업의 요구에 맞춘 전문 클라우드 서비스== 모델(판서).
+
+- **쉽게:** Computing·Data storage·Networking은 IaaS 성격, Deployment·Application services·Analytics는 PaaS·SaaS 성격까지 걸쳐 있다. 자사 쇼핑몰을 위해 만든 거대한 인프라를 서비스로 외부에 판 것이 AWS다(5장 Slide 29 해설).
+- **판서 · Cloud AI services:** AWS, Microsoft Azure, GCP, Salesforce.
+- **연결:** [Public Cloud](#public--private--hybrid-cloud--클라우드-배치-모델) · [AI 인프라](#it-infrastructure-for-ai--edge-ai--ai를-위한-it-인프라) · 원문 [5장 Slide 28](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-28--figure-55-cloud-computing-platform) · [Slide 29](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-29--figure-56-amazon-web-services)
+
+> [!EXAMPLE]
+> **Netflix (5장 Slide 3 Video Case 3·Slide 29)** — **상황:** 시청자가 몰리는 시간과 한산한 시간의 차이가 크다. **→ 적용 개념:** 퍼블릭 클라우드(AWS)와 rapid elasticity. **→ 이유:** 자체 데이터센터 대신 AWS 위에 스트리밍 사업을 구축해 수요에 맞춰 자원을 늘리고 줄인다. **→ 결과:** 최대 수요에 맞춘 설비를 소유하지 않고도 서비스를 운영한다. 같은 영상 사례의 ESPN.com도 경기 때 몰리는 트래픽을 클라우드로 감당한다.
+
+#### Edge Computing · 엣지 컴퓨팅
+
+> [!DEFINITION]
+> **Edge computing(엣지 컴퓨팅)** — ==네트워크의 가장자리, 즉 데이터 원천 가까이에 있는 연결된 서버에서 일부 데이터 처리를 수행==해 클라우드 시스템을 최적화하는 방법. ==지연(latency)과 네트워크 트래픽==을 줄인다.
+
+- **쉽게:** 서울 사용자의 요청을 미국 데이터센터까지 보내면 왕복이 길다. 서울 근처 서버에서 처리하면 빠르다. 슬라이드 메모: 로컬 컴퓨터와 웹 자원 사이의 거리를 줄이고 ==전체 부하를 여러 지역 시설에 분산==하며, ==AI 애플리케이션의 대량 데이터 전송·처리 지연==도 줄인다.
+- **헷갈림 주의:** ==red:엣지는 클라우드를 대체하지 않고 “최적화”한다.== 부하를 지역으로 나누므로 중앙 메인프레임 집중과도 반대다.
+- **연결:** [Cloud Computing](#cloud-computing--클라우드-컴퓨팅) · [Edge AI](#it-infrastructure-for-ai--edge-ai--ai를-위한-it-인프라) · 원문 [5장 Slide 30](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-30--edge-computing)
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Netbook** | 무선 통신과 핵심 업무에 최적화된 작고 가벼운 서브노트북 | [Slide 23](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-23--the-mobile-platform-apps-and-byod) |
+| **Wearable computing devices** | 스마트워치·스마트 글라스·스마트 배지·활동 추적기 | [Slide 23](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-23--the-mobile-platform-apps-and-byod) |
+| **E-waste** | 버려진 모든 종류의 전자 장비 (그린 컴퓨팅의 폐기 단계) | [Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-25--quantum-computing-and-green-computing) |
+| **On-demand / utility computing** | 실제 사용량에 따라 요금을 내는 컴퓨팅 (수도·전기처럼) | [Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-27--cloud-computing) |
+| **Cloud computing platform (Figure 5.5)** | 인프라 서비스 위에 애플리케이션·플랫폼 서비스, 어떤 기기로든 접근 | [Slide 28](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-28--figure-55-cloud-computing-platform) |
+| **Video cases** | Rockwell Automation(IoT로 석유·가스 현장 감시), ESPN.com(클라우드 스포츠 방송), Netflix(클라우드 위 사업) | [Slide 3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-3--video-cases) |
+
+### 5-4 소프트웨어 플랫폼과 조달
+
+현대 소프트웨어 플랫폼의 세 테마(오픈소스 · 웹용 소프트웨어 · 웹 서비스)와, 소프트웨어를 직접 만들지 않고 얻는 방법, AI용 인프라를 묶었다. 원문: [Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-31--contemporary-software-platforms-open-source-and-linux) ~ [Slide 37](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-37--it-infrastructure-for-ai)
+
+[![오래된 렌터카 예약 시스템과 항공사·여행사·예약 시스템·무선 웹사이트·미래 파트너 사이에 웹 서비스라는 표준 중간 계층이 놓이고, 그 계층의 기반 기술이 XML이며, 파트너마다 전용 연결을 만드는 방식과 비교한 그림](/materials/diagrams/mis-gl-5c-web-services.svg)](/materials/diagrams/mis-gl-5c-web-services.svg)
+
+*그림 5-7 · 웹 서비스 = 표준 중간 계층, 기반은 XML — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 맨 위 점선 칸들(외부 파트너 시스템) → 양방향 “웹 표준으로 교환” → 검은 칸(웹 서비스 계층) → 아래 legacy 예약 시스템, 그리고 맨 아래 “기반 기술” XML.
+> - **핵심 관계:** 웹 서비스는 서로 “대화”하지 못하는 시스템 사이에 놓는 ==표준 중간 소프트웨어 계층==이다. 파트너마다 전용 연결을 만들면 연결이 파트너 수만큼 늘지만, 계층 하나를 두면 ==모든 파트너가 같은 표준으로 접속==하고 미래 파트너도 같은 방식으로 붙는다. ==red:웹 서비스의 기반 기술은 HTML이 아니라 XML==이다.
+> - **예시:** Dollar Rent A Car는 이 방식으로 Southwest Airlines·여행사·여행 예약 시스템·무선 웹사이트를 자사 legacy 예약 시스템과 연결했다(5장 Figure 5.7).
+
+[![소프트웨어 패키지 아웃소싱 클라우드 서비스의 세 외부 출처를 소유에서 임대까지 늘어놓고 SLA rent versus buy 매시업 앱을 함께 보인 그림](/materials/diagrams/mis-06-software-sourcing.svg)](/materials/diagrams/mis-06-software-sourcing.svg)
+
+*그림 5-8 · 소프트웨어를 얻는 방법 (5장 노트 개념도) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 왼쪽(직접 소유·통제)에서 오른쪽(빌려 쓰기·초기 투자 작음)으로 세 출처를 읽고, 아래 SLA·매시업·앱을 읽는다.
+> - **핵심 관계:** 아웃소싱과 SaaS는 남에게 의존하므로 ==서비스 수준을 계약(SLA)으로 못 박는 것==이 중요하다. 이 선택은 5-5의 rent-versus-buy 판단과 같은 질문이다.
+> - **예시:** 영업팀 CRM을 Salesforce.com으로 구독하면 cloud-based software service(SaaS), 맞춤 개발을 인도 회사에 맡기면 offshore software outsourcing이다(5장 Slide 35).
+
+#### Open-Source Software · Linux · 오픈소스 소프트웨어와 리눅스
+
+> [!DEFINITION]
+> **Open-source software(오픈소스 소프트웨어)** — ==프로그래머 공동체가 만들고, 무료이며 사용자가 수정할 수 있는== 소프트웨어. 예: Apache HTTP 웹 서버, Mozilla Firefox, Apache OpenOffice. **Linux** — 고성능 컴퓨팅에 쓰이는 대표적인 ==오픈소스 운영체제==로, 모바일 기기·LAN·웹 서버·Android OS에 쓰인다.
+
+- **세 테마(판서):** 현대 소프트웨어 플랫폼 진화의 ==blue:Open-source software · Software for the Web · Web services==.
+- **헷갈림 주의:** ==red:Android가 Linux 위에 만들어졌다== — “Linux는 서버 전용”은 오해다. 판서: Linux는 LAN 관리에도 중요한 역할을 한다. 클라우드 인프라의 90%가 Linux라는 숫자는 [OS 플랫폼](#operating-system-platforms--운영체제-플랫폼) 카드.
+- **연결:** 4장 [Ethical Principles](#ethical-principles--여섯-가지-윤리-원칙)(No free lunch — 오픈소스는 창작자가 무료 배포에 동의한 경우) · 4장 [Intellectual Property](#intellectual-property--지식재산과-네-가지-보호) · 원문 [5장 Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-31--contemporary-software-platforms-open-source-and-linux)
+
+#### Java · HTML · HTML5 · 웹을 위한 소프트웨어
+
+> [!DEFINITION]
+> **Java** — ==운영체제·프로세서에 독립적인 객체지향 프로그래밍 언어==. Java Virtual Machine(JVM)으로 스마트폰을 포함한 어떤 기기에서도 실행되도록 설계되었다. **HTML** — ==웹 페이지 기술(description) 언어==. 컴퓨터 종류와 상관없이 모든 브라우저가 해석·표시하는 페이지를 만드는 마크업 도구. **HTML5** — HTML의 최신 진화형으로, ==미디어·애니메이션을 별도 add-on 없이 문서에 직접 넣고== 크로스플랫폼 앱과 오프라인 데이터 저장을 지원한다.
+
+- **쉽게:** 예전에는 웹에서 동영상을 보려면 Flash 같은 플러그인을 설치해야 했다. HTML5는 동영상을 문서에 직접 넣고, 인터넷이 끊겨도 일부 데이터를 저장해 쓴다. Ruby와 Python은 웹 애플리케이션용 인기 프로그래밍 도구다.
+- **헷갈림 주의:** ==red:Java의 핵심은 OS·프로세서 독립성(JVM)==이다. ==red:HTML은 프로그래밍 언어가 아니라 페이지 기술(markup) 언어==다.
+- **연결:** [Web Services · XML](#web-services--xml--웹-서비스와-xml) · 원문 [5장 Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-31--contemporary-software-platforms-open-source-and-linux) · [Slide 32](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-32--software-for-the-web-java-html-and-html5)
+
+#### Web Services · XML · 웹 서비스와 XML
+
+> [!DEFINITION]
+> **Web services(웹 서비스)** — ==웹 표준과 언어를 사용해 정보를 교환하는 소프트웨어 구성요소==. 운영체제나 프로그래밍 언어가 달라도 애플리케이션끼리 데이터를 주고받게 한다. **XML = Extensible Markup Language** — ==웹 서비스의 기반(foundation) 기술==이자 HTML보다 ==강력하고 유연한== 마크업 언어. 데이터에 의미를 나타내는 태그를 붙여 ==컴퓨터가 데이터를 자동으로 처리==하게 한다.
+
+| | HTML | XML |
+|---|---|---|
+| 역할 | 데이터를 ==보여 주기(present)== | 데이터를 ==분류·표현·전달·저장== |
+| 태그 | 정해진 태그(제목, 굵게 등) | ==사용자가 정의하는 태그==(가격, 수량 등) |
+| 결과 | 사람이 읽는 화면 | ==컴퓨터가 자동으로 조작== |
+
+- **쉽게:** 기업은 수년에 걸쳐 만든 수천 개의 프로그램 모음이고, 이 시스템들은 서로 “대화”하지 못해 정보 공유에 큰 비용이 든다. 그 사이에 ==소프트웨어 연결 고리==를 두는 것이 웹 서비스 방식이다(교수님 메모).
+- **헷갈림 주의:** 교수님 메모 — ==XML과 HTML의 차이(XML이 더 가진 기능)를 반드시 설명할 수 있어야 한다.== “XML은 화면 표시만 하는 단순한 언어”는 오답(그건 HTML). XML의 자동 처리는 사람이 개입하지 않아도 시스템이 스스로 설정·복구하는 autonomic computing과 같은 방향이다.
+- **연결:** [Legacy System · Software Integration](#legacy-system--software-integration--레거시-시스템과-소프트웨어-통합) · 2장 [Extranet](#intranet--extranet--인트라넷엑스트라넷) · 원문 [5장 Slide 33](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-33--web-services-and-xml) · [Slide 34](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-34--figure-57-how-dollar-rent-a-car-uses-web-services)
+
+> [!EXAMPLE]
+> **Dollar Rent A Car (5장 Slide 34, Figure 5.7)** — **상황:** 렌터카 회사의 오래된 legacy 예약 시스템이 항공사(Southwest), 여행사, 여행 예약 시스템, 모바일 웹사이트와 데이터를 주고받아야 한다. **→ 적용 개념:** 웹 서비스(표준 중간 계층)와 XML. **→ 이유:** 파트너마다 전용 연결을 만드는 대신, 웹 서비스 묶음 하나로 모든 파트너가 같은 표준으로 접속한다. **→ 결과:** 파트너별 개별 연결이 필요 없고 legacy 시스템을 그대로 쓰며, 미래 파트너도 같은 방식으로 붙일 수 있다.
+
+#### Alternative Ways of Obtaining Software · 소프트웨어를 얻는 세 외부 출처
+
+> [!DEFINITION]
+> **Three external sources of software(판서)** — ==blue:Software packages(상용 패키지) · Software outsourcing(외부 업체에 맞춤 개발·유지보수를 계약) · Cloud-based software services(SaaS, 웹 브라우저로 인터넷을 통해 접근)==. **Offshore software outsourcing** — 인건비가 낮은 다른 나라의 회사에 개발·유지보수를 맡기는 것(판서 예: People.ai).
+
+- **쉽게:** 왼쪽(패키지·자체 운영)으로 갈수록 직접 소유·통제, 오른쪽(SaaS)으로 갈수록 빌려 쓰며 초기 투자가 작다. SaaS는 설치·업그레이드 부담이 제공자에게 넘어간다.
+- **헷갈림 주의:** ==red:아웃소싱은 “만들어 달라고 맡기는 것”, SaaS는 “완성된 것을 구독하는 것”==이다. 오프쇼어 아웃소싱은 비용이 줄지만 시차·의사소통·품질 관리 비용이 숨어 있다(5장 Slide 35 해설).
+- **연결:** [SLA](#sla--service-level-agreement--서비스-수준-협약) · [IaaS · PaaS · SaaS](#iaas--paas--saas--클라우드-서비스-모델) · [Rent-versus-Buy](#rent-versus-buy--빌릴까-살까와-투자-규모) · 원문 [5장 Slide 35](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-35--alternative-ways-of-obtaining-software)
+
+#### SLA · Service Level Agreement · 서비스 수준 협약
+
+> [!DEFINITION]
+> **SLA = Service Level Agreement** — 고객과 서비스 제공자 사이의 ==공식 계약==으로, ==제공자의 구체적 책임==과 ==고객이 기대하는 서비스 수준==(가동률, 응답 시간, 장애 대응 등)을 정한다.
+
+- **쉽게:** “가동률 99.9% 미만이면 요금 환불”, “장애 시 1시간 안에 대응” 같은 조항으로 공급업체의 책임을 계약에 적는다(5장 Slide 38 해설).
+- **헷갈림 주의:** ==red:SLA는 요금표나 소프트웨어 사용권(license)이 아니라 책임과 서비스 수준을 정한 “계약”==이다. TCO(비용 분석), MDM(기기 관리), SDS(저장소 구조)와 약어가 비슷해 보기로 섞여 나온다.
+- **연결:** [Alternative Ways of Obtaining Software](#alternative-ways-of-obtaining-software--소프트웨어를-얻는-세-외부-출처) · [Scalability](#scalability--확장성)(클라우드·SaaS의 새 계약) · 원문 [5장 Slide 35](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-35--alternative-ways-of-obtaining-software) · [Slide 38](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-38--dealing-with-platform-and-infrastructure-change)
+
+> [!EXAMPLE]
+> **외부 공급업체의 악몽 시나리오 (5장 Slide 38 교수님 메모)** — **상황:** Google이나 Salesforce.com 같은 외부 공급업체에 중요한 애플리케이션을 맡겼다. **→ 적용 개념:** SLA. **→ 이유:** 공급업체가 필요할 때 앱을 제공하지 못하거나, 고객 서비스가 형편없거나, 비용을 아끼려고 장비를 업그레이드하지 않을 수 있다. **→ 결과:** 이런 위험에 대비해 제공자의 책임과 서비스 수준을 계약으로 정해 둔다.
+
+#### Mashup · 매시업
+
+> [!DEFINITION]
+> **Mashup(매시업)** — ==두 개 이상의 온라인 애플리케이션을 결합==해 새 서비스를 만드는 것. 예: 지도 소프트웨어(Google Maps) + 지역 콘텐츠.
+
+- **쉽게:** 부동산 매물 정보에 Google 지도를 얹어 “지도 위의 매물”을 보여 주면 매시업이다. 처음부터 만들지 않고 이미 있는 서비스를 조합하므로 빠르고 싸다.
+- **헷갈림 주의:** 매시업은 ==기존 앱을 섞는 것==, [앱](#mobile-platform--apps--모바일-플랫폼과-앱)은 ==작은 소프트웨어 조각==(사용자를 플랫폼에 묶음)이다. 웹 서비스가 시스템 간 데이터 교환의 표준 계층이라면, 매시업은 그런 공개 서비스를 조합한 결과물이다.
+- **연결:** [Web Services · XML](#web-services--xml--웹-서비스와-xml) · 원문 [5장 Slide 36](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-36--mashups-and-apps)
+
+#### IT Infrastructure for AI · Edge AI · AI를 위한 IT 인프라
+
+> [!DEFINITION]
+> **AI 인프라(Slide 37)** — ==AI H/W 구성요소: CPU · GPU · TPU · RAM · 데이터 저장·관리== / ==AI S/W 구성요소: OS · AI 프레임워크·라이브러리(TensorFlow · PyTorch · Keras) · 버전 관리(GitHub 플랫폼) · 클라우드 서비스==. **Edge AI** — ==AI 알고리즘과 모델을 스마트폰·센서·IoT 기기 같은 로컬 엣지 기기에 직접 배치==하는 것.
+
+- **쉽게:** 스마트폰이 인터넷 연결 없이 사진 속 얼굴을 바로 인식하는 것이 Edge AI다 — 빠르고, 개인정보가 기기 밖으로 덜 나간다. 반대로 거대한 모델을 학습시키는 일은 GPU·TPU가 가득한 클라우드 데이터센터에서 한다. Slide 16 판서의 ==NVIDIA==가 AI용 GPU의 대표 기업이다.
+- **헷갈림 주의:** ==red:TPU = Tensor Processing Unit(AI 연산 전용 칩).== ==red:GitHub는 AI 프레임워크가 아니라 버전 관리 플랫폼==이고, TensorFlow·PyTorch·Keras가 프레임워크·라이브러리다.
+- **연결:** [Edge Computing](#edge-computing--엣지-컴퓨팅) · 2장 [AI 용어](#ai--ml--nlp--genai--ai-agent--인공지능-용어) · 원문 [5장 Slide 37](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-37--it-infrastructure-for-ai)
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **JVM** | Java Virtual Machine. 같은 Java 프로그램을 어떤 기기에서든 실행하게 하는 실행 환경 | [Slide 32](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-32--software-for-the-web-java-html-and-html5) |
+| **Ruby · Python** | 웹 애플리케이션용 인기 프로그래밍 도구 | [Slide 32](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-32--software-for-the-web-java-html-and-html5) |
+| **Software packages** | 상용으로 판매되는 완성 소프트웨어. 세 외부 출처 중 하나 | [Slide 35](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-35--alternative-ways-of-obtaining-software) |
+| **Autonomic computing** | 사람이 개입하지 않아도 시스템이 스스로 설정·복구하는 컴퓨팅. XML 메모의 질문 “Does this remind you of autonomic computing?” | [Slide 33](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-33--web-services-and-xml) |
+| **SOA (교재 보충)** | Service-oriented architecture. 독립된 웹 서비스들을 조합해 애플리케이션을 만드는 설계 방식. 이번 슬라이드·노트에는 없는 교재 용어 | [Slide 33](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-33--web-services-and-xml) |
+| **GPU · CPU · TPU** | 그래픽(병렬 연산) 처리 장치 · 중앙 처리 장치 · AI 전용 텐서 처리 장치 | [Slide 37](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-37--it-infrastructure-for-ai) |
+
+### 5-5 인프라 관리 과제
+
+인프라를 바꾸고 관리하고 투자할 때의 과제 — 확장성, 모바일·클라우드 관리, 거버넌스, 투자 규모, 총소유비용, 투자 요인 — 를 묶었다. 원문: [Slide 38](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-38--dealing-with-platform-and-infrastructure-change) ~ [Slide 43](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-43--figure-58-competitive-forces-model-for-it-infrastructure)
+
+[![하드웨어와 소프트웨어 구입비는 TCO의 약 20%이고 나머지 약 80%는 설치·교육·지원·유지보수·인프라·다운타임·공간·에너지 같은 숨은 비용이며, 클라우드 서비스와 중앙화·표준화로 TCO를 줄인다는 빙산형 그림](/materials/diagrams/mis-gl-5d-tco.svg)](/materials/diagrams/mis-gl-5d-tco.svg)
+
+*그림 5-9 · TCO — 구입가는 빙산의 일각 — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 검은 칸(TCO) → 위 칸(보이는 비용 약 20%) → 회색 영역 안 숨은 비용 여덟 가지(약 80%) → “줄이는 방법”.
+> - **핵심 관계:** TCO는 ==하드웨어의 숨은 비용 일부를 수치화==하는 방법(판서)이며 직접·간접 비용을 모두 더한다. ==red:하드웨어·소프트웨어는 TCO의 약 20%뿐==이고, ==red:다운타임==처럼 눈에 안 보이는 비용도 들어간다.
+> - **예시:** 노트북 100대를 대당 150만 원에 사면 구입비 1억 5천만 원이 TCO의 20%이므로 실제 총소유비용은 약 7억 5천만 원으로 본다(5장 Slide 41 문제).
+
+[![가운데 기업의 IT 서비스와 인프라를 왼쪽 내부 요인 세 개와 오른쪽 외부 시장 요인 세 개가 둘러싸고 화살표로 영향을 주는 그림](/materials/diagrams/mis-fig-5-08.svg)](/materials/diagrams/mis-fig-5-08.svg)
+
+*그림 5-10 · Figure 5.8 인프라 투자의 경쟁세력 모형 (5장 노트 그림) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 가운데(우리 회사의 IT 서비스·인프라) → 왼쪽 내부 요인 2·3·4 → 오른쪽 외부 시장 요인 1·5·6.
+> - **핵심 관계:** 여섯 요인이 모두 가운데의 ==IT 인프라 투자 규모와 방식==을 결정한다. ==red:“Information technology(4)”는 외부처럼 보이지만 내부 요인==이다 — 쓸 만한 기술인지 회사가 스스로 평가하는 일이기 때문이다.
+> - **예시:** 경쟁 은행의 모바일 앱 대규모 투자 발표는 외부(6), 우리 은행의 “디지털 우선” 전략은 내부(2), 24시간 모바일 대출 요구는 외부(1), 생성형 AI 상담 기술 평가는 내부(4)다(5장 Slide 43 문제).
+
+#### Scalability · 확장성
+
+> [!DEFINITION]
+> **Scalability(확장성)** — 컴퓨터·제품·시스템이 ==무너지지 않고(without breaking down) 더 많은 사용자에게 서비스하도록 확장==할 수 있는 능력. 기업이 줄거나 커질 때 IT는 ==유연하고 확장 가능(flexible and scalable)==해야 한다.
+
+- **모바일·클라우드에서:** 새 플랫폼을 관리할 ==새 정책과 절차==, 모바일에는 [MDM](#mdm--mobile-device-management--모바일-기기-관리), 클라우드·SaaS에는 운영 기업·SW 배포 기업과의 ==새 계약==([SLA](#sla--service-level-agreement--서비스-수준-협약))이 필요하다.
+- **생각해 볼 질문(교수님 메모):** IT가 유연하면서도 장기 투자를 할 방법은? SaaS가 일부를 해결하지만 외부 공급업체의 함정(앱 미제공·형편없는 서비스·업그레이드 지연)도 생각해야 한다.
+- **연결:** [Cloud Computing](#cloud-computing--클라우드-컴퓨팅) · [Client/Server](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조)(조금씩 늘리기) · 원문 [5장 Slide 38](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-38--dealing-with-platform-and-infrastructure-change)
+
+> [!EXAMPLE]
+> **Grab·ESPN.com (5장 Slide 4·Slide 3)** — **상황:** 이용자가 급증하거나 경기 때 트래픽이 몰린다. **→ 적용 개념:** 확장성. **→ 이유:** 클라우드 자원을 수요에 맞춰 늘리고 줄여 시스템이 무너지지 않게 한다. **→ 결과:** Grab은 scalable services로 성장과 비용을 함께 관리했다.
+
+#### MDM · Mobile Device Management · 모바일 기기 관리
+
+> [!DEFINITION]
+> **MDM = Mobile Device Management** — 조직에서 쓰는 ==여러 모바일 OS에 걸쳐 배포된 모바일 기기를 감시(monitor)·관리(manage)·보호(secure)==하는 소프트웨어.
+
+- **쉽게:** BYOD로 IT 부서가 잃은 기기 통제를 소프트웨어로 되찾는 도구다. 분실한 업무용 폰의 데이터를 원격으로 지우거나 보안 정책을 일괄 적용한다(가상 예시).
+- **헷갈림 주의:** MDM은 ==기기 관리 소프트웨어==이고, SLA(계약)·SDS(저장소 구조)와 다르다.
+- **연결:** [Consumerization · BYOD](#consumerization-of-it--byod--it-소비자화와-byod) · [Scalability](#scalability--확장성) · 원문 [5장 Slide 38](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-38--dealing-with-platform-and-infrastructure-change)
+
+#### Infrastructure Governance · 인프라 거버넌스의 세 질문
+
+> [!DEFINITION]
+> **IT governance(5장 Slide 39)** — 인프라 관리에서 답해야 할 세 질문: ==blue:① 누가 기업의 IT 인프라를 통제·관리하나? ② IT 부서를 어떻게 조직하나(Centralized: 중앙 IT 부서가 결정 / Decentralized: 사업부 IT 부서가 각자 결정)? ③ 비용을 사업부·부서 간에 어떻게 배분하나?==
+
+- **쉽게:** 거버넌스는 기술이 아니라 ==결정 권한과 책임==의 문제다. 대표 정의(decision rights + accountability)는 2장 [IT Governance](#it-governance--it-거버넌스) 카드에 있다.
+- **헷갈림 주의:** ==red:Centralized = 중앙 IT가 결정, Decentralized = 사업부 IT가 각자 결정== — 방향을 바꾼 보기가 자주 나온다. 5장은 2장에 없던 ==비용 배분== 질문이 더해진다.
+- **부실하면(교수님 메모):** 어느 부서가 IT 결정 책임을 지는지 정하지 않으면 ==데이터 관리 부실, 의사소통 부족, 위기 대응 지연==이 생긴다.
+- **연결:** 2장 [IT Governance](#it-governance--it-거버넌스) · 2장 [Modern IS Operating Model](#modern-is-operating-model--현대-is-운영-모델) · 원문 [5장 Slide 39](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-39--management-and-governance)
+
+#### Rent-versus-Buy · 빌릴까 살까와 투자 규모
+
+> [!DEFINITION]
+> **Making wise infrastructure investments(Slide 40)** — IT에 얼마를 쓸지는 복잡한 문제이고 ==과소 투자(under-investment)와 과다 투자(over-investment) 모두 성과를 해친다.== **Rent-versus-buy decision** — 인프라·소프트웨어를 직접 살지 빌릴지(클라우드·아웃소싱)의 결정. 클라우드는 ==보안 요구 사항==과 ==비즈니스 프로세스·워크플로에 미치는 영향==을 함께 검토한다.
+
+- **쉽게:** 과소 투자하면 시스템이 느리고 경쟁사에 뒤처지며, 과다 투자하면 놀고 있는 장비와 라이선스에 돈이 묶인다. 교수님 메모 — ==계절 직원이 있거나 반기마다 업무량이 몰리는 회사==는 사는 대신 빌리는 편이 맞다.
+- **헷갈림 주의:** 빌리는 쪽이 항상 싼 것은 아니다. 판단에는 [TCO](#tco--total-cost-of-ownership--총소유비용)와 보안·프로세스 영향을 함께 넣는다.
+- **연결:** [Public · Private · Hybrid](#public--private--hybrid-cloud--클라우드-배치-모델) · [소프트웨어 외부 출처](#alternative-ways-of-obtaining-software--소프트웨어를-얻는-세-외부-출처) · 원문 [5장 Slide 40](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-40--making-wise-infrastructure-investments)
+
+> [!EXAMPLE]
+> **가상 예시 · 연말 쇼핑몰 (5장 Slide 40 해설)** — **상황:** 연말에만 주문이 폭증하는 쇼핑몰. **→ 적용 개념:** rent-versus-buy. **→ 이유:** 1년 내내 최대 용량을 사 두면 대부분의 기간에 장비가 논다. **→ 결과:** 평소 용량만 갖추고 성수기에는 클라우드로 빌리는 편이 합리적이다.
+
+#### TCO · Total Cost of Ownership · 총소유비용
+
+> [!DEFINITION]
+> **TCO = Total Cost of Ownership** — 기술 자원을 소유하는 ==실제 총비용(직접·간접)==. 하드웨어·소프트웨어의 초기 구입·설치비 + 업그레이드·유지보수·기술 지원·교육의 지속 관리비 + 기술을 운영·수용하는 공공요금(utility)·부동산 비용까지 포함한다.
+
+- **숫자:** ==red:하드웨어·소프트웨어는 TCO의 약 20%뿐==. 나머지: ==blue:설치 · 교육 · 지원 · 유지보수 · 인프라 · 다운타임 · 공간 · 에너지==.
+- **줄이는 방법:** ==클라우드 서비스 사용==, 하드웨어·소프트웨어 자원의 ==더 큰 중앙화와 표준화==.
+- **헷갈림 주의:** ==red:“TCO의 대부분은 구입 가격”은 오답.== TCO는 비용 분석 모델이고 SLA(계약)가 아니다.
+- **연결:** [Rent-versus-Buy](#rent-versus-buy--빌릴까-살까와-투자-규모) · 2장 [ROI](#roi--return-on-investment--투자수익률) · 원문 [5장 Slide 41](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-41--total-cost-of-ownership-tco-model)
+
+> [!EXAMPLE]
+> **가상 예시 · 노트북 100대 (5장 Slide 41 문제)** — **상황:** 노트북 100대를 대당 150만 원(총 1억 5천만 원)에 사려 한다. **→ 적용 개념:** TCO. **→ 이유:** 구입비가 TCO의 약 20%이므로 1.5억 ÷ 0.2. **→ 결과:** 실제 총소유비용은 약 7억 5천만 원이고, 나머지 80%는 설치·사용자 교육·기술 지원·유지보수·다운타임·사무 공간·전력이다.
+
+#### Competitive Forces Model for IT Infrastructure · 인프라 투자의 여섯 요인
+
+> [!DEFINITION]
+> **Competitive forces model for IT infrastructure investment(Figure 5.8)** — IT 인프라에 ==얼마를 쓰고 어떻게 쓸지==에 답하기 위한 여섯 요인. ==blue:내부 — ② 사업 전략 · ③ IT 전략·인프라·비용 · ④ 정보기술 평가== / ==blue:외부 시장 — ① 시장 수요(고객·공급자·전사 서비스) · ⑤ 경쟁사의 IT 서비스 · ⑥ 경쟁사의 IT 인프라 투자==.
+
+- **쉽게:** 왼쪽 셋은 회사 안에서 정하는 것, 오른쪽 셋은 시장이 정하는 것이다. 교수님 메모: 이 그림은 ==어떤 기업이 왜 제대로 된 인프라를 만들지 못하는지==를 이해하는 틀로도 쓴다.
+- **헷갈림 주의:** ==red:3장 Porter 경쟁 요인 모형(다섯 힘)과 이름이 비슷하지만 다른 모형==이다. 5장 모형은 인프라 투자 규모를 정하는 여섯 요인이다. 또 경쟁사만 보고 정하면 안 된다 — 경쟁사가 최고의 본보기가 아닐 수 있고 업계 전체가 기술적으로 뒤처져(technological laggards) 있을 수 있으니 ==다른 업계의 모범 사례==도 본다(교수님 메모).
+- **연결:** 3장 [Competitive Forces Model](#competitive-forces-model--porter의-경쟁-요인-모형) · [Service Platform Perspective](#service-platform-perspective--서비스-플랫폼-관점의-it-인프라)(Figure 5.1과 같은 가운데 칸) · 원문 [5장 Slide 42](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-42--competitive-forces-model-for-it-infrastructure-investment) · [Slide 43](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-43--figure-58-competitive-forces-model-for-it-infrastructure)
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Under-/Over-investment** | 과소 투자(느린 시스템·경쟁 열위) / 과다 투자(놀고 있는 장비·라이선스) — 둘 다 성과를 해침 | [Slide 40](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-40--making-wise-infrastructure-investments) |
+| **Centralized / Decentralized (5장)** | 중앙 IT 부서가 결정 / 사업부 IT 부서가 각자 결정 | [Slide 39](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-39--management-and-governance) |
+| **Hidden costs** | TCO가 수치화하는 하드웨어의 숨은 비용(설치·교육·지원·다운타임 등) | [Slide 41](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-41--total-cost-of-ownership-tco-model) |
+| **Technological laggards** | 업계 전체가 기술적으로 뒤처진 상태. 경쟁사만 벤치마킹하면 안 되는 이유 | [Slide 42](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-42--competitive-forces-model-for-it-infrastructure-investment) |
+
+> [!PAGEBREAK]
+
 ## 헷갈리는 개념 비교
 
 각 줄의 개념 이름을 누르면 대표 설명으로 이동한다. **구분 기준**을 먼저 외우고, 그 기준으로 두 개념을 각각 한 문장으로 말해 본다.
@@ -2152,6 +2673,34 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | [Bug vs Hardware failure vs Poor input data](#system-quality--data-quality--시스템-품질과-데이터-품질) | 어디서 생긴 문제인가 | 가장 흔한 원인은 입력 데이터 |
 | [RSI vs CTS vs CVS vs Technostress](#health-risks--rsi--cts--cvs--technostress) | 어디가 아픈가 | 반복 동작 손상 ⊃ 손목 vs 눈 vs 정신 |
 
+### 5장 · IT 인프라와 신기술
+
+| 비교 | 구분 기준 | 가장 빠른 구분 |
+|---|---|---|
+| [장비 관점 vs Service platform 관점](#service-platform-perspective--서비스-플랫폼-관점의-it-인프라) | 무엇으로 투자를 평가하나 | 장치·SW 목록(비용) vs 가능해지는 전사 서비스(가치) |
+| [Enterprise era vs Cloud·mobile era](#evolution-of-it-infrastructure--인프라-진화의-다섯-시대) | 인터넷을 무엇에 썼나 | TCP/IP로 전사 통합(1992) vs 컴퓨팅 능력을 인터넷으로 공급(2000) |
+| [Client/server](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조) vs [Cloud](#cloud-computing--클라우드-컴퓨팅) | 처리 능력이 어디에 있나 | 사내 클라이언트·서버가 분담(LAN) vs 인터넷 너머 제공자의 자원 풀에서 빌림 |
+| [Web server vs Application server](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조) | 무엇을 하나 | 페이지 전달 vs 업무 로직 처리 |
+| [Windows vs Linux](#operating-system-platforms--운영체제-플랫폼) | 어디서 우세한가 | 데스크톱·태블릿 68% 이상 vs 클라우드 인프라 90% |
+| [BYOD vs Consumerization of IT](#consumerization-of-it--byod--it-소비자화와-byod) | 포함 관계 | 개인 기기 업무 사용 ⊂ 소비자 기술·서비스가 기업으로 퍼지는 흐름 전체 |
+| [Green](#green-computing--그린-컴퓨팅) vs [Quantum computing](#quantum-computing--양자-컴퓨팅) | 무엇을 바꾸려 하나 | 설계→폐기 전 과정의 환경 영향 ↓ vs 양자 물리로 계산 속도·능력 ↑(아직 실험 단계) |
+| [Server virtualization vs SDS](#virtualization--sds--가상화와-소프트웨어-정의-스토리지) | 가상화의 방향 | 1 물리 → 여러 논리 vs 여러 물리 → 1 논리 |
+| [Virtualization](#virtualization--sds--가상화와-소프트웨어-정의-스토리지) vs [Cloud computing](#cloud-computing--클라우드-컴퓨팅) | 기술인가, 서비스 모형인가 | 자원을 논리적으로 나누고 합치는 기술 vs 그 자원 풀을 네트워크로 빌려 주고 쓴 만큼 받는 모형 |
+| [IaaS vs PaaS vs SaaS](#iaas--paas--saas--클라우드-서비스-모델) | 어디까지 빌리나 | 인프라로 운영(run) vs 플랫폼으로 개발(develop) vs 완성 SW를 사용 |
+| [Public vs Private vs Hybrid cloud](#public--private--hybrid-cloud--클라우드-배치-모델) | 누가 소유·어디에 두나 | 여러 고객 공유 vs 한 조직 전용 vs 핵심은 자체·피크는 퍼블릭 |
+| 서비스 모델 vs 배치 모델 | 축이 다르다 | 제공자의 관리 범위 vs 소유·위치 (프라이빗 PaaS도 가능) |
+| [Edge](#edge-computing--엣지-컴퓨팅) vs [Cloud computing](#cloud-computing--클라우드-컴퓨팅) | 처리 위치 | 데이터 원천 가까이에서 일부 처리(클라우드를 최적화) vs 중앙 데이터센터의 자원 풀 |
+| [Java vs HTML](#java--html--html5--웹을-위한-소프트웨어) | 언어의 종류 | OS·프로세서 독립 프로그래밍 언어(JVM) vs 페이지 기술(markup) 언어 |
+| [HTML vs XML](#web-services--xml--웹-서비스와-xml) | 데이터로 무엇을 하나 | 보여 주기 vs 분류·표현·전달·저장, 컴퓨터가 자동 처리 |
+| [Web services](#web-services--xml--웹-서비스와-xml) vs SOA(교재 보충) | 부품인가, 설계 방식인가 | 웹 표준으로 정보를 교환하는 SW 구성요소 vs 그 서비스들을 조합해 애플리케이션을 만드는 아키텍처 |
+| [Web services](#web-services--xml--웹-서비스와-xml) vs [Mashup](#mashup--매시업) | 목적 | 시스템 간 데이터 교환의 표준 계층 vs 공개 앱을 섞어 만든 새 서비스 |
+| [Outsourcing vs SaaS](#alternative-ways-of-obtaining-software--소프트웨어를-얻는-세-외부-출처) | 무엇을 맡기나 | 맞춤 개발·유지보수를 외부에 계약 vs 완성된 SW를 인터넷으로 구독 |
+| [SLA](#sla--service-level-agreement--서비스-수준-협약) vs [TCO](#tco--total-cost-of-ownership--총소유비용) vs [MDM](#mdm--mobile-device-management--모바일-기기-관리) vs [SDS](#virtualization--sds--가상화와-소프트웨어-정의-스토리지) | 약어의 정체 | 서비스 수준 계약 vs 비용 분석 모델 vs 모바일 기기 관리 SW vs 저장소 가상화 구조 |
+| [TCO: 구입비 vs 숨은 비용](#tco--total-cost-of-ownership--총소유비용) | 비중 | 하드웨어·소프트웨어 약 20% vs 설치·교육·지원·유지보수·다운타임·공간·에너지 약 80% |
+| [Centralized vs Decentralized (5장)](#infrastructure-governance--인프라-거버넌스의-세-질문) | 누가 결정하나 | 중앙 IT 부서 vs 사업부 IT 부서 |
+| [인프라 투자 내부 vs 외부 요인](#competitive-forces-model-for-it-infrastructure--인프라-투자의-여섯-요인) | 누가 정하나 | 사업 전략·IT 전략·인프라·비용·IT 평가 vs 시장 수요·경쟁사 서비스·경쟁사 IT 투자 |
+| [5장 경쟁세력 모형](#competitive-forces-model-for-it-infrastructure--인프라-투자의-여섯-요인) vs [Porter 모형](#competitive-forces-model--porter의-경쟁-요인-모형) | 무엇을 정하나 | 인프라 투자 규모의 여섯 요인 vs 산업 경쟁 압력의 다섯 힘 |
+
 ## 영문·약어 빠른 색인
 
 영문 이름이나 약어로 찾을 때 쓴다. 이름을 누르면 대표 설명으로 이동한다.
@@ -2162,24 +2711,33 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | [Adhocracy](#organizational-structure--조직-구조-mintzberg-다섯-유형) | 애드호크라시 | 3장 |
 | [Agency Theory · Agency Cost](#agency-theory--대리인-이론) | 대리인 이론·대리인 비용 | 3장 |
 | [AI · AI Agent](#ai--ml--nlp--genai--ai-agent--인공지능-용어) | 인공지능·AI 에이전트 | 2장 |
+| [AI Infrastructure · Edge AI · GPU · TPU](#it-infrastructure-for-ai--edge-ai--ai를-위한-it-인프라) | AI를 위한 IT 인프라·엣지 AI | 5장 |
 | [AI-Ready Content](#ai-ready-content--ai가-쓸-수-있는-콘텐츠) | AI가 쓸 수 있는 콘텐츠 | 2장 |
+| [Apache Hadoop](#5-2-it-인프라의-일곱-구성요소) | 대용량 데이터 오픈소스 프레임워크 | 5장 |
+| [Application Server · Web Server](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조) | 애플리케이션 서버·웹 서버 | 5장 |
 | [Assist · Automate · Agent](#assist--automate--agent--ai가-프로세스에-들어가는-세-수준) | AI의 세 수준 | 2장 |
+| [AWS](#aws--industry-cloud--대표-퍼블릭-클라우드와-산업-특화-클라우드) | 아마존 웹 서비스 | 5장 |
 | [Behavioral Approach](#behavioral-approach--행동적-접근) | 행동적 접근 | 1장 |
 | [BI](#bi--business-intelligence--비즈니스-인텔리전스) | 비즈니스 인텔리전스 | 2장 |
 | [Business Ecosystem](#business-ecosystem--keystone--niche-firm--비즈니스-생태계) | 비즈니스 생태계 | 3장 |
 | [Business Information Value Chain](#business-information-value-chain--비즈니스-정보-가치사슬) | 비즈니스 정보 가치사슬 | 1장 |
 | [Business Model](#business-model--사업모형) | 사업모형 | 1장 |
 | [Business Process](#business-process--비즈니스-프로세스) | 비즈니스 프로세스 | 2장 |
+| [BYOD](#consumerization-of-it--byod--it-소비자화와-byod) | 개인 기기 업무 사용 | 5장 |
 | [CAD](#kws--knowledge-work-system--지식작업시스템) | 컴퓨터 지원 설계 | 2장 |
 | [CAIO · CDO · CIO · CISO · CKO · CPO](#c-level-roles--cio--ciso--cpo--cko--cdo--caio) | IT 관련 최고 책임자 | 2장 |
 | [CAN-SPAM Act](#computer-crime--computer-abuse--컴퓨터-범죄와-남용) | 미국 스팸 규제법 | 4장 |
+| [Client/Server · N-Tier](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조) | 클라이언트/서버·다계층 구조 | 5장 |
+| [Cloud Computing](#cloud-computing--클라우드-컴퓨팅) | 클라우드 컴퓨팅 | 5장 (용어 소개: 1장 · Cloud ERP: 2장) |
 | [Cloud ERP](#cloud-erp--클라우드-erp) | 클라우드 ERP | 2장 |
 | [Collaboration](#collaboration--협업) | 협업 | 2장 |
 | [Competitive Advantage](#competitive-advantage--경쟁우위) | 경쟁우위 | 1장 |
 | [Competitive Forces Model](#competitive-forces-model--porter의-경쟁-요인-모형) | Porter 경쟁 요인 모형 | 3장 |
+| [Competitive Forces Model for IT Infrastructure](#competitive-forces-model-for-it-infrastructure--인프라-투자의-여섯-요인) | 인프라 투자의 여섯 요인 | 5장 |
 | [Complementary Assets](#complementary-assets--보완-자산) | 보완 자산 | 1장 |
 | [Computer Crime / Abuse](#computer-crime--computer-abuse--컴퓨터-범죄와-남용) | 컴퓨터 범죄·남용 | 4장 |
 | [Computer Literacy / IS Literacy](#computer-literacy--is-literacy--컴퓨터-활용-능력과-정보시스템-이해-능력) | 컴퓨터 활용 능력·IS 이해 능력 | 1장 |
+| [Consumerization of IT](#consumerization-of-it--byod--it-소비자화와-byod) | IT 소비자화 | 5장 |
 | [Cookies · Web Beacons · Spyware](#cookies--tracking--쿠키와-온라인-추적-기술) | 추적 기술 | 4장 |
 | [COP](#cop--communities-of-practice--실천-공동체) | 실천 공동체 | 2장 |
 | [Copyright · Patent · Trademark · Trade Secret](#intellectual-property--지식재산과-네-가지-보호) | 저작권·특허·상표·영업비밀 | 4장 |
@@ -2197,7 +2755,9 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | [DSS](#dss--decision-support-system--의사결정지원시스템) | 의사결정지원시스템 | 2장 |
 | [Due Process](#responsibility--accountability--liability--due-process--책임의-네-고리) | 적법 절차 | 4장 |
 | [E-business · E-commerce · E-government](#e-business--e-commerce--e-government--전자-비즈니스전자상거래전자정부) | 전자 비즈니스·전자상거래·전자정부 | 2장 |
+| [E-waste](#green-computing--그린-컴퓨팅) | 전자 폐기물 | 5장 |
 | [ECM / CMS](#ecm--cms--enterprise-content-management--기업-콘텐츠-관리) | 기업 콘텐츠 관리 | 2장 |
+| [Edge Computing](#edge-computing--엣지-컴퓨팅) | 엣지 컴퓨팅 | 5장 |
 | [Enterprise Applications](#enterprise-applications--전사-애플리케이션) | 전사 애플리케이션 | 2장 |
 | [Enterprise Social Networking](#enterprise-social-networking--기업용-소셜-네트워킹) | 기업용 소셜 네트워킹 | 2장 |
 | [Environment](#environment--정보시스템의-환경) · [Environmental Scanning](#organizational-environment--조직-환경과-환경-탐색) | 환경·환경 탐색 | 1장 · 3장 |
@@ -2205,6 +2765,7 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | [ESS](#ess--executive-support-system--중역지원시스템) | 중역지원시스템 | 2장 |
 | [Ethical Analysis](#ethical-analysis--윤리적-분석-다섯-단계) · [Ethical Principles](#ethical-principles--여섯-가지-윤리-원칙) | 윤리적 분석·원칙 | 4장 |
 | [Ethics](#ethics--윤리) | 윤리 | 4장 |
+| [Evolution of IT Infrastructure (Mainframe → Cloud)](#evolution-of-it-infrastructure--인프라-진화의-다섯-시대) | 인프라 진화의 다섯 시대 | 5장 |
 | [Feedback](#feedback--피드백) | 피드백 | 1장 |
 | [FIP](#fip--fair-information-practices--공정-정보-관행) | 공정 정보 관행 | 4장 |
 | [First Mover / Fast Follower](#disruptive-technology--파괴적-기술) | 선도자·빠른 추격자 | 3장 |
@@ -2213,42 +2774,67 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | [GDPR](#gdpr--general-data-protection-regulation--eu-일반-개인정보-보호-규정) | EU 일반 개인정보 보호 규정 | 4장 |
 | [GenAI](#ai--ml--nlp--genai--ai-agent--인공지능-용어) | 생성형 AI | 2장 |
 | [Globalization](#globalization--세계화와-정보시스템) | 세계화 | 1장 |
+| [Green Computing](#green-computing--그린-컴퓨팅) | 그린 컴퓨팅 | 5장 |
+| [HTML · HTML5 · Java · JVM](#java--html--html5--웹을-위한-소프트웨어) | 웹을 위한 소프트웨어 | 5장 |
 | [Human-Agent Team](#human-agent-team--사람ai-에이전트-팀) | 사람–AI 에이전트 팀 | 2장 |
+| [IaaS · PaaS · SaaS](#iaas--paas--saas--클라우드-서비스-모델) | 클라우드 서비스 모델 | 5장 |
+| [Industry Cloud Platform](#aws--industry-cloud--대표-퍼블릭-클라우드와-산업-특화-클라우드) | 산업 특화(vertical) 클라우드 | 5장 |
 | [Informed Consent · Opt-in · Opt-out](#informed-consent--opt-in--opt-out--동의-방식) | 동의 방식 | 4장 |
 | [Input · Processing · Output](#input--processing--output--입력처리출력) | 입력·처리·출력 | 1장 |
 | [Intelligent Techniques](#intelligent-techniques--지능형-기법) | 지능형 기법 | 2장 |
 | [Intranet / Extranet](#intranet--extranet--인트라넷엑스트라넷) | 인트라넷·엑스트라넷 | 2장 |
 | [IS](#is--information-system--정보시스템) | 정보시스템 | 1장 |
 | [IT](#it--information-technology--정보기술) | 정보기술 | 1장 |
-| [IT Governance](#it-governance--it-거버넌스) | IT 거버넌스 | 2장 |
-| [IT Infrastructure](#it-infrastructure--it-인프라) | IT 인프라 | 1장 |
+| [IT Governance](#it-governance--it-거버넌스) | IT 거버넌스 | 2장 (인프라 거버넌스: 5장) |
+| [IT Infrastructure](#it-infrastructure--it-인프라) | IT 인프라 | 1장 (서비스 플랫폼·진화·구성요소: 5장) |
 | [Keystone / Niche Firm](#business-ecosystem--keystone--niche-firm--비즈니스-생태계) | 키스톤·니치 기업 | 3장 |
 | [KM Value Chain](#knowledge-management-value-chain--지식관리-가치사슬) | 지식관리 가치사슬 | 2장 |
 | [KMS](#kms--knowledge-management-system--지식관리시스템) | 지식관리시스템 | 2장 |
 | [Knowledge Workers](#knowledge-workers--지식근로자) | 지식근로자 | 2장 |
 | [KWS](#kws--knowledge-work-system--지식작업시스템) | 지식작업시스템 | 2장 |
+| [Legacy System · Software Integration](#legacy-system--software-integration--레거시-시스템과-소프트웨어-통합) | 레거시 시스템·소프트웨어 통합 | 5장 |
 | [Liability](#responsibility--accountability--liability--due-process--책임의-네-고리) | 법적 책임 | 4장 |
+| [Linux · Open-Source Software](#open-source-software--linux--오픈소스-소프트웨어와-리눅스) | 리눅스·오픈소스 소프트웨어 | 5장 |
 | [LMS · MOOC](#lms--learning-management-system--학습관리시스템) | 학습관리시스템 | 2장 |
+| [Mashup](#mashup--매시업) | 매시업 | 5장 |
 | [Mass Customization](#mass-customization--대량-맞춤화) | 대량 맞춤화 | 3장 |
+| [MDM](#mdm--mobile-device-management--모바일-기기-관리) | 모바일 기기 관리 | 5장 |
+| [Middleware](#5-2-it-인프라의-일곱-구성요소) | 미들웨어 | 5장 |
 | [MIS](#mis--management-information-system--경영정보시스템) | 경영정보시스템 | 2장 |
 | [ML · NLP](#ai--ml--nlp--genai--ai-agent--인공지능-용어) | 머신러닝·자연어 처리 | 2장 |
+| [Mobile Platform · Apps](#mobile-platform--apps--모바일-플랫폼과-앱) | 모바일 플랫폼·앱 | 5장 |
+| [Moore's Law · Metcalfe's Law (교재 보충)](#5-1-it-인프라의-정의와-진화) | 무어의 법칙·메트칼프의 법칙 | 5장 |
+| [Multicore Processor (교재 보충)](#green-computing--그린-컴퓨팅) | 멀티코어 프로세서 | 5장 |
 | [Network Economics](#network-economics--네트워크-경제) | 네트워크 경제 | 3장 |
 | [NORA](#nora--nonobvious-relationship-awareness--비명시적-관계-인식) | 비명시적 관계 인식 | 4장 |
+| [NOS · Web Hosting Service](#networking--internet-platforms--nos--웹-호스팅) | 네트워크 운영체제·웹 호스팅 | 5장 |
+| [Operating System Platforms](#operating-system-platforms--운영체제-플랫폼) | 운영체제 플랫폼 | 5장 |
 | [Operational Excellence](#operational-excellence--운영-우수성) | 운영 우수성 | 1장 |
 | [Organizational Culture](#organizational-culture--조직-문화) · [Politics](#organizational-politics--조직-정치) | 조직 문화·정치 | 3장 |
 | [Organizational Learning](#organizational-learning--조직-학습) | 조직 학습 | 2장 |
 | [Privacy](#privacy--프라이버시) | 프라이버시 | 4장 |
 | [Profiling](#profiling--프로파일링) | 프로파일링 | 4장 |
+| [Public · Private · Hybrid Cloud](#public--private--hybrid-cloud--클라우드-배치-모델) | 클라우드 배치 모델 | 5장 |
+| [Quantum Computing](#quantum-computing--양자-컴퓨팅) | 양자 컴퓨팅 | 5장 |
 | [RAG](#rag--retrieval-augmented-generation--검색-증강-생성) | 검색 증강 생성 | 2장 |
+| [Rent-versus-Buy](#rent-versus-buy--빌릴까-살까와-투자-규모) | 빌릴까 살까 결정 | 5장 |
 | [Resistance to Change](#resistance-to-change--변화-저항) | 변화 저항 | 3장 |
 | [Responsibility](#responsibility--accountability--liability--due-process--책임의-네-고리) | 책임 | 4장 |
 | [ROI](#roi--return-on-investment--투자수익률) | 투자수익률 | 2장 |
 | [Routines (SOPs)](#routines-sops--표준-운영-절차) | 표준 운영 절차 | 3장 |
+| [SAN (교재 보충)](#5-2-it-인프라의-일곱-구성요소) | 스토리지 영역 네트워크 | 5장 |
+| [Scalability](#scalability--확장성) | 확장성 | 5장 |
 | [SCM](#scm--supply-chain-management--공급망-관리) | 공급망 관리 | 2장 |
+| [SDS · Virtualization](#virtualization--sds--가상화와-소프트웨어-정의-스토리지) | 소프트웨어 정의 스토리지·가상화 | 5장 |
 | [Section 230](#computer-related-liability--section-230--소프트웨어-책임과-플랫폼-책임) | 플랫폼 면책 조항 | 4장 |
+| [Service Platform Perspective](#service-platform-perspective--서비스-플랫폼-관점의-it-인프라) | 서비스 플랫폼 관점 | 5장 |
+| [Seven Components of IT Infrastructure](#seven-components-of-it-infrastructure--인프라의-일곱-구성요소) | 인프라의 일곱 구성요소 | 5장 |
+| [SLA](#sla--service-level-agreement--서비스-수준-협약) | 서비스 수준 협약 | 5장 |
 | [Smart Products · IoT](#smart-products--iot--스마트-제품과-사물인터넷) | 스마트 제품·사물인터넷 | 3장 |
+| [SOA (교재 보충)](#5-4-소프트웨어-플랫폼과-조달) | 서비스 지향 아키텍처 | 5장 |
 | [Social Business](#social-business--소셜-비즈니스) | 소셜 비즈니스 | 2장 |
 | [Sociotechnical View](#sociotechnical-view--사회기술적-관점) | 사회기술적 관점 | 1장 |
+| [Software Outsourcing · Offshore · Software Packages](#alternative-ways-of-obtaining-software--소프트웨어를-얻는-세-외부-출처) | 소프트웨어 아웃소싱·패키지 | 5장 |
 | [Strategic Business Objectives](#strategic-business-objectives--여섯-전략적-비즈니스-목표) | 여섯 전략적 목표 | 1장 |
 | [Survival](#survival--생존) | 생존 | 1장 |
 | [Switching Cost](#switching-cost--전환-비용) | 전환 비용 | 3장 |
@@ -2257,6 +2843,7 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | [Systems Analyst](#systems-analyst--시스템-분석가) | 시스템 분석가 | 2장 |
 | [Tacit / Explicit Knowledge](#tacit-knowledge--explicit-knowledge--암묵지형식지) | 암묵지·형식지 | 2장 |
 | [Taxonomy · Tagging · Metadata · Provenance](#ai-ready-content--ai가-쓸-수-있는-콘텐츠) | 분류 체계·태깅·메타데이터·출처 | 2장 |
+| [TCO](#tco--total-cost-of-ownership--총소유비용) | 총소유비용 | 5장 |
 | [Technical Approach](#technical-approach--기술적-접근) | 기술적 접근 | 1장 |
 | [Time Shifting / Space Shifting](#time-shifting--space-shifting--시간장소-제약의-완화) | 시간·장소 제약 완화 | 1장 |
 | [Time/Space Matrix](#timespace-collaboration-matrix--시간공간-협업-매트릭스) | 시간·공간 협업 매트릭스 | 2장 |
@@ -2266,10 +2853,12 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | [Value Chain Model](#value-chain-model--가치사슬-모형) | 가치사슬 모형 | 3장 |
 | [Value Web](#value-web--가치-웹) | 가치 웹 | 3장 |
 | [Virtual Company](#virtual-company--가상-기업) | 가상 기업 | 3장 |
+| [Web Services · XML](#web-services--xml--웹-서비스와-xml) | 웹 서비스·XML | 5장 |
+| [Wintel PC](#5-1-it-인프라의-정의와-진화) | 윈텔 PC | 5장 |
 
 ## 확인 필요 · 출처 메모
 
-이 문서는 1–5강 노트와 수업 슬라이드 PDF의 내용만으로 썼다. 아래 항목은 자료끼리 다르거나, 자료만으로 확정할 수 없거나, 강의 시점 이후 바뀌었을 수 있어 **단정하지 않았다**.
+이 문서는 1–6강 노트와 수업 슬라이드 PDF의 내용만으로 썼다. 아래 항목은 자료끼리 다르거나, 자료만으로 확정할 수 없거나, 강의 시점 이후 바뀌었을 수 있어 **단정하지 않았다**.
 
 **자료 사이의 판본 차이** — 해당 개념 카드에 두 판본을 함께 적었다.
 
@@ -2281,6 +2870,8 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 | Product differentiation 사례 | 슬라이드는 Google·Nike·Apple, 교재 Table 3.4는 Uber·Nike·Apple | [3장 Slide 33](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-33--low-cost-leadership--product-differentiation) |
 | Synergy 사례 | 슬라이드는 Bank of New York–JP Morgan Chase·Google–YouTube, 교재는 Bank of America–Countrywide·Amazon–MGM | [3장 Slide 41](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-41--synergies) |
 | 슬라이드 파일 판본 | Chapter 1·2 슬라이드 파일명은 17판이지만 18판 변경점과 2025년 사례가 추가되어 있다 | [1장 노트 머리말](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01#학습-경로--chapter-1-필기본) |
+| 5장 PDF 두 판본 | Sec 1·2 수업본은 슬라이드 1–22만 담은 앞선 배포본이고, 전체본(43장)에만 NOS software 약어, 웹 호스팅 정의(maintain websites for fee-paying clients), software integration의 “새 요소끼리도”, Microsoft Windows Server 회사명이 있다. 이 문서는 전체본 문구를 따랐다 | [5장 노트 머리말](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#학습-경로) |
+| 5장 학습목표 번호 | Slide 2의 career relevance에 번호 “5.8”이 한 번 더 찍혀 있다(슬라이드 오타). 5.8은 IT infrastructure for AI | [5장 Slide 2](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-2--learning-objectives) |
 
 **자료만으로 확정할 수 없는 것**
 
@@ -2289,6 +2880,12 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 - **교재 표기 “FX”와 “Sam Bankman-Friedman”** — 노트는 교재 표기를 그대로 옮겼다. 일반적으로 알려진 표기(FTX, Sam Bankman-Fried)와 다르므로 교재 원문 표기를 확인할 것. 이 문서는 이 사례의 세부 사실을 새로 적지 않았다. → [4장 Slide 5](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05#slide-5--itis-related-ethical-issues-12)
 - **Value chain 본원적 활동의 순서** — 3장 노트의 개념 박스(입고·운영·판매·서비스·출고)와 교재 그림 Figure 3.9의 칸 배치를 따랐다. 일반적인 Porter 모형 소개에서는 출고 물류를 운영 다음에 두는 경우가 많으므로, 순서 자체를 묻는 문제가 나오면 교재 그림을 기준으로 확인할 것. → [3장 Slide 38](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04#slide-38--figure-39-value-chain-model)
 
+- **5장 교재 보충 항목**(Moore's law, law of mass digital storage, Metcalfe's law, 통신 비용·표준, multicore processor) — 5장 노트가 “이번 18판 슬라이드에는 없음”으로 표시한 이전 판 교재 내용이다. 이 문서도 같은 **교재 보충** 표시를 붙였고, 시험 범위 포함 여부는 수업 공지로 확인할 것. → [5장 Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-10--evolution-of-it-infrastructure-cont-enterprise-cloud-and-mobile) · [Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-25--quantum-computing-and-green-computing)
+- **SAN·SOA** — 5장 노트와 슬라이드에 없는 교재 용어라 개념 카드 없이 짧은 용어 표에 “교재 보충”으로만 적었다. 뜻은 교재의 일반적인 정의를 짧게 옮긴 것이므로 교재 원문으로 확인할 것. → [5장 Slide 19](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-19--data-management-and-storage) · [Slide 33](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-33--web-services-and-xml)
+- **Grab 오프닝 케이스의 Problem** — 슬라이드에서 빈칸(수업에서 채우는 부분)이라 이 문서는 노트의 해석(수요가 급증해도 멈추지 않는 시스템)만 적었다. → [5장 Slide 4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-4--opening-case-southeast-asias-grab)
+- **5장 수치의 기준 연도** — 인프라 산업 규모(2024년 5.06조 달러)와 하드웨어·전사 SW·통신 지출(2020년 예상치)은 기준 연도가 다르다. 슬라이드·교수님 메모 표기 그대로 옮겼다. 메인프레임 시대는 1959년부터지만 IBM 최초 메인프레임 도입은 1958년으로 적혀 있는 것도 슬라이드 표기 그대로다. → [5장 Slide 5](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-5--defining-it-infrastructure) · [Slide 9](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-9--evolution-of-it-infrastructure-mainframe-pc-clientserver) · [Slide 16](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-16--computer-hardware-platforms)
+- **교재 쪽수(p.189 클라우드 다섯 특징, p.191 public·private)** — 판서에 적힌 쪽수로, 교재 판본·인쇄본에 따라 다를 수 있다. → [5장 Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-27--cloud-computing)
+
 **강의 시점 사실과 현재 법·제도의 차이** — 시험 답은 강의 자료 기준으로 쓴다.
 
 - **GDPR 벌금 표기** — 슬라이드는 “2,000만 달러 또는 4% of global daily revenue”로 적었지만, GDPR 원문 제83조 5항은 ==red:최대 2,000만 유로 또는 직전 회계연도 전 세계 연간 매출의 4% 중 큰 금액==이다(출처: [EUR-Lex, Regulation (EU) 2016/679 Art. 83](https://eur-lex.europa.eu/eli/reg/2016/679/oj)). 시험에서 슬라이드 표기를 그대로 요구하는지는 확인 필요.
@@ -2296,7 +2893,7 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 - **EU Digital Markets Act·Google 반독점 판결·EU AI Act** — 교재(18판) 시점의 서술이다. 이후 진행 상황은 이 문서에서 다루지 않는다.
 - **교수님 메모로만 있는 수치**(예: SOX 기록 보관 5년, JCPenney 셔츠 재고 거의 0) — 노트에 “교수님 메모”로 표시된 그대로 옮겼다.
 
-**이 문서에서 새로 만든 것** — 카페·병원 장비 같은 **가상 예시**와, 개념도의 배치·화살표 이름표(포함·지원·영향 등)는 이해를 돕기 위해 이 문서에서 만든 것이다. 개념도는 `scripts/generate-mis-glossary-diagrams.mjs`로 다시 생성할 수 있다.
+**이 문서에서 새로 만든 것** — 카페·병원 장비 같은 **가상 예시**와, 개념도의 배치·화살표 이름표(포함·지원·영향 등)는 이해를 돕기 위해 이 문서에서 만든 것이다. 1–4장 개념도는 `scripts/generate-mis-glossary-diagrams.mjs`로 다시 생성할 수 있다. 5장 개념도(mis-gl-5*)와 5장 띠를 더한 전체 지도는 같은 레이아웃 도구(`scripts/mis-glossary-kit.mjs`)로 만들었지만 아직 그 생성 스크립트에 들어 있지 않으므로, 스크립트를 다시 돌리면 전체 지도에서 5장 띠가 빠진다.
 
 ## 장별 총정리
 
@@ -2307,6 +2904,8 @@ IT가 조직의 크기·계층·저항에 미치는 영향을 묶었다. 원문:
 **3장**은 ==blue:기술적·행동적 정의(보완) · 루틴 ⊂ 프로세스 ⊂ 기업 · 거래 비용(바깥) vs 대리인 비용(안쪽) · 변화 저항 네 요소 동시 조정 · 다섯 힘(분석) → 네 전략(대응) · 가치사슬(기업 내부) → 가치 웹(같은 산업) → 생태계(여러 산업)==을 분석 수준별로 기억한다.
 
 **4장**은 ==blue:개인 → 사회 → 정치로 번지는 파장 · 다섯 도덕적 차원 · 책임 → 추적 → 배상 → 적법 절차 · 분석 5단계와 6원칙 · FIP(핵심 Notice·Choice)와 Opt-in · 네 가지 IP 보호 · 실패의 주원인은 입력 데이터 · Crime(불법) vs Abuse(비윤리) · 격차와 건강 위험==을 권리·책임 중심으로 묶는다.
+
+**5장**은 ==blue:장비 + 전사 서비스 플랫폼 · Mainframe 1959 → PC 1981 → Client/Server 1983 → Enterprise 1992 → Cloud·Mobile 2000(모두 현재까지) · 하·오·엔·데·네·인·컨 · 소비자화 ⊃ BYOD → MDM · 가상화(1 ↔ 여럿) → 클라우드(IaaS 운영 · PaaS 개발 · SaaS 사용 / public·private·hybrid) → 엣지 · 오픈소스·Java·HTML5·웹 서비스(기반 XML) · 패키지·아웃소싱·SaaS + SLA · 확장성·거버넌스·rent vs buy · TCO(HW·SW 약 20%) · 내부 셋 + 외부 셋 투자 요인==으로 정리한다. 핵심 문장: ==인프라는 소유하든 빌리든 가능해지는 서비스와 총소유비용으로 평가한다.==
 
 > [!EXAM]
 > 마지막 점검은 세 문장으로 한다. `이 개념의 대상은 누구인가?` · `무엇을 입력받아 무엇을 바꾸는가?` · `누구의 비용·권리·책임과 연결되는가?` 막히는 개념은 [헷갈리는 개념 비교](#헷갈리는-개념-비교)에서 짝을 찾아 기준부터 다시 말해 본다.
