@@ -14,7 +14,7 @@ test("static production HTML includes MDX features, one H1, real TOC ids and no 
     context.skip("Routes are rendered dynamically from editable local files");
     return;
   }
-  for (const kind of ["lectures", "assignments"] as const) {
+  for (const kind of ["lectures"] as const) {
     for (const doc of readCollection(kind)) {
       const html = readFileSync(path.join(serverDir, `${doc.path.slice(1)}.html`), "utf8");
       assert.equal((html.match(/<h1(?:\s|>)/g) ?? []).length, 1, doc.path);

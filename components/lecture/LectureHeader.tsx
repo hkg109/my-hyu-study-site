@@ -39,8 +39,8 @@ export function LectureHeader({ lecture, hideDescription = false }: { lecture: C
   };
 
   return <header className="lecture-header">
-    <div className="eyebrow">{lecture.kind === "lectures" ? `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / ${lecture.order}강` : lecture.kind === "practice" ? `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / 족보 ${lecture.order}` : "과제"}</div>
-    {isAdmin && (lecture.kind === "lectures" || lecture.kind === "practice") ? <input className="admin-title-input" value={title} onChange={event => updateTitle(event.target.value)} aria-label={`${lecture.kind === "practice" ? "족보" : "강의"} 제목 수정`} /> : <h1>{title}</h1>}
+    <div className="eyebrow">{lecture.kind === "lectures" ? `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / ${lecture.order}강` : `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / 족보 ${lecture.order}`}</div>
+    {isAdmin ? <input className="admin-title-input" value={title} onChange={event => updateTitle(event.target.value)} aria-label={`${lecture.kind === "practice" ? "족보" : "강의"} 제목 수정`} /> : <h1>{title}</h1>}
     {!hideDescription && (isAdmin && lecture.kind === "practice" ? <textarea className="admin-description-input" rows={2} value={description} onChange={event => updateDescription(event.target.value)} aria-label="족보 설명 수정" /> : <p className="lead">{description}</p>)}
     {lecture.kind !== "practice" && <div className="lecture-metadata">{lecture.duration && <span>{lecture.duration}분</span>}{lecture.difficulty && <span>{{ Beginner: "입문", Intermediate: "중급", Advanced: "심화" }[lecture.difficulty]}</span>}{lecture.tags?.map(tag => <span key={tag}>#{tag}</span>)}</div>}
   </header>;

@@ -44,24 +44,13 @@ export async function POST(request: Request, { params }: { params: Promise<{ slu
     if (typeof body.title === "string") {
       const title = body.title.trim();
       if (!title || title.length > 120) return Response.json({ error: "제목은 1~120자로 입력해 주세요." }, { status: 400 });
-      if (source.legacyKey) {
-        const titlesFile = path.resolve(process.cwd(), "content", "weeks", "titles.json");
-        let titles: Record<string, string> = {};
-        try { titles = JSON.parse(await readFile(titlesFile, "utf8")) as Record<string, string>; } catch { /* Recreate a missing legacy title map. */ }
-        titles[source.legacyKey] = title;
-        await writeFile(titlesFile, `${JSON.stringify(titles, null, 2)}\n`, "utf8");
-      } else {
-        const parsed = matter(await readFile(source.file, "utf8"));
-        parsed.data.title = title;
-        await writeFile(source.file, matter.stringify(parsed.content, parsed.data), "utf8");
-      }
+      const parsed = matter(await readFile(source.file, "utf8"));
+      parsed.data.title = title;
+      await writeFile(source.file, matter.stringify(parsed.content, parsed.data), "utf8");
     } else if (typeof body.content === "string" && Buffer.byteLength(body.content, "utf8") <= MAX_NOTE_BYTES) {
-      if (source.legacyKey) await writeFile(source.file, body.content, "utf8");
-      else {
-        const parsed = matter(await readFile(source.file, "utf8"));
-        parsed.content = body.content;
-        await writeFile(source.file, matter.stringify(parsed.content, parsed.data), "utf8");
-      }
+      const parsed = matter(await readFile(source.file, "utf8"));
+      parsed.content = body.content;
+      await writeFile(source.file, matter.stringify(parsed.content, parsed.data), "utf8");
     } else return Response.json({ error: "노트 내용이 올바르지 않거나 너무 큽니다." }, { status: 400 });
     const documentPath = `/lectures/${slug.join("/")}`;
     revalidatePath(documentPath); revalidatePath("/", "layout");

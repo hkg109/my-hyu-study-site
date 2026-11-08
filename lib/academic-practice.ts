@@ -35,7 +35,7 @@ function readSubjectFiles(gradeId: string, semesterId: string, subjectId: string
     const format = /<[A-Z][A-Za-z]*(?:\s|>)/.test(parsed.content) ? "mdx" as const : "md" as const;
     return {
       title: parsed.data.title.trim(), description: typeof parsed.data.description === "string" ? parsed.data.description : "",
-      week: 0, order, published: parsed.data.published,
+      order, published: parsed.data.published,
       gradeId, gradeName: catalogPath.grade.name, semesterId, semesterName: catalogPath.semester.name, subjectId, subjectName: catalogPath.subject.name,
       slug, path: `/practice/${slug.join("/")}`, kind: "practice" as const, content: parsed.content, format,
     };

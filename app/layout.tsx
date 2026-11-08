@@ -4,14 +4,14 @@ import "pretendard/dist/web/static/pretendard.css";
 import "@fontsource/jetbrains-mono/400.css";
 import "@fontsource/jetbrains-mono/600.css";
 import "./globals.css";
+import "./exam-paper.css";
 import { Providers } from "@/components/layout/Providers";
 import { AdminProvider } from "@/components/admin/AdminProvider";
 import { Header } from "@/components/layout/Header";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { AppShell } from "@/components/layout/AppShell";
-import { getAllLectures } from "@/lib/lectures";
+import { getAllExams, getAllLectures } from "@/lib/lectures";
 import { readCatalog } from "@/lib/catalog";
-import { readCollection, withoutBody } from "@/lib/content";
 import { isAdminViewer } from "@/lib/server/auth";
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const development = process.env.NODE_ENV === "development";
   if (development) await connection();
   const lectures = getAllLectures();
-  const exams = readCollection("practice").map(withoutBody);
+  const exams = getAllExams();
   const catalog = readCatalog();
   const shell = <>
     <a href="#main-content" className="skip-link">본문으로 바로가기</a>

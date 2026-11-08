@@ -22,8 +22,11 @@ npm start
 
 - `content/lectures/catalog.json`: 학년, 학기, 과목 이름과 순서
 - `content/lectures/<학년 ID>/<학기 ID>/<과목 ID>/lecture-*.md`: 새 강의 노트
-- `content/practice/*.md`: 화면의 `족보` 탭에 표시되는 Markdown
-- `content/weeks/*.md`: 개편 전에 작성한 기존 노트. 카탈로그의 `legacySource`를 통해 새 과목 구조 안에 표시됩니다.
+- `content/practice/<학년 ID>/<학기 ID>/<과목 ID>/exam-*.md`: 화면의 `족보` 탭에 표시되는 Markdown
+
+과목마다 `/lectures/<학년 ID>/<학기 ID>/<과목 ID>` 주소에 과목 페이지가 자동으로 생깁니다. 그 과목의 강의 노트, 진행률, 족보 목록을 한 화면에 보여 주며, 강의나 족보가 하나도 없는 학년·학기·과목은 방문자 화면에서 숨겨집니다(관리자 모드에서는 보입니다).
+
+족보 페이지의 **PDF로 저장**은 수능 시험지 양식(2단, 제 N 교시·과목 영역 머리말, 성명·수험번호 칸, ①~⑤ 선택지)으로 문제지를 만들고, 같은 양식의 정답표와 해설지를 붙입니다. 자세한 규칙은 [콘텐츠 관리 안내](docs/content-guide.md#족보-pdf-시험지-양식)를 참고하세요.
 
 자세한 작성법은 [콘텐츠 관리 안내](docs/content-guide.md)를 참고하세요.
 

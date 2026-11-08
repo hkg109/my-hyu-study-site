@@ -1,16 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from "node:fs";
-import { tmpdir } from "node:os";
-import path from "node:path";
-import { getDocument, readCollection, validateFrontmatter } from "../lib/content";
-import { getAllLectures, getPrevNextLecture } from "../lib/lectures";
+import { getDocument, readCollection } from "../lib/content";
+import { getAllExams, getAllLectures, getPrevNextLecture, getSubjects } from "../lib/lectures";
+import { findSubject, hasContent, subjectPathOf } from "../lib/subjects";
+import { parseRecent, pushRecent, RECENT_LIMIT } from "../lib/recent";
 import { getHeadings, markdownText } from "../lib/markdown";
 import { getSearchIndex } from "../lib/search";
 import { parseProgress } from "../lib/progress";
 import Fuse from "fuse.js";
-import { readWeeks } from "../lib/weeks";
-import { loadWeekFiles } from "../scripts/sync-weeks.mjs";
 
 test("published manifest hides drafts from routes, navigation and search", () => {
   const lectures = getAllLectures();
@@ -25,21 +22,6 @@ test("published manifest hides drafts from routes, navigation and search", () =>
   assert.equal(getDocument("lectures", ["week-02", "02-loop"]), undefined);
   assert.equal(getDocument("lectures", ["..", "..", "package"]), undefined);
   assert.ok(getSearchIndex().every(entry => !entry.path.endsWith("02-loop")));
-});
-
-test("plain Markdown is discovered without frontmatter or a React edit", () => {
-  const root = mkdtempSync(path.join(tmpdir(), "cpp-study-content-test-"));
-  try {
-    mkdirSync(path.join(root, "weeks"), { recursive: true });
-    writeFileSync(path.join(root, "weeks", "week-12.md"), '# 새 강의\n\n자동 반영되는 본문입니다.\n\n## 새로운 개념\n중괄호 {value}도 일반 텍스트입니다.');
-    writeFileSync(path.join(root, "weeks", "README.md"), "강의 파일이 아님");
-    const docs = readWeeks(loadWeekFiles(path.join(root, "weeks")), { "week-12": "별도로 설정한 제목" });
-    assert.equal(docs.length, 1);
-    assert.equal(docs[0].path, "/lectures/week-12");
-    assert.equal(docs[0].title, "별도로 설정한 제목");
-    assert.equal(docs[0].description, "자동 반영되는 본문입니다.");
-    assert.equal(docs[0].format, "md");
-  } finally { rmSync(root, { recursive: true, force: true }); }
 });
 
 test("MIS practice exams have complete questions and solutions with translations where provided", () => {
@@ -59,44 +41,7 @@ test("MIS practice exams have complete questions and solutions with translations
   }
 });
 
-test("each practice Markdown file has five Korean levels and hidden example solutions", context => {
-  // Only legacy week-based C++ practice files use this format; subject-based exams are checked above.
-  const practices = readCollection("practice").filter(doc => !doc.subjectId && doc.week <= 6);
-  if (!practices.length) { context.skip("No practice content has been added yet"); return; }
-  const levels = ["중하", "중", "중상", "상", "최상"];
-  assert.deepEqual(practices.map(doc => doc.week), [0, 1, 2, 3, 4, 5, 6]);
-  for (const practice of practices) {
-    assert.equal(practice.format, "mdx");
-    assert.equal(getHeadings(practice.content, "mdx").filter(heading => /^Q\d+\./.test(heading.text)).length, 5);
-    for (const level of levels) assert.match(practice.content, new RegExp(`\\*\\*난이도:\\*\\* ${level}(?:\\r?\\n)`));
-    assert.equal((practice.content.match(/<Answer>/g) ?? []).length, 5);
-    assert.equal((practice.content.match(/using namespace std;/g) ?? []).length, 5);
-  }
-});
-
-test("frontmatter rejects malformed values and unsafe submission protocols", () => {
-  const valid = { title: "조건문", description: "소개", week: 2, order: 1, published: true };
-  assert.equal(validateFrontmatter(valid, "fixture").week, 2);
-  assert.equal(validateFrontmatter({ ...valid, week: 0 }, "fixture").week, 0);
-  assert.equal(validateFrontmatter({ ...valid, description: "" }, "fixture").description, "");
-  assert.throws(() => validateFrontmatter({ ...valid, published: "false" }, "fixture"), /published/);
-  assert.throws(() => validateFrontmatter({ ...valid, week: -1 }, "fixture"), /week/);
-  assert.throws(() => validateFrontmatter({ ...valid, tags: "C++" }, "fixture"), /tags/);
-  assert.throws(() => validateFrontmatter({ ...valid, submissionUrl: "javascript:alert(1)" }, "fixture"), /submissionUrl/);
-  assert.throws(() => validateFrontmatter({ ...valid, duration: -1 }, "fixture"), /duration/);
-});
-
-test("duplicate route and order fail loudly", () => {
-  const root = mkdtempSync(path.join(tmpdir(), "cpp-study-duplicate-test-"));
-  try {
-    const directory = path.join(root, "weeks");
-    mkdirSync(directory, { recursive: true });
-    for (const name of ["week-1.md", "week-01-01.md"]) writeFileSync(path.join(directory, name), "# 중복 강의\n\n내용");
-    assert.throws(() => readWeeks(loadWeekFiles(directory)), /중복/);
-  } finally { rmSync(root, { recursive: true, force: true }); }
-});
-
-test("previous/next navigation crosses week boundaries and handles endpoints", context => {
+test("previous/next navigation crosses subject boundaries and handles endpoints", context => {
   const lectures = getAllLectures();
   if (lectures.length < 2) { context.skip("At least two published weeks needed"); return; }
   assert.equal(getPrevNextLecture(lectures[0].slug).prev, undefined);
@@ -127,7 +72,36 @@ test("malformed or stale progress does not break the application", () => {
   assert.deepEqual(parseProgress(null), {});
   assert.deepEqual(parseProgress("not json"), {});
   assert.deepEqual(parseProgress("[]"), {});
-  assert.deepEqual(parseProgress('{"week-04":true}'), { "week-04": true });
-  assert.deepEqual(parseProgress('{"week-00-02":true}'), { "week-00-02": true });
-  assert.deepEqual(parseProgress('{"week-01/01-environment":true,"week-01/02-test":"yes","__proto__":true}'), { "week-01/01-environment": true });
+  // Keys from the retired week-based notes are dropped.
+  assert.deepEqual(parseProgress('{"week-04":true}'), {});
+  assert.deepEqual(parseProgress('{"grade-01/semester-01/subject-a/lecture-01":true,"grade-01/semester-01/subject-a/lecture-02":"yes","__proto__":true}'), { "grade-01/semester-01/subject-a/lecture-01": true });
+});
+
+test("every published lecture and exam belongs to exactly one subject page, and empty subjects are only kept for the admin", () => {
+  const subjects = getSubjects();
+  const lectures = getAllLectures();
+  const exams = getAllExams();
+  assert.equal(subjects.reduce((sum, subject) => sum + subject.lectures.length, 0), lectures.length);
+  assert.equal(subjects.reduce((sum, subject) => sum + subject.exams.length, 0), exams.length);
+  for (const document of [...lectures, ...exams]) {
+    const home = subjectPathOf(document);
+    assert.ok(home, document.path);
+    const subject = findSubject(subjects, home.split("/").slice(2));
+    assert.ok(subject && hasContent(subject), document.path);
+  }
+  assert.equal(findSubject(subjects, ["..", "..", "package"]), undefined);
+  assert.equal(findSubject(subjects, lectures[0].slug), undefined);
+});
+
+test("recent visits keep the newest unique document paths only", () => {
+  assert.deepEqual(parseRecent(null), []);
+  assert.deepEqual(parseRecent("{}"), []);
+  assert.deepEqual(parseRecent('["/lectures/a/b/c/lecture-01","/lectures/a/b/c/lecture-01","/assignments/week-01","javascript:alert(1)",3]'), ["/lectures/a/b/c/lecture-01"]);
+  const first = pushRecent([], "/lectures/a/b/c/lecture-01");
+  const second = pushRecent(first, "/practice/a/b/c/exam-01");
+  assert.deepEqual(pushRecent(second, "/lectures/a/b/c/lecture-01"), ["/lectures/a/b/c/lecture-01", "/practice/a/b/c/exam-01"]);
+  assert.deepEqual(pushRecent(second, "/review"), second);
+  let many: string[] = [];
+  for (let index = 0; index < RECENT_LIMIT + 3; index += 1) many = pushRecent(many, `/lectures/a/b/c/lecture-${index}`);
+  assert.equal(many.length, RECENT_LIMIT);
 });

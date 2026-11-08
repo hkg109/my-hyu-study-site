@@ -9,6 +9,7 @@ import { useAdmin } from "@/components/admin/AdminContext";
 import { useEffect, useState } from "react";
 import { forgetNoteDraft, NOTE_TITLE_EVENT } from "@/lib/note-draft";
 import { CreateDocumentDialog, type CreateTarget } from "@/components/admin/CreateDocumentDialog";
+import { subjectPath } from "@/lib/subjects";
 
 type Level = "grade" | "semester" | "subject";
 
@@ -90,15 +91,31 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
   const addButton = (label: string, onClick: () => void) => isAdmin && <button type="button" className="catalog-icon-button" disabled={pending} aria-label={`${label} 추가`} onClick={event => { event.preventDefault(); event.stopPropagation(); onClick(); }}><Plus size={13} /></button>;
   const deleteButton = (label: string, onClick: () => void) => isAdmin && <button type="button" className="catalog-icon-button catalog-delete-button" disabled={pending} aria-label={`${label} 삭제`} onClick={event => { event.preventDefault(); event.stopPropagation(); onClick(); }}><Trash2 size={12} /></button>;
 
+  // Visitors only see categories that hold something; the admin also sees empty ones so they can fill them.
+  const tree = [...catalog.grades].sort((a, b) => a.order - b.order).map(grade => ({
+    grade,
+    semesters: [...grade.semesters].sort((a, b) => a.order - b.order).map(semester => ({
+      semester,
+      subjects: [...semester.subjects].sort((a, b) => a.order - b.order).map(subject => ({
+        subject,
+        path: subjectPath(grade.id, semester.id, subject.id),
+        documents: documents.filter(document => document.gradeId === grade.id && document.semesterId === semester.id && document.subjectId === subject.id),
+      })).filter(item => isAdmin || item.documents.length > 0),
+    })).filter(item => isAdmin || item.subjects.length > 0),
+  })).filter(item => isAdmin || item.semesters.length > 0);
+
   return <nav className="sidebar-content" aria-label="강의 탐색">
     <div className="sidebar-admin-heading"><span className="nav-label">{practiceMode ? "족보 목록" : "강의 목록"}</span>{addButton("학년", () => catalogAction("add", "grade"))}</div>
-    {[...catalog.grades].sort((a, b) => a.order - b.order).map(grade => <details open className="catalog-grade" key={grade.id}>
+    {tree.map(({ grade, semesters }) => <details open className="catalog-grade" key={grade.id}>
       <summary><span>{grade.name}</span><span className="catalog-actions">{editButton(grade.name, () => catalogAction("rename", "grade", grade.name, { gradeId: grade.id }))}{deleteButton(grade.name, () => deleteCategory("grade", grade.name, { gradeId: grade.id }))}{addButton("학기", () => catalogAction("add", "semester", undefined, { gradeId: grade.id }))}<ChevronDown size={14} /></span></summary>
-      {[...grade.semesters].sort((a, b) => a.order - b.order).map(semester => <details open className="catalog-semester" key={semester.id}>
+      {semesters.map(({ semester, subjects }) => <details open className="catalog-semester" key={semester.id}>
         <summary><span>{semester.name}</span><span className="catalog-actions">{editButton(semester.name, () => catalogAction("rename", "semester", semester.name, { gradeId: grade.id, semesterId: semester.id }))}{deleteButton(semester.name, () => deleteCategory("semester", semester.name, { gradeId: grade.id, semesterId: semester.id }))}{addButton("과목", () => catalogAction("add", "subject", undefined, { gradeId: grade.id, semesterId: semester.id }))}<ChevronDown size={13} /></span></summary>
-        {[...semester.subjects].sort((a, b) => a.order - b.order).map(subject => {
-          const subjectDocuments = documents.filter(document => document.gradeId === grade.id && document.semesterId === semester.id && document.subjectId === subject.id);
-          return <details open={subjectDocuments.some(document => document.path === pathname)} className="catalog-subject" key={subject.id}><summary><span>{subject.name}</span><span className="catalog-actions">{editButton(subject.name, () => catalogAction("rename", "subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{deleteButton(subject.name, () => deleteCategory("subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{addButton(practiceMode ? "족보" : "노트", () => addDocument({ gradeId: grade.id, semesterId: semester.id, subjectId: subject.id, subjectName: subject.name }))}<ChevronDown size={12} /></span></summary>
+        {subjects.map(({ subject, path: subjectHome, documents: subjectDocuments }) => {
+          const onSubjectHome = pathname === subjectHome;
+          return <details open={onSubjectHome || subjectDocuments.some(document => document.path === pathname)} className="catalog-subject" key={subject.id}><summary>
+            {/* The name opens the subject page; the rest of the row folds the list. */}
+            <Link prefetch={false} href={practiceMode ? `${subjectHome}#practice` : subjectHome} onClick={onNavigate} className={`catalog-subject-link${onSubjectHome ? " active" : ""}`} aria-current={onSubjectHome ? "page" : undefined}>{subject.name}</Link>
+            <span className="catalog-actions">{editButton(subject.name, () => catalogAction("rename", "subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{deleteButton(subject.name, () => deleteCategory("subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{addButton(practiceMode ? "족보" : "노트", () => addDocument({ gradeId: grade.id, semesterId: semester.id, subjectId: subject.id, subjectName: subject.name }))}<ChevronDown size={12} /></span></summary>
             <div>{subjectDocuments.map(document => <div className="side-document-row" key={document.path}><Link prefetch={false} href={document.path} onClick={onNavigate} className={`side-link ${pathname === document.path ? "active" : ""}`} aria-current={pathname === document.path ? "page" : undefined}><span className="side-order">{String(document.order).padStart(2, "0")}</span><span>{editedTitles[document.path] ?? document.title}</span>{!practiceMode && progress[document.slug.join("/")] && <Check size={14} aria-label="학습 완료" className="trailing" />}</Link>{isAdmin && <button type="button" className="catalog-icon-button catalog-delete-button side-document-delete" disabled={pending} aria-label={`${editedTitles[document.path] ?? document.title} 삭제`} onClick={() => deleteDocument(document)}><Trash2 size={12} /></button>}</div>)}</div>
           </details>;
         })}

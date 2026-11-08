@@ -3,7 +3,6 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
-import { readAcademicLectures } from "@/lib/academic-lectures";
 import { findCatalogPath, readCatalog } from "@/lib/catalog";
 import { nextDocumentSlot } from "@/lib/note-files";
 import { findTemplate, type TemplateKind } from "@/lib/note-templates";
@@ -35,9 +34,7 @@ export async function createDocumentFromTemplate(kind: TemplateKind, request: Re
   if (!findCatalogPath(readCatalog(), gradeId, semesterId, subjectId)) return fail(404, "과목을 찾을 수 없습니다.");
 
   const directory = path.resolve(process.cwd(), "content", kind, gradeId, semesterId, subjectId);
-  // Legacy week-based notes have no files here but still occupy lecture orders.
-  const legacyOrders = kind === "lectures" ? readAcademicLectures().filter(item => item.gradeId === gradeId && item.semesterId === semesterId && item.subjectId === subjectId).map(item => item.order) : [];
-  const { order, id } = nextDocumentSlot(kind, directory, legacyOrders);
+  const { order, id } = nextDocumentSlot(kind, directory, []);
   const target = path.resolve(directory, `${id}.md`);
   if (!target.startsWith(`${directory}${path.sep}`)) return fail(400, "저장 경로가 올바르지 않습니다.");
   const content = matter.stringify(template.body(kind), { title, description: "", order, published: true, ...(accessKey && { accessKey }) });

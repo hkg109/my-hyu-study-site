@@ -4,14 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.mjs",
-    "prebuild": "node scripts/sync-weeks.mjs",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "pretypecheck": "node scripts/sync-weeks.mjs",
     "typecheck": "tsc --noEmit",
-    "pretest": "node scripts/sync-weeks.mjs",
     "test": "tsx --test tests/*.test.ts"
   },
   "engines": {

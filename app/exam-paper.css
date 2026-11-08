@@ -1,0 +1,89 @@
+/* CSAT-style exam paper and answer booklet. lib/exam-paper.ts builds the markup when an exam page is printed. */
+.exam-paper-root { display:none; }
+
+@page exam-paper {
+  size:A4;
+  margin:12mm 12mm 14mm;
+  @top-center { content:"HJS STUDY"; vertical-align:bottom; color:#222; font:700 8.5pt "Pretendard",sans-serif; letter-spacing:.04em; }
+  @top-right { content:counter(page); vertical-align:bottom; color:#000; font:italic 700 17pt "Times New Roman",Georgia,serif; }
+  @bottom-center { content:"26학번 한지석 제공"; color:#666; font:550 7pt "Pretendard",sans-serif; letter-spacing:.04em; }
+}
+/* The first page carries the masthead, which has its own page number. */
+@page exam-paper:first {
+  @top-center { content:none; }
+  @top-right { content:none; }
+}
+
+@media print {
+  html.print-exam-paper .printable-document { page:exam-paper; }
+  html.print-exam-paper .printable-document > :not(.exam-paper-root) { display:none!important; }
+  html.print-exam-paper .exam-paper-root { display:block; color:#000; background:#fff; font-family:"Noto Serif KR","Nanum Myeongjo","AppleMyungjo","Batang","바탕",serif; font-size:9.6pt; line-height:1.62; word-break:keep-all; overflow-wrap:anywhere; }
+  .exam-paper + .exam-paper { break-before:page; }
+
+  /* Masthead: 제 N 교시 · 과목 영역 · 성명/수험번호 */
+  .exam-masthead { font-family:"Pretendard",sans-serif; border-bottom:1.8pt solid #000; padding-bottom:1.6mm; break-after:avoid; }
+  .exam-kicker { margin:0 0 1.4mm; text-align:center; font-size:9.5pt; font-weight:700; letter-spacing:-.01em; }
+  .exam-title-row { display:grid; grid-template-columns:30mm 1fr 30mm; align-items:center; }
+  .exam-period { justify-self:start; padding:1.1mm 3.6mm; border:1.1pt solid #000; border-radius:999px; font-size:11pt; font-weight:800; letter-spacing:.06em; white-space:nowrap; }
+  .exam-title { margin:0; text-align:center; font-size:25pt; font-weight:900; line-height:1.15; letter-spacing:-.03em; }
+  .exam-title small { font-size:15pt; font-weight:800; letter-spacing:-.02em; }
+  .exam-id-row { display:flex; align-items:center; gap:5mm; margin-top:2.6mm; }
+  .exam-id-field { display:flex; align-items:stretch; }
+  .exam-id-label { display:flex; align-items:center; padding:0 2.6mm; border:.8pt solid #000; background:#e4e4e4; font-size:8pt; font-weight:700; letter-spacing:.12em; }
+  .exam-id-box { width:5mm; height:6mm; border:.8pt solid #000; border-left:0; }
+  .exam-id-box.wide { width:26mm; }
+  .exam-id-dash { display:flex; align-items:center; padding:0 1.2mm; border-top:.8pt solid #000; border-bottom:.8pt solid #000; font-size:8pt; }
+  .exam-answer-band { flex:1; padding:1mm 0; border:1pt solid #000; background:#e4e4e4; text-align:center; font-size:12pt; font-weight:800; letter-spacing:.5em; }
+  .exam-page-number { margin-left:auto; min-width:8mm; text-align:right; font:italic 700 20pt "Times New Roman",Georgia,serif; line-height:1; }
+
+  /* Two columns divided by a rule, as on a printed test. */
+  .exam-columns { column-count:2; column-gap:9mm; column-rule:.6pt solid #000; margin-top:5mm; }
+  .exam-section { margin:0 0 3.5mm; padding:1mm 2.4mm; border:.7pt solid #000; background:#f0f0f0; font:700 8.6pt/1.45 "Pretendard",sans-serif; break-after:avoid; break-inside:avoid; }
+  .exam-q { margin:0 0 8mm; break-inside:avoid; }
+  .exam-q p,.exam-a p { margin:0 0 1.5mm; }
+  .exam-q-num { margin-right:.4mm; font-family:"Pretendard",sans-serif; font-weight:800; }
+  .exam-q-points { font-family:"Pretendard",sans-serif; font-size:8.4pt; font-weight:700; white-space:nowrap; }
+  .exam-q-content>p:first-child { text-indent:0; }
+  .exam-choices { display:flex; flex-direction:column; gap:.9mm; margin:2mm 0 0; }
+  .exam-choices.pairs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.9mm 4mm; }
+  .exam-choices.inline { flex-direction:row; flex-wrap:wrap; gap:.9mm 6mm; }
+  .exam-choice { display:flex; align-items:baseline; gap:1.3mm; break-inside:avoid; }
+  .exam-choice-mark { flex-shrink:0; font-family:"Pretendard",sans-serif; }
+  .exam-write { height:15mm; margin-top:2.4mm; padding:1mm 2mm; border:.6pt solid #000; font:700 7.5pt "Pretendard",sans-serif; }
+  .exam-end { margin:4mm 0 0; padding-top:2mm; border-top:.6pt solid #000; text-align:center; font:700 8.5pt "Pretendard",sans-serif; break-before:avoid; }
+
+  /* Content inside questions and explanations. */
+  .exam-paper h2,.exam-paper h3,.exam-paper h4,.exam-paper h5,.exam-paper h6 { margin:2.4mm 0 1.2mm; font:800 9.4pt/1.4 "Pretendard",sans-serif; break-after:avoid; }
+  .exam-paper ul,.exam-paper ol { margin:1mm 0 1.6mm; padding-left:5mm; }
+  .exam-paper li { margin:.4mm 0; }
+  .exam-paper a { color:inherit; text-decoration:none; }
+  .exam-paper blockquote { margin:2mm 0; padding:2mm 3mm; border:.6pt solid #000; }
+  .exam-paper aside { margin:2mm 0; padding:2mm 3mm; border:.6pt solid #000; background:none; }
+  .exam-paper aside::before { content:none; }
+  .exam-paper img,.exam-paper svg { max-width:100%; height:auto; break-inside:avoid; }
+  .exam-paper .table-scroll { overflow:visible; margin:2mm 0; border:0; }
+  .exam-paper table { width:100%; border-collapse:collapse; font-size:8pt; line-height:1.45; }
+  .exam-paper th,.exam-paper td { min-width:0; padding:.9mm 1.4mm; border:.5pt solid #000; vertical-align:top; color:#000; background:none; }
+  .exam-paper th { background:#ededed; font-family:"Pretendard",sans-serif; }
+  .exam-paper :not(pre)>code { padding:0 .6mm; border:.4pt solid #888; border-radius:1px; background:none; color:#000; font:8pt "JetBrains Mono",monospace; }
+  .exam-paper .code-block,.exam-paper figure[data-rehype-pretty-code-figure] { margin:2mm 0; border:.6pt solid #000; border-radius:0; background:#fff; box-shadow:none; break-inside:avoid; }
+  .exam-paper figcaption { padding:.8mm 2mm; border-bottom:.5pt solid #000; background:#efefef; color:#000; font:600 7pt "Pretendard",sans-serif; }
+  .exam-paper pre { margin:0; padding:1.8mm 2.2mm; overflow:visible; background:#fff!important; white-space:pre-wrap; line-height:1.38; }
+  .exam-paper pre code { font:7.4pt "JetBrains Mono",monospace; white-space:pre-wrap; overflow-wrap:anywhere; }
+  .exam-paper .code-block [data-line] { padding:0; }
+  html.print-exam-paper .exam-paper-root .exam-paper pre code span[style],html.print-exam-paper .exam-paper-root .exam-paper pre code { color:#000!important; background:none!important; }
+  .exam-blank { display:inline-block; min-width:14mm; border-bottom:.6pt solid #000; }
+  .exam-blank.filled { padding:0 1mm; font-weight:700; }
+
+  /* Answer booklet */
+  .exam-key { display:flex; flex-direction:column; gap:1.6mm; margin:4mm 0 0; break-inside:avoid; }
+  .exam-key table { width:100%; table-layout:fixed; border-collapse:collapse; font:600 8.4pt/1.35 "Pretendard",sans-serif; text-align:center; }
+  .exam-key th { width:11mm; background:#e4e4e4; }
+  .exam-key th,.exam-key td { padding:.8mm .4mm; border:.6pt solid #000; overflow-wrap:anywhere; word-break:break-all; }
+  .exam-key tr:last-child td { font-size:11pt; font-weight:800; }
+  .exam-a { margin:0 0 5mm; font-size:8.8pt; line-height:1.6; }
+  .exam-a-head { display:flex; flex-wrap:wrap; align-items:baseline; gap:.6mm 1.4mm; margin:0 0 1.2mm; padding-bottom:.8mm; border-bottom:.5pt solid #000; font-family:"Pretendard",sans-serif; break-after:avoid; }
+  .exam-a-topic { font-weight:700; }
+  .exam-a-key { margin-left:auto; padding:0 1.4mm; border:.6pt solid #000; font-size:8pt; font-weight:800; white-space:nowrap; }
+  .exam-a-body.muted { color:#555; }
+}

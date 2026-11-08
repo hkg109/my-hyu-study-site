@@ -10,5 +10,5 @@ test("lecture and practice PDFs use a page-margin watermark with an iPad fallbac
   assert.match(css, /\.printable-document\s*\{\s*page:study-document;/);
   assert.match(css, /@supports \(-webkit-touch-callout: none\)\s*\{\s*\.document-print-watermark\s*\{\s*display:block;/);
   assert.doesNotMatch(css, /\.document-print-watermark\s*\{[^}]*position:fixed/);
-  assert.match(documentPage, /isPrintable \? " printable-document" : ""/);
+  assert.match(documentPage, /className="document-main printable-document"/);
 });
