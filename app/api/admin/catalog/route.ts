@@ -1,8 +1,8 @@
+import { existsSync, readdirSync } from "node:fs";
 import { writeFile } from "node:fs/promises";
+import path from "node:path";
 import { revalidatePath } from "next/cache";
 import { catalogFile, readCatalog } from "@/lib/catalog";
-import { readAcademicLectures } from "@/lib/academic-lectures";
-import { readAcademicPractice } from "@/lib/academic-practice";
 import { adminGuard } from "@/lib/server/auth";
 
 type Level = "grade" | "semester" | "subject";
@@ -37,9 +37,12 @@ export async function POST(request: Request) {
       grade.semesters = grade.semesters.filter(item => item.id !== semester.id);
     } else {
       if (!semester || !subject) return Response.json({ error: "삭제할 과목을 찾을 수 없습니다." }, { status: 404 });
-      const hasLectures = readAcademicLectures().some(item => item.gradeId === grade?.id && item.semesterId === semester.id && item.subjectId === subject.id);
-      const hasExams = readAcademicPractice().some(item => item.gradeId === grade?.id && item.semesterId === semester.id && item.subjectId === subject.id);
-      if (hasLectures || hasExams) return Response.json({ error: "강의 노트 또는 족보가 남아 있는 과목은 삭제할 수 없습니다." }, { status: 409 });
+      // Drafts count too, or deleting the subject would hide them from the admin.
+      const hasFiles = (kind: "lectures" | "practice") => {
+        const directory = path.join(process.cwd(), "content", kind, grade!.id, semester.id, subject.id);
+        return existsSync(directory) && readdirSync(directory).some(name => /\.mdx?$/.test(name));
+      };
+      if (hasFiles("lectures") || hasFiles("practice")) return Response.json({ error: "강의 노트 또는 족보가 남아 있는 과목은 삭제할 수 없습니다." }, { status: 409 });
       semester.subjects = semester.subjects.filter(item => item.id !== subject.id);
     }
   } else if (action === "add") {

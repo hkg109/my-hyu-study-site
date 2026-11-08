@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { BookOpen, FileArchive, Menu, Moon, RotateCcw, Sun, X, Search, ShieldCheck } from "lucide-react";
-import type { AcademicCatalog, LectureMeta } from "@/types/content";
+import type { AcademicCatalog, NavDocument } from "@/types/content";
 import { Sidebar } from "./Sidebar";
 import { SearchDialog } from "@/components/ui/SearchDialog";
 import { useAdmin } from "@/components/admin/AdminContext";
@@ -14,7 +14,7 @@ import { isNavActive, PRIMARY_NAV, type PrimaryNavItem } from "@/lib/navigation"
 
 const NAV_ICONS: Record<PrimaryNavItem["icon"], typeof BookOpen> = { lectures: BookOpen, practice: FileArchive, review: RotateCcw };
 
-export function Header({ lectures, exams, catalog }: { lectures: LectureMeta[]; exams: LectureMeta[]; catalog: AcademicCatalog }) {
+export function Header({ lectures, exams, catalog }: { lectures: NavDocument[]; exams: NavDocument[]; catalog: AcademicCatalog }) {
   const path = usePathname();
   const { resolvedTheme, setTheme } = useTheme();
   const { isAdmin, openAdmin } = useAdmin();

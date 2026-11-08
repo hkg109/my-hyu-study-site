@@ -58,7 +58,8 @@ export function PrintLectureButton({ title, kind = "lecture", subjectName, perio
       // The first page already shows the subject in its masthead.
       header.textContent = `@page exam-paper { @top-center { content: ${JSON.stringify(`${main} 영역`)}; } } @page exam-paper:first { @top-center { content: none; } }`;
     } else {
-      root.classList.add("printing-document", `print-theme-${theme}`);
+      // Exams have no theme picker, so one without numbered questions still prints light.
+      root.classList.add("printing-document", `print-theme-${kind === "practice" ? "light" : theme}`);
       // Print the document title in the top margin of every page.
       header.textContent = `@page study-document { @top-left { content: ${JSON.stringify(title)}; } }`;
     }

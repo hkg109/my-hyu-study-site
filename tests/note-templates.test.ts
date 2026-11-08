@@ -54,14 +54,15 @@ test("access settings change only the accessKey line", () => {
   assert.throws(() => setFrontmatterField("본문만", "accessKey", "x"));
 });
 
-test("new notes get the next free number and order, counting drafts and legacy notes", () => {
+test("new notes get the next free number and order, counting drafts", () => {
   const directory = mkdtempSync(path.join(tmpdir(), "hjs-slot-test-"));
   try {
-    assert.deepEqual(nextDocumentSlot("practice", path.join(directory, "missing"), []), { order: 1, id: "exam-01" });
+    assert.deepEqual(nextDocumentSlot("practice", path.join(directory, "missing")), { order: 1, id: "exam-01" });
     writeFileSync(path.join(directory, "exam-01.md"), "---\ntitle: a\norder: 1\npublished: true\n---\n");
     writeFileSync(path.join(directory, "exam-02.md"), "---\ntitle: draft\norder: 7\npublished: false\n---\n");
     writeFileSync(path.join(directory, "exam-09.md"), "---\ntitle: odd\norder: 2\npublished: true\n---\n");
-    assert.deepEqual(nextDocumentSlot("practice", directory, []), { order: 10, id: "exam-10" });
-    assert.deepEqual(nextDocumentSlot("lectures", directory, [1, 2, 3]), { order: 4, id: "lecture-04" });
+    assert.deepEqual(nextDocumentSlot("practice", directory), { order: 10, id: "exam-10" });
+    // Exam files never take a lecture number.
+    assert.deepEqual(nextDocumentSlot("lectures", directory), { order: 1, id: "lecture-01" });
   } finally { rmSync(directory, { recursive: true, force: true }); }
 });

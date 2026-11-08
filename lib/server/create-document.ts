@@ -34,7 +34,7 @@ export async function createDocumentFromTemplate(kind: TemplateKind, request: Re
   if (!findCatalogPath(readCatalog(), gradeId, semesterId, subjectId)) return fail(404, "과목을 찾을 수 없습니다.");
 
   const directory = path.resolve(process.cwd(), "content", kind, gradeId, semesterId, subjectId);
-  const { order, id } = nextDocumentSlot(kind, directory, []);
+  const { order, id } = nextDocumentSlot(kind, directory);
   const target = path.resolve(directory, `${id}.md`);
   if (!target.startsWith(`${directory}${path.sep}`)) return fail(400, "저장 경로가 올바르지 않습니다.");
   const content = matter.stringify(template.body(kind), { title, description: "", order, published: true, ...(accessKey && { accessKey }) });

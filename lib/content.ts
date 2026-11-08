@@ -2,8 +2,13 @@ import { readAcademicLectures } from "./academic-lectures";
 import { readAcademicPractice } from "./academic-practice";
 import type { ContentDocument, ContentKind } from "@/types/content";
 
+const productionCollections: Partial<Record<ContentKind, ContentDocument[]>> = {};
+
 export function readCollection(kind: ContentKind): ContentDocument[] {
-  return kind === "lectures" ? readAcademicLectures() : readAcademicPractice();
+  const read = () => kind === "lectures" ? readAcademicLectures() : readAcademicPractice();
+  // Content is fixed for a production build, so every page and request shares one read;
+  // development reads the files again so admin edits show up at once.
+  return process.env.NODE_ENV === "production" ? productionCollections[kind] ??= read() : read();
 }
 
 export function getDocument(kind: ContentKind, slug: string[]) {

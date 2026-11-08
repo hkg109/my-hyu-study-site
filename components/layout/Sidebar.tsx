@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Check, ChevronDown, FileArchive, Pencil, Plus, Trash2 } from "lucide-react";
-import type { AcademicCatalog, LectureMeta } from "@/types/content";
+import type { AcademicCatalog, NavDocument } from "@/types/content";
 import { useProgress } from "@/components/lecture/ProgressProvider";
 import { useAdmin } from "@/components/admin/AdminContext";
 import { useEffect, useState } from "react";
@@ -13,7 +13,7 @@ import { subjectPath } from "@/lib/subjects";
 
 type Level = "grade" | "semester" | "subject";
 
-export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: LectureMeta[]; exams: LectureMeta[]; catalog: AcademicCatalog; onNavigate?: () => void }) {
+export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: NavDocument[]; exams: NavDocument[]; catalog: AcademicCatalog; onNavigate?: () => void }) {
   const pathname = usePathname();
   const router = useRouter();
   const { progress } = useProgress();
@@ -64,7 +64,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Le
     } finally { setPending(false); }
   };
 
-  const deleteDocument = async (document: LectureMeta) => {
+  const deleteDocument = async (document: NavDocument) => {
     const documentType = practiceMode ? "족보" : "강의 노트";
     if (!window.confirm(`'${editedTitles[document.path] ?? document.title}' ${documentType}를 삭제할까요?\n삭제한 파일은 복구할 수 없습니다.`)) return;
     setPending(true);

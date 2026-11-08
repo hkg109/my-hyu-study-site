@@ -12,14 +12,16 @@ import { NOTE_TITLE_EVENT, NOTE_UPDATE_EVENT, PRACTICE_METADATA_EVENT } from "@/
 export function SearchDialog({ open, setOpen }: { open: boolean; setOpen: (open: boolean) => void }) {
   // The index is large, so it is downloaded the first time search opens rather than with every page.
   const [entries, setEntries] = useState<SearchEntry[]>([]);
-  const [indexState, setIndexState] = useState<"idle" | "loading" | "ready" | "error">("idle");
+  const [indexState, setIndexState] = useState<"idle" | "ready" | "error">("idle");
+  // Fetched once; a failed fetch is tried again the next time search opens.
+  const requested = useRef(false);
   useEffect(() => {
-    if (!open || indexState !== "idle") return;
-    setIndexState("loading");
+    if (!open || requested.current) return;
+    requested.current = true;
     fetch("/search-index").then(response => response.ok ? response.json() as Promise<SearchEntry[]> : Promise.reject(new Error(String(response.status))))
       .then(index => { setEntries(index); setIndexState("ready"); })
-      .catch(() => setIndexState("error"));
-  }, [open, indexState]);
+      .catch(() => { requested.current = false; setIndexState("error"); });
+  }, [open]);
   const [entryPatches, setEntryPatches] = useState<Record<string, Partial<SearchEntry>>>({});
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState(0);
@@ -66,7 +68,7 @@ export function SearchDialog({ open, setOpen }: { open: boolean; setOpen: (open:
       if (event.key === "ArrowDown" || event.key === "ArrowUp") { event.preventDefault(); setSelected(index => Math.max(0, Math.min(results.length - 1, index + (event.key === "ArrowDown" ? 1 : -1)))); }
       if (event.key === "Enter" && results[selected]) { event.preventDefault(); router.push(results[selected].path); close(); }
     }} /><Dialog.Close asChild><button className="icon-button" aria-label="검색 닫기"><X size={20} /></button></Dialog.Close></div>
-    <div className="search-results"><div className="nav-label">{indexState === "error" ? "검색 목록을 불러오지 못했어요. 다시 열어 주세요." : indexState !== "ready" ? "검색 목록을 불러오는 중…" : query ? "검색 결과" : "노트 둘러보기"}</div><p className="sr-only" role="status">{results.length}개의 검색 결과</p><ul id="search-results" role="listbox" aria-label="검색 결과">{results.map((entry, index) => <li id={`search-result-${index}`} key={entry.path} role="option" aria-selected={index === selected}><Link prefetch={false} href={entry.path} onClick={close} className={`search-result ${index === selected ? "active" : ""}`} onMouseEnter={() => setSelected(index)} tabIndex={-1}><div><strong>{entry.title}</strong>{entry.description && <p>{entry.description}</p>}<span className="meta">{entry.kind === "lectures" ? "강의 정리" : entry.kind === "practice" ? "족보" : "과제"}{entry.location ? ` · ${entry.location}` : ""}</span></div><ArrowUpRight size={18} /></Link></li>)}</ul>{!results.length && <div className="empty-state">검색 결과가 없습니다.<p>다른 단어나 짧은 키워드로 검색해 보세요.</p></div>}</div>
+    <div className="search-results"><div className="nav-label">{indexState === "error" ? "검색 목록을 불러오지 못했어요. 다시 열어 주세요." : indexState !== "ready" ? "검색 목록을 불러오는 중…" : query ? "검색 결과" : "노트 둘러보기"}</div><p className="sr-only" role="status">{results.length}개의 검색 결과</p><ul id="search-results" role="listbox" aria-label="검색 결과">{results.map((entry, index) => <li id={`search-result-${index}`} key={entry.path} role="option" aria-selected={index === selected}><Link prefetch={false} href={entry.path} onClick={close} className={`search-result ${index === selected ? "active" : ""}`} onMouseEnter={() => setSelected(index)} tabIndex={-1}><div><strong>{entry.title}</strong>{entry.description && <p>{entry.description}</p>}<span className="meta">{entry.kind === "lectures" ? "강의 정리" : "족보"}{entry.location ? ` · ${entry.location}` : ""}</span></div><ArrowUpRight size={18} /></Link></li>)}</ul>{!results.length && <div className="empty-state">검색 결과가 없습니다.<p>다른 단어나 짧은 키워드로 검색해 보세요.</p></div>}</div>
     <div className="search-footer"><span><kbd>↑</kbd><kbd>↓</kbd> 선택</span><span><kbd>Enter</kbd> 이동</span><span><kbd>Esc</kbd> 닫기</span></div>
   </Dialog.Content></Dialog.Portal></Dialog.Root>;
 }

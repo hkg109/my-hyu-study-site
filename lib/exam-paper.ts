@@ -185,7 +185,11 @@ function questionBlock(question: Question) {
   return block;
 }
 
-const SUB_LABEL = /^[(\[]?\s*(?:\d{1,2}|[a-z]|[ivx]+|[가-하])\s*[)\].:]?$/i;
+// Part labels ("(1)", "1)", "가.") and heading words ("모범 답안") open many explanations but are not answers; a bare "T" or "7" is.
+const NOT_AN_ANSWER = /^(?:[(\[]\s*[\p{L}\p{N}]{1,3}\s*[)\]]|[\p{L}\p{N}]{1,3}[).:]|(?:모범\s*답안|정답|해설|풀이|채점\s*기준|answer|solution)\s*:?)$/iu;
+
+/** Whether a short bold line that opens an explanation can stand in the answer key. */
+export const isKeyAnswer = (text: string) => text.length > 0 && text.length <= 18 && !NOT_AN_ANSWER.test(text);
 
 function answerKey(question: Question) {
   // A question with several multiple-choice parts lists each part's answer in order.
@@ -195,7 +199,7 @@ function answerKey(question: Question) {
   const firstBlock = answer && [...answer.children].find(child => !is(child, "summary"));
   const lead = firstBlock && is(firstBlock, "p") && firstBlock.firstElementChild && is(firstBlock.firstElementChild, "strong") && firstBlock.firstChild === firstBlock.firstElementChild ? firstBlock.firstElementChild : undefined;
   const text = lead?.textContent?.replace(/\s+/g, " ").trim() ?? "";
-  return text && text.length <= 18 && !SUB_LABEL.test(text) ? text : "해설 참조";
+  return isKeyAnswer(text) ? text : "해설 참조";
 }
 
 function answerBlock(question: Question) {

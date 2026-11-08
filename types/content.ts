@@ -24,6 +24,9 @@ export interface LectureMeta extends LectureFrontmatter {
   kind: ContentKind;
 }
 
+/** The fields the site menu reads. Every page carries this list, so it holds nothing else. */
+export type NavDocument = Pick<LectureMeta, "title" | "path" | "order" | "slug" | "gradeId" | "semesterId" | "subjectId">;
+
 export interface ContentDocument extends LectureMeta {
   content: string;
   format?: "md" | "mdx";

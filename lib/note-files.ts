@@ -6,10 +6,10 @@ import type { TemplateKind } from "./note-templates";
 const prefix = (kind: TemplateKind) => kind === "practice" ? "exam" : "lecture";
 
 /** The next order and file id in a subject, counting drafts and files of any number so nothing is reused. */
-export function nextDocumentSlot(kind: TemplateKind, directory: string, existingOrders: number[]) {
+export function nextDocumentSlot(kind: TemplateKind, directory: string) {
   const pattern = new RegExp(`^${prefix(kind)}-(\\d+)\\.mdx?$`);
   const names = fs.existsSync(directory) ? fs.readdirSync(directory) : [];
-  const orders = [...existingOrders];
+  const orders: number[] = [];
   for (const name of names) {
     if (!/\.mdx?$/.test(name) || !name.startsWith(`${prefix(kind)}-`)) continue;
     const order = Number(matter(fs.readFileSync(path.join(directory, name), "utf8")).data.order);
