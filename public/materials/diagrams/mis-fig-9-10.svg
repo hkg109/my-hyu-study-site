@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" role="img" aria-labelledby="mis-fig-9-10-title mis-fig-9-10-desc">
+  <title id="mis-fig-9-10-title">Figure 9.10 Analytical CRM Data Warehouse</title>
+  <desc id="mis-fig-9-10-desc">고객 접점과 다른 출처의 데이터를 고객 데이터 웨어하우스에 모아 OLAP·데이터 마이닝으로 분석한다</desc>
+  <defs><marker id="mis-fig-9-10-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-9-10-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-9-10-arrow);marker-end:url(#mis-fig-9-10-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-9-10-arrow);marker-end:url(#mis-fig-9-10-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="820"/><text class="tag" x="64" y="52">9장 · Figure 9.10</text><text class="title" x="64" y="92">Analytical CRM Data Warehouse</text><text class="subtitle" x="64" y="122">고객 접점과 다른 출처의 데이터를 고객 데이터 웨어하우스에 모아 OLAP·데이터 마이닝으로 분석한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="64" y="176" width="330" height="560" rx="6"/>
+  <text class="name" x="84" y="208">Channels · 접점</text>
+  <text class="label" x="84" y="238">• Call center</text><text class="label" x="84" y="264">• Website</text><text class="label" x="84" y="290">• Wireless</text><text class="label" x="84" y="316">• Field sales</text><text class="label" x="84" y="342">• Direct mail</text><text class="label" x="84" y="368">• Email</text><text class="label" x="84" y="394">• Retail store</text><text class="label" x="84" y="420">• Partner</text><text class="label" x="84" y="446">• Social media</text>
+  <text class="name" x="84" y="498">Other sources · 기타 출처</text>
+  <text class="label" x="84" y="528">• Legacy systems</text><text class="label" x="84" y="554">• Demographic data</text><text class="label" x="84" y="580">• Third-party data</text><text class="label" x="84" y="606">• Marketing campaign data</text>
+  <text class="name" x="84" y="770">Customer data · 고객 데이터</text>
+  <path class="dash" d="M394 200 L 520 270"/>
+  <path class="dash" d="M394 720 L 520 470"/>
+  <path class="flow" d="M394 450 H 476"/>
+  <g><ellipse class="deep" cx="620" cy="470" rx="130" ry="32"/><rect class="deep" x="490" y="270" width="260" height="200" style="stroke:none"/><path class="line" d="M490 270 V 470 M750 270 V 470" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="deep" cx="620" cy="270" rx="130" ry="32"/></g>
+  <text class="name" x="620" y="350" text-anchor="middle">Customer data</text><text class="name" x="620" y="376" text-anchor="middle">warehouse or</text><text class="name" x="620" y="402" text-anchor="middle">analytic platform</text>
+  <path class="flow" d="M754 370 H 840"/>
+  <text class="label" x="860" y="330">• Profitable customers</text><text class="label" x="860" y="360">• Market segments</text><text class="label" x="860" y="390">• Customer profiles</text><text class="label" x="860" y="420">• Churn rates</text>
+  <text class="small" x="860" y="300">분석 결과</text>
+  <path class="both" d="M620 510 V 590"/>
+  <rect class="focal" x="500" y="594" width="240" height="120" rx="6"/><text class="name inverse" x="620" y="652" text-anchor="middle">OLAP · Data mining</text><text class="small inverse" x="620" y="674" text-anchor="middle">Other data analysis tools</text>
+  <text class="small" x="1216" y="800" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

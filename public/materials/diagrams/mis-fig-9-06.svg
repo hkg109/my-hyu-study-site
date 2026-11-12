@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 840" role="img" aria-labelledby="mis-fig-9-06-title mis-fig-9-06-desc">
+  <title id="mis-fig-9-06-title">Figure 9.6 Customer Relationship Management (CRM)</title>
+  <desc id="mis-fig-9-06-desc">CRM은 고객을 가운데 두고 영업·마케팅·서비스 세 영역의 통합 애플리케이션으로 고객 관계의 모든 면을 다룬다</desc>
+  <defs><marker id="mis-fig-9-06-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-9-06-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-9-06-arrow);marker-end:url(#mis-fig-9-06-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-9-06-arrow);marker-end:url(#mis-fig-9-06-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="840"/><text class="tag" x="64" y="52">9장 · Figure 9.6</text><text class="title" x="64" y="92">Customer Relationship Management (CRM)</text><text class="subtitle" x="64" y="122">CRM은 고객을 가운데 두고 영업·마케팅·서비스 세 영역의 통합 애플리케이션으로 고객 관계의 모든 면을 다룬다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="zone" d="M640 480 L 380.2 330.0 A 300 300 0 0 1 899.8 330.0 Z"/>
+  <path class="deep" d="M640 480 L 899.8 330.0 A 300 300 0 0 1 640.0 780.0 Z"/>
+  <path class="node" d="M640 480 L 640.0 780.0 A 300 300 0 0 1 380.2 330.0 Z"/>
+  <circle cx="640" cy="480" r="300" fill="none" stroke="#1d1d1a" stroke-width="4"/>
+  <ellipse class="focal" cx="640" cy="480" rx="78" ry="46"/>
+  <text class="name inverse" x="640" y="486" text-anchor="middle">Customer</text>
+  <text class="name" x="560" y="250">Sales · 영업</text>
+  <text class="sub" x="560" y="280">• Telephone sales</text><text class="sub" x="560" y="302">• Web sales</text><text class="sub" x="560" y="324">• Retail store sales</text><text class="sub" x="560" y="346">• Field sales</text>
+  <text class="name" x="760" y="470">Service · 서비스</text>
+  <text class="sub" x="760" y="500">• Call center data</text><text class="sub" x="760" y="522">• Web self-service data</text><text class="sub" x="760" y="544">• Wireless data</text><text class="sub" x="760" y="566">• Field service data</text><text class="sub" x="760" y="588">• Social networking data</text>
+  <text class="name" x="380" y="480">Marketing · 마케팅</text>
+  <text class="sub" x="380" y="510">• Campaign data</text><text class="sub" x="380" y="532">• Content</text><text class="sub" x="380" y="554">• Data analysis</text>
+  <text class="small" x="1216" y="820" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

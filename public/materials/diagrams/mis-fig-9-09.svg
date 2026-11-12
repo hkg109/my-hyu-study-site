@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="mis-fig-9-09-title mis-fig-9-09-desc">
+  <title id="mis-fig-9-09-title">Figure 9.9 Customer Loyalty Management Process Map</title>
+  <desc id="mis-fig-9-09-desc">고객 서비스로 충성도를 높이는 모범 사례 프로세스 — CRM이 고가치 고객을 가려 우대한다</desc>
+  <defs><marker id="mis-fig-9-09-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-9-09-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-9-09-arrow);marker-end:url(#mis-fig-9-09-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-9-09-arrow);marker-end:url(#mis-fig-9-09-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="760"/><text class="tag" x="64" y="52">9장 · Figure 9.9</text><text class="title" x="64" y="92">Customer Loyalty Management Process Map</text><text class="subtitle" x="64" y="122">고객 서비스로 충성도를 높이는 모범 사례 프로세스 — CRM이 고가치 고객을 가려 우대한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="deep" x="64" y="210" width="150" height="80" rx="6"/><text class="name" x="139" y="248" text-anchor="middle">Receive</text><text class="sub" x="139" y="270" text-anchor="middle">service request</text>
+  <path class="flow" d="M214 250 H 244"/>
+  <rect class="zone" x="248" y="210" width="160" height="80" rx="6"/><text class="name" x="328" y="248" text-anchor="middle">Obtain</text><text class="sub" x="328" y="270" text-anchor="middle">customer info</text>
+  <path class="flow" d="M408 250 H 438"/>
+  <path class="dash" d="M328 290 V 470"/>
+  <g><ellipse class="zone" cx="328" cy="550" rx="70" ry="12.8"/><rect class="zone" x="258" y="470" width="140" height="80" style="stroke:none"/><path class="line" d="M258 470 V 550 M398 470 V 550" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="zone" cx="328" cy="470" rx="70" ry="12.8"/></g>
+  <text class="label" x="328" y="512" text-anchor="middle">Customer</text><text class="label" x="328" y="532" text-anchor="middle">database</text>
+  <path class="deep" d="M540 175 L 640 250 L 540 325 L 440 250 Z"/>
+  <text class="label" x="540" y="240" text-anchor="middle">Customer info</text><text class="label" x="540" y="260" text-anchor="middle">available?</text>
+  <path class="flow" d="M640 250 H 680"/>
+  <text class="small" x="660" y="236" text-anchor="middle">Yes</text>
+  <rect class="node" x="684" y="210" width="140" height="80" rx="6"/><text class="name" x="754" y="248" text-anchor="middle">Score</text><text class="sub" x="754" y="270" text-anchor="middle">customer</text>
+  <path class="flow" d="M824 250 H 854"/>
+  <path class="deep" d="M950 175 L 1045 250 L 950 325 L 855 250 Z"/>
+  <text class="label" x="950" y="240" text-anchor="middle">High value</text><text class="label" x="950" y="260" text-anchor="middle">and loyalty?</text>
+  <path class="flow" d="M1045 250 H 1070"/>
+  <text class="small" x="1058" y="236" text-anchor="middle">Yes</text>
+  <rect class="focal" x="1074" y="200" width="150" height="100" rx="6"/><text class="name inverse" x="1149" y="248" text-anchor="middle">Provide special</text><text class="small inverse" x="1149" y="270" text-anchor="middle">offers &amp; service</text>
+  <path class="flow" d="M540 325 V 600 H 760"/>
+  <text class="small" x="556" y="420">No</text>
+  <path class="flow" d="M950 325 V 556"/>
+  <text class="small" x="966" y="420">No</text>
+  <rect class="zone" x="764" y="560" width="200" height="80" rx="6"/><text class="name" x="864" y="598" text-anchor="middle">Route to</text><text class="sub" x="864" y="620" text-anchor="middle">best agent</text>
+  <path class="flow" d="M964 600 H 1000"/>
+  <rect class="deep" x="1004" y="560" width="200" height="80" rx="6"/><text class="name" x="1104" y="598" text-anchor="middle">Resolve</text><text class="sub" x="1104" y="620" text-anchor="middle">service issue</text>
+  <text class="sub" x="640" y="712" text-anchor="middle">고객 정보가 없거나 고가치가 아니면 → 가장 알맞은 상담원에게 연결해 문제를 해결한다</text>
+  <text class="small" x="1216" y="740" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

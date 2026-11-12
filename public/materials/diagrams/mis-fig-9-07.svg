@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="mis-fig-9-07-title mis-fig-9-07-desc">
+  <title id="mis-fig-9-07-title">Figure 9.7 How CRM Systems Support Marketing</title>
+  <desc id="mis-fig-9-07-desc">Responses by Channel for January 2019 Promotional Campaign — 여러 채널의 캠페인 반응을 한 곳에서 관리·평가한다</desc>
+  <defs><marker id="mis-fig-9-07-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-9-07-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-9-07-arrow);marker-end:url(#mis-fig-9-07-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-9-07-arrow);marker-end:url(#mis-fig-9-07-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="760"/><text class="tag" x="64" y="52">9장 · Figure 9.7</text><text class="title" x="64" y="92">How CRM Systems Support Marketing</text><text class="subtitle" x="64" y="122">Responses by Channel for January 2019 Promotional Campaign — 여러 채널의 캠페인 반응을 한 곳에서 관리·평가한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="zone" d="M560 450 L 560.0 230.0 A 250 220 0 0 1 801.3 507.4 Z"/>
+  <text class="name" x="679.0985597971753" y="370.9690612997013" text-anchor="middle">Direct Mail</text>
+  <text class="label" x="679.0985597971753" y="392.9690612997013" text-anchor="middle">29.2%</text>
+  <path class="deep" d="M560 450 L 801.3 507.4 A 250 220 0 0 1 413.1 628.0 Z"/>
+  <text class="name" x="609.922931678448" y="572.5887696660724" text-anchor="middle">Telephone</text>
+  <text class="label" x="609.922931678448" y="594.5887696660724" text-anchor="middle">30.8%</text>
+  <path class="node" d="M560 450 L 413.1 628.0 A 250 220 0 0 1 310.5 436.2 Z"/>
+  <text class="name" x="424.27594213009706" y="505.3513079034594" text-anchor="middle">Web</text>
+  <text class="label" x="424.27594213009706" y="527.3513079034594" text-anchor="middle">16.0%</text>
+  <path class="zone" d="M560 450 L 310.5 436.2 A 250 220 0 0 1 457.8 249.2 Z"/>
+  <text class="name" x="436.7380387055615" y="375.9190645686499" text-anchor="middle">Email</text>
+  <text class="label" x="436.7380387055615" y="397.9190645686499" text-anchor="middle">17.3%</text>
+  <path class="deep" d="M560 450 L 457.8 249.2 A 250 220 0 0 1 560.0 230.0 Z"/>
+  <text class="name" x="497.31923287927634" y="205.51766504231958" text-anchor="middle">Social Media</text>
+  <text class="label" x="497.31923287927634" y="227.51766504231958" text-anchor="middle">6.7%</text>
+  <ellipse cx="560" cy="450" rx="250" ry="220" fill="none" stroke="#1d1d1a" stroke-width="2"/>
+  <rect class="zone" x="880" y="300" width="320" height="200" rx="6"/>
+  <text class="label" x="900" y="336">읽는 법</text><text class="label" x="900" y="366">• 전화 30.8%·DM 29.2%가 가장 큼</text><text class="label" x="900" y="396">• 소셜 미디어는 6.7%로 가장 작음</text><text class="label" x="900" y="426">• 채널별 반응을 비교해</text><text class="label" x="900" y="456">  다음 캠페인 예산을 정한다</text>
+  <text class="small" x="1216" y="740" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

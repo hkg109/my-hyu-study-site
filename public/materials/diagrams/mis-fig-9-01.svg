@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 900" role="img" aria-labelledby="mis-fig-9-01-title mis-fig-9-01-desc">
+  <title id="mis-fig-9-01-title">Figure 9.1 How Enterprise Systems Work</title>
+  <desc id="mis-fig-9-01-desc">통합 소프트웨어 모듈과 하나의 중앙 데이터베이스 — 한 부서에서 입력한 정보가 곧바로 다른 모든 부서에서 쓰인다</desc>
+  <defs><marker id="mis-fig-9-01-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-9-01-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-9-01-arrow);marker-end:url(#mis-fig-9-01-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-9-01-arrow);marker-end:url(#mis-fig-9-01-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="900"/><text class="tag" x="64" y="52">9장 · Figure 9.1</text><text class="title" x="64" y="92">How Enterprise Systems Work</text><text class="subtitle" x="64" y="122">통합 소프트웨어 모듈과 하나의 중앙 데이터베이스 — 한 부서에서 입력한 정보가 곧바로 다른 모든 부서에서 쓰인다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <rect class="zone" x="450" y="330" width="380" height="240" rx="6"/>
+  <g><ellipse class="focal" cx="640" cy="490" rx="110" ry="17.6"/><rect class="focal" x="530" y="380" width="220" height="110" style="stroke:none"/><path class="line" d="M530 380 V 490 M750 380 V 490" style="stroke:#b9b6ac;stroke-width:1.5"/><ellipse class="focal" cx="640" cy="380" rx="110" ry="17.6"/></g>
+  <text class="name inverse" x="640" y="440" text-anchor="middle">Centralized</text><text class="name inverse" x="640" y="464" text-anchor="middle">Database</text>
+  <rect class="deep" x="500" y="176" width="280" height="84" rx="6"/><text class="name" x="640" y="216" text-anchor="middle">Finance &amp; Accounting</text><text class="sub" x="640" y="238" text-anchor="middle">재무·회계</text>
+  <path class="both" d="M640 264 V 360"/>
+  <text class="sub" x="810" y="196">• Cash on hand</text><text class="sub" x="810" y="218">• Accounts receivable</text><text class="sub" x="810" y="240">• Customer credit</text><text class="sub" x="810" y="262">• Revenue</text>
+  <rect class="deep" x="96" y="410" width="260" height="84" rx="6"/><text class="name" x="226" y="450" text-anchor="middle">Sales &amp; Marketing</text><text class="sub" x="226" y="472" text-anchor="middle">영업·마케팅</text>
+  <path class="both" d="M360 452 H 524"/>
+  <text class="sub" x="110" y="530">• Orders</text><text class="sub" x="110" y="552">• Sales forecasts</text><text class="sub" x="110" y="574">• Return requests</text><text class="sub" x="110" y="596">• Price changes</text>
+  <rect class="deep" x="924" y="410" width="260" height="84" rx="6"/><text class="name" x="1054" y="450" text-anchor="middle">Human Resources</text><text class="sub" x="1054" y="472" text-anchor="middle">인사</text>
+  <path class="both" d="M756 452 H 920"/>
+  <text class="sub" x="940" y="530">• Hours worked</text><text class="sub" x="940" y="552">• Labor cost</text><text class="sub" x="940" y="574">• Job skills</text>
+  <rect class="deep" x="500" y="650" width="280" height="84" rx="6"/><text class="name" x="640" y="690" text-anchor="middle">Manufacturing &amp; Production</text><text class="sub" x="640" y="712" text-anchor="middle">생산</text>
+  <path class="both" d="M640 520 V 646"/>
+  <text class="sub" x="810" y="676">• Materials</text><text class="sub" x="810" y="698">• Production schedules</text><text class="sub" x="810" y="720">• Shipment dates</text><text class="sub" x="810" y="742">• Production capacity</text><text class="sub" x="810" y="764">• Purchases</text>
+  <text class="label" x="96" y="820">핵심 = ‘one company, one database’ — 따로 떨어진 데이터베이스들의 모음이 아니다</text>
+  <text class="small" x="1216" y="880" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

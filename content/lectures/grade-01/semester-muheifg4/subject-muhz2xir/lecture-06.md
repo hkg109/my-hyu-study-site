@@ -14,7 +14,7 @@ objectives:
 
 ## 학습 경로
 
-[이전: 4장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [1장으로 돌아가기](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
+[이전: 4장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) · [다음: 9장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07) · [1장으로 돌아가기](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 **범위:** Chapter 5 슬라이드 1–43 · Infrastructure → Evolution → Components → Hardware Trends → Cloud → Software Platforms → Management
 

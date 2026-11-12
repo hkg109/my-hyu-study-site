@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="mis-fig-9-04-title mis-fig-9-04-desc">
+  <title id="mis-fig-9-04-title">Figure 9.4 Push- Versus Pull-Based Supply Chain Models</title>
+  <desc id="mis-fig-9-04-desc">“Make what we sell, not sell what we make.” — 푸시는 예측이, 풀은 실제 주문이 공급망을 움직인다</desc>
+  <defs><marker id="mis-fig-9-04-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-9-04-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-9-04-arrow);marker-end:url(#mis-fig-9-04-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-9-04-arrow);marker-end:url(#mis-fig-9-04-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="760"/><text class="tag" x="64" y="52">9장 · Figure 9.4</text><text class="title" x="64" y="92">Push- Versus Pull-Based Supply Chain Models</text><text class="subtitle" x="64" y="122">“Make what we sell, not sell what we make.” — 푸시는 예측이, 풀은 실제 주문이 공급망을 움직인다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <text class="name" x="640" y="190" text-anchor="middle">Push-Based Model · 예측 기반 (build-to-stock)</text>
+  <rect class="deep" x="96" y="212" width="176" height="70" rx="6"/><text class="name" x="184" y="253" text-anchor="middle">Supplier</text><text class="sub" x="184" y="312" text-anchor="middle">Supply to forecast</text>
+  <rect class="deep" x="324" y="212" width="176" height="70" rx="6"/><text class="name" x="412" y="253" text-anchor="middle">Manufacturer</text><text class="sub" x="412" y="312" text-anchor="middle">Production based</text><text class="sub" x="412" y="332" text-anchor="middle">on forecasts</text>
+  <rect class="deep" x="552" y="212" width="176" height="70" rx="6"/><text class="name" x="640" y="253" text-anchor="middle">Distributor</text><text class="sub" x="640" y="312" text-anchor="middle">Inventory based</text><text class="sub" x="640" y="332" text-anchor="middle">on forecasts</text>
+  <rect class="deep" x="780" y="212" width="176" height="70" rx="6"/><text class="name" x="868" y="253" text-anchor="middle">Retailer</text><text class="sub" x="868" y="312" text-anchor="middle">Stock based</text><text class="sub" x="868" y="332" text-anchor="middle">on forecasts</text>
+  <rect class="deep" x="1008" y="212" width="176" height="70" rx="6"/><text class="name" x="1096" y="253" text-anchor="middle">Customer</text><text class="sub" x="1096" y="312" text-anchor="middle">Purchase what</text><text class="sub" x="1096" y="332" text-anchor="middle">is on shelves</text>
+  <path class="flow" d="M320 247 H 276"/>
+  <path class="flow" d="M500 247 H 544"/>
+  <path class="flow" d="M728 247 H 772"/>
+  <path class="flow" d="M956 247 H 1000"/>
+  <circle class="focal" cx="412" cy="368" r="9"/>
+  <text class="small" x="426" y="373">출발점: 제조업체의 예측</text>
+  <text class="name" x="640" y="440" text-anchor="middle">Pull-Based Model · 주문 기반 (build-to-order, demand-driven)</text>
+  <rect class="zone" x="96" y="462" width="176" height="70" rx="6"/><text class="name" x="184" y="503" text-anchor="middle">Supplier</text><text class="sub" x="184" y="562" text-anchor="middle">Supply to order</text>
+  <rect class="zone" x="324" y="462" width="176" height="70" rx="6"/><text class="name" x="412" y="503" text-anchor="middle">Manufacturer</text><text class="sub" x="412" y="562" text-anchor="middle">Produce to order</text>
+  <rect class="zone" x="552" y="462" width="176" height="70" rx="6"/><text class="name" x="640" y="503" text-anchor="middle">Distributor</text><text class="sub" x="640" y="562" text-anchor="middle">Automatically replenish</text><text class="sub" x="640" y="582" text-anchor="middle">warehouse</text>
+  <rect class="zone" x="780" y="462" width="176" height="70" rx="6"/><text class="name" x="868" y="503" text-anchor="middle">Retailer</text><text class="sub" x="868" y="562" text-anchor="middle">Automatically replenish</text><text class="sub" x="868" y="582" text-anchor="middle">stock</text>
+  <rect class="focal" x="1008" y="462" width="176" height="70" rx="6"/><text class="name inverse" x="1096" y="503" text-anchor="middle">Customer</text><text class="sub" x="1096" y="562" text-anchor="middle">Customer orders</text>
+  <path class="flow" d="M320 497 H 276"/>
+  <path class="flow" d="M548 497 H 504"/>
+  <path class="flow" d="M776 497 H 732"/>
+  <path class="flow" d="M1004 497 H 960"/>
+  <circle class="focal" cx="1096" cy="618" r="9"/>
+  <text class="small" x="1082" y="623" text-anchor="end">출발점: 고객 주문</text>
+  <rect class="zone" x="96" y="660" width="1088" height="56" rx="6"/>
+  <text class="label" x="640" y="694" text-anchor="middle">푸시: 예측 → 만들어 밀어냄 · 풀: 주문 → 그만큼 당겨 만듦 (화살표 방향이 반대)</text>
+  <text class="small" x="1216" y="740" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>

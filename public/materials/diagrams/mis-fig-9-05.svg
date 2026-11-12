@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" role="img" aria-labelledby="mis-fig-9-05-title mis-fig-9-05-desc">
+  <title id="mis-fig-9-05-title">Figure 9.5 The Emerging Internet-Driven Supply Chain</title>
+  <desc id="mis-fig-9-05-desc">디지털 물류 신경계 — 기업·기업 네트워크·전자시장이 다방향으로 연결되어 재고·주문·생산능력을 즉시 조정한다</desc>
+  <defs><marker id="mis-fig-9-05-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.rule{stroke:#b9b6ac;stroke-width:1;fill:none}.line{stroke:#1d1d1a;stroke-width:1.6;fill:none}.soft{stroke:#929087;stroke-width:1.4;fill:none}.dash{stroke:#929087;stroke-width:1.4;fill:none;stroke-dasharray:6 6}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-9-05-arrow)}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-9-05-arrow);marker-end:url(#mis-fig-9-05-arrow)}.dashboth{stroke:#65645e;stroke-width:1.6;fill:none;stroke-dasharray:5 5;marker-start:url(#mis-fig-9-05-arrow);marker-end:url(#mis-fig-9-05-arrow)}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.zone{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.deep{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a;stroke:#1d1d1a;stroke-width:1.5}.dot{fill:#65645e}.tag{font:600 13px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.title{font:700 28px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.subtitle,.sub{font:400 14px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.name{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:500 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.small{font:600 12px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inverse{fill:#f7f6f2}</style>
+  <rect class="bg" width="1280" height="820"/><text class="tag" x="64" y="52">9장 · Figure 9.5</text><text class="title" x="64" y="92">The Emerging Internet-Driven Supply Chain</text><text class="subtitle" x="64" y="122">디지털 물류 신경계 — 기업·기업 네트워크·전자시장이 다방향으로 연결되어 재고·주문·생산능력을 즉시 조정한다</text><line class="rule" x1="64" y1="148" x2="1216" y2="148"/>
+  <path class="dashboth" d="M620 250 L 600 260"/>
+  <path class="dashboth" d="M798 231 L 882 249"/>
+  <path class="dashboth" d="M719 250 L 781 380"/>
+  <path class="dashboth" d="M696 250 L 654 620"/>
+  <path class="dashboth" d="M422 330 L 288 370"/>
+  <path class="dashboth" d="M613 340 L 707 380"/>
+  <path class="dashboth" d="M491 340 L 362 516"/>
+  <path class="dashboth" d="M581 340 L 913 557"/>
+  <path class="dashboth" d="M212 440 L 251 511"/>
+  <path class="dashboth" d="M261 440 L 579 620"/>
+  <path class="dashboth" d="M1007 310 L 1053 380"/>
+  <path class="dashboth" d="M898 420 L 982 420"/>
+  <path class="dashboth" d="M842 460 L 931 545"/>
+  <path class="dashboth" d="M775 460 L 675 620"/>
+  <path class="dashboth" d="M462 538 L 414 556"/>
+  <path class="dashboth" d="M658 526 L 889 588"/>
+  <path class="dashboth" d="M583 540 L 628 620"/>
+  <path class="dashboth" d="M425 621 L 552 643"/>
+  <path class="dashboth" d="M748 649 L 883 634"/>
+  <rect class="deep" x="610" y="178" width="180" height="64" rx="6"/><text class="label" x="700" y="216" text-anchor="middle">Distributors</text>
+  <rect class="deep" x="890" y="238" width="180" height="64" rx="6"/><text class="label" x="980" y="276" text-anchor="middle">Retailers</text>
+  <rect class="deep" x="430" y="268" width="180" height="64" rx="6"/><text class="label" x="520" y="306" text-anchor="middle">Manufacturers</text>
+  <rect class="deep" x="100" y="368" width="180" height="64" rx="6"/><text class="label" x="190" y="406" text-anchor="middle">Suppliers</text>
+  <rect class="deep" x="710" y="388" width="180" height="64" rx="6"/><text class="label" x="800" y="417" text-anchor="middle">Logistics</text><text class="label" x="800" y="437" text-anchor="middle">Providers</text>
+  <rect class="deep" x="990" y="388" width="180" height="64" rx="6"/><text class="label" x="1080" y="426" text-anchor="middle">Customers</text>
+  <rect class="deep" x="470" y="468" width="180" height="64" rx="6"/><text class="label" x="560" y="497" text-anchor="middle">Virtual</text><text class="label" x="560" y="517" text-anchor="middle">Manufacturers</text>
+  <rect class="deep" x="560" y="628" width="180" height="64" rx="6"/><text class="label" x="650" y="657" text-anchor="middle">Contract</text><text class="label" x="650" y="677" text-anchor="middle">Manufacturers</text>
+  <ellipse class="zone" cx="300" cy="600" rx="120" ry="88"/><text class="label" x="300" y="582" text-anchor="middle">Private Industrial</text><text class="label" x="300" y="602" text-anchor="middle">Networks</text><path class="soft" d="M220 614 H 380"/><text class="label" x="300" y="638" text-anchor="middle">Net</text><text class="label" x="300" y="658" text-anchor="middle">Marketplaces</text>
+  <ellipse class="zone" cx="1010" cy="620" rx="120" ry="88"/><text class="label" x="1010" y="602" text-anchor="middle">Logistics</text><path class="soft" d="M930 634 H 1090"/><text class="label" x="1010" y="658" text-anchor="middle">Exchanges</text>
+  <text class="sub" x="640" y="780" text-anchor="middle">모든 연결은 양방향 점선 — 한 곳의 변화가 네트워크 전체에 즉시 전달된다 (사설 산업 네트워크·넷 마켓플레이스는 10장)</text>
+  <text class="small" x="1216" y="800" text-anchor="end">교재 그림의 구성을 바탕으로 다시 그림</text>
+</svg>
