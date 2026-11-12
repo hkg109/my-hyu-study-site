@@ -1,6 +1,6 @@
 ---
 title: 0장 · 전공 용어 정리집
-description: 'Chapter 1–5의 개념·용어·사례를 장 → 개념 묶음 → 개별 개념 순서로 다시 엮은 통합 정리집. 개념마다 정의·쉬운 설명·사례·혼동 포인트·원문 링크를 붙이고, 전체 지도부터 묶음별 세부도까지 개념도 49장(5장은 원문 노트 그림 6장을 함께 활용)과 헷갈리는 개념 비교·영문 약어 색인으로 마무리한다.'
+description: 'Chapter 1–5·9의 개념·용어·사례를 장 → 개념 묶음 → 개별 개념 순서로 다시 엮은 통합 정리집. 개념마다 정의·쉬운 설명·사례·혼동 포인트·원문 링크를 붙이고, 전체 지도부터 묶음별 세부도까지 개념도 52장(5장·9장은 원문 노트 그림을 함께 활용)과 헷갈리는 개념 비교·영문 약어 색인으로 마무리한다.'
 order: 0
 published: true
 duration: 180
@@ -12,15 +12,15 @@ tags:
   - 총정리
   - 개념도
 objectives:
-  - Chapter 1–5의 핵심 개념을 영문 이름·한국어 이름·약어 풀이와 한 문장 정의로 말할 수 있다.
+  - Chapter 1–5·9의 핵심 개념을 영문 이름·한국어 이름·약어 풀이와 한 문장 정의로 말할 수 있다.
   - 각 개념을 강의 사례에 적용해 상황 → 개념 → 이유 → 결과로 설명한다.
   - 개념도로 포함·데이터 제공·지원·영향 관계를 읽고, 비슷한 개념의 차이를 기준과 함께 설명한다.
-  - 1–6강의 원문 슬라이드 위치로 돌아가 세부 내용과 수치를 확인한다.
+  - 1–7강의 원문 슬라이드 위치로 돌아가 세부 내용과 수치를 확인한다.
 ---
 
 ## 이 정리집을 쓰는 법
 
-이 문서는 1–6강 노트(Chapter 1–5)에 흩어진 개념·용어·모형·분류·단계·사례를 한곳에 모은 **통합 개념서**다. 같은 개념이 여러 강에 나오면 여기서는 **한 곳에만 대표 설명**을 두고, 다른 곳에서는 그 설명으로 링크한다. 세부 수치와 교수님 메모는 각 개념 카드의 **원문** 링크를 눌러 해당 슬라이드 필기에서 확인한다.
+이 문서는 1–7강 노트(Chapter 1–5, 9)에 흩어진 개념·용어·모형·분류·단계·사례를 한곳에 모은 **통합 개념서**다. 같은 개념이 여러 강에 나오면 여기서는 **한 곳에만 대표 설명**을 두고, 다른 곳에서는 그 설명으로 링크한다. 세부 수치와 교수님 메모는 각 개념 카드의 **원문** 링크를 눌러 해당 슬라이드 필기에서 확인한다.
 
 ### 장 바로가기
 
@@ -31,17 +31,18 @@ objectives:
 | [3장 · 조직과 경쟁 전략](#3장--조직과-경쟁-전략) | 조직과 IT는 서로를 어떻게 바꾸고, IT로 어떻게 경쟁할까? | 3-1 ~ 3-5 | [3장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-04) |
 | [4장 · 윤리와 사회적 책임](#4장--윤리와-사회적-책임) | IS가 만든 힘을 누가 어떤 책임으로 통제할까? | 4-1 ~ 4-7 | [4장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-05) |
 | [5장 · IT 인프라와 신기술](#5장--it-인프라와-신기술) | 모든 시스템을 떠받치는 기반을 무엇으로 짓고, 소유할까 빌릴까? | 5-1 ~ 5-5 | [5장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06) |
+| [9장 · 전사적 애플리케이션: ERP·SCM·CRM](#9장--전사적-애플리케이션-erpscmcrm) | 회사 안과 공급자·고객 쪽을 소프트웨어로 어떻게 묶을까? | 9-1 ~ 9-4 | [9장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07) |
 
 **문서 끝:** [헷갈리는 개념 비교](#헷갈리는-개념-비교) · [영문·약어 빠른 색인](#영문약어-빠른-색인) · [확인 필요 · 출처 메모](#확인-필요--출처-메모) · [장별 총정리](#장별-총정리)
 
-**파일 번호 ≠ 장 번호:** lecture-01 = 1장, lecture-02 = 2장 A(프로세스·전사 시스템), lecture-03 = 2장 B(협업·지식관리·IS 기능), lecture-04 = 3장, lecture-05 = 4장, lecture-06 = 5장이다.
+**파일 번호 ≠ 장 번호:** lecture-01 = 1장, lecture-02 = 2장 A(프로세스·전사 시스템), lecture-03 = 2장 B(협업·지식관리·IS 기능), lecture-04 = 3장, lecture-05 = 4장, lecture-06 = 5장, lecture-07 = 9장이다. 이 과목은 5장 다음에 9장을 배운다(6–8장은 범위 밖).
 
 ### 구조와 읽는 법
 
 - **목차 구조:** 장(큰 제목) → 개념 묶음(번호 1-1, 2-3 …) → 개별 개념. 사이트 목차도 같은 3단계로 보인다.
 - **개념 카드:** ① **정의** 박스에 영문 이름 · 한국어 이름 · 약어 풀이와 한 문장 정의 → ② **쉽게** 풀어 쓴 설명과 **특징** → ③ **헷갈림 주의**(비슷한 개념과의 차이·흔한 오해) → ④ **연결**(관련 개념과 원문 슬라이드) → ⑤ **예시** 박스(상황 → 적용 개념 → 이유 → 결과). 짧은 용어는 묶음 끝 표로만 정리한다.
 - **예시 표기:** 기업·기관 이름이 붙은 예시는 슬라이드나 교재의 실제 사례이며 출처 슬라이드를 적었다. 18판 슬라이드에는 없고 이전 판 교재에만 있는 용어는 **교재 보충**이라고 표시했다(5장). 이해를 돕기 위해 지어낸 예시는 **가상 예시**라고 표시했다. 교재 판본(17판·18판)에 따라 사례가 다르면 함께 적었다.
-- **개념도 세 층:** 맨 위 **전체 지도**(A), 각 장 첫머리의 **장 개요도**(B), 각 개념 묶음의 **세부 개념도**(C). 5장은 원문 노트의 교재 그림(Figure 5.2·5.3·5.4·5.8)과 개념도가 이미 잘 맞는 묶음에서는 그 그림을 그대로 가져와 “5장 노트 그림”이라고 표시했다. 그림을 누르면 원본 SVG가 열려 확대해 볼 수 있다. 그림 아래 **해설** 박스에 읽는 순서·핵심 관계·예시를 적었다.
+- **개념도 세 층:** 맨 위 **전체 지도**(A), 각 장 첫머리의 **장 개요도**(B), 각 개념 묶음의 **세부 개념도**(C). 5장은 원문 노트의 교재 그림(Figure 5.2·5.3·5.4·5.8)과 개념도가 이미 잘 맞는 묶음에서는 그 그림을 그대로 가져와 “5장 노트 그림”이라고 표시했다. 9장도 같은 방식으로 Figure 9.1·9.3을 “9장 노트 그림”으로 가져왔다. 그림을 누르면 원본 SVG가 열려 확대해 볼 수 있다. 그림 아래 **해설** 박스에 읽는 순서·핵심 관계·예시를 적었다.
 - **그림 기호:** 실선 화살표 = 흐름·데이터 제공 · 점선 화살표 = 영향·제약 · 검은 칸 = 그 그림의 중심 개념 · 점선 테두리 칸 = 조직 밖 주체 · 회색 영역 = 범위·묶음. 화살표 위 이름표가 관계의 종류(포함·지원·영향·비교 등)다. 색만으로 구분하지 않도록 모든 관계에 글자 이름표를 붙였다.
 
 **형광펜 읽는 법:** ==yellow:노랑== 핵심 정의·결론 · ==red:빨강== 시험에서 헷갈리는 구분·함정 · ==blue:파랑== 외워야 할 순서·목록
@@ -53,11 +54,11 @@ objectives:
 
 [![1장부터 4장까지를 위에서 아래로 놓고 장마다 핵심 질문과 개념 묶음을 적은 뒤 구체화·영향·새 쟁점 화살표로 잇고, 4장에서 1장으로 돌아가는 점선 제약 화살표를 두며, 맨 아래 5장 IT 인프라가 위의 모든 장에 기반을 제공하는 전체 개념 지도](/materials/diagrams/mis-gl-00-concept-map.svg)](/materials/diagrams/mis-gl-00-concept-map.svg)
 
-*그림 A · Chapter 1–5 전체 개념 지도 — 누르면 원본 크기로 열린다.*
+*그림 A · Chapter 1–5·9 전체 개념 지도 — 누르면 원본 크기로 열린다.*
 
 > [!NOTE]
-> - **읽는 순서:** 위에서 아래로 장마다 ① 핵심 질문(굵은 글씨) ② 개념 묶음 번호를 읽고, 장 사이 화살표의 이름표를 읽는다. 오른쪽 점선을 따라 4장에서 1장으로 올라간 뒤, 맨 아래 5장에서 위로 향하는 “기반 제공” 화살표를 읽는다.
-> - **핵심 관계:** 1장은 IS가 가치를 만드는 **일반 원리**이고, 2장은 그 원리가 프로세스·관리 계층·전사 통합·협업·지식관리라는 **업무별 시스템으로 구체화**된 것이다. 3장은 그 시스템이 조직 구조와 경쟁 방식을 **바꾸고 동시에 조직의 영향을 받는다**는 점을, 4장은 데이터와 권력이 모이면서 생기는 **새 윤리·사회 쟁점**을 다룬다. 4장의 법·윤리 기준은 다시 1–3장의 투자와 설계를 **제약**한다. 5장은 이 모든 시스템이 그 위에서 돌아가는 **기반**(IT 인프라)과 그 기반을 바꾸는 신기술(클라우드·가상화·모바일·AI)을 다룬다 — 1장에서 기술 차원의 한 요소로 나온 IT 인프라를 일곱 구성요소·조달 방식·총소유비용으로 펼친 장이다.
+> - **읽는 순서:** 위에서 아래로 장마다 ① 핵심 질문(굵은 글씨) ② 개념 묶음 번호를 읽고, 장 사이 화살표의 이름표를 읽는다. 오른쪽 점선을 따라 4장에서 1장으로 올라간 뒤, 5장에서 위로 향하는 “기반 제공” 화살표를 읽고, 마지막으로 5장에서 맨 아래 9장으로 내려가는 “그 기반 위에서” 화살표를 읽는다.
+> - **핵심 관계:** 1장은 IS가 가치를 만드는 **일반 원리**이고, 2장은 그 원리가 프로세스·관리 계층·전사 통합·협업·지식관리라는 **업무별 시스템으로 구체화**된 것이다. 3장은 그 시스템이 조직 구조와 경쟁 방식을 **바꾸고 동시에 조직의 영향을 받는다**는 점을, 4장은 데이터와 권력이 모이면서 생기는 **새 윤리·사회 쟁점**을 다룬다. 4장의 법·윤리 기준은 다시 1–3장의 투자와 설계를 **제약**한다. 5장은 이 모든 시스템이 그 위에서 돌아가는 **기반**(IT 인프라)과 그 기반을 바꾸는 신기술(클라우드·가상화·모바일·AI)을 다룬다 — 1장에서 기술 차원의 한 요소로 나온 IT 인프라를 일곱 구성요소·조달 방식·총소유비용으로 펼친 장이다. 9장은 그 기반 위에서 돌아가는 ==ERP·SCM·CRM==을 2장 2-3보다 깊게 다룬다 — 공급망의 채찍 효과, 운영적·분석적 CRM, 전환 비용 같은 개념이 새로 나온다.
 > - **예시:** Walmart는 1장에서 Retail Link로 **운영 우수성**(1-2), 2장에서 AI 공급망으로 **SCM**(2-3), 3장에서 연속 보충 시스템으로 **저원가 리더십**(3-4)의 예가 된다. 같은 기업이라도 장마다 묻는 분류 기준이 다르다.
 
 > [!PAGEBREAK]
@@ -2584,6 +2585,248 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 
 > [!PAGEBREAK]
 
+## 9장 · 전사적 애플리케이션: ERP·SCM·CRM
+
+**핵심 질문:** 회사 안과 공급자·고객 쪽 바깥을 소프트웨어로 어떻게 묶어 운영 탁월성과 고객 친밀성을 얻을까? · **원문:** [9장 노트](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07) (Slides 1–31)
+
+이 과목은 ==5장 다음에 9장==을 배운다. 9장은 2장 [2-3 전사 애플리케이션](#2-3-전사-애플리케이션)에서 한 장씩 맛본 ERP·SCM·CRM을 깊게 다룬다. 2장 카드(정의·첫 사례)는 그대로 두고, 여기서는 ==9장에서 새로 나온 개념==만 카드로 만들었다.
+
+[![9-1 ERP가 회사 안을 묶고 공급 쪽 9-2 공급망과 SCM, 고객 쪽 9-3 CRM으로 넓어진 뒤 공통 과제인 9-4 도입 과제와 차세대 애플리케이션으로 모이는 개요도](/materials/diagrams/mis-gl-9-overview.svg)](/materials/diagrams/mis-gl-9-overview.svg)
+
+*그림 B9 · 9장 개요 — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 맨 위 검은 칸 9-1(ERP) → “공급 쪽으로” 9-2(SCM)와 “고객 쪽으로” 9-3(CRM) → “공통 과제” → 9-4.
+> - **핵심 관계:** ERP는 ==회사 안==을 하나의 데이터베이스로 묶고, SCM과 CRM은 같은 발상을 ==공급자 쪽·고객 쪽 바깥==으로 넓힌다. 셋 다 ==모범 사례 프로세스가 미리 들어 있는 소프트웨어==라서 회사가 일하는 방식을 바꿔야 효과가 나고, 그래서 비용·전환 비용·데이터 표준화라는 같은 과제(9-4)를 진다. ERP·SCM은 주로 ==운영 탁월성==, CRM은 ==고객 친밀성==을 돕는다(1장 [여섯 목표](#1-2-is-투자의-여섯-목표)).
+> - **예시:** 9장 영상 사례 — Maersk의 글로벌 해운 관리 시스템(글로벌 SCM), Life Time Fitness의 Salesforce CRM(클라우드 CRM).
+
+### 9-1 ERP 시스템
+
+ERP가 일하는 방식, 소프트웨어를 회사에 맞추는 방법, 비즈니스 가치를 묶었다. 기본 정의는 2장 [ERP](#erp--enterprise-resource-planning--전사적-자원-관리) 카드에 있다. 원문: [Slide 4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-4--91-understand-erp-systems) ~ [Slide 7](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-7--business-value-of-enterprise-systems)
+
+[![가운데 중앙 데이터베이스를 재무·회계, 영업·마케팅, 인사, 생산 네 모듈이 둘러싸고 양방향 화살표로 연결되며 모듈마다 다루는 데이터가 적힌 그림](/materials/diagrams/mis-fig-9-01.svg)](/materials/diagrams/mis-fig-9-01.svg)
+
+*그림 9-1 · Figure 9.1 How Enterprise Systems Work (9장 노트 그림) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 가운데 검은 원통(중앙 DB) → 네 모듈 → 모듈 옆 데이터 목록.
+> - **핵심 관계:** 네 모듈은 서로 직접 잇지 않고 ==모두 하나의 중앙 데이터베이스를 거친다==. ==red:“one company, one database” — 따로 떨어진 데이터베이스들의 모음이 아니다.==
+> - **예시:** 영업이 넣은 주문(Orders)이 생산의 생산 일정과 회계의 매출로 곧바로 이어진다.
+
+#### Enterprise Systems (9장) · 통합 모듈과 중앙 데이터베이스
+
+> [!DEFINITION]
+> **Enterprise systems = ERP(9장 정의)** — ==통합된 소프트웨어 모듈 묶음(a suite of integrated software modules)==과 ==공통 중앙 데이터베이스(a common central database)==를 기반으로, 여러 부서의 데이터를 모아 ==거의 모든 내부 업무 활동==에 쓰게 하는 시스템. ==한 프로세스에서 입력한 정보가 즉시 다른 프로세스에서 쓰인다.==
+
+- **쉽게:** 같은 주문을 영업·생산·회계가 세 번 입력하고 대조하던 일이 사라진다. 2장 카드가 “흩어진 데이터 문제를 푼다”는 **목적**이라면, 9장은 ==모듈 + 하나의 DB==라는 **구조**를 강조한다.
+- **AI와 ERP:** AI 기반 ERP는 아주 많은 양의 데이터에서 패턴을 찾아 여러 기능의 조직 성과를 높인다(Slide 4).
+- **헷갈림 주의:** ==red:모듈마다 DB가 따로 있고 서로 주고받는다는 설명은 오답.== 하나의 DB를 함께 쓴다.
+- **연결:** 2장 [ERP](#erp--enterprise-resource-planning--전사적-자원-관리) · [Enterprise Applications](#enterprise-applications--전사-애플리케이션) · 원문 [9장 Slide 4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-4--91-understand-erp-systems) · [Slide 5](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-5--figure-91-how-enterprise-systems-work)
+
+> [!EXAMPLE]
+> **Alcoa (9장 Slide 4)** — **상황:** 중복된 프로세스와 시스템이 많았다. **→ 적용 개념:** ERP. **→ 이유:** 전사 소프트웨어로 중복을 없애고 requisition-to-pay(구매 요청 → 대금 지급) 주기 시간을 줄였다. **→ 결과:** ==전 세계 비용의 20%를 절감==했다. 효과적인 ERP 구현의 가치를 보여 준다.
+
+#### Best Practices · Configuration Tables · 모범 사례와 설정표
+
+> [!DEFINITION]
+> **Best practices(모범 사례)** — 업계에서 가장 성공적인 해법. ERP 소프트웨어는 ==수천 개의 미리 정의된 모범 사례 프로세스==(재무·회계, 인사, 생산, 영업·마케팅)를 담고 있다. **Configuration tables(설정표)** — 프로그램 코드를 고치지 않고 ==표의 값을 골라 소프트웨어를 회사에 맞추는== 도구.
+
+- **구현 3단계:** ==blue:① 쓸 기능 선택 → ② 회사 프로세스를 소프트웨어 프로세스에 매핑 → ③ configuration tables로 조정==.
+- **왜 최소한만 고치나(교수님 메모):** ERP는 매우 복잡해서 ==지나친 커스터마이징은 성능을 떨어뜨리고 정보·프로세스 통합을 해친다==. 그래서 ==회사가 소프트웨어의 프로세스에 맞춰 일하는 방식을 바꾼다==.
+- **헷갈림 주의:** ==red:“기존 프로세스에 맞게 소프트웨어를 최대한 고친다”는 오답.== 같은 원칙이 CRM에도 적용된다(CRM은 business-process driven, [9-3](#9-3-crm)).
+- **연결:** 2장 [Business Process](#2-1-비즈니스-프로세스와-it) · [Switching Costs](#switching-costs--vendor-dependence--전환-비용과-공급업체-의존) · 원문 [9장 Slide 6](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-6--erp-software)
+
+> [!EXAMPLE]
+> **가상 예시 · 기성복과 맞춤 양복** — **상황:** ERP를 도입한 회사가 “우리만의 방식”을 지키려 한다. **→ 적용 개념:** 모범 사례·설정표, 최소 커스터마이징. **→ 이유:** 소매 길이는 설정표로 줄이면 되지만, 옷을 뜯어 다시 짓기(코드 수정) 시작하면 비싸지고 업그레이드할 때마다 또 뜯어야 한다. **→ 결과:** 옷에 몸을 맞추는 쪽(프로세스 변경)이 권장된다.
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Business value of ES** | ==blue:운영 효율 ↑ · 전사 정보로 더 나은 결정 · 고객 요청에 빠른 응답 · 분석 도구 · 경영진이 언제든 조직 단위 성과 파악== | [Slide 7](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-7--business-value-of-enterprise-systems) |
+| **Standardized data definitions** | ERP가 조직 전체에 공통의 데이터 정의·형식을 강제 → 지점별 성과를 같은 기준으로 비교 (교수님 메모) | [Slide 7](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-7--business-value-of-enterprise-systems) |
+| **Requisition-to-pay cycle** | 구매 요청부터 대금 지급까지 걸리는 주기. Alcoa가 ERP로 단축 | [Slide 4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-4--91-understand-erp-systems) |
+
+### 9-2 공급망과 SCM
+
+공급망의 구조, 정보의 질이 만드는 세 결과(JIT·안전 재고·채찍 효과), SCM 소프트웨어의 두 종류, 푸시·풀 모델, 글로벌 공급망을 묶었다. 기본 정의는 2장 [SCM](#scm--supply-chain-management--공급망-관리) 카드에 있다. 원문: [Slide 8](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-8--92-understand-scm-systems-the-supply-chain) ~ [Slide 17](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-17--93-describe-global-supply-chain-management-challenges)
+
+[![공급망 정보가 완벽하면 JIT, 불확실하면 안전 재고, 왜곡되면 채찍 효과가 되고, 세 경우 모두 정확하고 최신인 정보를 공유하는 SCM 시스템으로 개선되는 그림](/materials/diagrams/mis-gl-9a-supply-chain-information.svg)](/materials/diagrams/mis-gl-9a-supply-chain-information.svg)
+
+*그림 9-2 · 정보의 질이 재고를 정한다 — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 맨 위 검은 칸(정보의 질) → 세 결과 → “해결” → SCM 시스템.
+> - **핵심 관계:** 공급망 비효율(부품 부족·가동률 저하·과잉 재고·높은 운송비)은 모두 ==시기를 놓치거나 부정확한 정보==에서 생긴다. ==red:해결책은 재고를 더 쌓는 것이 아니라 정보 공유다.==
+> - **예시:** 신발 수요가 10% 늘었을 때 소매점·유통업체·제조업체가 각자 10%씩 더 주문하면 제조업체는 약 46% 늘어난 것처럼 생산한다(9장 Slide 11 예제).
+
+[![Nike 공급망과 같은 모양의 공급망 아래에 단계마다 수요 변동 그래프를 그려 고객 쪽은 작은 흔들림, 공급자 쪽으로 갈수록 큰 흔들림이 되는 채찍 효과 그림](/materials/diagrams/mis-fig-9-03.svg)](/materials/diagrams/mis-fig-9-03.svg)
+
+*그림 9-3 · Figure 9.3 The Bullwhip Effect (9장 노트 그림) — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 위 공급망(공급자 → 제조업체 → 유통 → 소매 → 고객) → 아래 봉우리를 오른쪽(고객)에서 왼쪽(3차 공급자)으로.
+> - **핵심 관계:** 봉우리 높이 = 수요 변동 크기. ==상류로 갈수록 커진다.== 각 단계가 “just in case(만약을 위해)” 조금씩 더 주문하기 때문이다.
+> - **예시:** Figure 9.2(Nike)와 같은 모양의 공급망 위에 그린 그림이다.
+
+#### Supply Chain · Upstream · Downstream · 공급망의 구조
+
+> [!DEFINITION]
+> **Supply chain(공급망)** — ==원자재를 조달하고(procuring), 제품으로 변환하고(transforming), 유통하는(distributing)== 조직과 프로세스의 네트워크. **Upstream(상류)** — 회사의 공급자, 공급자의 공급자, 그들과의 관계 관리 프로세스. **Downstream(하류)** — 제품을 고객에게 전달하는 조직과 프로세스. **Internal supply chain(내부 공급망)** — 회사 안에서 재료를 완제품으로 바꾸는 프로세스(교재 p.325).
+
+- **쉽게:** 강물처럼 원료가 흘러오는 쪽이 상류, 제품이 흘러가는 쪽이 하류다. 물건은 한 방향으로 가지만 ==정보는 양방향==으로 흐른다(Figure 9.2의 화살표).
+- **Nike(Figure 9.2):** 상류 = Tier 3 → Tier 2 → Tier 1(계약 공급자, 운동화·밑창), 하류 = 유통업체 → 소매점 → 고객. 상류로는 ==생산능력·재고 수준·납기·지급 조건==, 하류로는 ==주문·반품·수리·서비스 요청·대금== 정보가 오간다.
+- **헷갈림 주의:** ==red:상류·하류는 기준 회사에 따라 정해진다.== 유통업체·소매점은 하류, 부품·원자재 공급자는 상류.
+- **연결:** 2장 [SCM](#scm--supply-chain-management--공급망-관리) · 3장 [Value Chain](#3-5-가치사슬과-네트워크-전략) · 원문 [9장 Slide 8](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-8--92-understand-scm-systems-the-supply-chain) · [Slide 9](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-9--figure-92-nikes-supply-chain)
+
+#### JIT · Safety Stock · Bullwhip Effect · 공급망 정보의 세 결과
+
+> [!DEFINITION]
+> **Just-in-time(JIT)** — 부품이 ==필요한 바로 그 순간에 도착==하고 완제품은 조립 라인을 떠나자마자 출하되게 하는 전략. **Safety stock(안전 재고)** — 공급망의 ==유연성 부족에 대비한 완충 재고==. **Bullwhip effect(채찍 효과)** — 제품 수요 정보가 공급망의 한 단계에서 다음 단계로 넘어가며 ==왜곡·증폭==되는 현상.
+
+- **숫자:** 공급망 비효율은 ==운영비의 최대 25%==를 낭비한다(Slide 10). 반대로 재고가 너무 적어도(low fill rates) 주문 취소로 사업을 잃는다.
+- **채찍 효과를 길들이는 법(교수님 메모):** 공급망의 ==모든 구성원이 정확하고 최신의 정보==를 갖게 해 수요·공급의 불확실성을 줄인다.
+- **헷갈림 주의:** ==red:JIT와 안전 재고는 반대 방향==(재고 ↓ vs 재고 ↑). ==red:채찍 효과의 원인은 고객 수요가 크게 변해서가 아니라 정보가 부정확하게 전달되어서==다.
+- **연결:** [SCM Planning vs Execution](#scm-planning-vs-execution--공급망-계획-시스템과-실행-시스템) · 원문 [9장 Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-10--supply-chain-management) · [Slide 11](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-11--figure-93-the-bullwhip-effect)
+
+> [!EXAMPLE]
+> **가상 예시 · 신발 10% (9장 Slide 11 예제)** — **상황:** 매주 100켤레 팔리던 신발이 110켤레 팔렸다. **→ 적용 개념:** 채찍 효과. **→ 이유:** 소매점(121) → 유통업체(133) → 제조업체(146)가 각자 여유분 10%를 더해 주문한다. **→ 결과:** 고객 수요는 10% 늘었을 뿐인데 제조업체는 46% 늘어난 것처럼 생산하고, 수요가 돌아오면 단계마다 재고가 남는다.
+
+#### SCM Planning vs Execution · 공급망 계획 시스템과 실행 시스템
+
+> [!DEFINITION]
+> **Supply chain planning systems** — ==현재 공급망을 모형화하고, 수요 계획(demand planning)을 세우고, 조달·생산 계획을 최적화하고, 재고 수준을 정하고, 운송 수단을 정하는== 시스템. **Supply chain execution systems** — 제품이 ==물류센터와 창고를 거쳐 가장 효율적으로 올바른 장소에 전달되도록 흐름을 관리==하는 시스템(예: WMS). **Demand planning** — 모든 고객 수요를 채우려면 ==얼마나 만들어야 하는지== 정하는 일.
+
+- **쉽게:** “다음 달에 몇 개 만들까, 배로 보낼까 트럭으로 보낼까?”는 계획, “지금 이 상자를 어느 선반에서 꺼내 어느 트럭에 실을까?”는 실행.
+- **헷갈림 주의:** ==red:운송 수단을 정하는 것은 planning==, 창고·물류센터를 통과하는 실제 흐름 관리가 execution이다.
+- **연결:** [JIT · Safety Stock · Bullwhip](#jit--safety-stock--bullwhip-effect--공급망-정보의-세-결과) · 원문 [9장 Slide 12](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-12--supply-chain-management-software)
+
+#### Push vs Pull · Sequential vs Concurrent · 푸시·풀 모델과 동시 공급망
+
+> [!DEFINITION]
+> **Push-based model(build-to-stock)** — ==수요 예측이나 최선의 추측==이 공급망을 움직이고 만든 제품을 고객에게 밀어내는 모델(초기 SCM). **Pull-based model(demand-driven, build-to-order)** — ==실제 고객 주문·구매==가 공급망의 활동을 시작시키는 모델. **Sequential vs concurrent supply chain** — 정보·자재가 차례로 흐르는 순차 공급망에서, 인터넷 덕분에 공급자 네트워크가 일정·주문 변화에 ==즉시== 맞추는 동시 공급망으로.
+
+- **슬로건:** ==“Make what we sell, not sell what we make.”==(Figure 9.4)
+- **Internet-driven supply chain(Figure 9.5):** 기업·기업 네트워크·전자시장이 다방향으로 연결된 ==디지털 물류 신경계==. 사설 산업 네트워크·넷 마켓플레이스는 10장 범위.
+- **헷갈림 주의:** ==red:Push = build-to-stock(예측), Pull = build-to-order(주문)== — 짝을 바꿔 외우기 쉽다. 풀 모델의 단점: 고객이 기다려야 하고 생산 설비가 유연해야 한다.
+- **연결:** 1장 [Operational Excellence](#operational-excellence--운영-우수성) · 3장 [Four Generic Strategies](#four-generic-strategies--네-가지-기본-경쟁-전략) · 원문 [9장 Slide 13](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-13--demand-driven-supply-chains) · [Slide 14](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-14--figure-94-push--versus-pull-based-supply-chain-models) · [Slide 15](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-15--figure-95-the-emerging-internet-driven-supply-chain)
+
+> [!EXAMPLE]
+> **Dell · Walmart (9장 Slide 13 교수님 메모)** — **상황:** Dell은 고객이 웹에서 사양을 골라 주문하면 조립을 시작하고, Walmart는 판매 데이터로 재주문이 일어나게 한다. **→ 적용 개념:** Pull-based(demand-driven) 모델. **→ 이유:** 예측이 아니라 실제 주문·판매가 공급망을 움직인다. **→ 결과:** 재고가 줄고 팔리는 것만 만든다. Walmart의 연속 보충은 3장 [저원가 리더십](#four-generic-strategies--네-가지-기본-경쟁-전략)의 예이기도 하다.
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Business value of SCM** | ==blue:수요·공급 일치 · 재고 ↓ · 배송 ↑ · 출시 기간 ↓ · 자산 활용 ↑ · 비용 ↓ → 수익성 ↑ · 매출 ↑==. 공급망 총비용은 ==운영 예산의 최대 75%== | [Slide 16](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-16--business-value-of-supply-chain-management-systems) |
+| **Global supply chain issues** | 거리·시차가 크고, 참가국마다 성과 기준·법적 요구가 다름. 인터넷이 ==창고·운송 관리, 물류, 아웃소싱==을 도움 | [Slide 17](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-17--93-describe-global-supply-chain-management-challenges) |
+| **AI and SCM** | 글로벌 공급망이 만드는 빅데이터 분석에 AI가 유용(교재 p.331) | [Slide 17](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-17--93-describe-global-supply-chain-management-challenges) |
+| **Apparel outsourcing** | 의류 산업은 중국 등 저임금 국가 계약 제조업체에 의존, 웹으로 글로벌 공급망 관리 (교수님 메모) | [Slide 17](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-17--93-describe-global-supply-chain-management-challenges) |
+| **Low fill rate** | 재고 부족으로 주문을 못 채우는 비율 — 취소된 주문으로 사업을 잃음 | [Slide 10](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-10--supply-chain-management) |
+| **WMS** | Warehouse management system. 실행 시스템의 예 | [Slide 12](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-12--supply-chain-management-software) |
+
+### 9-3 CRM
+
+CRM이 고객 데이터로 하는 일, CRM 패키지의 모듈과 도구, 운영적·분석적 CRM, 고객 지표(CLTV·이탈률)를 묶었다. 기본 정의는 2장 [CRM](#crm--customer-relationship-management--고객관계관리) 카드에 있다. 원문: [Slide 18](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-18--94-understand-crm-systems) ~ [Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-27--business-value-of-customer-relationship-management-systems)
+
+[![고객 접점에서 운영적 CRM이 고객을 직접 상대하며 데이터를 만들고, 고객 데이터 웨어하우스와 OLAP·데이터 마이닝을 쓰는 분석적 CRM이 수익성 고객·세분화, 고객 생애 가치, 이탈률을 산출해 다시 접점에 돌려주는 그림](/materials/diagrams/mis-gl-9b-operational-analytical-crm.svg)](/materials/diagrams/mis-gl-9b-operational-analytical-crm.svg)
+
+*그림 9-4 · 운영적 CRM과 분석적 CRM — 누르면 원본 크기로 열린다.*
+
+> [!NOTE]
+> - **읽는 순서:** 맨 위 점선 칸(고객 접점) → 운영적 CRM → “데이터 제공” → 검은 칸 분석적 CRM → 세 산출물 → 오른쪽 점선을 따라 다시 접점으로.
+> - **핵심 관계:** ==운영적 CRM이 분석적 CRM의 재료를 공급==하고, 분석 결과(고가치 고객, 이탈 위험 고객)가 다시 접점의 행동(우대, 타깃 마케팅)을 바꾼다.
+> - **예시:** Figure 9.9 고객 충성도 프로세스 — 고객을 점수화(분석)해 고가치·충성 고객이면 특별 혜택을 준다(운영).
+
+#### CRM (9장) · Customer Touch Points · 단일 고객 시각
+
+> [!DEFINITION]
+> **CRM systems(9장 정의)** — 조직 전체에서 고객 데이터를 ==blue:수집·통합(capture and integrate) → 통합·분석(consolidate and analyze) → 여러 시스템과 고객 접점에 배포(distribute)==해, ==고객에 대한 하나의 전사적 시각(single enterprise view of customers)==을 주는 시스템. **Customer touch point(고객 접점)** — 전화·이메일·고객센터·웹·매장·영업사원·모바일·소셜 미디어처럼 고객과 회사가 만나는 모든 지점.
+
+- **쉽게:** 같은 고객이 앱·전화·매장에서 회사를 만나는데 부서마다 기록이 따로면 같은 사람을 세 명으로 안다. CRM은 기록을 합쳐 ==대기업도 단골 가게처럼 고객을 기억==하게 한다.
+- **교수님 메모:** 경쟁의 핵심은 ==누가 고객을 “소유”하느냐==이며, 고객 관계가 회사의 가장 소중한 자산이다. 고객센터에 전화할 때마다 우리는 어떤 형태의 CRM을 상대한다.
+- **Figure 9.6:** 고객을 가운데 두고 ==영업(Sales)·마케팅(Marketing)·서비스(Service)== 세 영역이 둘러싼다 — 부서가 아니라 고객이 중심.
+- **연결:** 2장 [CRM](#crm--customer-relationship-management--고객관계관리) · 1장 [Customer Intimacy](#customer--supplier-intimacy--고객공급업체-친밀성) · 원문 [9장 Slide 18](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-18--94-understand-crm-systems) · [Slide 19](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-19--figure-96-customer-relationship-management-crm)
+
+#### PRM · ERM · SFA · Cross-selling · CRM 패키지의 모듈과 도구
+
+> [!DEFINITION]
+> **PRM(Partner relationship management)** — CRM의 기능을 써서 ==회사와 판매 파트너 사이의 협업==을 강화(잠재 고객 발굴·가격·판촉·주문 구성·가용성 통합, 파트너 성과 평가). **ERM(Employee relationship management)** — 목표 설정·성과 관리·성과 기반 보상·교육처럼 ==CRM과 밀접한 직원 문제==. **SFA(Sales force automation)** — 영업사원이 ==가장 수익성 높은 고객에 집중==하도록 돕는 도구. **Cross-selling(교차 판매)** — 고객에게 ==보완 제품==을 함께 파는 마케팅.
+
+| CRM 도구 | 누구를 돕나 | 대표 기능 |
+|---|---|---|
+| ==SFA== | 영업사원 | 잠재 고객·연락처, 견적서 |
+| ==Customer service== | 콜센터·헬프데스크 | 요청 배정·관리, 웹 셀프서비스 |
+| ==Marketing== | 마케터 | 고객 데이터 수집, 캠페인 일정·추적, cross-selling |
+
+- **Figure 9.7:** CRM은 이메일·직접 우편·전화·웹·무선 등 ==여러 채널의 캠페인을 한 곳에서 관리·평가==한다(2019년 1월 캠페인: 전화 30.8%, DM 29.2%, 이메일 17.3%, 웹 16.0%, 소셜 6.7%).
+- **Figure 9.8:** 영업·마케팅·서비스 세 열에 관리 기능과 ==Analytics==가 있다 — ==CRM software is business-process driven==, 회사가 모범 사례 프로세스에 맞춰야 효과가 크다.
+- **헷갈림 주의:** ==red:ERM ≠ ERP==(직원 관계 모듈 vs 전사 시스템). PRM의 P는 ==Partner==. ==red:Cross-selling = 다른 보완 제품을 함께, Up-selling = 같은 종류의 더 비싼 제품으로.==
+- **연결:** [Best Practices](#best-practices--configuration-tables--모범-사례와-설정표) · 원문 [9장 Slide 20](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-20--customer-relationship-management-software-1-of-2) · [Slide 21](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-21--customer-relationship-management-software-2-of-2) · [Slide 22](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-22--figure-97-how-crm-systems-support-marketing) · [Slide 23](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-23--figure-98-crm-software-capabilities)
+
+> [!EXAMPLE]
+> **가상 예시 · 은행 (9장 퀴즈)** — **상황:** 입출금 계좌를 연 고객에게 신용카드를 권한다. **→ 적용 개념:** Cross-selling. **→ 이유:** 계좌와 다른 보완 상품이다. **→ 결과:** 일반 카드 대신 프리미엄 카드를 권했다면 up-selling이다.
+
+#### Operational vs Analytical CRM · 운영적 CRM과 분석적 CRM
+
+> [!DEFINITION]
+> **Operational CRM** — ==고객과 직접 만나는(customer-facing)== 애플리케이션: SFA, 콜센터·고객 서비스 지원, 마케팅 자동화. **Analytical CRM** — 운영적 CRM이 만든 고객 데이터를 ==데이터 웨어하우스에 모아 OLAP·데이터 마이닝으로 분석==해 사업 성과 향상 정보를 주는 애플리케이션(Figure 9.10).
+
+- **Figure 9.10의 흐름:** 채널(콜센터·웹·무선·현장 영업·DM·이메일·매장·파트너·소셜) + 기타 출처(레거시·인구통계·제3자·캠페인 데이터) → ==고객 데이터 웨어하우스== → OLAP·데이터 마이닝 → ==수익성 높은 고객 · 시장 세분화 · 고객 프로필 · 이탈률==.
+- **Figure 9.9:** 서비스 요청 → 고객 정보 조회 → 점수화 → 고가치·충성 고객이면 특별 혜택, 아니면 최적 상담원 연결 — CRM이 ==고가치 고객을 가려 우대(preferential treatment)==한다.
+- **헷갈림 주의:** ==red:고객을 직접 상대하면 운영적, 쌓인 데이터를 뒤에서 분석하면 분석적.== CLTV는 분석적 CRM의 산출물이다.
+- **연결:** [CLTV · Churn Rate](#cltv--churn-rate--고객-생애-가치와-이탈률) · 원문 [9장 Slide 24](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-24--figure-99-customer-loyalty-management-process-map) · [Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-25--operational-and-analytical-crm) · [Slide 26](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-26--figure-910-analytical-crm-data-warehouse)
+
+#### CLTV · Churn Rate · 고객 생애 가치와 이탈률
+
+> [!DEFINITION]
+> **CLTV(Customer lifetime value, 고객 생애 가치)** — 한 고객이 회사와 관계를 맺는 동안 가져다줄 것으로 기대되는 가치. 분석적 CRM의 중요한 산출물. 교수님 메모: ==blue:고객이 만드는 수익 · 그 고객의 확보·서비스 비용 · 예상 관계 기간==의 관계로 계산한다. **Churn rate(이탈률)** — 회사의 제품·서비스 ==이용·구매를 중단한 고객의 수==. ==고객 기반의 성장 또는 감소를 보여 주는 지표==.
+
+- **CRM의 가치(Slide 27):** ==blue:고객 만족 ↑ · 직접 마케팅 비용 ↓ · 더 효과적인 마케팅 · 고객 확보·유지 비용 ↓ · 매출 ↑==.
+- **헷갈림 주의:** ==red:이탈률이 높을수록 좋은 것이 아니다.== CRM의 가치에 들어가는 것은 마케팅 비용 ==감소==다.
+- **연결:** [Operational vs Analytical CRM](#operational-vs-analytical-crm--운영적-crm과-분석적-crm) · 원문 [9장 Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-25--operational-and-analytical-crm) · [Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-27--business-value-of-customer-relationship-management-systems)
+
+> [!EXAMPLE]
+> **가상 예시 · 통신사 고객 (9장 Slide 25 예제)** — **상황:** 연 60만 원을 내는 고객을 유지하는 데 연 20만 원이 들고, 평균 5년 가입한다. **→ 적용 개념:** CLTV. **→ 이유:** (60만 − 20만) × 5년(할인율 무시). **→ 결과:** CLTV 약 200만 원 — 신규 고객 하나를 데려오는 데 이보다 적게 쓰면 이익이라는 기준이 된다.
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Up-selling** | 같은 종류의 더 비싸거나 상위 제품을 권하는 것 (cross-selling과 비교) | [Slide 21](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-21--customer-relationship-management-software-2-of-2) |
+| **Marketing automation** | 캠페인 일정·발송·추적을 자동화. 운영적 CRM | [Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-25--operational-and-analytical-crm) |
+| **Preferential treatment** | 고가치 고객 우대. Figure 9.9의 목적 | [Slide 24](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-24--figure-99-customer-loyalty-management-process-map) |
+| **Niche tools ~ full-scale** | CRM 패키지는 작은 전문 도구부터 대규모 전사 애플리케이션까지 | [Slide 20](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-20--customer-relationship-management-software-1-of-2) |
+
+### 9-4 도입 과제와 차세대 애플리케이션
+
+ERP·SCM·CRM에 공통인 도입 과제와, 클라우드·소셜·BI·AI로 바뀌는 차세대 애플리케이션을 묶었다. 원문: [Slide 28](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-28--95-discuss-enterprise-application-challenges) ~ [Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-31--96-describe-how-enterprise-applications-are-using-ai--97-career)
+
+#### Switching Costs · Vendor Dependence · 전환 비용과 공급업체 의존
+
+> [!DEFINITION]
+> **Enterprise application challenges** — ==blue:비싼 구입·구현(비용 초과·긴 개발 기간) · 기술 변화 + 업무 프로세스 변화 · 조직 학습·변화 · 전환 비용과 공급업체 의존 · 클라우드 애플리케이션 통합 · 데이터 표준화·관리·정제==. **Switching costs(전환 비용)** — 한 공급업체의 시스템에서 다른 것으로 바꿀 때 드는 ==돈·시간·노력·위험==. 전사 애플리케이션은 핵심 업무를 깊이 바꾸므로 전환 비용이 크고, 그래서 회사가 ==특정 공급업체에 의존==하게 된다.
+
+- **쉽게:** ERP를 바꾸려면 새 라이선스 값만이 아니라 5년 치 데이터 이전, 수백 개 프로세스 재설계, 전 직원 재교육, 업무 중단 위험까지 감수해야 한다. 그래서 공급업체가 값을 올려도 떠나기 어렵다(lock-in).
+- **헷갈림 주의:** ==red:도입은 기술 변화만이 아니다== — 프로세스·조직 변화가 함께 필요하다. ==red:“구입·구현 비용이 낮다”는 보기는 오답.==
+- **연결:** 2장 [Cloud ERP](#cloud-erp--클라우드-erp)(vendor dependence) · 원문 [9장 Slide 28](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-28--95-discuss-enterprise-application-challenges)
+
+#### Next-Generation Enterprise Applications · 차세대 전사 애플리케이션
+
+> [!DEFINITION]
+> **Enterprise solutions / enterprise suites / e-business suites** — 애플리케이션을 ==더 유연하고 웹 기반이며 다른 시스템과 통합==되게 만든 차세대 전사 애플리케이션. 특징: ==blue:웹 서비스·SOA · 오픈소스 · 온디맨드 · 클라우드 버전 · 모바일 기능 · 중소기업용 버전==. **Social CRM** — CRM에 ==소셜 네트워킹 기술==을 결합해 소셜 미디어 활동을 감시·분석하고 소셜·웹 캠페인을 관리. **BI in enterprise applications** — 유연한 보고서, ==임의(ad hoc) 분석, what-if 시나리오, 디지털 대시보드, 데이터 시각화==.
+
+- **숫자·기업(슬라이드):** SAP은 웹사이트로 ==500개가 넘는 웹 서비스== 제공, 클라우드 CRM의 ==명실상부한 세계 1위는 Salesforce.com==, 주요 공급업체는 ==SAP·Oracle·Microsoft·NetSuite==.
+- **AI(9.6):** EA 공급업체가 BI·AI 도구를 더해 ==IoT 데이터를 포함한 막대한 데이터==에서 의미 있는 정보를 얻게 한다. 9장의 AI는 세 군데 — Slide 4(ERP), Slide 17(SCM), Slide 31(EA 전반).
+- **헷갈림 주의:** ==red:클라우드 CRM 1위는 Salesforce.com, SAP은 웹 서비스 500개+ 수치로 나온다.== 5장의 [웹 서비스](#web-services--xml--웹-서비스와-xml)·[SaaS](#iaas--paas--saas--클라우드-서비스-모델)가 여기서 다시 나온다.
+- **연결:** 5장 [Web Services · XML](#web-services--xml--웹-서비스와-xml) · 2장 [Cloud ERP](#cloud-erp--클라우드-erp) · 원문 [9장 Slide 29](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-29--next-generation-enterprise-applications-1-of-2) · [Slide 30](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-30--next-generation-enterprise-applications-2-of-2) · [Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-31--96-describe-how-enterprise-applications-are-using-ai--97-career)
+
+> [!EXAMPLE]
+> **Life Time Fitness × Salesforce CRM (9장 영상 사례)** — **상황:** 피트니스 체인이 회원·영업 정보를 통합하려 한다. **→ 적용 개념:** 클라우드 기반 CRM(차세대 애플리케이션). **→ 이유:** 세계 1위 클라우드 CRM인 Salesforce를 인터넷으로 빌려 쓴다. **→ 결과:** 9장 노트는 이 영상을 클라우드 CRM 도입 사례로 정리한다.
+
+| 짧은 용어 | 뜻 | 원문 |
+|---|---|---|
+| **Data cleansing (교재 보충)** | 틀리거나 불완전하거나 중복된 데이터를 찾아 고치는 일 | [Slide 28](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-28--95-discuss-enterprise-application-challenges) |
+| **SOA** | Service-oriented architecture. 웹 서비스를 조합해 애플리케이션을 만드는 설계 방식(5장에서는 교재 보충, 9장 Slide 29에는 등장) | [Slide 29](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-29--next-generation-enterprise-applications-1-of-2) |
+| **On-demand solutions** | 필요할 때 인터넷으로 빌려 쓰는 방식 — 클라우드·SaaS와 같은 흐름 | [Slide 29](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-29--next-generation-enterprise-applications-1-of-2) |
+| **Table 9.5** | 주요 EA 공급업체의 AI 소프트웨어 도구 예 — 슬라이드에는 표 이름만 있음 | [Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-31--96-describe-how-enterprise-applications-are-using-ai--97-career) |
+
+> [!PAGEBREAK]
+
 ## 헷갈리는 개념 비교
 
 각 줄의 개념 이름을 누르면 대표 설명으로 이동한다. **구분 기준**을 먼저 외우고, 그 기준으로 두 개념을 각각 한 문장으로 말해 본다.
@@ -2701,6 +2944,27 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 | [인프라 투자 내부 vs 외부 요인](#competitive-forces-model-for-it-infrastructure--인프라-투자의-여섯-요인) | 누가 정하나 | 사업 전략·IT 전략·인프라·비용·IT 평가 vs 시장 수요·경쟁사 서비스·경쟁사 IT 투자 |
 | [5장 경쟁세력 모형](#competitive-forces-model-for-it-infrastructure--인프라-투자의-여섯-요인) vs [Porter 모형](#competitive-forces-model--porter의-경쟁-요인-모형) | 무엇을 정하나 | 인프라 투자 규모의 여섯 요인 vs 산업 경쟁 압력의 다섯 힘 |
 
+### 9장 · 전사적 애플리케이션
+
+| 비교 | 구분 기준 | 가장 빠른 구분 |
+|---|---|---|
+| [ERP 2장 정의](#erp--enterprise-resource-planning--전사적-자원-관리) vs [9장 정의](#enterprise-systems-9장--통합-모듈과-중앙-데이터베이스) | 무엇을 강조하나 | 흩어진 데이터 문제 해결(목적) vs 통합 모듈 + 하나의 중앙 DB(구조) |
+| [Customization vs Configuration tables](#best-practices--configuration-tables--모범-사례와-설정표) | 코드를 고치나 | 프로그램 수정(성능·통합 손상) vs 표의 값만 골라 조정(권장) |
+| [Upstream vs Downstream](#supply-chain--upstream--downstream--공급망의-구조) | 기준 회사의 어느 쪽인가 | 공급자·공급자의 공급자 vs 유통업체·소매점·고객 |
+| [JIT vs Safety stock](#jit--safety-stock--bullwhip-effect--공급망-정보의-세-결과) | 재고를 어떻게 하나 | 필요한 순간 도착(재고 ↓) vs 유연성 부족 대비 여유분(재고 ↑) |
+| [Bullwhip effect의 원인 vs 해결](#jit--safety-stock--bullwhip-effect--공급망-정보의-세-결과) | 무엇 때문인가 | 단계마다 왜곡되는 수요 정보 vs 정확·최신 정보 공유 (재고를 더 쌓는 것이 아님) |
+| [Planning vs Execution](#scm-planning-vs-execution--공급망-계획-시스템과-실행-시스템) | 계획인가, 실제 흐름인가 | 수요 계획·조달·생산·재고 수준·운송 수단 vs 물류센터·창고를 지나는 제품 흐름(WMS) |
+| [Push vs Pull](#push-vs-pull--sequential-vs-concurrent--푸시풀-모델과-동시-공급망) | 무엇이 공급망을 움직이나 | 예측(build-to-stock) vs 실제 주문(build-to-order, Dell·Walmart) |
+| [Sequential vs Concurrent](#push-vs-pull--sequential-vs-concurrent--푸시풀-모델과-동시-공급망) | 정보가 어떻게 흐르나 | 한 회사에서 다음 회사로 차례로 vs 인터넷으로 동시에 여러 방향 |
+| 25% vs 75% | 무엇의 비율인가 | 비효율이 낭비하는 운영비 vs 공급망 총비용이 차지하는 운영 예산 |
+| [PRM vs ERM](#prm--erm--sfa--cross-selling--crm-패키지의-모듈과-도구) | 누구와의 관계인가 | 판매 파트너 vs 직원 |
+| [ERM vs ERP](#prm--erm--sfa--cross-selling--crm-패키지의-모듈과-도구) | 무엇인가 | CRM 패키지의 직원 관계 모듈 vs 전사 시스템 |
+| [Cross-selling vs Up-selling](#prm--erm--sfa--cross-selling--crm-패키지의-모듈과-도구) | 무엇을 권하나 | 다른 보완 제품을 함께 vs 같은 종류의 더 비싼 제품으로 |
+| [Operational vs Analytical CRM](#operational-vs-analytical-crm--운영적-crm과-분석적-crm) | 고객을 직접 상대하나 | SFA·콜센터·마케팅 자동화 vs 데이터 웨어하우스·OLAP·마이닝·CLTV |
+| [CLTV vs Churn rate](#cltv--churn-rate--고객-생애-가치와-이탈률) | 무엇을 재나 | 한 고객이 관계 동안 줄 가치(수익·비용·기간) vs 떠난 고객 수(고객 기반 증감) |
+| [Switching costs](#switching-costs--vendor-dependence--전환-비용과-공급업체-의존) vs [TCO](#tco--total-cost-of-ownership--총소유비용) | 언제 드는 비용인가 | 다른 공급업체로 바꿀 때 vs 기술 자원을 소유하는 동안 |
+| [Salesforce.com vs SAP](#next-generation-enterprise-applications--차세대-전사-애플리케이션) | 슬라이드에서 무엇으로 나오나 | 클라우드 CRM 세계 1위 vs 웹 서비스 500개+ |
+
 ## 영문·약어 빠른 색인
 
 영문 이름이나 약어로 찾을 때 쓴다. 이름을 누르면 대표 설명으로 이동한다.
@@ -2710,15 +2974,17 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 | [Accountability](#responsibility--accountability--liability--due-process--책임의-네-고리) | 책임 추적 가능성 | 4장 (IT 거버넌스: 2장) |
 | [Adhocracy](#organizational-structure--조직-구조-mintzberg-다섯-유형) | 애드호크라시 | 3장 |
 | [Agency Theory · Agency Cost](#agency-theory--대리인-이론) | 대리인 이론·대리인 비용 | 3장 |
-| [AI · AI Agent](#ai--ml--nlp--genai--ai-agent--인공지능-용어) | 인공지능·AI 에이전트 | 2장 |
 | [AI Infrastructure · Edge AI · GPU · TPU](#it-infrastructure-for-ai--edge-ai--ai를-위한-it-인프라) | AI를 위한 IT 인프라·엣지 AI | 5장 |
+| [AI · AI Agent](#ai--ml--nlp--genai--ai-agent--인공지능-용어) | 인공지능·AI 에이전트 | 2장 |
 | [AI-Ready Content](#ai-ready-content--ai가-쓸-수-있는-콘텐츠) | AI가 쓸 수 있는 콘텐츠 | 2장 |
 | [Apache Hadoop](#5-2-it-인프라의-일곱-구성요소) | 대용량 데이터 오픈소스 프레임워크 | 5장 |
 | [Application Server · Web Server](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조) | 애플리케이션 서버·웹 서버 | 5장 |
 | [Assist · Automate · Agent](#assist--automate--agent--ai가-프로세스에-들어가는-세-수준) | AI의 세 수준 | 2장 |
 | [AWS](#aws--industry-cloud--대표-퍼블릭-클라우드와-산업-특화-클라우드) | 아마존 웹 서비스 | 5장 |
 | [Behavioral Approach](#behavioral-approach--행동적-접근) | 행동적 접근 | 1장 |
+| [Best Practices · Configuration Tables](#best-practices--configuration-tables--모범-사례와-설정표) | 모범 사례·설정표 | 9장 |
 | [BI](#bi--business-intelligence--비즈니스-인텔리전스) | 비즈니스 인텔리전스 | 2장 |
+| [Bullwhip Effect · JIT · Safety Stock](#jit--safety-stock--bullwhip-effect--공급망-정보의-세-결과) | 채찍 효과·적시 생산·안전 재고 | 9장 |
 | [Business Ecosystem](#business-ecosystem--keystone--niche-firm--비즈니스-생태계) | 비즈니스 생태계 | 3장 |
 | [Business Information Value Chain](#business-information-value-chain--비즈니스-정보-가치사슬) | 비즈니스 정보 가치사슬 | 1장 |
 | [Business Model](#business-model--사업모형) | 사업모형 | 1장 |
@@ -2730,6 +2996,7 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 | [Client/Server · N-Tier](#clientserver-computing--n-tier--클라이언트서버와-다계층-구조) | 클라이언트/서버·다계층 구조 | 5장 |
 | [Cloud Computing](#cloud-computing--클라우드-컴퓨팅) | 클라우드 컴퓨팅 | 5장 (용어 소개: 1장 · Cloud ERP: 2장) |
 | [Cloud ERP](#cloud-erp--클라우드-erp) | 클라우드 ERP | 2장 |
+| [CLTV · Churn Rate](#cltv--churn-rate--고객-생애-가치와-이탈률) | 고객 생애 가치·이탈률 | 9장 |
 | [Collaboration](#collaboration--협업) | 협업 | 2장 |
 | [Competitive Advantage](#competitive-advantage--경쟁우위) | 경쟁우위 | 1장 |
 | [Competitive Forces Model](#competitive-forces-model--porter의-경쟁-요인-모형) | Porter 경쟁 요인 모형 | 3장 |
@@ -2743,9 +3010,12 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 | [Copyright · Patent · Trademark · Trade Secret](#intellectual-property--지식재산과-네-가지-보호) | 저작권·특허·상표·영업비밀 | 4장 |
 | [Core Competency](#core-competency--핵심-역량) | 핵심 역량 | 3장 |
 | [CRM](#crm--customer-relationship-management--고객관계관리) | 고객관계관리 | 2장 |
+| [Cross-selling · Up-selling](#prm--erm--sfa--cross-selling--crm-패키지의-모듈과-도구) | 교차 판매·상향 판매 | 9장 |
 | [CTS · CVS · RSI · Technostress](#health-risks--rsi--cts--cvs--technostress) | 건강 위험 | 4장 |
 | [Customer & Supplier Intimacy](#customer--supplier-intimacy--고객공급업체-친밀성) | 고객·공급업체 친밀성 | 1장 (전략: 3장) |
+| [Customer Touch Point](#crm-9장--customer-touch-points--단일-고객-시각) | 고객 접점 | 9장 |
 | [Data / Information](#data--information--데이터와-정보) | 데이터·정보 | 1장 |
+| [Demand Planning · SCM Planning / Execution](#scm-planning-vs-execution--공급망-계획-시스템과-실행-시스템) | 수요 계획·공급망 계획/실행 시스템 | 9장 |
 | [Digital Divide](#digital-divide--디지털-격차) | 디지털 격차 | 4장 |
 | [Digital Firm](#digital-firm--디지털-기업) | 디지털 기업 | 1장 |
 | [Digital Markets Act](#quality-of-life--삶의-질에-미치는-부정적-영향) | EU 디지털 시장법 | 4장 |
@@ -2760,6 +3030,7 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 | [Edge Computing](#edge-computing--엣지-컴퓨팅) | 엣지 컴퓨팅 | 5장 |
 | [Enterprise Applications](#enterprise-applications--전사-애플리케이션) | 전사 애플리케이션 | 2장 |
 | [Enterprise Social Networking](#enterprise-social-networking--기업용-소셜-네트워킹) | 기업용 소셜 네트워킹 | 2장 |
+| [Enterprise Systems (9장)](#enterprise-systems-9장--통합-모듈과-중앙-데이터베이스) | 통합 모듈과 중앙 DB | 9장 |
 | [Environment](#environment--정보시스템의-환경) · [Environmental Scanning](#organizational-environment--조직-환경과-환경-탐색) | 환경·환경 탐색 | 1장 · 3장 |
 | [ERP · ES](#erp--enterprise-resource-planning--전사적-자원-관리) | 전사적 자원 관리 | 2장 |
 | [ESS](#ess--executive-support-system--중역지원시스템) | 중역지원시스템 | 2장 |
@@ -2806,15 +3077,19 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 | [Moore's Law · Metcalfe's Law (교재 보충)](#5-1-it-인프라의-정의와-진화) | 무어의 법칙·메트칼프의 법칙 | 5장 |
 | [Multicore Processor (교재 보충)](#green-computing--그린-컴퓨팅) | 멀티코어 프로세서 | 5장 |
 | [Network Economics](#network-economics--네트워크-경제) | 네트워크 경제 | 3장 |
+| [Next-Generation Enterprise Applications · Social CRM](#next-generation-enterprise-applications--차세대-전사-애플리케이션) | 차세대 전사 애플리케이션·소셜 CRM | 9장 |
 | [NORA](#nora--nonobvious-relationship-awareness--비명시적-관계-인식) | 비명시적 관계 인식 | 4장 |
 | [NOS · Web Hosting Service](#networking--internet-platforms--nos--웹-호스팅) | 네트워크 운영체제·웹 호스팅 | 5장 |
 | [Operating System Platforms](#operating-system-platforms--운영체제-플랫폼) | 운영체제 플랫폼 | 5장 |
+| [Operational CRM · Analytical CRM](#operational-vs-analytical-crm--운영적-crm과-분석적-crm) | 운영적·분석적 CRM | 9장 |
 | [Operational Excellence](#operational-excellence--운영-우수성) | 운영 우수성 | 1장 |
 | [Organizational Culture](#organizational-culture--조직-문화) · [Politics](#organizational-politics--조직-정치) | 조직 문화·정치 | 3장 |
 | [Organizational Learning](#organizational-learning--조직-학습) | 조직 학습 | 2장 |
 | [Privacy](#privacy--프라이버시) | 프라이버시 | 4장 |
+| [PRM · ERM · SFA](#prm--erm--sfa--cross-selling--crm-패키지의-모듈과-도구) | 파트너·직원 관계 관리, 영업 자동화 | 9장 |
 | [Profiling](#profiling--프로파일링) | 프로파일링 | 4장 |
 | [Public · Private · Hybrid Cloud](#public--private--hybrid-cloud--클라우드-배치-모델) | 클라우드 배치 모델 | 5장 |
+| [Push / Pull-based Model](#push-vs-pull--sequential-vs-concurrent--푸시풀-모델과-동시-공급망) | 푸시·풀 기반 모델 | 9장 |
 | [Quantum Computing](#quantum-computing--양자-컴퓨팅) | 양자 컴퓨팅 | 5장 |
 | [RAG](#rag--retrieval-augmented-generation--검색-증강-생성) | 검색 증강 생성 | 2장 |
 | [Rent-versus-Buy](#rent-versus-buy--빌릴까-살까와-투자-규모) | 빌릴까 살까 결정 | 5장 |
@@ -2836,8 +3111,10 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 | [Sociotechnical View](#sociotechnical-view--사회기술적-관점) | 사회기술적 관점 | 1장 |
 | [Software Outsourcing · Offshore · Software Packages](#alternative-ways-of-obtaining-software--소프트웨어를-얻는-세-외부-출처) | 소프트웨어 아웃소싱·패키지 | 5장 |
 | [Strategic Business Objectives](#strategic-business-objectives--여섯-전략적-비즈니스-목표) | 여섯 전략적 목표 | 1장 |
+| [Supply Chain · Upstream · Downstream](#supply-chain--upstream--downstream--공급망의-구조) | 공급망·상류·하류 | 9장 |
 | [Survival](#survival--생존) | 생존 | 1장 |
 | [Switching Cost](#switching-cost--전환-비용) | 전환 비용 | 3장 |
+| [Switching Costs](#switching-costs--vendor-dependence--전환-비용과-공급업체-의존) | 전환 비용 | 9장 |
 | [Synergy](#synergy--시너지) | 시너지 | 3장 |
 | [System Quality · Data Quality](#system-quality--data-quality--시스템-품질과-데이터-품질) | 시스템·데이터 품질 | 4장 |
 | [Systems Analyst](#systems-analyst--시스템-분석가) | 시스템 분석가 | 2장 |
@@ -2858,7 +3135,7 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 
 ## 확인 필요 · 출처 메모
 
-이 문서는 1–6강 노트와 수업 슬라이드 PDF의 내용만으로 썼다. 아래 항목은 자료끼리 다르거나, 자료만으로 확정할 수 없거나, 강의 시점 이후 바뀌었을 수 있어 **단정하지 않았다**.
+이 문서는 1–7강 노트와 수업 슬라이드 PDF의 내용만으로 썼다. 아래 항목은 자료끼리 다르거나, 자료만으로 확정할 수 없거나, 강의 시점 이후 바뀌었을 수 있어 **단정하지 않았다**.
 
 **자료 사이의 판본 차이** — 해당 개념 카드에 두 판본을 함께 적었다.
 
@@ -2885,6 +3162,8 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 - **Grab 오프닝 케이스의 Problem** — 슬라이드에서 빈칸(수업에서 채우는 부분)이라 이 문서는 노트의 해석(수요가 급증해도 멈추지 않는 시스템)만 적었다. → [5장 Slide 4](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-4--opening-case-southeast-asias-grab)
 - **5장 수치의 기준 연도** — 인프라 산업 규모(2024년 5.06조 달러)와 하드웨어·전사 SW·통신 지출(2020년 예상치)은 기준 연도가 다르다. 슬라이드·교수님 메모 표기 그대로 옮겼다. 메인프레임 시대는 1959년부터지만 IBM 최초 메인프레임 도입은 1958년으로 적혀 있는 것도 슬라이드 표기 그대로다. → [5장 Slide 5](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-5--defining-it-infrastructure) · [Slide 9](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-9--evolution-of-it-infrastructure-mainframe-pc-clientserver) · [Slide 16](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-16--computer-hardware-platforms)
 - **교재 쪽수(p.189 클라우드 다섯 특징, p.191 public·private)** — 판서에 적힌 쪽수로, 교재 판본·인쇄본에 따라 다를 수 있다. → [5장 Slide 27](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06#slide-27--cloud-computing)
+- **TrueBlue 오프닝 케이스와 Table 9.5** — 9장 슬라이드에 TrueBlue의 Problem·Solutions 칸이 비어 있고, Table 9.5(EA 공급업체의 AI 도구)는 표 이름만 있다. 이 문서는 내용을 새로 적지 않았다. → [9장 Slide 3](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-3--opening-case-trueblue-speeds-ahead-with-enterprise-applications) · [Slide 31](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-31--96-describe-how-enterprise-applications-are-using-ai--97-career)
+- **9장 교재 보충·가상 예시** — Data cleansing 정의, Walmart 연속 보충의 세부, 신발 10% 채찍 효과 계산과 통신사 CLTV 계산(할인율 무시)은 9장 노트의 보충·예제를 옮긴 것이다. 교재의 정확한 CLTV 공식은 할인율 등을 포함할 수 있다. → [9장 Slide 25](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-07#slide-25--operational-and-analytical-crm)
 
 **강의 시점 사실과 현재 법·제도의 차이** — 시험 답은 강의 자료 기준으로 쓴다.
 
@@ -2893,7 +3172,7 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 - **EU Digital Markets Act·Google 반독점 판결·EU AI Act** — 교재(18판) 시점의 서술이다. 이후 진행 상황은 이 문서에서 다루지 않는다.
 - **교수님 메모로만 있는 수치**(예: SOX 기록 보관 5년, JCPenney 셔츠 재고 거의 0) — 노트에 “교수님 메모”로 표시된 그대로 옮겼다.
 
-**이 문서에서 새로 만든 것** — 카페·병원 장비 같은 **가상 예시**와, 개념도의 배치·화살표 이름표(포함·지원·영향 등)는 이해를 돕기 위해 이 문서에서 만든 것이다. 1–4장 개념도는 `scripts/generate-mis-glossary-diagrams.mjs`로 다시 생성할 수 있다. 5장 개념도(mis-gl-5*)와 5장 띠를 더한 전체 지도는 같은 레이아웃 도구(`scripts/mis-glossary-kit.mjs`)로 만들었지만 아직 그 생성 스크립트에 들어 있지 않으므로, 스크립트를 다시 돌리면 전체 지도에서 5장 띠가 빠진다.
+**이 문서에서 새로 만든 것** — 카페·병원 장비 같은 **가상 예시**와, 개념도의 배치·화살표 이름표(포함·지원·영향 등)는 이해를 돕기 위해 이 문서에서 만든 것이다. 1–5장·9장 개념도(mis-gl-*)와 전체 지도는 모두 `scripts/generate-mis-glossary-diagrams.mjs`로 다시 생성할 수 있다.
 
 ## 장별 총정리
 
@@ -2906,6 +3185,8 @@ IT 인프라를 이루는 일곱 요소와 각 요소의 대표 공급업체, �
 **4장**은 ==blue:개인 → 사회 → 정치로 번지는 파장 · 다섯 도덕적 차원 · 책임 → 추적 → 배상 → 적법 절차 · 분석 5단계와 6원칙 · FIP(핵심 Notice·Choice)와 Opt-in · 네 가지 IP 보호 · 실패의 주원인은 입력 데이터 · Crime(불법) vs Abuse(비윤리) · 격차와 건강 위험==을 권리·책임 중심으로 묶는다.
 
 **5장**은 ==blue:장비 + 전사 서비스 플랫폼 · Mainframe 1959 → PC 1981 → Client/Server 1983 → Enterprise 1992 → Cloud·Mobile 2000(모두 현재까지) · 하·오·엔·데·네·인·컨 · 소비자화 ⊃ BYOD → MDM · 가상화(1 ↔ 여럿) → 클라우드(IaaS 운영 · PaaS 개발 · SaaS 사용 / public·private·hybrid) → 엣지 · 오픈소스·Java·HTML5·웹 서비스(기반 XML) · 패키지·아웃소싱·SaaS + SLA · 확장성·거버넌스·rent vs buy · TCO(HW·SW 약 20%) · 내부 셋 + 외부 셋 투자 요인==으로 정리한다. 핵심 문장: ==인프라는 소유하든 빌리든 가능해지는 서비스와 총소유비용으로 평가한다.==
+
+**9장**은 ==blue:ERP = 통합 모듈 + 하나의 중앙 DB(one company, one database), 모범 사례 + configuration tables, 커스터마이징 최소화 · 공급망 = 조달 → 변환 → 유통, 상류·내부·하류 · 정보 완벽 → JIT / 불확실 → 안전 재고 / 왜곡 → 채찍 효과(해결 = 정보 공유) · Planning vs Execution · Push(build-to-stock) vs Pull(build-to-order), 순차 → 동시 · CRM = 수집·통합 → 분석 → 접점에 배포 → 단일 고객 시각, PRM·ERM·SFA·cross-selling · 운영적 vs 분석적 CRM, CLTV·이탈률 · 전환 비용·공급업체 의존 · 차세대(웹 서비스·SOA·클라우드·소셜 CRM·BI·AI)==으로 정리한다. 핵심 문장: ==ERP는 안을, SCM·CRM은 공급 쪽·고객 쪽 바깥을 묶고, 셋 다 회사가 소프트웨어의 모범 사례에 맞춰 바뀌어야 가치가 난다.==
 
 > [!EXAM]
 > 마지막 점검은 세 문장으로 한다. `이 개념의 대상은 누구인가?` · `무엇을 입력받아 무엇을 바꾸는가?` · `누구의 비용·권리·책임과 연결되는가?` 막히는 개념은 [헷갈리는 개념 비교](#헷갈리는-개념-비교)에서 짝을 찾아 기준부터 다시 말해 본다.

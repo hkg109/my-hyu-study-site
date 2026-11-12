@@ -84,12 +84,12 @@ function merge(placed, i, text, { dashed = false, from = 0 } = {}) {
 // =============================================================================================
 // A · overall concept map
 fig("mis-gl-00-concept-map", {
-  eyebrow: "Chapter 1–5 · 전체 개념 지도",
-  title: "다섯 장은 하나의 질문 사슬과 그 기반이다",
+  eyebrow: "Chapter 1–5 · 9 · 전체 개념 지도",
+  title: "여섯 장은 하나의 질문 사슬과 그 기반이다",
   subtitle: "IS가 가치를 만드는 원리 → 업무를 지원하는 시스템 → 조직·전략과의 상호작용 → 윤리·사회적 책임, 그리고 이 모두를 떠받치는 IT 인프라",
-  desc: "1장 정보시스템과 가치, 2장 프로세스·전사 시스템·지식관리, 3장 조직과 전략, 4장 윤리와 사회적 책임을 위에서 아래로 놓고, 각 장의 핵심 질문과 개념 묶음, 장 사이의 구체화·영향·새 쟁점 관계와 4장이 앞 장을 제약하는 점선 관계를 보이며, 맨 아래 5장 IT 인프라와 신기술이 위의 모든 장에 기반을 제공하는 개념 지도",
+  desc: "1장 정보시스템과 가치, 2장 프로세스·전사 시스템·지식관리, 3장 조직과 전략, 4장 윤리와 사회적 책임을 위에서 아래로 놓고, 각 장의 핵심 질문과 개념 묶음, 장 사이의 구체화·영향·새 쟁점 관계와 4장이 앞 장을 제약하는 점선 관계를 보이며, 5장 IT 인프라와 신기술이 위의 모든 장에 기반을 제공하며, 맨 아래 9장 전사적 애플리케이션이 그 기반 위에서 2장의 ERP·SCM·CRM을 심화하는 개념 지도",
   legend: ["flow", "dash", "focal"],
-  note: "점선 화살표: 4장의 법·윤리 기준이 1–3장의 시스템 설계와 투자 판단을 다시 제약한다. 위쪽 화살표: 5장의 IT 인프라가 1–4장의 모든 시스템에 기반을 제공한다.",
+  note: "점선 화살표: 4장의 법·윤리 기준이 1–3장의 시스템 설계와 투자 판단을 다시 제약한다. 위쪽 화살표: 5장의 IT 인프라가 1–4장의 모든 시스템에 기반을 제공한다. 맨 아래 화살표: 9장은 그 기반 위의 ERP·SCM·CRM(2-3)을 깊게 다룬다.",
 }, y0 => {
   const bandW = CW - 64;
   const chapters = [
@@ -98,6 +98,7 @@ fig("mis-gl-00-concept-map", {
     ["3장 · 조직과 전략", "조직과 IT는 서로를 어떻게 바꾸고, IT로 어떻게 경쟁할까?", "3-1 조직의 정의·양방향 관계 · 3-2 루틴·문화·정치·구조 · 3-3 거래·대리인 비용, 변화 저항 · 3-4 다섯 경쟁 요인·네 전략 · 3-5 가치사슬·네트워크 전략"],
     ["4장 · 윤리와 사회적 책임", "IS가 만든 힘을 누가 어떤 책임으로 통제할까?", "4-1 다섯 도덕적 차원 · 4-2 프로파일링·NORA · 4-3 책임·판단 원칙 · 4-4 프라이버시·FIP · 4-5 지식재산 · 4-6 책임·시스템 품질 · 4-7 삶의 질"],
     ["5장 · IT 인프라와 신기술", "모든 시스템을 떠받치는 기반을 무엇으로 짓고, 소유할까 빌릴까?", "5-1 정의·다섯 시대 · 5-2 일곱 구성요소 · 5-3 모바일·가상화·클라우드·엣지 · 5-4 오픈소스·웹 서비스·SaaS·SLA · 5-5 확장성·거버넌스·TCO·투자 요인"],
+    ["9장 · 전사적 애플리케이션: ERP·SCM·CRM", "회사 안과 공급자·고객 쪽을 소프트웨어로 어떻게 묶을까?", "9-1 ERP·중앙 DB·모범 사례 · 9-2 공급망·채찍 효과·SCM·푸시와 풀 · 9-3 CRM·운영과 분석·CLTV·이탈률 · 9-4 전환 비용·차세대·AI"],
   ];
   const links = ["구체화: 원리 → 업무별 시스템", "영향: 시스템이 조직·경쟁을 바꿈", "새 쟁점: 데이터·권력의 집중"];
   const out = [];
@@ -124,6 +125,8 @@ fig("mis-gl-00-concept-map", {
   const first = bands[0];
   out.push(arrow([[X0 + bandW, b4.y + b4.h / 2], [rx, b4.y + b4.h / 2], [rx, first.y + first.h / 2], [X0 + bandW, first.y + first.h / 2]], { dashed: true }));
   out.push(label(rx, (first.y + b4.y + b4.h) / 2, "제약"));
+  const b9 = bands[5];
+  out.push(arrow([[x, b5.y + b5.h], [x, b9.y]], { text: "그 기반 위에서: 2-3 심화" }));
   return { svg: out.join(""), y: y - 52 + 18 };
 });
 
@@ -1012,6 +1015,55 @@ fig("mis-gl-5d-tco", {
     arrow([[W / 2, zoneBottom], [W / 2, p[4].y]], { text: "줄이는 방법" }),
   ];
   return { svg: out.join(""), y: r.y };
+});
+
+// =============================================================================================
+// Chapter 9 · Enterprise applications (ERP · SCM · CRM)
+
+fig("mis-gl-9-overview", {
+  eyebrow: "9장 개요 · 개념 묶음 4개",
+  title: "안을 묶고, 공급 쪽과 고객 쪽으로 넓힌다",
+  subtitle: "핵심 질문: 회사 안과 공급자·고객 쪽 바깥을 소프트웨어로 어떻게 묶어 운영 탁월성과 고객 친밀성을 얻을까?",
+  desc: "9-1 ERP가 통합 모듈과 하나의 중앙 데이터베이스로 회사 안을 묶고, 공급 쪽으로 9-2 공급망과 SCM(채찍 효과, 계획·실행, 푸시·풀, 글로벌 공급망), 고객 쪽으로 9-3 CRM(영업·마케팅·서비스, 운영적·분석적 CRM, CLTV·이탈률)으로 넓어진 뒤, 세 시스템의 공통 과제와 차세대 애플리케이션·AI를 다루는 9-4로 모이는 개요도",
+  legend: ["flow", "focal", "zone"],
+}, y0 => {
+  const r = rows([
+    { nodes: [g("9-1", "ERP · 회사 안 통합", ["통합 모듈 + 중앙 DB, 모범 사례, 최소 커스터마이징"], "focal")], edge: { type: "rise", texts: ["공급 쪽으로", "고객 쪽으로"] } },
+    { nodes: [g("9-2", "공급망과 SCM", ["상류·하류, 채찍 효과, 계획·실행, 푸시·풀, 글로벌"]), g("9-3", "CRM", ["영업·마케팅·서비스, 운영·분석, CLTV·이탈률"])], after: 84 },
+    { nodes: [g("9-4", "도입 과제와 차세대 애플리케이션", ["비용·프로세스 변화·전환 비용, 클라우드·소셜 CRM·BI·AI"])] },
+  ], y0);
+  const z = zoneAround(r.placed, 1, 1, "회사 바깥으로 확장", 10, "zone", true);
+  return { svg: z + r.svg + merge(r.placed, 1, "공통 과제", { from: 10 }), y: r.y };
+});
+
+fig("mis-gl-9a-supply-chain-information", {
+  eyebrow: "9장 · 9-2 공급망과 SCM",
+  title: "정보의 질이 재고를 정한다",
+  subtitle: "완벽한 정보면 JIT, 불확실하면 안전 재고, 왜곡되면 채찍 효과 — 해결책은 정확하고 최신인 정보의 공유다",
+  desc: "공급망 정보의 질에 따라 세 가지 결과가 나온다. 완벽한 정보는 부품이 필요한 순간에 도착하는 JIT를, 불확실한 정보는 유연성 부족에 대비한 안전 재고를, 단계마다 왜곡되는 정보는 수요 변동이 상류로 갈수록 커지는 채찍 효과를 만든다. 세 경우 모두 공급망 구성원이 정확하고 최신인 정보를 공유하게 하는 SCM 시스템으로 개선되는 흐름 그림",
+  legend: ["flow", "focal"],
+}, y0 => { const r = rows([
+  { nodes: [{ tag: "Supply chain information", title: "공급망 정보의 질", body: ["비효율은 운영비의 최대 25%를 낭비"], style: "focal" }], edge: { type: "bus", text: "정보 상태에 따라" } },
+  { nodes: [{ tag: "완벽", title: "JIT", body: ["필요한 순간 도착", "재고 ↓"] }, { tag: "불확실", title: "안전 재고", body: ["여유분 보유", "돈·공간 묶임"] }, { tag: "왜곡", title: "채찍 효과", body: ["상류로 갈수록", "변동 증폭"] }], after: 80 },
+  { nodes: [{ tag: "SCM systems", title: "정확·최신 정보를 모두가 공유", body: ["계획 시스템 + 실행 시스템, 풀 기반·동시 공급망"] }] },
+], y0); return { svg: r.svg + merge(r.placed, 1, "해결"), y: r.y }; });
+
+fig("mis-gl-9b-operational-analytical-crm", {
+  eyebrow: "9장 · 9-3 CRM",
+  title: "운영적 CRM이 재료를, 분석적 CRM이 결론을",
+  subtitle: "고객을 직접 상대하며 쌓인 데이터가 웨어하우스로 모이고, 분석 결과가 다시 접점의 행동을 바꾼다",
+  desc: "고객 접점(콜센터·웹·매장·영업·소셜 미디어)에서 영업 자동화·고객 서비스·마케팅 자동화로 이루어진 운영적 CRM이 고객 데이터를 만들고, 그 데이터가 고객 데이터 웨어하우스로 모여 OLAP과 데이터 마이닝을 쓰는 분석적 CRM이 수익성 높은 고객·시장 세분화, 고객 생애 가치, 이탈률을 산출하며, 그 결과가 다시 고가치 고객 우대와 타깃 마케팅으로 접점에 돌아가는 흐름 그림",
+  legend: ["flow", "dash", "focal", "outside"],
+}, y0 => { const r = rows([
+  { nodes: [{ title: "고객 접점 (touch points)", body: ["콜센터·웹·매장·영업·소셜 미디어"], style: "outside" }], edge: { type: "flow", text: "고객을 직접 상대" } },
+  { nodes: [{ tag: "Operational CRM", title: "운영적 CRM", body: ["SFA · 고객 서비스 · 마케팅 자동화"] }], edge: { type: "flow", text: "데이터 제공" } },
+  { nodes: [{ tag: "Analytical CRM", title: "분석적 CRM", body: ["고객 데이터 웨어하우스 + OLAP·데이터 마이닝"], style: "focal" }], edge: { type: "bus", text: "산출" } },
+  { nodes: [{ tag: "Segments", title: "수익성 고객·세분화", body: ["고객 프로필"] }, { tag: "CLTV", title: "고객 생애 가치", body: ["수익·비용·기간"] }, { tag: "Churn rate", title: "이탈률", body: ["떠난 고객 수"] }] },
+], y0);
+  const p = r.placed, last = p[3].boxes[2], top = p[0].boxes[0];
+  const rx = X0 + CW + 4;
+  const back = arrow([[last.x + last.w, last.y + last.h / 2], [rx, last.y + last.h / 2], [rx, top.y + top.h / 2], [top.x + top.w, top.y + top.h / 2]], { dashed: true });
+  return { svg: r.svg + back, y: r.y };
 });
 
 const written = [];
