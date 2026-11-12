@@ -17,6 +17,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/lectures/grade-01/semester-muheifg4/:subject(subject-cpp-exercise|subject-cpp-homework)",
+        destination: "/lectures/grade-01/semester-muheifg4/subject-muw81hpv",
+        permanent: true,
+      },
+      {
+        source: "/lectures/grade-01/semester-muheifg4/:subject(subject-cpp-exercise|subject-cpp-homework)/:document",
+        destination: "/lectures/grade-01/semester-muheifg4/subject-muw81hpv/lecture-00",
+        permanent: true,
+      },
+      {
         source: "/lectures/grade-01/semester-01/subject-adsp/:document",
         destination: "/lectures/grade-mukhnzii/semester-certificate/subject-adsp/:document",
         permanent: true,

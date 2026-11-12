@@ -1,568 +1,571 @@
 ---
-title: "클래스 고급 기능과 예외 처리"
-description: "모든 객체가 함께 쓰는 static 멤버, 나 자신을 가리키는 this, friend, 파일 분리, 연산자 오버로딩, 그리고 오류를 던지고 받는 예외 처리(catch 선택 규칙·재던지기·스택 풀기)를 흐름 그림과 출력 추적으로 처음부터 설명합니다."
+title: "객체지향과 클래스"
+description: "객체지향의 개념(추상화·캡슐화·정보 은닉·상속·다형성), 클래스와 객체, 멤버 접근과 범위 연산자 ::, public·private과 getter·setter, 생성자·소멸자·기본 생성자, 복사 생성자와 얕은/깊은 복사, const 멤버 함수를 Lecture 9 순서로 그림과 출력 추적으로 설명합니다."
 order: 6
 published: true
+duration: 90
 ---
 
-# 클래스 고급 기능과 예외 처리
+# 객체지향과 클래스
 
-이 강의는 두 부분입니다. 앞부분(1–5절)은 5단원 클래스에 **편의 기능**을 더하고, 뒷부분(6–9절)은 프로그램 실행 중 문제가 생겼을 때 **정상 흐름에서 빠져나와 처리하는 방법(예외)**을 다룹니다. 기말 족보는 뒷부분 비중이 큽니다.
+**슬라이드:** Lecture 9 (9주차) · Foundations of OO-Programming, Class Definitions, Encapsulation, Constructors
+
+중간고사 이후는 **객체지향**입니다. 지금까지는 `int`, `double` 같은 C++이 준 자료형만 썼다면, 이제 **내가 새 자료형(클래스)**을 만듭니다.
+
+---
 
 ## 학습 흐름
 
 ```text
-static 멤버 (클래스가 공유) → this 포인터와 *this 반환
+객체지향의 개념 → 클래스와 객체(Circle) → 멤버 접근 . 과 범위 연산자 ::
         ↓
-friend → 파일 분리 → 연산자 오버로딩 (멤버 / 비멤버, 전위 / 후위 ++)
+정보 은닉: public / private → getter · setter
         ↓
-try / throw / catch → catch 선택 규칙 → 재던지기 throw;
+생성자 · 소멸자 · 기본 생성자 → 호출 순서
         ↓
-예외 전파와 스택 풀기 → 표준 예외
+복사 생성자와 얕은/깊은 복사 → const 멤버 함수
 ```
 
 > [!EXAM]
-> 기말 족보에서 예외 문제가 **6문항**입니다. 같은 코드에 `throw`하는 값의 자료형만 바꿔(`double`, `int`, `char`, `bool`, `"K"`) 출력을 묻습니다. **catch는 자료형이 정확히 맞아야 받는다**는 규칙 하나로 모두 풀립니다.
-
-### 이 강의에서 쓰는 말
-
-| 말 | 뜻 | 비유 |
-| --- | --- | --- |
-| static 멤버 | 객체마다가 아니라 **클래스에 하나** 있는 멤버 | 반 전체가 함께 쓰는 칠판 |
-| `this` | 지금 멤버 함수를 부른 **객체의 주소** | "나" |
-| friend | private에 접근하도록 허락받은 외부 함수·클래스 | 집 열쇠를 받은 친구 |
-| 연산자 오버로딩 | `+`, `<<` 같은 연산자를 내 클래스에 맞게 정의 | 내 자료형에도 `+`를 쓰게 함 |
-| 예외(exception) | 정상 흐름으로 처리할 수 없는 문제 상황 | 비상벨 |
-| `throw` / `catch` | 예외를 던짐 / 받아서 처리함 | 비상벨을 울림 / 대응팀이 받음 |
-| 스택 풀기 | 예외가 함수를 빠져나가며 지역 객체를 정리하는 것 | 비상구로 나가며 불을 끄고 나감 |
+> 기말 족보의 클래스 문제는 세 가지입니다. ① **접근 가능 여부 O/X 표**, ② **virtual 유무에 따른 출력**(07강), ③ **조건에 맞는 클래스 작성**(07강 끝).
 
 ---
 
-## 1. static 멤버
+## 1. 객체지향이란
 
-### 1-1. 객체마다 vs 클래스에 하나
+**객체지향(Object Orientation)**은 코드의 **신뢰성**과 **재사용성**을 높이기 위한 프로그래밍 패러다임입니다. 프로그래머는 현실의 대상을 본떠 **객체의 속성(attribute)과 동작(behavior)**을 정의합니다.
 
-보통 멤버 변수는 **객체마다 따로** 있습니다. 그런데 "지금까지 만들어진 플레이어 수"처럼 **모든 객체가 함께 봐야 하는 값**은 객체마다 따로 있으면 안 됩니다. 이럴 때 `static`을 붙이면 그 멤버는 **클래스 전체에 하나**만 생깁니다.
+| 개념 | 뜻 | 이 과목에서 |
+| --- | --- | --- |
+| 추상화 (Abstraction) | 필요한 특징만 골라 모델로 만들기 | 원 → 반지름과 넓이 |
+| 캡슐화 (Encapsulation) | 데이터와 그 데이터를 다루는 함수를 클래스로 묶기 | 클래스 정의 |
+| 정보 은닉 (Information hiding) | 바깥에서 안을 못 보게 숨기기 | private / public |
+| 상속 (Inheritance) | 기존 클래스를 물려받아 확장 | 07강 |
+| 다형성 (Polymorphism) | 같은 호출이 실제 객체에 따라 다르게 동작 | 07강 |
 
-```text
-일반 멤버 hp                        static 멤버 count
-a: [hp:100]  b: [hp:80]            Player 클래스: [count: 2]  ← a, b가 함께 씀
+이 다섯 개념이 **신뢰성(Reliability)**과 **재사용(Reuse)**이라는 두 목표로 이어집니다.
+
+학생 세 명의 학번과 이름을 관리한다고 해 봅시다. 클래스 없이 쓰면 이렇게 됩니다.
+
+```cpp
+int number1 = 1;  char name1[20] = "Kim";
+int number2 = 2;  char name2[20] = "Lee";
+// 학생이 늘 때마다 변수가 두 개씩 늘고, 학번과 이름이 따로 논다
 ```
 
-| | 일반 멤버 | static 멤버 |
+학번과 이름은 **한 학생에 속한 한 묶음**인데, 코드에서는 서로 아무 관계가 없습니다. 클래스는 이 묶음을 **하나의 자료형**으로 만듭니다.
+
+```cpp
+class Student {
+public:
+    int number;
+    char name[20];
+};
+
+Student s1, s2;      // 학생 두 명. 각자 number와 name을 하나씩 가짐
+s1.number = 1;
+```
+
+> [!NOTE]
+> 클래스는 붕어빵 틀이고 객체는 붕어빵입니다. 틀(`Student`)은 하나지만 붕어빵(`s1`, `s2`)은 여러 개 찍을 수 있고, 붕어빵마다 속(`number`, `name`)이 따로 있습니다. `s1.number`를 바꿔도 `s2.number`는 그대로입니다.
+
+---
+
+## 2. 클래스와 객체
+
+[![Circle 클래스가 속성 radius와 메서드 area를 정의하고 그 클래스로 만든 네 객체가 각자 다른 radius를 가지는 그림](/materials/diagrams/cpp-06-class-objects.svg)](/materials/diagrams/cpp-06-class-objects.svg)
+
+*그림 6-1 · 클래스와 객체 — 누르면 원본 크기로 열린다.*
+
+C++의 **클래스**는 객체의 자료형입니다. 기술적으로는 C 구조체를 확장한 것이고, **데이터 멤버(속성)**와 **클래스 관련 함수(메서드)**로 이루어집니다. **객체**는 클래스의 인스턴스이고 실행 중에 메모리를 차지합니다.
+
+```cpp
+class Circle {
+public:
+    double radius;
+    double area() { return radius * radius * 3.141; }
+};
+
+int main() {
+    Circle c;              // 객체 생성 = 인스턴스화
+    c.radius = 3.0;        // 멤버 접근 연산자 .
+    double a = c.area();
+    Circle d = {5.0};      // C 구조체식 초기화 (public 속성일 때만)
+}
+```
+
+클래스를 **정의만** 해서는 객체가 생기지 않습니다. 그 자료형의 **변수를 만들 때** 생깁니다.
+
+**범위 연산자 `::`** — 클래스 안에는 원형만 두고, 메서드 본문을 클래스 밖에 쓸 때 소속을 밝힙니다(03강 네임스페이스와 같은 기호).
+
+```cpp
+class Circle {
+public:
+    double radius;
+    double area();                    // 원형 — 공개 인터페이스
+};
+double Circle::area() { return radius * radius * 3.14159; }
+```
+
+> [!QUIZ]
+> 슬라이드 13: 아래 `sum`의 `for (i = 0; i < i; i++)`에서 두 `i`는 각각 무엇이고, 어떻게 고치나?
+> ```cpp
+> class foo {
+>     int i;          // 배열 원소 개수
+>     int a[10];
+>     int sum() { int i, x = 0; for (i = 0; i < i; i++) x += a[i]; return x; }
+> };
+> ```
+
+> [!ANSWER]
+> 함수 안에서 선언한 지역 변수 `i`가 멤버 `i`를 **가립니다**. 그래서 `i < i`는 지역 변수끼리 비교라 항상 거짓이고 합은 0입니다. 멤버를 쓰려면 `i < foo::i`(또는 `this->i`)라고 씁니다.
+
+```cpp
+class Student {               // 설계도 (새 자료형)
+public:
+    int number;               // 멤버 변수
+    char name[20];
+
+    void print() const {      // 멤버 함수(메서드)
+        cout << number << ' ' << name << '\n';
+    }
+};                            // 세미콜론 필수
+
+Student s;                    // 객체
+s.number = 1;                 // 점 연산자로 멤버 접근
+Student* p = &s;
+p->print();                   // 포인터는 -> 사용 ((*p).print()와 같음)
+```
+
+- 객체의 멤버는 **점(`.`)**으로, 객체를 가리키는 포인터에서는 **화살표(`->`)**로 씁니다. `p->print()`는 `(*p).print()`를 줄여 쓴 것입니다.
+- 멤버 함수 안에서는 같은 객체의 다른 멤버를 **이름만으로** 씁니다. `print()` 안의 `number`는 "이 함수를 부른 객체의 `number`"입니다.
+- `class`의 기본 접근은 **private**, `struct`의 기본 접근은 **public**입니다. 그 밖에는 둘이 같습니다.
+
+> [!TRAP]
+> 클래스 정의 끝의 `};`에서 **세미콜론을 빠뜨리면** 엉뚱한 줄에서 컴파일 오류가 납니다. 함수 정의 `}` 뒤에는 세미콜론이 없지만 클래스 정의 뒤에는 꼭 필요합니다.
+
+---
+
+## 3. 정보 은닉: public과 private
+
+[![Circle 클래스의 private radius는 main에서 직접 접근할 수 없고 public 메서드 set_radius get_radius area를 통해서만 다루며 생성자와 소멸자가 함께 있는 그림](/materials/diagrams/cpp-06-encapsulation.svg)](/materials/diagrams/cpp-06-encapsulation.svg)
+
+*그림 6-2 · private 속성은 public 메서드로 — 누르면 원본 크기로 열린다.*
+
+`public`, `private`, `protected`는 속성과 메서드가 **어디서 보이는지**를 정합니다.
+
+- **public:** 클래스 밖에서도 제한 없이 접근.
+- **private:** 클래스 내부에서만. 밖에서는 보이지 않으며, C 구조체식 초기화(`{5.0}`)도 안 됩니다.
+- **protected:** 07강 상속에서.
+
+```cpp
+class Circle {
+private:
+    double radius;
+public:
+    double area();
+    void set_radius(double r) { radius = r; }   // setter
+    double get_radius() { return radius; }      // getter (accessor)
+};
+```
+
+### 3-1. 왜 숨기나 (캡슐화)
+
+통장 잔액을 `public`으로 두면 누구나 `acc.balance = -100000;`처럼 말이 안 되는 값을 넣을 수 있습니다. 데이터는 `private`으로 숨기고, 값을 바꿀 때는 **검사하는 함수**를 거치게 하면 실수를 막을 수 있습니다. 이렇게 데이터를 숨기고 함수로만 다루게 하는 것을 **캡슐화**라고 합니다.
+
+```cpp
+class Account {
+private:
+    int balance = 0;                  // 밖에서 직접 못 건드림
+public:
+    int getBalance() const { return balance; }   // getter: 읽기
+    void deposit(int amount) {                   // 검사 후 변경
+        if (amount > 0) balance += amount;
+    }
+};
+
+Account acc;
+acc.deposit(1000);
+// acc.balance = -5;     // 컴파일 오류: private
+cout << acc.getBalance();   // 1000
+```
+
+값을 읽는 함수를 **getter**, 바꾸는 함수를 **setter**라고 부릅니다. 족보의 클래스 작성 문제에 꼭 나옵니다(07강 끝).
+
+### 3-2. 세 가지 접근 지정자
+
+| 지정자 | 같은 클래스 멤버 함수 | 파생 클래스 멤버 함수 | 클래스 밖(main 등) |
+| --- | :---: | :---: | :---: |
+| `public` | O | O | O |
+| `protected` | O | O (조건 있음) | X |
+| `private` | O | **X** | X |
+
+- `public`: 누구나
+- `protected`: 나와 **나를 물려받은 자식**까지
+- `private`: **나만**
+
+### 3-3. 다른 객체를 통한 접근 (O/X 표의 함정)
+
+접근 권한은 **객체 단위가 아니라 클래스 단위**입니다. 같은 클래스의 멤버 함수라면 **다른 객체의 private 멤버**에도 접근할 수 있습니다. 반면 `protected`는 파생 클래스에서 **자기 클래스(또는 그 파생) 객체를 통할 때만** 접근할 수 있습니다.
+
+```cpp
+class A {
+public:    int x; A* pa;
+protected: int y;
+private:   int z;
+};
+class B : public A { public: A objA; };
+class C : public B { public: C* pc; B objB; };
+```
+
+```text
+상속 관계:  A  ◀── B  ◀── C        (B는 A를, C는 B를 물려받음)
+멤버:      x(public) y(protected) z(private) pa   objA(B에만)   pc, objB(C에만)
+```
+
+각 클래스의 **멤버 함수 안에서** 쓸 수 있는지:
+
+| 표현 | in A | in B | in C | 이유 |
+| --- | :---: | :---: | :---: | --- |
+| `x` | O | O | O | public 상속된 public |
+| `y` | O | O | O | 자기(상속받은) protected |
+| `z` | O | X | X | private는 A만 |
+| `objA.x` | X | O | O | A에는 `objA` 멤버가 없음 |
+| `objA.y` | X | **X** | **X** | 다른 A 객체의 protected는 파생 클래스에서 불가 |
+| `objA.z` | X | X | X | private |
+| `pa->y` | O | **X** | **X** | A 안에서는 다른 A 객체의 protected·private도 OK |
+| `pa->z` | **O** | X | X | 같은 클래스면 다른 객체의 private도 OK |
+| `objB.y` | X | X | **X** | C 안이라도 B 객체를 통한 protected는 불가 |
+| `pc->y` | X | X | **O** | C 안에서 C 객체를 통하면 가능 |
+| `pc->z` | X | X | X | private |
+
+> [!NOTE]
+> **O/X 표를 푸는 3단계**
+>
+> 1. 그 이름(`objA`, `pc` 등)이 **그 클래스에 선언되어 있나?** 없으면 X.
+> 2. 마지막 멤버(`x`/`y`/`z`)가 **public이면 O, private이면 자기 클래스(A) 안에서만 O.**
+> 3. **protected**라면: A 안에서는 O. 파생 클래스 안에서는 **"나 자신(그냥 `y`)"이거나 "내 클래스 자료형의 객체(`pc->y`)"를 통할 때만** O, 부모 자료형 객체(`objA.y`, `objB.y`)를 통하면 X.
+
+> [!TRAP]
+> - "멤버가 그 클래스에 **선언되어 있는가**"를 먼저 보세요. `objA`는 B의 멤버이므로 A의 멤버 함수에서는 쓸 수 없습니다(X).
+> - 파생 클래스에서 `y`(자신이 물려받은 것)는 O지만, `objA.y`(별도 A 객체의 것)는 X입니다.
+
+> [!QUIZ]
+> 위 A, B, C 정의에서 아래 표현을 각 클래스의 멤버 함수 안에서 쓸 수 있으면 O, 없으면 X를 쓰시오.
+>
+> | 표현 | in A | in B | in C |
+> | --- | :---: | :---: | :---: |
+> | `y` | | | |
+> | `z` | | | |
+> | `objA.x` | | | |
+> | `objA.y` | | | |
+> | `pa->z` | | | |
+> | `objB.x` | | | |
+> | `pc->y` | | | |
+
+> [!ANSWER]
+> | 표현 | in A | in B | in C |
+> | --- | :---: | :---: | :---: |
+> | `y` | O | O | O |
+> | `z` | O | X | X |
+> | `objA.x` | X | O | O |
+> | `objA.y` | X | X | X |
+> | `pa->z` | O | X | X |
+> | `objB.x` | X | X | O |
+> | `pc->y` | X | X | O |
+>
+> 모든 칸은 컴파일러로 확인한 결과입니다.
+
+---
+
+## 4. 생성자와 소멸자
+
+**생성자**는 새 객체가 만들어질 때 불리는 특별한 멤버 함수입니다. 인수가 다른 생성자를 여러 개 둘 수 있습니다. **소멸자**는 객체가 사라질 때 불리며 **하나뿐이고 인수가 없습니다**.
+
+```cpp
+class Circle {
+public:
+    double radius;
+    double area();
+    Circle(double r);   // 생성자 원형
+    Circle();           // 기본 생성자 (초기값 없이 만들 때)
+    ~Circle();          // 소멸자
+};
+Circle::Circle(double r) { radius = r; }
+Circle::Circle()         { radius = 0; }
+Circle::~Circle()        { std::cout << "Goodbye Object\n"; }
+
+int main() {
+    Circle c = Circle(5.0);    // 또는 Circle c(5.0);
+    std::cout << c.area();
+}   // main이 끝날 때 "Goodbye Object"
+```
+
+### 4-1. 객체가 태어날 때와 죽을 때
+
+객체를 만들면서 바로 값을 채우고 싶을 때가 많습니다. 생성자는 **객체가 만들어지는 순간 자동으로 불리는 함수**, 소멸자는 **사라지는 순간 자동으로 불리는 함수**입니다.
+
+```cpp
+class Lamp {
+    int watt;
+public:
+    Lamp(int w) {                 // 생성자: 이름 = 클래스 이름, 반환형 없음
+        watt = w;
+        cout << "켜짐(" << watt << "W) ";
+    }
+    ~Lamp() {                     // 소멸자: ~클래스이름, 매개변수 없음
+        cout << "꺼짐(" << watt << "W) ";
+    }
+};
+
+int main() {
+    Lamp a(60);                   // 생성자 호출
+    {
+        Lamp b(100);
+    }                             // 블록 끝 → b 소멸
+    cout << "| ";
+}                                 // main 끝 → a 소멸
+// 출력: 켜짐(60W) 켜짐(100W) 꺼짐(100W) | 꺼짐(60W)
+```
+
+| | 생성자 | 소멸자 |
 | --- | --- | --- |
-| 데이터 | 객체마다 하나씩 | **클래스 전체에 하나** (모든 객체가 공유) |
-| 정의 | 클래스 안 | 클래스 안에 선언 + **클래스 밖에 정의** `int Player::count = 0;` |
-| 함수 호출 | `obj.f()` | `Player::f()` (객체 없이도 가능) |
-| `this` | 있음 | **없음** → 일반 멤버를 직접 쓸 수 없음 |
+| 이름 | 클래스 이름 | `~클래스이름` |
+| 반환형 | 없음 (`void`도 안 씀) | 없음 |
+| 매개변수 | 가질 수 있음, 오버로딩 가능 | **없음**, 하나만 |
+| 호출 시점 | 객체가 만들어질 때 자동 | 객체가 사라질 때 자동 |
+
+### 4-2. 기본 생성자 규칙
+
+매개변수가 없는 생성자를 **기본 생성자**라고 합니다. `P a;`처럼 괄호 없이 만들거나 `P arr[3];`처럼 배열을 만들 때 불립니다.
+
+- 생성자를 **하나도 안 만들면** 컴파일러가 기본 생성자를 만들어 줍니다.
+- 매개변수 있는 생성자를 **하나라도 만들면** 기본 생성자는 자동으로 생기지 않습니다. 그러면 `P a;`와 `P arr[3];`은 **컴파일 오류**입니다.
+
+```cpp
+class P {
+    int x;
+public:
+    P(int v) : x(v) {}
+};
+P a;          // 컴파일 오류: P() 없음
+P b(3);       // OK
+```
+
+고치려면 기본 생성자를 직접 추가하거나 기본값을 줍니다: `P(int v = 0) : x(v) {}`.
+
+### 4-3. 멤버 초기화 목록
+
+생성자 이름 뒤 `:`부터 `{` 앞까지를 **멤버 초기화 목록**이라고 합니다. 멤버가 만들어지는 **그 순간에** 값을 넣습니다.
 
 ```cpp
 class Player {
-    static int count;
+    string name;
+    int hp;
+    const int id;          // const 멤버와 참조 멤버는 초기화 목록에서만 초기화 가능
 public:
-    Player()  { count++; }
-    ~Player() { count--; }
-    static int getCount() { return count; }
+    Player(string n, int h, int i) : name(n), hp(h), id(i) {}
 };
-int Player::count = 0;          // 빠뜨리면 링크 오류
 ```
 
-생성자가 `count`를 1 늘리고 소멸자가 1 줄이므로, `count`는 **지금 살아 있는 Player 객체 수**가 됩니다.
-
-> [!QUIZ]
-> 다음 출력을 쓰시오.
->
-> ```cpp
-> cout << Player::getCount() << ' ';
-> Player a;
-> {
->     Player b, c;
->     cout << Player::getCount() << ' ';
-> }
-> cout << Player::getCount() << ' ';
-> Player* p = new Player;
-> cout << Player::getCount() << ' ';
-> delete p;
-> cout << Player::getCount();
-> ```
-
-> [!ANSWER]
-> `0 3 1 2 1` — 블록이 끝나면 `b`, `c`의 소멸자가 `count`를 줄입니다. `new`로 만든 객체도 생성자·소멸자에서 똑같이 세어집니다.
+본문 `{ }` 안에서 `id = i;`라고 쓰면 이미 만들어진 `const` 멤버에 **대입**하는 것이 되어 오류입니다. "만들면서 넣기(초기화)"와 "만든 뒤에 넣기(대입)"가 다르다는 점이 핵심입니다.
 
 > [!TRAP]
-> static 멤버 함수 안에서 일반 멤버 `v`를 쓰면 **컴파일 오류**입니다. 어느 객체의 `v`인지 알 수 없기 때문입니다(this가 없음). `Player::getCount()`처럼 객체 없이 부를 수 있다는 것 자체가 "특정 객체와 상관없다"는 뜻입니다.
+> 멤버는 초기화 목록에 **적힌 순서가 아니라 클래스에 선언된 순서**대로 초기화됩니다.
 
----
-
-## 2. this 포인터
-
-### 2-1. "나"를 가리키는 포인터
-
-`a.add(3)`과 `b.add(3)`은 같은 함수 코드를 실행합니다. 그런데 함수 안의 `v`가 어떻게 한 번은 `a.v`, 한 번은 `b.v`가 될까요? 컴파일러가 몰래 **호출한 객체의 주소**를 함수에 넘겨주기 때문입니다. 그 주소가 `this`입니다.
-
-- 일반 멤버 함수 안의 `this`는 **함수를 호출한 객체의 주소**입니다(`a.add()`면 `&a`).
-- `*this`는 그 객체 자체입니다.
-- 함수 안의 `v`는 사실 `this->v`를 줄여 쓴 것입니다.
-
-```cpp
-class Counter {
-    int v;
-public:
-    Counter(int v) { this->v = v; }                    // 매개변수와 멤버 이름 구분
-    Counter& add(int a)    { v += a; return *this; }   // 참조 반환 → 같은 객체로 연결
-    Counter addCopy(int a) { v += a; return *this; }   // 값 반환 → 복사본 반환
-    int get() const { return v; }
-};
-```
-
-생성자의 `this->v = v;`에서 왼쪽 `this->v`는 **멤버**, 오른쪽 `v`는 **매개변수**입니다. 이름이 같을 때 둘을 구분하는 용도입니다.
-
-### 2-2. 연결 호출: 참조 반환 vs 값 반환
-
-`c.add(3).add(5)`는 `c.add(3)`이 돌려준 것에 다시 `.add(5)`를 부릅니다. 그래서 **무엇을 돌려주느냐**가 중요합니다.
+### 4-4. 호출 순서 (시험 최빈출)
 
 ```text
-add (참조 반환):      c.add(3)  → c 자신 → .add(5) → 다시 c에 더함
-addCopy (값 반환):    c.addCopy(1) → c의 복사본(임시) → .addCopy(1) → 복사본에 더함 (c는 모름)
+생성: 기반 클래스 → 멤버 객체(선언 순서) → 자기 생성자 본문
+소멸: 정확히 반대  (자기 소멸자 본문 → 멤버(선언 역순) → 기반)
 ```
-
-> [!QUIZ]
-> 다음 출력을 쓰시오.
->
-> ```cpp
-> Counter c(0);
-> c.add(3).add(5);
-> cout << c.get() << ' ';
-> c.addCopy(1).addCopy(1);
-> cout << c.get();
-> ```
-
-> [!ANSWER]
-> `8 9` — `add`는 `c` 자신을 참조로 반환하므로 두 번 모두 `c`에 더합니다. `addCopy`는 첫 호출에서 `c`를 9로 만들고 **복사본**을 반환하므로, 두 번째 `addCopy(1)`은 복사본에 더해져 `c`에는 반영되지 않습니다.
-
----
-
-## 3. friend
-
-`friend`로 지정한 함수(또는 클래스)는 그 클래스의 private·protected 멤버에 접근할 수 있습니다. 클래스가 "이 함수는 믿으니 내 private을 봐도 된다"고 **스스로** 허락하는 것입니다.
-
-```cpp
-class Wallet {
-    int money = 500;
-    friend void peek(const Wallet& w);   // 이 함수에게 허락
-};
-void peek(const Wallet& w) { cout << w.money; }   // OK: friend라서 private 접근
-
-Wallet w;
-peek(w);      // 500  — w.peek()이 아니라 peek(w)
-```
-
-- friend 함수는 **멤버 함수가 아닙니다**. `this`가 없고, `obj.f()`가 아니라 `f(obj)`로 호출합니다.
-- friend 관계는 **상속되지 않고**, **한쪽 방향**입니다(A가 B를 friend로 지정해도 B가 A를 지정한 것은 아님).
-
-friend가 가장 많이 쓰이는 곳은 5절의 `cout << p` 연산자 오버로딩입니다.
-
----
-
-## 4. 클래스 파일 분리
-
-프로그램이 커지면 클래스를 **선언(.h)**과 **구현(.cpp)**으로 나눕니다. 다른 파일은 `.h`만 `#include`해서 클래스를 씁니다. 책의 목차(.h)와 본문(.cpp)으로 생각하면 됩니다.
-
-```cpp
-// Counter.h — 선언
-#ifndef COUNTER_H          // 헤더 가드: 여러 번 포함되는 것을 막음
-#define COUNTER_H
-class Counter {
-    int value;
-public:
-    Counter(int initial);
-    void increase();
-    int getValue() const;
-};
-#endif
-
-// Counter.cpp — 구현 (클래스이름:: 으로 소속 표시)
-#include "Counter.h"
-Counter::Counter(int initial) : value(initial) {}
-void Counter::increase() { value++; }
-int Counter::getValue() const { return value; }
-```
-
-- 클래스 밖에서 멤버 함수를 정의할 때는 `Counter::`를 붙여 **어느 클래스의 함수인지** 밝힙니다.
-- 헤더 가드(`#ifndef … #define … #endif`)가 없으면 같은 헤더가 두 번 포함될 때 "클래스 재정의" 오류가 납니다.
-- 내가 만든 헤더는 `"Counter.h"`(큰따옴표), 표준 헤더는 `<iostream>`(꺾쇠)로 포함합니다.
-
----
-
-## 5. 연산자 오버로딩
-
-### 5-1. 왜 필요한가
-
-`int`끼리는 `a + b`가 되지만, 내가 만든 `Point`끼리는 `p + q`를 쓰면 컴파일러가 무엇을 해야 할지 모릅니다. 연산자 오버로딩은 `operator+`라는 **이름의 함수**를 정의해서 `p + q`를 쓸 수 있게 합니다. `p + q`는 사실 `p.operator+(q)` 호출입니다.
-
-```cpp
-class Point {
-    int x, y;
-public:
-    Point(int x = 0, int y = 0) : x(x), y(y) {}
-
-    Point operator+(const Point& o) const { return Point(x + o.x, y + o.y); }  // p + q
-    bool operator==(const Point& o) const { return x == o.x && y == o.y; }
-
-    friend Point operator*(int k, const Point& p);                  // 2 * p
-    friend ostream& operator<<(ostream& out, const Point& p);       // cout << p
-};
-Point operator*(int k, const Point& p) { return Point(k * p.x, k * p.y); }
-ostream& operator<<(ostream& out, const Point& p) {
-    out << '(' << p.x << ", " << p.y << ')';
-    return out;                                     // 참조 반환 → cout << a << b 연결
-}
-```
-
-### 5-2. 멤버로 만들까, 밖에 만들까
-
-규칙은 하나입니다. **멤버 연산자는 "왼쪽 피연산자"가 내 클래스일 때만** 만들 수 있습니다. `p + q`는 `p.operator+(q)`이므로 왼쪽 `p`가 Point여야 합니다.
-
-| 연산 | 형태 | 이유 |
-| --- | --- | --- |
-| `p + q` | 멤버 `p.operator+(q)` | 왼쪽이 Point |
-| `2 * p` | **비멤버** `operator*(2, p)` | 왼쪽이 int라서 멤버로 만들 수 없음 |
-| `cout << p` | **비멤버** (보통 friend) | 왼쪽이 `ostream` |
-
-`cout << p`의 왼쪽 `cout`은 `ostream` 클래스이고, 그 클래스는 우리가 고칠 수 없습니다. 그래서 바깥 함수 `operator<<(cout, p)`로 만들고, private `x`, `y`를 읽어야 하니 friend로 지정합니다.
-
-`operator<<`가 `out`을 **참조로 돌려주는** 이유: `cout << a << b`는 `(cout << a) << b`입니다. 앞 결과가 다시 `cout`이어야 `<< b`를 이어서 쓸 수 있습니다(2-2절의 연결 호출과 같은 원리).
-
-### 5-3. 전위 ++와 후위 ++
-
-`++n`과 `n++`는 둘 다 `operator++`인데, 이름이 같으니 구분이 필요합니다. 그래서 C++는 **후위 버전에 쓰지 않는 `int` 매개변수**를 하나 붙이기로 약속했습니다.
-
-```cpp
-Num& operator++()    { ++v; return *this; }                     // 전위 ++n: 증가 후 자기 자신
-Num  operator++(int) { Num old = *this; ++v; return old; }      // 후위 n++: int는 구분용 더미
-```
-
-```text
-n = 5에서
-전위 ++n:  v를 6으로 → n 자신을 돌려줌        → 식의 값 6
-후위 n++:  old에 5를 저장 → v를 6으로 → old 반환 → 식의 값 5
-```
-
-> [!QUIZ]
-> 다음 출력을 쓰시오.
->
-> ```cpp
-> Num n(5);
-> Num a = n++;
-> Num b = ++n;
-> cout << a.get() << ' ' << b.get() << ' ' << n.get() << '\n';
->
-> Point p(1, 2), q(3, 4);
-> cout << p + q << ' ' << (p + q == Point(4, 6)) << ' ' << 2 * p;
-> ```
-
-> [!ANSWER]
-> ```text
-> 5 7 7
-> (4, 6) 1 (2, 4)
-> ```
->
-> 후위는 증가 **전** 복사본(5)을, 전위는 증가 **후** 값(7)을 돌려줍니다.
-
-> [!TRAP]
-> 연산자 오버로딩으로 **우선순위, 결합 방향, 피연산자 개수는 바꿀 수 없습니다**. 새 연산자를 만들 수도 없고, `::`, `.`, `?:`, `sizeof`는 오버로딩할 수 없습니다.
-
----
-
-## 6. 예외 처리의 기본
-
-### 6-1. 왜 필요한가
-
-나눗셈 함수에 0이 들어오면 무엇을 돌려줘야 할까요? -1을 돌려주자니 실제 결과가 -1일 수도 있습니다. 함수가 **"정상 결과를 줄 수 없다"**는 사실을 확실하게 알리는 방법이 예외입니다.
-
-```cpp
-int divide(int a, int b) {
-    if (b == 0) throw 0;      // 비상벨: 더 진행하지 않고 즉시 빠져나감
-    return a / b;
-}
-
-int main() {
-    try {
-        cout << divide(10, 2) << ' ';   // 5
-        cout << divide(1, 0) << ' ';    // 여기서 throw → 아래 줄은 건너뜀
-        cout << "안 나옴";
-    }
-    catch (int e) {
-        cout << "0으로 나눔 ";
-    }
-    cout << "끝";
-}
-// 출력: 5 0으로 나눔 끝
-```
-
-### 6-2. 세 키워드
-
-```cpp
-try {
-    // 예외가 날 수 있는 코드
-    throw 값;              // 여기서 즉시 중단 → 맞는 catch로 점프
-    // throw 아래 문장은 실행되지 않음
-}
-catch (int e)    { … }     // 위에서부터 차례로 자료형 검사
-catch (double e) { … }
-catch (...)      { … }     // 모든 예외 (반드시 마지막)
-// catch가 처리하면 try-catch 전체의 "다음 문장"부터 계속
-```
-
-| 키워드 | 하는 일 |
-| --- | --- |
-| `try { }` | "이 안에서 예외가 날 수 있다"고 감시하는 구역 |
-| `throw 값;` | 예외를 던짐. **값의 자료형**이 예외의 종류가 됨 |
-| `catch (자료형 이름) { }` | 그 자료형의 예외를 받아 처리 |
-
-> [!EXAM]
-> **catch 선택 규칙**
->
-> 1. catch를 **위에서부터** 검사해 **처음 맞는 것 하나만** 실행합니다.
-> 2. 자료형이 **정확히 같아야** 합니다. `int`↔`double`, `char`→`int`, `bool`→`int` 같은 **일반 변환은 일어나지 않습니다**.
-> 3. 예외: 파생 클래스 예외는 **기반 클래스 catch**(`catch (const exception& e)`)로 받을 수 있습니다.
-> 4. `"K"` 같은 문자열 리터럴은 `const char*` 자료형입니다. `char`, `int`로는 받지 못합니다.
-> 5. 이 함수에 맞는 catch가 없으면 함수를 즉시 빠져나가 **호출한 곳의 try**에서 다시 찾습니다(전파). 끝까지 없으면 프로그램이 종료됩니다(`terminate`).
-
-> [!TRAP]
-> 평소에는 `int x = 'c';`나 `double d = 3;`처럼 자료형이 자동으로 바뀌지만, **catch에서는 바뀌지 않습니다.** `throw 'c'`는 `catch (int)`로 받지 못하고, `throw 3`은 `catch (double)`로 받지 못합니다. 족보 문제의 절반이 이 함정입니다.
-
-### 6-3. 처리 후 어디로 가는가
-
-- catch 블록이 끝나면 그 **try-catch 다음 문장**으로 갑니다. throw 지점으로 돌아가지 않습니다.
-- catch 안에서 `throw;`(재던지기)를 하면 **같은 예외를 그대로** 바깥(호출한 쪽)으로 다시 던집니다. 같은 try의 다른 catch로 가지 않습니다.
-
-```text
-흐름 그림 (main → fun 호출, fun에서 throw)
-
-main: try { A → fun() ──────────────┐  → B }  catch들  → F
-                                     │
-fun:  try { FA → throw ─┐ → BA }      │
-               ┌────────┘             │
-              fun의 catch 중 맞는 것?   │
-               ├ 있음 → 처리 → BC → fun 정상 종료 → main의 B로 돌아감
-               └ 없음 → fun을 즉시 빠져나감 ─┘ → main의 catch에서 다시 찾음 (B는 건너뜀)
-```
-
-> [!QUIZ]
-> 아래 `fun`에서 `throw` 줄의 값만 바꿔 실행한다. ① `(double)5.0`, ② `3`, ③ `'c'`, ④ `true`, ⑤ `"K"`일 때 각각 전체 출력을 쓰시오. (출력은 한 줄로 쓴다.)
->
-> ```cpp
-> void fun() {
->     try {
->         cout << "FA ";
->         throw /* 값 */;
->         cout << "BA ";
->     }
->     catch (int i)  { cout << "FCA " << i << ' '; }
->     catch (char c) { cout << "FCB " << c << ' '; throw; }
->     cout << "BC ";
-> }
->
-> int main() {
->     try {
->         cout << "A ";
->         fun();
->         cout << "B ";
->     }
->     catch (int i)    { cout << "C " << i << ' '; }
->     catch (double d) { cout << "D " << d << ' '; }
->     catch (...)      { cout << "E "; }
->     cout << "F";
-> }
-> ```
-
-> [!HINT 1]
-> 각 경우마다 두 가지만 물으세요. ① **fun의 catch 중에 자료형이 정확히 같은 것이 있나?** 있으면 fun 안에서 처리되고 `BC`, `B`가 출력됩니다. ② 없거나 `throw;`로 다시 던지면, **main의 catch 중 정확히 같은 것**을 위에서부터 찾고, 없으면 `...`가 받습니다.
-
-> [!ANSWER]
-> | throw 값 | 출력 | 흐름 |
-> | --- | --- | --- |
-> | ① `5.0` (double) | `A FA D 5 F` | fun에 double catch 없음 → 전파(BC, B 건너뜀) → main의 double |
-> | ② `3` (int) | `A FA FCA 3 BC B F` | fun에서 처리 → fun의 다음 문장 BC → 정상 반환 → B |
-> | ③ `'c'` (char) | `A FA FCB c E F` | fun의 char가 받고 `throw;`로 char를 다시 던짐 → main에 char catch 없음 → `...` |
-> | ④ `true` (bool) | `A FA E F` | bool은 int로 바뀌지 않음 → 전파 → `...` |
-> | ⑤ `"K"` | `A FA E F` | `const char*` → 맞는 catch 없음 → `...` |
->
-> 모든 경우 BA는 출력되지 않습니다(throw 아래). 재던지기된 char는 main의 `catch (int)`로도 바뀌지 않습니다.
-
-> [!QUIZ]
-> 다음 출력을 쓰고, `throw;` 이후 예외가 전달되는 경로를 설명하시오.
->
-> ```cpp
-> void fun() {
->     try {
->         cout << "fun pos A\n";
->         throw (int)4;
->         cout << "fun pos B\n";
->     }
->     catch (int i) {
->         cout << "in catch CA with i:" << i << "\n";
->         throw;
->     }
->     cout << "fun pos C\n";
-> }
->
-> int main() {
->     try {
->         cout << "main pos A\n";
->         fun();
->         throw (double)2.0;
->         cout << "main pos B\n";
->     }
->     catch (double j) { cout << "in catch CB with j:" << j << "\n"; }
->     catch (...)      { cout << "in catch CC\n"; }
->     cout << "main pos C\n";
-> }
-> ```
-
-> [!ANSWER]
-> ```text
-> main pos A
-> fun pos A
-> in catch CA with i:4
-> in catch CC
-> main pos C
-> ```
->
-> `throw;`가 int 4를 main으로 다시 던집니다. 그래서 `fun()` 다음 줄의 `throw (double)2.0`은 **실행되지 않습니다**. main에는 int catch가 없으므로 `catch (...)`가 받고, 처리 후 `main pos C`로 갑니다.
-
----
-
-## 7. try와 catch의 문법 규칙
-
-| 규칙 | 어기면 |
-| --- | --- |
-| try 블록 **바로 뒤**에 catch가 와야 함 (사이에 일반 문장 불가) | 컴파일 오류 |
-| `catch (...)`는 **마지막** catch여야 함 | 컴파일 오류 |
-| 기반 클래스 catch를 파생 클래스 catch보다 **앞에** 두면 파생 catch에 도달할 수 없음 | 컴파일은 됨(경고) |
-| catch를 **값**으로 받으면 예외 객체가 **복사**됨 (복사 생성자 호출, 슬라이싱) | 보통 `const 참조`로 받음 |
 
 > [!NOTE]
-> 기반·파생 예외를 함께 받을 때는 **구체적인 것(파생)을 위에, 넓은 것(기반)을 아래에** 둡니다. 위에서부터 처음 맞는 하나만 실행되므로, 넓은 그물을 먼저 치면 아래의 촘촘한 그물에는 아무것도 걸리지 않습니다. `catch (...)`가 가장 넓은 그물이라 맨 마지막인 것도 같은 이유입니다.
+> 집을 짓는 순서로 생각하세요. **기초(기반 클래스)**를 먼저 놓고, **방(멤버 객체)**을 들이고, 마지막에 **입주(자기 생성자 본문)**합니다. 철거는 정반대로, 이사 나가고 → 방을 빼고 → 기초를 허뭅니다.
+
+- 지역 객체는 블록을 벗어날 때, **생성의 역순**으로 소멸합니다(먼저 만든 것이 나중에 사라짐).
+- `new`로 만든 객체는 `delete`할 때 소멸합니다. `delete`하지 않으면 소멸자가 불리지 않습니다.
+- 전역 객체는 `main` 전에 생성되고 `main`이 끝난 뒤 소멸합니다.
 
 > [!QUIZ]
-> 1. "try 블록과 바로 뒤의 catch 블록 사이에는 일반 실행문을 넣을 수 없다." 참인가 거짓인가?
-> 2. `MyErr`가 `runtime_error`의 파생 클래스일 때 출력을 쓰시오.
+> 다음 출력을 쓰시오.
 >
 > ```cpp
-> try { throw MyErr("boom"); }
-> catch (const runtime_error& e) { cout << "RE:" << e.what() << ' '; }
-> catch (const exception& e)     { cout << "EX "; }
->
-> try { throw MyErr("boom"); }
-> catch (const exception& e)     { cout << "EX:" << e.what() << ' '; }
-> catch (const runtime_error& e) { cout << "RE "; }
-> ```
-
-> [!ANSWER]
-> **1.** 참. try 블록 바로 뒤에는 catch가 와야 하며, 사이에 문장을 넣으면 컴파일 오류입니다.
->
-> **2.** `RE:boom EX:boom`. 위에서부터 **처음 맞는** catch 하나만 실행됩니다. 두 번째 try에서는 `exception&`이 먼저 받으므로 아래 `runtime_error&`는 실행될 수 없습니다.
-
----
-
-## 8. 예외 전파와 스택 풀기
-
-함수를 부르면 그 함수의 지역 변수가 **스택**에 쌓이고, 함수가 끝나면 치워집니다. 예외가 함수를 빠져나갈 때도 마찬가지로, 빠져나가는 함수마다 **지역 객체가 생성 역순으로 소멸**합니다. 이것을 **스택 풀기**라고 합니다. try 블록 안의 지역 객체도 **catch가 실행되기 전에** 소멸합니다.
-
-```text
-호출 스택 (아래가 먼저)          throw 1 발생 후 풀리는 순서
-┌──────────────┐
-│ inner: g(in) │  ← throw     ① in- (inner 빠져나감)
-├──────────────┤
-│ outer: g(out)│              ② out- (outer 빠져나감)
-├──────────────┤
-│ main try:    │              ③ main- (try 블록 빠져나감)
-│   g(main)    │              ④ catch 실행
-└──────────────┘
-```
-
-> [!QUIZ]
-> `G`는 생성자에서 `이름+`, 소멸자에서 `이름-`를 출력한다. 출력을 쓰시오.
->
-> ```cpp
-> void inner() { G g("in");  throw 1; cout << "X"; }
-> void outer() { G g("out"); inner(); cout << "Y"; }
+> class Part {
+>     string n;
+> public:
+>     Part(string s) : n(s) { cout << "P(" << n << ") "; }
+>     ~Part() { cout << "~P(" << n << ") "; }
+> };
+> class Base {
+> public:
+>     Base() { cout << "B "; }
+>     ~Base() { cout << "~B "; }
+> };
+> class Derived : public Base {
+>     Part p1;
+>     Part p2;
+> public:
+>     Derived() : p2("2"), p1("1") { cout << "D "; }
+>     ~Derived() { cout << "~D "; }
+> };
 >
 > int main() {
->     try {
->         G g("main");
->         outer();
+>     {
+>         Derived d;
+>         cout << "| ";
 >     }
->     catch (int e) { cout << "catch" << e << ' '; }
 >     cout << "end";
 > }
 > ```
 
 > [!ANSWER]
 > ```text
-> main+ out+ in+ in- out- main- catch1 end
+> B P(1) P(2) D | ~D ~P(2) ~P(1) ~B end
 > ```
 >
-> `X`, `Y`는 실행되지 않습니다. `in`, `out`, `main` 객체가 차례로 소멸한 **뒤에** catch가 실행됩니다.
+> 기반(B) → 멤버 선언 순서(p1, p2) → 자기 본문(D). 초기화 목록에 `p2`를 먼저 적어도 선언 순서를 따릅니다. 소멸은 정확히 반대입니다.
 
 > [!QUIZ]
-> 다음 출력을 쓰시오.
+> 다음 출력을 쓰시오. (`Trace`는 생성자에서 `이름+`, 소멸자에서 `이름-`를 출력한다.)
 >
 > ```cpp
-> class Exception {
-> public:
->     int code;
->     Exception(int i) { code = i; }
-> };
+> Trace g("g");                      // 전역
 >
-> void foo() {
->     try { throw Exception(1); }
->     catch (Exception e) { cout << e.code; }
+> int main() {
+>     cout << "main ";
+>     Trace a("a");
+>     Trace* p = new Trace("p");
+>     {
+>         Trace b("b");
+>     }
+>     delete p;
+>     Trace c("c");
+>     cout << "end ";
 > }
-> int main() { foo(); }
 > ```
 
 > [!ANSWER]
-> `1`. 클래스 객체도 던질 수 있습니다. `catch (Exception e)`는 값으로 받으므로 예외 객체가 복사되지만 `code`는 그대로 1입니다.
+> ```text
+> g+ main a+ p+ b+ b- p- c+ end c- a- g-
+> ```
+>
+> 전역 `g`는 `main` 전에 생성, 맨 마지막에 소멸합니다. `b`는 블록 끝에서, `p`는 `delete`할 때 소멸합니다. `main`이 끝나면 지역 객체가 생성 역순(c → a)으로 소멸합니다.
 
 ---
 
-## 9. 표준 예외
+## 5. 복사 생성자와 얕은 / 깊은 복사
 
-`#include <stdexcept>`의 예외는 모두 `exception`을 상속하고, `what()`으로 메시지를 얻습니다. 직접 `throw 0;`처럼 숫자를 던지는 것보다 **무슨 문제인지 이름과 메시지로** 알려 줄 수 있습니다.
+### 5-1. 복사 생성자가 불리는 때
 
-| 예외 | 대표 상황 |
-| --- | --- |
-| `invalid_argument` | 잘못된 인수 |
-| `out_of_range` | `vector::at()`의 범위 초과 |
-| `runtime_error` | 실행 중 일반 오류 |
+복사 생성자 `T(const T& other)`는 **새 객체를 기존 객체로 초기화할 때** 호출됩니다. 직접 만들지 않으면 컴파일러가 "멤버를 하나씩 그대로 복사하는" 복사 생성자를 만들어 줍니다.
 
-```cpp
-int safeDiv(int a, int b) {
-    if (b == 0) throw invalid_argument("div by zero");
-    return a / b;
-}
-for (int b : {2, 0}) {
-    try { cout << safeDiv(10, b) << ' '; }
-    catch (const invalid_argument& e) { cout << e.what() << ' '; }
-}
-// 출력: 5 div by zero
+구분의 핵심은 **새 객체가 태어나는가**입니다.
+
+| 코드 | 호출되는 것 | 새 객체가 태어나나 |
+| --- | --- | :---: |
+| `T b = a;` | 복사 생성자 (`=`가 있어도 **초기화**) | O |
+| `T c(a);` | 복사 생성자 | O |
+| `c = b;` (이미 있는 객체) | **대입 연산자** `operator=` | X |
+| `void f(T t)`에 `f(a)` | 복사 생성자 (값 전달) | O (매개변수 t) |
+| `void f(T& t)`에 `f(a)` | 아무것도 안 불림 (참조) | X |
+| `catch (T e)` | 복사 생성자 | O |
+
+> [!TRAP]
+> `T b = a;`에 `=`가 보인다고 대입 연산자를 고르면 틀립니다. **선언과 동시에 쓰는 `=`는 초기화**이고, 이미 있는 변수에 쓰는 `=`만 대입입니다.
+
+> [!QUIZ]
+> 생성자는 `D `, 복사 생성자는 `C `, 대입 연산자는 `A `를 출력한다. 출력을 쓰시오.
+>
+> ```cpp
+> void byVal(T t) {}
+> void byRef(T& t) {}
+>
+> T a;
+> T b = a;
+> T c(a);
+> c = b;
+> byVal(a);
+> byRef(a);
+> ```
+
+> [!ANSWER]
+> `D C C A C` — `T b = a`는 대입이 아니라 복사 **초기화**입니다. `byRef`는 복사하지 않습니다.
+
+### 5-2. 얕은 복사의 문제
+
+컴파일러가 만든 기본 복사 생성자는 멤버를 **그대로 복사**합니다. 멤버가 포인터면 **주소만** 복사되어 두 객체가 같은 메모리를 공유합니다(얕은 복사). 한쪽을 바꾸면 다른 쪽도 바뀌고, 둘 다 소멸자에서 `delete`하면 **이중 해제**가 됩니다.
+
+```text
+얕은 복사 (기본)                    깊은 복사 (직접 작성)
+a.v ──┐                            a.v ──▶ [ 1 ]
+      ├──▶ [ 1 ]                   b.v ──▶ [ 1 ]   ← 새로 빌린 칸
+b.v ──┘                            
+같은 칸을 공유 → b를 바꾸면 a도 바뀜   따로따로 → 서로 영향 없음
 ```
 
-모두 `exception`의 파생 클래스이므로 `catch (const exception& e)` 하나로 전부 받을 수도 있습니다(6-2절 규칙 3).
+```cpp
+class Box {
+public:
+    int* v;
+    Box(int x) { v = new int(x); }
+    Box(const Box& o) { v = new int(*o.v); }   // 깊은 복사: 새 메모리에 값 복사
+    ~Box() { delete v; }
+};
+```
+
+`new int(*o.v)`는 "**새 칸을 빌리고**, 원본이 가리키는 **값**을 넣어라"입니다. 주소가 아니라 값을 복사하므로 두 객체가 각자의 칸을 갖습니다.
+
+> [!QUIZ]
+> 복사 생성자를 직접 만들지 **않은** `Box`(소멸자도 없음)와 위의 깊은 복사 `Box`에서 각각 출력을 쓰시오.
+>
+> ```cpp
+> Box a(1);
+> Box b = a;
+> *b.v = 5;
+> cout << *a.v << ' ' << (a.v == b.v);
+> ```
+
+> [!ANSWER]
+> - 기본(얕은) 복사: `5 1` — `a.v`와 `b.v`가 같은 주소입니다.
+> - 깊은 복사: `1 0` — `b`는 자기 메모리를 따로 가집니다.
+
+---
+
+## 6. const 멤버 함수
+
+멤버 함수 뒤의 `const`는 "이 함수는 객체를 바꾸지 않는다"는 약속입니다. **const 객체는 const 멤버 함수만** 호출할 수 있습니다.
+
+```cpp
+class Cnt {
+    int v;
+public:
+    Cnt(int x = 0) : v(x) {}
+    int get() const { return v; }   // OK: 읽기만
+    void inc() { v++; }
+};
+const Cnt k(5);
+k.get();      // OK
+k.inc();      // 컴파일 오류
+```
+
+> [!NOTE]
+> getter처럼 **읽기만 하는 함수에는 습관적으로 `const`를 붙이세요.** 그래야 `const` 객체나 `const T&` 매개변수로 받은 객체에서도 그 함수를 부를 수 있습니다. const 멤버 함수 안에서 멤버를 바꾸려 하면(`v++`) 컴파일 오류가 나서 실수를 막아 줍니다.
 
 ---
 
 ## 핵심 정리
 
-1. static 데이터 멤버는 클래스에 하나이고 클래스 밖에서 정의한다. static 함수에는 this가 없다.
-2. `this`는 호출한 객체의 주소. `*this`를 **참조로** 반환해야 같은 객체에 연결 호출이 된다. 값으로 반환하면 복사본이다.
-3. friend는 멤버가 아니며 상속되지 않는다. `f(obj)`로 호출한다.
-4. 선언은 `.h`(헤더 가드), 구현은 `.cpp`(`클래스::함수`).
-5. 왼쪽 피연산자가 내 클래스가 아니면(`2 * p`, `cout << p`) 비멤버로 오버로딩한다. 후위 ++는 `operator++(int)`.
-6. catch는 위에서부터 **처음 맞는 하나**만, 자료형이 정확히 같아야 한다(파생→기반만 허용). `"K"`는 `const char*`.
-7. 처리 후에는 try-catch 다음 문장으로 간다. `throw;`는 같은 예외를 호출한 쪽으로 다시 던진다.
-8. 맞는 catch가 없으면 호출한 쪽으로 전파되고, 빠져나가는 함수의 지역 객체는 역순으로 소멸한다.
-9. try와 catch 사이에는 문장을 넣을 수 없고, `catch (...)`는 마지막에 둔다. 파생 예외 catch를 기반보다 위에 둔다.
+1. 객체지향 = 추상화·캡슐화·정보 은닉·상속·다형성 → 신뢰성과 재사용.
+2. 클래스는 속성(데이터 멤버)과 메서드를 묶은 자료형, 객체는 그 인스턴스. 변수를 만들 때 생긴다.
+3. 멤버는 `.`(포인터면 `->`)으로, 클래스 밖 정의는 `클래스::메서드`로.
+4. private은 클래스 안에서만, public은 어디서나. 데이터는 private, getter·setter는 public.
+5. 생성자는 여러 개 가능, 소멸자는 하나·인수 없음. 생성자를 하나라도 만들면 기본 생성자는 자동으로 생기지 않는다.
+6. 생성: 기반 → 멤버(선언 순서) → 자신, 소멸은 반대. 지역 객체는 생성 역순으로 소멸.
+7. `T b = a;`는 복사 생성자, 포인터 멤버의 기본 복사는 얕은 복사. 읽기 전용 메서드에는 `const`.
+
+---
+
+## 학습 경로
+
+[← 05 오버로딩·포인터·동적 메모리](/lectures/grade-01/semester-muheifg4/subject-muw81hpv/lecture-05) · [07 상속·다형성·연산자 오버로딩 →](/lectures/grade-01/semester-muheifg4/subject-muw81hpv/lecture-07)
