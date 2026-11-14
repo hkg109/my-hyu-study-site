@@ -9,12 +9,24 @@ import { remarkDocumentHeadings, remarkStudySyntax } from "@/lib/markdown";
 import { loadNoteDraft, NOTE_FILE_STATUS_EVENT, NOTE_UPDATE_EVENT, removeNoteDraft, saveNoteDraft, type NoteFileStatus } from "@/lib/note-draft";
 import { useAdmin } from "./AdminContext";
 
-export function MarkdownEditor({ path, filename, source, children }: { path: string; filename: string; source: string; children: React.ReactNode }) {
+// source: the markdown, when the page carries it (dev server). A deployed page doesn't send it to every
+// visitor, so the editor fetches it from the admin API the first time an admin opens it.
+export function MarkdownEditor({ path, filename, source: initialSource, children }: { path: string; filename: string; source?: string; children: React.ReactNode }) {
   const { isAdmin } = useAdmin();
   const [editing, setEditing] = useState(false);
-  const [value, setValue] = useState(source);
+  const [source, setSource] = useState(initialSource);
+  const [value, setValue] = useState(initialSource ?? "");
   const [loaded, setLoaded] = useState(false);
   const [fileStatus, setFileStatus] = useState<NoteFileStatus | "idle">("idle");
+
+  const fetchSource = async () => {
+    if (source !== undefined) return source;
+    const response = await fetch(`/api/admin/notes${path.replace(/^\/(lectures|practice)/, "")}?kind=${path.split("/")[1]}`, { cache: "no-store" });
+    const result = await response.json().catch(() => ({})) as { content?: string; error?: string };
+    if (!response.ok || typeof result.content !== "string") throw new Error(result.error ?? "원본을 불러오지 못했습니다.");
+    setSource(result.content);
+    return result.content;
+  };
 
   useEffect(() => {
     const syncDraft = (event: Event) => {
@@ -33,8 +45,11 @@ export function MarkdownEditor({ path, filename, source, children }: { path: str
     };
   }, [path]);
 
-  const beginEditing = () => {
-    if (!loaded) { setValue(loadNoteDraft(path, source)); setLoaded(true); }
+  const beginEditing = async () => {
+    if (!loaded) {
+      try { setValue(loadNoteDraft(path, await fetchSource())); setLoaded(true); }
+      catch (error) { setFileStatus("error"); window.alert(error instanceof Error ? error.message : "원본을 불러오지 못했습니다."); return; }
+    }
     setEditing(true);
   };
 
@@ -46,12 +61,12 @@ export function MarkdownEditor({ path, filename, source, children }: { path: str
     const frame = requestAnimationFrame(() => {
       url.searchParams.delete("edit");
       window.history.replaceState(window.history.state, "", url);
-      setValue(current => loaded ? current : loadNoteDraft(path, source));
-      setLoaded(true);
-      setEditing(true);
+      void beginEditing();
     });
     return () => cancelAnimationFrame(frame);
-  }, [isAdmin, editing, loaded, path, source]);
+    // beginEditing reads the latest state; re-running on its identity would reopen the editor.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAdmin, editing]);
 
   const update = (next: string) => { setValue(next); saveNoteDraft(path, next); };
 
@@ -72,15 +87,15 @@ export function MarkdownEditor({ path, filename, source, children }: { path: str
     anchor.href = url; anchor.download = filename; anchor.click(); URL.revokeObjectURL(url);
   };
 
-  if (!isAdmin || !editing) return <div className={isAdmin ? "admin-editable-note" : undefined} onClick={isAdmin ? beginEditing : undefined}>
-    {isAdmin && <button className="admin-edit-hint" onClick={beginEditing}><Edit3 size={15} />본문 눌러서 수정</button>}
+  if (!isAdmin || !editing) return <div className={isAdmin ? "admin-editable-note" : undefined} onClick={isAdmin ? () => void beginEditing() : undefined}>
+    {isAdmin && <button className="admin-edit-hint" onClick={() => void beginEditing()}><Edit3 size={15} />본문 눌러서 수정</button>}
     <div className="prose">{children}</div>
   </div>;
 
   return <section className="markdown-editor" aria-label="문서 편집기">
     <div className="editor-toolbar"><div><span className="admin-live-dot" />관리자 편집 중 <span className={`editor-saved ${fileStatus === "error" ? "error" : ""}`}><Save size={13} />{fileStatus === "saving" ? "MD 파일 저장 중…" : fileStatus === "saved" ? "MD 파일 저장됨" : fileStatus === "error" ? "MD 파일 저장 실패" : "MD 파일 자동 저장"}</span></div><div className="editor-toolbar-actions">
       <button onClick={download}><Download size={15} />MD 받기</button>
-      <button onClick={() => { setValue(source); removeNoteDraft(path, source); }}><RotateCcw size={15} />원본 복원</button>
+      <button onClick={() => { setValue(source ?? ""); removeNoteDraft(path, source ?? ""); }}><RotateCcw size={15} />원본 복원</button>
       <button onClick={() => setEditing(false)} aria-label="편집기 닫기"><X size={16} />닫기</button>
     </div></div>
     <div className="editor-grid">

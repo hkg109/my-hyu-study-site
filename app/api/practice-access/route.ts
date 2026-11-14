@@ -1,6 +1,6 @@
 import { getDocument } from "@/lib/content";
-import { isPasswordMatch, practiceCookieName, PRACTICE_COOKIE_MAX_AGE, safePracticePath } from "@/lib/access";
-import { practiceCookieValue, practiceLockFor } from "@/lib/server/auth";
+import { practiceCookieName, PRACTICE_COOKIE_MAX_AGE, safePracticePath } from "@/lib/access";
+import { isPracticePassword, practiceCookieValue, practiceLockFor } from "@/lib/server/auth";
 
 const redirect = (request: Request, path: string) => Response.redirect(new URL(path, request.url), 303);
 
@@ -12,10 +12,10 @@ export async function POST(request: Request) {
   const doc = await getDocument("practice", slug);
   if (!doc) return redirect(request, "/practice");
   // An exam whose password or AUTH_SECRET is missing stays locked; the unlock page explains that.
-  const lock = practiceLockFor(slug);
+  const lock = await practiceLockFor(slug);
   if (!lock.ok) return redirect(request, `/unlock?next=${encodeURIComponent(doc.path)}`);
 
-  if (!isPasswordMatch(password, lock.credential.password)) {
+  if (!password || !(await isPracticePassword(lock, password))) {
     // A short delay makes guessing the password one attempt at a time slower.
     await new Promise(resolve => setTimeout(resolve, 600));
     return redirect(request, `/unlock?next=${encodeURIComponent(doc.path)}&error=1`);

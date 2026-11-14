@@ -137,6 +137,7 @@ for (const key of accessKeys) {
   if (!password) locked++;
   // 처음 보는 key인데 값이 없으면 아무도 모르는 무작위 값으로: key는 있되 열리지 않는다
   check(`비밀번호 ${key}`, await db.rpc("set_practice_password", { p_key: key, p_password: password || randomBytes(32).toString("base64url") }));
+  if (!password) check(`잠금 표시 ${key}`, await db.from("practice_keys").update({ locked: true }).eq("key", key));
 }
 
 let written = 0;

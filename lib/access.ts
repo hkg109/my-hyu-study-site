@@ -72,12 +72,15 @@ export function isSameOrigin(origin: string | null, host: string | null) {
   try { return new URL(origin).host === host; } catch { return false; }
 }
 
-export interface AdminRequest { nodeEnv: string | undefined; url: string; origin: string | null; host: string | null; mutation: boolean; signedIn: boolean }
+// remoteAllowed: the deployed site may run admin mode (DB content and an admin password are configured).
+export interface AdminRequest { nodeEnv: string | undefined; remoteAllowed?: boolean; url: string; origin: string | null; host: string | null; mutation: boolean; signedIn: boolean }
 
 /** Why an admin API request is refused, or undefined when it may proceed. */
-export function adminRequestError({ nodeEnv, url, origin, host, mutation, signedIn }: AdminRequest): { status: number; error: string } | undefined {
-  if (nodeEnv !== "development") return { status: 404, error: "로컬 개발 환경에서만 사용할 수 있습니다." };
-  if (!isLocalHostname(new URL(url).hostname)) return { status: 403, error: "로컬 개발 환경에서만 사용할 수 있습니다." };
+export function adminRequestError({ nodeEnv, remoteAllowed = false, url, origin, host, mutation, signedIn }: AdminRequest): { status: number; error: string } | undefined {
+  const development = nodeEnv === "development";
+  if (!development && !remoteAllowed) return { status: 404, error: "관리자 모드가 꺼져 있습니다." };
+  // The dev server only answers its own machine; the deployed site relies on the session and same-origin checks.
+  if (development && !isLocalHostname(new URL(url).hostname)) return { status: 403, error: "로컬 개발 환경에서만 사용할 수 있습니다." };
   if (mutation && !isSameOrigin(origin, host)) return { status: 403, error: "다른 출처에서 보낸 요청은 처리하지 않습니다." };
   if (!signedIn) return { status: 401, error: "관리자 인증이 필요합니다. 관리자 모드를 다시 시작해 주세요." };
   return undefined;

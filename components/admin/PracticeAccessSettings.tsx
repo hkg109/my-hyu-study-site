@@ -42,10 +42,12 @@ export function PracticeAccessSettings({ slug, title }: { slug: string[]; title:
     if (draftError) { setError(draftError); return; }
     setPending(true); setError(""); setNotice("");
     try {
-      const response = await fetch(endpoint, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(accessChoiceFromDraft(draft)) });
+      const body = { ...accessChoiceFromDraft(draft), ...(draft.password && { password: draft.password }) };
+      const response = await fetch(endpoint, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
       const result = await response.json() as Loaded & { error?: string };
       if (!response.ok) { setError(result.error ?? "접근 설정을 저장하지 못했습니다."); return; }
       apply(result);
+      if (result.overview.storage === "db") { setNotice(draft.password ? "저장했습니다. 이미 연 사람도 새 비밀번호를 다시 입력해야 합니다." : "저장했습니다."); return; }
       setNotice(result.access.configuredLocally
         ? "저장했습니다. 이 족보에 대한 기존 접속은 비밀번호를 다시 입력해야 열립니다."
         : `저장했습니다. 하지만 ${result.access.envName}이(가) 이 개발 서버에 없어 방문자에게 이 족보는 잠긴 상태로 남습니다.`);
@@ -60,8 +62,8 @@ export function PracticeAccessSettings({ slug, title }: { slug: string[]; title:
       <Dialog.Overlay className="dialog-overlay admin-dialog-overlay" />
       <Dialog.Content className="admin-dialog admin-wide-dialog" aria-describedby="access-settings-description">
         <Dialog.Title>족보 접근 설정</Dialog.Title>
-        <Dialog.Description id="access-settings-description"><strong>{title}</strong>을(를) 여는 비밀번호가 어떤 환경변수에 연결될지 정합니다.</Dialog.Description>
-        {current && <dl className="access-current">
+        <Dialog.Description id="access-settings-description"><strong>{title}</strong>을(를) 여는 비밀번호를 정합니다.</Dialog.Description>
+        {current && loaded?.overview.storage !== "db" && <dl className="access-current">
           <div><dt>현재 방식</dt><dd>{current.mode === "key" ? "개별 비밀번호 키" : "기본 비밀번호"}</dd></div>
           <div><dt>accessKey</dt><dd>{current.accessKey ? <code>{current.accessKey}</code> : "없음"}</dd></div>
           <div><dt>환경변수</dt><dd><code>{current.envName}</code></dd></div>

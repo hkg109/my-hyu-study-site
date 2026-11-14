@@ -112,6 +112,12 @@ test("admin APIs require the local dev server, the same origin for changes and a
   assert.equal(adminRequestError({ ...request, origin: null, mutation: false }), undefined);
   assert.equal(adminRequestError({ ...request, signedIn: false })?.status, 401);
   assert.equal(adminRequestError({ ...request, url: "http://[::1]:3000/api", host: "[::1]:3000", origin: "http://[::1]:3000" }), undefined);
+  // The deployed site: only when remote admin is configured, and it still needs the same origin and a session.
+  const deployed = { ...request, nodeEnv: "production", remoteAllowed: true, url: "https://study.example/api/admin/notes/x", origin: "https://study.example", host: "study.example" };
+  assert.equal(adminRequestError(deployed), undefined);
+  assert.equal(adminRequestError({ ...deployed, remoteAllowed: false })?.status, 404);
+  assert.equal(adminRequestError({ ...deployed, origin: "https://evil.example" })?.status, 403);
+  assert.equal(adminRequestError({ ...deployed, signedIn: false })?.status, 401);
 });
 
 test("unlock redirects stay inside the practice section", async () => {

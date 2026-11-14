@@ -12,10 +12,10 @@ export default async function UnlockPage({ searchParams }: { searchParams: Promi
   const slug = safePracticePath(next).split("/").slice(2);
   const doc = await getDocument("practice", slug);
   if (!doc) redirect("/practice");
-  // A signed-in local admin goes straight to the exam (development only).
+  // A signed-in admin goes straight to the exam.
   if (await isAdminViewer()) redirect(doc.path);
   // Visitors only learn that the exam can't be opened right now, never which setting is missing.
-  const available = practiceLockFor(slug).ok;
+  const available = (await practiceLockFor(slug)).ok;
   return <div className="index-page unlock-page">
     <section className="unlock-card" aria-labelledby="unlock-title">
       <div className="admin-dialog-icon"><LockKeyhole size={22} /></div>

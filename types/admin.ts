@@ -8,6 +8,8 @@ export interface PracticeAccessOverview {
   authSecretConfiguredLocally: boolean;
   keys: AccessKeyStatus[];
   candidate?: AccessKeyStatus;
+  /** "db": passwords are stored (hashed) in the database and set from the admin UI; otherwise environment variables. */
+  storage?: "db" | "env";
 }
 
 export interface PracticeDocumentAccess {

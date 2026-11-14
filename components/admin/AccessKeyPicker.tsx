@@ -5,9 +5,14 @@ import { useEffect, useId, useState } from "react";
 import { accessKeyError, practicePasswordEnvName } from "@/lib/access-keys";
 import type { AccessChoice, AccessKeyStatus, PracticeAccessOverview } from "@/types/admin";
 
-export interface AccessDraft { mode: "default" | "key"; accessKey: string }
+// password: only used when passwords are stored in the database (overview.storage === "db"). Empty keeps the current one.
+export interface AccessDraft { mode: "default" | "key"; accessKey: string; password?: string }
 
-export const accessDraftError = (draft: AccessDraft) => draft.mode === "key" ? accessKeyError(draft.accessKey) : undefined;
+export const accessDraftError = (draft: AccessDraft) => {
+  if (draft.mode === "key" && accessKeyError(draft.accessKey)) return accessKeyError(draft.accessKey);
+  if (draft.password && (draft.password.length < 4 || draft.password.length > 100)) return "비밀번호는 4~100자로 입력해 주세요.";
+  return undefined;
+};
 export const accessChoiceFromDraft = (draft: AccessDraft): AccessChoice => draft.mode === "key" ? { mode: "key", accessKey: draft.accessKey } : { mode: "default" };
 
 // Shows only variable names and whether they are set on this dev server; password values never reach the browser.
@@ -36,16 +41,17 @@ export function AccessKeyPicker({ draft, onChange, overview, disabled }: { draft
   const envName = draft.mode === "default" ? overview?.defaultEnvName ?? "PRACTICE_PASSWORD_DEFAULT" : keyError ? undefined : practicePasswordEnvName(draft.accessKey);
   const keyOptions = overview?.keys ?? [];
   const selectValue = keyOptions.some(item => item.accessKey === draft.accessKey) ? draft.accessKey : "";
+  const inDb = overview?.storage === "db";
 
   return <fieldset className="access-picker" disabled={disabled}>
     <legend>접근 방식</legend>
     <label className="access-option">
       <input type="radio" name={`${id}-mode`} checked={draft.mode === "default"} onChange={() => onChange({ ...draft, mode: "default" })} />
-      <span><strong>기본 비밀번호 사용</strong><small>accessKey 없이 PRACTICE_PASSWORD_DEFAULT로 엽니다.</small></span>
+      <span><strong>기본 비밀번호 사용</strong><small>{inDb ? "여러 족보가 함께 쓰는 기본 비밀번호로 엽니다." : "accessKey 없이 PRACTICE_PASSWORD_DEFAULT로 엽니다."}</small></span>
     </label>
     <label className="access-option">
       <input type="radio" name={`${id}-mode`} checked={draft.mode === "key"} onChange={() => onChange({ ...draft, mode: "key" })} />
-      <span><strong>개별 비밀번호 키 사용</strong><small>이 족보만의 환경변수로 엽니다. 변수가 없으면 기본 비밀번호로 대체하지 않고 잠깁니다.</small></span>
+      <span><strong>개별 비밀번호 키 사용</strong><small>{inDb ? "이 키를 쓰는 족보끼리만 같은 비밀번호로 엽니다. 키에 비밀번호가 없으면 잠깁니다." : "이 족보만의 환경변수로 엽니다. 변수가 없으면 기본 비밀번호로 대체하지 않고 잠깁니다."}</small></span>
     </label>
 
     {draft.mode === "key" && <div className="access-key-fields">
@@ -61,12 +67,23 @@ export function AccessKeyPicker({ draft, onChange, overview, disabled }: { draft
       <p id={`${id}-key-help`} className={draft.accessKey && keyError ? "admin-error" : "access-help"}>{draft.accessKey && keyError ? keyError : "소문자 영문·숫자와 하이픈(-)만, 32자 이하. default는 쓸 수 없습니다."}</p>
     </div>}
 
-    {envName && <dl className="access-status">
+    {inDb && <>
+      <dl className="access-status">
+        <div><dt>{draft.mode === "default" ? "기본 비밀번호" : `키 ${draft.accessKey || "…"}의 비밀번호`}</dt><dd>{!status ? "확인 중…" : status.configuredLocally ? <span className="access-ok"><CheckCircle2 size={14} />설정됨</span> : <span className="access-missing"><AlertTriangle size={14} />없음 (방문자에게 잠김)</span>}</dd></div>
+      </dl>
+      <div className="access-key-fields">
+        <label htmlFor={`${id}-password`}>새 비밀번호</label>
+        <input id={`${id}-password`} type="password" value={draft.password ?? ""} onChange={event => onChange({ ...draft, password: event.target.value })} placeholder={status && status.configuredLocally ? "비워 두면 지금 비밀번호를 그대로 씁니다" : "4~100자"} autoComplete="new-password" maxLength={100} />
+        <p className="access-help">{draft.mode === "default" ? "기본 비밀번호를 바꾸면 이 비밀번호를 쓰는 모든 족보가 함께 바뀝니다." : "같은 키를 쓰는 족보가 모두 함께 바뀝니다."} 바꾸면 이미 연 사람도 다시 입력해야 합니다.</p>
+      </div>
+      <p className="access-note"><Info size={14} /><span>비밀번호는 DB에 해시로만 저장되어, 저장한 뒤에는 이 화면에서도 다시 볼 수 없습니다.</span></p>
+    </>}
+    {!inDb && envName && <dl className="access-status">
       <div><dt>환경변수</dt><dd><code>{envName}</code></dd></div>
       <div><dt>이 개발 서버</dt><dd>{!status ? "확인 중…" : status.configuredLocally ? <span className="access-ok"><CheckCircle2 size={14} />설정됨</span> : <span className="access-missing"><AlertTriangle size={14} />설정되지 않음</span>}</dd></div>
     </dl>}
-    {status && !status.configuredLocally && <p className="access-warning" role="status"><AlertTriangle size={15} /><span><code>{envName}</code>이(가) 이 개발 서버에 없습니다. 이대로 저장하면 방문자에게 이 족보는 <strong>잠긴 상태로 남습니다</strong>. <code>.env.local</code>에 추가한 뒤 개발 서버를 다시 시작하고, 배포 환경에도 같은 이름으로 등록해 주세요.</span></p>}
+    {!inDb && status && !status.configuredLocally && <p className="access-warning" role="status"><AlertTriangle size={15} /><span><code>{envName}</code>이(가) 이 개발 서버에 없습니다. 이대로 저장하면 방문자에게 이 족보는 <strong>잠긴 상태로 남습니다</strong>. <code>.env.local</code>에 추가한 뒤 개발 서버를 다시 시작하고, 배포 환경에도 같은 이름으로 등록해 주세요.</span></p>}
     {overview && !overview.authSecretConfiguredLocally && <p className="access-warning" role="status"><AlertTriangle size={15} /><span><code>AUTH_SECRET</code>이 없어 이 개발 서버에서는 모든 족보가 잠겨 있습니다.</span></p>}
-    <p className="access-note"><Info size={14} /><span>‘설정됨’은 이 개발 서버(.env.local) 기준입니다. 배포 환경(Vercel)에 등록됐는지는 여기서 알 수 없습니다. 비밀번호 값은 이 화면에서 보거나 바꿀 수 없고, <code>.env.local</code>이나 배포 환경변수에서 관리합니다.</span></p>
+    {!inDb && <p className="access-note"><Info size={14} /><span>‘설정됨’은 이 개발 서버(.env.local) 기준입니다. 배포 환경(Vercel)에 등록됐는지는 여기서 알 수 없습니다. 비밀번호 값은 이 화면에서 보거나 바꿀 수 없고, <code>.env.local</code>이나 배포 환경변수에서 관리합니다.</span></p>}
   </fieldset>;
 }

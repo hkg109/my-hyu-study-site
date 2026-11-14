@@ -16,12 +16,16 @@ import { StudyWorkspace } from "@/components/study/StudyWorkspace";
 import { PracticeAccessSettings } from "@/components/admin/PracticeAccessSettings";
 import { subjectPathOf } from "@/lib/subjects";
 import { RecentVisitTracker } from "./RecentVisits";
+import { adminAvailable } from "@/lib/server/auth";
 
 export async function DocumentPage({ document }: { document: ContentDocument }) {
   const { content, headings } = await renderMDX(document.content, document.format);
   const isLecture = document.kind === "lectures";
   const isPractice = document.kind === "practice";
-  const isEditable = process.env.NODE_ENV === "development";
+  // Admin tools render for everyone but stay hidden until the visitor is a signed-in admin. On a deployment the
+  // markdown source is not sent with the page; the editor fetches it when an admin starts editing.
+  const isEditable = adminAvailable();
+  const editorSource = process.env.NODE_ENV === "development" ? document.content : undefined;
   const label = isLecture ? "강의 정리" : "족보";
   const subjectHome = subjectPathOf(document);
   // "제 N 교시" on the exam paper: this exam's place among the subject's exams.
@@ -31,7 +35,7 @@ export async function DocumentPage({ document }: { document: ContentDocument }) 
     <LectureHeader lecture={document} hideDescription={isLecture} /><LearningObjectives objectives={document.objectives} />
     {/* Exams only reach this component after their password check, so their headings are never sent before unlocking. */}
     <MobileTOC key={document.path} headings={headings} documentPath={isEditable ? document.path : undefined} format={document.format} />
-    <StudyWorkspace documentPath={document.path}>{isEditable ? <MarkdownEditor path={document.path} filename={`${document.slug.at(-1) ?? "document"}.${isPractice || document.format === "md" ? "md" : "mdx"}`} source={document.content}>{content}</MarkdownEditor> : <div className="prose">{content}</div>}</StudyWorkspace>
+    <StudyWorkspace documentPath={document.path}>{isEditable ? <MarkdownEditor path={document.path} filename={`${document.slug.at(-1) ?? "document"}.${isPractice || document.format === "md" ? "md" : "mdx"}`} source={editorSource}>{content}</MarkdownEditor> : <div className="prose">{content}</div>}</StudyWorkspace>
     <div className="document-print-watermark" aria-hidden="true">26학번 한지석 제공</div>
     {isLecture ? <><ProgressCheck slug={document.slug.join("/")} /><PrevNextNavigation {...await getPrevNextLecture(document.slug)} /></> : <div className="prev-next"><Link prefetch={false} href={`/${document.kind}`}><span>목록으로 돌아가기</span><strong>전체 {label} 보기</strong></Link></div>}
     <Footer />

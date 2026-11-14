@@ -6,6 +6,7 @@ import { useEffect, useId, useState } from "react";
 import { defaultTemplateId, findTemplate, templatesFor, type TemplateKind } from "@/lib/note-templates";
 import type { PracticeAccessOverview } from "@/types/admin";
 import { AccessKeyPicker, accessChoiceFromDraft, accessDraftError, type AccessDraft } from "./AccessKeyPicker";
+import { UploadDocumentForm } from "./UploadDocumentForm";
 
 export interface CreateTarget { gradeId: string; semesterId: string; subjectId: string; subjectName: string }
 
@@ -13,11 +14,18 @@ const kindLabel = (kind: TemplateKind) => kind === "practice" ? "족보" : "강�
 
 // Creates a new note from one of lib/note-templates.ts. On failure the title and choices stay as typed.
 export function CreateDocumentDialog({ kind, target, onClose, onCreated }: { kind: TemplateKind; target?: CreateTarget; onClose: () => void; onCreated: (path: string) => void }) {
-  return <Dialog.Root open={Boolean(target)} onOpenChange={open => { if (!open) onClose(); }}>
+  const [mode, setMode] = useState<"template" | "upload">("template");
+  return <Dialog.Root open={Boolean(target)} onOpenChange={open => { if (!open) { onClose(); setMode("template"); } }}>
     <Dialog.Portal>
       <Dialog.Overlay className="dialog-overlay admin-dialog-overlay" />
       <Dialog.Content className="admin-dialog admin-wide-dialog create-document-dialog" aria-describedby="create-document-description">
-        {target && <CreateDocumentForm key={`${kind}:${target.subjectId}`} kind={kind} target={target} onCreated={onCreated} />}
+        <div className="create-mode-tabs" role="tablist" aria-label="만드는 방법">
+          <button type="button" role="tab" aria-selected={mode === "template"} className={mode === "template" ? "active" : undefined} onClick={() => setMode("template")}>템플릿으로 만들기</button>
+          <button type="button" role="tab" aria-selected={mode === "upload"} className={mode === "upload" ? "active" : undefined} onClick={() => setMode("upload")}>MD 파일 올리기</button>
+        </div>
+        {target && (mode === "template"
+          ? <CreateDocumentForm key={`${kind}:${target.subjectId}`} kind={kind} target={target} onCreated={onCreated} />
+          : <UploadDocumentForm key={`upload:${kind}:${target.subjectId}`} kind={kind} target={target} onCreated={onCreated} />)}
         <Dialog.Close asChild><button className="icon-button admin-dialog-close" aria-label="새 문서 창 닫기"><X size={18} /></button></Dialog.Close>
       </Dialog.Content>
     </Dialog.Portal>
@@ -54,7 +62,7 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
       const response = await fetch(kind === "practice" ? "/api/admin/practice" : "/api/admin/lectures", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ gradeId: target.gradeId, semesterId: target.semesterId, subjectId: target.subjectId, title: title.trim(), templateId: template.id, ...(kind === "practice" && { access: accessChoiceFromDraft(access) }) }),
+        body: JSON.stringify({ gradeId: target.gradeId, semesterId: target.semesterId, subjectId: target.subjectId, title: title.trim(), templateId: template.id, ...(kind === "practice" && { access: { ...accessChoiceFromDraft(access), ...(access.password && { password: access.password }) } }) }),
       });
       const result = await response.json().catch(() => ({})) as { error?: string; path?: string };
       if (!response.ok || !result.path) { setError(result.error ?? `${kindLabel(kind)}를 만들지 못했습니다.`); return; }

@@ -4,9 +4,29 @@ import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
 import { resolveLectureSource } from "@/lib/academic-lectures";
 import { resolvePracticeSource } from "@/lib/academic-practice";
+import { contentFromDb } from "@/lib/content-source";
 import { adminGuard } from "@/lib/server/auth";
 
 const MAX_NOTE_BYTES = 2 * 1024 * 1024;
+const db = () => import("@/lib/server/content-admin");
+
+// The editor's starting text. Deployed pages don't carry the markdown, so the editor asks here.
+export async function GET(request: Request, { params }: { params: Promise<{ slug: string[] }> }) {
+  const refusal = await adminGuard(request);
+  if (refusal) return refusal;
+  const { slug } = await params;
+  const kind = new URL(request.url).searchParams.get("kind");
+  if (kind !== "lectures" && kind !== "practice") return Response.json({ error: "문서 종류가 올바르지 않습니다." }, { status: 400 });
+  const noStore = { "Cache-Control": "no-store" };
+  if (contentFromDb()) {
+    const source = await (await db()).dbDocumentSource(kind, slug);
+    return source ? Response.json(source, { headers: noStore }) : Response.json({ error: "문서를 찾을 수 없습니다." }, { status: 404 });
+  }
+  const file = kind === "practice" ? resolvePracticeSource(slug) : resolveLectureSource(slug)?.file;
+  if (!file) return Response.json({ error: "문서를 찾을 수 없습니다." }, { status: 404 });
+  const parsed = matter((await readFile(file, "utf8")).replace(/\r\n/g, "\n"));
+  return Response.json({ content: parsed.content, title: String(parsed.data.title ?? ""), description: String(parsed.data.description ?? "") }, { headers: noStore });
+}
 
 export async function POST(request: Request, { params }: { params: Promise<{ slug: string[] }> }) {
   const refusal = await adminGuard(request);
@@ -16,6 +36,24 @@ export async function POST(request: Request, { params }: { params: Promise<{ slu
   try { body = await request.json(); }
   catch { return Response.json({ error: "요청 내용을 읽을 수 없습니다." }, { status: 400 }); }
   if (body.kind !== "lectures" && body.kind !== "practice") return Response.json({ error: "수정할 수 없는 문서 종류입니다." }, { status: 400 });
+
+  if (contentFromDb()) {
+    let change: { content: string } | { title: string; description?: string };
+    if (typeof body.title === "string") {
+      const title = body.title.trim();
+      const description = typeof body.description === "string" ? body.description.trim() : undefined;
+      if (!title || title.length > 120 || (description?.length ?? 0) > 300) return Response.json({ error: "제목 또는 설명 길이를 확인해 주세요." }, { status: 400 });
+      change = { title, ...(description !== undefined && { description }) };
+    } else if (typeof body.content === "string" && Buffer.byteLength(body.content, "utf8") <= MAX_NOTE_BYTES) change = { content: body.content };
+    else return Response.json({ error: "노트 내용이 올바르지 않거나 너무 큽니다." }, { status: 400 });
+    try {
+      const saved = await (await db()).dbSaveDocument(body.kind, slug, change);
+      return saved ? Response.json({ saved: true }) : Response.json({ error: "문서를 찾을 수 없습니다." }, { status: 404 });
+    } catch (error) {
+      console.error("Failed to save document:", error instanceof Error ? error.message : error);
+      return Response.json({ error: "저장하지 못했습니다." }, { status: 500 });
+    }
+  }
 
   if (body.kind === "practice") {
     const target = resolvePracticeSource(slug);
@@ -69,6 +107,16 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ s
   try { body = await request.json(); }
   catch { return Response.json({ error: "요청 내용을 읽을 수 없습니다." }, { status: 400 }); }
   if (body.kind !== "lectures" && body.kind !== "practice") return Response.json({ error: "삭제할 수 없는 문서 종류입니다." }, { status: 400 });
+
+  if (contentFromDb()) {
+    try {
+      const deleted = await (await db()).dbDeleteDocument(body.kind, slug);
+      return deleted ? Response.json({ deleted: true }) : Response.json({ error: body.kind === "practice" ? "삭제할 족보를 찾을 수 없습니다." : "삭제할 강의 노트를 찾을 수 없습니다." }, { status: 404 });
+    } catch (error) {
+      console.error("Failed to delete document:", error instanceof Error ? error.message : error);
+      return Response.json({ error: "삭제하지 못했습니다." }, { status: 500 });
+    }
+  }
 
   const source = body.kind === "practice" ? resolvePracticeSource(slug) : resolveLectureSource(slug)?.file;
   if (!source) return Response.json({ error: body.kind === "practice" ? "삭제할 족보를 찾을 수 없습니다." : "삭제할 강의 노트를 찾을 수 없습니다." }, { status: 404 });

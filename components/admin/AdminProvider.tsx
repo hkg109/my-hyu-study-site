@@ -3,13 +3,23 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { LockKeyhole, ShieldCheck, X } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AdminContext } from "./AdminContext";
 
 // The server checks the password and keeps the session in an HttpOnly cookie; this only mirrors the result.
-export function AdminProvider({ children, initialAdmin }: { children: React.ReactNode; initialAdmin: boolean }) {
+// Deployed pages are static, so without initialAdmin the provider asks the server once after loading.
+export function AdminProvider({ children, initialAdmin }: { children: React.ReactNode; initialAdmin?: boolean }) {
   const router = useRouter();
-  const [isAdmin, setIsAdmin] = useState(initialAdmin);
+  const [isAdmin, setIsAdmin] = useState(initialAdmin ?? false);
+  useEffect(() => {
+    if (initialAdmin !== undefined) return;
+    let cancelled = false;
+    fetch("/api/admin/session", { cache: "no-store" })
+      .then(response => response.ok ? response.json() as Promise<{ admin?: boolean }> : { admin: false })
+      .then(result => { if (!cancelled && result.admin) setIsAdmin(true); })
+      .catch(() => undefined);
+    return () => { cancelled = true; };
+  }, [initialAdmin]);
   const [open, setOpen] = useState(false);
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -31,7 +41,7 @@ export function AdminProvider({ children, initialAdmin }: { children: React.Reac
       close(false);
       // Locked exams render for a signed-in admin, so re-render with the new cookie.
       router.refresh();
-    } catch { setError("관리자 모드를 시작하지 못했습니다. 개발 서버가 실행 중인지 확인해 주세요."); }
+    } catch { setError("관리자 모드를 시작하지 못했습니다. 네트워크 연결을 확인해 주세요."); }
     finally { setPending(false); }
   };
 
@@ -48,7 +58,7 @@ export function AdminProvider({ children, initialAdmin }: { children: React.Reac
 
   const openAdmin = () => setOpen(true);
 
-  return <AdminContext.Provider value={{ isAdmin, openAdmin }}>
+  return <AdminContext.Provider value={{ available: true, isAdmin, openAdmin }}>
     {children}
     <Dialog.Root open={open} onOpenChange={close}>
       <Dialog.Portal>

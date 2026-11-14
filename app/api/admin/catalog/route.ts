@@ -3,6 +3,7 @@ import { writeFile } from "node:fs/promises";
 import path from "node:path";
 import { revalidatePath } from "next/cache";
 import { catalogFile, readCatalog } from "@/lib/catalog";
+import { contentFromDb } from "@/lib/content-source";
 import { adminGuard } from "@/lib/server/auth";
 
 type Level = "grade" | "semester" | "subject";
@@ -20,6 +21,12 @@ export async function POST(request: Request) {
   const level = body.level as Level;
   const name = cleanName(body.name);
   if (action !== "delete" && (!name || name.length > 60)) return Response.json({ error: "이름은 1~60자로 입력해 주세요." }, { status: 400 });
+  if (contentFromDb()) {
+    const str = (value: unknown) => typeof value === "string" ? value : undefined;
+    const { dbCatalogChange } = await import("@/lib/server/content-admin");
+    const result = await dbCatalogChange(action, level, { gradeId: str(body.gradeId), semesterId: str(body.semesterId), subjectId: str(body.subjectId) }, name);
+    return "error" in result ? Response.json({ error: result.error }, { status: result.status }) : Response.json({ saved: true });
+  }
   const catalog = readCatalog();
   const grade = catalog.grades.find(item => item.id === body.gradeId);
   const semester = grade?.semesters.find(item => item.id === body.semesterId);

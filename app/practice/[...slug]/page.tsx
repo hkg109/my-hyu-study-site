@@ -19,9 +19,9 @@ export default async function PracticeDocument({ params }: Props) {
   if (subject) redirect(`${subject.path}#practice`);
   const doc = await getDocument("practice", slug);
   if (!doc) notFound();
-  // A signed-in admin on the local dev server can open (and edit) any exam, even one whose password isn't configured.
+  // A signed-in admin can open (and edit) any exam, even one whose password isn't configured.
   if (await isAdminViewer()) return <DocumentPage document={doc} />;
-  const lock = practiceLockFor(slug);
+  const lock = await practiceLockFor(slug);
   if (!lock.ok || !(await hasPracticeCookie(lock.credential))) redirect(`/unlock?next=${encodeURIComponent(doc.path)}`);
   return <DocumentPage document={doc} />;
 }

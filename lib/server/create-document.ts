@@ -4,6 +4,8 @@ import path from "node:path";
 import matter from "gray-matter";
 import { revalidatePath } from "next/cache";
 import { findCatalogPath, readCatalog } from "@/lib/catalog";
+import { getCatalog } from "@/lib/content";
+import { contentFromDb } from "@/lib/content-source";
 import { nextDocumentSlot } from "@/lib/note-files";
 import { findTemplate, type TemplateKind } from "@/lib/note-templates";
 import { parseAccessChoice } from "./practice-access";
@@ -30,6 +32,20 @@ export async function createDocumentFromTemplate(kind: TemplateKind, request: Re
     const parsed = parseAccessChoice(body.access);
     if ("error" in parsed) return fail(400, parsed.error);
     if (parsed.choice.mode === "key") accessKey = parsed.choice.accessKey;
+  }
+  if (contentFromDb()) {
+    const { dbEnsurePracticeKey, dbNextSlot, dbSetPracticeKeyPassword, dbUpsertDocument } = await import("./content-admin");
+    if (!findCatalogPath(await getCatalog(), gradeId, semesterId, subjectId)) return fail(404, "과목을 찾을 수 없습니다.");
+    // A password typed in the dialog is stored (hashed) for the exam's key; without one a new key stays locked.
+    const password = kind === "practice" ? (body.access as { password?: unknown } | undefined)?.password : undefined;
+    if (typeof password === "string" && password) {
+      const { error } = await dbSetPracticeKeyPassword(accessKey ?? "default", password);
+      if (error) return fail(400, error);
+    } else if (accessKey) await dbEnsurePracticeKey(accessKey);
+    const { order, slug } = await dbNextSlot(kind, gradeId, semesterId, subjectId);
+    const result = await dbUpsertDocument({ kind, gradeId, semesterId, subjectId, slug, order, title, body: template.body(kind), accessKey });
+    if ("error" in result) return fail(409, result.error ?? `새 ${label(kind)}를 만들지 못했습니다.`);
+    return Response.json({ created: true, path: result.path, templateId: template.id, order });
   }
   if (!findCatalogPath(readCatalog(), gradeId, semesterId, subjectId)) return fail(404, "과목을 찾을 수 없습니다.");
 

@@ -1,15 +1,15 @@
 import { cookies } from "next/headers";
-import { ADMIN_COOKIE_NAME, adminRequestError, isPasswordMatch } from "@/lib/access";
-import { adminCookieOptions, adminCookieValue, adminLoginTarget, endAdminSessions } from "@/lib/server/auth";
+import { ADMIN_COOKIE_NAME, isPasswordMatch } from "@/lib/access";
+import { adminAvailable, adminCookieOptions, adminCookieValue, adminLoginTarget, adminRefusal, endAdminSessions, isAdminViewer } from "@/lib/server/auth";
 
-// Signing in can't require a session yet, so it runs the same local/origin checks with signedIn forced.
-const refuse = (request: Request) => {
-  const refusal = adminRequestError({ nodeEnv: process.env.NODE_ENV, url: request.url, origin: request.headers.get("origin"), host: request.headers.get("host"), mutation: true, signedIn: true });
-  return refusal && Response.json({ error: refusal.error }, { status: refusal.status });
-};
+// Pages are static, so the browser asks here whether this visitor is signed in (the cookie is HttpOnly).
+export async function GET() {
+  return Response.json({ available: adminAvailable(), admin: await isAdminViewer() }, { headers: { "Cache-Control": "no-store" } });
+}
 
 export async function POST(request: Request) {
-  const refusal = refuse(request);
+  // Signing in can't require a session yet, so it runs the same availability/origin checks with signedIn forced.
+  const refusal = await adminRefusal(request, { mutation: true, signedIn: true });
   if (refusal) return refusal;
   let body: { password?: unknown };
   try { body = await request.json(); }
@@ -18,15 +18,15 @@ export async function POST(request: Request) {
   if ("error" in target) return Response.json({ error: target.error }, { status: 503 });
   if (typeof body.password !== "string" || !isPasswordMatch(body.password, target.credential.adminPassword)) {
     // A short delay makes guessing the password one attempt at a time slower.
-    await new Promise(resolve => setTimeout(resolve, 600));
+    await new Promise(resolve => setTimeout(resolve, 1000));
     return Response.json({ error: "비밀번호가 맞지 않습니다." }, { status: 401 });
   }
-  (await cookies()).set(ADMIN_COOKIE_NAME, adminCookieValue(target.credential), adminCookieOptions);
+  (await cookies()).set(ADMIN_COOKIE_NAME, adminCookieValue(target.credential), adminCookieOptions());
   return Response.json({ admin: true });
 }
 
 export async function DELETE(request: Request) {
-  const refusal = refuse(request);
+  const refusal = await adminRefusal(request, { mutation: true, signedIn: true });
   if (refusal) return refusal;
   endAdminSessions();
   (await cookies()).delete({ name: ADMIN_COOKIE_NAME, path: "/" });

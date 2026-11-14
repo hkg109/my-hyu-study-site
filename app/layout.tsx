@@ -12,7 +12,7 @@ import { Sidebar } from "@/components/layout/Sidebar";
 import { AppShell } from "@/components/layout/AppShell";
 import { getAllExams, getAllLectures, toNavDocument } from "@/lib/lectures";
 import { getCatalog } from "@/lib/content";
-import { isAdminViewer } from "@/lib/server/auth";
+import { adminAvailable, isAdminViewer } from "@/lib/server/auth";
 
 export const metadata: Metadata = {
   title: { default: "HJS STUDY", template: "%s | HJS STUDY" },
@@ -41,8 +41,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <Header lectures={lectures} exams={exams} catalog={catalog} />
     <AppShell sidebar={<Sidebar lectures={lectures} exams={exams} catalog={catalog} />}>{children}</AppShell>
   </>;
+  // The browser only learns whether this visitor is signed in; the admin password is checked by /api/admin/session.
+  // The dev server reads the cookie here; a deployment keeps pages static and lets the provider ask after loading.
   return <html lang="ko" suppressHydrationWarning><body><Providers>
-    {/* The browser only learns whether this visitor is signed in; the admin password is checked by /api/admin/session. */}
-    {development ? <AdminProvider initialAdmin={await isAdminViewer()}>{shell}</AdminProvider> : shell}
+    {adminAvailable() ? <AdminProvider initialAdmin={development ? await isAdminViewer() : undefined}>{shell}</AdminProvider> : shell}
   </Providers></body></html>;
 }

@@ -17,10 +17,9 @@ const NAV_ICONS: Record<PrimaryNavItem["icon"], typeof BookOpen> = { lectures: B
 export function Header({ lectures, exams, catalog }: { lectures: NavDocument[]; exams: NavDocument[]; catalog: AcademicCatalog }) {
   const path = usePathname();
   const { resolvedTheme, setTheme } = useTheme();
-  const { isAdmin, openAdmin } = useAdmin();
+  const { available: adminAvailable, isAdmin, openAdmin } = useAdmin();
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const adminAvailable = process.env.NODE_ENV === "development";
   // Close the drawer whenever the route changes, including back/forward navigation.
   const [drawerPath, setDrawerPath] = useState(path);
   if (drawerPath !== path) { setDrawerPath(path); setMenuOpen(false); }
