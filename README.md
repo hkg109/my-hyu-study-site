@@ -30,6 +30,17 @@ npm start
 
 자세한 작성법은 [콘텐츠 관리 안내](docs/content-guide.md)를 참고하세요.
 
+### Supabase로 옮기는 중
+
+강의 자료를 Supabase(DB + Storage)로 옮기고 있습니다. 지금은 1단계(DB 구조·권한·가져오기)까지 끝났고, 화면은 아직 위의 파일을 읽습니다.
+
+- 구조와 권한: `supabase/migrations/20261115000000_content.sql`, 테스트: `supabase/tests/content_test.sql`
+  - 공개된 강의 노트는 누구나 읽고, 족보 본문은 DB에서 직접 읽을 수 없습니다(서버가 비밀번호를 확인한 뒤에만). 쓰기는 `admins`에 등록된 계정만.
+  - 족보 비밀번호는 `practice_keys`에 해시로만 저장합니다. 족보 원본 파일은 올리지 않습니다.
+- 로컬 DB: Docker를 켜고 `npx supabase start` (포트 553xx, 다른 Supabase 프로젝트와 겹치지 않게 바꿔 둠) → `npx supabase test db`
+- 파일 → DB 옮기기: `node scripts/import-content.mjs --dry-run`으로 개수를 본 뒤 `node scripts/import-content.mjs --materials`. 여러 번 돌려도 같은 문서를 덮어쓸 뿐이고, 환경변수가 없으면 이미 저장된 족보 비밀번호는 건드리지 않습니다.
+- 원격 DB에 구조 적용: `npx supabase link --project-ref <ref>` → `npx supabase db push --dry-run --linked` → `npx supabase db push --linked`. DB가 하나뿐이니 반드시 로컬에서 `db reset --local`과 `test db`를 먼저 통과시킵니다.
+
 ## 비밀번호 설정
 
 비밀번호는 저장소에 두지 않고 서버 환경변수로 관리합니다. 변수 목록과 설명은 [.env.example](.env.example)에 있습니다.
