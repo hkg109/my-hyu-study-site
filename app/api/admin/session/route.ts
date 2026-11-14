@@ -1,10 +1,12 @@
 import { cookies } from "next/headers";
 import { ADMIN_COOKIE_NAME, isPasswordMatch } from "@/lib/access";
-import { adminAvailable, adminCookieOptions, adminCookieValue, adminLoginTarget, adminRefusal, endAdminSessions, isAdminViewer } from "@/lib/server/auth";
+import { adminAvailable, adminSetupProblems, adminCookieOptions, adminCookieValue, adminLoginTarget, adminRefusal, endAdminSessions, isAdminViewer } from "@/lib/server/auth";
 
 // Pages are static, so the browser asks here whether this visitor is signed in (the cookie is HttpOnly).
+// When admin mode is off, `setup` names the missing settings (names only) so a deployment can be fixed without logs.
 export async function GET() {
-  return Response.json({ available: adminAvailable(), admin: await isAdminViewer() }, { headers: { "Cache-Control": "no-store" } });
+  const available = adminAvailable();
+  return Response.json({ available, admin: await isAdminViewer(), ...(!available && { setup: adminSetupProblems() }) }, { headers: { "Cache-Control": "no-store" } });
 }
 
 export async function POST(request: Request) {

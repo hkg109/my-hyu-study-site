@@ -27,8 +27,17 @@ const development = () => process.env.NODE_ENV === "development";
 /** The deployed site runs admin mode only with DB content (files can't be written there) and a long admin password. */
 export const ADMIN_PASSWORD_MIN_LENGTH = 12;
 function remoteAdminAllowed() {
+  return !development() && adminSetupProblems().length === 0;
+}
+
+/** Which deployment settings keep admin mode off, by name only (never values). */
+export function adminSetupProblems() {
   const password = readAdminPassword(process.env);
-  return !development() && contentFromDb() && Boolean(password && password.length >= ADMIN_PASSWORD_MIN_LENGTH && readAuthSecret(process.env));
+  return [
+    ...(contentFromDb() ? [] : ["CONTENT_SOURCE=db 아님"]),
+    ...(!password ? ["ADMIN_PASSWORD 없음"] : password.length < ADMIN_PASSWORD_MIN_LENGTH ? [`ADMIN_PASSWORD ${ADMIN_PASSWORD_MIN_LENGTH}자 미만`] : []),
+    ...(readAuthSecret(process.env) ? [] : ["AUTH_SECRET 없음 또는 32자 미만"]),
+  ];
 }
 
 /** Whether this server offers admin mode at all (the local dev server, or a configured deployment). */
