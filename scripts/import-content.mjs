@@ -48,7 +48,8 @@ function readDocuments(kind) {
     if (!fs.existsSync(dir)) continue;
     for (const name of fs.readdirSync(dir).filter((n) => FILE_PATTERN[kind].test(n)).sort()) {
       const file = path.join(dir, name);
-      const { data, content } = matter(fs.readFileSync(file, "utf8"));
+      // Windows 체크아웃은 CRLF일 수 있다. 줄바꿈을 LF로 맞춰 저장한다(CRLF는 코드 강조를 깨뜨린다)
+      const { data, content } = matter(fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n"));
       const where = path.relative(root, file);
       const order = Number(data.order);
       if (typeof data.title !== "string" || !data.title.trim()) throw new Error(`${where}: title이 필요합니다.`);

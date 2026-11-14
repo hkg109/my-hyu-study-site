@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   const password = String(form?.get("password") ?? "");
   const next = safePracticePath(String(form?.get("next") ?? ""));
   const slug = next.split("/").slice(2);
-  const doc = getDocument("practice", slug);
+  const doc = await getDocument("practice", slug);
   if (!doc) return redirect(request, "/practice");
   // An exam whose password or AUTH_SECRET is missing stays locked; the unlock page explains that.
   const lock = practiceLockFor(slug);

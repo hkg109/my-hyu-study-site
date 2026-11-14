@@ -17,7 +17,7 @@ const misExam = ["grade-01", "semester-muheifg4", "subject-muhz2xir", "exam-01"]
 const examPath = (slug: string[]) => `/practice/${slug.join("/")}`;
 const credential = (overrides: Partial<PracticeCredential> = {}): PracticeCredential => ({ secret: SECRET, examPath: examPath(cseMidterm), accessKey: "cse-midterm", password: "fake-cse", ...overrides });
 
-test("accessKey format, reserved words and env names are decided in one place", () => {
+test("accessKey format, reserved words and env names are decided in one place", async () => {
   assert.equal(practicePasswordEnvName(), DEFAULT_PRACTICE_PASSWORD_ENV);
   assert.equal(practicePasswordEnvName("cse-midterm"), "PRACTICE_PASSWORD_CSE_MIDTERM");
   assert.equal(practicePasswordEnvName("mis-2025-midterm"), "PRACTICE_PASSWORD_MIS_2025_MIDTERM");
@@ -28,7 +28,7 @@ test("accessKey format, reserved words and env names are decided in one place", 
   assert.equal(accessKeyError("a".repeat(32)), undefined);
 });
 
-test("an exam with an accessKey only uses its own variable and never falls back to the default", () => {
+test("an exam with an accessKey only uses its own variable and never falls back to the default", async () => {
   assert.equal(readPracticePassword(undefined, env), "fake-default");
   assert.equal(readPracticePassword("cse-midterm", env), "fake-cse");
   assert.equal(readPracticePassword("cse-final", env), undefined);
@@ -37,7 +37,7 @@ test("an exam with an accessKey only uses its own variable and never falls back 
   assert.throws(() => readPracticePassword("auth_secret", env));
 });
 
-test("missing or short AUTH_SECRET and missing ADMIN_PASSWORD read as unset", () => {
+test("missing or short AUTH_SECRET and missing ADMIN_PASSWORD read as unset", async () => {
   assert.equal(readAuthSecret(env), SECRET);
   assert.equal(readAuthSecret({}), undefined);
   assert.equal(readAuthSecret({ AUTH_SECRET: "too-short" }), undefined);
@@ -45,24 +45,24 @@ test("missing or short AUTH_SECRET and missing ADMIN_PASSWORD read as unset", ()
   assert.equal(readAdminPassword({}), undefined);
 });
 
-test("exams reference passwords by accessKey only", () => {
+test("exams reference passwords by accessKey only", async () => {
   assert.deepEqual(practiceAccessReference(cseMidterm), { accessKey: "cse-midterm" });
   assert.deepEqual(practiceAccessReference(misExam), {});
   assert.equal(practiceAccessReference(["grade-01", "semester-01", "subject-muhy8vqy", "exam-99"]), undefined);
   assert.equal(existsSync("config/access.json"), false);
-  for (const doc of readCollection("practice")) {
+  for (const doc of (await readCollection("practice"))) {
     const reference = practiceAccessReference(doc.slug);
     assert.equal(reference?.error, undefined, doc.path);
   }
 });
 
-test("practice password check is exact", () => {
+test("practice password check is exact", async () => {
   assert.ok(isPasswordMatch("fake-cse", "fake-cse"));
   assert.ok(!isPasswordMatch("fake-cs", "fake-cse"));
   assert.ok(!isPasswordMatch("", "fake-cse"));
 });
 
-test("an exam cookie only unlocks that exam with its current password, key and secret", () => {
+test("an exam cookie only unlocks that exam with its current password, key and secret", async () => {
   const token = practiceToken(credential());
   assert.ok(hasPracticeAccess(credential(), token));
   assert.ok(!hasPracticeAccess(credential({ examPath: examPath(misExam) }), token), "another exam");
@@ -76,7 +76,7 @@ test("an exam cookie only unlocks that exam with its current password, key and s
   assert.ok(!token.includes("fake-cse"), "the cookie never contains the password");
 });
 
-test("tampered, expired and old-format exam cookies are rejected", () => {
+test("tampered, expired and old-format exam cookies are rejected", async () => {
   const now = Date.UTC(2026, 9, 20);
   const token = practiceToken(credential(), now);
   const [version, expires, signature] = token.split(".");
@@ -91,7 +91,7 @@ test("tampered, expired and old-format exam cookies are rejected", () => {
   assert.ok(!hasPracticeAccess(credential(), "a".repeat(64), now));
 });
 
-test("admin sessions expire, end on sign-out and follow the admin password", () => {
+test("admin sessions expire, end on sign-out and follow the admin password", async () => {
   const now = Date.UTC(2026, 9, 20);
   const admin = { secret: SECRET, adminPassword: "fake-admin", epoch: "epoch-1" };
   const token = adminToken(admin, now);
@@ -102,7 +102,7 @@ test("admin sessions expire, end on sign-out and follow the admin password", () 
   assert.ok(!hasAdminSession(admin, practiceToken(credential(), now), now), "an exam cookie is not an admin cookie");
 });
 
-test("admin APIs require the local dev server, the same origin for changes and a session", () => {
+test("admin APIs require the local dev server, the same origin for changes and a session", async () => {
   const request = { nodeEnv: "development", url: "http://localhost:3000/api/admin/notes/x", origin: "http://localhost:3000", host: "localhost:3000", mutation: true, signedIn: true };
   assert.equal(adminRequestError(request), undefined);
   assert.equal(adminRequestError({ ...request, nodeEnv: "production" })?.status, 404);
@@ -114,7 +114,7 @@ test("admin APIs require the local dev server, the same origin for changes and a
   assert.equal(adminRequestError({ ...request, url: "http://[::1]:3000/api", host: "[::1]:3000", origin: "http://[::1]:3000" }), undefined);
 });
 
-test("unlock redirects stay inside the practice section", () => {
+test("unlock redirects stay inside the practice section", async () => {
   assert.equal(safePracticePath("/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-04"), "/practice/grade-01/semester-muheifg4/subject-muhz2xir/exam-04");
   assert.equal(safePracticePath("https://example.com/practice"), "/practice");
   assert.equal(safePracticePath("//example.com"), "/practice");
@@ -122,14 +122,14 @@ test("unlock redirects stay inside the practice section", () => {
   assert.equal(safePracticePath(undefined), "/practice");
 });
 
-test("search index and browser-bound documents expose neither locked content nor access settings", () => {
-  const practice = getSearchIndex().filter(entry => entry.kind === "practice");
+test("search index and browser-bound documents expose neither locked content nor access settings", async () => {
+  const practice = (await getSearchIndex()).filter(entry => entry.kind === "practice");
   assert.ok(practice.length > 0);
   assert.ok(practice.every(entry => entry.body === ""));
-  for (const doc of readCollection("practice")) assert.ok(!("accessKey" in doc) && !("password" in doc), doc.path);
+  for (const doc of (await readCollection("practice"))) assert.ok(!("accessKey" in doc) && !("password" in doc), doc.path);
 });
 
-test("the browser-side admin provider never receives the admin password", () => {
+test("the browser-side admin provider never receives the admin password", async () => {
   const layout = readFileSync("app/layout.tsx", "utf8");
   const provider = readFileSync("components/admin/AdminProvider.tsx", "utf8");
   assert.doesNotMatch(layout, /ADMIN_PASSWORD|readAdminPassword|expectedPassword/);

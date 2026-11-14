@@ -17,7 +17,8 @@ function readSubjectFiles(gradeId: string, semesterId: string, subjectId: string
   if (!catalogPath) return [];
   return fs.readdirSync(directory, { withFileTypes: true }).filter(entry => entry.isFile() && /^lecture-[a-z0-9-]+\.mdx?$/.test(entry.name)).map(entry => {
     const file = path.join(directory, entry.name);
-    const parsed = matter(fs.readFileSync(file, "utf8"));
+    // CRLF from a Windows checkout breaks code highlighting; read every file with LF line endings.
+    const parsed = matter(fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n"));
     const order = Number(parsed.data.order);
     if (typeof parsed.data.title !== "string" || !parsed.data.title.trim()) throw new Error(`${file}: title이 필요합니다.`);
     if (!Number.isInteger(order) || order < 0) throw new Error(`${file}: order는 0 이상의 정수여야 합니다.`);

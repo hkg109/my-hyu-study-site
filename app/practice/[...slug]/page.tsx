@@ -7,7 +7,7 @@ import { DocumentPage } from "@/components/lecture/DocumentPage";
 
 interface Props { params: Promise<{ slug: string[] }> }
 export async function generateMetadata({ params }: Props) {
-  const doc = getDocument("practice", (await params).slug);
+  const doc = await getDocument("practice", (await params).slug);
   if (!doc) return {};
   return { title: doc.title, description: doc.description, robots: { index: false } };
 }
@@ -15,9 +15,9 @@ export async function generateMetadata({ params }: Props) {
 export default async function PracticeDocument({ params }: Props) {
   const { slug } = await params;
   // A subject's exams are listed on its subject page.
-  const subject = slug.length === 3 ? findSubject(getSubjects(), slug) : undefined;
+  const subject = slug.length === 3 ? findSubject(await getSubjects(), slug) : undefined;
   if (subject) redirect(`${subject.path}#practice`);
-  const doc = getDocument("practice", slug);
+  const doc = await getDocument("practice", slug);
   if (!doc) notFound();
   // A signed-in admin on the local dev server can open (and edit) any exam, even one whose password isn't configured.
   if (await isAdminViewer()) return <DocumentPage document={doc} />;

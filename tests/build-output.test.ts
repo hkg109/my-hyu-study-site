@@ -8,14 +8,14 @@ import { getHeadings } from "../lib/markdown";
 const serverDir = path.join(process.cwd(), ".next/server/app");
 const hasBuild = existsSync(path.join(process.cwd(), ".next/BUILD_ID"));
 
-test("static production HTML includes MDX features, one H1, real TOC ids and no drafts; locked exams are never prerendered", { skip: !hasBuild && "Run npm run build first" }, (context) => {
-  const lectures = readCollection("lectures");
+test("static production HTML includes MDX features, one H1, real TOC ids and no drafts; locked exams are never prerendered", { skip: !hasBuild && "Run npm run build first" }, async (context) => {
+  const lectures = (await readCollection("lectures"));
   if (!lectures[0] || !existsSync(path.join(serverDir, `${lectures[0].path.slice(1)}.html`))) {
     context.skip("Routes are rendered dynamically from editable local files");
     return;
   }
   for (const kind of ["lectures"] as const) {
-    for (const doc of readCollection(kind)) {
+    for (const doc of (await readCollection(kind))) {
       const html = readFileSync(path.join(serverDir, `${doc.path.slice(1)}.html`), "utf8");
       assert.equal((html.match(/<h1(?:\s|>)/g) ?? []).length, 1, doc.path);
       for (const heading of getHeadings(doc.content, doc.format)) assert.ok(html.includes(`id="${heading.id}"`), `${doc.path}: ${heading.id}`);
@@ -32,11 +32,11 @@ test("static production HTML includes MDX features, one H1, real TOC ids and no 
   assert.match(printableLecture, /class="document-print-watermark"/);
   assert.match(printableLecture, /26학번 한지석 제공/);
   // Exams are rendered per request after the password check, so the build must not contain their HTML.
-  const practices = readCollection("practice");
+  const practices = (await readCollection("practice"));
   assert.ok(practices.length > 0);
   for (const doc of practices) assert.ok(!existsSync(path.join(serverDir, `${doc.path.slice(1)}.html`)), `${doc.path} was prerendered`);
   const manifest = JSON.parse(readFileSync(".next/prerender-manifest.json", "utf8"));
-  for (const doc of readCollection("lectures")) assert.ok(manifest.routes[doc.path]);
+  for (const doc of (await readCollection("lectures"))) assert.ok(manifest.routes[doc.path]);
   assert.ok(manifest.dynamicRoutes["/lectures/[...slug]"]);
   for (const doc of practices) assert.equal(manifest.routes[doc.path], undefined, doc.path);
 });

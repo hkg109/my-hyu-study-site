@@ -25,7 +25,7 @@ function readSubjectFiles(gradeId: string, semesterId: string, subjectId: string
   if (!catalogPath) return [];
   return fs.readdirSync(directory, { withFileTypes: true }).filter(entry => entry.isFile() && /^exam-[a-z0-9-]+\.md$/.test(entry.name)).map(entry => {
     const file = path.join(directory, entry.name);
-    const parsed = matter(fs.readFileSync(file, "utf8"));
+    const parsed = matter(fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n"));
     const order = Number(parsed.data.order);
     if (typeof parsed.data.title !== "string" || !parsed.data.title.trim()) throw new Error(`${file}: title이 필요합니다.`);
     if (!Number.isInteger(order) || order < 1) throw new Error(`${file}: order는 1 이상의 정수여야 합니다.`);

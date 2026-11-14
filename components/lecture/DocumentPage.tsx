@@ -25,7 +25,7 @@ export async function DocumentPage({ document }: { document: ContentDocument }) 
   const label = isLecture ? "강의 정리" : "족보";
   const subjectHome = subjectPathOf(document);
   // "제 N 교시" on the exam paper: this exam's place among the subject's exams.
-  const period = isPractice ? getAllExams().filter(exam => subjectPathOf(exam) === subjectHome).findIndex(exam => exam.path === document.path) + 1 || 1 : undefined;
+  const period = isPractice ? (await getAllExams()).filter(exam => subjectPathOf(exam) === subjectHome).findIndex(exam => exam.path === document.path) + 1 || 1 : undefined;
   return <div className="document-grid"><RecentVisitTracker path={document.path} /><article className="document-main printable-document">
     <div className="document-toolbar"><nav className="breadcrumb" aria-label="현재 위치"><Link prefetch={false} href={`/${document.kind}`}>{label}</Link><ChevronRight size={13} />{document.gradeName ? <><span>{document.gradeName}</span><ChevronRight size={13} /><span>{document.semesterName}</span><ChevronRight size={13} />{subjectHome ? <Link prefetch={false} href={isPractice ? `${subjectHome}#practice` : subjectHome}>{document.subjectName}</Link> : <span>{document.subjectName}</span>}</> : <span>{document.title}</span>}</nav><div className="document-toolbar-actions">{isEditable && isPractice && <PracticeAccessSettings slug={document.slug} title={document.title} />}<PrintLectureButton title={document.title} kind={isPractice ? "practice" : "lecture"} subjectName={document.subjectName} period={period} /></div></div>
     <LectureHeader lecture={document} hideDescription={isLecture} /><LearningObjectives objectives={document.objectives} />
@@ -33,7 +33,7 @@ export async function DocumentPage({ document }: { document: ContentDocument }) 
     <MobileTOC key={document.path} headings={headings} documentPath={isEditable ? document.path : undefined} format={document.format} />
     <StudyWorkspace documentPath={document.path}>{isEditable ? <MarkdownEditor path={document.path} filename={`${document.slug.at(-1) ?? "document"}.${isPractice || document.format === "md" ? "md" : "mdx"}`} source={document.content}>{content}</MarkdownEditor> : <div className="prose">{content}</div>}</StudyWorkspace>
     <div className="document-print-watermark" aria-hidden="true">26학번 한지석 제공</div>
-    {isLecture ? <><ProgressCheck slug={document.slug.join("/")} /><PrevNextNavigation {...getPrevNextLecture(document.slug)} /></> : <div className="prev-next"><Link prefetch={false} href={`/${document.kind}`}><span>목록으로 돌아가기</span><strong>전체 {label} 보기</strong></Link></div>}
+    {isLecture ? <><ProgressCheck slug={document.slug.join("/")} /><PrevNextNavigation {...await getPrevNextLecture(document.slug)} /></> : <div className="prev-next"><Link prefetch={false} href={`/${document.kind}`}><span>목록으로 돌아가기</span><strong>전체 {label} 보기</strong></Link></div>}
     <Footer />
   </article><PageTOC key={document.path} headings={headings} documentPath={isEditable ? document.path : undefined} format={document.format} /></div>;
 }

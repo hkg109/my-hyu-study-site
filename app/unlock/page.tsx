@@ -10,7 +10,7 @@ export default async function UnlockPage({ searchParams }: { searchParams: Promi
   const { next, error } = await searchParams;
   // Every exam has its own password, so the form always unlocks one specific exam.
   const slug = safePracticePath(next).split("/").slice(2);
-  const doc = getDocument("practice", slug);
+  const doc = await getDocument("practice", slug);
   if (!doc) redirect("/practice");
   // A signed-in local admin goes straight to the exam (development only).
   if (await isAdminViewer()) redirect(doc.path);

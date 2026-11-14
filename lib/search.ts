@@ -1,23 +1,24 @@
-import { readCollection } from "./content";
+import { getCollectionWithBodies } from "./content";
 import { markdownText } from "./markdown";
 import type { SearchEntry } from "@/types/content";
 
-let productionIndex: SearchEntry[] | undefined;
+let productionIndex: Promise<SearchEntry[]> | undefined;
 
-export function getSearchIndex(): SearchEntry[] {
-  // Building the index reads every lecture and takes seconds; every page's layout asks for it.
-  // Content is fixed for a production build, so pages share one copy instead of rebuilding it.
-  if (process.env.NODE_ENV === "production") return productionIndex ??= buildSearchIndex();
+export function getSearchIndex(): Promise<SearchEntry[]> {
+  // Building the index reads every lecture and takes seconds. With file content, a production build
+  // is fixed, so requests share one copy. DB content can change, so it is rebuilt when the
+  // /search-index route is regenerated (it is static and refreshed with the content tag).
+  if (process.env.NODE_ENV === "production" && process.env.CONTENT_SOURCE !== "db") return productionIndex ??= buildSearchIndex();
   return buildSearchIndex();
 }
 
-function buildSearchIndex(): SearchEntry[] {
-  return (["lectures", "practice"] as const).flatMap(kind =>
-    readCollection(kind).map(doc => ({
-      title: doc.title, description: doc.description, tags: doc.tags ?? [],
-      // The index ships with every page, so locked practice content is searchable by title only.
-      body: kind === "practice" ? "" : markdownText(doc.content, doc.format), path: doc.path, kind,
-      location: kind === "lectures" ? [doc.gradeName, doc.semesterName, doc.subjectName].filter(Boolean).join(" · ") : "족보",
-    })),
-  );
+async function buildSearchIndex(): Promise<SearchEntry[]> {
+  const kinds = ["lectures", "practice"] as const;
+  const collections = await Promise.all(kinds.map(kind => getCollectionWithBodies(kind)));
+  return kinds.flatMap((kind, i) => collections[i].map(doc => ({
+    title: doc.title, description: doc.description, tags: doc.tags ?? [],
+    // The index ships with every page, so locked practice content is searchable by title only.
+    body: kind === "practice" ? "" : markdownText(doc.content, doc.format), path: doc.path, kind,
+    location: kind === "lectures" ? [doc.gradeName, doc.semesterName, doc.subjectName].filter(Boolean).join(" · ") : "족보",
+  })));
 }

@@ -11,7 +11,7 @@ import { Header } from "@/components/layout/Header";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { AppShell } from "@/components/layout/AppShell";
 import { getAllExams, getAllLectures, toNavDocument } from "@/lib/lectures";
-import { readCatalog } from "@/lib/catalog";
+import { getCatalog } from "@/lib/content";
 import { isAdminViewer } from "@/lib/server/auth";
 
 export const metadata: Metadata = {
@@ -31,9 +31,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   // generated once at build time so Vercel can serve the pages from its static cache.
   const development = process.env.NODE_ENV === "development";
   if (development) await connection();
-  const lectures = getAllLectures().map(toNavDocument);
-  const exams = getAllExams().map(toNavDocument);
-  const catalog = readCatalog();
+  const [lectures, exams, catalog] = await Promise.all([
+    getAllLectures().then(list => list.map(toNavDocument)),
+    getAllExams().then(list => list.map(toNavDocument)),
+    getCatalog(),
+  ]);
   const shell = <>
     <a href="#main-content" className="skip-link">본문으로 바로가기</a>
     <Header lectures={lectures} exams={exams} catalog={catalog} />
