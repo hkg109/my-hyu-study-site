@@ -10,3 +10,6 @@ coverage/
 test-results/
 .DS_Store
 tmp/pdfs/translation/
+
+# Generated locally; never commit
+lib/weeks.generated.json
