@@ -34,17 +34,18 @@ export async function createDocumentFromTemplate(kind: TemplateKind, request: Re
     if (parsed.choice.mode === "key") accessKey = parsed.choice.accessKey;
   }
   if (contentFromDb()) {
-    const { dbEnsurePracticeKey, dbNextSlot, dbSetPracticeKeyPassword, dbUpsertDocument } = await import("./content-admin");
+    const { dbNextSlot, dbSetExamPassword, dbUpsertDocument } = await import("./content-admin");
     if (!findCatalogPath(await getCatalog(), gradeId, semesterId, subjectId)) return fail(404, "과목을 찾을 수 없습니다.");
-    // A password typed in the dialog is stored (hashed) for the exam's key; without one a new key stays locked.
+    // An exam starts on the shared default password; a password typed in the dialog becomes its own (hashed).
     const password = kind === "practice" ? (body.access as { password?: unknown } | undefined)?.password : undefined;
-    if (typeof password === "string" && password) {
-      const { error } = await dbSetPracticeKeyPassword(accessKey ?? "default", password);
-      if (error) return fail(400, error);
-    } else if (accessKey) await dbEnsurePracticeKey(accessKey);
+    if (typeof password === "string" && password && (password.length < 4 || password.length > 100)) return fail(400, "비밀번호는 4~100자로 입력해 주세요.");
     const { order, slug } = await dbNextSlot(kind, gradeId, semesterId, subjectId);
-    const result = await dbUpsertDocument({ kind, gradeId, semesterId, subjectId, slug, order, title, body: template.body(kind), accessKey });
+    const result = await dbUpsertDocument({ kind, gradeId, semesterId, subjectId, slug, order, title, body: template.body(kind) });
     if ("error" in result) return fail(409, result.error ?? `새 ${label(kind)}를 만들지 못했습니다.`);
+    if (typeof password === "string" && password) {
+      const saved = await dbSetExamPassword([gradeId, semesterId, subjectId, slug], password);
+      if ("error" in saved) return fail(saved.status, `족보는 만들었지만 비밀번호를 저장하지 못했습니다: ${saved.error}`);
+    }
     return Response.json({ created: true, path: result.path, templateId: template.id, order });
   }
   if (!findCatalogPath(readCatalog(), gradeId, semesterId, subjectId)) return fail(404, "과목을 찾을 수 없습니다.");

@@ -1,6 +1,5 @@
 import matter from "gray-matter";
 import { createClient } from "@supabase/supabase-js";
-import { accessKeyError } from "@/lib/access-keys";
 import { findCatalogPath } from "@/lib/catalog";
 import { getCatalog } from "@/lib/content";
 import { contentFromDb } from "@/lib/content-source";
@@ -42,15 +41,6 @@ export async function POST(request: Request) {
   const title = (typedTitle || guessTitle(parsed.data.title, parsed.content, markdown.name)).slice(0, 120);
   const description = typeof parsed.data.description === "string" ? parsed.data.description.slice(0, 300) : "";
 
-  // Exams: which password unlocks this one (and optionally a new password for it)
-  let accessKey: string | undefined;
-  const accessMode = form.get("accessMode");
-  if (kind === "practice" && accessMode === "key") {
-    const key = String(form.get("accessKey") ?? "");
-    const error = accessKeyError(key);
-    if (error) return fail(400, error);
-    accessKey = key;
-  }
   const password = String(form.get("password") ?? "");
   if (password && (password.length < 4 || password.length > 100)) return fail(400, "비밀번호는 4~100자로 입력해 주세요.");
 
@@ -76,16 +66,15 @@ export async function POST(request: Request) {
     if (Array.isArray(parsed.data[field])) meta[field] = parsed.data[field].filter((item: unknown) => typeof item === "string");
   }
 
-  if (kind === "practice") {
-    if (password) {
-      const { error } = await admin.dbSetPracticeKeyPassword(accessKey ?? "default", password);
-      if (error) return fail(400, error);
-    } else if (accessKey) await admin.dbEnsurePracticeKey(accessKey);
-  }
   const result = await admin.dbUpsertDocument({
     kind, gradeId, semesterId, subjectId, slug, order, title, description, body, meta,
-    format: /<[A-Z][A-Za-z]*(?:\s|>)/.test(body) ? "mdx" : "md", accessKey,
+    format: /<[A-Z][A-Za-z]*(?:\s|>)/.test(body) ? "mdx" : "md",
   });
   if ("error" in result) return fail(409, result.error ?? "문서를 만들지 못했습니다.");
+  // An exam starts on the shared default password; a typed one becomes its own (hashed).
+  if (kind === "practice" && password) {
+    const saved = await admin.dbSetExamPassword([gradeId, semesterId, subjectId, slug], password);
+    if ("error" in saved) return fail(saved.status, `족보는 만들었지만 비밀번호를 저장하지 못했습니다: ${saved.error}`);
+  }
   return Response.json({ created: true, path: result.path, images: uploaded.size });
 }

@@ -2,11 +2,10 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import { FileUp } from "lucide-react";
-import { useEffect, useId, useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 import { guessTitle, IMAGE_TYPES, localImageReferences, safeFileName } from "@/lib/upload-markdown";
 import type { TemplateKind } from "@/lib/note-templates";
-import type { PracticeAccessOverview } from "@/types/admin";
-import { AccessKeyPicker, accessDraftError, type AccessDraft } from "./AccessKeyPicker";
+import { examPasswordError, ExamPasswordField } from "./ExamPasswordField";
 import type { CreateTarget } from "./CreateDocumentDialog";
 
 const kindLabel = (kind: TemplateKind) => kind === "practice" ? "족보" : "강의 노트";
@@ -21,18 +20,9 @@ export function UploadDocumentForm({ kind, target, onCreated }: { kind: Template
   const [text, setText] = useState("");
   const [images, setImages] = useState<File[]>([]);
   const [title, setTitle] = useState("");
-  const [access, setAccess] = useState<AccessDraft>({ mode: "key", accessKey: "" });
-  const [overview, setOverview] = useState<PracticeAccessOverview>();
+  const [password, setPassword] = useState("");
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
-
-  useEffect(() => {
-    if (kind !== "practice") return;
-    fetch("/api/admin/practice-access", { cache: "no-store" })
-      .then(response => response.ok ? response.json() as Promise<PracticeAccessOverview> : undefined)
-      .then(setOverview)
-      .catch(() => undefined);
-  }, [kind]);
 
   const chooseMarkdown = async (file?: File) => {
     setError(""); setMarkdown(file); setText("");
@@ -50,19 +40,15 @@ export function UploadDocumentForm({ kind, target, onCreated }: { kind: Template
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!markdown) { setError("MD 파일을 골라 주세요."); return; }
-    const accessError = kind === "practice" ? accessDraftError(access) : undefined;
-    if (accessError) { setError(accessError); return; }
+    const passwordError = kind === "practice" ? examPasswordError(password) : undefined;
+    if (passwordError) { setError(passwordError); return; }
     const form = new FormData();
     form.set("kind", kind);
     form.set("gradeId", target.gradeId); form.set("semesterId", target.semesterId); form.set("subjectId", target.subjectId);
     form.set("title", title.trim());
     form.set("markdown", markdown);
     for (const image of images) form.append("images", image);
-    if (kind === "practice") {
-      form.set("accessMode", access.mode);
-      if (access.mode === "key") form.set("accessKey", access.accessKey);
-      if (access.password) form.set("password", access.password);
-    }
+    if (kind === "practice" && password) form.set("password", password);
     setPending(true); setError("");
     try {
       const response = await fetch("/api/admin/upload", { method: "POST", body: form });
@@ -95,7 +81,7 @@ export function UploadDocumentForm({ kind, target, onCreated }: { kind: Template
       </section>}
     </>}
 
-    {kind === "practice" && <AccessKeyPicker draft={access} onChange={next => { setAccess(next); setError(""); }} overview={overview} disabled={pending} />}
+    {kind === "practice" && <ExamPasswordField value={password} onChange={next => { setPassword(next); setError(""); }} disabled={pending} />}
 
     {error && <p className="admin-error" role="alert">{error}</p>}
     <div className="admin-dialog-actions">

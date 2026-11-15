@@ -2,10 +2,9 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import { FilePlus2, X } from "lucide-react";
-import { useEffect, useId, useState } from "react";
+import { useId, useState } from "react";
 import { defaultTemplateId, findTemplate, templatesFor, type TemplateKind } from "@/lib/note-templates";
-import type { PracticeAccessOverview } from "@/types/admin";
-import { AccessKeyPicker, accessChoiceFromDraft, accessDraftError, type AccessDraft } from "./AccessKeyPicker";
+import { examPasswordError, ExamPasswordField } from "./ExamPasswordField";
 import { UploadDocumentForm } from "./UploadDocumentForm";
 
 export interface CreateTarget { gradeId: string; semesterId: string; subjectId: string; subjectName: string }
@@ -37,32 +36,22 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
   const templates = templatesFor(kind);
   const [title, setTitle] = useState("");
   const [templateId, setTemplateId] = useState(defaultTemplateId(kind));
-  // New exams default to their own password key, matching how exams are run today.
-  const [access, setAccess] = useState<AccessDraft>({ mode: "key", accessKey: "" });
-  const [overview, setOverview] = useState<PracticeAccessOverview>();
+  const [password, setPassword] = useState("");
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
   const template = findTemplate(kind, templateId) ?? templates[0];
 
-  useEffect(() => {
-    if (kind !== "practice") return;
-    fetch("/api/admin/practice-access", { cache: "no-store" })
-      .then(response => response.ok ? response.json() as Promise<PracticeAccessOverview> : undefined)
-      .then(setOverview)
-      .catch(() => undefined);
-  }, [kind]);
-
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!title.trim()) { setError("제목을 입력해 주세요."); return; }
-    const accessError = kind === "practice" ? accessDraftError(access) : undefined;
-    if (accessError) { setError(accessError); return; }
+    const passwordError = kind === "practice" ? examPasswordError(password) : undefined;
+    if (passwordError) { setError(passwordError); return; }
     setPending(true); setError("");
     try {
       const response = await fetch(kind === "practice" ? "/api/admin/practice" : "/api/admin/lectures", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ gradeId: target.gradeId, semesterId: target.semesterId, subjectId: target.subjectId, title: title.trim(), templateId: template.id, ...(kind === "practice" && { access: { ...accessChoiceFromDraft(access), ...(access.password && { password: access.password }) } }) }),
+        body: JSON.stringify({ gradeId: target.gradeId, semesterId: target.semesterId, subjectId: target.subjectId, title: title.trim(), templateId: template.id, ...(kind === "practice" && { access: { mode: "default", ...(password && { password }) } }) }),
       });
       const result = await response.json().catch(() => ({})) as { error?: string; path?: string };
       if (!response.ok || !result.path) { setError(result.error ?? `${kindLabel(kind)}를 만들지 못했습니다.`); return; }
@@ -71,7 +60,7 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
     finally { setPending(false); }
   };
 
-  const frontmatter = ["---", `title: ${JSON.stringify(title.trim() || `새 ${kindLabel(kind)}`)}`, 'description: ""', "order: (과목의 다음 번호)", "published: true", ...(kind === "practice" && access.mode === "key" && access.accessKey ? [`accessKey: ${JSON.stringify(access.accessKey)}`] : []), "---"].join("\n");
+  const frontmatter = ["---", `title: ${JSON.stringify(title.trim() || `새 ${kindLabel(kind)}`)}`, 'description: ""', "order: (과목의 다음 번호)", "published: true", "---"].join("\n");
 
   return <form onSubmit={submit} className="create-document-form">
     <div className="admin-dialog-icon"><FilePlus2 size={22} /></div>
@@ -95,7 +84,7 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
       <details><summary>Markdown 미리보기</summary><pre>{`${frontmatter}\n\n${template.body(kind)}`}</pre></details>
     </section>
 
-    {kind === "practice" && <AccessKeyPicker draft={access} onChange={next => { setAccess(next); setError(""); }} overview={overview} disabled={pending} />}
+    {kind === "practice" && <ExamPasswordField value={password} onChange={next => { setPassword(next); setError(""); }} disabled={pending} />}
 
     {error && <p className="admin-error" role="alert">{error}</p>}
     <div className="admin-dialog-actions">

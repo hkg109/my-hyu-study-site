@@ -1,9 +1,7 @@
 import "server-only";
 import { revalidatePath, revalidateTag } from "next/cache";
 import { createClient } from "@supabase/supabase-js";
-import { DEFAULT_PRACTICE_PASSWORD_ENV, practicePasswordEnvName } from "@/lib/access-keys";
 import type { ContentKind } from "@/types/content";
-import type { AccessChoice, PracticeAccessOverview, PracticeDocumentAccess } from "@/types/admin";
 import { CONTENT_TAG } from "./content-db";
 
 // Admin writes and password checks against Supabase (CONTENT_SOURCE=db). Every caller has already
@@ -57,71 +55,30 @@ export async function dbVerifyPracticePassword(documentId: string, password: str
   return !error && data === true;
 }
 
-async function keyUsage() {
-  const [{ data: keys }, { data: docs }] = await Promise.all([
-    client().from("practice_keys").select("key, locked"),
-    client().from("documents").select("access_key").eq("kind", "practice"),
-  ]);
-  const usage = new Map<string, number>();
-  for (const doc of docs ?? []) if (doc.access_key) usage.set(doc.access_key, (usage.get(doc.access_key) ?? 0) + 1);
-  // "stored": a password someone actually set (a locked key only holds an unknown random one)
-  return { stored: new Set((keys ?? []).filter(k => !k.locked).map(k => k.key)), usage };
-}
+/** This exam's own password key: one per exam, so changing it never affects another exam. */
+const ownKey = (documentId: string) => `exam-${documentId}`;
 
-/** Same shape as the file-mode overview; "configured" means a password is stored for the key. */
-export async function dbPracticeAccessOverview(candidate?: string): Promise<PracticeAccessOverview> {
-  const { stored, usage } = await keyUsage();
-  const status = (accessKey: string) => ({ accessKey, envName: practicePasswordEnvName(accessKey), configuredLocally: stored.has(accessKey), documents: usage.get(accessKey) ?? 0 });
-  return {
-    defaultEnvName: DEFAULT_PRACTICE_PASSWORD_ENV,
-    defaultConfiguredLocally: stored.has("default"),
-    authSecretConfiguredLocally: Boolean(process.env.AUTH_SECRET),
-    keys: [...new Set([...usage.keys(), ...[...stored].filter(k => k !== "default")])].sort().map(status),
-    ...(candidate && { candidate: status(candidate) }),
-    storage: "db",
-  };
-}
-
-export async function dbPracticeDocumentAccess(slug: string[]): Promise<PracticeDocumentAccess | undefined> {
+/** Whether the exam has its own password, or still opens with the shared default one (and whether that is set). */
+export async function dbExamPasswordStatus(slug: string[]) {
   const doc = await findDocument("practice", slug);
   if (!doc) return undefined;
-  const { stored } = await keyUsage();
-  return doc.access_key
-    ? { mode: "key", accessKey: doc.access_key, envName: practicePasswordEnvName(doc.access_key), configuredLocally: stored.has(doc.access_key) }
-    : { mode: "default", envName: DEFAULT_PRACTICE_PASSWORD_ENV, configuredLocally: stored.has("default") };
+  const key = doc.access_key ?? "default";
+  const { data } = await client().from("practice_keys").select("locked").eq("key", key).maybeSingle();
+  return { own: key === ownKey(doc.id), set: Boolean(data && !data.locked) };
 }
 
-/** Makes sure a key row exists (documents reference it). A new key gets an unknown random password, so it stays locked until one is set. */
-export async function dbEnsurePracticeKey(key: string) {
-  const { data } = await client().from("practice_keys").select("key").eq("key", key).maybeSingle();
-  if (data) return;
-  const { randomBytes } = await import("node:crypto");
-  const { error } = await client().rpc("set_practice_password", { p_key: key, p_password: randomBytes(24).toString("base64url") });
-  if (error) throw new Error(`practice key: ${error.message}`);
-  await client().from("practice_keys").update({ locked: true }).eq("key", key);
-}
-
-/** Sets (or replaces) the password for a key; stored only as a hash. */
-export async function dbSetPracticeKeyPassword(key: string, password: string) {
-  const { error } = await client().rpc("set_practice_password", { p_key: key, p_password: password });
-  if (error) return { error: error.message.includes("4~100") ? "비밀번호는 4~100자로 입력해 주세요." : "비밀번호를 저장하지 못했습니다." };
-  return {};
-}
-
-/** Points an exam at a key (or the default). A key without a password yet keeps the exam locked until one is set. */
-export async function dbSetPracticeAccess(slug: string[], choice: AccessChoice, password?: string) {
+/** Sets this exam's password (stored only as a hash) and points the exam at it. Takes effect at once. */
+export async function dbSetExamPassword(slug: string[], password: string): Promise<{ saved: true } | { error: string; status: number }> {
+  if (password.length < 4 || password.length > 100) return { error: "비밀번호는 4~100자로 입력해 주세요.", status: 400 };
   const doc = await findDocument("practice", slug);
   if (!doc) return { error: "족보를 찾을 수 없습니다.", status: 404 };
-  const key = choice.mode === "key" ? choice.accessKey : "default";
-  if (password !== undefined) {
-    const { error } = await client().rpc("set_practice_password", { p_key: key, p_password: password });
-    if (error) return { error: error.message.includes("4~100") ? "비밀번호는 4~100자로 입력해 주세요." : "비밀번호를 저장하지 못했습니다.", status: 400 };
-  } else {
-    const { data } = await client().from("practice_keys").select("key, locked").eq("key", key).maybeSingle();
-    if (!data || data.locked) return { error: "이 키에는 아직 비밀번호가 없습니다. 비밀번호를 함께 입력해 주세요.", status: 400 };
+  const key = ownKey(doc.id);
+  const { error } = await client().rpc("set_practice_password", { p_key: key, p_password: password });
+  if (error) return { error: "비밀번호를 저장하지 못했습니다.", status: 500 };
+  if (doc.access_key !== key) {
+    const { error: pointError } = await client().from("documents").update({ access_key: key }).eq("id", doc.id);
+    if (pointError) return { error: "비밀번호를 연결하지 못했습니다.", status: 500 };
   }
-  const { error } = await client().from("documents").update({ access_key: choice.mode === "key" ? choice.accessKey : null }).eq("id", doc.id);
-  if (error) return { error: "접근 설정을 저장하지 못했습니다.", status: 500 };
   refreshContent();
   return { saved: true as const };
 }

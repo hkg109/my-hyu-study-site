@@ -66,23 +66,6 @@ export function resolvePracticeSource(slug: string[]): string | undefined {
   return fs.existsSync(file) ? file : undefined;
 }
 
-/** How many exam files (drafts included) use each valid accessKey. */
-export function practiceAccessKeyUsage(): Map<string, number> {
-  const usage = new Map<string, number>();
-  const visit = (directory: string) => {
-    if (!fs.existsSync(directory)) return;
-    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
-      const target = path.join(directory, entry.name);
-      if (entry.isDirectory()) visit(target);
-      else if (/^exam-[a-z0-9-]+\.md$/.test(entry.name)) {
-        const { accessKey } = readAccessReference(matter(fs.readFileSync(target, "utf8")).data);
-        if (accessKey) usage.set(accessKey, (usage.get(accessKey) ?? 0) + 1);
-      }
-    }
-  };
-  visit(practiceRoot);
-  return usage;
-}
 
 // The accessKey stays out of ContentDocument, which is sent to the browser.
 export function practiceAccessReference(slug: string[]): PracticeAccessReference | undefined {
