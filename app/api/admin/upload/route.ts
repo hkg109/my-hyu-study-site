@@ -3,6 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 import { findCatalogPath } from "@/lib/catalog";
 import { getCatalog } from "@/lib/content";
 import { contentFromDb } from "@/lib/content-source";
+import { parseRequestedOrder } from "@/lib/note-files";
 import { adminGuard } from "@/lib/server/auth";
 import { guessTitle, IMAGE_TYPES, MAX_IMAGE_BYTES, MAX_MARKDOWN_BYTES, rewriteImageReferences, safeFileName } from "@/lib/upload-markdown";
 
@@ -44,8 +45,13 @@ export async function POST(request: Request) {
   const password = String(form.get("password") ?? "");
   if (password && (password.length < 4 || password.length > 100)) return fail(400, "비밀번호는 4~100자로 입력해 주세요.");
 
+  const requested = parseRequestedOrder(form.get("order"));
+  if (requested === null) return fail(400, "순서는 1~999 사이의 정수로 입력해 주세요.");
+
   const admin = await import("@/lib/server/content-admin");
-  const { order, slug } = await admin.dbNextSlot(kind, gradeId, semesterId, subjectId);
+  const next = await admin.dbNextSlot(kind, gradeId, semesterId, subjectId);
+  const slug = next.slug;
+  const order = requested && requested < next.order ? requested : next.order;
 
   // Upload images first, so the document is only created once every picture it needs is in place.
   const storage = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY!, { auth: { persistSession: false } }).storage.from("materials");
@@ -66,6 +72,7 @@ export async function POST(request: Request) {
     if (Array.isArray(parsed.data[field])) meta[field] = parsed.data[field].filter((item: unknown) => typeof item === "string");
   }
 
+  if (order !== next.order) await admin.dbMakeRoom(kind, gradeId, semesterId, subjectId, order);
   const result = await admin.dbUpsertDocument({
     kind, gradeId, semesterId, subjectId, slug, order, title, description, body, meta,
     format: /<[A-Z][A-Za-z]*(?:\s|>)/.test(body) ? "mdx" : "md",

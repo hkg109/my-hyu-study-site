@@ -1,12 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import matter from "gray-matter";
 import { setFrontmatterField } from "../lib/frontmatter-edit";
 import { getHeadings, parseMarkdown } from "../lib/markdown";
-import { nextDocumentSlot } from "../lib/note-files";
+import { makeRoomAt, nextDocumentSlot, parseRequestedOrder } from "../lib/note-files";
 import { findTemplate, NOTE_TEMPLATES, templatesFor } from "../lib/note-templates";
 
 const html = (source: string) => JSON.stringify(parseMarkdown(source, "md"));
@@ -64,5 +64,24 @@ test("new notes get the next free number and order, counting drafts", () => {
     assert.deepEqual(nextDocumentSlot("practice", directory), { order: 10, id: "exam-10" });
     // Exam files never take a lecture number.
     assert.deepEqual(nextDocumentSlot("lectures", directory), { order: 1, id: "lecture-01" });
+  } finally { rmSync(directory, { recursive: true, force: true }); }
+});
+
+test("a chosen order pushes that note and the later ones back by one", () => {
+  const directory = mkdtempSync(path.join(tmpdir(), "hjs-room-test-"));
+  const orderOf = (name: string) => matter(readFileSync(path.join(directory, name), "utf8")).data.order;
+  try {
+    writeFileSync(path.join(directory, "lecture-01.md"), "---\ntitle: a\norder: 1\n---\n");
+    writeFileSync(path.join(directory, "lecture-02.md"), "---\r\ntitle: b\r\norder: 2\r\n---\r\n");
+    writeFileSync(path.join(directory, "lecture-03.md"), "---\ntitle: c\norder: 5\n---\n");
+    makeRoomAt("lectures", directory, 4);
+    assert.deepEqual([orderOf("lecture-01.md"), orderOf("lecture-02.md"), orderOf("lecture-03.md")], [1, 2, 5], "a free number moves nothing");
+    makeRoomAt("lectures", directory, 2);
+    assert.deepEqual([orderOf("lecture-01.md"), orderOf("lecture-02.md"), orderOf("lecture-03.md")], [1, 3, 6]);
+    assert.match(readFileSync(path.join(directory, "lecture-02.md"), "utf8"), /^order: 3\r$/m, "stays a number and keeps CRLF");
+    assert.equal(parseRequestedOrder(""), undefined);
+    assert.equal(parseRequestedOrder("3"), 3);
+    assert.equal(parseRequestedOrder("0"), null);
+    assert.equal(parseRequestedOrder("2.5"), null);
   } finally { rmSync(directory, { recursive: true, force: true }); }
 });

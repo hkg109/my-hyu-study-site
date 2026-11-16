@@ -4,6 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { FilePlus2, X } from "lucide-react";
 import { useId, useState } from "react";
 import { defaultTemplateId, findTemplate, templatesFor, type TemplateKind } from "@/lib/note-templates";
+import { documentOrderError, DocumentOrderField } from "./DocumentOrderField";
 import { examPasswordError, ExamPasswordField } from "./ExamPasswordField";
 import { UploadDocumentForm } from "./UploadDocumentForm";
 
@@ -37,6 +38,7 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
   const [title, setTitle] = useState("");
   const [templateId, setTemplateId] = useState(defaultTemplateId(kind));
   const [password, setPassword] = useState("");
+  const [order, setOrder] = useState("");
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
   const template = findTemplate(kind, templateId) ?? templates[0];
@@ -44,6 +46,8 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!title.trim()) { setError("제목을 입력해 주세요."); return; }
+    const orderError = documentOrderError(order);
+    if (orderError) { setError(orderError); return; }
     const passwordError = kind === "practice" ? examPasswordError(password) : undefined;
     if (passwordError) { setError(passwordError); return; }
     setPending(true); setError("");
@@ -51,7 +55,7 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
       const response = await fetch(kind === "practice" ? "/api/admin/practice" : "/api/admin/lectures", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ gradeId: target.gradeId, semesterId: target.semesterId, subjectId: target.subjectId, title: title.trim(), templateId: template.id, ...(kind === "practice" && { access: { mode: "default", ...(password && { password }) } }) }),
+        body: JSON.stringify({ gradeId: target.gradeId, semesterId: target.semesterId, subjectId: target.subjectId, title: title.trim(), templateId: template.id, ...(order && { order: Number(order) }), ...(kind === "practice" && { access: { mode: "default", ...(password && { password }) } }) }),
       });
       const result = await response.json().catch(() => ({})) as { error?: string; path?: string };
       if (!response.ok || !result.path) { setError(result.error ?? `${kindLabel(kind)}를 만들지 못했습니다.`); return; }
@@ -60,15 +64,17 @@ function CreateDocumentForm({ kind, target, onCreated }: { kind: TemplateKind; t
     finally { setPending(false); }
   };
 
-  const frontmatter = ["---", `title: ${JSON.stringify(title.trim() || `새 ${kindLabel(kind)}`)}`, 'description: ""', "order: (과목의 다음 번호)", "published: true", "---"].join("\n");
+  const frontmatter = ["---", `title: ${JSON.stringify(title.trim() || `새 ${kindLabel(kind)}`)}`, 'description: ""', `order: ${order || "(과목의 다음 번호)"}`, "published: true", "---"].join("\n");
 
   return <form onSubmit={submit} className="create-document-form">
     <div className="admin-dialog-icon"><FilePlus2 size={22} /></div>
     <Dialog.Title>새 {kindLabel(kind)}</Dialog.Title>
-    <Dialog.Description id="create-document-description"><strong>{target.subjectName}</strong>에 새 {kindLabel(kind)}를 만듭니다. 파일 이름과 순서는 자동으로 정해집니다.</Dialog.Description>
+    <Dialog.Description id="create-document-description"><strong>{target.subjectName}</strong>에 새 {kindLabel(kind)}를 만듭니다. 파일 이름은 자동으로 정해지고, 순서는 비워 두면 맨 뒤가 됩니다.</Dialog.Description>
 
     <label className="create-field-label" htmlFor={`${id}-title`}>제목</label>
     <input id={`${id}-title`} className="create-title-input" value={title} onChange={event => { setTitle(event.target.value); setError(""); }} maxLength={120} placeholder={kind === "practice" ? "예: 자료구조 중간고사 족보" : "예: 3주차 반복문"} autoFocus required />
+
+    <DocumentOrderField value={order} onChange={next => { setOrder(next); setError(""); }} disabled={pending} />
 
     <fieldset className="template-picker" disabled={pending}>
       <legend>템플릿</legend>

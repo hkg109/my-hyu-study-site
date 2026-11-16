@@ -5,6 +5,7 @@ import { FileUp } from "lucide-react";
 import { useId, useMemo, useState } from "react";
 import { guessTitle, IMAGE_TYPES, localImageReferences, safeFileName } from "@/lib/upload-markdown";
 import type { TemplateKind } from "@/lib/note-templates";
+import { documentOrderError, DocumentOrderField } from "./DocumentOrderField";
 import { examPasswordError, ExamPasswordField } from "./ExamPasswordField";
 import type { CreateTarget } from "./CreateDocumentDialog";
 
@@ -21,6 +22,7 @@ export function UploadDocumentForm({ kind, target, onCreated }: { kind: Template
   const [images, setImages] = useState<File[]>([]);
   const [title, setTitle] = useState("");
   const [password, setPassword] = useState("");
+  const [order, setOrder] = useState("");
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
 
@@ -42,7 +44,10 @@ export function UploadDocumentForm({ kind, target, onCreated }: { kind: Template
     if (!markdown) { setError("MD 파일을 골라 주세요."); return; }
     const passwordError = kind === "practice" ? examPasswordError(password) : undefined;
     if (passwordError) { setError(passwordError); return; }
+    const orderError = documentOrderError(order);
+    if (orderError) { setError(orderError); return; }
     const form = new FormData();
+    if (order) form.set("order", order);
     form.set("kind", kind);
     form.set("gradeId", target.gradeId); form.set("semesterId", target.semesterId); form.set("subjectId", target.subjectId);
     form.set("title", title.trim());
@@ -62,7 +67,7 @@ export function UploadDocumentForm({ kind, target, onCreated }: { kind: Template
   return <form onSubmit={submit} className="create-document-form">
     <div className="admin-dialog-icon"><FileUp size={22} /></div>
     <Dialog.Title>MD 파일로 새 {kindLabel(kind)}</Dialog.Title>
-    <Dialog.Description id="create-document-description"><strong>{target.subjectName}</strong>에 MD 파일과 그림으로 새 {kindLabel(kind)}를 만듭니다. 번호는 과목의 다음 번호로 정해지고, 본문의 그림 경로는 올린 그림 주소로 바뀝니다.</Dialog.Description>
+    <Dialog.Description id="create-document-description"><strong>{target.subjectName}</strong>에 MD 파일과 그림으로 새 {kindLabel(kind)}를 만듭니다. 순서는 비워 두면 맨 뒤가 되고, 본문의 그림 경로는 올린 그림 주소로 바뀝니다.</Dialog.Description>
 
     <label className="create-field-label" htmlFor={`${id}-md`}>MD 파일</label>
     <input id={`${id}-md`} type="file" accept=".md,.mdx,.markdown,text/markdown" onChange={event => void chooseMarkdown(event.target.files?.[0])} disabled={pending} required />
@@ -80,6 +85,8 @@ export function UploadDocumentForm({ kind, target, onCreated }: { kind: Template
           : <p className="access-help">모든 그림이 준비됐습니다.</p>}
       </section>}
     </>}
+
+    <DocumentOrderField value={order} onChange={next => { setOrder(next); setError(""); }} disabled={pending} />
 
     {kind === "practice" && <ExamPasswordField value={password} onChange={next => { setPassword(next); setError(""); }} disabled={pending} />}
 

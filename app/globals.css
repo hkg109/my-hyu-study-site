@@ -50,6 +50,11 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
 .sidebar-toggle { position:sticky; top:76px; margin-top:12px; pointer-events:auto; width:30px; height:34px; display:grid; place-items:center; border:1px solid var(--border); border-radius:0 6px 6px 0; background:var(--background); color:var(--muted); }
 .sidebar-toggle:hover { color:var(--foreground); background:var(--surface); }
 .sidebar-collapsed .sidebar-toggle-rail { left:0; }
+.sidebar-resizer { position:absolute; top:0; bottom:0; right:-4px; width:8px; pointer-events:auto; cursor:col-resize; touch-action:none; }
+.sidebar-resizer::after { content:""; position:absolute; top:0; bottom:0; left:3px; width:2px; background:transparent; transition:background .15s; }
+.sidebar-resizer:hover::after,.sidebar-resizer:focus-visible::after,.sidebar-resizing .sidebar-resizer::after { background:var(--border-strong); }
+.sidebar-resizer:focus-visible { outline:none; }
+.app-shell.sidebar-resizing { transition:none; user-select:none; cursor:col-resize; }
 .sidebar-content { padding:32px 20px 24px; display:flex; flex-direction:column; min-height:100%; }
 .sidebar-section { margin-bottom:30px; }
 .nav-label { display:block; margin:0 12px 12px; }

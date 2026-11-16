@@ -125,6 +125,19 @@ export async function dbNextSlot(kind: ContentKind, gradeId: string, semesterId:
   return { order, slug: `${prefix}-${String(order).padStart(2, "0")}` };
 }
 
+/** Moves every document at `order` or later in a subject back by one, so `order` is free.
+ *  Last first, one row at a time, so the (subject, sort) unique constraint never sees two rows on one number. */
+export async function dbMakeRoom(kind: ContentKind, gradeId: string, semesterId: string, subjectId: string, order: number) {
+  const db = client();
+  const { data, error } = await db.from("documents").select("id, sort").match({ kind, grade_id: gradeId, semester_id: semesterId, subject_id: subjectId }).gte("sort", order).order("sort", { ascending: false });
+  if (error) throw new Error(`reorder: ${error.message}`);
+  if (!data?.some(row => row.sort === order)) return;
+  for (const row of data ?? []) {
+    const moved = await db.from("documents").update({ sort: row.sort + 1 }).eq("id", row.id);
+    if (moved.error) throw new Error(`reorder: ${moved.error.message}`);
+  }
+}
+
 export interface NewDocument {
   kind: ContentKind; gradeId: string; semesterId: string; subjectId: string;
   slug: string; order: number; title: string; description?: string; body: string;
