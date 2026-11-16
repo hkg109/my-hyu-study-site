@@ -4,6 +4,7 @@ import "pretendard/dist/web/static/pretendard.css";
 import "@fontsource/jetbrains-mono/400.css";
 import "@fontsource/jetbrains-mono/600.css";
 import "./globals.css";
+import "./redesign.css";
 import "./exam-paper.css";
 import { Providers } from "@/components/layout/Providers";
 import { AdminProvider } from "@/components/admin/AdminProvider";

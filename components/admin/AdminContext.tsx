@@ -7,8 +7,9 @@ export interface AdminContextValue {
   available: boolean;
   isAdmin: boolean;
   openAdmin: () => void;
+  exitAdmin: () => Promise<void>;
 }
 
-export const AdminContext = createContext<AdminContextValue>({ available: false, isAdmin: false, openAdmin: () => undefined });
+export const AdminContext = createContext<AdminContextValue>({ available: false, isAdmin: false, openAdmin: () => undefined, exitAdmin: async () => undefined });
 
 export const useAdmin = () => useContext(AdminContext);

@@ -5,6 +5,17 @@ import type { Heading } from "@/types/content";
 import { getHeadings } from "@/lib/markdown";
 import { NOTE_UPDATE_EVENT } from "@/lib/note-draft";
 
+/** Older notes use H2 for both parts and slides. Give the navigation their intended hierarchy. */
+export function outlineHeadings(headings: Heading[]): Heading[] {
+  if (!headings.some(heading => /^part\s+[\div]+/i.test(heading.text))) return headings;
+  let inPart = false;
+  return headings.map(heading => {
+    if (/^part\s+[\div]+/i.test(heading.text)) { inPart = true; return { ...heading, level: 2 }; }
+    if (heading.level === 2 && /^(사례 총정리|단원 마무리|정답과 해설)/.test(heading.text)) inPart = false;
+    return inPart ? { ...heading, level: Math.min(heading.level + 1, 4) } : heading;
+  });
+}
+
 // Shared by the desktop and mobile tables of contents so both follow live edits and the same scroll position.
 
 /** The page's headings, updated while an admin edits the note. */

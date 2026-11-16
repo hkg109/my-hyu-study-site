@@ -5,7 +5,7 @@ import { useAdmin } from "@/components/admin/AdminContext";
 import { NOTE_TITLE_EVENT, PRACTICE_METADATA_EVENT, saveNoteTitle, savePracticeMetadata } from "@/lib/note-draft";
 import type { ContentDocument } from "@/types/content";
 
-export function LectureHeader({ lecture, hideDescription = false }: { lecture: ContentDocument; hideDescription?: boolean }) {
+export function LectureHeader({ lecture, total, hideDescription = false }: { lecture: ContentDocument; total?: number; hideDescription?: boolean }) {
   const { isAdmin } = useAdmin();
   const [title, setTitle] = useState(lecture.title);
   const [description, setDescription] = useState(lecture.description);
@@ -38,10 +38,10 @@ export function LectureHeader({ lecture, hideDescription = false }: { lecture: C
     savePracticeMetadata(lecture.path, { title, description: nextDescription });
   };
 
-  return <header className="lecture-header">
-    <div className="eyebrow">{lecture.kind === "lectures" ? `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / ${lecture.order}강` : `${lecture.gradeName} / ${lecture.semesterName} / ${lecture.subjectName} / 족보 ${lecture.order}`}</div>
+  return <header className="lecture-header" id="document-start">
+    <div className="eyebrow">{lecture.kind === "lectures" ? `${String(lecture.order).padStart(2, "0")} / ${String(total ?? 0).padStart(2, "0")}` : `족보 ${String(lecture.order).padStart(2, "0")}`}</div>
     {isAdmin ? <input className="admin-title-input" value={title} onChange={event => updateTitle(event.target.value)} aria-label={`${lecture.kind === "practice" ? "족보" : "강의"} 제목 수정`} /> : <h1>{title}</h1>}
     {!hideDescription && (isAdmin && lecture.kind === "practice" ? <textarea className="admin-description-input" rows={2} value={description} onChange={event => updateDescription(event.target.value)} aria-label="족보 설명 수정" /> : <p className="lead">{description}</p>)}
-    {lecture.kind !== "practice" && <div className="lecture-metadata">{lecture.duration && <span>{lecture.duration}분</span>}{lecture.difficulty && <span>{{ Beginner: "입문", Intermediate: "중급", Advanced: "심화" }[lecture.difficulty]}</span>}{lecture.tags?.map(tag => <span key={tag}>#{tag}</span>)}</div>}
+    {lecture.kind !== "practice" && <div className="lecture-metadata">{lecture.duration && <span>읽는 시간 약 {lecture.duration}분</span>}{lecture.difficulty && <span>{{ Beginner: "입문", Intermediate: "중급", Advanced: "심화" }[lecture.difficulty]}</span>}<span>{lecture.subjectName}</span></div>}
   </header>;
 }

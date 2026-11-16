@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Check, ChevronDown, FileArchive, Pencil, Plus, Trash2 } from "lucide-react";
+import { Check, ChevronDown, Download, FileArchive, MoreHorizontal, Pencil, Plus, Trash2 } from "lucide-react";
 import type { AcademicCatalog, NavDocument } from "@/types/content";
 import { useProgress } from "@/components/lecture/ProgressProvider";
 import { useAdmin } from "@/components/admin/AdminContext";
 import { useEffect, useState } from "react";
-import { forgetNoteDraft, NOTE_TITLE_EVENT } from "@/lib/note-draft";
+import { forgetNoteDraft, NOTE_TITLE_EVENT, saveNoteTitle } from "@/lib/note-draft";
 import { CreateDocumentDialog, type CreateTarget } from "@/components/admin/CreateDocumentDialog";
 import { subjectPath } from "@/lib/subjects";
 
@@ -32,6 +32,29 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Na
     window.addEventListener(NOTE_TITLE_EVENT, syncTitle);
     return () => window.removeEventListener(NOTE_TITLE_EVENT, syncTitle);
   }, [documents]);
+  useEffect(() => {
+    const create = () => {
+      const current = documents.find(document => document.path === pathname);
+      if (!current?.gradeId || !current.semesterId || !current.subjectId) return;
+      const subject = catalog.grades.find(grade => grade.id === current.gradeId)?.semesters.find(semester => semester.id === current.semesterId)?.subjects.find(subject => subject.id === current.subjectId);
+      if (subject) setCreateTarget({ gradeId: current.gradeId, semesterId: current.semesterId, subjectId: current.subjectId, subjectName: subject.name });
+    };
+    window.addEventListener("hjs-create-document", create);
+    return () => window.removeEventListener("hjs-create-document", create);
+  }, [documents, pathname, catalog]);
+
+  const downloadDocument = async (document: NavDocument) => {
+    setPending(true);
+    try {
+      const response = await fetch(`/api/admin/notes/${document.slug.map(encodeURIComponent).join("/")}?kind=${practiceMode ? "practice" : "lectures"}`, { cache: "no-store" });
+      const result = await response.json() as { content?: string; error?: string };
+      if (!response.ok || typeof result.content !== "string") { window.alert(result.error ?? "문서를 받지 못했습니다."); return; }
+      const url = URL.createObjectURL(new Blob([result.content], { type: "text/markdown;charset=utf-8" }));
+      const anchor = window.document.createElement("a");
+      anchor.href = url; anchor.download = `${document.slug.at(-1)}.md`; anchor.click(); URL.revokeObjectURL(url);
+    } catch { window.alert("문서를 받지 못했습니다. 연결을 확인해 주세요."); }
+    finally { setPending(false); }
+  };
 
   const catalogAction = async (action: "add" | "rename", level: Level, currentName?: string, ids: { gradeId?: string; semesterId?: string; subjectId?: string } = {}) => {
     const labels = { grade: "학년", semester: "학기", subject: "과목" };
@@ -116,7 +139,7 @@ export function Sidebar({ lectures, exams, catalog, onNavigate }: { lectures: Na
             {/* The name opens the subject page; the rest of the row folds the list. */}
             <Link prefetch={false} href={practiceMode ? `${subjectHome}#practice` : subjectHome} onClick={onNavigate} className={`catalog-subject-link${onSubjectHome ? " active" : ""}`} aria-current={onSubjectHome ? "page" : undefined}>{subject.name}</Link>
             <span className="catalog-actions">{editButton(subject.name, () => catalogAction("rename", "subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{deleteButton(subject.name, () => deleteCategory("subject", subject.name, { gradeId: grade.id, semesterId: semester.id, subjectId: subject.id }))}{addButton(practiceMode ? "족보" : "노트", () => addDocument({ gradeId: grade.id, semesterId: semester.id, subjectId: subject.id, subjectName: subject.name }))}<ChevronDown size={12} /></span></summary>
-            <div>{subjectDocuments.map(document => <div className="side-document-row" key={document.path}><Link prefetch={false} href={document.path} onClick={onNavigate} className={`side-link ${pathname === document.path ? "active" : ""}`} aria-current={pathname === document.path ? "page" : undefined}><span className="side-order">{String(document.order).padStart(2, "0")}</span><span>{editedTitles[document.path] ?? document.title}</span>{!practiceMode && progress[document.slug.join("/")] && <Check size={14} aria-label="학습 완료" className="trailing" />}</Link>{isAdmin && <button type="button" className="catalog-icon-button catalog-delete-button side-document-delete" disabled={pending} aria-label={`${editedTitles[document.path] ?? document.title} 삭제`} onClick={() => deleteDocument(document)}><Trash2 size={12} /></button>}</div>)}</div>
+            <div>{subjectDocuments.map(document => <div className="side-document-row" key={document.path}><Link prefetch={false} href={document.path} onClick={onNavigate} className={`side-link ${pathname === document.path ? "active" : ""}`} aria-current={pathname === document.path ? "page" : undefined}><span className="side-order">{String(document.order).padStart(2, "0")}</span><span>{editedTitles[document.path] ?? document.title}</span>{!practiceMode && progress[document.slug.join("/")] && <Check size={14} aria-label="학습 완료" className="trailing" />}</Link>{isAdmin && <details className="note-menu"><summary aria-label={`${editedTitles[document.path] ?? document.title} 메뉴`}><MoreHorizontal size={16} /></summary><div><button type="button" disabled={pending} onClick={() => { const title = window.prompt("노트 이름", editedTitles[document.path] ?? document.title); if (title?.trim()) saveNoteTitle(document.path, title.trim()); }}><Pencil size={14} />이름 바꾸기</button><button type="button" disabled={pending} onClick={() => void downloadDocument(document)}><Download size={14} />MD로 받기</button><button type="button" disabled={pending} className="note-menu-delete" onClick={() => void deleteDocument(document)}><Trash2 size={14} />삭제…</button></div></details>}</div>)}</div>
           </details>;
         })}
       </details>)}

@@ -77,6 +77,11 @@ export function StudyWorkspace({ documentPath, children }: { documentPath: strin
     return () => { cancelled = true; };
   }, [documentPath]);
   useEffect(() => {
+    const refresh = () => { void reload(); };
+    window.addEventListener("hjs-bookmark-change", refresh);
+    return () => window.removeEventListener("hjs-bookmark-change", refresh);
+  }, [reload]);
+  useEffect(() => {
     const id = "hjs-study-highlight-styles";
     if (document.getElementById(id)) return;
     const style = document.createElement("style");

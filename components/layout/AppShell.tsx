@@ -2,6 +2,7 @@
 
 import { PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { useRef, useState, useSyncExternalStore } from "react";
+import { useAdmin } from "@/components/admin/AdminContext";
 
 const SIDEBAR_KEY = "hyu-hjs-sidebar-collapsed";
 const WIDTH_KEY = "hyu-hjs-sidebar-width";
@@ -27,6 +28,7 @@ const subscribe = (listener: () => void) => {
 };
 
 export function AppShell({ sidebar, children }: { sidebar: React.ReactNode; children: React.ReactNode }) {
+  const { isAdmin } = useAdmin();
   const collapsed = useSyncExternalStore(subscribe, getCollapsed, () => false);
   const savedWidth = useSyncExternalStore(subscribe, getWidth, () => 0);
   const [dragWidth, setDragWidth] = useState<number>();
@@ -57,7 +59,7 @@ export function AppShell({ sidebar, children }: { sidebar: React.ReactNode; chil
 
   // A chosen width overrides the per-screen-size widths in globals.css; collapsing still wins.
   const custom = width && !collapsed;
-  return <div ref={shell} className={`app-shell${collapsed ? " sidebar-collapsed" : ""}${dragWidth !== undefined ? " sidebar-resizing" : ""}`} style={custom ? { gridTemplateColumns: `${width}px minmax(0,1fr)` } : undefined}>
+  return <div ref={shell} className={`app-shell${collapsed ? " sidebar-collapsed" : ""}${dragWidth !== undefined ? " sidebar-resizing" : ""}${isAdmin ? " admin-shell" : ""}`} style={custom ? { gridTemplateColumns: `${width}px minmax(0,1fr)`, "--sidebar-width": `${width}px` } as React.CSSProperties : undefined}>
     <aside ref={aside} className="desktop-sidebar">{sidebar}</aside>
     {/* The rail spans the page height so the sticky button stays below the header while scrolling. */}
     <div className="sidebar-toggle-rail" style={custom ? { left: width - 30 } : undefined}>

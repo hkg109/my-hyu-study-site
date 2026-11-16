@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { renderMDX } from "@/lib/mdx";
-import { getAllExams, getPrevNextLecture } from "@/lib/lectures";
+import { getAllExams, getAllLectures, getPrevNextLecture } from "@/lib/lectures";
 import type { ContentDocument } from "@/types/content";
 import { PageTOC } from "@/components/layout/PageTOC";
 import { MobileTOC } from "@/components/layout/MobileTOC";
@@ -16,6 +16,7 @@ import { StudyWorkspace } from "@/components/study/StudyWorkspace";
 import { PracticeAccessSettings } from "@/components/admin/PracticeAccessSettings";
 import { subjectPathOf } from "@/lib/subjects";
 import { RecentVisitTracker } from "./RecentVisits";
+import { BookmarkButton } from "./BookmarkButton";
 import { adminAvailable } from "@/lib/server/auth";
 
 export async function DocumentPage({ document }: { document: ContentDocument }) {
@@ -29,10 +30,13 @@ export async function DocumentPage({ document }: { document: ContentDocument }) 
   const label = isLecture ? "강의 정리" : "족보";
   const subjectHome = subjectPathOf(document);
   // "제 N 교시" on the exam paper: this exam's place among the subject's exams.
-  const period = isPractice ? (await getAllExams()).filter(exam => subjectPathOf(exam) === subjectHome).findIndex(exam => exam.path === document.path) + 1 || 1 : undefined;
+  const siblings = (await (isPractice ? getAllExams() : getAllLectures())).filter(item => subjectPathOf(item) === subjectHome);
+  const period = isPractice ? siblings.findIndex(exam => exam.path === document.path) + 1 || 1 : undefined;
   return <div className="document-grid"><RecentVisitTracker path={document.path} /><article className="document-main printable-document">
-    <div className="document-toolbar"><nav className="breadcrumb" aria-label="현재 위치"><Link prefetch={false} href={`/${document.kind}`}>{label}</Link><ChevronRight size={13} />{document.gradeName ? <><span>{document.gradeName}</span><ChevronRight size={13} /><span>{document.semesterName}</span><ChevronRight size={13} />{subjectHome ? <Link prefetch={false} href={isPractice ? `${subjectHome}#practice` : subjectHome}>{document.subjectName}</Link> : <span>{document.subjectName}</span>}</> : <span>{document.title}</span>}</nav><div className="document-toolbar-actions">{isEditable && isPractice && <PracticeAccessSettings slug={document.slug} title={document.title} />}<PrintLectureButton title={document.title} kind={isPractice ? "practice" : "lecture"} subjectName={document.subjectName} period={period} /></div></div>
-    <LectureHeader lecture={document} hideDescription={isLecture} /><LearningObjectives objectives={document.objectives} />
+    <div className="document-toolbar"><nav className="breadcrumb" aria-label="현재 위치"><Link prefetch={false} href={`/${document.kind}`}>{label}</Link><ChevronRight size={13} />{document.gradeName ? <><span>{document.gradeName}</span><ChevronRight size={13} /><span>{document.semesterName}</span><ChevronRight size={13} />{subjectHome ? <Link prefetch={false} href={isPractice ? `${subjectHome}#practice` : subjectHome}>{document.subjectName}</Link> : <span>{document.subjectName}</span>}</> : <span>{document.title}</span>}</nav><div className="document-toolbar-actions">{isEditable && isPractice && <PracticeAccessSettings slug={document.slug} title={document.title} />}</div></div>
+    <LectureHeader lecture={document} total={siblings.length} hideDescription={isLecture} />
+    <div className="document-reading-actions"><BookmarkButton path={document.path} title={document.title} /><PrintLectureButton title={document.title} kind={isPractice ? "practice" : "lecture"} subjectName={document.subjectName} period={period} /><div className="document-tags">{document.tags?.map(tag => <span key={tag}>#{tag}</span>)}</div></div>
+    <LearningObjectives key={document.path} objectives={document.objectives} documentPath={document.path} />
     {/* Exams only reach this component after their password check, so their headings are never sent before unlocking. */}
     <MobileTOC key={document.path} headings={headings} documentPath={isEditable ? document.path : undefined} format={document.format} />
     <StudyWorkspace documentPath={document.path}>{isEditable ? <MarkdownEditor path={document.path} filename={`${document.slug.at(-1) ?? "document"}.${isPractice || document.format === "md" ? "md" : "mdx"}`} source={editorSource}>{content}</MarkdownEditor> : <div className="prose">{content}</div>}</StudyWorkspace>

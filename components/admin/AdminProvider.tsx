@@ -58,7 +58,7 @@ export function AdminProvider({ children, initialAdmin }: { children: React.Reac
 
   const openAdmin = () => setOpen(true);
 
-  return <AdminContext.Provider value={{ available: true, isAdmin, openAdmin }}>
+  return <AdminContext.Provider value={{ available: true, isAdmin, openAdmin, exitAdmin: signOut }}>
     {children}
     <Dialog.Root open={open} onOpenChange={close}>
       <Dialog.Portal>
