@@ -1,6 +1,6 @@
 ---
 title: "9장 · 전사적 애플리케이션: ERP·SCM·CRM"
-description: "전사 시스템(ERP)의 통합 데이터베이스, 공급망과 채찍 효과·푸시와 풀 모델(SCM), 운영적·분석적 CRM과 CLTV·이탈률, 전사 애플리케이션의 도입 과제와 차세대 애플리케이션·AI까지 교재 그림과 개념·판서·해설·오답 주의·예제·확인 문제로 정리한 Chapter 9 교재형 필기."
+description: "전사 시스템(ERP)의 통합 데이터베이스, 공급망과 채찍 효과·푸시와 풀 모델(SCM), 운영적·분석적 CRM과 CLTV·이탈률, 전사 애플리케이션의 도입 과제와 동향(클라우드·컴포저블 ERP)·AI까지 교재 그림과 개념·판서·해설·오답 주의·예제·확인 문제로 정리한 Chapter 9 교재형 필기."
 order: 7
 published: true
 duration: 110
@@ -10,14 +10,14 @@ objectives:
   - 공급망의 상류·하류·내부 프로세스, 채찍 효과, JIT·안전 재고, 푸시·풀 모델을 구분하고 SCM 시스템의 두 종류를 설명한다.
   - 글로벌 공급망의 추가 과제와 인터넷·AI의 역할을 설명한다.
   - CRM의 영업·마케팅·서비스 기능, PRM·ERM, 운영적 CRM과 분석적 CRM, CLTV와 이탈률을 설명한다.
-  - 전사 애플리케이션 도입의 과제(비용·프로세스 변화·전환 비용·데이터 표준화)와 차세대 애플리케이션·AI 활용을 평가한다.
+  - 전사 애플리케이션 도입의 과제(비용·프로세스 변화·전환 비용·데이터 표준화)와 전사 애플리케이션의 동향(클라우드·생성형 AI·컴포저블 ERP)·AI 활용을 평가한다.
 ---
 
 ## 학습 경로
 
 [이전: 5장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06) · [1장으로 돌아가기](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
-**범위:** Chapter 9 슬라이드 1–31 · ERP → SCM → Global SCM → CRM → Challenges → Next-Generation → AI
+**범위:** Chapter 9 슬라이드 1–31 · ERP → SCM → Global SCM → CRM → Challenges → Trends → AI
 
 [Chapter 9 원본 PDF](/materials/mis-exam-slides/ch09_18ed.pdf)
 
@@ -38,7 +38,7 @@ objectives:
 | CRM 정의, PRM·ERM, SFA·고객 서비스·마케팅, cross-selling | ★★★ | 기능 분류 |
 | 운영적 CRM vs 분석적 CRM, CLTV, churn rate | ★★★ | 두 CRM 구분, 지표 정의 |
 | 도입 과제(비용·프로세스 변화·switching costs·데이터 표준화) | ★★ | 전환 비용의 예 |
-| 차세대 애플리케이션(SOA·클라우드·소셜 CRM·BI), AI | ★★ | 특징 고르기, 선도 업체 |
+| EA 동향(통합·생성형 AI·클라우드·컴포저블 ERP), AI | ★★ | 특징 고르기, 선도 업체 |
 
 | 슬라이드 | 중심 질문 | 공부할 개념 |
 | --- | --- | --- |
@@ -47,7 +47,7 @@ objectives:
 | 8–16 | 공급망은 어떻게 관리하나? | 상류·하류, Figure 9.2, JIT·안전 재고·채찍 효과, SCM 소프트웨어, 푸시·풀, 인터넷 공급망, 가치 |
 | 17 | 공급망이 세계로 넓어지면? | 글로벌 SCM 과제, 인터넷·AI |
 | 18–27 | 고객을 어떻게 알고 관리하나? | CRM 정의, Figure 9.6–9.10, PRM·ERM, SFA, 운영적·분석적 CRM, CLTV, churn rate |
-| 28–31 | 도입은 왜 어렵고 앞으로는? | 비용·변화·전환 비용, 차세대 애플리케이션, 소셜 CRM, BI·AI |
+| 28–31 | 도입은 왜 어렵고 앞으로는? | 비용·변화·전환 비용, EA 동향(클라우드·생성형 AI), 컴포저블 ERP, AI |
 
 **책 읽는 법:** 슬라이드 제목 아래의 짧은 목록과 요약 한 줄이 강의 **핵심 필기**다. **개념**은 정의, **판서**는 한눈 정리, **해설**은 쉬운 설명, **오답 주의**는 시험 함정, **예제**는 풀이 연습, **확인 문제**의 답은 단원 끝 *정답과 해설*에 있다.
 
@@ -176,7 +176,7 @@ objectives:
 - To implement, firms:
   - ==Select functions== of system they wish to use
   - ==Map business processes to software processes==
-  - Use software’s ==configuration tables== for customizing (→ 교재 표)
+  - Use software’s ==configuration tables== for customizing (→ Table 9.2)
 
 > **ERP 소프트웨어 = 모범 사례 프로세스 수천 개를 미리 담은 상자 → 회사는 고르고, 맞추고, 설정표로 조정한다**
 
@@ -781,6 +781,8 @@ objectives:
 > [!CONCEPT]
 > **Churn rate (이탈률)** — 회사의 제품이나 서비스 ==이용·구매를 중단한 고객의 수==. 회사 ==고객 기반의 성장 또는 감소를 보여 주는 지표==다.
 
+**슬라이드 메모:** ==CRM & AI== — CRM에도 AI가 들어간다(Slide 29의 분석·ML·생성형 AI, Slide 31로 이어짐).
+
 **교수님 메모 · 질문:** CRM을 쓰면 마케팅이 어떻게 더 효과적이 되나? → 고객 데이터로 ==누가 무엇을 살지 예측해 그 사람에게만== 캠페인을 보낸다(타깃 마케팅). 전 국민에게 전단을 뿌리는 대신 관심 있을 고객에게만 보내므로 ==비용은 줄고 반응률은 오른다==.
 
 > [!EXAMPLE]
@@ -810,12 +812,13 @@ objectives:
   - Many projects experience ==cost overruns==
   - ==Long development times==
 - Require ==Technology changes + Business process changes==
-- ==Organizational learning, changes==
+- ==Organizational learning==, understand ==how much change is required==
 - ==Switching costs, dependence on software vendors==
 - Integrating cloud applications
-- ==Data standardization, management, cleansing==
+- ==Data standardization, management, cleansing== (특히 CRM)
+- Using EAs can ==save time and money by keeping customizations to a minimum==
 
-> **전사 애플리케이션의 과제 = 비싸고 오래 걸림 + 기술·프로세스·조직이 모두 바뀌어야 함 + 공급업체에 묶임(전환 비용) + 데이터 표준화·정제**
+> **전사 애플리케이션의 과제 = 비싸고 오래 걸림 + 기술·프로세스·조직이 모두 바뀌어야 함(얼마나 바뀌어야 하는지 이해) + 공급업체에 묶임(전환 비용) + 데이터 표준화·정제 → 커스터마이징을 최소화하면 시간과 돈을 아낀다**
 
 > [!CONCEPT]
 > **Switching costs (전환 비용)** — 한 공급업체의 제품·시스템에서 다른 것으로 바꿀 때 드는 ==돈·시간·노력·위험==. 전사 애플리케이션은 회사의 핵심 업무를 깊이 바꾸므로 전환 비용이 매우 크고, 그래서 회사가 ==특정 소프트웨어 공급업체에 의존==하게 된다.
@@ -834,65 +837,68 @@ objectives:
 
 ---
 
-## Slide 29 — Next-Generation Enterprise Applications (1 of 2)
+## Slide 29 — Enterprise Application Trends (1 of 2)
 
-- **Enterprise solutions / enterprise suites / e-business suites:**
-  - Make applications ==more flexible, web-enabled, integrated with other systems==
-- Utilize ==Web services and SOA== standards
-- Include ==open-source applications==
-- ==On-demand solutions==
-- ==Cloud-based versions==
-- Functionality for ==mobile platform==
-- Versions also available for ==small and medium-sized businesses==
+- EA vendors are delivering more value by becoming ==more flexible, user-friendly, web-enabled, mobile, and capable of integration with other systems==
+  - ↔ ==Stand-alone systems are becoming a thing of the past== (따로 노는 단독 시스템은 옛말)
+- Major EA vendors are making their ==ERP, SCM, and CRM systems work closely with each other== and ==link to systems of customers and suppliers==
+- ERP, SCM, and CRM systems harbor ==huge reservoirs of data== →
+  - The emphasis is on incorporating more ==analytics, ML, and generative AI== into ERP, SCM, and CRM systems
+  - to improve efficiency and broaden their capabilities to handle ==complex data analysis, predictive modeling and real-time decision making==
+- → ==Cloud-based versions of these tools are becoming the platform of choice==
+  - Cloud-based EAs offer ==more scalability, flexibility, lower installation costs, and easier integration== with other business management software
+- The ==undisputed global market leader in cloud-based CRM systems is Salesforce.com==
 
-> **차세대 전사 애플리케이션 = 더 유연하고 웹 기반이며 다른 시스템과 통합 → 웹 서비스·SOA, 오픈소스, 온디맨드·클라우드, 모바일, 중소기업용**
+> **EA 동향 = 더 유연·사용 편의·웹·모바일·통합(단독 시스템은 끝) + ERP·SCM·CRM끼리, 고객·공급자 시스템과 연결 + 쌓인 데이터에 분석·ML·생성형 AI + 클라우드가 표준 플랫폼(Salesforce가 클라우드 CRM 1위)**
 
-**슬라이드 메모:**
-- ==SAP==은 웹사이트를 통해 ==500개가 넘는 웹 서비스==를 제공한다.
-- 클라우드 기반 CRM의 ==명실상부한 세계 1위(undisputed global market leader)는 Salesforce.com==이다.
-- 주요 공급업체: ==SAP, Oracle, Microsoft, NetSuite==
-
-> [!CONCEPT]
-> **Enterprise solutions (enterprise suites, e-business suites)** — ERP·SCM·CRM 등을 서로, 그리고 고객·공급자 시스템과 ==더 유연하게 통합==하도록 만든 차세대 전사 애플리케이션 묶음.
->
-> **SOA (service-oriented architecture, 서비스 지향 아키텍처)** — 소프트웨어를 독립적인 ==서비스 단위==로 만들어, 웹 서비스로 서로 연결해 쓰게 하는 설계 방식. 5장의 웹 서비스와 이어진다.
+> [!BOARD]
+> | 동향 | 무엇이 좋아지나 |
+> | --- | --- |
+> | ==blue:통합== — ERP·SCM·CRM끼리, 고객·공급자 시스템과 | 단독 시스템을 따로 맞추던 일이 사라짐 |
+> | ==blue:분석·ML·생성형 AI== — 쌓인 대량 데이터에 | 복잡한 분석, 예측 모델링, 실시간 의사결정 |
+> | ==blue:클라우드== — 이제 기본 플랫폼 | 확장성·유연성, 설치 비용↓, 다른 소프트웨어와 통합 쉬움 |
 
 > [!NOTE]
-> 5장에서 본 ==웹 서비스(XML 기반)==와 ==클라우드(SaaS)==가 9장에서 다시 등장한다. 예전 ERP는 회사 서버에 통째로 설치하는 거대한 한 덩어리였다면, 차세대 애플리케이션은 ==필요한 기능을 웹 서비스로 조립하고 클라우드로 빌려 쓰는== 쪽으로 바뀌었다. 그래서 큰돈을 쓰기 어려운 ==중소기업도 쓸 수 있게== 되었다.
+> 5장에서 본 ==클라우드(SaaS)==가 9장에서 다시 등장한다. 예전 ERP는 회사 서버에 통째로 설치하는 거대한 한 덩어리였다면, 이제는 ==클라우드로 빌려 쓰고 다른 시스템과 쉽게 이어 붙이는== 쪽이 기본이 되었다. 설치 비용이 낮아 필요한 만큼 늘리거나 줄이기도 쉽다.
+
+> [!TRAP]
+> 클라우드 기반 EA의 장점에는 ==red:설치 비용 “감소”(lower installation costs)==가 들어간다. 또 ==red:단독(stand-alone) 시스템이 늘어난다==는 보기는 오답 — 단독 시스템은 ==사라지는 추세==다.
 
 ---
 
-## Slide 30 — Next-Generation Enterprise Applications (2 of 2)
+## Slide 30 — Enterprise Application Trends (2 of 2): Composable ERP
 
-- **Social CRM**
-  - Incorporating ==social networking technologies==
-  - Company social networks
-  - ==Monitor social media activity; social media analytics==
-  - Manage social and web-based campaigns
-- **Business intelligence (in Enterprise Applications)**
-  - ==Inclusion of BI with enterprise applications==
-  - Flexible reporting, ==ad hoc analysis, “what-if” scenarios, digital dashboards, data visualization==
+- **Composable ERP**
+  - Many organizations looking for ==more flexible hybrid enterprise solutions== that use ==best-of-breed components from different technology vendors==
+  - It brings together ==disparate systems and components== in a way that allows them to ==work together as a platform==
+    - → Users can ==pick and choose the modules they want and install them one by one== rather than having to do everything at once
+  - Composing an ERP in this fashion gives organizations ==more flexibility to utilize different technologies and platforms==
+  - A ==relatively new approach==, but gaining prominence among businesses of all sizes
+  - Composable tools for ==SCM and CRM systems are also becoming available==
 
-> **소셜 CRM = CRM + 소셜 네트워킹(소셜 미디어 감시·분석, 소셜 캠페인) · 전사 애플리케이션 + BI = 유연한 보고서, 임의 분석, what-if, 대시보드, 시각화**
+> **컴포저블 ERP = 여러 공급업체의 최고 부품(best-of-breed)을 골라 하나의 플랫폼처럼 조립 → 필요한 모듈만 하나씩 설치 → 유연성↑ (SCM·CRM도 컴포저블 도구 등장)**
 
 > [!CONCEPT]
-> **Social CRM** — CRM에 ==소셜 네트워킹 기술==을 결합해, 소셜 미디어에서 고객이 회사·제품에 대해 하는 말을 ==감시·분석==하고 소셜·웹 캠페인을 관리하는 것.
+> **Composable ERP (컴포저블 ERP)** — 한 공급업체의 ERP를 통째로 들이는 대신, ==여러 기술 공급업체의 최고 수준 구성 요소(best-of-breed components)==를 골라 ==하나의 플랫폼처럼 함께 작동==하게 조립한 하이브리드 전사 솔루션. 원하는 모듈을 골라 ==하나씩 설치==할 수 있다.
 
-> [!EXAMPLE]
-> **가상 예시** — 화장품 회사가 새 제품을 낸 뒤 SNS에서 “트러블 났다”는 글이 늘어나는 것을 소셜 CRM으로 감지한다. 그 글을 쓴 고객의 CRM 기록(구매 이력)과 연결해 상담원이 먼저 연락하고, 분석 결과는 BI 대시보드로 경영진에게 보고된다.
+> [!NOTE]
+> 레고 블록처럼 생각하면 쉽다. 예전 ERP는 완성품 한 세트를 사서 한꺼번에 설치했다면, 컴포저블 ERP는 회계는 A사, 재고는 B사처럼 ==가장 잘 맞는 블록만 골라 끼운다==. 처음부터 다 갖출 필요 없이 ==필요할 때 모듈을 하나씩== 더한다.
+
+> [!TRAP]
+> ==red:컴포저블 ERP = 한 공급업체의 모듈을 한꺼번에 설치==는 오답이다. 핵심은 ==여러 공급업체의 구성 요소==를 ==골라서 하나씩== 설치한다는 것. 또 컴포저블은 ==red:ERP만의 이야기가 아니다== — SCM·CRM용 컴포저블 도구도 나오고 있다.
 
 ---
 
 ## Slide 31 — 9.6 Describe How Enterprise Applications Are Using AI · 9.7 Career
 
 - 전사 애플리케이션(EA) 공급업체들은 ==BI(Business Intelligence)와 AI 도구를 추가==해, 이 시스템들이 만들어 내는 ==막대한 양의 데이터(IoT 데이터 포함)==에서 관리자가 더 의미 있는 정보를 얻도록 돕는다.
-- 교재 ==Table 9.5==는 주요 EA 공급업체의 AI 소프트웨어 도구 예를 보여 준다.
+- 교재는 주요 EA 공급업체의 ==AI 소프트웨어 도구 예==를 보여 준다.
 - 9.7 Understand how the information in this chapter can help your career.
 
 > **EA + BI·AI = 거대한 데이터(IoT 포함)에서 의미 있는 정보를 꺼낸다**
 
 > [!BOARD]
-> 9장의 AI 세 군데: ==Slide 4 AI·ERP==(대량 데이터의 패턴) · ==Slide 17 AI·SCM==(글로벌 공급망 빅데이터) · ==Slide 31 EA 전반==(BI와 함께, IoT 데이터)
+> 9장의 AI 네 군데: ==Slide 4 AI·ERP==(대량 데이터의 패턴) · ==Slide 17 AI·SCM==(글로벌 공급망 빅데이터) · ==Slide 29 EA 동향==(분석·ML·생성형 AI로 예측·실시간 결정) · ==Slide 31 EA 전반==(BI와 함께, IoT 데이터)
 
 > [!NOTE]
 > 9.7 커리어 연결: 신입 사원은 회사 ERP·CRM 화면에서 일을 시작하는 경우가 많다. 이 장의 용어(모듈, 마스터 데이터, 채찍 효과, 이탈률, CLTV)를 알면 업무 시스템을 빨리 익히고, ==“이 데이터로 무엇을 개선할 수 있나”==를 말할 수 있다.
@@ -900,9 +906,9 @@ objectives:
 > [!CHECK]
 > **14.** 전사 애플리케이션 도입이 어려운 이유를 네 가지 이상 쓰고, switching costs를 예와 함께 설명하시오.
 >
-> **15.** 차세대 전사 애플리케이션의 특징을 네 가지 이상 쓰고, 클라우드 CRM의 세계 1위 기업과 주요 공급업체를 쓰시오.
+> **15.** 전사 애플리케이션의 동향 세 가지를 쓰고, 클라우드 기반 EA의 장점과 클라우드 CRM의 세계 1위 기업을 쓰시오.
 >
-> **16.** Social CRM과, 전사 애플리케이션에 포함된 BI의 기능을 각각 쓰시오.
+> **16.** Composable ERP를 정의하고, 기존 방식보다 나은 점을 쓰시오.
 
 > [!PAGEBREAK]
 
@@ -922,9 +928,7 @@ objectives:
 | 16 | 공급망 총비용 | — | ==운영 예산의 최대 75%== | SCM의 가치 |
 | 17 | 의류 산업 | 중국 등 저임금 국가 계약 제조업체에 아웃소싱 | — | 글로벌 SCM |
 | 22 | 2019년 1월 판촉 캠페인 | 채널별 반응 | 전화 30.8%, DM 29.2%, 이메일 17.3%, 웹 16.0%, 소셜 6.7% | CRM의 마케팅 지원 |
-| 29 | **SAP** | 웹사이트로 웹 서비스 제공 | ==500개+== | 차세대 EA, SOA |
-| 29 | **Salesforce.com** | 클라우드 CRM | ==세계 1위== | 클라우드 CRM |
-| 29 | **SAP, Oracle, Microsoft, NetSuite** | 주요 EA 공급업체 | — | 차세대 EA |
+| 29 | **Salesforce.com** | 클라우드 CRM | ==세계 1위== | 클라우드 기반 EA |
 
 > [!FLASHCARD]
 > Q: 9장 사례 — Alcoa가 전사 소프트웨어로 얻은 결과는?
@@ -943,8 +947,8 @@ objectives:
 > A: Dell(고객 주문 후 조립)과 Walmart(판매 데이터로 자동 재주문).
 
 > [!FLASHCARD]
-> Q: 9장 사례 — 클라우드 CRM 세계 1위 기업과 SAP의 웹 서비스 수는?
-> A: Salesforce.com, SAP은 500개가 넘는 웹 서비스를 제공한다.
+> Q: 9장 사례 — 클라우드 CRM 세계 1위 기업과, 클라우드 기반 EA의 장점은?
+> A: Salesforce.com. 클라우드 기반 EA는 확장성·유연성이 크고, 설치 비용이 낮으며, 다른 업무 소프트웨어와 통합하기 쉽다.
 
 > [!PAGEBREAK]
 
@@ -965,8 +969,8 @@ objectives:
 | CRM | 수집·통합 → 통합·분석 → 접점에 배포 → single enterprise view, PRM(파트너)·ERM(직원), SFA·서비스·마케팅(cross-selling) |
 | 두 CRM | 운영적(고객 대면: SFA·콜센터·마케팅 자동화) vs 분석적(데이터 웨어하우스·OLAP·마이닝, CLTV) |
 | CRM 가치 | 만족↑, 직접 마케팅 비용↓, 효과적 마케팅, 확보·유지 비용↓, 매출↑, churn rate = 이탈 고객 수 |
-| 과제 | 비용·기간 초과, 기술 + 프로세스 + 조직 변화, switching costs·공급업체 의존, 클라우드 통합, 데이터 표준화·정제 |
-| 차세대 | 웹 서비스·SOA, 오픈소스, 온디맨드·클라우드, 모바일, 중소기업, 소셜 CRM, BI, AI(SAP 500+ 웹 서비스, Salesforce 1위) |
+| 과제 | 비용·기간 초과, 기술 + 프로세스 + 조직 변화(얼마나 바뀌어야 하는지 이해), switching costs·공급업체 의존, 클라우드 통합, 데이터 표준화·정제, 커스터마이징 최소화로 시간·돈 절약 |
+| 동향 | 유연·웹·모바일·통합(단독 시스템은 끝), ERP·SCM·CRM과 고객·공급자 시스템 연결, 분석·ML·생성형 AI, 클라우드가 표준(Salesforce 1위), 컴포저블 ERP(여러 공급업체 모듈을 골라 하나씩) |
 
 ### 단답형 연습 · Short Answer
 
@@ -1177,7 +1181,7 @@ Write the term or a short answer in English. 답은 맨 끝 **정답과 해설**
 > [!ANSWER]
 > C. Salesforce.com
 >
-> **해설**: SAP·Oracle·Microsoft·NetSuite는 주요 전사 애플리케이션 공급업체로 함께 나오지만, 클라우드 CRM의 1위는 Salesforce.com이다. SAP은 500개가 넘는 웹 서비스를 제공한다는 수치로 나온다.
+> **해설**: Slide 29는 클라우드 기반 CRM 시스템의 명실상부한 세계 1위(undisputed global market leader)를 Salesforce.com으로 든다. SAP·Oracle·NetSuite도 전사 애플리케이션 공급업체지만 이 문장의 답은 아니다.
 
 > [!PAGEBREAK]
 
@@ -1200,9 +1204,9 @@ Write the term or a short answer in English. 답은 맨 끝 **정답과 해설**
 11. **SFA**는 영업사원이 가장 수익성 높은 고객에 집중하도록 돕고, **고객 서비스**는 콜센터·헬프데스크의 효율을 높이며, **마케팅**은 직접 마케팅 캠페인을 지원한다. **Cross-selling은 보완 제품을 함께 파는 것**(노트북 + 마우스), **up-selling은 더 비싼 상위 제품을 권하는 것**(256GB → 512GB).
 12. 운영적 CRM은 **고객 대면 애플리케이션(SFA·콜센터·마케팅 자동화)**, 분석적 CRM은 **운영적 CRM의 데이터를 데이터 웨어하우스에서 OLAP·데이터 마이닝으로 분석**한다. CLTV의 세 요소: **고객이 만드는 수익, 고객 확보·서비스 비용, 예상 관계 기간.**
 13. Churn rate는 **회사 제품·서비스의 이용·구매를 중단한 고객의 수**이며, **고객 기반의 성장 또는 감소**를 보여 주는 지표다.
-14. **비싸고(비용 초과), 개발 기간이 길고, 기술 변화와 업무 프로세스 변화가 함께 필요하고, 조직 학습·변화가 필요하며, 전환 비용과 공급업체 의존, 클라우드 애플리케이션 통합, 데이터 표준화·관리·정제** 문제가 있다. Switching costs는 **다른 공급업체로 바꿀 때 드는 돈·시간·노력·위험**으로, 예: ERP를 바꾸려면 데이터 이전·프로세스 재설계·전 직원 재교육이 필요하다.
-15. **더 유연하고 웹 기반이며 다른 시스템과 통합, 웹 서비스·SOA 활용, 오픈소스, 온디맨드·클라우드 버전, 모바일 기능, 중소기업용 버전.** 클라우드 CRM 1위는 **Salesforce.com**, 주요 공급업체는 **SAP, Oracle, Microsoft, NetSuite**.
-16. Social CRM은 **CRM에 소셜 네트워킹 기술을 결합해 소셜 미디어 활동을 감시·분석하고 소셜·웹 캠페인을 관리**하는 것이다. 전사 애플리케이션 속 BI는 **유연한 보고서, 임의(ad hoc) 분석, what-if 시나리오, 디지털 대시보드, 데이터 시각화**를 제공한다.
+14. **비싸고(비용 초과), 개발 기간이 길고, 기술 변화와 업무 프로세스 변화가 함께 필요하고, 조직 학습과 얼마나 바뀌어야 하는지에 대한 이해가 필요하며, 전환 비용과 공급업체 의존, 클라우드 애플리케이션 통합, 데이터 표준화·관리·정제** 문제가 있다. 커스터마이징을 최소화하면 시간과 돈을 아낄 수 있다. Switching costs는 **다른 공급업체로 바꿀 때 드는 돈·시간·노력·위험**으로, 예: ERP를 바꾸려면 데이터 이전·프로세스 재설계·전 직원 재교육이 필요하다.
+15. ① **더 유연하고 사용하기 쉽고 웹·모바일을 지원하며 다른 시스템과 통합**(ERP·SCM·CRM끼리, 고객·공급자 시스템과 연결, 단독 시스템은 사라지는 중) ② **쌓인 대량 데이터에 분석·ML·생성형 AI를 더해 복잡한 분석·예측 모델링·실시간 의사결정** ③ **클라우드 기반 버전이 표준 플랫폼**. 클라우드 기반 EA의 장점은 **확장성·유연성, 낮은 설치 비용, 다른 업무 소프트웨어와 쉬운 통합**이고, 클라우드 CRM 1위는 **Salesforce.com**이다.
+16. Composable ERP는 **여러 기술 공급업체의 최고 수준 구성 요소(best-of-breed)를 골라 하나의 플랫폼처럼 함께 작동하게 조립한 하이브리드 전사 솔루션**이다. 원하는 **모듈을 골라 하나씩 설치**할 수 있어 한꺼번에 다 설치할 필요가 없고, **여러 기술·플랫폼을 활용할 유연성**이 커진다. SCM·CRM용 컴포저블 도구도 나오고 있다.
 
 ### 단답형 정답
 
