@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" role="img" aria-labelledby="mis-fig-10-02-title mis-fig-10-02-desc">
+  <title id="mis-fig-10-02-title">Figure 10.2 The Benefits of Disintermediation to the Consumer</title>
+  <desc id="mis-fig-10-02-desc">중간 단계(유통업체, 소매점)를 하나씩 없앨수록 스웨터 한 벌의 가격이 48.50달러에서 40.34달러, 20.45달러로 내려간다</desc>
+  <defs><marker id="mis-fig-10-02-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.node{fill:#f7f6f2;stroke:#b9b6ac;stroke-width:1.5}.mid{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-10-02-arrow)}.title{font:700 26px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:600 20px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.inv{font:700 20px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#f7f6f2}.tag{font:600 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.price{font:700 28px 'JetBrains Mono',monospace;fill:#1d1d1a}.row{font:600 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}</style>
+  <rect class="bg" width="1280" height="620"/>
+  <text class="title" x="60" y="62">Figure 10.2 · 중간 단계를 없애면 소비자 가격이 내려간다</text>
+  <text class="tag" x="1090" y="62">Price per Sweater</text>
+  <g>
+    <text class="row" x="60" y="128">전통적 유통 경로</text>
+    <rect class="node" x="60" y="140" width="200" height="70" rx="8"/><text class="label" x="160" y="182" text-anchor="middle">Manufacturer</text>
+    <line class="flow" x1="262" y1="175" x2="318" y2="175"/>
+    <rect class="mid" x="320" y="140" width="200" height="70" rx="8"/><text class="label" x="420" y="182" text-anchor="middle">Distributor</text>
+    <line class="flow" x1="522" y1="175" x2="578" y2="175"/>
+    <rect class="mid" x="580" y="140" width="200" height="70" rx="8"/><text class="label" x="680" y="182" text-anchor="middle">Retailer</text>
+    <line class="flow" x1="782" y1="175" x2="838" y2="175"/>
+    <rect class="focal" x="840" y="140" width="200" height="70" rx="35"/><text class="inv" x="940" y="182" text-anchor="middle">Customer</text>
+    <text class="price" x="1090" y="185">$48.50</text>
+  </g>
+  <g>
+    <text class="row" x="60" y="288">유통업체 제거</text>
+    <rect class="node" x="60" y="300" width="200" height="70" rx="8"/><text class="label" x="160" y="342" text-anchor="middle">Manufacturer</text>
+    <line class="flow" x1="262" y1="335" x2="578" y2="335"/>
+    <rect class="mid" x="580" y="300" width="200" height="70" rx="8"/><text class="label" x="680" y="342" text-anchor="middle">Retailer</text>
+    <line class="flow" x1="782" y1="335" x2="838" y2="335"/>
+    <rect class="focal" x="840" y="300" width="200" height="70" rx="35"/><text class="inv" x="940" y="342" text-anchor="middle">Customer</text>
+    <text class="price" x="1090" y="345">$40.34</text>
+  </g>
+  <g>
+    <text class="row" x="60" y="448">직접 판매 (탈중개화)</text>
+    <rect class="node" x="60" y="460" width="200" height="70" rx="8"/><text class="label" x="160" y="502" text-anchor="middle">Manufacturer</text>
+    <line class="flow" x1="262" y1="495" x2="838" y2="495"/>
+    <rect class="focal" x="840" y="460" width="200" height="70" rx="35"/><text class="inv" x="940" y="502" text-anchor="middle">Customer</text>
+    <text class="price" x="1090" y="505">$20.45</text>
+  </g>
+  <text class="tag" x="60" y="590">중간 단계(회색)마다 비용이 더해진다 — 단계를 없앨수록 최종 가격이 내려가고 제조업체의 이익은 커진다</text>
+</svg>

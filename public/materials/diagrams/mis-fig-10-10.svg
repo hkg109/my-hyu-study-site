@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" role="img" aria-labelledby="mis-fig-10-10-title mis-fig-10-10-desc">
+  <title id="mis-fig-10-10-title">Figure 10.10 E-Commerce Presence Map</title>
+  <desc id="mis-fig-10-10-desc">전자상거래 존재감의 네 가지 유형(웹사이트, 이메일, 소셜 미디어, 오프라인 미디어)마다 쓰는 플랫폼과 하는 활동을 정리한 지도</desc>
+  <defs><marker id="mis-fig-10-10-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.type{fill:#1d1d1a}.plat{fill:#f0eee8;stroke:#b9b6ac;stroke-width:1.5}.act{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.flow{stroke:#1d1d1a;stroke-width:2;fill:none;marker-end:url(#mis-fig-10-10-arrow)}.title{font:700 26px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.head{font:700 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}.inv{font:700 20px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#f7f6f2}.label{font:600 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}</style>
+  <rect class="bg" width="1280" height="700"/>
+  <text class="title" x="60" y="56">Figure 10.10 · 전자상거래 존재감 지도: 유형 → 플랫폼 → 활동</text>
+  <text class="head" x="160" y="104" text-anchor="middle">Type of Presence</text><text class="head" x="560" y="104" text-anchor="middle">Platform</text><text class="head" x="1000" y="104" text-anchor="middle">Activity</text>
+  <g>
+    <rect class="type" x="60" y="160" width="200" height="56" rx="8"/><text class="inv" x="160" y="195" text-anchor="middle">Websites</text>
+    <line class="flow" x1="262" y1="188" x2="438" y2="188"/>
+    <rect class="plat" x="440" y="122" width="240" height="40" rx="6"/><text class="label" x="560" y="148" text-anchor="middle">Traditional</text>
+    <rect class="plat" x="440" y="168" width="240" height="40" rx="6"/><text class="label" x="560" y="194" text-anchor="middle">Mobile</text>
+    <rect class="plat" x="440" y="214" width="240" height="40" rx="6"/><text class="label" x="560" y="240" text-anchor="middle">Tablet</text>
+    <line class="flow" x1="690" y1="188" x2="868" y2="188"/>
+    <rect class="act" x="870" y="122" width="260" height="132" rx="6"/><text class="label" x="1000" y="158" text-anchor="middle">Search · Display</text><text class="label" x="1000" y="186" text-anchor="middle">Apps · Affiliates</text><text class="label" x="1000" y="214" text-anchor="middle">Sponsorships</text>
+  </g>
+  <g>
+    <rect class="type" x="60" y="300" width="200" height="56" rx="8"/><text class="inv" x="160" y="335" text-anchor="middle">Email</text>
+    <line class="flow" x1="262" y1="328" x2="438" y2="328"/>
+    <rect class="plat" x="440" y="285" width="240" height="40" rx="6"/><text class="label" x="560" y="311" text-anchor="middle">Internal lists</text>
+    <rect class="plat" x="440" y="331" width="240" height="40" rx="6"/><text class="label" x="560" y="357" text-anchor="middle">Purchased lists</text>
+    <line class="flow" x1="690" y1="328" x2="868" y2="328"/>
+    <rect class="act" x="870" y="285" width="260" height="86" rx="6"/><text class="label" x="1000" y="320" text-anchor="middle">Newsletters · Updates</text><text class="label" x="1000" y="348" text-anchor="middle">Sales</text>
+  </g>
+  <g>
+    <rect class="type" x="60" y="448" width="200" height="56" rx="8"/><text class="inv" x="160" y="483" text-anchor="middle">Social media</text>
+    <line class="flow" x1="262" y1="476" x2="438" y2="476"/>
+    <rect class="plat" x="440" y="410" width="240" height="40" rx="6"/><text class="label" x="560" y="436" text-anchor="middle">Facebook</text>
+    <rect class="plat" x="440" y="456" width="240" height="40" rx="6"/><text class="label" x="560" y="482" text-anchor="middle">Twitter</text>
+    <rect class="plat" x="440" y="502" width="240" height="40" rx="6"/><text class="label" x="560" y="528" text-anchor="middle">Blogs</text>
+    <line class="flow" x1="690" y1="476" x2="868" y2="476"/>
+    <rect class="act" x="870" y="410" width="260" height="132" rx="6"/><text class="label" x="1000" y="452" text-anchor="middle">Conversation</text><text class="label" x="1000" y="480" text-anchor="middle">Engagement · Sharing</text><text class="label" x="1000" y="508" text-anchor="middle">Advice</text>
+  </g>
+  <g>
+    <rect class="type" x="60" y="592" width="200" height="56" rx="8"/><text class="inv" x="160" y="627" text-anchor="middle">Offline media</text>
+    <line class="flow" x1="262" y1="620" x2="438" y2="620"/>
+    <rect class="plat" x="440" y="577" width="240" height="40" rx="6"/><text class="label" x="560" y="603" text-anchor="middle">Print</text>
+    <rect class="plat" x="440" y="623" width="240" height="40" rx="6"/><text class="label" x="560" y="649" text-anchor="middle">TV &amp; radio</text>
+    <line class="flow" x1="690" y1="620" x2="868" y2="620"/>
+    <rect class="act" x="870" y="577" width="260" height="86" rx="6"/><text class="label" x="1000" y="612" text-anchor="middle">Education · Exposure</text><text class="label" x="1000" y="640" text-anchor="middle">Branding</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="mis-fig-10-06-title mis-fig-10-06-desc">
+  <title id="mis-fig-10-06-title">Figure 10.6 Electronic Data Interchange (EDI)</title>
+  <desc id="mis-fig-10-06-desc">공급자 시스템과 구매 기업 시스템이 배송 데이터, 지불 데이터, 생산·재고 요구량을 컴퓨터끼리 양방향으로 주고받고, 이것이 지속적 재고 보충으로 이어진다</desc>
+  <defs><marker id="mis-fig-10-06-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d1d1a"/></marker></defs>
+  <style>.bg{fill:#f7f6f2}.node{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.both{stroke:#1d1d1a;stroke-width:2;fill:none;marker-start:url(#mis-fig-10-06-arrow);marker-end:url(#mis-fig-10-06-arrow)}.dash{stroke:#929087;stroke-width:1.6;fill:none;stroke-dasharray:7 6}.title{font:700 26px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.label{font:700 22px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.flowlabel{font:600 18px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.tag{font:600 15px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#65645e}</style>
+  <rect class="bg" width="1280" height="520"/>
+  <text class="title" x="60" y="62">Figure 10.6 · EDI: 표준 문서를 컴퓨터끼리 바로 주고받는다</text>
+  <rect class="node" x="80" y="110" width="250" height="250" rx="10"/>
+  <text class="label" x="205" y="230" text-anchor="middle">Supplier</text><text class="label" x="205" y="262" text-anchor="middle">Systems</text>
+  <rect class="node" x="950" y="110" width="250" height="250" rx="10"/>
+  <text class="label" x="1075" y="230" text-anchor="middle">Firm</text><text class="label" x="1075" y="262" text-anchor="middle">Systems</text>
+  <text class="flowlabel" x="640" y="150" text-anchor="middle">Shipping data · 배송 데이터</text>
+  <line class="both" x1="360" y1="165" x2="920" y2="165"/>
+  <text class="flowlabel" x="640" y="222" text-anchor="middle">Payment data · 지불 데이터</text>
+  <line class="both" x1="360" y1="237" x2="920" y2="237"/>
+  <text class="flowlabel" x="640" y="294" text-anchor="middle">Production / inventory requirements · 생산·재고 요구량</text>
+  <line class="both" x1="360" y1="309" x2="920" y2="309"/>
+  <path class="dash" d="M205 360 V430 H1075 V360"/>
+  <text class="label" x="640" y="422" text-anchor="middle">Continuous replenishment · 지속적 재고 보충</text>
+  <text class="tag" x="60" y="490">한계: 수백 명의 판매자·구매자가 모이는 시장(marketplace) 운영을 지원하도록 설계되지 않았다</text>
+</svg>

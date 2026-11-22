@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 530" role="img" aria-labelledby="mis-fig-10-08-title mis-fig-10-08-desc">
+  <title id="mis-fig-10-08-title">Figure 10.8 A B2B E-commerce Marketplace</title>
+  <desc id="mis-fig-10-08-desc">왼쪽의 여러 공급자와 오른쪽의 여러 구매자가 가운데 넷 마켓플레이스 하나에 모두 연결되고, 마켓플레이스가 카탈로그, 소싱, 자동 구매, 처리와 이행 기능을 제공한다</desc>
+  <style>.bg{fill:#f7f6f2}.node{fill:#e4e1d8;stroke:#b9b6ac;stroke-width:1.5}.focal{fill:#1d1d1a}.line{stroke:#65645e;stroke-width:1.6;fill:none}.title{font:700 26px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.inv{font:700 22px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#f7f6f2}.label{font:700 18px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}.item{font:600 17px 'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;fill:#1d1d1a}</style>
+  <rect class="bg" width="1280" height="530"/>
+  <text class="title" x="60" y="62">Figure 10.8 · B2B 전자상거래 마켓플레이스: 여러 판매자 ↔ 여러 구매자</text>
+  <g class="line">
+    <line x1="215" y1="130" x2="530" y2="250"/><line x1="215" y1="200" x2="530" y2="260"/><line x1="215" y1="270" x2="530" y2="275"/><line x1="215" y1="340" x2="530" y2="290"/><line x1="215" y1="410" x2="530" y2="300"/>
+    <line x1="1065" y1="130" x2="750" y2="250"/><line x1="1065" y1="200" x2="750" y2="260"/><line x1="1065" y1="270" x2="750" y2="275"/><line x1="1065" y1="340" x2="750" y2="290"/><line x1="1065" y1="410" x2="750" y2="300"/>
+  </g>
+  <circle class="node" cx="195" cy="130" r="22"/><circle class="node" cx="195" cy="200" r="22"/><circle class="node" cx="195" cy="270" r="22"/><circle class="node" cx="195" cy="340" r="22"/><circle class="node" cx="195" cy="410" r="22"/>
+  <circle class="node" cx="1085" cy="130" r="22"/><circle class="node" cx="1085" cy="200" r="22"/><circle class="node" cx="1085" cy="270" r="22"/><circle class="node" cx="1085" cy="340" r="22"/><circle class="node" cx="1085" cy="410" r="22"/>
+  <rect class="focal" x="530" y="230" width="220" height="90" rx="10"/><text class="inv" x="640" y="268" text-anchor="middle">Net</text><text class="inv" x="640" y="298" text-anchor="middle">Marketplace</text>
+  <text class="item" x="560" y="362">• Catalogs · 카탈로그</text>
+  <text class="item" x="560" y="390">• Sourcing · 소싱</text>
+  <text class="item" x="560" y="418">• Automated purchasing · 자동 구매</text>
+  <text class="item" x="560" y="446">• Processing and fulfillment · 처리·이행</text>
+  <text class="label" x="195" y="482" text-anchor="middle">Suppliers · 공급자</text>
+  <text class="label" x="1085" y="482" text-anchor="middle">Buyers · 구매자</text>
+</svg>

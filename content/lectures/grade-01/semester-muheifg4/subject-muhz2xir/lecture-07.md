@@ -15,7 +15,7 @@ objectives:
 
 ## 학습 경로
 
-[이전: 5장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06) · [1장으로 돌아가기](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
+[이전: 5장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-06) · [다음: 10장](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-08) · [1장으로 돌아가기](/lectures/grade-01/semester-muheifg4/subject-muhz2xir/lecture-01)
 
 **범위:** Chapter 9 슬라이드 1–31 · ERP → SCM → Global SCM → CRM → Challenges → Trends → AI
 
