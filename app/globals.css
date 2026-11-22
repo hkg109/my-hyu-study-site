@@ -450,10 +450,16 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
     color:#666;
     font:550 7pt sans-serif;
   }
-  @bottom-center {
+  @top-right {
+    content:"HJS STUDY";
+    color:#888;
+    font:600 6.5pt sans-serif;
+    letter-spacing:.18em;
+  }
+  @bottom-left {
     content:counter(page);
-    color:#666;
-    font:600 8pt sans-serif;
+    color:#111;
+    font:700 9pt sans-serif;
   }
   @bottom-right {
     content:"26학번 한지석 제공";
@@ -474,7 +480,7 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   @supports (-webkit-touch-callout: none) {
     .document-print-watermark { display:block; margin-top:5mm; text-align:right; color:var(--muted); font-size:7pt; font-weight:550; letter-spacing:.04em; break-inside:avoid; }
   }
-  .site-header,.desktop-sidebar,.skip-link,.page-toc,.document-toolbar,.completion-box,.prev-next,.site-footer,.copy-button,.code-feedback,.admin-edit-hint,.editor-toolbar,.study-quiz-check { display:none!important; }
+  .site-header,.desktop-sidebar,.sidebar-toggle-rail,.skip-link,.page-toc,.document-toolbar,.completion-box,.prev-next,.site-footer,.copy-button,.code-feedback,.admin-edit-hint,.editor-toolbar,.study-quiz-check { display:none!important; }
   .app-shell,#main-content,.document-grid,.document-main { display:block; width:auto; min-width:0; max-width:none; min-height:0; margin:0; padding:0; border:0; }
   .lecture-header { margin:0 0 5mm; padding:0 0 4mm; border-bottom:1px solid var(--border-strong); break-inside:avoid-page; page-break-inside:avoid; }
   .lecture-header h1 { margin:2mm 0 0; font-size:20pt; line-height:1.2; letter-spacing:-.035em; }
@@ -545,11 +551,14 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   .prose > hr { height:0; margin:4mm 0; border:0; border-top:1px solid var(--border); visibility:visible; break-after:auto; page-break-after:auto; }
   .study-callout,.study-quiz { margin:3mm 0; padding:7mm 3.5mm 3mm; border-radius:0; background:transparent; break-inside:avoid-page; page-break-inside:avoid; }
   .study-callout::before,.study-quiz::before { top:2mm; left:3.5mm; font-size:7.5pt; }
-  .study-callout { --callout-color:var(--foreground); border:1px solid var(--border-strong); border-left:2.5px solid var(--foreground); }
-  .study-callout-board { border-style:dashed; border-left-style:solid; }
+  /* Boxes keep the site's colors in print: a filled label tab, a colored border and a light tint. */
+  .study-callout { --callout-bg:color-mix(in srgb,var(--callout-color) 7%,var(--background)); padding:8.5mm 4mm 3mm; border:1.2px solid var(--callout-color); border-radius:2.5mm; background:var(--callout-bg); }
+  .study-callout::before { top:0; left:0; padding:1mm 3mm; border-bottom-right-radius:2.5mm; background:var(--callout-color); color:#fff; font-size:7.5pt; letter-spacing:.04em; }
+  .study-callout-board { border-style:dashed; background:var(--background); }
   .study-callout-trap { border-left-width:5px; }
-  .study-callout-note { border-left-width:1px; }
-  .study-callout-check { border-left-width:1px; }
+  .study-callout-note { background:var(--background); }
+  .study-quiz { padding:7mm 0 2mm; border:0; border-top:2px solid var(--foreground); border-radius:0; background:transparent; }
+  .study-quiz::before { top:2mm; left:0; color:var(--foreground); }
   .study-quiz-results,.document-print-controls { display:none!important; }
   .study-blank { min-width:5em; color:transparent!important; background:transparent!important; text-shadow:none!important; border-bottom:1px solid var(--foreground); }
   .prose img[src^="/materials/diagrams/"] { max-height:125mm; width:auto; max-width:100%; margin:3mm auto; border-color:var(--border-strong); background:#fff; break-inside:avoid-page; page-break-inside:avoid; }
@@ -776,4 +785,63 @@ kbd { font-family:inherit; font-size:11px; border:1px solid var(--border); borde
   .subject-card { min-height:0; }
   .subject-row { gap:12px; padding:14px 2px; }
   .home-all-link { justify-content:flex-start; }
+}
+/* Lecture PDF: cover page and textbook-style inner pages (print only). */
+@page cover { size:A4; margin:0; }
+.print-cover { display:none; }
+@media print {
+  .print-cover { --cv-paper:#f5f5f3; --cv-ink:#111; --cv-muted:#6f6f6f; --cv-wave:#3a3a3a; display:block; page:cover; position:relative; width:210mm; height:296mm; overflow:hidden; break-after:page; page-break-after:always; background:var(--cv-paper); color:var(--cv-ink); font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  html.print-theme-dark .print-cover { --cv-paper:#0a0a0b; --cv-ink:#f5f5f5; --cv-muted:#9a9aa0; --cv-wave:#cfcfcf; }
+  .print-cover-spine { position:absolute; inset:0 auto 0 0; width:6.9mm; background:var(--cv-ink); }
+  .print-cover-art { position:absolute; right:-53mm; top:87mm; width:185mm; height:185mm; }
+  .print-cover-disc { fill:var(--cv-ink); }
+  .print-cover-bits { fill:var(--cv-paper); opacity:.16; font:15px "JetBrains Mono",monospace; }
+  .print-cover-wave { fill:none; stroke:var(--cv-wave); stroke-width:60; stroke-linecap:round; }
+  .print-cover-ring { fill:none; stroke:var(--cv-paper); stroke-width:1.5; stroke-dasharray:2 9; opacity:.5; }
+  .print-cover-top { position:absolute; top:15.3mm; left:19.6mm; right:15.3mm; display:flex; justify-content:space-between; align-items:center; }
+  .print-cover-brand { display:flex; align-items:center; gap:2.6mm; font-size:11pt; font-weight:700; letter-spacing:-.02em; }
+  .print-cover-brand b { display:grid; place-items:center; width:7.9mm; height:6.9mm; border-radius:1mm; background:var(--cv-ink); color:var(--cv-paper); font:600 10pt "JetBrains Mono",monospace; }
+  .print-cover-term { color:var(--cv-muted); font:500 9pt "JetBrains Mono",monospace; letter-spacing:.04em; }
+  .print-cover-series { position:absolute; top:66mm; left:19.6mm; font:600 9pt "JetBrains Mono",monospace; letter-spacing:.22em; }
+  .print-cover-series::before { content:""; display:inline-block; width:10mm; height:.5mm; margin-right:3.2mm; background:var(--cv-ink); vertical-align:middle; }
+  .print-cover .print-cover-title { position:absolute; top:72mm; left:18mm; margin:0; font-weight:800; line-height:1.1; letter-spacing:-.06em; white-space:nowrap; color:var(--cv-ink); }
+  .print-cover-subtitle { position:absolute; top:112mm; left:20mm; max-width:108mm; margin:0; padding-right:2mm; color:var(--cv-muted); background:var(--cv-paper); font-size:14pt; font-weight:600; line-height:1.4; letter-spacing:-.02em; word-break:keep-all; }
+  .print-cover-chips { position:absolute; top:135mm; left:19.6mm; display:flex; gap:2mm; }
+  .print-cover-chips span { padding:1.6mm 4mm; border:.4mm solid var(--cv-ink); border-radius:99px; background:var(--cv-paper); font-size:10pt; font-weight:700; }
+  .print-cover-chips span.fill { background:var(--cv-ink); color:var(--cv-paper); }
+  .print-cover-toc { position:absolute; bottom:40mm; left:19.6mm; width:70mm; margin:0; padding:3.7mm 0 0; border-top:.5mm solid var(--cv-ink); list-style:none; }
+  .print-cover-toc li { display:flex; gap:3.7mm; padding:1.3mm 0; border-bottom:.25mm solid color-mix(in srgb,var(--cv-ink) 14%,transparent); font-size:9.5pt; line-height:1.4; }
+  .print-cover-toc li.current { font-weight:800; }
+  .print-cover-toc i { flex:none; width:6mm; color:var(--cv-muted); font:500 8pt/1.7 "JetBrains Mono",monospace; font-style:normal; }
+  .print-cover-toc li.current i { color:var(--cv-ink); font-weight:700; }
+  .print-cover-foot { position:absolute; left:19.6mm; right:15.3mm; bottom:14.8mm; display:flex; justify-content:space-between; align-items:flex-end; color:var(--cv-muted); font-size:9pt; }
+  .print-cover-foot strong { display:block; color:var(--cv-ink); font-size:16pt; font-weight:800; letter-spacing:-.03em; }
+  .print-cover-vol { color:var(--cv-ink); font:600 46pt/1 "JetBrains Mono",monospace; letter-spacing:-.04em; text-align:right; }
+  .print-cover-vol small { display:block; color:var(--cv-muted); font:500 8pt "JetBrains Mono",monospace; letter-spacing:.2em; }
+
+  /* Chapter band at the top of the first inner page. */
+  .printable-document .lecture-header { position:relative; overflow:hidden; margin:0 0 5mm; padding:7mm 8mm 6mm; border:0; border-radius:2.5mm; background:#111; color:#fff; }
+  html.print-theme-dark .printable-document .lecture-header { background:#1c1c1f; }
+  .printable-document .lecture-header::after { content:""; position:absolute; top:-14mm; right:-14mm; width:50mm; height:50mm; border-radius:50%; background:#2a2a2a; box-shadow:-18mm 23mm 0 -10mm #444; }
+  .printable-document .lecture-header > * { position:relative; z-index:1; }
+  .printable-document .lecture-header .eyebrow { color:#bbb; font:600 8pt "JetBrains Mono",monospace; letter-spacing:.2em; }
+  .printable-document .lecture-header h1 { color:#fff; font-size:22pt; font-weight:800; letter-spacing:-.05em; }
+  .printable-document .lecture-metadata { color:#ccc; }
+  .printable-document .objectives { margin:0 0 5mm; padding:4mm 5mm; border:0; border-radius:2.5mm; background:var(--surface-active); }
+  .printable-document .objectives h2 { margin:0 0 1.5mm; font-size:8pt; letter-spacing:.06em; }
+  .printable-document .objectives h2 span,.printable-document .objectives input { display:none; }
+  .printable-document .objectives li { margin:.6mm 0; color:var(--foreground); font-size:9pt; line-height:1.5; }
+  .printable-document .objectives li::before { content:"✓"; flex:none; font-weight:800; }
+
+  /* Section markers: a numbered badge when the note's sections aren't numbered already, otherwise a plain block. */
+  .prose { counter-reset:print-section; }
+  .prose h2 { counter-increment:print-section; }
+  .prose h2::before { content:""; display:inline-block; width:2.4mm; height:5.5mm; margin-right:3mm; border-radius:.6mm; background:var(--foreground); vertical-align:-1mm; }
+  html.print-numbered-sections .prose h2::before { content:counter(print-section,decimal-leading-zero); width:8.5mm; height:8.5mm; border-radius:1.8mm; color:var(--background); font:600 10pt/8.5mm "JetBrains Mono",monospace; text-align:center; vertical-align:middle; }
+  .prose h3::before { content:""; display:inline-block; width:1.6mm; height:1.6mm; margin-right:2mm; border-radius:50%; background:var(--foreground); vertical-align:middle; }
+
+  /* Tables: dark header row and light stripes. */
+  .table-scroll { border-radius:2.5mm; overflow:hidden; }
+  .prose th { background:var(--foreground); color:var(--background); }
+  .prose tbody tr:nth-child(even) td { background:var(--surface); }
 }

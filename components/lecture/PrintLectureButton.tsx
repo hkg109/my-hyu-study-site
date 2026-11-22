@@ -8,6 +8,7 @@ import { buildExamPaper, subjectTitle, type ExamPaperMode } from "@/lib/exam-pap
 type PrintTheme = "light" | "dark";
 const RUNNING_HEADER_ID = "print-running-header";
 const EXAM_PAPER_CLASS = "print-exam-paper";
+const NUMBERED_CLASS = "print-numbered-sections";
 
 interface PrintState {
   title: string;
@@ -60,8 +61,12 @@ export function PrintLectureButton({ title, kind = "lecture", subjectName, perio
     } else {
       // Exams have no theme picker, so one without numbered questions still prints light.
       root.classList.add("printing-document", `print-theme-${kind === "practice" ? "light" : theme}`);
-      // Print the document title in the top margin of every page.
-      header.textContent = `@page study-document { @top-left { content: ${JSON.stringify(title)}; } }`;
+      // Section badges count 01, 02 … only when the note's own sections aren't already numbered ("1. …", "Slide 4 — …").
+      const sections = [...(prose?.querySelectorAll("h2") ?? [])];
+      if (sections.length && !sections.some(heading => /^\s*(\d|slide\b|part\b)/i.test(heading.textContent ?? ""))) root.classList.add(NUMBERED_CLASS);
+      // Document title on top of every page; subject and title beside the page number.
+      const footer = [subjectName, title].filter(Boolean).join(" · ");
+      header.textContent = `@page study-document { @top-left { content: ${JSON.stringify(title)}; } @bottom-right { content: ${JSON.stringify(footer)}; } }`;
     }
     document.head.appendChild(header);
     document.title = `${title.replace(/[\\/:*?"<>|]/g, "-")}${paper ? mode === "answers" ? " 정답과 해설" : mode === "questions" ? " 문제지" : "" : ""} - HJS STUDY`;
@@ -73,7 +78,7 @@ export function PrintLectureButton({ title, kind = "lecture", subjectName, perio
     answerDetails().forEach((detail, index) => { detail.open = state.detailStates[index] ?? false; });
     state.paper?.remove();
     document.title = state.title;
-    document.documentElement.classList.remove("printing-document", "print-theme-light", "print-theme-dark", EXAM_PAPER_CLASS);
+    document.documentElement.classList.remove("printing-document", "print-theme-light", "print-theme-dark", EXAM_PAPER_CLASS, NUMBERED_CLASS);
     document.getElementById(RUNNING_HEADER_ID)?.remove();
     printState.current = null;
   }, []);

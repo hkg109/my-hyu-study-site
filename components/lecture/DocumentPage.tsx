@@ -12,6 +12,7 @@ import { ProgressCheck } from "./ProgressCheck";
 import { PrevNextNavigation } from "./PrevNextNavigation";
 import { MarkdownEditor } from "@/components/admin/MarkdownEditor";
 import { PrintLectureButton } from "./PrintLectureButton";
+import { PrintCover } from "./PrintCover";
 import { StudyWorkspace } from "@/components/study/StudyWorkspace";
 import { PracticeAccessSettings } from "@/components/admin/PracticeAccessSettings";
 import { subjectPathOf } from "@/lib/subjects";
@@ -33,6 +34,7 @@ export async function DocumentPage({ document }: { document: ContentDocument }) 
   const siblings = (await (isPractice ? getAllExams() : getAllLectures())).filter(item => subjectPathOf(item) === subjectHome);
   const period = isPractice ? siblings.findIndex(exam => exam.path === document.path) + 1 || 1 : undefined;
   return <div className="document-grid"><RecentVisitTracker path={document.path} /><article className="document-main printable-document">
+    {isLecture && <PrintCover document={document} lectures={siblings} />}
     <div className="document-toolbar"><nav className="breadcrumb" aria-label="현재 위치"><Link prefetch={false} href={`/${document.kind}`}>{label}</Link><ChevronRight size={13} />{document.gradeName ? <><span>{document.gradeName}</span><ChevronRight size={13} /><span>{document.semesterName}</span><ChevronRight size={13} />{subjectHome ? <Link prefetch={false} href={isPractice ? `${subjectHome}#practice` : subjectHome}>{document.subjectName}</Link> : <span>{document.subjectName}</span>}</> : <span>{document.title}</span>}</nav><div className="document-toolbar-actions">{isEditable && isPractice && <PracticeAccessSettings slug={document.slug} title={document.title} />}</div></div>
     <LectureHeader lecture={document} total={siblings.length} hideDescription={isLecture} />
     <div className="document-reading-actions"><BookmarkButton path={document.path} title={document.title} /><PrintLectureButton title={document.title} kind={isPractice ? "practice" : "lecture"} subjectName={document.subjectName} period={period} /><div className="document-tags">{document.tags?.map(tag => <span key={tag}>#{tag}</span>)}</div></div>
