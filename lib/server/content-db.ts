@@ -19,7 +19,8 @@ function client() {
   if (!url || !key) throw new Error("CONTENT_SOURCE=db needs NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SECRET_KEY.");
   return createClient(url, key, {
     auth: { persistSession: false, autoRefreshToken: false },
-    global: { fetch: (input, init) => fetch(input, { ...init, cache: "force-cache", next: { tags: [CONTENT_TAG] } }) },
+    // Admin saves refresh at once via the tag; the 60s limit catches DB changes made outside the site, which a redeploy doesn't clear.
+    global: { fetch: (input, init) => fetch(input, { ...init, next: { revalidate: 60, tags: [CONTENT_TAG] } }) },
   });
 }
 
